@@ -2,7 +2,7 @@
 
 Implements a carrier that stores the text content and style. You can perform operations such as layout and drawing.
 
-Before calling any of the following APIs, you must use [build()](arkts-arkgraphics2d-text-paragraphbuilder-c.md#build-1) of the [ParagraphBuilder](arkts-arkgraphics2d-text-paragraphbuilder-c.md) class to create a **Paragraph** object.
+Before calling any of the following APIs, you must use [build()](arkts-arkgraphics2d-text-paragraphbuilder-c.md#build) of the [ParagraphBuilder](arkts-arkgraphics2d-text-paragraphbuilder-c.md) class to create a **Paragraph** object.
 
 **Since:** 12
 
@@ -16,7 +16,6 @@ Before calling any of the following APIs, you must use [build()](arkts-arkgraphi
 import { text } from '@kit.ArkGraphics2D';
 ```
 
-<a id="didexceedmaxlines"></a>
 ## didExceedMaxLines
 
 ```TypeScript
@@ -46,7 +45,6 @@ let didExceed = paragraph.didExceedMaxLines();
 
 ```
 
-<a id="forcereuserasterresult"></a>
 ## forceReuseRasterResult
 
 ```TypeScript
@@ -71,7 +69,6 @@ Whether to force reuse the rasterization result.
 | --- | --- | --- | --- |
 | isForce | boolean | Yes | Whether to force reuse the rasterization result.True means to force reuse of the rasterization result.False means to allow updates to the rasterization result.The default value is false. |
 
-<a id="getactualtextrange"></a>
 ## getActualTextRange
 
 ```TypeScript
@@ -92,7 +89,7 @@ Obtains the actually visible text range in the specified line, excluding any ove
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| lineNumber | number | Yes | Line number of the text range, starting from 0. This API can only be used to obtain the bounds of existing lines. That is, the line number must start from 0, and the maximum line index is the number of text lines – 1. The number of text lines can be obtained via the [getLineCount](arkts-arkgraphics2d-text-paragraph-c.md#getlinecount-1) API. |
+| lineNumber | number | Yes | Line number of the text range, starting from 0. This API can only be used to obtain the bounds of existing lines. That is, the line number must start from 0, and the maximum line index is the number of text lines – 1. The number of text lines can be obtained via the [getLineCount](arkts-arkgraphics2d-text-paragraph-c.md#getlinecount) API. |
 | includeSpaces | boolean | Yes | Whether spaces are included. The value **true** means that spaces are contained, and **false** means the opposite. |
 
 **Return value:**
@@ -108,7 +105,6 @@ let rang = paragraph.getActualTextRange(0, true);
 
 ```
 
-<a id="getalphabeticbaseline"></a>
 ## getAlphabeticBaseline
 
 ```TypeScript
@@ -138,7 +134,6 @@ let alphabeticBaseline = paragraph.getAlphabeticBaseline();
 
 ```
 
-<a id="getcharacterpositionatcoordinate"></a>
 ## getCharacterPositionAtCoordinate
 
 ```TypeScript
@@ -214,7 +209,6 @@ struct Index {
 
 ```
 
-<a id="getcharacterrangeforglyphrange"></a>
 ## getCharacterRangeForGlyphRange
 
 ```TypeScript
@@ -288,7 +282,6 @@ struct Index {
 
 ```
 
-<a id="getglyphpositionatcoordinate"></a>
 ## getGlyphPositionAtCoordinate
 
 ```TypeScript
@@ -325,7 +318,6 @@ let positionWithAffinity = paragraph.getGlyphPositionAtCoordinate(0, 0);
 
 ```
 
-<a id="getglyphrangeforcharacterrange"></a>
 ## getGlyphRangeForCharacterRange
 
 ```TypeScript
@@ -399,7 +391,6 @@ struct Index {
 
 ```
 
-<a id="getheight"></a>
 ## getHeight
 
 ```TypeScript
@@ -429,7 +420,6 @@ let height = paragraph.getHeight();
 
 ```
 
-<a id="getideographicbaseline"></a>
 ## getIdeographicBaseline
 
 ```TypeScript
@@ -459,7 +449,6 @@ let ideographicBaseline = paragraph.getIdeographicBaseline();
 
 ```
 
-<a id="getlinecount"></a>
 ## getLineCount
 
 ```TypeScript
@@ -489,7 +478,6 @@ let lineCount = paragraph.getLineCount();
 
 ```
 
-<a id="getlineheight"></a>
 ## getLineHeight
 
 ```TypeScript
@@ -525,7 +513,6 @@ let lineHeight = paragraph.getLineHeight(0);
 
 ```
 
-<a id="getlinemetrics"></a>
 ## getLineMetrics
 
 ```TypeScript
@@ -555,7 +542,6 @@ let arrLineMetric =  paragraph.getLineMetrics();
 
 ```
 
-<a id="getlinemetrics-1"></a>
 ## getLineMetrics
 
 ```TypeScript
@@ -591,7 +577,6 @@ let lineMetrics =  paragraph.getLineMetrics(0);
 
 ```
 
-<a id="getlinewidth"></a>
 ## getLineWidth
 
 ```TypeScript
@@ -627,7 +612,6 @@ let lineWidth = paragraph.getLineWidth(0);
 
 ```
 
-<a id="getlongestline"></a>
 ## getLongestLine
 
 ```TypeScript
@@ -657,7 +641,6 @@ let longestLine = paragraph.getLongestLine();
 
 ```
 
-<a id="getlongestlinewithindent"></a>
 ## getLongestLineWithIndent
 
 ```TypeScript
@@ -687,7 +670,6 @@ let longestLineWithIndent = paragraph.getLongestLineWithIndent();
 
 ```
 
-<a id="getmaxintrinsicwidth"></a>
 ## getMaxIntrinsicWidth
 
 ```TypeScript
@@ -717,7 +699,6 @@ let maxIntrinsicWidth = paragraph.getMaxIntrinsicWidth();
 
 ```
 
-<a id="getmaxwidth"></a>
 ## getMaxWidth
 
 ```TypeScript
@@ -747,7 +728,6 @@ let maxWidth = paragraph.getMaxWidth();
 
 ```
 
-<a id="getminintrinsicwidth"></a>
 ## getMinIntrinsicWidth
 
 ```TypeScript
@@ -777,7 +757,6 @@ let minIntrinsicWidth = paragraph.getMinIntrinsicWidth();
 
 ```
 
-<a id="getparagraphstyle"></a>
 ## getParagraphStyle
 
 ```TypeScript
@@ -838,7 +817,6 @@ struct Index {
 
 ```
 
-<a id="getprocessstate"></a>
 ## getProcessState
 
 ```TypeScript
@@ -899,7 +877,6 @@ struct Index {
 
 ```
 
-<a id="getrectsforplaceholders"></a>
 ## getRectsForPlaceholders
 
 ```TypeScript
@@ -929,7 +906,6 @@ let placeholderRects = paragraph.getRectsForPlaceholders();
 
 ```
 
-<a id="getrectsforrange"></a>
 ## getRectsForRange
 
 ```TypeScript
@@ -968,7 +944,6 @@ let rects = paragraph.getRectsForRange(range, text.RectWidthStyle.TIGHT, text.Re
 
 ```
 
-<a id="gettextdisplaystate"></a>
 ## getTextDisplayState
 
 ```TypeScript
@@ -1029,7 +1004,6 @@ struct Index {
 
 ```
 
-<a id="gettextlines"></a>
 ## getTextLines
 
 ```TypeScript
@@ -1059,7 +1033,6 @@ let lines = paragraph.getTextLines();
 
 ```
 
-<a id="getvisibletextranges"></a>
 ## getVisibleTextRanges
 
 ```TypeScript
@@ -1091,7 +1064,6 @@ let visibleRanges = paragraph.getVisibleTextRanges();
 
 ```
 
-<a id="getwordboundary"></a>
 ## getWordBoundary
 
 ```TypeScript
@@ -1127,7 +1099,6 @@ let wordRange = paragraph.getWordBoundary(0);
 
 ```
 
-<a id="layout"></a>
 ## layout
 
 ```TypeScript
@@ -1235,7 +1206,6 @@ struct Index {
 
 ```
 
-<a id="layoutsync"></a>
 ## layoutSync
 
 ```TypeScript
@@ -1265,7 +1235,6 @@ paragraph.layoutSync(100);
 
 ```
 
-<a id="layoutwithconstraints"></a>
 ## layoutWithConstraints
 
 ```TypeScript
@@ -1308,7 +1277,6 @@ for (let i = 0; i < result.fitStrRange.length; ++i) {
 
 ```
 
-<a id="paint"></a>
 ## paint
 
 ```TypeScript
@@ -1344,7 +1312,6 @@ paragraph.paint(canvas, 0, 0);
 
 ```
 
-<a id="paintonpath"></a>
 ## paintOnPath
 
 ```TypeScript
@@ -1383,7 +1350,6 @@ paragraph.paintOnPath(canvas, path, 0, 0);
 
 ```
 
-<a id="updatecolor"></a>
 ## updateColor
 
 ```TypeScript
@@ -1413,7 +1379,6 @@ paragraph.updateColor({ alpha: 255, red: 255, green: 0, blue: 0 });
 
 ```
 
-<a id="updatedecoration"></a>
 ## updateDecoration
 
 ```TypeScript

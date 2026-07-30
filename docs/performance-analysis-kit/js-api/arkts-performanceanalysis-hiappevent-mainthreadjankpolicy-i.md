@@ -91,7 +91,7 @@ Type of logs to collect. Default value: **0**
 reportTimesPerApp?: number
 ```
 
-Number of sampling reporting times for the main thread jank event of the processes with the same PID of an application. This can only be set once per lifecycle.
+Number of sampling reporting times for the main thread jank event of the processes with the same PID of an application. This parameter can be set only once for the processes with the same PID.
 
 The default value is **1**, Unit: times.
 

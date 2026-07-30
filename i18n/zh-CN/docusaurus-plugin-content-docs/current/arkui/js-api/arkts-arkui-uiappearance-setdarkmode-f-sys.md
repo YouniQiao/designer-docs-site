@@ -12,7 +12,7 @@ import { uiAppearance } from '@kit.ArkUI';
 function setDarkMode(mode: DarkMode, callback: AsyncCallback<void>): void
 ```
 
-设置系统深色模式。使用callback异步回调。
+设置系统深浅色模式，修改系统级配色方案配置。设置后，所有跟随系统配色方案的应用将自动切换至对应模式。使用callback异步回调。
 
 **起始版本：** 10
 
@@ -67,7 +67,7 @@ try {
 function setDarkMode(mode: DarkMode): Promise<void>
 ```
 
-设置系统深色模式。使用Promise异步回调。
+设置系统深浅色模式，修改系统级配色方案配置。设置后，所有跟随系统配色方案的应用将自动切换至对应模式。使用Promise异步回调。
 
 **起始版本：** 10
 

@@ -45,13 +45,14 @@ function requestAccessoryRight(accessory: USBAccessory): Promise<boolean>
 **示例：**
 
 ```TypeScript
-import { hilog } from '@kit.PerformanceAnalysisKit';
-try {
-  let accList: usbManager.USBAccessory[] = usbManager.getAccessoryList()
-  let flag = usbManager.requestAccessoryRight(accList?.[0])
-  hilog.info(0, 'testTag ui', `requestAccessoryRight success, ret:${flag}`)
-} catch (error) {
-  hilog.error(0, 'testTag ui', `requestAccessoryRight error ${error.code}, message is ${error.message}`)
+async function requestAccessoryRight() {
+  try {
+    let accList: usbManager.USBAccessory[] = usbManager.getAccessoryList()
+    let flag = await usbManager.requestAccessoryRight(accList?.[0])
+    console.info(`requestAccessoryRight success, ret:${flag}`)
+  } catch (error) {
+    console.error(`requestAccessoryRight error ${error.code}, message is ${error.message}`)
+  }
 }
 
 ```

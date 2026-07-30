@@ -14,7 +14,6 @@ Provides APIs to obtain the flash information of a camera device, including whet
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="hasflash"></a>
 ## hasFlash
 
 ```TypeScript
@@ -43,7 +42,6 @@ Checks whether the camera device has flash.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config, only throw in session usage. |
 
-<a id="isflashmodesupported"></a>
 ## isFlashModeSupported
 
 ```TypeScript

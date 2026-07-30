@@ -185,6 +185,7 @@ export default class IntentExecutorImpl extends InsightIntentExecutor {
 
 ```TypeScript
 import { InsightIntentExecutor, insightIntent } from '@kit.AbilityKit';
+import { hilog } from '@kit.PerformanceAnalysisKit';
 
 async function executeInsightIntent(param: Record<string, Object>): Promise<insightIntent.ExecuteResult> {
   return new Promise((resolve, reject) => {

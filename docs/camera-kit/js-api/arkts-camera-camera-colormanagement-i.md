@@ -16,7 +16,6 @@
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="getactivecolorspace"></a>
 ## getActiveColorSpace
 
 ```TypeScript
@@ -45,7 +44,6 @@ Obtains the color space in use.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="setcolorspace"></a>
 ## setColorSpace
 
 ```TypeScript
@@ -54,7 +52,7 @@ setColorSpace(colorSpace: colorSpaceManager.ColorSpace): void
 
 Sets a color space.
 
-Before the setting, call [getSupportedColorSpaces](arkts-camera-camera-colormanagementquery-i.md#getsupportedcolorspaces-1) to obtain the supported color spaces. You are advised to call this API after [addOutput](arkts-camera-camera-session-i.md#addoutput-1) and before [commitConfig](arkts-camera-camera-session-i.md#commitconfig-1). If this API is called after [commitConfig](arkts-camera-camera-session-i.md#commitconfig-1), the camera session configuration will take a longer time.
+Before the setting, call [getSupportedColorSpaces](arkts-camera-camera-colormanagementquery-i.md#getsupportedcolorspaces) to obtain the supported color spaces. You are advised to call this API after [addOutput](arkts-camera-camera-session-i.md#addoutput) and before [commitConfig](arkts-camera-camera-session-i.md#commitconfig). If this API is called after [commitConfig](arkts-camera-camera-session-i.md#commitconfig), the camera session configuration will take a longer time.
 
 P3 wide color gamut and HDR imaging:
 
@@ -64,10 +62,10 @@ For different modes, enabling HDR, setting the color space, and configuring [Cam
 
 To obtain HDR images in photo mode, set the color space to **DISPLAY_P3** or **BT2020_HLG**. **BT2020_HLG** provides a wider color gamut, and should be used together with the **CameraFormat**, including **CAMERA_FORMAT_YCRCB_P010** and **CAMERA_FORMAT_YCBCR_P010**, to improve the image quality.
 
-Since API version 23, you can call the [getSupportedFullOutputCapability](arkts-camera-camera-cameramanager-i.md#getsupportedfulloutputcapability-1)API to check whether the preview format P010 is supported in photo mode.
+Since API version 23, you can call the [getSupportedFullOutputCapability](arkts-camera-camera-cameramanager-i.md#getsupportedfulloutputcapability)API to check whether the preview format P010 is supported in photo mode.
 
 - If the application does not set the color space, the default color space in photo mode is SRGB when the **CameraFormat** is **CAMERA_FORMAT_YUV_420_SP**, and the default color space is **BT2020_HLG** when the **CameraFormat** is **CAMERA_FORMAT_YCRCB_P010** or **CAMERA_FORMAT_YCBCR_P010**.  
-- If the application sets the color space, in photo mode, the **CameraFormat** and **ColorSpace** must be configured according to the following mapping table. Otherwise, an error code will be returned in [setColorSpace](arkts-camera-camera-colormanagement-i.md#setcolorspace-1) or [commitConfig](arkts-camera-camera-session-i.md#commitconfig-1).
+- If the application sets the color space, in photo mode, the **CameraFormat** and **ColorSpace** must be configured according to the following mapping table. Otherwise, an error code will be returned in [setColorSpace](arkts-camera-camera-colormanagement-i.md#setcolorspace) or [commitConfig](arkts-camera-camera-session-i.md#commitconfig).
 
 Photo mode:  
 | SDR/HDR Photo Capture | CameraFormat| ColorSpace|  

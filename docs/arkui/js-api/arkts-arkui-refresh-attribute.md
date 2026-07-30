@@ -12,7 +12,6 @@ In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-ap
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="maxpulldowndistance"></a>
 ## maxPullDownDistance
 
 ```TypeScript
@@ -37,7 +36,6 @@ Sets the maximum pull-down distance.
 | --- | --- | --- | --- |
 | distance | [Optional](arkts-arkui-optional-t.md)&lt;number&gt; | Yes | Maximum pull-down distance. The minimum value for the maximum pull-down distance is 0. Values less than 0 are treated as **0**. If this value is less than the refresh offset (**refreshOffset**), the refresh action will not be triggered when the pull-down gesture is released.<br>If set to **undefined** or **null**, this parameter is considered not set.<br>Default value: **undefined**.<br>Unit:vp |
 
-<a id="maxpulldowndistance-1"></a>
 ## maxPullDownDistance
 
 ```TypeScript
@@ -62,9 +60,8 @@ If this API is not set, the maximum pull-down distance is **undefined**.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| distance | number \| Resource \| undefined | Yes | Maximum pull-down distance.<br>Default value: **undefined**.<br   >Unit: vp<br>Value range:[0, +∞). If the value is less than 0, **0** is used.If this value is less than the [refreshOffset](docroot://reference/apis-arkui/arkui-ts/ts-container-refresh.md#refreshoffset12),the refresh action will not be triggered when the pull-down gesture is released.<br>If this parameter is set to **undefined** or **null**,it is considered that this attribute is not set, meaning there is no limit on the maximum pull-down distance. |
+| distance | number \| Resource \| undefined | Yes | Maximum pull-down distance.<br>Default value: **undefined**.<br   >Unit: vp<br>Value range:[0, +∞). If the value is less than 0, **0** is used.If this value is less than the [refreshOffset](../../../reference/apis-arkui/arkui-ts/ts-container-refresh.md#refreshoffset12),the refresh action will not be triggered when the pull-down gesture is released.<br>If this parameter is set to **undefined** or **null**,it is considered that this attribute is not set, meaning there is no limit on the maximum pull-down distance. |
 
-<a id="onoffsetchange"></a>
 ## onOffsetChange
 
 ```TypeScript
@@ -72,10 +69,9 @@ onOffsetChange(callback: Callback<number>)
 ```
 
 Called when the pull-down distance changes.
-
 > **NOTE**  
 >  
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 20.
+> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier) since API version 20.
 
 **Since:** 12
 
@@ -93,7 +89,6 @@ Called when the pull-down distance changes.
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;number&gt; | Yes | Callback used to listen for the pull-down distance changes. It is triggered when the pull-down distance changes and returns the current pull-down distance.<br>Unit: vp |
 
-<a id="onrefreshing"></a>
 ## onRefreshing
 
 ```TypeScript
@@ -116,7 +111,6 @@ Called when the component starts refreshing.
 | --- | --- | --- | --- |
 | callback | () =&gt; void | Yes | Callback triggered when the component enters the refresh state. |
 
-<a id="onstatechange"></a>
 ## onStateChange
 
 ```TypeScript
@@ -139,7 +133,6 @@ Called when the refresh status changes.
 | --- | --- | --- | --- |
 | callback | (state: RefreshStatus) =&gt; void | Yes |  |
 
-<a id="pulldownratio"></a>
 ## pullDownRatio
 
 ```TypeScript
@@ -164,7 +157,6 @@ Sets the pull-down ratio.
 | --- | --- | --- | --- |
 | ratio | [Optional](arkts-arkui-optional-t.md)&lt;number&gt; | Yes | Pull-down ratio. A larger value indicates higher responsiveness to the pull-down gesture. The value **0** indicates that the pull-down does not follow the gesture, and **1** indicates that the pull-down follows the gesture proportionally.<br>If this parameter is not set or is set to **undefined**, a dynamic pull-down ratio is used. That is, the larger the pull-down distance, the smaller the ratio.<br>The value ranges from 0 to 1. A value less than 0 is handled as **0**, and a value greater than 1 is handled as **1**. |
 
-<a id="pulltorefresh"></a>
 ## pullToRefresh
 
 ```TypeScript
@@ -189,7 +181,6 @@ Sets whether to initiate a refresh when the pull-down distance exceeds the value
 | --- | --- | --- | --- |
 | value | boolean | Yes | Whether to initiate a refresh when the pull-down distance exceeds the value of [refreshOffset](RefreshAttribute#refreshOffset(value: number)). The value **true** means to initiate a refresh, and **false** means the opposite.<br>Default value: **true** |
 
-<a id="pulluptocancelrefresh"></a>
 ## pullUpToCancelRefresh
 
 ```TypeScript
@@ -214,7 +205,6 @@ Sets whether to enable the pull-up-to-cancel gesture for refreshing operations.
 | --- | --- | --- | --- |
 | enabled | boolean \| undefined | Yes | Whether to enable the pull-up-to-cancel gesture for refreshing operations.<br>**true**: Enable the pull-up-to-cancel gesture. **false**: Disable the pull-up-to-cancel gesture.<br>**undefined**: Enable the pull-up-to-cancel gesture. |
 
-<a id="refreshoffset"></a>
 ## refreshOffset
 
 ```TypeScript
@@ -239,7 +229,6 @@ Sets the minimum pull-down offset required to trigger a refresh. If the distance
 | --- | --- | --- | --- |
 | value | number | Yes | Pull-down offset, in vp.<br>Default value: 96 vp when [promptText](arkts-arkui-refreshoptions-i.md)is set and 64 vp when [promptText](arkts-arkui-refreshoptions-i.md) is not set.<br>If the value specified is 0 or less than 0, the default value is used. |
 
-<a id="refreshoffset-1"></a>
 ## refreshOffset
 
 ```TypeScript

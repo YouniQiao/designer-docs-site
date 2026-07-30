@@ -1,6 +1,6 @@
 # AtManager
 
-Program access control management class, providing capabilities such as permission verification, runtime permission dialog box request, settings page authorization guidance, global switch request, and permission status monitoring. Obtain an instance through [createAtManager](arkts-ability-abilityaccessctrl-createatmanager-f.md#createatmanager-1).
+Program access control management class, providing capabilities such as permission verification, runtime permission dialog box request, settings page authorization guidance, global switch request, and permission status monitoring. Obtain an instance through [createAtManager](arkts-ability-abilityaccessctrl-createatmanager-f.md#createatmanager).
 
 **Since:** 8
 
@@ -14,7 +14,6 @@ Program access control management class, providing capabilities such as permissi
 import { Context, Permissions, PermissionRequestResult } from '@kit.AbilityKit';
 ```
 
-<a id="checkaccesstoken"></a>
 ## checkAccessToken
 
 ```TypeScript
@@ -37,7 +36,7 @@ Applicable to scenarios where a pre-permission check is performed before an app 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| tokenID | number | Yes | Identity identifier of the target app to be verified. It can be obtained through the [accessTokenId](arkts-ability-applicationinfo-i.md#accesstokenid) field in ApplicationInfo of BundleInfo. Passing an invalid value returns error code 12100001.<br>The value should be an integer. Value constraint: This parameter must be an integer greater than 0.<br>For BundleInfo acquisition, please refer to: [bundleManager.getBundleInfoSync](arkts-ability-bundlemanager-getbundleinfosync-f.md#getbundleinfosync-1).<br>If verifying the current app, it can also be obtained through [bundleManager.getBundleInfoForSelfSync](arkts-ability-bundlemanager-getbundleinfoforselfsync-f.md#getbundleinfoforselfsync-1). |
+| tokenID | number | Yes | Identity identifier of the target app to be verified. It can be obtained through the [accessTokenId](arkts-ability-applicationinfo-i.md#accesstokenid) field in ApplicationInfo of BundleInfo. Passing an invalid value returns error code 12100001.<br>The value should be an integer. Value constraint: This parameter must be an integer greater than 0.<br>For BundleInfo acquisition, please refer to: [bundleManager.getBundleInfoSync](arkts-ability-bundlemanager-getbundleinfosync-f.md#getbundleinfosync).<br>If verifying the current app, it can also be obtained through [bundleManager.getBundleInfoForSelfSync](arkts-ability-bundlemanager-getbundleinfoforselfsync-f.md#getbundleinfoforselfsync). |
 | permissionName | [Permissions](arkts-ability-permissions-t.md) | Yes | Name of the permission to be verified. Passing an invalid value returns error code 12100001.<br>Value constraint: The permission name length cannot exceed 256 characters. |
 
 **Return value:**
@@ -76,7 +75,6 @@ atManager.checkAccessToken(tokenID, permissionName).then((data: abilityAccessCtr
 
 ```
 
-<a id="checkaccesstokensync"></a>
 ## checkAccessTokenSync
 
 ```TypeScript
@@ -85,7 +83,7 @@ checkAccessTokenSync(tokenID: number, permissionName: Permissions): GrantStatus
 
 Verifies whether an app has been granted the specified permission, and synchronously returns the authorization status of the permission. The developer can decide accordingly whether to directly execute subsequent service processes, continue to initiate a permission request, or guide the user to go to the settings page to modify the authorization status.
 
-Compared with [checkAccessToken](arkts-ability-abilityaccessctrl-atmanager-i.md#checkaccesstoken-1), this API returns the authorization status synchronously, making it suitable for permission verification scenarios that do not require asynchronous processing.
+Compared with [checkAccessToken](arkts-ability-abilityaccessctrl-atmanager-i.md#checkaccesstoken), this API returns the authorization status synchronously, making it suitable for permission verification scenarios that do not require asynchronous processing.
 
 Applicable to scenarios where a pre-permission check is performed before an app accesses protected resources such as the camera, microphone, or location.
 
@@ -101,7 +99,7 @@ Applicable to scenarios where a pre-permission check is performed before an app 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| tokenID | number | Yes | Identity identifier of the target app to be verified. It can be obtained through the [accessTokenId](arkts-ability-applicationinfo-i.md#accesstokenid) field in ApplicationInfo of BundleInfo. Passing an invalid value returns error code 12100001.<br>The value should be an integer. Value constraint: This parameter must be an integer greater than 0.<br>For BundleInfo acquisition, please refer to: [bundleManager.getBundleInfoSync](arkts-ability-bundlemanager-getbundleinfosync-f.md#getbundleinfosync-1).<br>If verifying the current app, it can also be obtained through [bundleManager.getBundleInfoForSelfSync](arkts-ability-bundlemanager-getbundleinfoforselfsync-f.md#getbundleinfoforselfsync-1). |
+| tokenID | number | Yes | Identity identifier of the target app to be verified. It can be obtained through the [accessTokenId](arkts-ability-applicationinfo-i.md#accesstokenid) field in ApplicationInfo of BundleInfo. Passing an invalid value returns error code 12100001.<br>The value should be an integer. Value constraint: This parameter must be an integer greater than 0.<br>For BundleInfo acquisition, please refer to: [bundleManager.getBundleInfoSync](arkts-ability-bundlemanager-getbundleinfosync-f.md#getbundleinfosync).<br>If verifying the current app, it can also be obtained through [bundleManager.getBundleInfoForSelfSync](arkts-ability-bundlemanager-getbundleinfoforselfsync-f.md#getbundleinfoforselfsync). |
 | permissionName | [Permissions](arkts-ability-permissions-t.md) | Yes | Name of the permission to be verified. Passing an invalid value returns error code 12100001.<br>Value constraint: The permission name length cannot exceed 256 characters. |
 
 **Return value:**
@@ -136,14 +134,13 @@ console.info(`Result: ${data}`);
 
 ```
 
-<a id="getselfpermissionstatus"></a>
 ## getSelfPermissionStatus
 
 ```TypeScript
 getSelfPermissionStatus(permissionName: Permissions): PermissionStatus
 ```
 
-Queries the permission status of the current app and returns the result synchronously. After the call is successful, the status of the current permission is returned. Unlike [checkAccessToken](arkts-ability-abilityaccessctrl-atmanager-i.md#checkaccesstoken-1), this API does not require passing in the app identity and is only used to query the permission status of the current app itself.
+Queries the permission status of the current app and returns the result synchronously. After the call is successful, the status of the current permission is returned. Unlike [checkAccessToken](arkts-ability-abilityaccessctrl-atmanager-i.md#checkaccesstoken), this API does not require passing in the app identity and is only used to query the permission status of the current app itself.
 
 Applicable to scenarios such as before determining whether to request a permission, confirming the authorization result after a permission request, or re-querying after monitoring a permission status change.
 
@@ -193,7 +190,6 @@ try {
 
 ```
 
-<a id="off"></a>
 ## off('selfPermissionStateChange')
 
 ```TypeScript
@@ -216,15 +212,7 @@ This API is usually used in conjunction with [on](abilityAccessCtrl.AtManager.on
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
 
-<!--Device-AtManager-off(
-      type: 'selfPermissionStateChange',
-      permissionList: Array<Permissions>,
-      callback?: Callback<PermissionStateChangeInfo>
-    ): void--><!--Device-AtManager-off(
-      type: 'selfPermissionStateChange',
-      permissionList: Array<Permissions>,
-      callback?: Callback<PermissionStateChangeInfo>
-    ): void-End-->
+<!--Device-AtManager-off(      type: 'selfPermissionStateChange',      permissionList: Array<Permissions>,      callback?: Callback<PermissionStateChangeInfo>    ): void--><!--Device-AtManager-off(      type: 'selfPermissionStateChange',      permissionList: Array<Permissions>,      callback?: Callback<PermissionStateChangeInfo>    ): void-End-->
 
 **System capability:** SystemCapability.Security.AccessToken
 
@@ -264,7 +252,6 @@ try {
 
 ```
 
-<a id="on"></a>
 ## on('selfPermissionStateChange')
 
 ```TypeScript
@@ -291,15 +278,7 @@ This API is usually used in conjunction with [off](abilityAccessCtrl.AtManager.o
 
 **Atomic service API:** This API can be used in atomic services since API version 18.
 
-<!--Device-AtManager-on(
-      type: 'selfPermissionStateChange',
-      permissionList: Array<Permissions>,
-      callback: Callback<PermissionStateChangeInfo>
-    ): void--><!--Device-AtManager-on(
-      type: 'selfPermissionStateChange',
-      permissionList: Array<Permissions>,
-      callback: Callback<PermissionStateChangeInfo>
-    ): void-End-->
+<!--Device-AtManager-on(      type: 'selfPermissionStateChange',      permissionList: Array<Permissions>,      callback: Callback<PermissionStateChangeInfo>    ): void--><!--Device-AtManager-on(      type: 'selfPermissionStateChange',      permissionList: Array<Permissions>,      callback: Callback<PermissionStateChangeInfo>    ): void-End-->
 
 **System capability:** SystemCapability.Security.AccessToken
 
@@ -344,7 +323,6 @@ try {
 
 ```
 
-<a id="openpermissiononsetting"></a>
 ## openPermissionOnSetting
 
 ```TypeScript
@@ -353,7 +331,7 @@ openPermissionOnSetting(context: Context, permission: Permissions): Promise<Sele
 
 Used by [UIAbility](arkts-ability-app-ability-uiability-uiability-c.md)/[UIExtensionAbility](arkts-ability-app-ability-uiextensionability-uiextensionability-c.md) to bring up the permission settings page. After the call is successful, the permission settings page will be opened. After the user operates on the page, the user's selection result on the settings page will be returned. This API uses a promise to return the result.
 
-Applicable to scenarios where [manual_settings](docroot://security/AccessToken/app-permission-mgmt-overview.md#manual_settings-manual-authorization)type permissions cannot be applied for through the normal authorization dialog box and the user must be guided to enter system settings to complete authorization. manual_settings type permissions are permissions that can only be manually enabled by the user in system settings and cannot be directly applied for through the normal authorization dialog box.
+Applicable to scenarios where [manual_settings](../../../security/AccessToken/app-permission-mgmt-overview.md#manual_settings-manual-authorization)type permissions cannot be applied for through the normal authorization dialog box and the user must be guided to enter system settings to complete authorization. manual_settings type permissions are permissions that can only be manually enabled by the user in system settings and cannot be directly applied for through the normal authorization dialog box.
 
 **Since:** 22
 
@@ -368,7 +346,7 @@ Applicable to scenarios where [manual_settings](docroot://security/AccessToken/a
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | context | [Context](../../apis-mind-spore-lite-kit/arkts-apis/arkts-mindsporelite-mindsporelite-context-i.md) | Yes | Context of the UIAbility or UIExtensionAbility requesting the permission. If the context of another app, an invalid page, or a non-stage model is passed in, the API may report an error or fail to open the settings page. |
-| permission | [Permissions](arkts-ability-permissions-t.md) | Yes | Name of the permission for which the settings page needs to be opened. If an invalid permission or a permission not declared in module.json is passed in, error code 12100001 is returned.Only permissions of the [manual_settings](docroot://security/AccessToken/app-permission-mgmt-overview.md#manual_settings-manual-authorization)type are supported. If a permission of another type is passed in, error code 12100014 is returned.<br>Value constraint: The permission name cannot exceed 256 characters. |
+| permission | [Permissions](arkts-ability-permissions-t.md) | Yes | Name of the permission for which the settings page needs to be opened. If an invalid permission or a permission not declared in module.json is passed in, error code 12100001 is returned.Only permissions of the [manual_settings](../../../security/AccessToken/app-permission-mgmt-overview.md#manual_settings-manual-authorization)type are supported. If a permission of another type is passed in, error code 12100014 is returned.<br>Value constraint: The permission name cannot exceed 256 characters. |
 
 **Return value:**
 
@@ -405,7 +383,6 @@ atManager.openPermissionOnSetting(context, 'ohos.permission.HOOK_KEY_EVENT').the
 
 ```
 
-<a id="requestglobalswitch"></a>
 ## requestGlobalSwitch
 
 ```TypeScript
@@ -420,7 +397,7 @@ When an app needs to use functions such as the camera, microphone, or location t
 
 <!--RP5-->
 
-![requestGlobalSwitch](docroot://reference/apis-ability-kit/figures/requestGlobalSwitch.png)
+![requestGlobalSwitch](../../../reference/apis-ability-kit/figures/requestGlobalSwitch.png)
 
 <!--RP5End-->
 
@@ -456,7 +433,6 @@ When an app needs to use functions such as the camera, microphone, or location t
 | [12100009](../errorcode-access-token.md#12100009-internal-service-error) | Common inner error. An error occurs when creating the pop-up window or obtaining user operation result. |
 | [12100013](../errorcode-access-token.md#12100013-global-switch-enabled) | The specific global switch is already open. |
 
-<a id="requestpermissiononsetting"></a>
 ## requestPermissionOnSetting
 
 ```TypeScript
@@ -467,11 +443,11 @@ Used by [UIAbility](arkts-ability-app-ability-uiability-uiability-c.md)/[UIExten
 
 Applicable to scenarios where the user has already denied the permission grant in the first dialog box and needs to continue applying for the permission through the settings page.
 
-Before calling this API, the app needs to call [requestPermissionsFromUser](arkts-ability-abilityaccessctrl-atmanager-i.md#requestpermissionsfromuser-1) first.If the user has already authorized in the first dialog box, calling this API will not bring up the authorization dialog box.
+Before calling this API, the app needs to call [requestPermissionsFromUser](arkts-ability-abilityaccessctrl-atmanager-i.md#requestpermissionsfromuser) first.If the user has already authorized in the first dialog box, calling this API will not bring up the authorization dialog box.
 
 <!--RP4-->
 
-![requestPermissionOnSetting](docroot://reference/apis-ability-kit/figures/requestPermissionOnSetting.png)
+![requestPermissionOnSetting](../../../reference/apis-ability-kit/figures/requestPermissionOnSetting.png)
 
 <!--RP4End-->
 
@@ -490,7 +466,7 @@ Before calling this API, the app needs to call [requestPermissionsFromUser](arkt
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | context | [Context](../../apis-mind-spore-lite-kit/arkts-apis/arkts-mindsporelite-mindsporelite-context-i.md) | Yes | Context of the UIAbility or UIExtensionAbility requesting the permission. If the context of another app, an invalid page, or a non-stage model is passed in, the API may report an error or fail to display the pop-up window. |
-| permissionList | Array&lt;Permissions&gt; | Yes | List of permission names. This array cannot be empty. Only user_grant permissions that have been declared and for which the user has revoked authorization can be passed in, and the permissions passed in must belong to the same [permission group](docroot://security/AccessToken/app-permission-group-list.md).<br>Value constraint: The permission name length cannot exceed 256 characters. |
+| permissionList | Array&lt;Permissions&gt; | Yes | List of permission names. This array cannot be empty. Only user_grant permissions that have been declared and for which the user has revoked authorization can be passed in, and the permissions passed in must belong to the same [permission group](../../../security/AccessToken/app-permission-group-list.md).<br>Value constraint: The permission name length cannot exceed 256 characters. |
 
 **Return value:**
 
@@ -509,22 +485,21 @@ Before calling this API, the app needs to call [requestPermissionsFromUser](arkt
 | [12100012](../errorcode-access-token.md#12100012-not-all-permissions-are-rejected-by-the-user) | The permission list contains the permission that has not been revoked by the user. |
 | [12100014](../errorcode-access-token.md#12100014-unexpected-permission) | Unexpected permission. You cannot request this type of permission from users via a pop-up window.<br>**Applicable version:** 21 and later |
 
-<a id="requestpermissionsfromuser"></a>
 ## requestPermissionsFromUser
 
 ```TypeScript
 requestPermissionsFromUser(context: Context, permissionList: Array<Permissions>, requestCallback: AsyncCallback<PermissionRequestResult>) : void
 ```
 
-Used by <!--RP1-->[UIAbility](arkts-ability-app-ability-uiability-uiability-c.md)<!--RP1End--> to bring up a dialog box to request [user authorization](docroot://security/AccessToken/request-user-authorization.md), and returns the authorization result of the permissions requested this time. This API uses an asynchronous callback to return the result.
+Used by <!--RP1-->[UIAbility](arkts-ability-app-ability-uiability-uiability-c.md)<!--RP1End--> to bring up a dialog box to request [user authorization](../../../security/AccessToken/request-user-authorization.md), and returns the authorization result of the permissions requested this time. This API uses an asynchronous callback to return the result.
 
-Applicable to scenarios where an app proactively applies for [user_grant](docroot://security/AccessToken/app-permission-mgmt-overview.md#user_grant-user-authorization)permissions from the user before accessing protected resources for the first time.
+Applicable to scenarios where an app proactively applies for [user_grant](../../../security/AccessToken/app-permission-mgmt-overview.md#user_grant-user-authorization)permissions from the user before accessing protected resources for the first time.
 
-If the user denies authorization, the authorization dialog box cannot be brought up again through this API.The developer can guide the user to go to the system settings interface for manual authorization, or call [requestPermissionOnSetting](arkts-ability-abilityaccessctrl-atmanager-i.md#requestpermissiononsetting-1) to bring up the permission settings dialog box to guide the user to complete authorization.
+If the user denies authorization, the authorization dialog box cannot be brought up again through this API.The developer can guide the user to go to the system settings interface for manual authorization, or call [requestPermissionOnSetting](arkts-ability-abilityaccessctrl-atmanager-i.md#requestpermissiononsetting) to bring up the permission settings dialog box to guide the user to complete authorization.
 
 <!--RP3-->
 
-![requestPermissionsFromUser](docroot://reference/apis-ability-kit/figures/requestPermissionsFromUser.png)
+![requestPermissionsFromUser](../../../reference/apis-ability-kit/figures/requestPermissionsFromUser.png)
 
 <!--RP3End-->
 
@@ -581,18 +556,17 @@ atManager.requestPermissionsFromUser(context, ['ohos.permission.CAMERA'], (err: 
 
 ```
 
-<a id="requestpermissionsfromuser-1"></a>
 ## requestPermissionsFromUser
 
 ```TypeScript
 requestPermissionsFromUser(context: Context, permissionList: Array<Permissions>) : Promise<PermissionRequestResult>
 ```
 
-Used by <!--RP1-->[UIAbility](arkts-ability-app-ability-uiability-uiability-c.md)<!--RP1End--> to bring up a dialog box to request [user authorization](docroot://security/AccessToken/request-user-authorization.md), and returns the authorization result of the permissions requested this time. This API uses a promise to return the result.
+Used by <!--RP1-->[UIAbility](arkts-ability-app-ability-uiability-uiability-c.md)<!--RP1End--> to bring up a dialog box to request [user authorization](../../../security/AccessToken/request-user-authorization.md), and returns the authorization result of the permissions requested this time. This API uses a promise to return the result.
 
 Applicable to scenarios where an app proactively applies for user_grant permissions from the user before accessing protected resources for the first time.
 
-If the user denies authorization, the authorization dialog box cannot be brought up again through this API.The developer can guide the user to go to the system settings interface for manual authorization, or call [requestPermissionOnSetting](arkts-ability-abilityaccessctrl-atmanager-i.md#requestpermissiononsetting-1) to bring up the permission settings dialog box to guide the user to complete authorization.
+If the user denies authorization, the authorization dialog box cannot be brought up again through this API.The developer can guide the user to go to the system settings interface for manual authorization, or call [requestPermissionOnSetting](arkts-ability-abilityaccessctrl-atmanager-i.md#requestpermissiononsetting) to bring up the permission settings dialog box to guide the user to complete authorization.
 
 **Since:** 9
 
@@ -650,7 +624,6 @@ atManager.requestPermissionsFromUser(context, ['ohos.permission.CAMERA']).then((
 
 ```
 
-<a id="verifyaccesstoken"></a>
 ## verifyAccessToken
 
 ```TypeScript
@@ -660,9 +633,8 @@ verifyAccessToken(tokenID: number, permissionName: Permissions): Promise<GrantSt
 Verifies whether an app has been granted the specified permission. After the call is successful, the authorization status of the current permission is returned. The developer can decide accordingly whether to directly execute subsequent services, continue to initiate a permission request, or guide the user to go to system settings to modify the authorization status. This API uses a promise to return the result.
 
 Applicable to scenarios where a pre-permission check is performed before an app accesses protected resources.
-
 > **NOTE**  
-> You are advised to use [checkAccessToken](arkts-ability-abilityaccessctrl-atmanager-i.md#checkaccesstoken-1).
+> You are advised to use [checkAccessToken](arkts-ability-abilityaccessctrl-atmanager-i.md#checkaccesstoken).
 
 **Since:** 9
 
@@ -674,7 +646,7 @@ Applicable to scenarios where a pre-permission check is performed before an app 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| tokenID | number | Yes | Identity identifier of the target app to be verified. It can be obtained through the [accessTokenId](arkts-ability-applicationinfo-i.md#accesstokenid) field in ApplicationInfo of BundleInfo. Passing an invalid value returns error code 12100001.<br>The value should be an integer. Value constraint: This parameter must be an integer greater than 0.<br>For BundleInfo acquisition, please refer to: [bundleManager.getBundleInfoSync](arkts-ability-bundlemanager-getbundleinfosync-f.md#getbundleinfosync-1).<br>If verifying the current app, it can also be obtained through [bundleManager.getBundleInfoForSelfSync](arkts-ability-bundlemanager-getbundleinfoforselfsync-f.md#getbundleinfoforselfsync-1). |
+| tokenID | number | Yes | Identity identifier of the target app to be verified. It can be obtained through the [accessTokenId](arkts-ability-applicationinfo-i.md#accesstokenid) field in ApplicationInfo of BundleInfo. Passing an invalid value returns error code 12100001.<br>The value should be an integer. Value constraint: This parameter must be an integer greater than 0.<br>For BundleInfo acquisition, please refer to: [bundleManager.getBundleInfoSync](arkts-ability-bundlemanager-getbundleinfosync-f.md#getbundleinfosync).<br>If verifying the current app, it can also be obtained through [bundleManager.getBundleInfoForSelfSync](arkts-ability-bundlemanager-getbundleinfoforselfsync-f.md#getbundleinfoforselfsync). |
 | permissionName | [Permissions](arkts-ability-permissions-t.md) | Yes | Name of the permission to be verified. Passing an invalid value returns error code 12100001.<br>Value constraint: The permission name length cannot exceed 256 characters. |
 
 **Return value:**
@@ -706,7 +678,6 @@ atManager.verifyAccessToken(tokenID, permissionName).then((data: abilityAccessCt
 
 ```
 
-<a id="verifyaccesstoken-1"></a>
 ## verifyAccessToken
 
 ```TypeScript
@@ -714,10 +685,9 @@ verifyAccessToken(tokenID: number, permissionName: string): Promise<GrantStatus>
 ```
 
 Verifies whether an app has been granted the specified permission. After the call is successful, the authorization status of the current permission is returned, and the developer can decide on subsequent operations accordingly. This API uses a promise to return the result.
-
 > **NOTE**  
 > This API is supported since API version 8 and deprecated since API version 9. It is recommended to use  
-> [checkAccessToken](arkts-ability-abilityaccessctrl-atmanager-i.md#checkaccesstoken-1) instead.
+> [checkAccessToken](arkts-ability-abilityaccessctrl-atmanager-i.md#checkaccesstoken) instead.
 
 **Since:** 8
 
@@ -733,7 +703,7 @@ Verifies whether an app has been granted the specified permission. After the cal
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| tokenID | number | Yes | Identity identifier of the target app to be verified. It can be obtained through the [accessTokenId](arkts-ability-applicationinfo-i.md#accesstokenid) field in ApplicationInfo of BundleInfo. Passing an invalid value returns error code 12100001.<br>The value should be an integer. Value constraint: This parameter must be an integer greater than 0.<br>For BundleInfo acquisition, please refer to: [bundleManager.getBundleInfoSync](arkts-ability-bundlemanager-getbundleinfosync-f.md#getbundleinfosync-1).<br>If verifying the current app, it can also be obtained through [bundleManager.getBundleInfoForSelfSync](arkts-ability-bundlemanager-getbundleinfoforselfsync-f.md#getbundleinfoforselfsync-1). |
+| tokenID | number | Yes | Identity identifier of the target app to be verified. It can be obtained through the [accessTokenId](arkts-ability-applicationinfo-i.md#accesstokenid) field in ApplicationInfo of BundleInfo. Passing an invalid value returns error code 12100001.<br>The value should be an integer. Value constraint: This parameter must be an integer greater than 0.<br>For BundleInfo acquisition, please refer to: [bundleManager.getBundleInfoSync](arkts-ability-bundlemanager-getbundleinfosync-f.md#getbundleinfosync).<br>If verifying the current app, it can also be obtained through [bundleManager.getBundleInfoForSelfSync](arkts-ability-bundlemanager-getbundleinfoforselfsync-f.md#getbundleinfoforselfsync). |
 | permissionName | string | Yes | Name of the permission to be verified. Passing an invalid value returns error code 12100001.<br>Value constraint: The permission name length cannot exceed 256 characters. |
 
 **Return value:**
@@ -765,7 +735,6 @@ atManager.verifyAccessToken(tokenID, permissionName).then((data: abilityAccessCt
 
 ```
 
-<a id="verifyaccesstokensync"></a>
 ## verifyAccessTokenSync
 
 ```TypeScript
@@ -776,7 +745,7 @@ Verifies whether an app has been granted the specified permission, and synchrono
 
 Applicable to scenarios where a pre-permission check is performed before an app accesses protected resources such as the camera, microphone, or location.
 
-It is recommended to use [checkAccessTokenSync](arkts-ability-abilityaccessctrl-atmanager-i.md#checkaccesstokensync-1) instead.
+It is recommended to use [checkAccessTokenSync](arkts-ability-abilityaccessctrl-atmanager-i.md#checkaccesstokensync) instead.
 
 **Since:** 9
 
@@ -788,7 +757,7 @@ It is recommended to use [checkAccessTokenSync](arkts-ability-abilityaccessctrl-
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| tokenID | number | Yes | Identity identifier of the target app to be verified. It can be obtained through the [accessTokenId](arkts-ability-applicationinfo-i.md#accesstokenid) field in ApplicationInfo of BundleInfo. Passing an invalid value returns error code 12100001.<br>The value should be an integer. Value constraint: This parameter must be an integer greater than 0.<br>For BundleInfo acquisition, please refer to: [bundleManager.getBundleInfoSync](arkts-ability-bundlemanager-getbundleinfosync-f.md#getbundleinfosync-1).<br>If verifying the current app, it can also be obtained through [bundleManager.getBundleInfoForSelfSync](arkts-ability-bundlemanager-getbundleinfoforselfsync-f.md#getbundleinfoforselfsync-1). |
+| tokenID | number | Yes | Identity identifier of the target app to be verified. It can be obtained through the [accessTokenId](arkts-ability-applicationinfo-i.md#accesstokenid) field in ApplicationInfo of BundleInfo. Passing an invalid value returns error code 12100001.<br>The value should be an integer. Value constraint: This parameter must be an integer greater than 0.<br>For BundleInfo acquisition, please refer to: [bundleManager.getBundleInfoSync](arkts-ability-bundlemanager-getbundleinfosync-f.md#getbundleinfosync).<br>If verifying the current app, it can also be obtained through [bundleManager.getBundleInfoForSelfSync](arkts-ability-bundlemanager-getbundleinfoforselfsync-f.md#getbundleinfoforselfsync). |
 | permissionName | [Permissions](arkts-ability-permissions-t.md) | Yes | Name of the permission to be verified. Passing an invalid value returns error code 12100001.<br>Value constraint: The permission name length cannot exceed 256 characters. |
 
 **Return value:**

@@ -6,7 +6,6 @@
 import { applicationManager } from '@kit.MDMKit';
 ```
 
-<a id="removehidelaunchericon"></a>
 ## removeHideLauncherIcon
 
 ```TypeScript

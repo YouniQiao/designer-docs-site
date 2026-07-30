@@ -6,7 +6,6 @@
 import { LevelMode, ImmersiveMode, LevelOrder } from '@kit.ArkUI';
 ```
 
-<a id="opencustomdialog"></a>
 ## openCustomDialog
 
 ```TypeScript
@@ -18,7 +17,6 @@ Opens a custom dialog box. This API uses a promise to return the result.
 <!--Del-->This API cannot be used in **ServiceExtension**.<!--DelEnd-->
 
 By default, the width of the dialog box in portrait mode is the width of the window where it is located minus the left and right margins (40 vp for 2-in-1 devices and 16 vp for other devices), and the maximum width is 400 vp.
-
 > **NOTE**  
 >  
 > - This API is supported since API version 11 and deprecated since API version 18.You are advised to use [openCustomDialog](arkts-apis-uicontext-promptaction.md#opencustomdialog12-1) instead.Before calling this API, you need to obtain the [PromptAction](arkts-apis-uicontext-promptaction.md) object using the [getPromptAction](arkts-apis-uicontext-uicontext.md#getpromptaction) method in [UIContext](arkts-apis-uicontext-uicontext.md).Directly using **openCustomDialog** can lead to the issue of [ambiguous UI context](../../ui/arkts-global-interface.md#ambiguous-ui-context).  

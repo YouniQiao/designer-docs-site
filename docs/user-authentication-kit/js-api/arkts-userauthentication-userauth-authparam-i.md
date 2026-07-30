@@ -99,10 +99,10 @@ Information about the authentication result reuse. After this parameter is set, 
 skipLockedBiometricAuth?: boolean
 ```
 
-Whether to skip the authentication mode that has been locked and automatically switch to another authentication mode. If no authentication mode can be switched to, the component is disabled and an authentication freezing error code is returned.
+Whether to skip the frozen authentication mode and automatically switch to another mode. If no alternative authentication mode is available, the widget is closed and an authentication freeze error code is returned.
 
-- **true**: When biometric authentication is locked, the system skips the countdown screen and directly switches to another authentication type (for example, from the locked fingerprint to the PIN). This is applicable to scenarios where quick authentication is required.  
-- **false** (default): The system does not skip the countdown screen. The user needs to wait until the countdown ends before attempting the authentication method again or manually switching to another method.
+- **true**: When biometric authentication is locked, the countdown UI is skipped and the system directly switches to another authentication mode (for example, switching from a locked fingerprint to PIN). This is suitable for scenarios where quick authentication is desired.  
+- **false** (default): The countdown is not skipped. The user must wait for the lock countdown to end before retrying the authentication mode or manually switching.
 
 **Type:** boolean
 

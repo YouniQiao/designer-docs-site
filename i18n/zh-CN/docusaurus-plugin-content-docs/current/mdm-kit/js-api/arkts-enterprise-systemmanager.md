@@ -29,10 +29,12 @@ import { systemManager } from '@kit.MDMKit';
 | [addKeyEventPolicies](arkts-mdm-systemmanager-addkeyeventpolicies-f.md#addkeyeventpolicies) | 添加按键事件处理策略。系统触发按键事件时，若匹配下发的按键事件策略，将通过[EnterpriseAdminExtensionAbility.onKeyEvent](arkts-mdm-enterprise-enterpriseadminextensionability-enterpriseadminextensionability-c.md#onkeyevent)回调通知MDM应用，并携带匹配策略的按键事件信息。 |
 | [finishLogCollected](arkts-mdm-systemmanager-finishlogcollected-f.md#finishlogcollected) | 删除本MDM应用在当前用户下收集到的设备日志。 |
 | [getAutoUnlockAfterReboot](arkts-mdm-systemmanager-getautounlockafterreboot-f.md#getautounlockafterreboot) | 获取设备是否重启自动解锁。 |
+| [getAutoUnlockAfterReboot](arkts-mdm-systemmanager-getautounlockafterreboot-f.md#getautounlockafterreboot-1) | 获取设备是否重启自动解锁。适用于需要验证设备重启解锁策略是否正确配置的场景，帮助企业管理员确认设备自动解锁功能状态。 |
 | [getDisallowedNearLinkProtocols](arkts-mdm-systemmanager-getdisallowednearlinkprotocols-f.md#getdisallowednearlinkprotocols) | 获取指定用户下禁用的星闪协议名单。 |
 | [getInstallLocalEnterpriseAppEnabled](arkts-mdm-systemmanager-getinstalllocalenterpriseappenabled-f.md#getinstalllocalenterpriseappenabled) | 查询是否支持本地安装企业应用。 |
 | [getInstallLocalEnterpriseAppEnabledForAccount](arkts-mdm-systemmanager-getinstalllocalenterpriseappenabledforaccount-f.md#getinstalllocalenterpriseappenabledforaccount) | 查询指定用户是否支持本地安装企业应用。 |
 | [getKeyEventPolicies](arkts-mdm-systemmanager-getkeyeventpolicies-f.md#getkeyeventpolicies) | 获取按键事件处理策略。 |
+| [getKeyEventPolicies](arkts-mdm-systemmanager-getkeyeventpolicies-f.md#getkeyeventpolicies-1) | 获取按键事件处理策略。适用于需要查询当前按键事件处理策略配置的场景，帮助企业管理员验证策略是否正确下发，或在进行策略调整前获取当前配置。 |
 | [getNTPServer](arkts-mdm-systemmanager-getntpserver-f.md#getntpserver) | 获取NTP时间服务器信息。 |
 | [getOtaUpdatePolicy](arkts-mdm-systemmanager-getotaupdatepolicy-f.md#getotaupdatepolicy) | 查询升级策略。 |
 | [getUpdateAuthData](arkts-mdm-systemmanager-getupdateauthdata-f.md#getupdateauthdata) | 获取系统更新的鉴权数据，用于校验系统更新信息。使用Promise异步回调。 |

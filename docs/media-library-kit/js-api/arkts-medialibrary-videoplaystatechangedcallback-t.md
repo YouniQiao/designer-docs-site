@@ -18,5 +18,5 @@ The callback of onVideoPlayStateChanged event
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| state | VideoPlayerState | Yes |  |
+| state | [VideoPlayerState](arkts-medialibrary-file-photopickercomponent-videoplayerstate-e.md) | Yes |  |
 

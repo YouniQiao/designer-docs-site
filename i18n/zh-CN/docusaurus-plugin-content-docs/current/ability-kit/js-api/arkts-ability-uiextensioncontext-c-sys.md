@@ -59,7 +59,7 @@ connectServiceExtensionAbilityWithRootHostToken(want: Want, connect: ConnectOpti
 | [16000012](../errorcode-ability.md#16000012-应用被管控) | The application is controlled. |
 | [16000013](../errorcode-ability.md#16000013-应用被edm管控) | The application is controlled by EDM. |
 | [16000050](../errorcode-ability.md#16000050-内部错误) | Internal error. Possible causes: 1. Connect to system service failed;2.Send restart message to system service failed; 3.System service failed to communicate with dependency module. |
-| [16000053](../errorcode-ability.md#16000053-非顶层应用) | The ability is not on the top of the UI. |
+| [16000053](../errorcode-ability.md#16000053-非顶层ability) | The ability is not on the top of the UI. |
 | [16000070](../errorcode-ability.md#16000070-严格模式下不允许该类型extension启动指定serviceextensionability) | The extension cannot start the service. |
 
 ## setHostPageOverlayForbidden
@@ -204,7 +204,7 @@ startServiceExtensionAbility(want: Want): Promise<void>
 | [16000011](../errorcode-ability.md#16000011-上下文对象不存在) | The context does not exist. |
 | [16000012](../errorcode-ability.md#16000012-应用被管控) | The application is controlled. |
 | [16000013](../errorcode-ability.md#16000013-应用被edm管控) | The application is controlled by EDM. |
-| [16000019](../errorcode-ability.md#16000019-隐式启动未查找到匹配应用) | No matching ability is found. |
+| [16000019](../errorcode-ability.md#16000019-隐式启动未查找到匹配ability) | No matching ability is found. |
 | [16000050](../errorcode-ability.md#16000050-内部错误) | Internal error. |
 | [16200001](../errorcode-ability.md#16200001-通用组件客户端caller已回收) | The caller has been released. |
 
@@ -262,7 +262,7 @@ startServiceExtensionAbilityWithAccount(want: Want, accountId: number): Promise<
 | [16000011](../errorcode-ability.md#16000011-上下文对象不存在) | The context does not exist. |
 | [16000012](../errorcode-ability.md#16000012-应用被管控) | The application is controlled. |
 | [16000013](../errorcode-ability.md#16000013-应用被edm管控) | The application is controlled by EDM. |
-| [16000019](../errorcode-ability.md#16000019-隐式启动未查找到匹配应用) | No matching ability is found. |
+| [16000019](../errorcode-ability.md#16000019-隐式启动未查找到匹配ability) | No matching ability is found. |
 | [16000050](../errorcode-ability.md#16000050-内部错误) | Internal error. |
 | [16200001](../errorcode-ability.md#16200001-通用组件客户端caller已回收) | The caller has been released. |
 
@@ -323,7 +323,7 @@ startUIAbilities(wantList: Array<Want>): Promise<void>
 | [16000122](../errorcode-ability.md#16000122-待启动的目标组件被系统管控模块拦截) | The target component is blocked by the system module and does not support startup. |
 | [16000123](../errorcode-ability.md#16000123-不支持隐式启动) | Implicit startup is not supported. |
 | [16000124](../errorcode-ability.md#16000124-不支持启动分布式uiability) | Starting a remote UIAbility is not supported. |
-| [16000125](../errorcode-ability.md#16000125-不支持启动插件) | Starting a plugin UIAbility is not supported. |
+| [16000125](../errorcode-ability.md#16000125-不支持启动插件uiability) | Starting a plugin UIAbility is not supported. |
 | [16000126](../errorcode-ability.md#16000126-不支持启动dlp文件) | Starting DLP files is not supported. |
 
 ## startUIAbilitiesInSplitWindowMode
@@ -389,6 +389,6 @@ startUIAbilitiesInSplitWindowMode(primaryWindowId: number, secondaryWant: Want):
 | [16000122](../errorcode-ability.md#16000122-待启动的目标组件被系统管控模块拦截) | The target component is blocked by the system module and does not support startup. |
 | [16000123](../errorcode-ability.md#16000123-不支持隐式启动) | Implicit startup is not supported. |
 | [16000124](../errorcode-ability.md#16000124-不支持启动分布式uiability) | Starting a remote UIAbility is not supported. |
-| [16000125](../errorcode-ability.md#16000125-不支持启动插件) | Starting a plugin UIAbility is not supported. |
+| [16000125](../errorcode-ability.md#16000125-不支持启动插件uiability) | Starting a plugin UIAbility is not supported. |
 | [16000126](../errorcode-ability.md#16000126-不支持启动dlp文件) | Starting DLP files is not supported. |
 

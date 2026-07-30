@@ -1,6 +1,22 @@
 # FrameNode
 
-Defines FrameNode.
+**FrameNode** represents an entity node in the component tree. It can be used by a [NodeController](arkts-arkui-nodecontroller-c.md) to mount a [BuilderNode](arkts-arkui-buildernode-c.md) (that holds the FrameNode) to a [NodeContainer](../../apis-arkui/arkts-components/arkts-arkui-node_container-i) or mount a [RenderNode](arkts-arkui-rendernode-c.md) to another FrameNode.<!--RP2--><!--RP2End-->
+> **NOTE**  
+>  
+> - **FrameNode** is not available in DevEco Studio Previewer.  
+>  
+> - FrameNodes cannot be dragged.  
+>  
+> - FrameNode objects do not support JSON serialization.  
+>  
+> - When the API of the [FrameNode](arkts-arkui-framenode-c.md) object is invoked in the scenario of  
+> [ambiguous UI context](../../../ui/arkts-global-interface.md#ambiguous-ui-context), you are advised to use the  
+> [runScopedTask](arkts-arkui-arkui-uicontext-uicontext-c.md#runscopedtask) API of  
+> [UIContext](arkts-arkui-uicontext.md) to specify the UI context. For details, see  
+> [Executing the Closure Bound to a UI Instance](../../../ui/arkts-global-interface.md#executing-the-closure-bound-to-a-ui-instance).  
+>  
+> - In the FrameNode APIs, only the mandatory parameters of the [Optional](../arkts-components/arkts-arkui-optional-t.md) type can be set to null or  
+> undefined.
 
 **Since:** 11
 
@@ -116,7 +132,7 @@ Appends a child node to the end of this FrameNode. If this FrameNode is not modi
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| node | [FrameNode](arkts-arkui-framenode-c.md) | Yes | Child node to append.<br> The target node must not be a declaratively created node,that is, a FrameNode that is not modifiable. Only declarative nodes obtained from a BuilderNode can be used as child nodes. If the child node does not meet the specifications, an exception is thrown.<br> The FrameNode cannot have a parent node. Otherwise, an exception is thrown. |
+| node | [FrameNode](arkts-arkui-framenode-c.md) | Yes | Child node to append.<br> The target node must not be a declaratively created node, that is, a FrameNode that is not modifiable.Only declarative nodes obtained from a BuilderNode can be used as child nodes. If the child node does not meet the specifications, an exception is thrown.<br> The FrameNode cannot have a parent node. Otherwise, an exception is thrown. |
 
 **Error codes:**
 
@@ -338,8 +354,8 @@ Creates a property animation for the FrameNode.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | property | [AnimationPropertyType](arkts-arkui-animationpropertytype-e.md) | Yes | Animation property type. |
-| startValue | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;number[]&gt; | Yes | Animation start value. The value can be **undefined** or an array. If the value is **undefined**, the animation uses the last set value of the property on the node as the starting value. If the value is an array, the length must match the property type requirements:<br>-**AnimationPropertyType.ROTATION**: [rotationX, rotationY, rotationZ] in degrees (°).<br>-**AnimationPropertyType.TRANSLATION**: [translateX, translateY] in px.<br>- **AnimationPropertyType.SCALE**:[scaleX, scaleY](scale factors).<br>- **AnimationPropertyType.OPACITY**: [opacity](value range: [0, 1]).<br>For the first animation of a property, **startValue** must be explicitly specified. For subsequent animations,it is recommended that you either omit **startValue** or set it to the previous animation's end value to avoid abrupt changes. |
-| endValue | number[] | Yes | Animation end value. The value is an array. The array length must match the property type requirements:<br>- **AnimationPropertyType.ROTATION**: [rotationX, rotationY, rotationZ] in degrees (°).<br>- **AnimationPropertyType.TRANSLATION**: [translateX, translateY] in px.<br>-**AnimationPropertyType.SCALE**: [scaleX, scaleY](scale factors).<br>- **AnimationPropertyType.OPACITY**:[opacity](value range: [0, 1]). |
+| startValue | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;number[]&gt; | Yes | Animation start value. The value can be **undefined** or an array. If the value is **undefined**, the animation uses the last set value of the property on the node as the starting value. If the value is an array, the length must match the property type requirements:<br>- **AnimationPropertyType.ROTATION**: [rotationX, rotationY, rotationZ] in degrees (°).<br>- **AnimationPropertyType.TRANSLATION**: [translateX, translateY] in px.<br>- **AnimationPropertyType.SCALE**: [scaleX, scaleY](scale factors).<br>- **AnimationPropertyType.OPACITY**: [opacity](value range: [0, 1]).<br>For the first animation of a property, **startValue** must be explicitly specified. For subsequent animations, it is recommended that you either omit **startValue** or set it to the previous animation's end value to avoid abrupt changes. |
+| endValue | number[] | Yes | Animation end value. The value is an array. The array length must match the property type requirements:<br>- **AnimationPropertyType.ROTATION**: [rotationX, rotationY, rotationZ] in degrees (°).<br>- **AnimationPropertyType.TRANSLATION**: [translateX, translateY] in px.<br>- **AnimationPropertyType.SCALE**: [scaleX, scaleY](scale factors).<br>- **AnimationPropertyType.OPACITY**: [opacity](value range: [0, 1]). |
 | param | [AnimateParam](../arkts-components/arkts-arkui-animateparam-i.md) | Yes | Animation parameters, including the duration, animation curve, and end callback. |
 
 **Return value:**
@@ -515,7 +531,7 @@ Obtains the number of child nodes of this FrameNode.
 getChildrenCount(countMode?: ChildrenCountMode): number
 ```
 
-Get the children count of the current FrameNode with specified count mode.
+Obtains the number of child nodes of this FrameNode based on the specified counting mode.
 
 **Since:** 26.0.0
 
@@ -663,7 +679,7 @@ Searches for all child nodes layer by layer from the current node (which is used
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| id | string | Yes | ID of the child node to be queried, which is the same as the [component ID](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md). |
+| id | string | Yes | ID of the child node to be queried, which is the same as the [component ID](../../apis-arkui/arkts-components/arkts-arkui-common-attribute.md). |
 
 **Return value:**
 
@@ -693,7 +709,7 @@ Searches for and returns the child node with the specified unique ID (which can 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| id | number | Yes | Unique ID of the child node to be queried.<br>The value should be an integer. |
+| id | number | Yes | Unique ID of the child node to be queried. |
 
 **Return value:**
 
@@ -731,7 +747,7 @@ Obtains the position offset of this FrameNode relative to the global display, in
 getId(): string
 ```
 
-Obtains the node ID set by the user, which is the same as the value of the [component ID](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md).
+Obtains the node ID set by the user, which is the same as the value of the [component ID](../../apis-arkui/arkts-components/arkts-arkui-common-attribute.md).
 
 **Since:** 12
 
@@ -747,7 +763,7 @@ Obtains the node ID set by the user, which is the same as the value of the [comp
 
 | Type | Description |
 | --- | --- |
-| string | Node ID set by the user, which is the same as the value of the [component ID](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md). |
+| string | Node ID set by the user, which is the same as the value of the [component ID](../../apis-arkui/arkts-components/arkts-arkui-common-attribute.md). |
 
 ## getInspectorInfo
 
@@ -931,7 +947,7 @@ Obtains the property value of the FrameNode.
 
 | Type | Description |
 | --- | --- |
-| number[] | Current property value from the render node. The array length corresponds to the property type.<br>The return value format varies by property:<br>- An empty array (length 0) is returned if the node has been disposed, the [dispose](arkts-arkui-framenode-c.md#dispose)API has been called, or the property enumeration is invalid.<br>- **AnimationPropertyType.ROTATION**: [rotationX, rotationY, rotationZ] in degrees (°).<br>- **AnimationPropertyType.TRANSLATION**: [translateX, translateY] in px.<br>- **AnimationPropertyType.SCALE**: [scaleX, scaleY](scale factors).<br>- **AnimationPropertyType.OPACITY**: [opacity].<br>1. After animation cancellation, the node's property value is restored to the display value at the time of cancellation, which can be obtained using this API.<br>2. During animation playback, this API returns the final target value rather than real-time interpolated values.<br> |
+| number[] | Current property value from the render node. The array length corresponds to the property type.<br>The return value format varies by property:<br>- An empty array (length 0) is returned if the node has been disposed, the [dispose](arkts-arkui-framenode-c.md#dispose) API has been called, or the property enumeration is invalid.<br>- **AnimationPropertyType.ROTATION**: [rotationX, rotationY, rotationZ] in degrees (°).<br>- **AnimationPropertyType.TRANSLATION**: [translateX, translateY] in px.<br>- **AnimationPropertyType.SCALE**: [scaleX, scaleY](scale factors).<br>- **AnimationPropertyType.OPACITY**: [opacity].<br>1. After animation cancellation, the node's property value is restored to the display value at the time of cancellation, which can be obtained using this API.<br>2. During animation playback, this API returns the final target value rather than real-time interpolated values.<br> |
 
 ## getNodeType
 
@@ -939,7 +955,7 @@ Obtains the property value of the FrameNode.
 getNodeType(): string
 ```
 
-Obtains the type of the node. For built-in components, the node type corresponds to the component name. For example, the node type of the [Button](../../apis-input-kit/arkts-apis/arkts-input-multimodalinput-mouseevent-button-e.md) component is **Button**. For custom components that implement rendering, the node type is **__Common__**.
+Obtains the type of the node. For built-in components, the node type corresponds to the component name. For example, the node type of the [Button](../../apis-arkui/arkts-components/arkts-arkui-button-i) component is **Button**. For custom components that implement rendering, the node type is **__Common__**.
 
 **Since:** 12
 
@@ -1035,7 +1051,7 @@ Obtains the position offset of this FrameNode relative to the parent component, 
 getPositionToParentWithTransform(): Position
 ```
 
-Obtains the position offset of a FrameNode relative to its drawing-enabled parent component, in vp. Drawing attributes include [transform](../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-transformation.md#transform) and [translate](../arkts-components/arkts-arkui-commonmethod-c.md#translate). This API returns the upper left corner coordinates after component layout.
+Obtains the position offset of a FrameNode relative to its drawing-enabled parent component, in vp. Drawing attributes include [transform](../arkts-components/arkts-arkui-commonmethod-c.md#transform) and [translate](../arkts-components/arkts-arkui-commonmethod-c.md#translate). This API returns the upper left corner coordinates after component layout.
 
 **Since:** 12
 
@@ -1083,7 +1099,7 @@ Obtains the position offset of this FrameNode relative to the screen, in vp.
 getPositionToScreenWithTransform(): Position
 ```
 
-Obtains the position offset of a FrameNode relative to the drawing-enabled screen, in vp. Drawing attributes include [transform](../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-transformation.md#transform)and [translate](../arkts-components/arkts-arkui-commonmethod-c.md#translate). This API returns the upper left corner coordinates after component layout.
+Obtains the position offset of a FrameNode relative to the drawing-enabled screen, in vp. Drawing attributes include [transform](../arkts-components/arkts-arkui-commonmethod-c.md#transform) and [translate](../arkts-components/arkts-arkui-commonmethod-c.md#translate). This API returns the upper left corner coordinates after component layout.
 
 **Since:** 12
 
@@ -1131,7 +1147,7 @@ Obtains the position offset of this FrameNode relative to the window, in vp.
 getPositionToWindowWithTransform(): Position
 ```
 
-Obtains the position offset of a FrameNode relative to the drawing-enabled window, in vp. Drawing attributes include [transform](../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-transformation.md#transform)and [translate](../arkts-components/arkts-arkui-commonmethod-c.md#translate). This API returns the upper left corner coordinates after component layout.
+Obtains the position offset of a FrameNode relative to the drawing-enabled window, in vp. Drawing attributes include [transform](../arkts-components/arkts-arkui-commonmethod-c.md#transform) and [translate](../arkts-components/arkts-arkui-commonmethod-c.md#translate). This API returns the upper left corner coordinates after component layout.
 
 **Since:** 12
 
@@ -1339,7 +1355,7 @@ Inserts a child node after the specified child node of this FrameNode. If this F
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| child | [FrameNode](arkts-arkui-framenode-c.md) | Yes | Child node to add.<br>The target child node must not be a declaratively created node,that is, a FrameNode that is not modifiable. Only declarative nodes obtained from a BuilderNode can be used as child nodes. If the child node does not meet the specifications, an exception is thrown.<br> The child node cannot have a parent node. Otherwise, an exception is thrown. |
+| child | [FrameNode](arkts-arkui-framenode-c.md) | Yes | Child node to add.<br>The target child node must not be a declaratively created node, that is, a FrameNode that is not modifiable. Only declarative nodes obtained from a BuilderNode can be used as child nodes. If the child node does not meet the specifications, an exception is thrown.<br> The child node cannot have a parent node. Otherwise, an exception is thrown. |
 | sibling | [FrameNode](arkts-arkui-framenode-c.md) \| null | Yes | Node after which the new child node will be inserted. If this parameter is left empty, the new node is inserted before the first subnode. |
 
 **Error codes:**
@@ -1652,8 +1668,9 @@ Moves this FrameNode to a specified position within the target FrameNode. If thi
 > other node types.  
 >  
 > This API only supports [BuilderNode](arkts-arkui-buildernode-c.md) with root components of these types:  
-> [Stack](../../apis-arkts/arkts-apis/arkts-arkts-util-stack-stack-c.md), [XComponent](../arkts-components/arkts-arkui-xcomponent.md), [EmbeddedComponent](../arkts-components/arkts-arkui-embeddedcomponent.md). This API  
-> does not work for other component types.
+> [Stack](../../apis-arkui/arkts-components/arkts-arkui-stack-i), [XComponent](../../apis-arkui/arkts-components/arkts-arkui-xcomponent-i),  
+> [EmbeddedComponent](../../apis-arkui/arkts-components/arkts-arkui-embedded_component-i). This API does not work for other  
+> component types.
 
 **Since:** 18
 
@@ -1853,7 +1870,7 @@ Removes the state processing registration from the component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| uiStates | number | Yes | UI states to be removed.<br>Multiple states can be specified simultaneously using bitwise OR operations, for example, **targetUIStates = UIState.PRESSED  \|  UIState.FOCUSED**. |
+| uiStates | number | Yes | UI states to be removed.<br>Multiple states can be specified simultaneously using bitwise OR operations, for example,**targetUIStates = UIState.PRESSED  \|  UIState.FOCUSED**. |
 
 ## reuse
 
@@ -1988,13 +2005,13 @@ Marks this FrameNode as needing layout, so that it will be relaid out in the nex
 get commonAttribute(): CommonAttribute
 ```
 
-Obtains the **CommonAttribute** API associated with the FrameNode, which is used to configure [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) and [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md).
+Obtains the **CommonAttribute** API associated with the FrameNode, which is used to configure [universal attributes](../../apis-arkui/arkts-components/arkts-arkui-common-attribute.md) and [universal events](../../apis-arkui/arkts-components/arkts-arkui-common-attribute.md).
 
 Note that only the attributes of a custom node can be modified.
 > **NOTE**  
 >  
-> The visual representation of the FrameNode is similar to that of a [Stack](../../apis-arkts/arkts-apis/arkts-arkts-util-stack-stack-c.md) container that is aligned  
-> to the top start edge.  
+> The visual representation of the FrameNode is similar to that of a  
+> [Stack](../../apis-arkui/arkts-components/arkts-arkui-stack-i) container that is aligned to the top start edge.  
 >  
 > For details about the supported attributes, see  
 > [attributeModifier Support for Attributes and Events](../../../ui/arkts-user-defined-extension-attributeModifier.md#attributemodifier-support-for-attributes-and-events).
@@ -2039,7 +2056,7 @@ In scenarios involving **LazyForEach**, where nodes may be destroyed and reconst
 get gestureEvent(): UIGestureEvent
 ```
 
-Obtains the **UIGestureEvent** object held by this FrameNode, which is used to set gesture events bound to the component. Gesture events set using the **gestureEvent** API will not override gestures bound using the [declarative gesture API](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md). If both APIs are used to set gestures, the declarative API takes precedence.
+Obtains the **UIGestureEvent** object held by this FrameNode, which is used to set gesture events bound to the component. Gesture events set using the **gestureEvent** API will not override gestures bound using the [gesture binding API](../../apis-arkui/arkts-components/arkts-arkui-common-attribute.md). If both APIs are used to set gestures, the gesture binding API takes precedence.
 
 **Type:** UIGestureEvent
 

@@ -36,12 +36,11 @@ function getAccessoryList(): Array<Readonly<USBAccessory>>
 **示例：**
 
 ```TypeScript
-import { hilog } from '@kit.PerformanceAnalysisKit';
 try {
   let accList: usbManager.USBAccessory[] = usbManager.getAccessoryList()
-  hilog.info(0, 'testTag ui', `getAccessoryList success, accList: ${JSON.stringify(accList)}`)
+  console.info(`getAccessoryList success, accList: ${JSON.stringify(accList)}`)
 } catch (error) {
-  hilog.error(0, 'testTag ui', `getAccessoryList error ${error.code}, message is ${error.message}`)
+  console.error(`getAccessoryList error ${error.code}, message is ${error.message}`)
 }
 
 ```

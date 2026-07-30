@@ -79,7 +79,7 @@ Enables on-demand installation when launching an atomic service.
 FLAG_ABILITY_ON_COLLABORATE = 0x00002000
 ```
 
-In multi-device collaboration scenario, the caller application must initiate a request through the DMS, with this flag included in the **Flags** field, in order to invoke the lifecycle callback [onCollaborate()](arkts-ability-app-ability-uiability-uiability-c.md#oncollaborate-1)of the target application.
+In multi-device collaboration scenario, the caller application must initiate a request through the DMS, with this flag included in the **Flags** field, in order to invoke the lifecycle callback [onCollaborate()](arkts-ability-app-ability-uiability-uiability-c.md#oncollaborate)of the target application.
 
 **Since:** 18
 
@@ -95,7 +95,7 @@ FLAG_START_WITHOUT_TIPS = 0x40000000
 
 Disables the "No available applications" prompt during implicit application launches.
 
-When [launching an application implicitly](docroot://application-models/app-startup-overview.md), a prompt saying "No available applications" will appear if no matching application is found. You can use this flag to prevent this prompt from appearing.
+When [launching an application implicitly](../../../application-models/app-startup-overview.md), a prompt saying "No available applications" will appear if no matching application is found. You can use this flag to prevent this prompt from appearing.
 
 **Since:** 11
 

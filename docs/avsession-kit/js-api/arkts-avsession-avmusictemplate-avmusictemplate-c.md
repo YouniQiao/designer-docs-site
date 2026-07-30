@@ -72,6 +72,36 @@ Unregister clear search history callback.
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 
+## offCustomCommand
+
+```TypeScript
+offCustomCommand(callback?: CustomCommandEvent): void
+```
+
+Unregister custom command callback.
+
+**Since:** 26.1.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-offCustomCommand(callback?: CustomCommandEvent): void--><!--Device-AVMusicTemplate-offCustomCommand(callback?: CustomCommandEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [CustomCommandEvent](arkts-avsession-avmusictemplate-customcommandevent-t.md) | No | The callback used to handle ('sendCustomCommand') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function offCustomCommand can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
 ## offDownloadMediaEntity
 
 ```TypeScript
@@ -789,6 +819,36 @@ Register clear search history callback.
 | Error Code ID | Error Message |
 | --- | --- |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function onClearSearchHistory can not work correctly due to limited device capabilities. |
+| [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
+| 35000012 | AVMusicTemplate error. |
+
+## onCustomCommand
+
+```TypeScript
+onCustomCommand(callback: CustomCommandEvent): void
+```
+
+Register custom command callback.
+
+**Since:** 26.1.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-AVMusicTemplate-onCustomCommand(callback: CustomCommandEvent): void--><!--Device-AVMusicTemplate-onCustomCommand(callback: CustomCommandEvent): void-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | [CustomCommandEvent](arkts-avsession-avmusictemplate-customcommandevent-t.md) | Yes | The callback used to handle ('sendCustomCommand') event. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.function onCustomCommand can not work correctly due to limited device capabilities. |
 | [35000005](../errorcode-avmusictemplate.md#35000005-audio-template-does-not-exist) | AVMusicTemplate does not exist. |
 | 35000012 | AVMusicTemplate error. |
 

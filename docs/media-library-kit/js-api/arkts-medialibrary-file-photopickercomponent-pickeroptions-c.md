@@ -24,7 +24,7 @@ appAlbumFilters?: Array<string>
 
 Only display album contents corresponding to the specified applications.Use the bundle name to identify the application.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 23
 
@@ -434,7 +434,7 @@ preselectedInfos?: Array<PreselectedInfo>
 
 Support automatically selecting the user-selected image/video on the PhotoPickerComponent at the specified picker index.
 
-**Type:** Array<PreselectedInfo>
+**Type:** Array&lt;PreselectedInfo&gt;
 
 **Since:** 21
 

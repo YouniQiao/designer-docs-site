@@ -10,7 +10,6 @@ Describes the axis event object. Inherits from [BaseEvent](arkts-arkui-baseevent
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="getcurrentlocalposition"></a>
 ## getCurrentLocalPosition
 
 ```TypeScript
@@ -35,7 +34,6 @@ Gets the coordinates of the top-left corner of the current component based on it
 | --- | --- |
 | [Coordinate2D](../arkts-apis/arkts-arkui-coordinate2d-i.md) | - return the coordinates of the top-left corner of the current component based on its real-time position. |
 
-<a id="gethorizontalaxisvalue"></a>
 ## getHorizontalAxisValue
 
 ```TypeScript
@@ -60,7 +58,6 @@ Obtains the horizontal axis value of this axis event.
 | --- | --- |
 | number | Horizontal axis value.<br>Unit: vp |
 
-<a id="getpinchaxisscalevalue"></a>
 ## getPinchAxisScaleValue
 
 ```TypeScript
@@ -85,7 +82,6 @@ Obtains the two-finger pinch zoom ratio from the axis event.
 | --- | --- |
 | number | Two-finger pinch zoom ratio.<br> Note: This ratio is calculated as the current distance between two fingers during a touchpad pinch event divided by the initial distance when the fingers first made contact.<br>Default value: **0**.<br>Value range: [0, +∞).<br> |
 
-<a id="getverticalaxisvalue"></a>
 ## getVerticalAxisValue
 
 ```TypeScript
@@ -110,7 +106,6 @@ Obtains the vertical axis value of this axis event.
 | --- | --- |
 | number | Vertical axis value.<br>Unit: vp |
 
-<a id="hasaxis"></a>
 ## hasAxis
 
 ```TypeScript
@@ -217,7 +212,7 @@ Value range: [0, +∞)
 
 **NOTE**
 
-This field is used when dispatching events using the [postInputEventWithStrategy](../arkts-apis/arkts-arkui-buildernode-c.md#postinputeventwithstrategy-1) API. Each time an event is dispatched, this field is increased by 100000.
+This field is used when dispatching events using the [postInputEventWithStrategy](../arkts-apis/arkts-arkui-buildernode-c.md#postinputeventwithstrategy) API. Each time an event is dispatched, this field is increased by 100000.
 
 Using the same **eventHandleId** for multiple event dispatches will cause abnormal event responses. This field only needs to be assigned when constructing an event; developers do not need to handle it in other cases.
 
@@ -239,7 +234,7 @@ Using the same **eventHandleId** for multiple event dispatches will cause abnorm
 globalDisplayX?: number
 ```
 
-X coordinate of the cursor in the [global coordinate system](docroot://windowmanager/window-terminology.md#global-coordinate-system).
+X coordinate of the cursor in the [global coordinate system](../../../windowmanager/window-terminology.md#global-coordinate-system).
 
 Unit: vp
 
@@ -263,7 +258,7 @@ Value range: (-∞, +∞).
 globalDisplayY?: number
 ```
 
-Y coordinate of the cursor in the [global coordinate system](docroot://windowmanager/window-terminology.md#global-coordinate-system).
+Y coordinate of the cursor in the [global coordinate system](../../../windowmanager/window-terminology.md#global-coordinate-system).
 
 Unit: vp
 
@@ -287,7 +282,7 @@ Value range: (-∞, +∞).
 propagation: Callback<void>
 ```
 
-Enables [event bubbling](docroot://ui/arkts-interaction-basic-principles.md#event-bubbling) propagation.
+Enables [event bubbling](../../../ui/arkts-interaction-basic-principles.md#event-bubbling) propagation.
 
 **Type:** Callback&lt;void&gt;
 
@@ -373,7 +368,7 @@ Unit: vp
 x: number
 ```
 
-X coordinate of the cursor in the [component coordinate system](docroot://ui/arkui-glossary.md#component-coordinate-system) based on the clicked element.
+X coordinate of the cursor in the [component coordinate system](../../../ui/arkui-glossary.md#component-coordinate-system) based on the clicked element.
 
 Unit: vp
 
@@ -395,7 +390,7 @@ Unit: vp
 y: number
 ```
 
-Y coordinate of the cursor in the [component coordinate system](docroot://ui/arkui-glossary.md#component-coordinate-system) based on the clicked element.
+Y coordinate of the cursor in the [component coordinate system](../../../ui/arkui-glossary.md#component-coordinate-system) based on the clicked element.
 
 Unit: vp
 

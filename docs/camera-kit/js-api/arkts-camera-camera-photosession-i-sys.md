@@ -16,7 +16,6 @@ Implements a photo session, which sets the parameters of the normal photo mode a
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="getsessionconflictfunctions"></a>
 ## getSessionConflictFunctions
 
 ```TypeScript
@@ -45,7 +44,6 @@ Gets session conflict functions.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 
-<a id="getsessionfunctions"></a>
 ## getSessionFunctions
 
 ```TypeScript
@@ -81,7 +79,6 @@ Gets session functions.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
 
-<a id="off"></a>
 ## off('macroStatusChanged')
 
 ```TypeScript
@@ -113,7 +110,6 @@ Unsubscribes from macro state change events.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application.<br>**Applicable version:** 11 - 19 |
 
-<a id="off-1"></a>
 ## off('featureDetection')
 
 ```TypeScript
@@ -153,7 +149,6 @@ function unregisterFeatureDetectionStatus(photoSession: camera.PhotoSession, fea
 
 ```
 
-<a id="off-2"></a>
 ## off('effectSuggestionChange')
 
 ```TypeScript
@@ -177,7 +172,6 @@ Unsubscribes from effect suggestion event callback.
 | type | 'effectSuggestionChange' | Yes | Event type. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;EffectSuggestionType&gt; | No | Callback used to return the result. |
 
-<a id="off-3"></a>
 ## off('lcdFlashStatus')
 
 ```TypeScript
@@ -216,7 +210,6 @@ function unregisterLcdFlashStatus(photoSession: camera.PhotoSession): void {
 
 ```
 
-<a id="on"></a>
 ## on('macroStatusChanged')
 
 ```TypeScript
@@ -248,7 +241,6 @@ Subscribes to macro state change events. This API uses an asynchronous callback 
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application.<br>**Applicable version:** 11 - 19 |
 
-<a id="on-1"></a>
 ## on('featureDetection')
 
 ```TypeScript
@@ -299,7 +291,6 @@ function registerFeatureDetectionStatus(photoSession: camera.PhotoSession, featu
 
 ```
 
-<a id="on-2"></a>
 ## on('effectSuggestionChange')
 
 ```TypeScript
@@ -323,7 +314,6 @@ Subscribes to effect suggestion event callback.
 | type | 'effectSuggestionChange' | Yes | Event type. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;EffectSuggestionType&gt; | Yes | Callback used to return the result. |
 
-<a id="on-3"></a>
 ## on('lcdFlashStatus')
 
 ```TypeScript

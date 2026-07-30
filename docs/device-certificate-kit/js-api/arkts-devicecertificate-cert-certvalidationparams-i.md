@@ -20,7 +20,9 @@ import { cert } from '@kit.DeviceCertificateKit';
 allowDownloadIntermediateCa?: boolean
 ```
 
-Indicates whether intermediate CA certificates can be downloaded from the network. The default value is false.true: Use the issuer address in the certificate AIA extension to download the issuer certificate when the intermediate certificate is missing in the certificate chain. false: The intermediate CA certificate cannot be downloaded from the network.
+Whether to allow intermediate CA certificates to be downloaded from the network. The default value is **false**.  
+- **true**: attempts to use the issuer address in the certificate AIA extension to download the issuer certificate when an intermediate certificate is missing in the certificate chain, resolving the incomplete certificate chain issue;  
+- **false**: intermediate CA certificates cannot be downloaded from the network.<br>The download address is obtained from the certificate AIA extension. Only HTTP is supported. To use the network for download, you need to request the **ohos.permission.INTERNET** permission. For details about the permission configuration, see [Declaring Permissions](../../../security/AccessToken/declare-permissions.md).
 
 **Type:** boolean
 
@@ -42,7 +44,7 @@ Indicates whether intermediate CA certificates can be downloaded from the networ
 date?: string
 ```
 
-Validation date, in the format of YYMMDDHHMMSSZ or YYYYMMDDHHMMSSZ. By default, the current system time is used.You can customize the verification time, which is applicable to scenarios such as offline verification of historical signatures.
+Validation date, in the format of YYMMDDHHMMSSZ or YYYYMMDDHHMMSSZ. By default, the current system time is used.<br>Custom verification time is supported, which is applicable to scenarios such as offline verification of historical signatures.
 
 **Type:** string
 
@@ -82,7 +84,7 @@ Email address list. Verify that the certificate contains the specified email add
 hostnames?: Array<string>
 ```
 
-List of hostnames. Verify that the certificate's subject alternative name (SAN) or common name (CN) contains the specified hostname. Maximum number: 100; maximum length of each host name: 128.If one of the host names is matched, the verification is successful.
+List of hostnames. Verify that the certificate's subject alternative name (SAN) or common name (CN) contains the specified hostname. Maximum number: 100; maximum length of each host name: 128.<br>Verification is successful as long as one of the hostnames is matched.
 
 **Type:** Array&lt;string&gt;
 
@@ -102,7 +104,7 @@ List of hostnames. Verify that the certificate's subject alternative name (SAN) 
 ignoreErrs?: Array<CertResult>
 ```
 
-Allows specific validation errors to be ignored. Maximum count: 8.Errors that can be ignored include: ERR_CERT_NOT_YET_VALID, ERR_CERT_HAS_EXPIRED, ERR_UNKNOWN_CRITICAL_EXTENSION,ERR_CRL_NOT_FOUND, ERR_CRL_NOT_YET_VALID, ERR_CRL_HAS_EXPIRED, ERR_OCSP_RESPONSE_NOT_FOUND, ERR_NETWORK_TIMEOUT.
+Allows specific validation errors to be ignored. Maximum count: 8.<br>The errors that can be ignored include: ERR_CERT_NOT_YET_VALID, ERR_CERT_HAS_EXPIRED,ERR_UNKNOWN_CRITICAL_EXTENSION, ERR_CRL_NOT_FOUND, ERR_CRL_NOT_YET_VALID, ERR_CRL_HAS_EXPIRED,ERR_OCSP_RESPONSE_NOT_FOUND, ERR_NETWORK_TIMEOUT.
 
 **Type:** Array&lt;CertResult&gt;
 
@@ -122,7 +124,7 @@ Allows specific validation errors to be ignored. Maximum count: 8.Errors that ca
 keyUsage?: Array<KeyUsageType>
 ```
 
-Key usage list. Verify that the certificate's key usage extension includes the specified usage.Maximum count: 9.The certificate must contain all specified key usages.
+Key usage list. Verify that the certificate's key usage extension includes the specified usage.Maximum count: 9.<br>The certificate must contain all specified key usages for verification to be successful.
 
 **Type:** Array&lt;KeyUsageType&gt;
 
@@ -142,7 +144,9 @@ Key usage list. Verify that the certificate's key usage extension includes the s
 partialChain?: boolean
 ```
 
-Indicates whether to allow partial chain validation. The default value is false. true: Any certificate in the trust certificate can be used as the trust anchor instead of the root certificate. false: indicates that the root certificate must be traced during certificate chain construction.
+Whether to allow partial chain validation. The default value is **false**.  
+- **true**: any certificate in the trusted certificates can be used as the trust anchor instead of the root certificate;  
+- **false**: the root certificate must be traced during certificate chain construction.
 
 **Type:** boolean
 
@@ -184,7 +188,9 @@ Indicates the certificate revocation check parameter. Used to check whether a ce
 trustSystemCa?: boolean
 ```
 
-Indicates whether to trust the system CA. The default value is false. true: Use the preconfigured CA certificate store as the trust anchor. false: The preconfigured CA certificate store is not used as the trust anchor.
+Whether to trust the system CA. The default value is **false**.  
+- **true**: uses the system preset CA certificate library as a trust anchor;  
+- **false**: does not use the system preset CA certificate library as a trust anchor.
 
 **Type:** boolean
 
@@ -206,7 +212,7 @@ Indicates whether to trust the system CA. The default value is false. true: Use 
 trustedCerts?: Array<X509Cert>
 ```
 
-Trust certificate list. Specifies the trusted root certificate or intermediate CA certificate as the trust anchor for validation. Maximum count: 100.During verification, the certificate chain must be traced back to the trust certificate. You must set this parameter or set trustSystemCa to true.
+Trust certificate list. Specifies the trusted root certificate or intermediate CA certificate as the trust anchor for validation. Maximum count: 100.<br>During verification, the certificate chain must trace back to a trusted certificate. You must set this parameter or set trustSystemCa to true.
 
 **Type:** Array&lt;X509Cert&gt;
 
@@ -246,7 +252,7 @@ Indicates the list of untrusted certificates. An intermediate certificate is use
 userId?: Uint8Array
 ```
 
-User ID. Used to set the user identifier required for signature verification when verifying the SM2 certificate.Maximum length: 128 characters.The most commonly used value is `[0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37, 0x38, 0x31, 0x32, 0x33, 0x34, 0x35,0x36, 0x37, 0x38]`. (The corresponding ASCII character string is 1234567812345678, 16 bytes.)Certificate revocation check is not supported after userId is set.
+User ID. Used to set the user identifier required for signature verification when verifying the SM2 certificate.Maximum length: 128 characters.<br>The most commonly used value in the SM2 certificate scenario is [0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37, 0x38, 0x31, 0x32, 0x33, 0x34, 0x35, 0x36, 0x37, 0x38].(The corresponding ASCII character string is 1234567812345678, 16 bytes.)Certificate revocation check is not supported after userId is set.
 
 **Type:** Uint8Array
 

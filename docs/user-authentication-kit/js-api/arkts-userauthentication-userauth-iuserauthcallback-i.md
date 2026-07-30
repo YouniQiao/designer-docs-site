@@ -36,7 +36,7 @@ Called to acquire authentication tip information. This API is optional.
 
 **Deprecated since:** 9
 
-**Substitutes:** [callback](arkts-userauthentication-userauth-authevent-i.md#callback-1)
+**Substitutes:** [callback](arkts-userauthentication-userauth-authevent-i.md#callback)
 
 <!--Device-IUserAuthCallback-onAcquireInfo?: (module: number, acquire: number, extraInfo: any) => void--><!--Device-IUserAuthCallback-onAcquireInfo?: (module: number, acquire: number, extraInfo: any) => void-End-->
 
@@ -59,7 +59,7 @@ Called to return the authentication result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [callback](arkts-userauthentication-userauth-authevent-i.md#callback-1)
+**Substitutes:** [callback](arkts-userauthentication-userauth-authevent-i.md#callback)
 
 <!--Device-IUserAuthCallback-onResult: (result: number, extraInfo: AuthResult) => void--><!--Device-IUserAuthCallback-onResult: (result: number, extraInfo: AuthResult) => void-End-->
 

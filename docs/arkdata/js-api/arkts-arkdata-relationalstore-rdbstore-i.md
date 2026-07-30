@@ -2,9 +2,9 @@
 
 Provides APIs for managing data in an RDB store.
 
-Before using the following APIs, you should obtain an **RdbStore** instance by calling the [getRdbStore](arkts-arkdata-relationalstore-getrdbstore-f.md#getrdbstore-1)method and then call the corresponding method through the instance.
+Before using the following APIs, you should obtain an **RdbStore** instance by calling the [getRdbStore](arkts-arkdata-relationalstore-getrdbstore-f.md#getrdbstore)method and then call the corresponding method through the instance.
 
-In addition, use [execute](arkts-arkdata-relationalstore-rdbstore-i.md#execute-1)to initialize the database table structure and related data first, ensuring that the prerequisites for related API calls are met.
+In addition, use [execute](arkts-arkdata-relationalstore-rdbstore-i.md#execute)to initialize the database table structure and related data first, ensuring that the prerequisites for related API calls are met.
 
 **Since:** 9
 
@@ -18,7 +18,6 @@ In addition, use [execute](arkts-arkdata-relationalstore-rdbstore-i.md#execute-1
 import { relationalStore } from '@kit.ArkData';
 ```
 
-<a id="attach"></a>
 ## attach
 
 ```TypeScript
@@ -74,7 +73,6 @@ Attaches a database file to the currently linked database.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 
-<a id="attach-1"></a>
 ## attach
 
 ```TypeScript
@@ -133,7 +131,6 @@ Attaches a database file to the currently linked database.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 
-<a id="backup"></a>
 ## backup
 
 ```TypeScript
@@ -180,7 +177,6 @@ Backs up a database in a specified name.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="backup-1"></a>
 ## backup
 
 ```TypeScript
@@ -231,7 +227,6 @@ Backs up a database in a specified name.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="batchinsert"></a>
 ## batchInsert
 
 ```TypeScript
@@ -283,7 +278,6 @@ Write 32766 parameters per batch using the {@link ConflictResolution.ON_CONFLICT
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="batchinsert-1"></a>
 ## batchInsert
 
 ```TypeScript
@@ -340,7 +334,6 @@ Write 32766 parameters per batch using the {@link ConflictResolution.ON_CONFLICT
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="batchinsertsync"></a>
 ## batchInsertSync
 
 ```TypeScript
@@ -397,7 +390,6 @@ Write 32766 parameters per batch using the {@link ConflictResolution.ON_CONFLICT
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
-<a id="batchinsertwithconflictresolution"></a>
 ## batchInsertWithConflictResolution
 
 ```TypeScript
@@ -414,15 +406,7 @@ A maximum of 32766 parameters can be inserted at a time. If the number of parame
 
 **Since:** 18
 
-<!--Device-RdbStore-batchInsertWithConflictResolution(
-        table: string,
-        values: Array<ValuesBucket>, 
-        conflict: ConflictResolution
-    ): Promise<long>--><!--Device-RdbStore-batchInsertWithConflictResolution(
-        table: string,
-        values: Array<ValuesBucket>, 
-        conflict: ConflictResolution
-    ): Promise<long>-End-->
+<!--Device-RdbStore-batchInsertWithConflictResolution(        table: string,        values: Array<ValuesBucket>,         conflict: ConflictResolution    ): Promise<long>--><!--Device-RdbStore-batchInsertWithConflictResolution(        table: string,        values: Array<ValuesBucket>,         conflict: ConflictResolution    ): Promise<long>-End-->
 
 **System capability:** SystemCapability.DistributedDataManager.RelationalStore.Core
 
@@ -465,7 +449,6 @@ A maximum of 32766 parameters can be inserted at a time. If the number of parame
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
-<a id="batchinsertwithconflictresolutionsync"></a>
 ## batchInsertWithConflictResolutionSync
 
 ```TypeScript
@@ -482,15 +465,7 @@ A maximum of 32766 parameters can be inserted at a time. If the number of parame
 
 **Since:** 18
 
-<!--Device-RdbStore-batchInsertWithConflictResolutionSync(
-        table: string,
-        values: Array<ValuesBucket>,
-        conflict: ConflictResolution
-    ): long--><!--Device-RdbStore-batchInsertWithConflictResolutionSync(
-        table: string,
-        values: Array<ValuesBucket>,
-        conflict: ConflictResolution
-    ): long-End-->
+<!--Device-RdbStore-batchInsertWithConflictResolutionSync(        table: string,        values: Array<ValuesBucket>,        conflict: ConflictResolution    ): long--><!--Device-RdbStore-batchInsertWithConflictResolutionSync(        table: string,        values: Array<ValuesBucket>,        conflict: ConflictResolution    ): long-End-->
 
 **System capability:** SystemCapability.DistributedDataManager.RelationalStore.Core
 
@@ -533,7 +508,6 @@ A maximum of 32766 parameters can be inserted at a time. If the number of parame
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
-<a id="batchinsertwithreturning"></a>
 ## batchInsertWithReturning
 
 ```TypeScript
@@ -549,9 +523,7 @@ A maximum of 32766 parameters can be inserted at a time. If the number of parame
 
 **Model restriction:** This API can be used only in the stage model.
 
-<!--Device-RdbStore-batchInsertWithReturning(table: string, values: Array<ValuesBucket>, config: ReturningConfig,
-      conflict?: ConflictResolution): Promise<Result>--><!--Device-RdbStore-batchInsertWithReturning(table: string, values: Array<ValuesBucket>, config: ReturningConfig,
-      conflict?: ConflictResolution): Promise<Result>-End-->
+<!--Device-RdbStore-batchInsertWithReturning(table: string, values: Array<ValuesBucket>, config: ReturningConfig,      conflict?: ConflictResolution): Promise<Result>--><!--Device-RdbStore-batchInsertWithReturning(table: string, values: Array<ValuesBucket>, config: ReturningConfig,      conflict?: ConflictResolution): Promise<Result>-End-->
 
 **System capability:** SystemCapability.DistributedDataManager.RelationalStore.Core
 
@@ -587,7 +559,6 @@ A maximum of 32766 parameters can be inserted at a time. If the number of parame
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
-<a id="batchinsertwithreturningsync"></a>
 ## batchInsertWithReturningSync
 
 ```TypeScript
@@ -603,9 +574,7 @@ A maximum of 32766 parameters can be inserted at a time. If the number of parame
 
 **Model restriction:** This API can be used only in the stage model.
 
-<!--Device-RdbStore-batchInsertWithReturningSync(table: string, values: Array<ValuesBucket>, config: ReturningConfig,
-      conflict?: ConflictResolution): Result--><!--Device-RdbStore-batchInsertWithReturningSync(table: string, values: Array<ValuesBucket>, config: ReturningConfig,
-      conflict?: ConflictResolution): Result-End-->
+<!--Device-RdbStore-batchInsertWithReturningSync(table: string, values: Array<ValuesBucket>, config: ReturningConfig,      conflict?: ConflictResolution): Result--><!--Device-RdbStore-batchInsertWithReturningSync(table: string, values: Array<ValuesBucket>, config: ReturningConfig,      conflict?: ConflictResolution): Result-End-->
 
 **System capability:** SystemCapability.DistributedDataManager.RelationalStore.Core
 
@@ -641,7 +610,6 @@ A maximum of 32766 parameters can be inserted at a time. If the number of parame
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
-<a id="begintrans"></a>
 ## beginTrans
 
 ```TypeScript
@@ -688,7 +656,6 @@ Begins a transaction before executing the SQL statement.
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
-<a id="begintransaction"></a>
 ## beginTransaction
 
 ```TypeScript
@@ -728,7 +695,6 @@ BeginTransaction before execute your sql.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="cleandirtydata"></a>
 ## cleanDirtyData
 
 ```TypeScript
@@ -778,7 +744,6 @@ Data with a cursor smaller than the specified cursor will be cleaned up.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="cleandirtydata-1"></a>
 ## cleanDirtyData
 
 ```TypeScript
@@ -825,7 +790,6 @@ Cleans all dirty data deleted in the cloud.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="cleandirtydata-2"></a>
 ## cleanDirtyData
 
 ```TypeScript
@@ -880,7 +844,6 @@ If a cursor is specified, data with a cursor smaller than the specified cursor w
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -908,7 +871,6 @@ Close the RdbStore and all resultSets.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: The RdbStore verification failed. |
 | [14800000](../../apis-basic-services-kit/errorcode-settings.md#14800000-parameter-check-failed) | Inner error. |
 
-<a id="cloudsync"></a>
 ## cloudSync
 
 ```TypeScript
@@ -939,7 +901,6 @@ Sync data to cloud.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
-<a id="cloudsync-1"></a>
 ## cloudSync
 
 ```TypeScript
@@ -975,7 +936,6 @@ Sync data to cloud.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
-<a id="cloudsync-2"></a>
 ## cloudSync
 
 ```TypeScript
@@ -991,17 +951,7 @@ Sync data to cloud.
 
 **Since:** 10
 
-<!--Device-RdbStore-cloudSync(
-      mode: SyncMode,
-      tables: string[],
-      progress: Callback<ProgressDetails>,
-      callback: AsyncCallback<void>
-    ): void--><!--Device-RdbStore-cloudSync(
-      mode: SyncMode,
-      tables: string[],
-      progress: Callback<ProgressDetails>,
-      callback: AsyncCallback<void>
-    ): void-End-->
+<!--Device-RdbStore-cloudSync(      mode: SyncMode,      tables: string[],      progress: Callback<ProgressDetails>,      callback: AsyncCallback<void>    ): void--><!--Device-RdbStore-cloudSync(      mode: SyncMode,      tables: string[],      progress: Callback<ProgressDetails>,      callback: AsyncCallback<void>    ): void-End-->
 
 **System capability:** SystemCapability.DistributedDataManager.CloudSync.Client
 
@@ -1022,7 +972,6 @@ Sync data to cloud.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
-<a id="cloudsync-3"></a>
 ## cloudSync
 
 ```TypeScript
@@ -1059,7 +1008,6 @@ Sync data to cloud.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
-<a id="cloudsyncex"></a>
 ## cloudSyncEx
 
 ```TypeScript
@@ -1095,7 +1043,6 @@ Synchronizes data to the cloud. This API uses a promise to return the result.
 | --- | --- |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
-<a id="commit"></a>
 ## commit
 
 ```TypeScript
@@ -1134,7 +1081,6 @@ Commit the the sql you have executed.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="commit-1"></a>
 ## commit
 
 ```TypeScript
@@ -1185,7 +1131,6 @@ Commits the SQL statement executed.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 
-<a id="createtransaction"></a>
 ## createTransaction
 
 ```TypeScript
@@ -1227,7 +1172,6 @@ create a transaction instance and begin.
 | [14800029](../errorcode-data-rdb.md#14800029-sqlite-database-is-full) | SQLite: The database is full. |
 | [14800030](../errorcode-data-rdb.md#14800030-sqlite-unable-to-open-the-database-file) | SQLite: Unable to open the database file. |
 
-<a id="delete"></a>
 ## delete
 
 ```TypeScript
@@ -1274,7 +1218,6 @@ Deletes data from the database based on a specified instance object of RdbPredic
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="delete-1"></a>
 ## delete
 
 ```TypeScript
@@ -1326,7 +1269,6 @@ Deletes data from the database based on a specified instance object of RdbPredic
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="deletesync"></a>
 ## deleteSync
 
 ```TypeScript
@@ -1378,7 +1320,6 @@ Deletes data from the database based on a specified instance object of RdbPredic
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
-<a id="deletewithreturning"></a>
 ## deleteWithReturning
 
 ```TypeScript
@@ -1425,7 +1366,6 @@ Deletes data from the database based on a specified instance object of RdbPredic
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
-<a id="deletewithreturningsync"></a>
 ## deleteWithReturningSync
 
 ```TypeScript
@@ -1472,7 +1412,6 @@ Deletes data from the database based on a specified instance object of RdbPredic
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
-<a id="detach"></a>
 ## detach
 
 ```TypeScript
@@ -1524,7 +1463,6 @@ Detaches a database from this database.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 
-<a id="emit"></a>
 ## emit
 
 ```TypeScript
@@ -1555,7 +1493,6 @@ Notifies the registered observers of a change to the data resource specified by 
 | [14800000](../../apis-basic-services-kit/errorcode-settings.md#14800000-parameter-check-failed) | Inner error. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
-<a id="execute"></a>
 ## execute
 
 ```TypeScript
@@ -1609,7 +1546,6 @@ Executes a SQL statement that contains specified parameters and returns a value 
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
-<a id="execute-1"></a>
 ## execute
 
 ```TypeScript
@@ -1664,7 +1600,6 @@ Executes a SQL statement that contains specified parameters and returns a value 
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
-<a id="executesql"></a>
 ## executeSql
 
 ```TypeScript
@@ -1712,7 +1647,6 @@ Executes a SQL statement that contains specified parameters but returns no value
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="executesql-1"></a>
 ## executeSql
 
 ```TypeScript
@@ -1761,7 +1695,6 @@ Executes a SQL statement that contains specified parameters but returns no value
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="executesql-2"></a>
 ## executeSql
 
 ```TypeScript
@@ -1815,7 +1748,6 @@ Executes a SQL statement that contains specified parameters but returns no value
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="executesync"></a>
 ## executeSync
 
 ```TypeScript
@@ -1868,7 +1800,6 @@ Executes a SQL statement that contains specified parameters and returns a value 
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
-<a id="getmodifytime"></a>
 ## getModifyTime
 
 ```TypeScript
@@ -1922,7 +1853,6 @@ Obtains the modify time of rows corresponding to the primary keys.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="getmodifytime-1"></a>
 ## getModifyTime
 
 ```TypeScript
@@ -1938,17 +1868,7 @@ Obtains the modify time of rows corresponding to the primary keys.
 
 **Since:** 10
 
-<!--Device-RdbStore-getModifyTime(
-      table: string,
-      columnName: string,
-      primaryKeys: PRIKeyType[],
-      callback: AsyncCallback<ModifyTime>
-    ): void--><!--Device-RdbStore-getModifyTime(
-      table: string,
-      columnName: string,
-      primaryKeys: PRIKeyType[],
-      callback: AsyncCallback<ModifyTime>
-    ): void-End-->
+<!--Device-RdbStore-getModifyTime(      table: string,      columnName: string,      primaryKeys: PRIKeyType[],      callback: AsyncCallback<ModifyTime>    ): void--><!--Device-RdbStore-getModifyTime(      table: string,      columnName: string,      primaryKeys: PRIKeyType[],      callback: AsyncCallback<ModifyTime>    ): void-End-->
 
 **System capability:** SystemCapability.DistributedDataManager.RelationalStore.Core
 
@@ -1986,7 +1906,6 @@ Obtains the modify time of rows corresponding to the primary keys.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="insert"></a>
 ## insert
 
 ```TypeScript
@@ -2034,7 +1953,6 @@ Inserts a row of data into the target table.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="insert-1"></a>
 ## insert
 
 ```TypeScript
@@ -2083,7 +2001,6 @@ Inserts a row of data into the target table.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="insert-2"></a>
 ## insert
 
 ```TypeScript
@@ -2136,7 +2053,6 @@ Inserts a row of data into the target table.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="insert-3"></a>
 ## insert
 
 ```TypeScript
@@ -2190,7 +2106,6 @@ Inserts a row of data into the target table.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="insertsync"></a>
 ## insertSync
 
 ```TypeScript
@@ -2244,7 +2159,6 @@ Inserts a row of data into the target table with sync interface.
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
-<a id="insertsync-1"></a>
 ## insertSync
 
 ```TypeScript
@@ -2298,7 +2212,6 @@ Inserts a row of data into the target table with sync interface.
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
-<a id="lockrow"></a>
 ## lockRow
 
 ```TypeScript
@@ -2350,7 +2263,6 @@ Locks data from the database based on a specified instance object of RdbPredicat
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 
-<a id="obtaindistributedtablename"></a>
 ## obtainDistributedTableName
 
 ```TypeScript
@@ -2384,7 +2296,6 @@ Obtain distributed table name of specified remote device according to local tabl
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
-<a id="obtaindistributedtablename-1"></a>
 ## obtainDistributedTableName
 
 ```TypeScript
@@ -2423,7 +2334,6 @@ Obtain distributed table name of specified remote device according to local tabl
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
-<a id="off"></a>
 ## off
 
 ```TypeScript
@@ -2454,7 +2364,6 @@ Remove specified observer of specified type from the database.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
-<a id="off-1"></a>
 ## off
 
 ```TypeScript
@@ -2469,15 +2378,7 @@ Remove specified observer of specified type from the database.
 
 **Since:** 10
 
-<!--Device-RdbStore-off(
-      event: 'dataChange',
-      type: SubscribeType,
-      observer?: Callback<Array<string>> | Callback<Array<ChangeInfo>>
-    ): void--><!--Device-RdbStore-off(
-      event: 'dataChange',
-      type: SubscribeType,
-      observer?: Callback<Array<string>> | Callback<Array<ChangeInfo>>
-    ): void-End-->
+<!--Device-RdbStore-off(      event: 'dataChange',      type: SubscribeType,      observer?: Callback<Array<string>> | Callback<Array<ChangeInfo>>    ): void--><!--Device-RdbStore-off(      event: 'dataChange',      type: SubscribeType,      observer?: Callback<Array<string>> | Callback<Array<ChangeInfo>>    ): void-End-->
 
 **System capability:** SystemCapability.DistributedDataManager.RelationalStore.Core
 
@@ -2498,7 +2399,6 @@ Remove specified observer of specified type from the database.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
-<a id="off-2"></a>
 ## off
 
 ```TypeScript
@@ -2531,7 +2431,6 @@ Remove specified observer of specified type from the database.
 | [14800000](../../apis-basic-services-kit/errorcode-settings.md#14800000-parameter-check-failed) | Inner error. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
-<a id="off-3"></a>
 ## off
 
 ```TypeScript
@@ -2561,7 +2460,6 @@ Unregister the database auto synchronization callback.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
-<a id="off-4"></a>
 ## off
 
 ```TypeScript
@@ -2592,7 +2490,6 @@ Unsubscribes from the SQL statistics.
 | [14800000](../../apis-basic-services-kit/errorcode-settings.md#14800000-parameter-check-failed) | Inner error. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
-<a id="off-5"></a>
 ## off
 
 ```TypeScript
@@ -2621,7 +2518,6 @@ Unsubscribes from the SQL performance statistics.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
-<a id="off-6"></a>
 ## off
 
 ```TypeScript
@@ -2650,7 +2546,6 @@ Unsubscribes from the SQL execution error logs.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
-<a id="on"></a>
 ## on
 
 ```TypeScript
@@ -2681,7 +2576,6 @@ Subscribes to data changes of this RDB store.The registered callback will be cal
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
-<a id="on-1"></a>
 ## on
 
 ```TypeScript
@@ -2713,7 +2607,6 @@ Subscribes to data changes of this RDB store.The registered callback will be cal
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
-<a id="on-2"></a>
 ## on
 
 ```TypeScript
@@ -2746,7 +2639,6 @@ Registers an observer for the database.
 | [14800000](../../apis-basic-services-kit/errorcode-settings.md#14800000-parameter-check-failed) | Inner error. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
-<a id="on-3"></a>
 ## on
 
 ```TypeScript
@@ -2776,7 +2668,6 @@ Register an automatic synchronization callback to the database.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
-<a id="on-4"></a>
 ## on
 
 ```TypeScript
@@ -2807,7 +2698,6 @@ Subscribes to the SQL statistics.
 | [14800000](../../apis-basic-services-kit/errorcode-settings.md#14800000-parameter-check-failed) | Inner error. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
-<a id="on-5"></a>
 ## on
 
 ```TypeScript
@@ -2836,7 +2726,6 @@ Subscribes to the SQL performance statistics.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
-<a id="on-6"></a>
 ## on
 
 ```TypeScript
@@ -2865,7 +2754,6 @@ Subscribes to the SQL execution error logs.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
-<a id="query"></a>
 ## query
 
 ```TypeScript
@@ -2896,7 +2784,6 @@ Queries data in the database based on specified conditions.
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 | [14800015](../errorcode-data-rdb.md#14800015-rdb-store-not-respond) | The database does not respond.<br>**Applicable version:** 12 and later |
 
-<a id="query-1"></a>
 ## query
 
 ```TypeScript
@@ -2928,7 +2815,6 @@ Queries data in the database based on specified conditions.
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 | [14800015](../errorcode-data-rdb.md#14800015-rdb-store-not-respond) | The database does not respond.<br>**Applicable version:** 12 and later |
 
-<a id="query-2"></a>
 ## query
 
 ```TypeScript
@@ -2965,7 +2851,6 @@ Queries data in the database based on specified conditions.
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 | [14800015](../errorcode-data-rdb.md#14800015-rdb-store-not-respond) | The database does not respond.<br>**Applicable version:** 12 and later |
 
-<a id="querybystep"></a>
 ## queryByStep
 
 ```TypeScript
@@ -3001,7 +2886,6 @@ Query data in the database step‑by‑step based on SQL statements.
 | --- | --- |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
-<a id="querybystep-1"></a>
 ## queryByStep
 
 ```TypeScript
@@ -3037,7 +2921,6 @@ Queries data in the database step‑by‑step based on specified conditions.
 | --- | --- |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
-<a id="querylockedrow"></a>
 ## queryLockedRow
 
 ```TypeScript
@@ -3089,7 +2972,6 @@ Queries locked data in the database based on specified conditions.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 
-<a id="querysql"></a>
 ## querySql
 
 ```TypeScript
@@ -3120,7 +3002,6 @@ Queries data in the database based on SQL statement.
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 | [14800015](../errorcode-data-rdb.md#14800015-rdb-store-not-respond) | The database does not respond.<br>**Applicable version:** 12 and later |
 
-<a id="querysql-1"></a>
 ## querySql
 
 ```TypeScript
@@ -3152,7 +3033,6 @@ Queries data in the database based on SQL statement.
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 | [14800015](../errorcode-data-rdb.md#14800015-rdb-store-not-respond) | The database does not respond.<br>**Applicable version:** 12 and later |
 
-<a id="querysql-2"></a>
 ## querySql
 
 ```TypeScript
@@ -3189,7 +3069,6 @@ Queries data in the database based on SQL statement.
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 | [14800015](../errorcode-data-rdb.md#14800015-rdb-store-not-respond) | The database does not respond.<br>**Applicable version:** 12 and later |
 
-<a id="querysqlsync"></a>
 ## querySqlSync
 
 ```TypeScript
@@ -3226,14 +3105,13 @@ Queries data in the database based on SQL statement with sync interface.
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 | [14800015](../errorcode-data-rdb.md#14800015-rdb-store-not-respond) | The database does not respond. |
 
-<a id="querysqlwithoutrowcount"></a>
 ## querySqlWithoutRowCount
 
 ```TypeScript
 querySqlWithoutRowCount(sql: string, bindArgs?: Array<ValueType>): Promise<LiteResultSet>
 ```
 
-Queries data from the RDB store based on specified conditions without calculating the row count. This API uses a promise to return the result and delivers better performance than the [querySql](arkts-arkdata-relationalstore-transaction-i.md#querysql-1) API. The number of relational operators between expressions and operators in the SQL statement cannot exceed 1,000.
+Queries data from the RDB store based on specified conditions without calculating the row count. This API uses a promise to return the result and delivers better performance than the [querySql](arkts-arkdata-relationalstore-transaction-i.md#querysql) API. The number of relational operators between expressions and operators in the SQL statement cannot exceed 1,000.
 
 **Since:** 23
 
@@ -3263,7 +3141,6 @@ Queries data from the RDB store based on specified conditions without calculatin
 | [14800001](../errorcode-data-rdb.md#14800001-invalid-arguments) | Invalid arguments. Possible causes: 1. Parameter is out of valid range. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
-<a id="querysqlwithoutrowcountsync"></a>
 ## querySqlWithoutRowCountSync
 
 ```TypeScript
@@ -3300,7 +3177,6 @@ Queries data from the RDB store based on specified SQL statements without calcul
 | [14800001](../errorcode-data-rdb.md#14800001-invalid-arguments) | Invalid arguments. Possible causes: 1. Parameter is out of valid range. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
-<a id="querysync"></a>
 ## querySync
 
 ```TypeScript
@@ -3337,7 +3213,6 @@ Queries data in the database based on specified conditions with sync function.
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 | [14800015](../errorcode-data-rdb.md#14800015-rdb-store-not-respond) | The database does not respond. |
 
-<a id="querywithoutrowcount"></a>
 ## queryWithoutRowCount
 
 ```TypeScript
@@ -3373,7 +3248,6 @@ Queries data without rowCount in the database based on specified conditions.
 | --- | --- |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
-<a id="querywithoutrowcountsync"></a>
 ## queryWithoutRowCountSync
 
 ```TypeScript
@@ -3409,7 +3283,6 @@ Queries data without rowCount in the database based on specified conditions with
 | --- | --- |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
-<a id="rekey"></a>
 ## rekey
 
 ```TypeScript
@@ -3453,7 +3326,6 @@ Changes the key used to encrypt the database.
 | [14800028](../errorcode-data-rdb.md#14800028-sqlite-io-error) | SQLite: Some kind of disk I/O error occurred. |
 | [14800029](../errorcode-data-rdb.md#14800029-sqlite-database-is-full) | SQLite: The database is full. |
 
-<a id="rekeyex"></a>
 ## rekeyEx
 
 ```TypeScript
@@ -3496,7 +3368,6 @@ Change the encryption parameters of the database.
 | [14800028](../errorcode-data-rdb.md#14800028-sqlite-io-error) | SQLite: Some kind of disk I/O error occurred. |
 | [14800029](../errorcode-data-rdb.md#14800029-sqlite-database-is-full) | SQLite: The database is full. |
 
-<a id="remotequery"></a>
 ## remoteQuery
 
 ```TypeScript
@@ -3513,19 +3384,7 @@ Queries remote data in the database based on specified conditions before Synchro
 
 **Since:** 9
 
-<!--Device-RdbStore-remoteQuery(
-      device: string,
-      table: string,
-      predicates: RdbPredicates,
-      columns: Array<string>,
-      callback: AsyncCallback<ResultSet>
-    ): void--><!--Device-RdbStore-remoteQuery(
-      device: string,
-      table: string,
-      predicates: RdbPredicates,
-      columns: Array<string>,
-      callback: AsyncCallback<ResultSet>
-    ): void-End-->
+<!--Device-RdbStore-remoteQuery(      device: string,      table: string,      predicates: RdbPredicates,      columns: Array<string>,      callback: AsyncCallback<ResultSet>    ): void--><!--Device-RdbStore-remoteQuery(      device: string,      table: string,      predicates: RdbPredicates,      columns: Array<string>,      callback: AsyncCallback<ResultSet>    ): void-End-->
 
 **System capability:** SystemCapability.DistributedDataManager.RelationalStore.Core
 
@@ -3548,7 +3407,6 @@ Queries remote data in the database based on specified conditions before Synchro
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
-<a id="remotequery-1"></a>
 ## remoteQuery
 
 ```TypeScript
@@ -3587,7 +3445,6 @@ Queries remote data in the database based on specified conditions before Synchro
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
-<a id="restore"></a>
 ## restore
 
 ```TypeScript
@@ -3633,7 +3490,6 @@ Restores a database from a specified database file.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="restore-1"></a>
 ## restore
 
 ```TypeScript
@@ -3684,7 +3540,6 @@ Restores a database from a specified database file.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="rollback"></a>
 ## rollBack
 
 ```TypeScript
@@ -3723,7 +3578,6 @@ Roll back the sql you have already executed.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="rollback"></a>
 ## rollback
 
 ```TypeScript
@@ -3774,7 +3628,6 @@ Rolls back the SQL statement executed.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 
-<a id="setdistributedtables"></a>
 ## setDistributedTables
 
 ```TypeScript
@@ -3807,7 +3660,6 @@ Set table to be distributed table.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
-<a id="setdistributedtables-1"></a>
 ## setDistributedTables
 
 ```TypeScript
@@ -3845,7 +3697,6 @@ Set table to be distributed table.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
-<a id="setdistributedtables-2"></a>
 ## setDistributedTables
 
 ```TypeScript
@@ -3880,7 +3731,6 @@ Set table to be distributed table.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
-<a id="setdistributedtables-3"></a>
 ## setDistributedTables
 
 ```TypeScript
@@ -3898,17 +3748,7 @@ Set table to be distributed table.
 
 **Required permissions:** ohos.permission.DISTRIBUTED_DATASYNC
 
-<!--Device-RdbStore-setDistributedTables(
-      tables: Array<string>,
-      type: DistributedType,
-      config: DistributedConfig,
-      callback: AsyncCallback<void>
-    ): void--><!--Device-RdbStore-setDistributedTables(
-      tables: Array<string>,
-      type: DistributedType,
-      config: DistributedConfig,
-      callback: AsyncCallback<void>
-    ): void-End-->
+<!--Device-RdbStore-setDistributedTables(      tables: Array<string>,      type: DistributedType,      config: DistributedConfig,      callback: AsyncCallback<void>    ): void--><!--Device-RdbStore-setDistributedTables(      tables: Array<string>,      type: DistributedType,      config: DistributedConfig,      callback: AsyncCallback<void>    ): void-End-->
 
 **System capability:** SystemCapability.DistributedDataManager.RelationalStore.Core
 
@@ -3931,7 +3771,6 @@ Set table to be distributed table.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
-<a id="setdistributedtables-4"></a>
 ## setDistributedTables
 
 ```TypeScript
@@ -3972,7 +3811,6 @@ Set table to be a distributed table.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
-<a id="setlocale"></a>
 ## setLocale
 
 ```TypeScript
@@ -4010,7 +3848,6 @@ Support for collations in different languages.
 | [14800026](../errorcode-data-rdb.md#14800026-sqlite-insufficient-database-memory) | SQLite: The database is out of memory. |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 
-<a id="stopcloudsync"></a>
 ## stopCloudSync
 
 ```TypeScript
@@ -4040,7 +3877,6 @@ Stops synchronizing data with the cloud.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported because the device does not support the cloud synchronization capability. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
-<a id="sync"></a>
 ## sync
 
 ```TypeScript
@@ -4063,7 +3899,7 @@ Sync data between devices.
 | --- | --- | --- | --- |
 | mode | [SyncMode](arkts-arkdata-relationalstore-syncmode-e.md) | Yes | Indicates the database synchronization mode. |
 | predicates | [RdbPredicates](arkts-arkdata-rdb-rdbpredicates-c.md) | Yes | The specified sync condition by the instance object of {@link RdbPredicates}. |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;[string, number]&gt;&gt; | Yes | {Array<[string, int]>}: devices sync status array,{string}: device id,{int}: device sync status. |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;[string, number]&gt;&gt; | Yes | {Array&lt;[string, int]&gt;}: devices sync status array,{string}: device id,{int}: device sync status. |
 
 **Error codes:**
 
@@ -4074,7 +3910,6 @@ Sync data between devices.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
-<a id="sync-1"></a>
 ## sync
 
 ```TypeScript
@@ -4102,7 +3937,7 @@ Sync data between devices.
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;[string, number]&gt;&gt; | {Array<[string, int]>}: devices sync status array, {string}: device id, {int}: device sync status. |
+| Promise&lt;Array&lt;[string, number]&gt;&gt; | {Array&lt;[string, int]&gt;}: devices sync status array, {string}: device id, {int}: device sync status. |
 
 **Error codes:**
 
@@ -4113,7 +3948,6 @@ Sync data between devices.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
-<a id="syncex"></a>
 ## syncEx
 
 ```TypeScript
@@ -4155,7 +3989,6 @@ Sync data between devices.
 | [14800001](../errorcode-data-rdb.md#14800001-invalid-arguments) | Invalid arguments. Possible causes: 1. Parameter is out of valid range. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed. |
 
-<a id="unlockrow"></a>
 ## unlockRow
 
 ```TypeScript
@@ -4207,7 +4040,6 @@ Unlocks data from the database based on a specified instance object of RdbPredic
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 
-<a id="update"></a>
 ## update
 
 ```TypeScript
@@ -4255,7 +4087,6 @@ Updates data in the database based on a specified instance object of RdbPredicat
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="update-1"></a>
 ## update
 
 ```TypeScript
@@ -4271,17 +4102,7 @@ Updates data in the database based on a specified instance object of RdbPredicat
 
 **Since:** 10
 
-<!--Device-RdbStore-update(
-      values: ValuesBucket,
-      predicates: RdbPredicates,
-      conflict: ConflictResolution,
-      callback: AsyncCallback<long>
-    ): void--><!--Device-RdbStore-update(
-      values: ValuesBucket,
-      predicates: RdbPredicates,
-      conflict: ConflictResolution,
-      callback: AsyncCallback<long>
-    ): void-End-->
+<!--Device-RdbStore-update(      values: ValuesBucket,      predicates: RdbPredicates,      conflict: ConflictResolution,      callback: AsyncCallback<long>    ): void--><!--Device-RdbStore-update(      values: ValuesBucket,      predicates: RdbPredicates,      conflict: ConflictResolution,      callback: AsyncCallback<long>    ): void-End-->
 
 **System capability:** SystemCapability.DistributedDataManager.RelationalStore.Core
 
@@ -4319,7 +4140,6 @@ Updates data in the database based on a specified instance object of RdbPredicat
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="update-2"></a>
 ## update
 
 ```TypeScript
@@ -4372,7 +4192,6 @@ Updates data in the database based on a specified instance object of RdbPredicat
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="update-3"></a>
 ## update
 
 ```TypeScript
@@ -4426,7 +4245,6 @@ Updates data in the database based on a specified instance object of RdbPredicat
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="updatesync"></a>
 ## updateSync
 
 ```TypeScript
@@ -4480,7 +4298,6 @@ Updates data in the database based on a specified instance object of RdbPredicat
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
-<a id="updatewithreturning"></a>
 ## updateWithReturning
 
 ```TypeScript
@@ -4494,9 +4311,7 @@ Updates data in the database based on a specified instance object of RdbPredicat
 
 **Model restriction:** This API can be used only in the stage model.
 
-<!--Device-RdbStore-updateWithReturning(values: ValuesBucket, predicates: RdbPredicates, config: ReturningConfig,
-      conflict?: ConflictResolution): Promise<Result>--><!--Device-RdbStore-updateWithReturning(values: ValuesBucket, predicates: RdbPredicates, config: ReturningConfig,
-      conflict?: ConflictResolution): Promise<Result>-End-->
+<!--Device-RdbStore-updateWithReturning(values: ValuesBucket, predicates: RdbPredicates, config: ReturningConfig,      conflict?: ConflictResolution): Promise<Result>--><!--Device-RdbStore-updateWithReturning(values: ValuesBucket, predicates: RdbPredicates, config: ReturningConfig,      conflict?: ConflictResolution): Promise<Result>-End-->
 
 **System capability:** SystemCapability.DistributedDataManager.RelationalStore.Core
 
@@ -4532,7 +4347,6 @@ Updates data in the database based on a specified instance object of RdbPredicat
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800047](../errorcode-data-rdb.md#14800047-wal-file-size-exceeds-the-default-limit) | The WAL file size exceeds the default limit. |
 
-<a id="updatewithreturningsync"></a>
 ## updateWithReturningSync
 
 ```TypeScript
@@ -4546,9 +4360,7 @@ Updates data in the database based on a specified instance object of RdbPredicat
 
 **Model restriction:** This API can be used only in the stage model.
 
-<!--Device-RdbStore-updateWithReturningSync(values: ValuesBucket, predicates: RdbPredicates, config: ReturningConfig,
-      conflict?: ConflictResolution): Result--><!--Device-RdbStore-updateWithReturningSync(values: ValuesBucket, predicates: RdbPredicates, config: ReturningConfig,
-      conflict?: ConflictResolution): Result-End-->
+<!--Device-RdbStore-updateWithReturningSync(values: ValuesBucket, predicates: RdbPredicates, config: ReturningConfig,      conflict?: ConflictResolution): Result--><!--Device-RdbStore-updateWithReturningSync(values: ValuesBucket, predicates: RdbPredicates, config: ReturningConfig,      conflict?: ConflictResolution): Result-End-->
 
 **System capability:** SystemCapability.DistributedDataManager.RelationalStore.Core
 

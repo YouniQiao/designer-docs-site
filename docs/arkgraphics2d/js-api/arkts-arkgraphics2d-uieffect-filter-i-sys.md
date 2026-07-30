@@ -65,6 +65,7 @@ struct BezierWarpExample {
   build() {
     Column() {
       Image($rawfile('test.jpg'))
+        // Add the Bezier curve deformation effect to the component.
         .foregroundFilter(uiEffect.createFilter().bezierWarp(this.valueBezier))
     }
   }
@@ -101,6 +102,59 @@ Applies blur bubbles rise effect to simulate rising bubbles with blur.This effec
 | Type | Description |
 | --- | --- |
 | [Filter](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-agent-filter-i-sys.md) | - Returns the blur bubbles rise Filter. |
+
+**Example**
+
+```TypeScript
+import { uiEffect } from '@kit.ArkGraphics2D';
+import { image } from '@kit.ImageKit';
+
+@Entry
+@Component
+struct BlurBubblesRiseExample {
+  private context: Context | undefined = this.getUIContext().getHostContext();
+  @State blurIntensity: number = 0.8;
+  @State mixStrength: number = 0.6;
+  @State progress: number = 0.5;
+  @State maskImage: image.PixelMap | null = null;
+
+  aboutToAppear() {
+    if (this.context) {
+      this.getImagePixelMap(this.context)
+    }
+  }
+
+  getImagePixelMap(context: Context) {
+    let resourceMgr = context.resourceManager;
+    resourceMgr?.getMediaContent($r('app.media.drawBlurMask').id)
+      .then((val: Uint8Array) => {
+        let buffer: ArrayBuffer = val.buffer.slice(0, val.buffer.byteLength)
+        let imageSource: image.ImageSource = image.createImageSource(buffer);
+        imageSource.createPixelMap().then((pixelmap: image.PixelMap) => {
+          this.maskImage = pixelmap as PixelMap;
+        })
+      })
+  }
+
+  build() {
+    Stack() {
+      Image($r('app.media.test'))
+        .width('100%')
+        .height('100%')
+        // Apply the blur bubbles rise effect to the image, simulating the dreamy blur distortion effect of bubbles rising in liquid.
+        .foregroundFilter(uiEffect.createFilter().blurBubblesRise({
+          blurIntensity: this.blurIntensity,
+          mixStrength: this.mixStrength,
+          progress: this.progress,
+          maskImage: this.maskImage
+        }))
+    }
+    .width('100%')
+    .height('100%')
+  }
+}
+
+```
 
 ## colorGradient
 
@@ -143,28 +197,29 @@ Sets the color gradient filter, may blend with alpha mask.
 **Example**
 
 ```TypeScript
-import { common2D, uiEffect } from "@kit.ArkGraphics2D"
+import { common2D, uiEffect } from '@kit.ArkGraphics2D'
 
 @Entry
 @Component
 struct ColorGradientExample {
-  @State colorsExample: Array<uiEffect.Color> = [
+  @State gradientColors: Array<uiEffect.Color> = [
     {red: 1.0, green: 0.8, blue: 0.5, alpha: 0.8},
     {red: 1.0, green: 1.5, blue: 0.5, alpha: 1.0}
   ]
 
-  @State positionsExample: Array<common2D.Point> = [
+  @State gradientPositions: Array<common2D.Point> = [
     {x: 0.2, y: 0.2},
     {x: 0.8, y: 0.6}]
 
-  @State strengthsExample: Array<number> = [0.3, 0.3]
+  @State gradientStrengths: Array<number> = [0.3, 0.3]
 
   build() {
     Column() {
       Row()
         .width("100%")
         .height("100%")
-        .backgroundFilter(uiEffect.createFilter().colorGradient(this.colorsExample, this.positionsExample, this.strengthsExample))
+        // Add a color gradient effect to the component content.
+        .backgroundFilter(uiEffect.createFilter().colorGradient(this.gradientColors, this.gradientPositions, this.gradientStrengths))
     }
   }
 }
@@ -217,16 +272,16 @@ import { common2D, uiEffect } from '@kit.ArkGraphics2D'
 @Entry
 @Component
 struct Index {
-  @State point2: common2D.Point3d = {
+  @State contentLightPosition: common2D.Point3d = {
     x: 0, y: 0, z: 2
   }
-  @State color2: common2D.Color = {
+  @State contentLightColor: common2D.Color = {
     red: 1,
     green: 1,
     blue: 1,
     alpha: 1
   }
-  @State lightIntensity2: number = 1
+  @State lightIntensity: number = 1
 
   build() {
     Column() {
@@ -235,7 +290,8 @@ struct Index {
           .width('646px')
           .height('900px')
           .borderRadius(10)
-          .foregroundFilter(uiEffect.createFilter().contentLight(this.point2, this.color2, this.lightIntensity2))
+          // Add 3D lighting effect to the component content.
+          .foregroundFilter(uiEffect.createFilter().contentLight(this.contentLightPosition, this.contentLightColor, this.lightIntensity))
       }
       .width('100%')
       .height('55%')
@@ -308,6 +364,7 @@ struct Index {
           .width("100%")
           .height("100%")
           .backgroundColor(this.color)
+          // Provide a lighting effect based on mask and parallel light for the component content.
           .backgroundFilter(uiEffect.createFilter()
             .directionLight(
               {x:0, y:0, z:-1}, {red:2.0, green:2.0, blue:2.0, alpha:1.0}, 0.5,
@@ -363,12 +420,12 @@ Sets distort effect with displacement map.
 **Example**
 
 ```TypeScript
-import { uiEffect } from "@kit.ArkGraphics2D"
+import { uiEffect } from '@kit.ArkGraphics2D'
 
 @Entry
 @Component
 struct DisplacementDistortExample {
-  @State maskExample: uiEffect.Mask = uiEffect.Mask.createRippleMask({x: 0.5, y: 0.5}, 0.2, 0.3, 0.0)
+  @State distortMask: uiEffect.Mask = uiEffect.Mask.createRippleMask({x: 0.5, y: 0.5}, 0.2, 0.3, 0.0)
   
   build() {
     Stack() {
@@ -376,7 +433,8 @@ struct DisplacementDistortExample {
       Row()  
         .width("100%")
         .height("100%")
-        .backgroundFilter(uiEffect.createFilter().displacementDistort(this.maskExample, [5.0, 5.0]))
+        // Add a distortion effect to the component content.
+        .backgroundFilter(uiEffect.createFilter().displacementDistort(this.distortMask, [5.0, 5.0]))
     }
   }
 }
@@ -420,6 +478,8 @@ Set distort effect of the component.
 **Example**
 
 ```TypeScript
+// Add the lens distortion effect to the component.
+let filter = uiEffect.createFilter()
 filter.distort(-0.5)
 
 ```
@@ -464,14 +524,14 @@ Detects and glows edges of contents.
 **Example**
 
 ```TypeScript
-import { uiEffect } from "@kit.ArkGraphics2D"
+import { uiEffect } from '@kit.ArkGraphics2D'
 
 @Entry
 @Component
 struct EdgeLightExample {
-  @State colorExample: uiEffect.Color = {red: 0.0, green: 1.0, blue: 0.0, alpha: 1.0}
+  @State edgeLightColor: uiEffect.Color = {red: 0.0, green: 1.0, blue: 0.0, alpha: 1.0}
   
-  @State maskExample: uiEffect.Mask = uiEffect.Mask.createRippleMask({x: 0.5, y: 0.5}, 0.2, 0.5, 0.5)
+  @State edgeLightMask: uiEffect.Mask = uiEffect.Mask.createRippleMask({x: 0.5, y: 0.5}, 0.2, 0.5, 0.5)
   
   build() {
     Stack() {
@@ -479,7 +539,8 @@ struct EdgeLightExample {
       Row()  
         .width("100%")
         .height("100%")
-        .backgroundFilter(uiEffect.createFilter().edgeLight(1.0, this.colorExample, this.maskExample, false))
+        // Detect edges for the component content and add an edge highlighting effect.
+        .backgroundFilter(uiEffect.createFilter().edgeLight(1.0, this.edgeLightColor, this.edgeLightMask, false))
     }
   }
 }
@@ -524,6 +585,8 @@ Set the fly in or fly out effect of the component.
 **Example**
 
 ```TypeScript
+// Add the fly in/out transformation effect to the component.
+let filter = uiEffect.createFilter()
 filter.flyInFlyOutEffect(0.5, uiEffect.FlyMode.TOP)
 
 ```
@@ -569,11 +632,6 @@ Applies a high dynamic range (HDR) brightness enhancement filter to the componen
 **Example**
 
 ```TypeScript
-filter.hdrBrightnessRatio(2.0)
-
-```
-
-```TypeScript
 // Create a Filter instance
 let filter: uiEffect.Filter = uiEffect.createFilter();
 // Set the HDR brightness ratio to 2.0
@@ -610,6 +668,39 @@ Applies heat distortion effect to simulate hot air distortion.This effect create
 | Type | Description |
 | --- | --- |
 | [Filter](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-agent-filter-i-sys.md) | - Returns the heat distortion Filter. |
+
+**Example**
+
+```TypeScript
+import { uiEffect } from '@kit.ArkGraphics2D';
+
+@Entry
+@Component
+struct HeatDistortionExample {
+  @State intensity: number = 0.8;
+  @State noiseScale: number = 2.0;
+  @State riseWeight: number = 0.5;
+  @State progress: number = 0.3;
+
+  build() {
+    Stack() {
+      Image($r('app.media.test'))
+        .width('100%')
+        .height('100%')
+        // Apply the heat distortion effect to the image, simulating the visual distortion caused by hot air flow.
+        .foregroundFilter(uiEffect.createFilter().heatDistortion({
+          intensity: this.intensity,
+          noiseScale: this.noiseScale,
+          riseWeight: this.riseWeight,
+          progress: this.progress
+        }))
+    }
+    .width('100%')
+    .height('100%')
+  }
+}
+
+```
 
 ## maskDispersion
 
@@ -701,11 +792,12 @@ struct Index {
   @State rippleMaskRadius: number = 0.1
   build() {
     Stack() {
-      // Page before transition
+      // Page before the transition.
       Image($r("app.media.before")).width("100%").height("100%")
-        if (this.enterNewPage){
-          // Page after transition
+        if (this.enterNewPage) {
+          // Page after the transition.
           Column().width("100%").height("100%").backgroundImage($r("app.media.after"))
+            // Provide a mask-based transition effect for the component content.
             .backgroundFilter(uiEffect.createFilter()
               .maskTransition(
                 uiEffect.Mask.createRadialGradientMask(this.rippleMaskCenter, this.rippleMaskRadius,this.rippleMaskRadius, [[1, 0], [1, 1]]),
@@ -764,6 +856,8 @@ Set the edge pixel stretch effect of the Component.
 **Example**
 
 ```TypeScript
+// Add the edge pixel extension effect to the component.
+let filter = uiEffect.createFilter()
 filter.pixelStretch([0.2, 0.2, 0.2, 0.2], uiEffect.TileMode.CLAMP)
 
 ```
@@ -841,20 +935,21 @@ Sets variable radius blur effect with radius map.
 **Example**
 
 ```TypeScript
-import { uiEffect } from "@kit.ArkGraphics2D";
+import { uiEffect } from '@kit.ArkGraphics2D';
 
 @Entry
 @Component
 struct VariableRadiusBlurExample {
-  @State maskExample: uiEffect.Mask = uiEffect.Mask.createRippleMask({x: 0.5, y: 0.5}, 0.2, 0.1)
+  @State blurMask: uiEffect.Mask = uiEffect.Mask.createRippleMask({x: 0.5, y: 0.5}, 0.2, 0.1)
 
   build() {
     Stack() {
       Image($rawfile('test.png'))
       Row()
-        .width("100%")
-        .height("100%")
-        .backgroundFilter(uiEffect.createFilter().variableRadiusBlur(64, this.maskExample))
+        .width('100%')
+        .height('100%')
+        // Provide a mask-based gradient blur effect for the component content.
+        .backgroundFilter(uiEffect.createFilter().variableRadiusBlur(64, this.blurMask))
     }
   }
 }
@@ -902,6 +997,8 @@ Set waterRipple effect of the Component.
 **Example**
 
 ```TypeScript
+// Add the water ripple effect to the component.
+let filter = uiEffect.createFilter()
 filter.waterRipple(0.5, 2, 0.5, 0.5, uiEffect.WaterRippleMode.SMALL2SMALL)
 
 ```

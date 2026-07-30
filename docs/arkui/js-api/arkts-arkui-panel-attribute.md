@@ -12,7 +12,6 @@ Pane Attribute.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="backgroundmask"></a>
 ## backgroundMask
 
 ```TypeScript
@@ -37,7 +36,6 @@ Called when the panel background mask is requested.
 | --- | --- | --- | --- |
 | color | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes |  |
 
-<a id="customheight"></a>
 ## customHeight
 
 ```TypeScript
@@ -62,7 +60,6 @@ Sets the height. It is valid only when PanelType is set to Custom.
 | --- | --- | --- | --- |
 | value | [Dimension](../arkts-apis/arkts-arkui-dimension-t.md) \| PanelHeight | Yes | value - Content height to set. |
 
-<a id="dragbar"></a>
 ## dragBar
 
 ```TypeScript
@@ -87,7 +84,6 @@ Called when determining whether dragbar exists.
 | --- | --- | --- | --- |
 | value | boolean | Yes |  |
 
-<a id="fullheight"></a>
 ## fullHeight
 
 ```TypeScript
@@ -112,7 +108,6 @@ Called when the height in the full state is specified.
 | --- | --- | --- | --- |
 | value | number \| string | Yes |  |
 
-<a id="halfheight"></a>
 ## halfHeight
 
 ```TypeScript
@@ -137,7 +132,6 @@ Called when the height in the half state is specified.
 | --- | --- | --- | --- |
 | value | number \| string | Yes |  |
 
-<a id="miniheight"></a>
 ## miniHeight
 
 ```TypeScript
@@ -162,7 +156,6 @@ Called when the height in the mini state is specified.
 | --- | --- | --- | --- |
 | value | number \| string | Yes |  |
 
-<a id="mode"></a>
 ## mode
 
 ```TypeScript
@@ -187,7 +180,6 @@ Called when the initial state of the slidable panel is set.
 | --- | --- | --- | --- |
 | value | [PanelMode](arkts-arkui-panelmode-e.md) | Yes |  |
 
-<a id="onchange"></a>
 ## onChange
 
 ```TypeScript
@@ -234,71 +226,7 @@ Called when the state of the slidable panel changes.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
-<!--Device-PanelAttribute-onChange(
-    event: (
-    /**
-     * Width of content area.
-     *
-     ***/
-    /**
-     * Width of content area.
-     *
-     ******/
-      width: number,
-
-    /**
-     * Height of content area.
-     *
-     ***/
-    /**
-     * Height of content area.
-     *
-     ******/
-      height: number,
-
-    /**
-     * Initial state.
-     *
-     ***/
-    /**
-     * Initial state.
-     *
-     ******/
-      mode: PanelMode,
-    ) => void,
-  ): PanelAttribute--><!--Device-PanelAttribute-onChange(
-    event: (
-    /**
-     * Width of content area.
-     *
-     ***/
-    /**
-     * Width of content area.
-     *
-     ******/
-      width: number,
-
-    /**
-     * Height of content area.
-     *
-     ***/
-    /**
-     * Height of content area.
-     *
-     ******/
-      height: number,
-
-    /**
-     * Initial state.
-     *
-     ***/
-    /**
-     * Initial state.
-     *
-     ******/
-      mode: PanelMode,
-    ) => void,
-  ): PanelAttribute-End-->
+<!--Device-PanelAttribute-onChange(    event: (    /**     * Width of content area.     *     ***/    /**     * Width of content area.     *     ******/      width: number,    /**     * Height of content area.     *     ***/    /**     * Height of content area.     *     ******/      height: number,    /**     * Initial state.     *     ***/    /**     * Initial state.     *     ******/      mode: PanelMode,    ) => void,  ): PanelAttribute--><!--Device-PanelAttribute-onChange(    event: (    /**     * Width of content area.     *     ***/    /**     * Width of content area.     *     ******/      width: number,    /**     * Height of content area.     *     ***/    /**     * Height of content area.     *     ******/      height: number,    /**     * Initial state.     *     ***/    /**     * Initial state.     *     ******/      mode: PanelMode,    ) => void,  ): PanelAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -308,7 +236,6 @@ Called when the state of the slidable panel changes.
 | --- | --- | --- | --- |
 | event | (     /**      * Width of content area.      *      * @syscap SystemCapability.ArkUI.ArkUI.Full      * @since 7      */     /**      * Width of content area.      *      * @syscap SystemCapability.ArkUI.ArkUI.Full      * @FaAndStageModel      * @atomicservice      * @since 11 dynamiconly      * @deprecated since 12      */       width: number,      /**      * Height of content area.      *      * @syscap SystemCapability.ArkUI.ArkUI.Full      * @since 7      */     /**      * Height of content area.      *      * @syscap SystemCapability.ArkUI.ArkUI.Full      * @FaAndStageModel      * @atomicservice      * @since 11 dynamiconly      * @deprecated since 12      */       height: number,      /**      * Initial state.      *      * @syscap SystemCapability.ArkUI.ArkUI.Full      * @since 7      */     /**      * Initial state.      *      * @syscap SystemCapability.ArkUI.ArkUI.Full      * @FaAndStageModel      * @atomicservice      * @since 11 dynamiconly      * @deprecated since 12      */       mode: PanelMode,     ) =&gt; void | Yes |  |
 
-<a id="onheightchange"></a>
 ## onHeightChange
 
 ```TypeScript
@@ -333,7 +260,6 @@ Called when height of the panel is changed
 | --- | --- | --- | --- |
 | callback | (value: number) =&gt; void | Yes |  |
 
-<a id="show"></a>
 ## show
 
 ```TypeScript
@@ -358,7 +284,6 @@ Called when the panel slidable panel pops up.
 | --- | --- | --- | --- |
 | value | boolean | Yes |  |
 
-<a id="showcloseicon"></a>
 ## showCloseIcon
 
 ```TypeScript
@@ -383,7 +308,6 @@ Called when the panel show close icon.
 | --- | --- | --- | --- |
 | value | boolean | Yes | used to set whether to display the close icon. |
 
-<a id="type"></a>
 ## type
 
 ```TypeScript

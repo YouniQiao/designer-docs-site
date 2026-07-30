@@ -443,7 +443,7 @@ onDidAppear?: () => void
 Event callback after the dialog box appears.<br>**NOTE**<br>1. The normal timing sequence is as follows: onWillAppear > onDidAppear > (onDateAccept/onCancel/onDateChange)  
 > onWillDisappear > onDidDisappear.<br>2. You can set the callback event for changing the dialog box display effect in **onDidAppear**.The settings take effect next time the dialog box appears.<br>3. If the user dismisses the dialog box immediately after it appears, **onWillDisappear** is invoked before **onDidAppear**.<br>4. If the dialog box is dismissed before its appearance animation is finished, this callback is not invoked.
 
-**Type:** () => void
+**Type:** () =&gt; void
 
 **Since:** 12
 
@@ -464,7 +464,7 @@ onDidDisappear?: () => void
 Event callback after the dialog box disappears.<br>**NOTE**<br>The normal timing sequence is as follows: onWillAppear > onDidAppear > (onDateAccept/onCancel/onDateChange)  
 > onWillDisappear > onDidDisappear.<br>This callback is not triggered if the dialog box disappearance animation is interrupted (for example, by page navigation).
 
-**Type:** () => void
+**Type:** () =&gt; void
 
 **Since:** 12
 
@@ -485,7 +485,7 @@ onWillAppear?: () => void
 Event callback when the dialog box is about to appear.<br>**NOTE**<br>1. The normal timing sequence is as follows: onWillAppear > onDidAppear > (onDateAccept/onCancel/onDateChange)  
 > onWillDisappear > onDidDisappear.<br>2. You can set the callback event for changing the dialog box display effect in **onWillAppear**.The settings take effect next time the dialog box appears.
 
-**Type:** () => void
+**Type:** () =&gt; void
 
 **Since:** 12
 
@@ -506,7 +506,7 @@ onWillDisappear?: () => void
 Event callback when the dialog box is about to disappear.<br>**NOTE**<br>1. The normal timing sequence is as follows: onWillAppear > onDidAppear > (onDateAccept/onCancel/onDateChange)  
 > onWillDisappear > onDidDisappear.<br>2. If the user dismisses the dialog box immediately after it appears, **onWillDisappear** is invoked before **onDidAppear**.
 
-**Type:** () => void
+**Type:** () =&gt; void
 
 **Since:** 12
 
@@ -526,7 +526,7 @@ onWillDismiss?: Callback<DismissDialogAction>
 
 Callback for interactive dismissal of the dialog box.<br>**NOTE**<br>1. If this callback is registered, the dialog box will not be dismissed immediately after the user touches the mask or the Back button, presses the Esc key, or swipes left or right on the screen.The **reason** parameter in the callback is used to determine whether the dialog box can be dismissed.The reason returned by the component does not support the value **CLOSE_BUTTON**.<br>2. In the **onWillDismiss** callback, another **onWillDismiss** callback is not allowed.
 
-**Type:** Callback<DismissDialogAction>
+**Type:** Callback&lt;DismissDialogAction&gt;
 
 **Since:** 12
 

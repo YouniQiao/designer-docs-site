@@ -25,11 +25,11 @@ import { uiAppearance } from '@kit.ArkUI';
 
 | 名称 | 说明 |
 | --- | --- |
-| [getDarkMode](arkts-arkui-uiappearance-getdarkmode-f-sys.md#getdarkmode) | 获取系统当前的深色模式配置。  <!--Del--> |
-| [getFontScale](arkts-arkui-uiappearance-getfontscale-f-sys.md#getfontscale) | 获取系统当前的字体大小缩放比例。  <!--Del--> |
-| [getFontWeightScale](arkts-arkui-uiappearance-getfontweightscale-f-sys.md#getfontweightscale) | 获取系统当前的字体粗细缩放比例。  <!--Del--> |
-| [setDarkMode](arkts-arkui-uiappearance-setdarkmode-f-sys.md#setdarkmode) | 设置系统深色模式。使用callback异步回调。 |
-| [setDarkMode](arkts-arkui-uiappearance-setdarkmode-f-sys.md#setdarkmode-1) | 设置系统深色模式。使用Promise异步回调。 |
+| [getDarkMode](arkts-arkui-uiappearance-getdarkmode-f-sys.md#getdarkmode) | 获取系统当前的深浅色模式配置。适用于需要根据系统外观模式动态适配应用UI主题的场景，例如应用内实现深色/浅色主题风格自动切换。  <!--Del--> |
+| [getFontScale](arkts-arkui-uiappearance-getfontscale-f-sys.md#getfontscale) | 获取系统当前的字体大小缩放比例。该比例为系统设置中用户配置的字体大小相对于默认字体大小的倍数，取值范围请参考系统字体大小设置。开发者可基于该比例值调整应用内字体大小，以适配用户的字体偏好设置。  <!--Del--> |
+| [getFontWeightScale](arkts-arkui-uiappearance-getfontweightscale-f-sys.md#getfontweightscale) | 获取系统当前的字体粗细缩放比例。该比例为系统设置中用户配置的字体粗细相对于默认字体粗细的倍数，取值范围请参考系统字体粗细设置。开发者可基于该比例值调整应用内字体粗细，以适配用户的字体粗细偏好设置。  <!--Del--> |
+| [setDarkMode](arkts-arkui-uiappearance-setdarkmode-f-sys.md#setdarkmode) | 设置系统深浅色模式，修改系统级配色方案配置。设置后，所有跟随系统配色方案的应用将自动切换至对应模式。使用callback异步回调。 |
+| [setDarkMode](arkts-arkui-uiappearance-setdarkmode-f-sys.md#setdarkmode-1) | 设置系统深浅色模式，修改系统级配色方案配置。设置后，所有跟随系统配色方案的应用将自动切换至对应模式。使用Promise异步回调。 |
 | [setFontScale](arkts-arkui-uiappearance-setfontscale-f-sys.md#setfontscale) | 设置系统字体大小。 |
 | [setFontWeightScale](arkts-arkui-uiappearance-setfontweightscale-f-sys.md#setfontweightscale) | 设置系统字体粗细。 |
 <!--DelEnd-->
@@ -39,6 +39,6 @@ import { uiAppearance } from '@kit.ArkUI';
 
 | 名称 | 说明 |
 | --- | --- |
-| [DarkMode](arkts-arkui-uiappearance-darkmode-e-sys.md) | 深色模式枚举。  \| 名称 \| 值 \| 说明 \|  \| -- \| -- \| -- \|  \| ALWAYS_DARK \| 0 \| 系统始终为深色。 \|  \| ALWAYS_LIGHT \| 1 \| 系统始终为浅色。 \| |
+| [DarkMode](arkts-arkui-uiappearance-darkmode-e-sys.md) | 深浅色模式枚举，用于配置系统的深色或浅色模式。  \| 名称 \| 值 \| 说明 \|  \| -- \| -- \| -- \|  \| ALWAYS_DARK \| 0 \| 系统始终为深色。 \|  \| ALWAYS_LIGHT \| 1 \| 系统始终为浅色。 \| |
 <!--DelEnd-->
 

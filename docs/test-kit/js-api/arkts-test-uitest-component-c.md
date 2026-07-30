@@ -14,7 +14,6 @@ Represents a component on the UI and provides APIs for obtaining component attri
 import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPattern, UiDirection, TouchOptions, ComponentEventType, PointerMatrix, WindowChangeType, Component, ON, PenKey, Rect, InputTextMode, UIEventObserver, WindowFilter, WindowChangeOptions, UiWindow, TouchPadSwipeOptions, Point, KeyOptions, DisplayRotation, UIElementInfo, PenKeyOperationOptions, ComponentEventOptions, MouseButton, On } from '@kit.TestKit';
 ```
 
-<a id="cleartext"></a>
 ## clearText
 
 ```TypeScript
@@ -58,7 +57,6 @@ async function demo() {
 
 ```
 
-<a id="click"></a>
 ## click
 
 ```TypeScript
@@ -102,7 +100,6 @@ async function demo() {
 
 ```
 
-<a id="doubleclick"></a>
 ## doubleClick
 
 ```TypeScript
@@ -146,7 +143,6 @@ async function demo() {
 
 ```
 
-<a id="dragto"></a>
 ## dragTo
 
 ```TypeScript
@@ -198,7 +194,6 @@ async function demo() {
 
 ```
 
-<a id="getbounds"></a>
 ## getBounds
 
 ```TypeScript
@@ -242,7 +237,6 @@ async function demo() {
 
 ```
 
-<a id="getboundscenter"></a>
 ## getBoundsCenter
 
 ```TypeScript
@@ -286,7 +280,6 @@ async function demo() {
 
 ```
 
-<a id="getdescription"></a>
 ## getDescription
 
 ```TypeScript
@@ -330,7 +323,6 @@ async function demo() {
 
 ```
 
-<a id="getdisplayid"></a>
 ## getDisplayId
 
 ```TypeScript
@@ -374,7 +366,6 @@ async function demo() {
 
 ```
 
-<a id="gethint"></a>
 ## getHint
 
 ```TypeScript
@@ -418,7 +409,6 @@ async function demo() {
 
 ```
 
-<a id="getid"></a>
 ## getId
 
 ```TypeScript
@@ -462,14 +452,13 @@ async function demo() {
 
 ```
 
-<a id="getoriginaltext"></a>
 ## getOriginalText
 
 ```TypeScript
 getOriginalText(): Promise<string>
 ```
 
-Obtains the text information of this component. This API uses a promise to return the result. If the [accessibilityLevel](../../apis-arkui/arkts-components/arkts-arkui-commonmethod-c.md)attribute of the component is set to **no** or **no-hide-descendants**, this API can be used to obtain the text information of the component, but [Component.getText()](arkts-test-uitest-component-c.md#gettext-1) cannot.
+Obtains the text information of this component. This API uses a promise to return the result. If the [accessibilityLevel](../../apis-arkui/arkts-components/arkts-arkui-commonmethod-c.md#accessibilitylevel)attribute of the component is set to **no** or **no-hide-descendants**, this API can be used to obtain the text information of the component, but [Component.getText()](arkts-test-uitest-component-c.md#gettext) cannot.
 
 **Since:** 20
 
@@ -506,7 +495,6 @@ async function demo() {
 
 ```
 
-<a id="gettext"></a>
 ## getText
 
 ```TypeScript
@@ -514,13 +502,12 @@ getText(): Promise<string>
 ```
 
 Obtains the text information of this component. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
-> If the [accessibilityLevel](../../apis-arkui/arkts-components/arkts-arkui-commonmethod-c.md)  
+> If the [accessibilityLevel](../../apis-arkui/arkts-components/arkts-arkui-commonmethod-c.md#accessibilitylevel)  
 > attribute of the component is set to **no** or **no-hide-descendants**, this API cannot be used to obtain the  
 > text information of the component. In this case, you can use  
-> [Component.getOriginalText ()](arkts-test-uitest-component-c.md#getoriginaltext-1) instead.
+> [Component.getOriginalText ()](arkts-test-uitest-component-c.md#getoriginaltext) instead.
 
 **Since:** 9
 
@@ -557,7 +544,6 @@ async function demo() {
 
 ```
 
-<a id="gettype"></a>
 ## getType
 
 ```TypeScript
@@ -601,7 +587,6 @@ async function demo() {
 
 ```
 
-<a id="inputtext"></a>
 ## inputText
 
 ```TypeScript
@@ -652,7 +637,6 @@ async function demo() {
 
 ```
 
-<a id="inputtext-1"></a>
 ## inputText
 
 ```TypeScript
@@ -705,7 +689,6 @@ async function mode_demo() {
 
 ```
 
-<a id="ischeckable"></a>
 ## isCheckable
 
 ```TypeScript
@@ -753,7 +736,6 @@ async function demo() {
 
 ```
 
-<a id="ischecked"></a>
 ## isChecked
 
 ```TypeScript
@@ -801,7 +783,6 @@ async function demo() {
 
 ```
 
-<a id="isclickable"></a>
 ## isClickable
 
 ```TypeScript
@@ -849,7 +830,6 @@ async function demo() {
 
 ```
 
-<a id="isenabled"></a>
 ## isEnabled
 
 ```TypeScript
@@ -897,7 +877,6 @@ async function demo() {
 
 ```
 
-<a id="isfocused"></a>
 ## isFocused
 
 ```TypeScript
@@ -945,7 +924,6 @@ async function demo() {
 
 ```
 
-<a id="islongclickable"></a>
 ## isLongClickable
 
 ```TypeScript
@@ -993,7 +971,6 @@ async function demo() {
 
 ```
 
-<a id="isscrollable"></a>
 ## isScrollable
 
 ```TypeScript
@@ -1041,7 +1018,6 @@ async function demo() {
 
 ```
 
-<a id="isselected"></a>
 ## isSelected
 
 ```TypeScript
@@ -1089,7 +1065,6 @@ async function demo() {
 
 ```
 
-<a id="longclick"></a>
 ## longClick
 
 ```TypeScript
@@ -1133,7 +1108,6 @@ async function demo() {
 
 ```
 
-<a id="pinchin"></a>
 ## pinchIn
 
 ```TypeScript
@@ -1184,7 +1158,6 @@ async function demo() {
 
 ```
 
-<a id="pinchout"></a>
 ## pinchOut
 
 ```TypeScript
@@ -1235,7 +1208,6 @@ async function demo() {
 
 ```
 
-<a id="scrollsearch"></a>
 ## scrollSearch
 
 ```TypeScript
@@ -1286,7 +1258,6 @@ async function demo() {
 
 ```
 
-<a id="scrollsearch-1"></a>
 ## scrollSearch
 
 ```TypeScript
@@ -1339,7 +1310,6 @@ async function demo() {
 
 ```
 
-<a id="scrolltobottom"></a>
 ## scrollToBottom
 
 ```TypeScript
@@ -1390,7 +1360,6 @@ async function demo() {
 
 ```
 
-<a id="scrolltotop"></a>
 ## scrollToTop
 
 ```TypeScript

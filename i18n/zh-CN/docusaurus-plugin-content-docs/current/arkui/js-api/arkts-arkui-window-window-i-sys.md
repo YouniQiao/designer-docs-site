@@ -163,7 +163,7 @@ bindDialogTarget(token: rpc.RemoteObject, deathCallback: Callback<void>): Promis
 
 ```TypeScript
 import { rpc } from '@kit.IPCKit';
-import { dialogRequest, Want, ServiceExtensionAbility } from '@kit.AbilityKit';
+import { Want, ServiceExtensionAbility } from '@kit.AbilityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
 export class Property {
@@ -249,7 +249,7 @@ bindDialogTarget(token: rpc.RemoteObject, deathCallback: Callback<void>, callbac
 
 ```TypeScript
 import { rpc } from '@kit.IPCKit';
-import { dialogRequest, Want, ServiceExtensionAbility } from '@kit.AbilityKit';
+import { Want, ServiceExtensionAbility } from '@kit.AbilityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
 export class Property {
@@ -899,9 +899,9 @@ export default class EntryAbility extends UIAbility {
       try {
         // 调用hideNonSystemFloatingWindows接口，获取promise对象
         let promise = mainWindow.hideNonSystemFloatingWindows(shouldHide);
-        promise.then(()=> {
+        promise.then(() => {
           console.info('Succeeded in hiding the non-system floating windows.');
-        }).catch((err: BusinessError)=>{
+        }).catch((err: BusinessError) => {
           console.error(`Failed to hide the non-system floating windows. Cause code: ${err.code}, message: ${err.message}`);
         });
       } catch (exception) {
@@ -2495,9 +2495,9 @@ import { BusinessError } from '@kit.BasicServicesKit';
 let enable = true;
 try {
   let promise = windowClass.setSingleFrameComposerEnabled(enable);
-  promise.then(()=> {
+  promise.then(() => {
       console.info('Succeeded in enabling the single-frame-composer function.');
-  }).catch((err: BusinessError)=>{
+  }).catch((err: BusinessError) => {
       console.error(`Failed to enable the single-frame-composer function. code:${err.code}, message:${err.message}.`);
   });
 } catch (exception) {

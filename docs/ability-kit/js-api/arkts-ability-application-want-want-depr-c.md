@@ -38,7 +38,7 @@ Name of the ability. If both **bundleName** and **abilityName** are specified in
 action?: string
 ```
 
-Action to take, such as viewing and sharing application details. In implicit Want, you can define this property and use it together with **uri** or **parameters** to specify the operation to be performed on the data. For details,see [action](arkts-ability-wantconstant-action-depr-e.md). For details about the definition and matching rules of implicit Want, see [Matching Rules of Explicit Want and Implicit Want](docroot://application-models/explicit-implicit-want-mappings.md).
+Action to take, such as viewing and sharing application details. In implicit Want, you can define this property and use it together with **uri** or **parameters** to specify the operation to be performed on the data. For details,see [action](arkts-ability-wantconstant-action-e.md). For details about the definition and matching rules of implicit Want, see [Matching Rules of Explicit Want and Implicit Want](../../../application-models/explicit-implicit-want-mappings.md).
 
 **Type:** string
 
@@ -118,7 +118,7 @@ Additional category information (such as browser and video player) of the abilit
 flags?: number
 ```
 
-How the Want object will be handled. By default, numbers are passed in. For details, see [flags](arkts-ability-wantconstant-flags-depr-e.md).
+How the Want object will be handled. By default, numbers are passed in. For details, see [flags](arkts-ability-wantconstant-flags-e.md).
 
 **Type:** number
 

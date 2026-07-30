@@ -50,7 +50,7 @@ After this mode is used, the exposure will be locked by default for each photo c
 EXPOSURE_MODE_AUTO = 1
 ```
 
-Auto exposure. The metering point can be set by calling [AutoExposure.setMeteringPoint](arkts-camera-camera-autoexposure-i.md#setmeteringpoint-1).
+Auto exposure. The metering point can be set by calling [AutoExposure.setMeteringPoint](arkts-camera-camera-autoexposure-i.md#setmeteringpoint).
 
 After this mode is used, it takes effect only for the first photo capture.
 

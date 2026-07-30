@@ -90,7 +90,7 @@ readonly extraData?: Record<string, Object>
 
 Obtains the extra data of the this form.
 
-**Type:** Record<string, Object>
+**Type:** Record&lt;string, Object&gt;
 
 **Default:** -
 

@@ -6,7 +6,6 @@
 import { restrictions } from '@kit.MDMKit';
 ```
 
-<a id="getuserrestricted"></a>
 ## getUserRestricted
 
 ```TypeScript
@@ -19,7 +18,7 @@ Obtains the disabled status of a setting item.
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [getUserRestricted(admin:](arkts-mdm-restrictions-getuserrestricted-f.md#getuserrestricted-1)
+**Substitutes:** [getUserRestricted(admin:](arkts-mdm-restrictions-getuserrestricted-f.md#getuserrestricted)
 
 **Required permissions:** ohos.permission.ENTERPRISE_SET_USER_RESTRICTION
 
@@ -73,7 +72,6 @@ try {
 ```
 
 
-<a id="getuserrestricted-1"></a>
 ## getUserRestricted
 
 ```TypeScript

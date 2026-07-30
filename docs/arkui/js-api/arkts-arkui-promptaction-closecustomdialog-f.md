@@ -6,7 +6,6 @@
 import { LevelMode, ImmersiveMode, LevelOrder } from '@kit.ArkUI';
 ```
 
-<a id="closecustomdialog"></a>
 ## closeCustomDialog
 
 ```TypeScript
@@ -14,7 +13,6 @@ function closeCustomDialog(dialogId: number): void
 ```
 
 Closes the specified custom dialog box.
-
 > **NOTE**  
 >  
 > - This API is supported since API version 11 and deprecated since API version 18.You are advised to use [closeCustomDialog](arkts-apis-uicontext-promptaction.md#closecustomdialog12-1) instead.Before calling this API, you need to obtain the [PromptAction](arkts-apis-uicontext-promptaction.md) object using the [getPromptAction](arkts-apis-uicontext-uicontext.md#getpromptaction) method in [UIContext](arkts-apis-uicontext-uicontext.md).Directly using **closeCustomDialog** can lead to the issue of [ambiguous UI context](../../ui/arkts-global-interface.md#ambiguous-ui-context).  

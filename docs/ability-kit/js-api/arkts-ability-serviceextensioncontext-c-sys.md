@@ -3,7 +3,6 @@
 The ServiceExtensionContext module provides the context environment for the ServiceExtensionAbility. It inherits from ExtensionContext.
 
 You can use the APIs of this module to start, terminate, connect, and disconnect an ability.
-
 > **NOTE**  
 >  
 > - The APIs of this module must be used on the main thread, but not in child threads such as Worker and TaskPool.
@@ -18,7 +17,6 @@ You can use the APIs of this module to start, terminate, connect, and disconnect
 
 **System API:** This is a system API.
 
-<a id="connectserviceextensionability"></a>
 ## connectServiceExtensionAbility
 
 ```TypeScript
@@ -26,11 +24,10 @@ connectServiceExtensionAbility(want: Want, options: ConnectOptions): number
 ```
 
 Connects this ability to a ServiceExtensionAbility. This API can be called only on the main thread.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 9
 
@@ -74,7 +71,6 @@ Connects this ability to a ServiceExtensionAbility. This API can be called only 
 | [16000053](../errorcode-ability.md#16000053-ability-is-not-on-top-of-ui) | The ability is not on the top of the UI.<br>**Applicable version:** 10 and later |
 | [16000055](../errorcode-ability.md#16000055-installationfree-timeout) | Installation-free timed out.<br>**Applicable version:** 10 and later |
 
-<a id="connectserviceextensionabilitywithaccount"></a>
 ## connectServiceExtensionAbilityWithAccount
 
 ```TypeScript
@@ -84,11 +80,10 @@ connectServiceExtensionAbilityWithAccount(want: Want, accountId: number, options
 Connects this ability to a ServiceExtensionAbility of a given account. This API can be called only on the main thread.
 
 This API can be properly called on phones and tablets. If it is called on other devices, error code 16000006 is returned.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).  
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).  
 > > Permission verification is not required when **accountId** specifies the current user.
 
 **Since:** 9
@@ -137,7 +132,6 @@ This API can be properly called on phones and tablets. If it is called on other 
 | [16000053](../errorcode-ability.md#16000053-ability-is-not-on-top-of-ui) | The ability is not on the top of the UI.<br>**Applicable version:** 10 and later |
 | [16000055](../errorcode-ability.md#16000055-installationfree-timeout) | Installation-free timed out.<br>**Applicable version:** 10 and later |
 
-<a id="disconnectserviceextensionability"></a>
 ## disconnectServiceExtensionAbility
 
 ```TypeScript
@@ -171,7 +165,6 @@ Disconnects this ability from a ServiceExtensionAbility and after the successful
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 
-<a id="disconnectserviceextensionability-1"></a>
 ## disconnectServiceExtensionAbility
 
 ```TypeScript
@@ -210,7 +203,6 @@ Disconnects this ability from a ServiceExtensionAbility and after the successful
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 
-<a id="openatomicservice"></a>
 ## openAtomicService
 
 ```TypeScript
@@ -218,11 +210,10 @@ openAtomicService(appId: string, options?: AtomicServiceOptions): Promise<void>
 ```
 
 Starts an atomic service based on an application ID. This API uses a promise to return the result asynchronously.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 18
 
@@ -260,7 +251,6 @@ Starts an atomic service based on an application ID. This API uses a promise to 
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 | [16200001](../errorcode-ability.md#16200001-caller-released) | The caller has been released. |
 
-<a id="openlink"></a>
 ## openLink
 
 ```TypeScript
@@ -276,11 +266,10 @@ A URL in the standard format is passed in to the **link** field to start the tar
 - The **uris** field must contain elements whose **scheme** is **https** and **domainVerify** is **true**.
 
 If an input parameter is invalid, for example, a mandatory parameter is not set or the URL set in **link** is not in the standard format, an exception is thrown. If the parameter verification is successful but an error occurs when starting the target UIAbility, the error information is returned through promise.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 12
 
@@ -327,7 +316,6 @@ If an input parameter is invalid, for example, a mandatory parameter is not set 
 | [16200001](../errorcode-ability.md#16200001-caller-released) | The caller has been released. |
 | [16000136](../errorcode-ability.md#16000136-prohibited-from-launching-the-applications-own-uiability-via-app-linking) | The UIAbility is prohibited from launching itself via App Linking.<br>**Applicable version:** 23 and later |
 
-<a id="prestartmission"></a>
 ## preStartMission
 
 ```TypeScript
@@ -376,7 +364,6 @@ If parameter verification is successful but the atomic service fails to start, y
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 
-<a id="requestmodaluiextension"></a>
 ## requestModalUIExtension
 
 ```TypeScript
@@ -386,11 +373,10 @@ requestModalUIExtension(pickerWant: Want, callback: AsyncCallback<void>): void
 Requests the specified focused application to start the UIExtensionAbility of the corresponding type. The focused application is specified by **bundleName** in **want.parameters**. If **bundleName** is left unspecified, or if the specified application does not gain focus, the UIExtensionAbility is directly started on the system UI. The UIExtensionAbility to start is determined by the combination of the **bundleName**, **abilityName**, and **moduleName** fields in **Want**, and its type is determined by the **ability.want.params.uiExtensionType** field in **want.parameters**. This API can be called only on the main thread. It uses an asynchronous callback to return the result.
 
 Before starting the UIExtensionAbility, ensure that the focused application has finished page initialization.Otherwise, the UIExtensionAbility fails to start. The application can determine the time to start the UIExtensionAbility by listening for the page loading status.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 11
 
@@ -422,7 +408,6 @@ Before starting the UIExtensionAbility, ensure that the focused application has 
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 | [16200001](../errorcode-ability.md#16200001-caller-released) | The caller has been released.<br>**Applicable version:** 11 and later |
 
-<a id="requestmodaluiextension-1"></a>
 ## requestModalUIExtension
 
 ```TypeScript
@@ -432,11 +417,10 @@ requestModalUIExtension(pickerWant: Want): Promise<void>
 Requests the specified focused application to start the UIExtensionAbility of the corresponding type. The focused application is specified by **bundleName** in **want.parameters**. If **bundleName** is left unspecified, or if the specified application does not gain focus, the UIExtensionAbility is directly started on the system UI. The UIExtensionAbility to start is determined by the combination of the **bundleName**, **abilityName**, and **moduleName** fields in **Want**, and its type is determined by the **ability.want.params.uiExtensionType** field in **want.parameters**. This API can be called only on the main thread. It uses a promise to return the result asynchronously.
 
 Before starting the UIExtensionAbility, ensure that the focused application has finished page initialization.Otherwise, the UIExtensionAbility fails to start. The application can determine the time to start the UIExtensionAbility by listening for the page loading status.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 11
 
@@ -473,7 +457,6 @@ Before starting the UIExtensionAbility, ensure that the focused application has 
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 | [16200001](../errorcode-ability.md#16200001-caller-released) | The caller has been released.<br>**Applicable version:** 11 and later |
 
-<a id="requestmodaluiextensionwithaccount"></a>
 ## requestModalUIExtensionWithAccount
 
 ```TypeScript
@@ -483,11 +466,10 @@ requestModalUIExtensionWithAccount(pickerWant: Want, accountId: number): Promise
 Requests the specified focused application to start the UIExtensionAbility of the corresponding type for the specified user. The focused application is specified by **bundleName** in **want.parameters**. If **bundleName** is left unspecified, or if the specified application does not gain focus, the UIExtensionAbility is directly started on the system UI. The UIExtensionAbility to start is determined by the combination of the **bundleName**,**abilityName**, and **moduleName** fields in **Want**, and its type is determined by the **ability.want.params.uiExtensionType** field in **want.parameters**. This API can be called only on the main thread.It uses a promise to return the result asynchronously.
 
 Before starting the UIExtensionAbility, ensure that the focused application has finished page initialization.Otherwise, the UIExtensionAbility fails to start. The application can determine the time to start the UIExtensionAbility by listening for the page loading status.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 26.0.0
 
@@ -522,7 +504,6 @@ Before starting the UIExtensionAbility, ensure that the focused application has 
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | The application is not system-app, can not use system-api. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. Possible causes: 1.Connect to system service failed;2.Send restart message to system service failed; 3.System service failed to communicate with dependency module.4.The logical screen corresponding to the specified accountId is not in the foreground. |
 
-<a id="startability"></a>
 ## startAbility
 
 ```TypeScript
@@ -579,7 +560,6 @@ Starts an ability. This API can be called only on the main thread. It uses an as
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
-<a id="startability-1"></a>
 ## startAbility
 
 ```TypeScript
@@ -637,7 +617,6 @@ Starts an ability. This API can be called only on the main thread. It uses an as
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
-<a id="startability-2"></a>
 ## startAbility
 
 ```TypeScript
@@ -700,7 +679,6 @@ Starts an ability. This API can be called only on the main thread. It uses a pro
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
-<a id="startabilityascaller"></a>
 ## startAbilityAsCaller
 
 ```TypeScript
@@ -708,11 +686,10 @@ startAbilityAsCaller(want: Want, callback: AsyncCallback<void>): void
 ```
 
 Starts an ability with the caller information specified. The caller information is carried in **Want** and identified at the system service layer. The ability can obtain the caller information from the **Want** parameter in the **onCreate** lifecycle callback. When this API is used to start an ability, the caller information carried in **Want** is not overwritten by the current application information. The system service layer can obtain the initial caller information. This API can be called only on the main thread. It uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 10
 
@@ -762,7 +739,6 @@ Starts an ability with the caller information specified. The caller information 
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
-<a id="startabilityascaller-1"></a>
 ## startAbilityAsCaller
 
 ```TypeScript
@@ -770,11 +746,10 @@ startAbilityAsCaller(want: Want, options: StartOptions, callback: AsyncCallback<
 ```
 
 Starts an ability with the caller information and start options specified. The caller information is carried in **Want** and identified at the system service layer. The ability can obtain the caller information from the **Want** parameter in the **onCreate** lifecycle callback. When this API is used to start an ability, the caller information carried in **Want** is not overwritten by the current application information. The system service layer can obtain the initial caller information. This API can be called only on the main thread. It uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 10
 
@@ -823,7 +798,6 @@ Starts an ability with the caller information and start options specified. The c
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
-<a id="startabilityascaller-2"></a>
 ## startAbilityAsCaller
 
 ```TypeScript
@@ -831,11 +805,10 @@ startAbilityAsCaller(want: Want, options?: StartOptions): Promise<void>
 ```
 
 Starts an ability with the start options specified. The caller information is carried in **Want** and identified at the system service layer. The ability can obtain the caller information from the **Want** parameter in the **onCreate** lifecycle callback. When this API is used to start an ability, the caller information carried in **Want** is not overwritten by the current application information. The system service layer can obtain the initial caller information. This API can be called only on the main thread. It uses a promise to return the result asynchronously.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 10
 
@@ -891,7 +864,6 @@ Starts an ability with the start options specified. The caller information is ca
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
-<a id="startabilitybycall"></a>
 ## startAbilityByCall
 
 ```TypeScript
@@ -900,13 +872,13 @@ startAbilityByCall(want: Want): Promise<Caller>
 
 Starts an ability in the foreground or background and obtains the caller object for communicating with the ability.This API can be called only on the main thread. It uses a promise to return the result asynchronously.
 
-This API cannot be used to start the UIAbility with the launch type set to [specified](docroot://application-models/uiability-launch-type.md#specified).
+This API cannot be used to start the UIAbility with the launch type set to [specified](../../../application-models/uiability-launch-type.md#specified).
 
 Observe the following when using this API:
 
 - If an application running in the background needs to call this API to start an ability, it must have the ohos.permission.START_ABILITIES_FROM_BACKGROUND permission.  
 - If **exported** of the target ability is **false** in cross-application scenarios, the caller must have the ohos.permission.START_INVISIBLE_ABILITY permission.  
-- The rules for using this API in the same-device and cross-device scenarios are different. For details, see [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+- The rules for using this API in the same-device and cross-device scenarios are different. For details, see [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 9
 
@@ -948,7 +920,6 @@ Observe the following when using this API:
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 | [16200001](../errorcode-ability.md#16200001-caller-released) | The caller has been released.<br>**Applicable version:** 9 and later |
 
-<a id="startabilitybycallwithaccount"></a>
 ## startAbilityByCallWithAccount
 
 ```TypeScript
@@ -957,14 +928,14 @@ startAbilityByCallWithAccount(want: Want, accountId: number): Promise<Caller>
 
 Starts an ability with the account ID specified and obtains the caller object for communicating with the ability.This API can be called only on the main thread. It uses a promise to return the result asynchronously.
 
-This API cannot be used to start the UIAbility with the launch type set to [specified](docroot://application-models/uiability-launch-type.md#specified).
+This API cannot be used to start the UIAbility with the launch type set to [specified](../../../application-models/uiability-launch-type.md#specified).
 
 Observe the following when using this API:
 
 - If an application needs to call this API to start an ability that belongs to another user, it must have the ohos.permission.ABILITY_BACKGROUND_COMMUNICATION and ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS permissions.  
 - If an application running in the background needs to call this API to start an ability, it must have the ohos.permission.START_ABILITIES_FROM_BACKGROUND permission.  
 - If **exported** of the target ability is **false** in cross-application scenarios, the caller must have the ohos.permission.START_INVISIBLE_ABILITY permission.  
-- The rules for using this API in the same-device and cross-device scenarios are different. For details, see [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+- The rules for using this API in the same-device and cross-device scenarios are different. For details, see [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 10
 
@@ -1010,7 +981,6 @@ Observe the following when using this API:
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 | [16200001](../errorcode-ability.md#16200001-caller-released) | The caller has been released. |
 
-<a id="startabilitywithaccount"></a>
 ## startAbilityWithAccount
 
 ```TypeScript
@@ -1018,11 +988,10 @@ startAbilityWithAccount(want: Want, accountId: number, callback: AsyncCallback<v
 ```
 
 Starts an ability with the account ID specified. This API can be called only on the main thread. It uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 9
 
@@ -1076,7 +1045,6 @@ Starts an ability with the account ID specified. This API can be called only on 
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
-<a id="startabilitywithaccount-1"></a>
 ## startAbilityWithAccount
 
 ```TypeScript
@@ -1084,11 +1052,10 @@ startAbilityWithAccount(want: Want, accountId: number, options: StartOptions, ca
 ```
 
 Starts an ability with the account ID and start options specified. This API can be called only on the main thread.It uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 9
 
@@ -1143,7 +1110,6 @@ Starts an ability with the account ID and start options specified. This API can 
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
-<a id="startabilitywithaccount-2"></a>
 ## startAbilityWithAccount
 
 ```TypeScript
@@ -1151,11 +1117,10 @@ startAbilityWithAccount(want: Want, accountId: number, options?: StartOptions): 
 ```
 
 Starts an ability with the account ID specified. This API can be called only on the main thread. It uses a promise to return the result asynchronously.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 9
 
@@ -1215,7 +1180,6 @@ Starts an ability with the account ID specified. This API can be called only on 
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
-<a id="startrecentability"></a>
 ## startRecentAbility
 
 ```TypeScript
@@ -1223,11 +1187,10 @@ startRecentAbility(want: Want, callback: AsyncCallback<void>): void
 ```
 
 Starts an ability. If the ability has multiple instances, the latest instance is started. This API can be called only on the main thread. It uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 9
 
@@ -1275,7 +1238,6 @@ Starts an ability. If the ability has multiple instances, the latest instance is
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
-<a id="startrecentability-1"></a>
 ## startRecentAbility
 
 ```TypeScript
@@ -1285,11 +1247,10 @@ startRecentAbility(want: Want, options: StartOptions, callback: AsyncCallback<vo
 Starts an ability. If the ability has multiple instances, the latest instance is started. This API can be called only on the main thread. It uses an asynchronous callback to return the result.
 
 You can use this API to carry start options.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 9
 
@@ -1338,7 +1299,6 @@ You can use this API to carry start options.
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
-<a id="startrecentability-2"></a>
 ## startRecentAbility
 
 ```TypeScript
@@ -1346,11 +1306,10 @@ startRecentAbility(want: Want, options?: StartOptions): Promise<void>
 ```
 
 Starts an ability. If the ability has multiple instances, the latest instance is started. This API uses a promise to return the result asynchronously. It can be called only on the main thread.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 9
 
@@ -1404,7 +1363,6 @@ Starts an ability. If the ability has multiple instances, the latest instance is
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
-<a id="startserviceextensionability"></a>
 ## startServiceExtensionAbility
 
 ```TypeScript
@@ -1450,7 +1408,6 @@ Starts a ServiceExtensionAbility. This API uses an asynchronous callback to retu
 | [16000013](../errorcode-ability.md#16000013-application-controlled-by-edm) | The application is controlled by EDM.<br>**Applicable version:** 10 and later |
 | [16000019](../errorcode-ability.md#16000019-no-matching-ability-is-found-during-implicit-startup) | No matching ability is found.<br>**Applicable version:** 12 and later |
 
-<a id="startserviceextensionability-1"></a>
 ## startServiceExtensionAbility
 
 ```TypeScript
@@ -1501,7 +1458,6 @@ Starts a ServiceExtensionAbility. This API uses a promise to return the result a
 | [16000013](../errorcode-ability.md#16000013-application-controlled-by-edm) | The application is controlled by EDM.<br>**Applicable version:** 10 and later |
 | [16000019](../errorcode-ability.md#16000019-no-matching-ability-is-found-during-implicit-startup) | No matching ability is found.<br>**Applicable version:** 12 and later |
 
-<a id="startserviceextensionabilitywithaccount"></a>
 ## startServiceExtensionAbilityWithAccount
 
 ```TypeScript
@@ -1509,11 +1465,10 @@ startServiceExtensionAbilityWithAccount(want: Want, accountId: number, callback:
 ```
 
 Starts a ServiceExtensionAbility with the account ID specified. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).  
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).  
 > > Permission verification is not required when **accountId** specifies the current user.
 
 **Since:** 9
@@ -1556,7 +1511,6 @@ Starts a ServiceExtensionAbility with the account ID specified. This API uses an
 | [16000013](../errorcode-ability.md#16000013-application-controlled-by-edm) | The application is controlled by EDM.<br>**Applicable version:** 10 and later |
 | [16000019](../errorcode-ability.md#16000019-no-matching-ability-is-found-during-implicit-startup) | No matching ability is found.<br>**Applicable version:** 12 and later |
 
-<a id="startserviceextensionabilitywithaccount-1"></a>
 ## startServiceExtensionAbilityWithAccount
 
 ```TypeScript
@@ -1564,11 +1518,10 @@ startServiceExtensionAbilityWithAccount(want: Want, accountId: number): Promise<
 ```
 
 Starts a ServiceExtensionAbility with the account ID specified. This API uses a promise to return the result asynchronously.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).  
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).  
 > > Permission verification is not required when **accountId** specifies the current user.
 
 **Since:** 9
@@ -1616,7 +1569,6 @@ Starts a ServiceExtensionAbility with the account ID specified. This API uses a 
 | [16000013](../errorcode-ability.md#16000013-application-controlled-by-edm) | The application is controlled by EDM.<br>**Applicable version:** 10 and later |
 | [16000019](../errorcode-ability.md#16000019-no-matching-ability-is-found-during-implicit-startup) | No matching ability is found.<br>**Applicable version:** 12 and later |
 
-<a id="startuiabilities"></a>
 ## startUIAbilities
 
 ```TypeScript
@@ -1628,11 +1580,10 @@ Starts multiple UIAbility components simultaneously. This API uses a promise to 
 You can pass the Want information of multiple UIAbility instances, which can point to one or more applications. If all the UIAbility instances can be started successfully, the system displays these UIAbility instances in multiple windows simultaneously. Depending on the window handling, different devices may have varying display effects (including window shape, quantity, and layout).
 
 This API can be properly called on phones and tablets. If it is called on other devices, error code 801 is returned.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 20
 
@@ -1683,7 +1634,6 @@ This API can be properly called on phones and tablets. If it is called on other 
 | [16000125](../errorcode-ability.md#16000125-starting-a-plugin-is-not-supported) | Starting a plugin UIAbility is not supported. |
 | [16000126](../errorcode-ability.md#16000126-dlp-files-cannot-be-started) | Starting DLP files is not supported. |
 
-<a id="startuiserviceextensionability"></a>
 ## startUIServiceExtensionAbility
 
 ```TypeScript
@@ -1691,11 +1641,10 @@ startUIServiceExtensionAbility(want: Want): Promise<void>
 ```
 
 Starts a new [UIServiceExtensionAbility](arkts-ability-app-ability-uiserviceextensionability-uiserviceextensionability-c-sys.md). This API uses a promise to return the result asynchronously.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 14
 
@@ -1739,7 +1688,6 @@ Starts a new [UIServiceExtensionAbility](arkts-ability-app-ability-uiserviceexte
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 | [16200001](../errorcode-ability.md#16200001-caller-released) | The caller has been released. |
 
-<a id="stopserviceextensionability"></a>
 ## stopServiceExtensionAbility
 
 ```TypeScript
@@ -1781,7 +1729,6 @@ Stops a ServiceExtensionAbility. This API uses an asynchronous callback to retur
 | [201](../../errorcode-universal.md#201-permission-denied) | The application does not have permission to call the interface.<br>**Applicable version:** 10 and later |
 | [16000004](../errorcode-ability.md#16000004-visibility-verification-failure) | Cannot start an invisible component.<br>**Applicable version:** 10 and later |
 
-<a id="stopserviceextensionability-1"></a>
 ## stopServiceExtensionAbility
 
 ```TypeScript
@@ -1828,7 +1775,6 @@ Stops a ServiceExtensionAbility. This API uses a promise to return the result as
 | [201](../../errorcode-universal.md#201-permission-denied) | The application does not have permission to call the interface.<br>**Applicable version:** 10 and later |
 | [16000004](../errorcode-ability.md#16000004-visibility-verification-failure) | Cannot start an invisible component.<br>**Applicable version:** 10 and later |
 
-<a id="stopserviceextensionabilitywithaccount"></a>
 ## stopServiceExtensionAbilityWithAccount
 
 ```TypeScript
@@ -1836,7 +1782,6 @@ stopServiceExtensionAbilityWithAccount(want: Want, accountId: number, callback: 
 ```
 
 Stops a ServiceExtensionAbility with the specified account. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > Permission verification is not required when **accountId** specifies the current user.
@@ -1877,7 +1822,6 @@ Stops a ServiceExtensionAbility with the specified account. This API uses an asy
 | [16200001](../errorcode-ability.md#16200001-caller-released) | The caller has been released. |
 | [16000004](../errorcode-ability.md#16000004-visibility-verification-failure) | Cannot start an invisible component.<br>**Applicable version:** 10 and later |
 
-<a id="stopserviceextensionabilitywithaccount-1"></a>
 ## stopServiceExtensionAbilityWithAccount
 
 ```TypeScript
@@ -1885,7 +1829,6 @@ stopServiceExtensionAbilityWithAccount(want: Want, accountId: number): Promise<v
 ```
 
 Stops a ServiceExtensionAbility with the specified account. This API uses a promise to return the result asynchronously.
-
 > **NOTE**  
 >  
 > Permission verification is not required when **accountId** specifies the current user.
@@ -1931,7 +1874,6 @@ Stops a ServiceExtensionAbility with the specified account. This API uses a prom
 | [16200001](../errorcode-ability.md#16200001-caller-released) | The caller has been released. |
 | [16000004](../errorcode-ability.md#16000004-visibility-verification-failure) | Cannot start an invisible component.<br>**Applicable version:** 10 and later |
 
-<a id="terminateself"></a>
 ## terminateSelf
 
 ```TypeScript
@@ -1968,7 +1910,6 @@ Terminates this ability. This API can be called only on the main thread. It uses
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 
-<a id="terminateself-1"></a>
 ## terminateSelf
 
 ```TypeScript

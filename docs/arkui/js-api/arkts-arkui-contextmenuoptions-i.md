@@ -24,11 +24,11 @@ Configures menu item information.
 **Table 3 Default menu position when enableArrow is set to true and placement is not set or set to an invalid value**  
 | API| Default Menu Position|  
 |------|-------------|  
-| [bindMenu](arkts-arkui-commonmethod-c.md#bindmenu-1) | Placement.BottomLeft |  
-| [bindMenu<sup>11+</sup>](arkts-arkui-commonmethod-c.md#bindmenu-1) | Placement.BottomLeft |  
-| [bindContextMenu<sup>8+</sup>](arkts-arkui-commonmethod-c.md#bindcontextmenu-1) | Placement.Top |  
-| [bindContextMenu<sup>12+</sup>](arkts-arkui-commonmethod-c.md#bindcontextmenu-1) | Placement.BottomLeft |  
-| [bindContextMenuWithResponse<sup>23+</sup>](arkts-arkui-commonmethod-c.md#bindcontextmenuwithresponse-1) | Placement.Top |
+| [bindMenu](arkts-arkui-commonmethod-c.md#bindmenu) | Placement.BottomLeft |  
+| [bindMenu<sup>11+</sup>](arkts-arkui-commonmethod-c.md#bindmenu) | Placement.BottomLeft |  
+| [bindContextMenu<sup>8+</sup>](arkts-arkui-commonmethod-c.md#bindcontextmenu) | Placement.Top |  
+| [bindContextMenu<sup>12+</sup>](arkts-arkui-commonmethod-c.md#bindcontextmenu) | Placement.BottomLeft |  
+| [bindContextMenuWithResponse<sup>23+</sup>](arkts-arkui-commonmethod-c.md#bindcontextmenuwithresponse) | Placement.Top |
 
 **Since:** 10
 
@@ -400,9 +400,9 @@ Default value: **HapticFeedbackMode.DISABLED**, indicating no vibration when the
 
 The haptic feedback mode is only configurable for level-1 menus.
 
-This parameter takes effect only when the user enables the haptic feedback function and the **ohos.permission.VIBRATE** permission is added to the **requestPermissions** field in the [module.json5](docroot://quick-start/module-configuration-file.md) file. The configuration is as follows:
+This parameter takes effect only when the user enables the haptic feedback function and the **ohos.permission.VIBRATE** permission is added to the **requestPermissions** field in the [module.json5](../../../quick-start/module-configuration-file.md) file. The configuration is as follows:
 
-![menuEnableHapticFeedback](docroot://reference/apis-arkui/arkui-ts/figures/menuEnableHapticFeedback.png)
+![menuEnableHapticFeedback](../../../reference/apis-arkui/arkui-ts/figures/menuEnableHapticFeedback.png)
 
 **Type:** HapticFeedbackMode
 
@@ -817,7 +817,7 @@ Preferred position of the context menu. If the set position is insufficient for 
 
 **NOTE**
 
-1. When this parameter is used as the input parameter of [bindMenu](arkts-arkui-commonmethod-c.md#bindmenu-1), its default value is **Placement.BottomLeft**.2. When this parameter is used as the input parameter of [bindContextMenu<sup>8+</sup>](arkts-arkui-commonmethod-c.md#bindcontextmenu-1) or [bindContextMenuWithResponse<sup>23+</sup>](arkts-arkui-commonmethod-c.md#bindcontextmenuwithresponse-1), the menu is displayed at the click position.3. When this parameter is used as the input parameter of [bindContextMenu<sup>12+</sup>](arkts-arkui-commonmethod-c.md#bindcontextmenu-1), its default value is **Placement.BottomLeft**.4. If the value of **placement** is **undefined**, **null**, or empty, the default value is used.
+1. When this parameter is used as the input parameter of [bindMenu](arkts-arkui-commonmethod-c.md#bindmenu), its default value is **Placement.BottomLeft**.2. When this parameter is used as the input parameter of [bindContextMenu<sup>8+</sup>](arkts-arkui-commonmethod-c.md#bindcontextmenu) or [bindContextMenuWithResponse<sup>23+</sup>](arkts-arkui-commonmethod-c.md#bindcontextmenuwithresponse), the menu is displayed at the click position.3. When this parameter is used as the input parameter of [bindContextMenu<sup>12+</sup>](arkts-arkui-commonmethod-c.md#bindcontextmenu), its default value is **Placement.BottomLeft**.4. If the value of **placement** is **undefined**, **null**, or empty, the default value is used.
 
 **Type:** Placement
 
@@ -840,7 +840,7 @@ Preferred position of the context menu. If the set position is insufficient for 
 preview?: MenuPreviewMode | CustomBuilder
 ```
 
-Preview displayed when the context menu is triggered by a long-press or by calling [bindContextMenu<sup>12+</sup>](arkts-arkui-commonmethod-c.md#bindcontextmenu-1).It can be a screenshot of the target component or custom content.
+Preview displayed when the context menu is triggered by a long-press or by calling [bindContextMenu<sup>12+</sup>](arkts-arkui-commonmethod-c.md#bindcontextmenu).It can be a screenshot of the target component or custom content.
 
 Default value: **MenuPreviewMode.NONE**, indicating no preview.
 

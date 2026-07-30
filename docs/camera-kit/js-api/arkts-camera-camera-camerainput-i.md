@@ -14,7 +14,6 @@ Defines the camera input object.It provides camera device information used in [S
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -43,7 +42,6 @@ Closes this camera device. This API uses an asynchronous callback to return the 
 | --- | --- |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="close-1"></a>
 ## close
 
 ```TypeScript
@@ -72,7 +70,6 @@ Closes this camera device. This API uses a promise to return the result.
 | --- | --- |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="getphysicalcameraorientation"></a>
 ## getPhysicalCameraOrientation
 
 ```TypeScript
@@ -95,7 +92,6 @@ Obtains the physical camera orientation in the current fold state of the device.
 | --- | --- |
 | number | Physical camera orientation. The unit is degree. The value range is [0, 360]. |
 
-<a id="isphysicalcameraorientationvariable"></a>
 ## isPhysicalCameraOrientationVariable
 
 ```TypeScript
@@ -118,7 +114,6 @@ Checks whether the physical camera orientation is adjustable in different fold s
 | --- | --- |
 | boolean | Check result for whether the physical camera orientation is adjustable. **true** if adjustable, **false** otherwise. If the API call fails, undefined is returned. |
 
-<a id="off"></a>
 ## off('error')
 
 ```TypeScript
@@ -143,7 +138,6 @@ Unsubscribes from CameraInput error events.
 | camera | [CameraDevice](arkts-camera-camera-cameradevice-i.md) | Yes | Camera device. |
 | callback | [ErrorCallback](../../apis-arkui/arkts-components/arkts-arkui-errorcallback-t-sys.md) | No | Callback used to return the result. If this parameter is specified, only the corresponding callback will be unregistered (the callback object cannot be an anonymous function); otherwise,all registered callbacks will be unregistered. |
 
-<a id="on"></a>
 ## on('error')
 
 ```TypeScript
@@ -151,7 +145,6 @@ on(type: 'error', camera: CameraDevice, callback: ErrorCallback): void
 ```
 
 Subscribes to CameraInput error events. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
@@ -172,7 +165,6 @@ Subscribes to CameraInput error events. This API uses an asynchronous callback t
 | camera | [CameraDevice](arkts-camera-camera-cameradevice-i.md) | Yes | Camera device. |
 | callback | [ErrorCallback](../../apis-arkui/arkts-components/arkts-arkui-errorcallback-t-sys.md) | Yes | Callback used to return an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md). |
 
-<a id="open"></a>
 ## open
 
 ```TypeScript
@@ -203,7 +195,6 @@ Opens this camera device. This API uses an asynchronous callback to return the r
 | [7400108](../errorcode-camera.md#7400108-camera-disabled-due-to-security-reasons) | Camera disabled cause of security reason. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="open-1"></a>
 ## open
 
 ```TypeScript
@@ -235,7 +226,6 @@ Opens this camera device. This API uses a promise to return the result.
 | [7400108](../errorcode-camera.md#7400108-camera-disabled-due-to-security-reasons) | Camera disabled cause of security reason. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="open-2"></a>
 ## open
 
 ```TypeScript
@@ -272,7 +262,6 @@ Opens this camera device. This API uses a promise to return the result.
 | [7400108](../errorcode-camera.md#7400108-camera-disabled-due-to-security-reasons) | Camera disabled cause of security reason. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="open-3"></a>
 ## open
 
 ```TypeScript
@@ -310,7 +299,6 @@ Opens the camera with the specified concurrency type. This API uses a promise to
 | [7400108](../errorcode-camera.md#7400108-camera-disabled-due-to-security-reasons) | Camera disabled cause of security reason. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="usephysicalcameraorientation"></a>
 ## usePhysicalCameraOrientation
 
 ```TypeScript

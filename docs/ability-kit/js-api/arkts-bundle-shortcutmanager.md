@@ -22,7 +22,7 @@ import { shortcutManager } from '@kit.AbilityKit';
 
 | Name | Description |
 | --- | --- |
-| [getAllShortcutInfoForSelf](arkts-ability-shortcutmanager-getallshortcutinfoforself-f.md#getallshortcutinfoforself) | Obtains all the shortcut information defined in the [configuration](docroot://quick-start/module-configuration-file.md#shortcuts) file of the current application. This API uses a promise to return the result. |
+| [getAllShortcutInfoForSelf](arkts-ability-shortcutmanager-getallshortcutinfoforself-f.md#getallshortcutinfoforself) | Obtains all the shortcut information defined in the [configuration](../../../quick-start/module-configuration-file.md#shortcuts) file of the current application. This API uses a promise to return the result. |
 | [isShortcutSupported](arkts-ability-shortcutmanager-isshortcutsupported-f.md#isshortcutsupported) | Checks whether the current device supports shortcuts. |
 | [setShortcutVisibleForSelf](arkts-ability-shortcutmanager-setshortcutvisibleforself-f.md#setshortcutvisibleforself) | Sets whether to display the specified shortcut for the current application. This API uses a promise to return the result. |
 
@@ -47,7 +47,7 @@ import { shortcutManager } from '@kit.AbilityKit';
 | Name | Description |
 | --- | --- |
 | [ParameterItem](arkts-ability-shortcutmanager-parameteritem-t-sys.md) | Defines the custom data in the shortcut configuration. |
-| [ShortcutInfo](arkts-ability-shortcutmanager-shortcutinfo-t-sys.md) | Defines the shortcut information defined in the [module.json5](docroot://quick-start/module-configuration-file.md#shortcuts) file of the application. |
-| [ShortcutWant](arkts-ability-shortcutmanager-shortcutwant-t-sys.md) | Defines the target [wants](docroot://quick-start/module-configuration-file.md#wants) defined in the shortcut configuration. |
+| [ShortcutInfo](arkts-ability-shortcutmanager-shortcutinfo-t-sys.md) | Defines the shortcut information defined in the [module.json5](../../../quick-start/module-configuration-file.md#shortcuts) file of the application. |
+| [ShortcutWant](arkts-ability-shortcutmanager-shortcutwant-t-sys.md) | Defines the target [wants](../../../quick-start/module-configuration-file.md#wants) defined in the shortcut configuration. |
 <!--DelEnd-->
 

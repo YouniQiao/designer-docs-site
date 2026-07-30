@@ -261,7 +261,7 @@ getPermissionFlags(tokenID: number, permissionName: Permissions): Promise<number
 | [12100001](../errorcode-access-token.md#12100001-入参错误) | Invalid parameter. The tokenID is 0, or the permissionName exceeds 256characters. |
 | [12100002](../errorcode-access-token.md#12100002-tokenid不存在) | The specified tokenID does not exist. |
 | [12100003](../errorcode-access-token.md#12100003-权限名不存在) | The specified permission does not exist or is not declared in the module.json file. |
-| [12100006](../errorcode-access-token.md#12100006-指定的应用不支持被授予或被取消授予指定的权限) | The operation is not allowed. Either the application is a sandbox or the tokenID is from a remote device. |
+| [12100006](../errorcode-access-token.md#12100006-指定操作不允许) | The operation is not allowed. Either the application is a sandbox or the tokenID is from a remote device. |
 | [12100007](../errorcode-access-token.md#12100007-系统服务工作异常) | Service exception. |
 
 **示例：**
@@ -533,7 +533,7 @@ grantPermission(tokenID: number, permissionName: Permissions, permissionFlags: n
 | [12100001](../errorcode-access-token.md#12100001-入参错误) | Invalid parameter. The tokenID is 0, the permissionName exceeds 256 characters or is not declared in the module.json file, or the flags value is invalid. |
 | [12100002](../errorcode-access-token.md#12100002-tokenid不存在) | The specified tokenID does not exist. |
 | [12100003](../errorcode-access-token.md#12100003-权限名不存在) | The specified permission does not exist. |
-| [12100006](../errorcode-access-token.md#12100006-指定的应用不支持被授予或被取消授予指定的权限) | The application specified by the tokenID is not allowed to be granted with the specified permission. Either the application is a sandbox or the tokenID is from a remote device. |
+| [12100006](../errorcode-access-token.md#12100006-指定操作不允许) | The application specified by the tokenID is not allowed to be granted with the specified permission. Either the application is a sandbox or the tokenID is from a remote device. |
 | [12100007](../errorcode-access-token.md#12100007-系统服务工作异常) | Service exception. |
 | [12100014](../errorcode-access-token.md#12100014-非预期的权限) | Unexpected permission. The specified permission is not a user_grant or manual_settings permission. |
 
@@ -598,7 +598,7 @@ grantUserGrantedPermission(tokenID: number, permissionName: Permissions, permiss
 | [12100001](../errorcode-access-token.md#12100001-入参错误) | Invalid parameter. The tokenID is 0, the permissionName exceeds 256characters or is not declared in the module.json file, or the flags value is invalid. |
 | [12100002](../errorcode-access-token.md#12100002-tokenid不存在) | The specified tokenID does not exist. |
 | [12100003](../errorcode-access-token.md#12100003-权限名不存在) | The specified permission does not exist or is not a user_grant permission. |
-| [12100006](../errorcode-access-token.md#12100006-指定的应用不支持被授予或被取消授予指定的权限) | The application specified by the tokenID is not allowed to be granted with the specified permission.Either the application is a sandbox or the tokenID is from a remote device. |
+| [12100006](../errorcode-access-token.md#12100006-指定操作不允许) | The application specified by the tokenID is not allowed to be granted with the specified permission.Either the application is a sandbox or the tokenID is from a remote device. |
 | [12100007](../errorcode-access-token.md#12100007-系统服务工作异常) | Service exception. |
 
 **示例：**
@@ -660,7 +660,7 @@ grantUserGrantedPermission(
 | [12100001](../errorcode-access-token.md#12100001-入参错误) | Invalid parameter. The tokenID is 0, the permissionName exceeds 256characters or is not declared in the module.json file,or the flags value is invalid. |
 | [12100002](../errorcode-access-token.md#12100002-tokenid不存在) | The specified tokenID does not exist. |
 | [12100003](../errorcode-access-token.md#12100003-权限名不存在) | The specified permission does not exist or is not a user_grant permission. |
-| [12100006](../errorcode-access-token.md#12100006-指定的应用不支持被授予或被取消授予指定的权限) | The application specified by the tokenID is not allowed to be granted with the specified permission. Either the application is a sandbox or the tokenID is from a remote device. |
+| [12100006](../errorcode-access-token.md#12100006-指定操作不允许) | The application specified by the tokenID is not allowed to be granted with the specified permission. Either the application is a sandbox or the tokenID is from a remote device. |
 | [12100007](../errorcode-access-token.md#12100007-系统服务工作异常) | Service exception. |
 
 **示例：**
@@ -1113,7 +1113,7 @@ revokePermission(
 | [12100001](../errorcode-access-token.md#12100001-入参错误) | Invalid parameter. The token ID is 0, the permission name exceeds 256 characters or is not declared in the module.json file,or the value of flags is invalid. |
 | [12100002](../errorcode-access-token.md#12100002-tokenid不存在) | The specified tokenID does not exist. |
 | [12100003](../errorcode-access-token.md#12100003-权限名不存在) | The specified permission does not exist. |
-| [12100006](../errorcode-access-token.md#12100006-指定的应用不支持被授予或被取消授予指定的权限) | The specified permission is not allowed to be revoked from the application specified by the tokenID. Either the application is a sandbox or the tokenID is from a remote device. |
+| [12100006](../errorcode-access-token.md#12100006-指定操作不允许) | The specified permission is not allowed to be revoked from the application specified by the tokenID. Either the application is a sandbox or the tokenID is from a remote device. |
 | [12100007](../errorcode-access-token.md#12100007-系统服务工作异常) | Service exception. |
 | [12100014](../errorcode-access-token.md#12100014-非预期的权限) | Unexpected permission. The specified permission is not a user_grant or manual_settings permission. |
 
@@ -1187,7 +1187,7 @@ revokeUserGrantedPermission(tokenID: number, permissionName: Permissions, permis
 | [12100001](../errorcode-access-token.md#12100001-入参错误) | Invalid parameter. The tokenID is 0, the permissionName exceeds 256characters or is not declared in the module.json file, or the flags value is invalid. |
 | [12100002](../errorcode-access-token.md#12100002-tokenid不存在) | The specified tokenID does not exist. |
 | [12100003](../errorcode-access-token.md#12100003-权限名不存在) | The specified permission does not exist or is not a user_grant permission. |
-| [12100006](../errorcode-access-token.md#12100006-指定的应用不支持被授予或被取消授予指定的权限) | The application specified by the tokenID is not allowed to be revoked with the specified permission. Either the application is a sandbox or the tokenID is from a remote device. |
+| [12100006](../errorcode-access-token.md#12100006-指定操作不允许) | The application specified by the tokenID is not allowed to be revoked with the specified permission. Either the application is a sandbox or the tokenID is from a remote device. |
 | [12100007](../errorcode-access-token.md#12100007-系统服务工作异常) | Service exception. |
 
 **示例：**
@@ -1249,7 +1249,7 @@ revokeUserGrantedPermission(
 | [12100001](../errorcode-access-token.md#12100001-入参错误) | Invalid parameter. The tokenID is 0, the permissionName exceeds 256characters or is not declared in the module.json file, or the flags value is invalid. |
 | [12100002](../errorcode-access-token.md#12100002-tokenid不存在) | The specified tokenID does not exist. |
 | [12100003](../errorcode-access-token.md#12100003-权限名不存在) | The specified permission does not exist or is not a user_grant permission. |
-| [12100006](../errorcode-access-token.md#12100006-指定的应用不支持被授予或被取消授予指定的权限) | The application specified by the tokenID is not allowed to be revoked with the specified permission. Either the application is a sandbox or the tokenID is from a remote device. |
+| [12100006](../errorcode-access-token.md#12100006-指定操作不允许) | The application specified by the tokenID is not allowed to be revoked with the specified permission. Either the application is a sandbox or the tokenID is from a remote device. |
 | [12100007](../errorcode-access-token.md#12100007-系统服务工作异常) | Service exception. |
 
 **示例：**
@@ -1311,7 +1311,7 @@ setPermissionRequestToggleStatus(permissionName: Permissions, status: Permission
 | [202](../../errorcode-universal.md#202-系统api权限校验失败) | Not System App. Interface caller is not a system app. |
 | [12100001](../errorcode-access-token.md#12100001-入参错误) | Invalid parameter. The permissionName exceeds 256 characters, the specified permission is not a user_grant permission, or the status value is invalid. |
 | [12100003](../errorcode-access-token.md#12100003-权限名不存在) | The specified permission does not exist. |
-| [12100006](../errorcode-access-token.md#12100006-指定的应用不支持被授予或被取消授予指定的权限) | Operation not allowed. The toggle status of the specified permission has already been set by [setPermissionRequestToggleStatus](arkts-ability-abilityaccessctrl-atmanager-i-sys.md#setpermissionrequesttogglestatus).<br>**适用版本：** 26.1.0+ |
+| [12100006](../errorcode-access-token.md#12100006-指定操作不允许) | Operation not allowed. The toggle status of the specified permission has already been set by [setPermissionRequestToggleStatus](arkts-ability-abilityaccessctrl-atmanager-i-sys.md#setpermissionrequesttogglestatus).<br>**适用版本：** 26.1.0+ |
 | [12100007](../errorcode-access-token.md#12100007-系统服务工作异常) | Service exception. |
 | [12100009](../errorcode-access-token.md#12100009-服务内部错误) | Common inner error. A database error occurs. |
 
@@ -1378,7 +1378,7 @@ setPermissionRequestToggleStatus(
 | [801](../../errorcode-universal.md#801-该设备不支持此api) | Capability not supported. |
 | [12100001](../errorcode-access-token.md#12100001-入参错误) | Invalid parameter. The permissionName exceeds 256 characters, the specified permission is not a user_grant permission, the status value is invalid, or the specified subProfileId does not exist for the current user. |
 | [12100003](../errorcode-access-token.md#12100003-权限名不存在) | The specified permission does not exist. |
-| [12100006](../errorcode-access-token.md#12100006-指定的应用不支持被授予或被取消授予指定的权限) | Operation not allowed. The toggle status of the specified permission has already been set by [setPermissionRequestToggleStatus](arkts-ability-abilityaccessctrl-atmanager-i-sys.md#setpermissionrequesttogglestatus). |
+| [12100006](../errorcode-access-token.md#12100006-指定操作不允许) | Operation not allowed. The toggle status of the specified permission has already been set by [setPermissionRequestToggleStatus](arkts-ability-abilityaccessctrl-atmanager-i-sys.md#setpermissionrequesttogglestatus). |
 | [12100007](../errorcode-access-token.md#12100007-系统服务工作异常) | Service exception. |
 | [12100009](../errorcode-access-token.md#12100009-服务内部错误) | Common inner error. A database error occurs. |
 

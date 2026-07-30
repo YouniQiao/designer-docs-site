@@ -1274,7 +1274,7 @@ getWindowTransitionAnimation(transitionType: WindowTransitionType): TransitionAn
 
 | 类型 | 说明 |
 | --- | --- |
-| [TransitionAnimation](arkts-arkui-window-transitionanimation-i.md) | Transition animation configuration in the corresponding scene. If the [setWindowTransitionAnimation](arkts-arkui-window-window-i.md#setwindowtransitionanimation) API is not used,undefined is returned. |
+| [TransitionAnimation](arkts-arkui-window-transitionanimation-i.md) | 对应场景下的转场动画配置。当未使用过[setWindowTransitionAnimation](arkts-arkui-window-window-i.md#setwindowtransitionanimation)接口时，返回undefined。 |
 
 **错误码：**
 

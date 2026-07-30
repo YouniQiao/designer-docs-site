@@ -45,13 +45,12 @@ function hasAccessoryRight(accessory: USBAccessory): boolean
 **示例：**
 
 ```TypeScript
-import { hilog } from '@kit.PerformanceAnalysisKit';
 try {
   let accList: usbManager.USBAccessory[] = usbManager.getAccessoryList()
   let flag = usbManager.hasAccessoryRight(accList?.[0])
-  hilog.info(0, 'testTag ui', `hasAccessoryRight success, ret:${flag}`)
+  console.info(`hasAccessoryRight success, ret:${flag}`)
 } catch (error) {
-  hilog.error(0, 'testTag ui', `hasAccessoryRight error ${error.code}, message is ${error.message}`)
+  console.error(`hasAccessoryRight error ${error.code}, message is ${error.message}`)
 }
 
 ```

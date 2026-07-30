@@ -3,7 +3,7 @@
 Enumerates the types of Exchangeable Image File Format (Exif) data of an image.
 
 - The key in the format example is **image.PropertyKey.*XXX*** (where *XXX* is the name of an enumeration name, for example, **image.PropertyKey.NEW_SUBFILE_TYPE**).  
-- The format example is used only to show how to modify values and read results. For details about how to use them,see [modifyImageProperty](arkts-image-image-imagesource-i.md#modifyimageproperty-1)(to modify a single Exif field),[modifyImageProperties](arkts-image-image-imagesource-i.md#modifyimageproperties-1)(to modify multiple Exif fields),[getImageProperty](arkts-image-image-imagesource-i.md#getimageproperty-1)(to read a single Exif field), and [getImageProperties](arkts-image-image-imagesource-i.md#getimageproperties-1) (to read multiple Exif fields).
+- The format example is used only to show how to modify values and read results. For details about how to use them,see [modifyImageProperty](arkts-image-image-imagesource-i.md#modifyimageproperty)(to modify a single Exif field),[modifyImageProperties](arkts-image-image-imagesource-i.md#modifyimageproperties)(to modify multiple Exif fields),[getImageProperty](arkts-image-image-imagesource-i.md#getimageproperty)(to read a single Exif field), and [getImageProperties](arkts-image-image-imagesource-i.md#getimageproperties) (to read multiple Exif fields).
 
 **Since:** 7
 
@@ -53,7 +53,7 @@ Image orientation.
 
 If an undefined value x is read, **Unknown Value x** is returned. The value of the property obtained is returned as a string. When modifying the property, you can specify the property either in the form of a number or a string.
 
-For details about the image rotation angle, see [Obtaining the Rotation Angle of an Image](docroot://media/image/image-faqs/image-rotate-faq.md).
+For details about the image rotation angle, see [Obtaining the Rotation Angle of an Image](../../../media/image/image-faqs/image-rotate-faq.md).
 
 **Read/Write capability**: readable and writable.
 

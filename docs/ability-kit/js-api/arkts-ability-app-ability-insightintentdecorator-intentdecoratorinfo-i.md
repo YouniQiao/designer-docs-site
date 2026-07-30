@@ -1,7 +1,6 @@
 # IntentDecoratorInfo
 
 Common properties for intent decorators, used to define basic information about an intent (including the intent name and version number). It applies to all decorators provided by this module.
-
 > **NOTE**  
 >  
 > If a matching intent is found in the standard intent list based on the **schema** and **intentVersion** fields, the  
@@ -229,7 +228,7 @@ Data format for the results returned by intent calls. It defines how the data sh
 schema?: string
 ```
 
-Name of a standard intent schema. This field is required when you [access a standard intent](docroot://application-models/insight-intent-definition.md#accessing-standard-intents).It is not required when you [create a custom intent](docroot://application-models/insight-intent-definition.md#creating-custom-intents). For details about the standard intent list, see [Appendix: Standard Intent Access Specifications](docroot://application-models/insight-intent-access-specifications.md).
+Name of a standard intent schema. This field is required when you [access a standard intent](../../../application-models/insight-intent-definition.md#accessing-standard-intents).It is not required when you [create a custom intent](../../../application-models/insight-intent-definition.md#creating-custom-intents). For details about the standard intent list, see [Appendix: Standard Intent Access Specifications](../../../application-models/insight-intent-access-specifications.md).
 
 **Type:** string
 

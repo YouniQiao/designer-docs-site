@@ -18,7 +18,6 @@ Implements a capture session, which saves all [CameraInput](arkts-camera-camera-
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="getbeauty"></a>
 ## getBeauty
 
 ```TypeScript
@@ -31,7 +30,7 @@ Obtains the level of the beauty type in use.
 
 **Deprecated since:** 11
 
-**Substitutes:** [getBeauty](arkts-camera-camera-beauty-i-sys.md#getbeauty-1)
+**Substitutes:** [getBeauty](arkts-camera-camera-beauty-i-sys.md#getbeauty)
 
 <!--Device-CaptureSession-getBeauty(type: BeautyType): number--><!--Device-CaptureSession-getBeauty(type: BeautyType): number-End-->
 
@@ -77,7 +76,6 @@ function getBeauty(captureSession: camera.CaptureSession): number {
 
 ```
 
-<a id="getsupportedbeautyrange"></a>
 ## getSupportedBeautyRange
 
 ```TypeScript
@@ -96,7 +94,7 @@ Obtains the levels that can be set a beauty type. The beauty levels vary accordi
 
 **Deprecated since:** 11
 
-**Substitutes:** [getSupportedBeautyRange](arkts-camera-camera-beautyquery-i-sys.md#getsupportedbeautyrange-1)
+**Substitutes:** [getSupportedBeautyRange](arkts-camera-camera-beautyquery-i-sys.md#getsupportedbeautyrange)
 
 <!--Device-CaptureSession-getSupportedBeautyRange(type: BeautyType): Array<number>--><!--Device-CaptureSession-getSupportedBeautyRange(type: BeautyType): Array<number>-End-->
 
@@ -136,7 +134,6 @@ function getSupportedBeautyRange(captureSession: camera.CaptureSession): Array<n
 
 ```
 
-<a id="getsupportedbeautytypes"></a>
 ## getSupportedBeautyTypes
 
 ```TypeScript
@@ -149,7 +146,7 @@ Obtains the supported beauty types.
 
 **Deprecated since:** 11
 
-**Substitutes:** [getSupportedBeautyTypes](arkts-camera-camera-beautyquery-i-sys.md#getsupportedbeautytypes-1)
+**Substitutes:** [getSupportedBeautyTypes](arkts-camera-camera-beautyquery-i-sys.md#getsupportedbeautytypes)
 
 <!--Device-CaptureSession-getSupportedBeautyTypes(): Array<BeautyType>--><!--Device-CaptureSession-getSupportedBeautyTypes(): Array<BeautyType>-End-->
 
@@ -179,20 +176,19 @@ function getSupportedBeautyTypes(captureSession: camera.CaptureSession): Array<c
 
 ```
 
-<a id="setbeauty"></a>
 ## setBeauty
 
 ```TypeScript
 setBeauty(type: BeautyType, value: number): void
 ```
 
-Sets a beauty type and its level. Beauty mode is turned off only when all the [beauty types](arkts-camera-camera-beautytype-e-sys.md) obtained through [getSupportedBeautyTypes](arkts-camera-camera-capturesession-i-sys.md#getsupportedbeautytypes-1) are disabled.
+Sets a beauty type and its level. Beauty mode is turned off only when all the [beauty types](arkts-camera-camera-beautytype-e-sys.md) obtained through [getSupportedBeautyTypes](arkts-camera-camera-capturesession-i-sys.md#getsupportedbeautytypes) are disabled.
 
 **Since:** 10
 
 **Deprecated since:** 11
 
-**Substitutes:** [setBeauty](arkts-camera-camera-beauty-i-sys.md#setbeauty-1)
+**Substitutes:** [setBeauty](arkts-camera-camera-beauty-i-sys.md#setbeauty)
 
 <!--Device-CaptureSession-setBeauty(type: BeautyType, value: number): void--><!--Device-CaptureSession-setBeauty(type: BeautyType, value: number): void-End-->
 
@@ -205,7 +201,7 @@ Sets a beauty type and its level. Beauty mode is turned off only when all the [b
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | [BeautyType](arkts-camera-camera-beautytype-e-sys.md) | Yes | Beauty type. |
-| value | number | Yes | Beauty level, which is obtained through [getSupportedBeautyRange](arkts-camera-camera-capturesession-i-sys.md#getsupportedbeautyrange-1). |
+| value | number | Yes | Beauty level, which is obtained through [getSupportedBeautyRange](arkts-camera-camera-capturesession-i-sys.md#getsupportedbeautyrange). |
 
 **Error codes:**
 

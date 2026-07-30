@@ -50,6 +50,24 @@ Current play rate.
 
 **System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
 
+## isSupportExtras
+
+```TypeScript
+isSupportExtras?: boolean
+```
+
+Support extras or not.
+
+**Type:** boolean
+
+**Since:** 26.1.0
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-PlayInfo-isSupportExtras?: boolean--><!--Device-PlayInfo-isSupportExtras?: boolean-End-->
+
+**System capability:** SystemCapability.Multimedia.AVSession.AVMusicTemplate
+
 ## isSupportNext
 
 ```TypeScript

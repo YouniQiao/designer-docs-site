@@ -67,7 +67,7 @@ Region where the panel receives input events in landscape mode.
 - The array size is limited to [1, 4]. The default value is the panel size in landscape mode.  
 - The input hot zone is relative to the left vertex of the input method panel window.
 
-**Type:** Array<window.Rect>
+**Type:** Array&lt;window.Rect&gt;
 
 **Since:** 15
 
@@ -125,7 +125,7 @@ Region where the panel receives input events in portrait mode.
 - The array size is limited to [1, 4]. The default value is the panel size in portrait mode.  
 - The input hot zone is relative to the left vertex of the input method panel window.
 
-**Type:** Array<window.Rect>
+**Type:** Array&lt;window.Rect&gt;
 
 **Since:** 15
 

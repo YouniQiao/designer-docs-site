@@ -1,6 +1,6 @@
 # PasteButton properties/events
 
-This component can only inherit the [universal attributes of security components](./security_component).
+This component can only inherit the [universal attributes of security components](../arkts-apis/arkts-security_component.md).
 
 <br>Only the following events are supported.
 
@@ -12,7 +12,6 @@ This component can only inherit the [universal attributes of security components
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="onclick"></a>
 ## onClick
 
 ```TypeScript
@@ -20,10 +19,9 @@ onClick(event: PasteButtonCallback)
 ```
 
 Triggered when the paste button is clicked, returning the authorization result. Upon successful authorization, the application obtains temporary permission to read clipboard content.
-
 > **NOTE**  
 > - You may want to learn the  
-> [restrictions on security component styles](docroot://security/AccessToken/security-component-overview.md#constraints)  
+> [restrictions on security component styles](../../../security/AccessToken/security-component-overview.md#constraints)  
 > to avoid authorization failures caused by incompliant styles.
 
 **Since:** 10

@@ -38,7 +38,7 @@ This module provides the following RDB-related functions:
 
 | Name | Description |
 | --- | --- |
-| [RdbStore](arkts-arkdata-rdb-rdbstore-i.md) | Provides APIs for managing data in an RDB store.  Before using the APIs of this class, use [executeSql](arkts-arkdata-rdb-rdbstore-i.md#executesql-1)to initialize the database table structure and related data. |
+| [RdbStore](arkts-arkdata-rdb-rdbstore-i.md) | Provides APIs for managing data in an RDB store.  Before using the APIs of this class, use [executeSql](arkts-arkdata-rdb-rdbstore-i.md#executesql)to initialize the database table structure and related data. |
 | [StoreConfig](arkts-arkdata-rdb-storeconfig-i.md) | Defines the RDB store configuration. |
 
 ### Enums

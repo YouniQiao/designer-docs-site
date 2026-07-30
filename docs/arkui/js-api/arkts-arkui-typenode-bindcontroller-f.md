@@ -90,9 +90,9 @@ Binds the [Scroller](../arkts-components/arkts-arkui-scroller-c.md) to the [Scro
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| node | [FrameNode](arkts-arkui-framenode-c.md) | Yes | the target FrameNode. |
-| controller | [Scroller](../arkts-components/arkts-arkui-scroller-c.md) | Yes | the controller which is bind to the target FrameNode. |
-| nodeType | 'Scroll' | Yes | node type. |
+| node | [FrameNode](arkts-arkui-framenode-c.md) | Yes | Target node to which the scroll controller is bound. |
+| controller | [Scroller](../arkts-components/arkts-arkui-scroller-c.md) | Yes | Scroll controller. |
+| nodeType | 'Scroll' | Yes | Node type, which is **Scroll** in this API. |
 
 **Error codes:**
 

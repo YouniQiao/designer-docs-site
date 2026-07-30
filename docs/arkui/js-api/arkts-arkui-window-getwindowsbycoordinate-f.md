@@ -6,7 +6,6 @@
 import { window } from '@kit.ArkUI';
 ```
 
-<a id="getwindowsbycoordinate"></a>
 ## getWindowsByCoordinate
 
 ```TypeScript
@@ -20,9 +19,7 @@ Obtains visible windows at the specified coordinates within the current applicat
 
 **Atomic service API:** This API can be used in atomic services since API version 14.
 
-<!--Device-window-function getWindowsByCoordinate(displayId: long, windowNumber?: int, x?: int, y?: int):
-      Promise<Array<Window>>--><!--Device-window-function getWindowsByCoordinate(displayId: long, windowNumber?: int, x?: int, y?: int):
-      Promise<Array<Window>>-End-->
+<!--Device-window-function getWindowsByCoordinate(displayId: long, windowNumber?: int, x?: int, y?: int):      Promise<Array<Window>>--><!--Device-window-function getWindowsByCoordinate(displayId: long, windowNumber?: int, x?: int, y?: int):      Promise<Array<Window>>-End-->
 
 **System capability:** SystemCapability.Window.SessionManager
 

@@ -104,6 +104,10 @@
   <!--Del-->
   - [HighResolutionPhotoSession(system api)](arkts-camera-camera-highresolutionphotosession-i-sys.md)<!--DelEnd-->
   <!--Del-->
+  - [ImagingMode(system api)](arkts-camera-camera-imagingmode-i-sys.md)<!--DelEnd-->
+  <!--Del-->
+  - [ImagingModeQuery(system api)](arkts-camera-camera-imagingmodequery-i-sys.md)<!--DelEnd-->
+  <!--Del-->
   - [IsoInfo(system api)](arkts-camera-camera-isoinfo-i-sys.md)<!--DelEnd-->
   <!--Del-->
   - [LcdFlashStatus(system api)](arkts-camera-camera-lcdflashstatus-i-sys.md)<!--DelEnd-->
@@ -268,6 +272,8 @@
   - [CameraFormat](arkts-camera-camera-cameraformat-e.md)
   <!--Del-->
   - [CameraFormat(system api)](arkts-camera-camera-cameraformat-e-sys.md)<!--DelEnd-->
+  <!--Del-->
+  - [CameraImagingMode(system api)](arkts-camera-camera-cameraimagingmode-e-sys.md)<!--DelEnd-->
   - [CameraPosition](arkts-camera-camera-cameraposition-e.md)
   - [CameraStatus](arkts-camera-camera-camerastatus-e.md)
   - [CameraType](arkts-camera-camera-cameratype-e.md)

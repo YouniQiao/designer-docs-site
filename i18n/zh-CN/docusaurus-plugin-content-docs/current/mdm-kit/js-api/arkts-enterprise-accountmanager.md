@@ -7,11 +7,13 @@
 >  
 > 本模块接口仅对设备管理应用开放，且调用接口前需激活设备管理应用，具体请参考[MDM Kit开发指南](../../../mdm/mdm-kit-guide.md)。
 
-**起始版本：** 10
+**起始版本：** 12
 
 <!--Device-unnamed-declare namespace accountManager--><!--Device-unnamed-declare namespace accountManager-End-->
 
 **系统能力：** SystemCapability.Customization.EnterpriseDeviceManager
+
+**系统接口：** 此接口为系统接口。
 
 ## 导入模块
 
@@ -31,6 +33,7 @@ import { accountManager } from '@kit.MDMKit';
 | [disallowOsAccountAddition](arkts-mdm-accountmanager-disallowosaccountaddition-f.md#disallowosaccountaddition) | 禁止用户添加账号。 |
 | [getDomainAccountPolicy](arkts-mdm-accountmanager-getdomainaccountpolicy-f.md#getdomainaccountpolicy) | 获取域账号策略。 |
 | [isOsAccountAdditionDisallowed](arkts-mdm-accountmanager-isosaccountadditiondisallowed-f.md#isosaccountadditiondisallowed) | 查询是否禁止用户添加账号。 |
+| [isOsAccountAdditionDisallowed](arkts-mdm-accountmanager-isosaccountadditiondisallowed-f.md#isosaccountadditiondisallowed-1) | 查询是否禁止用户添加账号。适用于企业审计和合规检查场景，帮助管理员确认账号策略执行情况。 |
 | [removeOsAccount](arkts-mdm-accountmanager-removeosaccount-f.md#removeosaccount) | 移除系统账号 |
 | [setDomainAccountPolicy](arkts-mdm-accountmanager-setdomainaccountpolicy-f.md#setdomainaccountpolicy) | 设置域账号策略。 |
 

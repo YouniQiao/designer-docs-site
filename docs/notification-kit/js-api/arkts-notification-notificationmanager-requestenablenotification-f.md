@@ -6,7 +6,6 @@
 import { notificationManager } from '@kit.NotificationKit';
 ```
 
-<a id="requestenablenotification"></a>
 ## requestEnableNotification
 
 ```TypeScript
@@ -14,16 +13,15 @@ function requestEnableNotification(callback: AsyncCallback<void>): void
 ```
 
 Requests notification to be enabled for this application. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
-> This API is supported since API version 9 and deprecated since API version 12. You are advised to use [requestEnableNotification](arkts-notification-notificationmanager-requestenablenotification-f.md#requestenablenotification-1)with context instead.
+> This API is supported since API version 9 and deprecated since API version 12. You are advised to use [requestEnableNotification](arkts-notification-notificationmanager-requestenablenotification-f.md#requestenablenotification)with context instead.
 
 **Since:** 9
 
 **Deprecated since:** 12
 
-**Substitutes:** [requestEnableNotification](arkts-notification-notificationmanager-requestenablenotification-f.md#requestenablenotification-1)
+**Substitutes:** [requestEnableNotification](arkts-notification-notificationmanager-requestenablenotification-f.md#requestenablenotification)
 
 <!--Device-notificationManager-function requestEnableNotification(callback: AsyncCallback<void>): void--><!--Device-notificationManager-function requestEnableNotification(callback: AsyncCallback<void>): void-End-->
 
@@ -63,7 +61,6 @@ notificationManager.requestEnableNotification(requestEnableNotificationCallback)
 ```
 
 
-<a id="requestenablenotification-1"></a>
 ## requestEnableNotification
 
 ```TypeScript
@@ -71,16 +68,15 @@ function requestEnableNotification(context: UIAbilityContext, callback: AsyncCal
 ```
 
 Requests notification to be enabled for this application. You can call this API to display a dialog box prompting the user to enable notification for your application before publishing a notification. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > - This API can be called only after the application UI is loaded (that is,  
-> [loadContent](../../apis-ability-kit/arkts-apis/arkts-ability-app-ability-uiextensioncontentsession-uiextensioncontentsession-c.md#loadcontent-1) is  
+> [loadContent](../../apis-ability-kit/arkts-apis/arkts-ability-app-ability-uiextensioncontentsession-uiextensioncontentsession-c.md#loadcontent) is  
 > successfully called).  
 >  
 > - When an application uses **requestEnableNotification()** to display a dialog box for notification authorization  
 > and the user rejects the authorization, the application cannot use this API to open the dialog box again. However  
-> , it can call [openNotificationSettingsWithResult](arkts-notification-notificationmanager-opennotificationsettingswithresult-f.md#opennotificationsettingswithresult-1)  
+> , it can call [openNotificationSettingsWithResult](arkts-notification-notificationmanager-opennotificationsettingswithresult-f.md#opennotificationsettingswithresult)  
 > to open the notification management dialog box.
 
 **Since:** 10
@@ -141,7 +137,6 @@ class MyAbility extends UIAbility {
 ```
 
 
-<a id="requestenablenotification-2"></a>
 ## requestEnableNotification
 
 ```TypeScript
@@ -149,16 +144,15 @@ function requestEnableNotification(): Promise<void>
 ```
 
 Requests notification to be enabled for this application. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
-> This API is supported since API version 9 and deprecated since API version 12. You are advised to use [requestEnableNotification](arkts-notification-notificationmanager-requestenablenotification-f.md#requestenablenotification-1)with context instead.
+> This API is supported since API version 9 and deprecated since API version 12. You are advised to use [requestEnableNotification](arkts-notification-notificationmanager-requestenablenotification-f.md#requestenablenotification)with context instead.
 
 **Since:** 9
 
 **Deprecated since:** 12
 
-**Substitutes:** [requestEnableNotification](arkts-notification-notificationmanager-requestenablenotification-f.md#requestenablenotification-1)
+**Substitutes:** [requestEnableNotification](arkts-notification-notificationmanager-requestenablenotification-f.md#requestenablenotification)
 
 <!--Device-notificationManager-function requestEnableNotification(): Promise<void>--><!--Device-notificationManager-function requestEnableNotification(): Promise<void>-End-->
 
@@ -194,7 +188,6 @@ notificationManager.requestEnableNotification().then(() => {
 ```
 
 
-<a id="requestenablenotification-3"></a>
 ## requestEnableNotification
 
 ```TypeScript
@@ -202,16 +195,15 @@ function requestEnableNotification(context: UIAbilityContext): Promise<void>
 ```
 
 Requests notification to be enabled for this application. You can call this API to display a dialog box prompting the user to enable notification for your application before publishing a notification. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > - This API can be called only after the application UI is loaded (that is,  
-> [loadContent](../../apis-ability-kit/arkts-apis/arkts-ability-app-ability-uiextensioncontentsession-uiextensioncontentsession-c.md#loadcontent-1) is  
+> [loadContent](../../apis-ability-kit/arkts-apis/arkts-ability-app-ability-uiextensioncontentsession-uiextensioncontentsession-c.md#loadcontent) is  
 > successfully called).  
 >  
 > - When an application uses **requestEnableNotification()** to display a dialog box for notification authorization  
 > and the user rejects the authorization, the application cannot use this API to open the dialog box again. However  
-> , it can call [openNotificationSettingsWithResult](arkts-notification-notificationmanager-opennotificationsettingswithresult-f.md#opennotificationsettingswithresult-1)  
+> , it can call [openNotificationSettingsWithResult](arkts-notification-notificationmanager-opennotificationsettingswithresult-f.md#opennotificationsettingswithresult)  
 > to open the notification management dialog box.
 
 **Since:** 10

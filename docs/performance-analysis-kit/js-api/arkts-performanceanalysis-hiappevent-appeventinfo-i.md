@@ -20,7 +20,7 @@ import { hiAppEvent } from '@kit.PerformanceAnalysisKit';
 domain: string
 ```
 
-Event domain. The value is a string of up to 32 characters, including digits (0 to 9), letters (a to z)(A to Z), and underscores (_). It must start with a letter and cannot end with an underscore (_).
+Event domain. The value is a string of up to 32 characters, including digits (0 to 9), letters (a to z)(A to Z),and underscores (_). It must start with a letter and cannot end with an underscore (_).
 
 **Type:** string
 

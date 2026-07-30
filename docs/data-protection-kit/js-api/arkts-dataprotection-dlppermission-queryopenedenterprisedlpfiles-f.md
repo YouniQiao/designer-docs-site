@@ -67,7 +67,7 @@ let options: dlpPermission.DlpFileQueryOptions = {
 dlpPermission.queryOpenedEnterpriseDlpFiles(options).then((uris: Array<string>) => {
   console.info("try to query opened enterprise dlp files, result: ", JSON.stringify(uris));
 }).catch((error: BusinessError)=> {
-  console.error(error.message);
+  console.error(`Failed to query opened enterprise DLP files. Code: ${error.code}, message: ${error.message}`);
 }).finally(()=> {
   console.info("after querying opened enterprise dlp files");
 });

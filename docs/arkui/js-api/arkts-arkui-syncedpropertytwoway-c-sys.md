@@ -12,7 +12,6 @@ Inherits from [SubscribedAbstractProperty<T>](arkts-arkui-subscribedabstractprop
 
 **System API:** This is a system API.
 
-<a id="abouttobedeleted"></a>
 ## aboutToBeDeleted
 
 ```TypeScript
@@ -35,7 +34,6 @@ Called when the object is about to be destroyed.
 | --- | --- | --- | --- |
 | unsubscribeMe | [IPropertySubscriber](arkts-arkui-ipropertysubscriber-i-sys.md) | No | Subscriber to remove. |
 
-<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -60,7 +58,6 @@ Constructor.
 | subscribeMe | [IPropertySubscriber](arkts-arkui-ipropertysubscriber-i-sys.md) | No | Subscriber. |
 | info | string | No | Additional information about the subscriber. |
 
-<a id="get"></a>
 ## get
 
 ```TypeScript
@@ -83,7 +80,6 @@ Obtains the current value of the property.
 | --- | --- |
 | T | Instance of the T type. |
 
-<a id="haschanged"></a>
 ## hasChanged
 
 ```TypeScript
@@ -106,7 +102,6 @@ Notifies subscribers that the property value has changed.
 | --- | --- | --- | --- |
 | newValue | T | Yes | Instance of the T type. |
 
-<a id="set"></a>
 ## set
 
 ```TypeScript

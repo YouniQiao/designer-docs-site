@@ -8,11 +8,13 @@ The **securityManager** module provides device security management capabilities,
 > The APIs of this module can be called only by a device administrator application that is enabled. For details, see  
 > [MDM Kit Development](../../../mdm/mdm-kit-guide.md).
 
-**Since:** 11
+**Since:** 12
 
 <!--Device-unnamed-declare namespace securityManager--><!--Device-unnamed-declare namespace securityManager-End-->
 
 **System capability:** SystemCapability.Customization.EnterpriseDeviceManager
+
+**System API:** This is a system API.
 
 ## Modules to Import
 
@@ -31,10 +33,14 @@ import { securityManager } from '@kit.MDMKit';
 | [cancelWatermarkImage](arkts-mdm-securitymanager-cancelwatermarkimage-f.md#cancelwatermarkimage) | Cancels the watermark policy for a specified user. |
 | [getAllowedPermissionBundles](arkts-mdm-securitymanager-getallowedpermissionbundles-f.md#getallowedpermissionbundles) | Gets the applications that are allowed to be granted the permission. |
 | [getAppClipboardPolicy](arkts-mdm-securitymanager-getappclipboardpolicy-f.md#getappclipboardpolicy) | Obtains the device clipboard policy. |
-| [getAppClipboardPolicy](arkts-mdm-securitymanager-getappclipboardpolicy-f.md#getappclipboardpolicy-1) | Obtains the device clipboard policy of a specified application for a specified user. |
+| [getAppClipboardPolicy](arkts-mdm-securitymanager-getappclipboardpolicy-f.md#getappclipboardpolicy-1) | Obtains the device clipboard policy. |
+| [getAppClipboardPolicy](arkts-mdm-securitymanager-getappclipboardpolicy-f.md#getappclipboardpolicy-2) | Obtains the device clipboard policy of a specified application for a specified user. |
+| [getAppClipboardPolicy](arkts-mdm-securitymanager-getappclipboardpolicy-f.md#getappclipboardpolicy-3) | Obtains the device clipboard policy of a specified application for a specified user. |
 | [getDisallowedPermissions](arkts-mdm-securitymanager-getdisallowedpermissions-f.md#getdisallowedpermissions) | Gets the permissions that are disallowed to be granted for an account. |
 | [getExternalSourceExtensionsPolicy](arkts-mdm-securitymanager-getexternalsourceextensionspolicy-f.md#getexternalsourceextensionspolicy) | Obtains the management policy for extensions from external sources. |
+| [getExternalSourceExtensionsPolicy](arkts-mdm-securitymanager-getexternalsourceextensionspolicy-f.md#getexternalsourceextensionspolicy-1) | Obtains the management policy for extensions from external sources. |
 | [getPasswordPolicy](arkts-mdm-securitymanager-getpasswordpolicy-f.md#getpasswordpolicy) | Obtains the device screen lock password policy. |
+| [getPasswordPolicy](arkts-mdm-securitymanager-getpasswordpolicy-f.md#getpasswordpolicy-1) | Obtains the device screen lock password policy. |
 | [getPermissionManagedState](arkts-mdm-securitymanager-getpermissionmanagedstate-f.md#getpermissionmanagedstate) | Obtains the management policy for the [user_grant permission](../../apis-ability-kit/arkts-apis/arkts-ability-permissions-t.md) of a specified application. |
 | [getSecurityStatus](arkts-mdm-securitymanager-getsecuritystatus-f.md#getsecuritystatus) | Obtains the security status of the current device. |
 | [getUserCertificates](arkts-mdm-securitymanager-getusercertificates-f.md#getusercertificates) | Obtains the user certificate of a specified system account. |
@@ -63,7 +69,7 @@ import { securityManager } from '@kit.MDMKit';
 | Name | Description |
 | --- | --- |
 | [getDeviceEncryptionStatus](arkts-mdm-securitymanager-getdeviceencryptionstatus-f-sys.md#getdeviceencryptionstatus) | Queries the encryption status of the device file system. |
-| [getPasswordPolicy](arkts-mdm-securitymanager-getpasswordpolicy-f-sys.md#getpasswordpolicy-1) | Obtains the device screen lock password policy. |
+| [getPasswordPolicy](arkts-mdm-securitymanager-getpasswordpolicy-f-sys.md#getpasswordpolicy-2) | Obtains the device screen lock password policy. |
 | [getSecurityPatchTag](arkts-mdm-securitymanager-getsecuritypatchtag-f-sys.md#getsecuritypatchtag) | Queries the security patch tag of a device. |
 <!--DelEnd-->
 

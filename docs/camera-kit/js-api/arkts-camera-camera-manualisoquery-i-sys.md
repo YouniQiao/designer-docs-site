@@ -16,7 +16,6 @@ Provides APIs to check whether a camera device supports manual ISO setting and o
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="getisorange"></a>
 ## getIsoRange
 
 ```TypeScript
@@ -65,7 +64,6 @@ function getIsoRange(professionalPhotoSession: camera.ProfessionalPhotoSession):
 
 ```
 
-<a id="ismanualisosupported"></a>
 ## isManualIsoSupported
 
 ```TypeScript

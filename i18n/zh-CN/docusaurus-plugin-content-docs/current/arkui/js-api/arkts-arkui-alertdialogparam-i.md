@@ -38,7 +38,7 @@ alignment?: DialogAlignment
 autoCancel?: boolean
 ```
 
-点击遮障层时，是否关闭弹窗，true表示关闭弹窗。false表示不关闭弹窗。
+点击遮障层时，是否关闭弹窗。值为true表示关闭弹窗，值为false表示不关闭弹窗。
 
 默认值：true
 
@@ -134,7 +134,7 @@ backgroundColor会与模糊属性backgroundBlurStyle叠加产生效果，如果�
 backgroundEffect?: BackgroundEffectOptions
 ```
 
-背景效果参数。默认值请参考BackgroundEffectOptions类型说明。
+背景效果参数。当设置系统材质systemMaterial时，backgroundEffect不生效。默认值请参考BackgroundEffectOptions类型说明。
 
 **类型：** BackgroundEffectOptions
 
@@ -154,7 +154,7 @@ backgroundEffect?: BackgroundEffectOptions
 borderColor?: ResourceColor | EdgeColors | LocalizedEdgeColors
 ```
 
-设置弹窗背板的边框颜色。
+设置弹窗背板的边框颜色。当设置系统材质systemMaterial时，borderColor不生效。
 
 默认值：Color.Black
 
@@ -206,7 +206,7 @@ borderStyle?: BorderStyle | EdgeStyles
 borderWidth?: Dimension | EdgeWidths | LocalizedEdgeWidths
 ```
 
-可分别设置4个边框宽度。
+可分别设置4个边框宽度。当设置系统材质systemMaterial时，borderWidth不生效。
 
 默认值：0
 
@@ -288,7 +288,7 @@ cornerRadius?: Dimension | BorderRadiuses | LocalizedBorderRadiuses
 enableHoverMode?: boolean
 ```
 
-是否响应悬停态，值为true时，响应悬停态。
+是否响应悬停态，值为true时，响应悬停态，值为false时，不响应悬停态。
 
 默认值：false，默认不响应。
 
@@ -316,7 +316,7 @@ PC/2in1设备弹窗默认显示在上半屏，在enableHoverMode设置为true时
 gridCount?: number
 ```
 
-弹窗容器宽度所占用栅格数。
+弹窗容器宽度所占用栅格数。栅格数为弹窗宽度的相对单位，值越大弹窗越宽。
 
 默认值：4
 
@@ -414,7 +414,7 @@ immersiveMode?: ImmersiveMode
 isModal?: boolean
 ```
 
-弹窗是否为模态窗口，模态窗口有蒙层，非模态窗口无蒙层。值为false时，弹窗为非模态窗口，无蒙层。
+弹窗是否为模态窗口，模态窗口有蒙层，非模态窗口无蒙层。值为true时，弹窗为模态窗口，有蒙层。值为false时，弹窗为非模态窗口，无蒙层。
 
 默认值：true，此时弹窗有蒙层。
 
@@ -562,7 +562,7 @@ API version 20及之后，弹窗内容的对齐方式为居中对齐。
 offset?: Offset
 ```
 
-弹窗相对alignment所在位置的偏移量。
+弹窗相对alignment所在位置的偏移量。dx表示水平方向偏移，正值为向右偏移，负值为向左偏移；dy表示垂直方向偏移，正值为向下偏移，负值为向上偏移。
 
 默认值：{ dx: 0 , dy: 0 }
 
@@ -686,11 +686,11 @@ onWillDisappear?: Callback<void>
 onWillDismiss?: Callback<DismissDialogAction>
 ```
 
-交互式关闭回调函数。
+交互式关闭回调函数。当用户执行点击遮障层关闭、侧滑（左滑/右滑）、三键back、键盘ESC关闭交互操作时，如果注册该回调函数，则不会立刻关闭弹窗。
 
 **说明：**
 
-1.当用户执行点击遮障层关闭、侧滑（左滑/右滑）、三键back、键盘ESC关闭交互操作时，如果注册该回调函数，则不会立刻关闭弹窗。在回调函数中可以通过reason得到阻拦关闭弹窗的操作类型，从而根据原因选择是否能关闭弹窗。当前组件返回的reason中，暂不支持CLOSE_BUTTON的枚举值。
+1.在回调函数中可以通过reason得到阻拦关闭弹窗的操作类型，从而根据原因选择是否能关闭弹窗。典型场景如弹窗中存在未保存的表单数据时，拦截关闭并提示用户保存。当前组件返回的reason中，暂不支持CLOSE_BUTTON的枚举值。
 
 2.在onWillDismiss回调中，不能再做onWillDismiss拦截。
 

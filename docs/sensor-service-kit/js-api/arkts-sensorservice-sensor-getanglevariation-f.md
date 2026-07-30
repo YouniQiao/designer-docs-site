@@ -6,7 +6,6 @@
 import { sensor } from '@kit.SensorServiceKit';
 ```
 
-<a id="getanglevariation"></a>
 ## getAngleVariation
 
 ```TypeScript
@@ -18,9 +17,7 @@ Obtains the angle change between two rotation matrices. This API uses an asynchr
 
 **Since:** 9
 
-<!--Device-sensor-function getAngleVariation(currentRotationMatrix: Array<double>, preRotationMatrix: Array<double>,
-    callback: AsyncCallback<Array<double>>): void--><!--Device-sensor-function getAngleVariation(currentRotationMatrix: Array<double>, preRotationMatrix: Array<double>,
-    callback: AsyncCallback<Array<double>>): void-End-->
+<!--Device-sensor-function getAngleVariation(currentRotationMatrix: Array<double>, preRotationMatrix: Array<double>,    callback: AsyncCallback<Array<double>>): void--><!--Device-sensor-function getAngleVariation(currentRotationMatrix: Array<double>, preRotationMatrix: Array<double>,    callback: AsyncCallback<Array<double>>): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -79,7 +76,6 @@ try {
 ```
 
 
-<a id="getanglevariation-1"></a>
 ## getAngleVariation
 
 ```TypeScript

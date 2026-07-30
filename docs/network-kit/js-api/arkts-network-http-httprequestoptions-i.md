@@ -47,7 +47,7 @@ Serialization rules:
 
 If both body and extraData are specified, body takes precedence, and extraData will be ignored.
 
-**Type:** string | Object | ArrayBuffer
+**Type:** string \| Object \| ArrayBuffer
 
 **Since:** 26.0.0
 
@@ -101,7 +101,7 @@ certificatePinning?: CertificatePinning | CertificatePinning[]
 
 Certificate pinning option. If server certificate's digest does not match{@link CertificatePinning.publicKeyHash}, request will fail.
 
-**Type:** CertificatePinning | CertificatePinning[]
+**Type:** CertificatePinning \| CertificatePinning[]
 
 **Since:** 12
 
@@ -201,7 +201,7 @@ dnsServers?: Array<string>
 
 If this parameter is set, use the specified DNS server for DNS resolution.Multiple DNS resolution servers can be set up, with a maximum of 3 servers.Only take the first three if there are more than three.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 12
 
@@ -253,7 +253,7 @@ extraData?: string | Object | ArrayBuffer
 
 Additional data of the request.extraData can be a string or an Object (API 6) or an ArrayBuffer(API 8).
 
-**Type:** string | Object | ArrayBuffer
+**Type:** string \| Object \| ArrayBuffer
 
 **Since:** 11
 
@@ -357,7 +357,7 @@ multiFormDataList?: Array<MultiFormData>
 
 The data fields which is supported by the HTTP protocol to post forms and by the SMTP and IMAP protocols to provide the email data to send/upload.
 
-**Type:** Array<MultiFormData>
+**Type:** Array&lt;MultiFormData&gt;
 
 **Since:** 12
 
@@ -413,7 +413,7 @@ Notes:1. For `string`, do not include the leading `?`(for example, use `"key=val
 
 If both `queryParams` and `extraData` are specified, `queryParams` takes precedence for URL construction, and `extraData` will be ignored.
 
-**Type:** string | QueryParamObject
+**Type:** string \| QueryParamObject
 
 **Since:** 26.0.0
 
@@ -623,7 +623,7 @@ usingProxy?: boolean | HttpProxy
 
 If this parameter is set as type of boolean, the system will use default proxy or not use proxy.If this parameter is set as type of HttpProxy, the system will use the specified HttpProxy.
 
-**Type:** boolean | HttpProxy
+**Type:** boolean \| HttpProxy
 
 **Since:** 12
 

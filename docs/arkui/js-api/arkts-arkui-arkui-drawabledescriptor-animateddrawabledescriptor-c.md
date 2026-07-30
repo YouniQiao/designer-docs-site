@@ -16,7 +16,6 @@ Defines a descriptor object used to play animated content (for example, **PixelM
 import { DrawableDescriptor, AnimatedDrawableDescriptor, AnimationStopMode, AnimationOptions, AnimationController, DrawableDescriptorLoadedResult, LayeredDrawableDescriptor, PictureDrawableDescriptor, PixelMapDrawableDescriptor, HdrCompositionConfig } from '@kit.ArkUI';
 ```
 
-<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -42,7 +41,6 @@ A constructor used to create an **AnimatedDrawableDescriptor** object.
 | pixelMaps | Array&lt;image.PixelMap&gt; | Yes | **PixelMap** image data. |
 | options | [AnimationOptions](arkts-arkui-arkui-drawabledescriptor-animationoptions-i.md) | No | Animation options. |
 
-<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -101,7 +99,6 @@ struct Example {
 
 ```
 
-<a id="getanimationcontroller"></a>
 ## getAnimationController
 
 ```TypeScript
@@ -124,7 +121,7 @@ Obtains the animation controller for playback control.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| id | string | No | ID of the target component.<br>Optional when the [Image](../../apis-arkui/arkts-components/arkts-arkui-image-i) component and **AnimatedDrawableDescriptor** object have a 1:1relationship.<br>Required when the same **AnimatedDrawableDescriptor** object is bound to multiple [Image](../../apis-arkui/arkts-components/arkts-arkui-image-i) components (in this case, you must ensure the ID uniqueness).<br   >This rule is based on the design principle of the animation system: Animation data can be shared across multiple components, but each component's animation runs independently. Correspondingly, an **AnimationController** object maintains a strict 1:1 relationship with a component, meaning one component is paired with exactly one **AnimationController** object.<br>In addition,[AnimatedDrawableDescriptor](arkts-arkui-arkui-drawabledescriptor-animateddrawabledescriptor-c.md) supports the feature for automatically pausing animation playback when the bound component is not visible (for example, when the component is scrolled out of the screen or hidden). For specific implementation details, see [onVisibleAreaChange](../arkts-components/arkts-arkui-commonmethod-c.md#onvisibleareachange-1). |
+| id | string | No | ID of the target component.<br>Optional when the [Image](../../apis-arkui/arkts-components/arkts-arkui-image-i) component and **AnimatedDrawableDescriptor** object have a 1:1relationship.<br>Required when the same **AnimatedDrawableDescriptor** object is bound to multiple [Image](../../apis-arkui/arkts-components/arkts-arkui-image-i) components (in this case, you must ensure the ID uniqueness).<br   >This rule is based on the design principle of the animation system: Animation data can be shared across multiple components, but each component's animation runs independently. Correspondingly, an **AnimationController** object maintains a strict 1:1 relationship with a component, meaning one component is paired with exactly one **AnimationController** object.<br>In addition,[AnimatedDrawableDescriptor](arkts-arkui-arkui-drawabledescriptor-animateddrawabledescriptor-c.md) supports the feature for automatically pausing animation playback when the bound component is not visible (for example, when the component is scrolled out of the screen or hidden). For specific implementation details, see [onVisibleAreaChange](../arkts-components/arkts-arkui-commonmethod-c.md#onvisibleareachange). |
 
 **Return value:**
 

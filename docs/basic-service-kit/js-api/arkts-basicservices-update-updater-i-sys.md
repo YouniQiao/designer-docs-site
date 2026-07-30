@@ -31,7 +31,6 @@ Users can obtain system updates in a timely manner, improving upgrade efficiency
 import { update } from '@kit.BasicServicesKit';
 ```
 
-<a id="checknewversion"></a>
 ## checkNewVersion
 
 ```TypeScript
@@ -118,7 +117,6 @@ try {
 
 ```
 
-<a id="checknewversion-1"></a>
 ## checkNewVersion
 
 ```TypeScript
@@ -204,7 +202,6 @@ try {
 
 ```
 
-<a id="clearerror"></a>
 ## clearError
 
 ```TypeScript
@@ -299,7 +296,6 @@ try {
 
 ```
 
-<a id="clearerror-1"></a>
 ## clearError
 
 ```TypeScript
@@ -395,7 +391,6 @@ try {
 
 ```
 
-<a id="download"></a>
 ## download
 
 ```TypeScript
@@ -433,15 +428,7 @@ Resumable transfer is supported. The number of bytes that have been downloaded a
 
 **Required permissions:** ohos.permission.UPDATE_SYSTEM
 
-<!--Device-Updater-download(
-      versionDigestInfo: VersionDigestInfo,
-      downloadOptions: DownloadOptions,
-      callback: AsyncCallback<void>
-    ): void--><!--Device-Updater-download(
-      versionDigestInfo: VersionDigestInfo,
-      downloadOptions: DownloadOptions,
-      callback: AsyncCallback<void>
-    ): void-End-->
+<!--Device-Updater-download(      versionDigestInfo: VersionDigestInfo,      downloadOptions: DownloadOptions,      callback: AsyncCallback<void>    ): void--><!--Device-Updater-download(      versionDigestInfo: VersionDigestInfo,      downloadOptions: DownloadOptions,      callback: AsyncCallback<void>    ): void-End-->
 
 **System capability:** SystemCapability.Update.UpdateService
 
@@ -507,7 +494,6 @@ try {
 
 ```
 
-<a id="download-1"></a>
 ## download
 
 ```TypeScript
@@ -610,7 +596,6 @@ try {
 
 ```
 
-<a id="getcurrentversiondescription"></a>
 ## getCurrentVersionDescription
 
 ```TypeScript
@@ -640,13 +625,7 @@ The description includes the function description and version features of each c
 
 **Required permissions:** ohos.permission.UPDATE_SYSTEM
 
-<!--Device-Updater-getCurrentVersionDescription(
-      descriptionOptions: DescriptionOptions,
-      callback: AsyncCallback<Array<ComponentDescription>>
-    ): void--><!--Device-Updater-getCurrentVersionDescription(
-      descriptionOptions: DescriptionOptions,
-      callback: AsyncCallback<Array<ComponentDescription>>
-    ): void-End-->
+<!--Device-Updater-getCurrentVersionDescription(      descriptionOptions: DescriptionOptions,      callback: AsyncCallback<Array<ComponentDescription>>    ): void--><!--Device-Updater-getCurrentVersionDescription(      descriptionOptions: DescriptionOptions,      callback: AsyncCallback<Array<ComponentDescription>>    ): void-End-->
 
 **System capability:** SystemCapability.Update.UpdateService
 
@@ -703,7 +682,6 @@ try {
 
 ```
 
-<a id="getcurrentversiondescription-1"></a>
 ## getCurrentVersionDescription
 
 ```TypeScript
@@ -788,7 +766,6 @@ try {
 
 ```
 
-<a id="getcurrentversioninfo"></a>
 ## getCurrentVersionInfo
 
 ```TypeScript
@@ -861,7 +838,6 @@ try {
 
 ```
 
-<a id="getcurrentversioninfo-1"></a>
 ## getCurrentVersionInfo
 
 ```TypeScript
@@ -929,7 +905,6 @@ try {
 
 ```
 
-<a id="getnewversiondescription"></a>
 ## getNewVersionDescription
 
 ```TypeScript
@@ -957,15 +932,7 @@ This API sends requests to the upgrade package management server to query the ve
 
 **Required permissions:** ohos.permission.UPDATE_SYSTEM
 
-<!--Device-Updater-getNewVersionDescription(
-      versionDigestInfo: VersionDigestInfo,
-      descriptionOptions: DescriptionOptions,
-      callback: AsyncCallback<Array<ComponentDescription>>
-    ): void--><!--Device-Updater-getNewVersionDescription(
-      versionDigestInfo: VersionDigestInfo,
-      descriptionOptions: DescriptionOptions,
-      callback: AsyncCallback<Array<ComponentDescription>>
-    ): void-End-->
+<!--Device-Updater-getNewVersionDescription(      versionDigestInfo: VersionDigestInfo,      descriptionOptions: DescriptionOptions,      callback: AsyncCallback<Array<ComponentDescription>>    ): void--><!--Device-Updater-getNewVersionDescription(      versionDigestInfo: VersionDigestInfo,      descriptionOptions: DescriptionOptions,      callback: AsyncCallback<Array<ComponentDescription>>    ): void-End-->
 
 **System capability:** SystemCapability.Update.UpdateService
 
@@ -1029,7 +996,6 @@ try {
 
 ```
 
-<a id="getnewversiondescription-1"></a>
 ## getNewVersionDescription
 
 ```TypeScript
@@ -1056,13 +1022,7 @@ This API sends requests to the upgrade package management server to query the ve
 
 **Required permissions:** ohos.permission.UPDATE_SYSTEM
 
-<!--Device-Updater-getNewVersionDescription(
-      versionDigestInfo: VersionDigestInfo,
-      descriptionOptions: DescriptionOptions
-    ): Promise<Array<ComponentDescription>>--><!--Device-Updater-getNewVersionDescription(
-      versionDigestInfo: VersionDigestInfo,
-      descriptionOptions: DescriptionOptions
-    ): Promise<Array<ComponentDescription>>-End-->
+<!--Device-Updater-getNewVersionDescription(      versionDigestInfo: VersionDigestInfo,      descriptionOptions: DescriptionOptions    ): Promise<Array<ComponentDescription>>--><!--Device-Updater-getNewVersionDescription(      versionDigestInfo: VersionDigestInfo,      descriptionOptions: DescriptionOptions    ): Promise<Array<ComponentDescription>>-End-->
 
 **System capability:** SystemCapability.Update.UpdateService
 
@@ -1132,7 +1092,6 @@ try {
 
 ```
 
-<a id="getnewversioninfo"></a>
 ## getNewVersionInfo
 
 ```TypeScript
@@ -1220,7 +1179,6 @@ try {
 
 ```
 
-<a id="getnewversioninfo-1"></a>
 ## getNewVersionInfo
 
 ```TypeScript
@@ -1306,7 +1264,6 @@ try {
 
 ```
 
-<a id="gettaskinfo"></a>
 ## getTaskInfo
 
 ```TypeScript
@@ -1389,7 +1346,6 @@ try {
 
 ```
 
-<a id="gettaskinfo-1"></a>
 ## getTaskInfo
 
 ```TypeScript
@@ -1470,7 +1426,6 @@ try {
 
 ```
 
-<a id="getupgradepolicy"></a>
 ## getUpgradePolicy
 
 ```TypeScript
@@ -1539,7 +1494,6 @@ try {
 
 ```
 
-<a id="getupgradepolicy-1"></a>
 ## getUpgradePolicy
 
 ```TypeScript
@@ -1606,7 +1560,6 @@ try {
 
 ```
 
-<a id="off"></a>
 ## off
 
 ```TypeScript
@@ -1676,7 +1629,6 @@ try {
 
 ```
 
-<a id="on"></a>
 ## on
 
 ```TypeScript
@@ -1755,7 +1707,6 @@ try {
 
 ```
 
-<a id="pausedownload"></a>
 ## pauseDownload
 
 ```TypeScript
@@ -1788,15 +1739,7 @@ The process is as follows: Disconnect from the network. Save the progress status
 
 **Required permissions:** ohos.permission.UPDATE_SYSTEM
 
-<!--Device-Updater-pauseDownload(
-      versionDigestInfo: VersionDigestInfo,
-      pauseDownloadOptions: PauseDownloadOptions,
-      callback: AsyncCallback<void>
-    ): void--><!--Device-Updater-pauseDownload(
-      versionDigestInfo: VersionDigestInfo,
-      pauseDownloadOptions: PauseDownloadOptions,
-      callback: AsyncCallback<void>
-    ): void-End-->
+<!--Device-Updater-pauseDownload(      versionDigestInfo: VersionDigestInfo,      pauseDownloadOptions: PauseDownloadOptions,      callback: AsyncCallback<void>    ): void--><!--Device-Updater-pauseDownload(      versionDigestInfo: VersionDigestInfo,      pauseDownloadOptions: PauseDownloadOptions,      callback: AsyncCallback<void>    ): void-End-->
 
 **System capability:** SystemCapability.Update.UpdateService
 
@@ -1860,7 +1803,6 @@ try {
 
 ```
 
-<a id="pausedownload-1"></a>
 ## pauseDownload
 
 ```TypeScript
@@ -1956,7 +1898,6 @@ try {
 
 ```
 
-<a id="resumedownload"></a>
 ## resumeDownload
 
 ```TypeScript
@@ -1984,15 +1925,7 @@ The process is as follows: Read the progress status saved when the download is p
 
 **Required permissions:** ohos.permission.UPDATE_SYSTEM
 
-<!--Device-Updater-resumeDownload(
-      versionDigestInfo: VersionDigestInfo,
-      resumeDownloadOptions: ResumeDownloadOptions,
-      callback: AsyncCallback<void>
-    ): void--><!--Device-Updater-resumeDownload(
-      versionDigestInfo: VersionDigestInfo,
-      resumeDownloadOptions: ResumeDownloadOptions,
-      callback: AsyncCallback<void>
-    ): void-End-->
+<!--Device-Updater-resumeDownload(      versionDigestInfo: VersionDigestInfo,      resumeDownloadOptions: ResumeDownloadOptions,      callback: AsyncCallback<void>    ): void--><!--Device-Updater-resumeDownload(      versionDigestInfo: VersionDigestInfo,      resumeDownloadOptions: ResumeDownloadOptions,      callback: AsyncCallback<void>    ): void-End-->
 
 **System capability:** SystemCapability.Update.UpdateService
 
@@ -2056,7 +1989,6 @@ try {
 
 ```
 
-<a id="resumedownload-1"></a>
 ## resumeDownload
 
 ```TypeScript
@@ -2146,7 +2078,6 @@ try {
 
 ```
 
-<a id="setupgradepolicy"></a>
 ## setUpgradePolicy
 
 ```TypeScript
@@ -2223,7 +2154,6 @@ try {
 
 ```
 
-<a id="setupgradepolicy-1"></a>
 ## setUpgradePolicy
 
 ```TypeScript
@@ -2303,7 +2233,6 @@ try {
 
 ```
 
-<a id="terminateupgrade"></a>
 ## terminateUpgrade
 
 ```TypeScript
@@ -2384,7 +2313,6 @@ try {
 
 ```
 
-<a id="terminateupgrade-1"></a>
 ## terminateUpgrade
 
 ```TypeScript
@@ -2463,7 +2391,6 @@ try {
 
 ```
 
-<a id="upgrade"></a>
 ## upgrade
 
 ```TypeScript
@@ -2563,7 +2490,6 @@ try {
 
 ```
 
-<a id="upgrade-1"></a>
 ## upgrade
 
 ```TypeScript

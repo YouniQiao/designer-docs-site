@@ -136,6 +136,8 @@
   - [AnalysisConfig(system api)](arkts-medialibrary-photoaccesshelper-analysisconfig-i-sys.md)<!--DelEnd-->
   <!--Del-->
   - [AnalysisResult(system api)](arkts-medialibrary-photoaccesshelper-analysisresult-i-sys.md)<!--DelEnd-->
+  <!--Del-->
+  - [AnalysisToolResult(system api)](arkts-medialibrary-photoaccesshelper-analysistoolresult-i-sys.md)<!--DelEnd-->
   - [AssetCompatibleCapability](arkts-medialibrary-photoaccesshelper-assetcompatiblecapability-i.md)
   <!--Del-->
   - [BatchOperationOptions(system api)](arkts-medialibrary-photoaccesshelper-batchoperationoptions-i-sys.md)<!--DelEnd-->
@@ -215,6 +217,10 @@
   <!--Del-->
   - [SharedPhotoAsset(system api)](arkts-medialibrary-photoaccesshelper-sharedphotoasset-i-sys.md)<!--DelEnd-->
   - [TextContextInfo](arkts-medialibrary-photoaccesshelper-textcontextinfo-i.md)
+  <!--Del-->
+  - [ToolCancelConfig(system api)](arkts-medialibrary-photoaccesshelper-toolcancelconfig-i-sys.md)<!--DelEnd-->
+  <!--Del-->
+  - [ToolInvokeConfig(system api)](arkts-medialibrary-photoaccesshelper-toolinvokeconfig-i-sys.md)<!--DelEnd-->
   - [MemberType](arkts-medialibrary-photoaccesshelper-membertype-t.md)
   - [OperationValueType](arkts-medialibrary-photoaccesshelper-operationvaluetype-t.md)
   - [PhotoAssetParams](arkts-medialibrary-photoaccesshelper-photoassetparams-t.md)
@@ -239,6 +245,8 @@
   - [AlbumType](arkts-medialibrary-photoaccesshelper-albumtype-e.md)
   <!--Del-->
   - [AlbumType(system api)](arkts-medialibrary-photoaccesshelper-albumtype-e-sys.md)<!--DelEnd-->
+  <!--Del-->
+  - [AnalysisToolType(system api)](arkts-medialibrary-photoaccesshelper-analysistooltype-e-sys.md)<!--DelEnd-->
   <!--Del-->
   - [AnalysisType(system api)](arkts-medialibrary-photoaccesshelper-analysistype-e-sys.md)<!--DelEnd-->
   <!--Del-->

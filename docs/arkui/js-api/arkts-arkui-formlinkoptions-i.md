@@ -39,8 +39,8 @@ action: string
 Action type.
 
 - **"router"**: redirection to the specified UIAbility of the widget provider.  
-- **"message"**: custom message. If this type of action is triggered, the [onFormEvent()](../../apis-form-kit/arkts-apis/arkts-form-app-form-formextensionability-formextensionability-c.md#onformevent-1)lifecycle callback of the provider FormExtensionAbility is called.  
-- **"call"**: launch of the widget provider in the background. If this type of action is triggered, the specified UIAbility (whose launch type must be [singleton](docroot://application-models/uiability-launch-type.md#singleton)of the widget provider is started in the background, but not displayed in the foreground. This action type requires that the widget provider should have the [ohos.permission.KEEP_BACKGROUND_RUNNING](docroot://security/AccessToken/permissions-for-all.md#ohospermissionkeep_background_running)permission.
+- **"message"**: custom message. If this type of action is triggered, the [onFormEvent()](../../apis-form-kit/arkts-apis/arkts-form-app-form-formextensionability-formextensionability-c.md#onformevent)lifecycle callback of the provider FormExtensionAbility is called.  
+- **"call"**: launch of the widget provider in the background. If this type of action is triggered, the specified UIAbility (whose launch type must be [singleton](../../../application-models/uiability-launch-type.md#singleton)of the widget provider is started in the background, but not displayed in the foreground. This action type requires that the widget provider should have the [ohos.permission.KEEP_BACKGROUND_RUNNING](../../../security/AccessToken/permissions-for-all.md#ohospermissionkeep_background_running)permission.
 
 **NOTE**
 

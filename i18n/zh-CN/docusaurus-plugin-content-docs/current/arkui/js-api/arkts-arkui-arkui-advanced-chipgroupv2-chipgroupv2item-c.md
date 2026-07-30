@@ -1,6 +1,6 @@
 # ChipGroupV2Item
 
-ChipGroupV2Item定义了芯片组中单个芯片项。
+ChipGroupV2Item定义了ChipGroupV2组件中的单个操作块项。
 
 **起始版本：** 26.0.0
 
@@ -38,7 +38,7 @@ ChipGroupV2Item的构造函数。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| config | [ChipGroupV2ItemConfig](arkts-arkui-arkui-advanced-chipgroupv2-chipgroupv2itemconfig-i.md) | 是 | 芯片组项配置。 |
+| config | [ChipGroupV2ItemConfig](arkts-arkui-arkui-advanced-chipgroupv2-chipgroupv2itemconfig-i.md) | 是 | ChipGroupV2项配置。 |
 
 ## accessibilityDescription
 
@@ -46,7 +46,7 @@ ChipGroupV2Item的构造函数。
 public accessibilityDescription?: ResourceStr
 ```
 
-无障碍描述。此描述用于向用户详细解释当前组件，开发人员应为组件的这一属性提供较为详尽的文本说明，以协助用户理解即将执行的操作及其可能产生的结果。特别是当这些结果无法仅从组件的属性和无障碍文本中直接获知时。如果组件同时具备文本属性和无障碍说明属性，当组件被选中时，系统将首先播报组件的文本属性，随后播报无障碍说明属性的内容。
+ChipGroupV2中ChipV2项的无障碍描述。此描述用于向用户详细解释ChipGroupV2中ChipV2项，开发人员应为ChipGroupV2中ChipV2项的属性提供较为详尽的文本说明，以协助用户理解即将执行的操作及其可能产生的结果，特别是当这些结果无法仅从ChipGroupV2中ChipV2项的属性和无障碍文本中直接获知时。如果ChipGroupV2中ChipV2项同时具备文本属性和无障碍说明属性，当ChipGroupV2中ChipV2项被选中时，系统将首先播报ChipGroupV2中ChipV2项的文本属性，随后播报无障碍说明属性的内容。
 
 默认值：空字符串。
 
@@ -70,17 +70,19 @@ public accessibilityDescription?: ResourceStr
 public accessibilityLevel?: string
 ```
 
-无障碍重要性。用于控制组件是否可被无障碍辅助服务所识别。
+ChipGroupV2中ChipV2项无障碍重要性。用于控制ChipGroupV2中ChipV2项是否可被无障碍辅助服务所识别。
 
 支持的值为：
 
-"auto"：当前组件会转化为"yes"。
+"auto"：ChipGroupV2中ChipV2项会转换为"yes"。
 
-"yes"：当前组件可被无障碍辅助服务所识别。
+"yes"：ChipGroupV2中ChipV2项可被无障碍辅助服务所识别。
 
-"no"：当前组件不可被无障碍辅助服务所识别。
+"no"：ChipGroupV2中ChipV2项不可被无障碍辅助服务所识别。
 
-"no-hide-descendants"：当前组件及其所有子组件不可被无障碍辅助服务所识别。
+"no-hide-descendants"：ChipGroupV2中ChipV2项及其所有子组件不可被无障碍辅助服务所识别。
+
+传入不在支持范围内的值时，按默认值处理。
 
 默认值："auto"
 
@@ -106,9 +108,7 @@ public accessibilityLevel?: string
 public allowClose?: boolean
 ```
 
-删除图标是否显示。当传入suffixIcon参数时，allowClose不生效；未传入suffixIcon参数时，allowClose决定是否显示移除图标。
-
-true表示删除图标显示，false表示删除图标不显示。
+关闭图标是否显示。取值原则：true表示关闭图标显示，false表示关闭图标不显示。当传入suffixIcon或suffixSymbolIcon参数时，allowClose不生效；未传入suffixIcon和suffixSymbolIcon参数时，allowClose决定是否显示关闭图标。
 
 默认值：false
 
@@ -132,11 +132,11 @@ true表示删除图标显示，false表示删除图标不显示。
 public closeIcon?: ChipV2CloseConfig
 ```
 
-关闭图标的配置，包括无障碍属性配置。
+关闭图标的配置，包括无障碍属性配置。当需要自定义关闭图标的大小或无障碍属性时设置此属性。
 
 默认值：
 
-- 尺寸默认值：size为ChipV2Size.SMALL时，默认值为`$r('sys.float.chip_small_font_size')`；其他情况默认值为`$r('sys.float.chip_normal_font_size')`。  
+- fontSize默认值：size为ChipV2Size.SMALL时，默认值为`$r('sys.float.chip_small_font_size')`；其他情况默认值为`$r('sys.float.chip_normal_font_size')`。  
 - 无障碍默认值：无无障碍描述。
 
 值为undefined时，按默认值处理。
@@ -179,7 +179,7 @@ ChipV2文本属性。
 public prefixIcon?: ChipV2PrefixImageIcon
 ```
 
-前缀图标属性。
+前缀Image图标属性，用于在ChipV2文本前显示Image图标。当需要在ChipV2左侧显示图标标识时设置此属性。
 
 默认值：没有前缀Image图标。
 
@@ -203,7 +203,7 @@ public prefixIcon?: ChipV2PrefixImageIcon
 public prefixSymbolIcon?: ChipV2PrefixSymbolIcon
 ```
 
-前缀Symbol图标属性。
+前缀Symbol图标属性，用于在ChipV2文本前显示Symbol图标。当需要在ChipV2左侧显示Symbol图标标识时设置此属性。
 
 默认值：没有前缀Symbol图标。
 
@@ -227,7 +227,7 @@ public prefixSymbolIcon?: ChipV2PrefixSymbolIcon
 public suffixIcon?: ChipV2SuffixImageIcon
 ```
 
-后缀图标属性。
+后缀Image图标属性，用于在ChipV2文本后显示Image图标。设置该属性时，allowClose属性将不生效。
 
 默认值：不显示后缀Image图标。
 
@@ -251,7 +251,7 @@ public suffixIcon?: ChipV2SuffixImageIcon
 public suffixSymbolIcon?: ChipV2SuffixSymbolIcon
 ```
 
-后缀Symbol图标属性。
+后缀Symbol图标属性，用于在ChipV2文本后显示Symbol图标。设置该属性时，allowClose属性将不生效。
 
 默认值：不显示后缀Symbol图标。
 

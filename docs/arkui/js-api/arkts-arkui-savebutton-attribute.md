@@ -1,6 +1,6 @@
 # SaveButton properties/events
 
-Universal attributes are not supported. This component supports the attributes listed below, as well as [universal attributes of security components](./security_component). Only the following events are supported.
+Universal attributes are not supported. This component supports the attributes listed below, as well as [universal attributes of security components](../arkts-apis/arkts-security_component.md). Only the following events are supported.
 
 **Inheritance/Implementation:** SaveButtonAttribute extends [SecurityComponentMethod<SaveButtonAttribute>](SecurityComponentMethod<SaveButtonAttribute>)
 
@@ -10,7 +10,6 @@ Universal attributes are not supported. This component supports the attributes l
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="iconborderradius"></a>
 ## iconBorderRadius
 
 ```TypeScript
@@ -37,7 +36,6 @@ Sets the corner radius of the **SaveButton** component.
 | --- | --- | --- | --- |
 | radius | [Dimension](../arkts-apis/arkts-arkui-dimension-t.md) \| BorderRadiuses | Yes | Corner radius of the **SaveButton** component. You can set the radius for each of the four corners individually.<br>The default value is 0 vp for all four corners. Units such as vp and px are supported, and valid values are greater than or equal to 0. Negative values are automatically clamped to **0**.<br>If the app does not have the **ohos.permission.CUSTOMIZE_SAVE_BUTTON** permission, the corner radius setting of the icon does not take effect. |
 
-<a id="iconsize"></a>
 ## iconSize
 
 ```TypeScript
@@ -62,14 +60,13 @@ Sets the icon size of the **SaveButton** component.
 | --- | --- | --- | --- |
 | size | [Dimension](../arkts-apis/arkts-arkui-dimension-t.md) \| SizeOptions | Yes | Icon size. Pixel units such as vp and px are supported.<br>The default width and height are 16 vp.<br>Percentage strings are not supported. If a percentage string is passed as a Dimension parameter, the icon will be displayed with the default size. If either the **width** or **height** property of a SizeOptions type parameter is set to a percentage string, the icon will be displayed with a size of 0 vp.<br>For the system icons provided by the **SaveButton** component:<br>- Dimension type: Width and height are both set to the specified value.<br>- SizeOptions type: If width and height are different, the smaller value is used for both. If only one value is specified, it applies to both dimensions. This rule ensures square display and consistent visual appearance of system icons.<br>For custom icons:<br>- Dimension type: Width and height are both set to the specified value.<br>- SizeOptions type: It is recommended that you set both width and height explicitly; if only one value is set, it applies to both dimensions. Custom icons support flexible sizing to adapt to different image aspect ratios.<br>- If the specified size's aspect ratio does not match the custom icon's original ratio, the icon displays in [ImageFit.Cover](../arkts-apis/arkts-arkui-imagefit-e.md) mode. |
 
-<a id="onclick"></a>
 ## onClick
 
 ```TypeScript
 onClick(event: SaveButtonCallback)
 ```
 
-Triggered when the **SaveButton** component is clicked. When a user clicks the save button for the first time, an authorization dialog box is displayed. If the user allows authorization, the app obtains temporary access to media library APIs. For details about the authorization duration, see the description of the [SaveButton](docroot://reference/apis-arkui/arkui-ts/ts-security-components-savebutton.md#savebutton-1)constructor. Authorization fails if the user declines authorization or closes the dialog box.
+Triggered when the **SaveButton** component is clicked. When a user clicks the save button for the first time, an authorization dialog box is displayed. If the user allows authorization, the app obtains temporary access to media library APIs. For details about the authorization duration, see the description of the [SaveButton](../../../reference/apis-arkui/arkui-ts/ts-security-components-savebutton.md#savebutton-1)constructor. Authorization fails if the user declines authorization or closes the dialog box.
 
 **Since:** 10
 
@@ -87,7 +84,6 @@ Triggered when the **SaveButton** component is clicked. When a user clicks the s
 | --- | --- | --- | --- |
 | event | [SaveButtonCallback](arkts-arkui-savebuttoncallback-t.md) | Yes | Callback object for the click event, which carries click details,authorization result and error information.<br>Starting from API version 18, **SaveButtonCallback** is adopted uniformly, which additionally provides error information.<br>**Since:** 18 |
 
-<a id="seticon"></a>
 ## setIcon
 
 ```TypeScript
@@ -112,9 +108,8 @@ Sets the icon of the **SaveButton** component.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| icon | [Resource](../../apis-localization-kit/arkts-apis/arkts-localization-resource-resource-i.md) | Yes | Custom icon resource information. Only data sources of the Resource type are supported.<br>Images in the following formats are supported: PNG, JPG, JPEG, BMP, SVG, WebP, GIF, and HEIF. For details about the supported image formats, see [Image](./image). If the resource is not an image resource or the format is not supported, the icon is displayed as blank.<br>Since API version 26.0.0, data sources of the Resource type in Symbol format are supported.<br>If the app does not have the **ohos.permission.CUSTOMIZE_SAVE_BUTTON** permission, the custom icon does not take effect and the save button uses the default style. |
+| icon | [Resource](../../apis-localization-kit/arkts-apis/arkts-localization-resource-resource-i.md) | Yes | Custom icon resource information. Only data sources of the Resource type are supported.<br>Images in the following formats are supported: PNG, JPG, JPEG, BMP, SVG, WebP, GIF, and HEIF. For details about the supported image formats, see [Image](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md). If the resource is not an image resource or the format is not supported, the icon is displayed as blank.<br>Since API version 26.0.0, data sources of the Resource type in Symbol format are supported.<br>If the app does not have the **ohos.permission.CUSTOMIZE_SAVE_BUTTON** permission, the custom icon does not take effect and the save button uses the default style. |
 
-<a id="settext"></a>
 ## setText
 
 ```TypeScript
@@ -141,7 +136,6 @@ Sets the text of the **SaveButton** component.
 | --- | --- | --- | --- |
 | text | string \| Resource | Yes | Custom text, used to replace the default system text for business-specific scenarios. When a string is passed, the text content is directly used. When a Resource is passed, multi-language adaptation is implemented via resource management.<br>If the app does not have the **ohos.permission.CUSTOMIZE_SAVE_BUTTON** permission, this setting does not take effect and the save button uses the default style. |
 
-<a id="stateeffect"></a>
 ## stateEffect
 
 ```TypeScript
@@ -168,7 +162,6 @@ Sets the press effect of the **SaveButton** component.
 | --- | --- | --- | --- |
 | enabled | boolean | Yes | Whether to enable the press effect. **true** to enable, **false** otherwise.<br>Default value: **false**.<br>If the app does not have the **ohos.permission.CUSTOMIZE_SAVE_BUTTON** permission, the press effect setting does not take effect. |
 
-<a id="symbolfontweight"></a>
 ## symbolFontWeight
 
 ```TypeScript
@@ -198,7 +191,6 @@ Sets the font weight of the symbol icon for the save button.
 | --- | --- | --- | --- |
 | fontWeight | number \| FontWeight \| string \| Resource | Yes | Symbol icon font weight of the save button.<br>For the number type: The value range is [100, 900] with an increment of 100. Larger values result in bolder font weight.<br>For the string type: The value can be a numeric string of the number type (for example, **"400"**) or a lowercase string of the enumerated value of [FontWeight](../arkts-apis/arkts-arkui-fontweight-e.md) (for example, **"normal"**).<br>Default value: **FontWeight.Normal** (the corresponding value is **400**)<br>If the app does not have the **ohos.permission.CUSTOMIZE_SAVE_BUTTON** permission, the setting does not take effect. |
 
-<a id="symboliconcolor"></a>
 ## symbolIconColor
 
 ```TypeScript
@@ -229,7 +221,6 @@ Sets the color of the symbol icon for the save button.
 | --- | --- | --- | --- |
 | color | Array&lt;ResourceColor&gt; | Yes | Symbol icon color of the save button. This parameter applies to scenarios where the symbol icon needs to be consistent with the service visual style.<br>Default value: varies depending on [symbolRenderingStrategy](SaveButtonAttribute#symbolRenderingStrategy).<br>If the app does not have the **ohos.permission.CUSTOMIZE_SAVE_BUTTON** permission, the setting does not take effect. |
 
-<a id="symbolrenderingstrategy"></a>
 ## symbolRenderingStrategy
 
 ```TypeScript
@@ -260,7 +251,6 @@ Sets the rendering strategy for the symbol icon of the save button.
 | --- | --- | --- | --- |
 | strategy | [SymbolRenderingStrategy](arkts-arkui-symbolrenderingstrategy-e.md) | Yes | Rendering strategy for the symbol icon of the save button, which defines how the symbol icon is rendered.<br>Default value: SymbolRenderingStrategy.SINGLE.<br>If the app does not have the **ohos.permission.CUSTOMIZE_SAVE_BUTTON** permission, the setting does not take effect. |
 
-<a id="usercancelevent"></a>
 ## userCancelEvent
 
 ```TypeScript

@@ -14,7 +14,6 @@ Defines the camera input object.It provides camera device information used in [S
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="closedelayed"></a>
 ## closeDelayed
 
 ```TypeScript
@@ -51,7 +50,6 @@ Delay close camera.
 | [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="controlauxiliary"></a>
 ## controlAuxiliary
 
 ```TypeScript
@@ -89,7 +87,6 @@ Control auxiliary.
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="off"></a>
 ## off('cameraOcclusionDetection')
 
 ```TypeScript
@@ -121,7 +118,6 @@ Unsubscribes from **CameraInput** occlusion events. This API uses an asynchronou
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application.<br>**Applicable version:** 12 - 22 |
 
-<a id="on"></a>
 ## on('cameraOcclusionDetection')
 
 ```TypeScript
@@ -129,7 +125,6 @@ on(type: 'cameraOcclusionDetection', callback: AsyncCallback<CameraOcclusionDete
 ```
 
 Subscribes to **CameraInput** occlusion events. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
@@ -157,7 +152,6 @@ Subscribes to **CameraInput** occlusion events. This API uses an asynchronous ca
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application.<br>**Applicable version:** 12 - 22 |
 
-<a id="usedasposition"></a>
 ## usedAsPosition
 
 ```TypeScript

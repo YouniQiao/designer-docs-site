@@ -27,8 +27,9 @@ cancel: () => void
 Cancels this authentication.
 > **NOTE**  
 >  
-> Use the [AuthInstance](arkts-userauthentication-userauth-authinstance-i.md) instance obtained to call this API. The  
-> [AuthInstance](arkts-userauthentication-userauth-authinstance-i.md) instance must be the instance being authenticated.
+> Use the obtained [AuthInstance](arkts-userauthentication-userauth-authinstance-i.md) object to call this API to cancel authentication.  
+> This [AuthInstance](arkts-userauthentication-userauth-authinstance-i.md) must be the object that is currently performing  
+> authentication.
 
 **Type:** () =&gt; void
 
@@ -105,7 +106,7 @@ start: () => void
 Starts authentication.
 > **NOTE**  
 >  
-> Use the [AuthInstance](arkts-userauthentication-userauth-authinstance-i.md) instance obtained to call this API.
+> Use the obtained [AuthInstance](arkts-userauthentication-userauth-authinstance-i.md) object to call this API for authentication.
 
 **Type:** () =&gt; void
 

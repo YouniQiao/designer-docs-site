@@ -7,11 +7,13 @@
 >  
 > 本模块接口仅对设备管理应用开放，且调用接口前需激活设备管理应用，具体请参考[MDM Kit开发指南](../../../mdm/mdm-kit-guide.md)。
 
-**起始版本：** 10
+**起始版本：** 12
 
 <!--Device-unnamed-declare namespace deviceInfo--><!--Device-unnamed-declare namespace deviceInfo-End-->
 
 **系统能力：** SystemCapability.Customization.EnterpriseDeviceManager
+
+**系统接口：** 此接口为系统接口。
 
 ## 导入模块
 

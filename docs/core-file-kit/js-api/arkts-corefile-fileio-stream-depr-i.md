@@ -6,13 +6,12 @@ Provides a stream for file operations. Before calling any API of the **Stream** 
 
 **Deprecated since:** 9
 
-**Substitutes:** [fs:Stream](arkts-corefile-file-fs-stream-i.md)
+**Substitutes:** [fs:Stream](arkts-corefile-fileio-stream-depr-i.md)
 
 <!--Device-unnamed-declare interface Stream--><!--Device-unnamed-declare interface Stream-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
-<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -25,7 +24,7 @@ Closes the file stream. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [close](arkts-corefile-file-fs-stream-i.md#close-1)
+**Substitutes:** [close](arkts-corefile-fileio-stream-depr-i.md#close)
 
 <!--Device-Stream-close(): Promise<void>--><!--Device-Stream-close(): Promise<void>-End-->
 
@@ -51,7 +50,6 @@ ss.close().then(() => {
 
 ```
 
-<a id="close-1"></a>
 ## close
 
 ```TypeScript
@@ -64,7 +62,7 @@ Closes the file stream. This API uses an asynchronous callback to return the res
 
 **Deprecated since:** 9
 
-**Substitutes:** [close](arkts-corefile-file-fs-stream-i.md#close-1)
+**Substitutes:** [close](arkts-corefile-fileio-stream-depr-i.md#close)
 
 <!--Device-Stream-close(callback: AsyncCallback<void>): void--><!--Device-Stream-close(callback: AsyncCallback<void>): void-End-->
 
@@ -88,7 +86,6 @@ ss.close((err: BusinessError) => {
 
 ```
 
-<a id="closesync"></a>
 ## closeSync
 
 ```TypeScript
@@ -101,7 +98,7 @@ Closes the file stream. This API returns the result synchronously.
 
 **Deprecated since:** 9
 
-**Substitutes:** [closeSync](arkts-corefile-file-fs-stream-i.md#closesync-1)
+**Substitutes:** [closeSync](arkts-corefile-fileio-stream-depr-i.md#closesync)
 
 <!--Device-Stream-closeSync(): void--><!--Device-Stream-closeSync(): void-End-->
 
@@ -116,7 +113,6 @@ ss.closeSync();
 
 ```
 
-<a id="flush"></a>
 ## flush
 
 ```TypeScript
@@ -129,7 +125,7 @@ Flushes the file stream. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [flush](arkts-corefile-file-fs-stream-i.md#flush-1)
+**Substitutes:** [flush](arkts-corefile-fileio-stream-depr-i.md#flush)
 
 <!--Device-Stream-flush(): Promise<void>--><!--Device-Stream-flush(): Promise<void>-End-->
 
@@ -155,7 +151,6 @@ ss.flush().then(() => {
 
 ```
 
-<a id="flush-1"></a>
 ## flush
 
 ```TypeScript
@@ -168,7 +163,7 @@ Flushes the file stream. This API uses an asynchronous callback to return the re
 
 **Deprecated since:** 9
 
-**Substitutes:** [flush](arkts-corefile-file-fs-stream-i.md#flush-1)
+**Substitutes:** [flush](arkts-corefile-fileio-stream-depr-i.md#flush)
 
 <!--Device-Stream-flush(callback: AsyncCallback<void>): void--><!--Device-Stream-flush(callback: AsyncCallback<void>): void-End-->
 
@@ -192,7 +187,6 @@ ss.flush((err: BusinessError) => {
 
 ```
 
-<a id="flushsync"></a>
 ## flushSync
 
 ```TypeScript
@@ -205,7 +199,7 @@ Flushes the file stream. This API returns the result synchronously.
 
 **Deprecated since:** 9
 
-**Substitutes:** [flushSync](arkts-corefile-file-fs-stream-i.md#flushsync-1)
+**Substitutes:** [flushSync](arkts-corefile-fileio-stream-depr-i.md#flushsync)
 
 <!--Device-Stream-flushSync(): void--><!--Device-Stream-flushSync(): void-End-->
 
@@ -220,7 +214,6 @@ ss.flushSync();
 
 ```
 
-<a id="read"></a>
 ## read
 
 ```TypeScript
@@ -240,23 +233,9 @@ Reads data from a stream file. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [read](arkts-corefile-file-fs-stream-i.md#read-1)
+**Substitutes:** [read](arkts-corefile-fileio-stream-depr-i.md#read)
 
-<!--Device-Stream-read(
-    buffer: ArrayBuffer,
-    options?: {
-      position?: number;
-      offset?: number;
-      length?: number;
-    }
-  ): Promise<ReadOut>--><!--Device-Stream-read(
-    buffer: ArrayBuffer,
-    options?: {
-      position?: number;
-      offset?: number;
-      length?: number;
-    }
-  ): Promise<ReadOut>-End-->
+<!--Device-Stream-read(    buffer: ArrayBuffer,    options?: {      position?: number;      offset?: number;      length?: number;    }  ): Promise<ReadOut>--><!--Device-Stream-read(    buffer: ArrayBuffer,    options?: {      position?: number;      offset?: number;      length?: number;    }  ): Promise<ReadOut>-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -300,7 +279,6 @@ ss.read(arrayBuffer, option).then((readResult: fileio.ReadOut) => {
 
 ```
 
-<a id="read-1"></a>
 ## read
 
 ```TypeScript
@@ -313,7 +291,7 @@ read.
 
 **Deprecated since:** 9
 
-**Substitutes:** [read](arkts-corefile-file-fs-stream-i.md#read-1)
+**Substitutes:** [read](arkts-corefile-fileio-stream-depr-i.md#read)
 
 <!--Device-Stream-read(buffer: ArrayBuffer, callback: AsyncCallback<ReadOut>): void--><!--Device-Stream-read(buffer: ArrayBuffer, callback: AsyncCallback<ReadOut>): void-End-->
 
@@ -326,7 +304,6 @@ read.
 | buffer | ArrayBuffer | Yes | buffer. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ReadOut&gt; | Yes | callback. |
 
-<a id="read-2"></a>
 ## read
 
 ```TypeScript
@@ -347,25 +324,9 @@ Reads data from a stream file. This API uses an asynchronous callback to return 
 
 **Deprecated since:** 9
 
-**Substitutes:** [read](arkts-corefile-file-fs-stream-i.md#read-1)
+**Substitutes:** [read](arkts-corefile-fileio-stream-depr-i.md#read)
 
-<!--Device-Stream-read(
-    buffer: ArrayBuffer,
-    options: {
-      position?: number;
-      offset?: number;
-      length?: number;
-    },
-    callback: AsyncCallback<ReadOut>
-  ): void--><!--Device-Stream-read(
-    buffer: ArrayBuffer,
-    options: {
-      position?: number;
-      offset?: number;
-      length?: number;
-    },
-    callback: AsyncCallback<ReadOut>
-  ): void-End-->
+<!--Device-Stream-read(    buffer: ArrayBuffer,    options: {      position?: number;      offset?: number;      length?: number;    },    callback: AsyncCallback<ReadOut>  ): void--><!--Device-Stream-read(    buffer: ArrayBuffer,    options: {      position?: number;      offset?: number;      length?: number;    },    callback: AsyncCallback<ReadOut>  ): void-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -404,7 +365,6 @@ ss.read(arrayBuffer, option, (err: BusinessError, readResult: fileio.ReadOut) =>
 
 ```
 
-<a id="readsync"></a>
 ## readSync
 
 ```TypeScript
@@ -424,23 +384,9 @@ Reads data from a stream file. This API returns the result synchronously.
 
 **Deprecated since:** 9
 
-**Substitutes:** [readSync](arkts-corefile-file-fs-stream-i.md#readsync-1)
+**Substitutes:** [readSync](arkts-corefile-fileio-stream-depr-i.md#readsync)
 
-<!--Device-Stream-readSync(
-    buffer: ArrayBuffer,
-    options?: {
-      position?: number;
-      offset?: number;
-      length?: number;
-    }
-  ): number--><!--Device-Stream-readSync(
-    buffer: ArrayBuffer,
-    options?: {
-      position?: number;
-      offset?: number;
-      length?: number;
-    }
-  ): number-End-->
+<!--Device-Stream-readSync(    buffer: ArrayBuffer,    options?: {      position?: number;      offset?: number;      length?: number;    }  ): number--><!--Device-Stream-readSync(    buffer: ArrayBuffer,    options?: {      position?: number;      offset?: number;      length?: number;    }  ): number-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -476,7 +422,6 @@ let num = ss.readSync(buf, option);
 
 ```
 
-<a id="write"></a>
 ## write
 
 ```TypeScript
@@ -497,25 +442,9 @@ Writes data to a stream file. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [write](arkts-corefile-file-fs-stream-i.md#write-1)
+**Substitutes:** [write](arkts-corefile-fileio-stream-depr-i.md#write)
 
-<!--Device-Stream-write(
-    buffer: ArrayBuffer | string,
-    options?: {
-      offset?: number;
-      length?: number;
-      position?: number;
-      encoding?: string;
-    }
-  ): Promise<number>--><!--Device-Stream-write(
-    buffer: ArrayBuffer | string,
-    options?: {
-      offset?: number;
-      length?: number;
-      position?: number;
-      encoding?: string;
-    }
-  ): Promise<number>-End-->
+<!--Device-Stream-write(    buffer: ArrayBuffer | string,    options?: {      offset?: number;      length?: number;      position?: number;      encoding?: string;    }  ): Promise<number>--><!--Device-Stream-write(    buffer: ArrayBuffer | string,    options?: {      offset?: number;      length?: number;      position?: number;      encoding?: string;    }  ): Promise<number>-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -556,7 +485,6 @@ ss.write("hello, world", option).then((number: number) => {
 
 ```
 
-<a id="write-1"></a>
 ## write
 
 ```TypeScript
@@ -569,7 +497,7 @@ Writes data to a stream file. This API uses an asynchronous callback to return t
 
 **Deprecated since:** 9
 
-**Substitutes:** [write](arkts-corefile-file-fs-stream-i.md#write-1)
+**Substitutes:** [write](arkts-corefile-fileio-stream-depr-i.md#write)
 
 <!--Device-Stream-write(buffer: ArrayBuffer | string, callback: AsyncCallback<number>): void--><!--Device-Stream-write(buffer: ArrayBuffer | string, callback: AsyncCallback<number>): void-End-->
 
@@ -582,7 +510,6 @@ Writes data to a stream file. This API uses an asynchronous callback to return t
 | buffer | ArrayBuffer \| string | Yes | Data to write. It can be a string or data from a buffer. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback invoked when the data is written asynchronously, which is used to return the length of the data written, in bytes. |
 
-<a id="write-2"></a>
 ## write
 
 ```TypeScript
@@ -604,27 +531,9 @@ Writes data to a stream file. This API uses an asynchronous callback to return t
 
 **Deprecated since:** 9
 
-**Substitutes:** [write](arkts-corefile-file-fs-stream-i.md#write-1)
+**Substitutes:** [write](arkts-corefile-fileio-stream-depr-i.md#write)
 
-<!--Device-Stream-write(
-    buffer: ArrayBuffer | string,
-    options: {
-      offset?: number;
-      length?: number;
-      position?: number;
-      encoding?: string;
-    },
-    callback: AsyncCallback<number>
-  ): void--><!--Device-Stream-write(
-    buffer: ArrayBuffer | string,
-    options: {
-      offset?: number;
-      length?: number;
-      position?: number;
-      encoding?: string;
-    },
-    callback: AsyncCallback<number>
-  ): void-End-->
+<!--Device-Stream-write(    buffer: ArrayBuffer | string,    options: {      offset?: number;      length?: number;      position?: number;      encoding?: string;    },    callback: AsyncCallback<number>  ): void--><!--Device-Stream-write(    buffer: ArrayBuffer | string,    options: {      offset?: number;      length?: number;      position?: number;      encoding?: string;    },    callback: AsyncCallback<number>  ): void-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -661,7 +570,6 @@ ss.write("hello, world", option, (err: BusinessError, bytesWritten: number) => {
 
 ```
 
-<a id="writesync"></a>
 ## writeSync
 
 ```TypeScript
@@ -682,25 +590,9 @@ Writes data to a stream file. This API returns the result synchronously.
 
 **Deprecated since:** 9
 
-**Substitutes:** [writeSync](arkts-corefile-file-fs-stream-i.md#writesync-1)
+**Substitutes:** [writeSync](arkts-corefile-fileio-stream-depr-i.md#writesync)
 
-<!--Device-Stream-writeSync(
-    buffer: ArrayBuffer | string,
-    options?: {
-      offset?: number;
-      length?: number;
-      position?: number;
-      encoding?: string;
-    }
-  ): number--><!--Device-Stream-writeSync(
-    buffer: ArrayBuffer | string,
-    options?: {
-      offset?: number;
-      length?: number;
-      position?: number;
-      encoding?: string;
-    }
-  ): number-End-->
+<!--Device-Stream-writeSync(    buffer: ArrayBuffer | string,    options?: {      offset?: number;      length?: number;      position?: number;      encoding?: string;    }  ): number--><!--Device-Stream-writeSync(    buffer: ArrayBuffer | string,    options?: {      offset?: number;      length?: number;      position?: number;      encoding?: string;    }  ): number-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 

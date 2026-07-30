@@ -16,7 +16,6 @@ WhiteBalanceQuery provides APIs to check whether a white balance mode is support
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="getwhitebalancerange"></a>
 ## getWhiteBalanceRange
 
 ```TypeScript
@@ -48,7 +47,6 @@ Obtains the range of white balance values in manual white balance mode.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application.<br>**Applicable version:** 12 - 19 |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config, only throw in session usage. |
 
-<a id="iswhitebalancegainssupported"></a>
 ## isWhiteBalanceGainsSupported
 
 ```TypeScript
@@ -80,7 +78,6 @@ Checks whether the RGB gain is supported.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="iswhitebalancemodesupported"></a>
 ## isWhiteBalanceModeSupported
 
 ```TypeScript

@@ -1,6 +1,6 @@
 # UIAbilityContext
 
-UIAbilityContext provides the context environment for a [UIAbility](arkts-app-ability-uiability.md) that needs to store its status. It inherits from [Context](arkts-ability-context-context-depr-i.md) and provides UIAbility-related configuration and APIs for operating UIAbility and ServiceExtensionAbility components. For example, you can use the APIs to start a UIAbility, terminate a UIAbility to which the UIAbilityContext belongs, and start, terminate, connect to, or disconnect from a ServiceExtensionAbility.
+UIAbilityContext provides the context environment for a [UIAbility](arkts-app-ability-uiability.md) that needs to store its status. It inherits from [Context](arkts-ability-context-t.md) and provides UIAbility-related configuration and APIs for operating UIAbility and ServiceExtensionAbility components. For example, you can use the APIs to start a UIAbility, terminate a UIAbility to which the UIAbilityContext belongs, and start, terminate, connect to, or disconnect from a ServiceExtensionAbility.
 
 **Inheritance/Implementation:** UIAbilityContext extends [Context](arkts-ability-context-t.md)
 
@@ -10,7 +10,6 @@ UIAbilityContext provides the context environment for a [UIAbility](arkts-app-ab
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
-<a id="connectabilitywithaccount"></a>
 ## connectAbilityWithAccount
 
 ```TypeScript
@@ -18,18 +17,17 @@ connectAbilityWithAccount(want: Want, accountId: number, options: ConnectOptions
 ```
 
 Connects this UIAbility to a ServiceExtensionAbility, with the account ID specified. This API can be called only on the main thread.This API can be properly called on phones and tablets. If it is called on other devices, error code 16000006 is returned.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).  
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).  
 > > Permission verification is not required when **accountId** specifies the current user.
 
 **Since:** 9
 
 **Deprecated since:** 10
 
-**Substitutes:** [connectServiceExtensionAbilityWithAccount(want:](arkts-ability-uiabilitycontext-c-sys.md#connectserviceextensionabilitywithaccount-1)
+**Substitutes:** [connectServiceExtensionAbilityWithAccount(want:](arkts-ability-uiabilitycontext-c-sys.md#connectserviceextensionabilitywithaccount)
 
 **Required permissions:** ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS
 
@@ -46,7 +44,7 @@ Connects this UIAbility to a ServiceExtensionAbility, with the account ID specif
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target UIAbility. |
-| accountId | number | Yes | ID of a system account. For details, see [getCreatedOsAccountsCount](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountcount-1). |
+| accountId | number | Yes | ID of a system account. For details, see [getCreatedOsAccountsCount](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountcount). |
 | options | [ConnectOptions](arkts-ability-ability-connectoptions-t.md) | Yes | Instance of the callback function after the connection to the ServiceExtensionAbility is set up. |
 
 **Return value:**
@@ -73,7 +71,6 @@ Connects this UIAbility to a ServiceExtensionAbility, with the account ID specif
 | [16000053](../errorcode-ability.md#16000053-ability-is-not-on-top-of-ui) | The ability is not on the top of the UI.<br>**Applicable version:** 10 and later |
 | [16000055](../errorcode-ability.md#16000055-installationfree-timeout) | Installation-free timed out.<br>**Applicable version:** 10 and later |
 
-<a id="connectserviceextensionabilitywithaccount"></a>
 ## connectServiceExtensionAbilityWithAccount
 
 ```TypeScript
@@ -81,11 +78,10 @@ connectServiceExtensionAbilityWithAccount(want: Want, accountId: number, options
 ```
 
 Connects this UIAbility to a ServiceExtensionAbility, with the account ID specified. This API can be called only on the main thread.This API can be properly called on phones and tablets. If it is called on other devices, error code 16000006 is returned.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).  
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).  
 > > Permission verification is not required when **accountId** specifies the current user.
 
 **Since:** 9
@@ -105,7 +101,7 @@ Connects this UIAbility to a ServiceExtensionAbility, with the account ID specif
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target UIAbility. |
-| accountId | number | Yes | ID of a system account. For details, see [getCreatedOsAccountsCount](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountcount-1). |
+| accountId | number | Yes | ID of a system account. For details, see [getCreatedOsAccountsCount](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountcount). |
 | options | [ConnectOptions](arkts-ability-ability-connectoptions-t.md) | Yes | Instance of the callback function after the connection to the ServiceExtensionAbility is set up. |
 
 **Return value:**
@@ -134,20 +130,19 @@ Connects this UIAbility to a ServiceExtensionAbility, with the account ID specif
 | [16000053](../errorcode-ability.md#16000053-ability-is-not-on-top-of-ui) | The ability is not on the top of the UI.<br>**Applicable version:** 10 and later |
 | [16000055](../errorcode-ability.md#16000055-installationfree-timeout) | Installation-free timed out.<br>**Applicable version:** 10 and later |
 
-<a id="disconnectability"></a>
 ## disconnectAbility
 
 ```TypeScript
 disconnectAbility(connection: number, callback: AsyncCallback<void>): void
 ```
 
-Disconnects from a [ServiceExtensionAbility](docroot://application-models/extensionability-overview.md). Once the connection is terminated, set the remote object, which is returned when the connection is established, to null.This API uses an asynchronous callback to return the result. It can be called only on the main thread.
+Disconnects from a [ServiceExtensionAbility](../../../application-models/extensionability-overview.md). Once the connection is terminated, set the remote object, which is returned when the connection is established, to null.This API uses an asynchronous callback to return the result. It can be called only on the main thread.
 
 **Since:** 9
 
 **Deprecated since:** 10
 
-**Substitutes:** [disconnectServiceExtensionAbility(connection:](arkts-ability-uiabilitycontext-c.md#disconnectserviceextensionability-1)
+**Substitutes:** [disconnectServiceExtensionAbility(connection:](arkts-ability-uiabilitycontext-c.md#disconnectserviceextensionability)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -161,7 +156,7 @@ Disconnects from a [ServiceExtensionAbility](docroot://application-models/extens
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| connection | number | Yes | ID of the connected ServiceExtensionAbility, that is, **connectionId** returned by [connectServiceExtensionAbility](arkts-ability-uiabilitycontext-c.md#connectserviceextensionability-1). |
+| connection | number | Yes | ID of the connected ServiceExtensionAbility, that is, **connectionId** returned by [connectServiceExtensionAbility](arkts-ability-uiabilitycontext-c.md#connectserviceextensionability). |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the API call is successful,**err** is **undefined**. Otherwise, **err** is an error object. |
 
 **Error codes:**
@@ -172,20 +167,19 @@ Disconnects from a [ServiceExtensionAbility](docroot://application-models/extens
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. Possible causes: 1. Connect to system service failed.2.System service failed to communicate with dependency module. |
 
-<a id="disconnectability-1"></a>
 ## disconnectAbility
 
 ```TypeScript
 disconnectAbility(connection: number): Promise<void>
 ```
 
-Disconnects from a [ServiceExtensionAbility](docroot://application-models/extensionability-overview.md). Once the connection is terminated, set the remote object, which is returned when the connection is established, to null.This API uses a promise to return the result. It can be called only on the main thread.
+Disconnects from a [ServiceExtensionAbility](../../../application-models/extensionability-overview.md). Once the connection is terminated, set the remote object, which is returned when the connection is established, to null.This API uses a promise to return the result. It can be called only on the main thread.
 
 **Since:** 9
 
 **Deprecated since:** 10
 
-**Substitutes:** [disconnectServiceExtensionAbility(connection:](arkts-ability-uiabilitycontext-c.md#disconnectserviceextensionability-1)
+**Substitutes:** [disconnectServiceExtensionAbility(connection:](arkts-ability-uiabilitycontext-c.md#disconnectserviceextensionability)
 
 **Model restriction:** This API can be used only in the stage model.
 
@@ -199,7 +193,7 @@ Disconnects from a [ServiceExtensionAbility](docroot://application-models/extens
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| connection | number | Yes | ID of the connected ServiceExtensionAbility, that is, **connectionId** returned by [connectServiceExtensionAbility](arkts-ability-uiabilitycontext-c.md#connectserviceextensionability-1). |
+| connection | number | Yes | ID of the connected ServiceExtensionAbility, that is, **connectionId** returned by [connectServiceExtensionAbility](arkts-ability-uiabilitycontext-c.md#connectserviceextensionability). |
 
 **Return value:**
 
@@ -215,7 +209,6 @@ Disconnects from a [ServiceExtensionAbility](docroot://application-models/extens
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. Possible causes: 1. Connect to system service failed.2.System service failed to communicate with dependency module. |
 
-<a id="requestmodaluiextension"></a>
 ## requestModalUIExtension
 
 ```TypeScript
@@ -223,11 +216,10 @@ requestModalUIExtension(pickerWant: Want, callback: AsyncCallback<void>): void
 ```
 
 Requests the specified foreground application to start the UIExtensionAbility of the corresponding type. This API uses an asynchronous callback to return the result. It can be called only on the main thread.The foreground application is specified by **bundleName** in **want.parameters**. If **bundleName** is left unspecified, or if the application specified by **bundleName** is not running in the foreground or does not exist,the UIExtensionAbility is directly started on the system UI. The UIExtensionAbility to start is determined by the combination of the **bundleName**, **abilityName**, and **moduleName** fields in **want**, and its type is determined by the **ability.want.params.uiExtensionType** field in **want.parameters**.Before starting the UIExtensionAbility, ensure that the foreground application has finished page initialization.Otherwise, the UIExtensionAbility fails to start and the error message "uiContent is nullptr" is displayed. The application can determine the time to start the UIExtensionAbility by listening for the page loading status. After the page initialization is successful, the key log information "UIContentImpl: focus again" is recorded.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 11
 
@@ -259,7 +251,6 @@ Requests the specified foreground application to start the UIExtensionAbility of
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 | [16200001](../errorcode-ability.md#16200001-caller-released) | The caller has been released.<br>**Applicable version:** 11 and later |
 
-<a id="requestmodaluiextension-1"></a>
 ## requestModalUIExtension
 
 ```TypeScript
@@ -267,11 +258,10 @@ requestModalUIExtension(pickerWant: Want): Promise<void>
 ```
 
 Requests the specified foreground application to start the UIExtensionAbility of the corresponding type. This API uses a promise to return the result. It can be called only on the main thread.The foreground application is specified by **bundleName** in **want.parameters**. If **bundleName** is left unspecified, or if the application specified by **bundleName** is not running in the foreground or does not exist,the UIExtensionAbility is directly started on the system UI. The UIExtensionAbility to start is determined by the combination of the **bundleName**, **abilityName**, and **moduleName** fields in **want**, and its type is determined by the **ability.want.params.uiExtensionType** field in **want.parameters**.Before starting the UIExtensionAbility, ensure that the foreground application has finished page initialization.Otherwise, the UIExtensionAbility fails to start and the error message "uiContent is nullptr" is displayed. The application can determine the time to start the UIExtensionAbility by listening for the page loading status. After the page initialization is successful, the key log information "UIContentImpl: focus again" is recorded.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 11
 
@@ -308,7 +298,6 @@ Requests the specified foreground application to start the UIExtensionAbility of
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 | [16200001](../errorcode-ability.md#16200001-caller-released) | The caller has been released.<br>**Applicable version:** 11 and later |
 
-<a id="requestmodaluiextensionwithaccount"></a>
 ## requestModalUIExtensionWithAccount
 
 ```TypeScript
@@ -318,11 +307,10 @@ requestModalUIExtensionWithAccount(pickerWant: Want, accountId: number): Promise
 Requests the specified foreground application to start the UIExtensionAbility of the corresponding type for the specified user. This API uses a promise to return the result. It can be called only on the main thread.The foreground application is specified by **bundleName** in **want.parameters**. If **bundleName** is left unspecified, or if the application specified by **bundleName** is not running in the foreground or does not exist,the UIExtensionAbility is directly started on the system UI. The UIExtensionAbility to start is determined by the combination of the **bundleName**, **abilityName**, and **moduleName** fields in **want**, and its type is determined by the **ability.want.params.uiExtensionType** field in **want.parameters**.
 
 Before starting the UIExtensionAbility, ensure that the foreground application has finished page initialization.Otherwise, the UIExtensionAbility fails to start and the error message "uiContent is nullptr" is displayed. The application can determine the time to start the UIExtensionAbility by listening for the page loading status. After the page initialization is successful, the key log information "UIContentImpl: focus again" is recorded.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 26.0.0
 
@@ -357,7 +345,6 @@ Before starting the UIExtensionAbility, ensure that the foreground application h
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | The application is not system-app, can not use system-api. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. Possible causes: 1.Connect to system service failed;2.Send restart message to system service failed; 3.System service failed to communicate with dependency module.4.The logical screen corresponding to the specified accountId is not in the foreground. |
 
-<a id="setmissionicon"></a>
 ## setMissionIcon
 
 ```TypeScript
@@ -392,7 +379,6 @@ Sets an icon for this UIAbility in the mission. The maximum size of the icon is 
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | The application is not system-app, can not use system-api.<br>**Applicable version:** 10 and later |
 
-<a id="setmissionicon-1"></a>
 ## setMissionIcon
 
 ```TypeScript
@@ -432,7 +418,6 @@ Sets an icon for this UIAbility in the mission. The maximum size of the icon is 
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | The application is not system-app, can not use system-api.<br>**Applicable version:** 10 and later |
 
-<a id="startabilityascaller"></a>
 ## startAbilityAsCaller
 
 ```TypeScript
@@ -440,11 +425,10 @@ startAbilityAsCaller(want: Want, callback: AsyncCallback<void>): void
 ```
 
 Starts a UIAbility with the caller information specified. The caller information is carried in **want** and identified at the system service layer. The UIAbility can obtain the caller information from the **want** parameter in the **onCreate** lifecycle callback. When this API is used to start a UIAbility, the caller information carried in **want** is not overwritten by the current application information. The system service layer can obtain the initial caller information. This API uses an asynchronous callback to return the result. It can be called only on the main thread.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 10
 
@@ -494,7 +478,6 @@ Starts a UIAbility with the caller information specified. The caller information
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
-<a id="startabilityascaller-1"></a>
 ## startAbilityAsCaller
 
 ```TypeScript
@@ -502,11 +485,10 @@ startAbilityAsCaller(want: Want, options: StartOptions, callback: AsyncCallback<
 ```
 
 Starts a UIAbility with the caller information and start options specified. The caller information is carried in **want** and identified at the system service layer. The UIAbility can obtain the caller information from the **want** parameter in the **onCreate** lifecycle callback. When this API is used to start a UIAbility, the caller information carried in **want** is not overwritten by the current application information. The system service layer can obtain the initial caller information. This API uses an asynchronous callback to return the result. It can be called only on the main thread.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 10
 
@@ -555,7 +537,6 @@ Starts a UIAbility with the caller information and start options specified. The 
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
-<a id="startabilityascaller-2"></a>
 ## startAbilityAsCaller
 
 ```TypeScript
@@ -563,11 +544,10 @@ startAbilityAsCaller(want: Want, options?: StartOptions): Promise<void>
 ```
 
 Starts a UIAbility with the caller information specified. The caller information is carried in **want** and identified at the system service layer. The UIAbility can obtain the caller information from the **want** parameter in the **onCreate** lifecycle callback. When this API is used to start a UIAbility, the caller information carried in **want** is not overwritten by the current application information. The system service layer can obtain the initial caller information. This API uses a promise to return the result. It can be called only on the main thread.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 10
 
@@ -623,19 +603,18 @@ Starts a UIAbility with the caller information specified. The caller information
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
-<a id="startabilitybycallwithaccount"></a>
 ## startAbilityByCallWithAccount
 
 ```TypeScript
 startAbilityByCallWithAccount(want: Want, accountId: number): Promise<Caller>
 ```
 
-Starts a UIAbility with the account ID specified and obtains the caller object for communicating with the UIAbility. This API can be called only on the main thread. This API uses a promise to return the result.This API cannot be used to start the UIAbility with the launch type set to [specified](docroot://application-models/uiability-launch-type.md#specified).Observe the following when using this API:
+Starts a UIAbility with the account ID specified and obtains the caller object for communicating with the UIAbility. This API can be called only on the main thread. This API uses a promise to return the result.This API cannot be used to start the UIAbility with the launch type set to [specified](../../../application-models/uiability-launch-type.md#specified).Observe the following when using this API:
 
 - If an application needs to call this API to start a UIAbility that belongs to another user, it must have the ohos.permission.ABILITY_BACKGROUND_COMMUNICATION and ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS permissions.  
 - If an application running in the background needs to call this API to start a UIAbility, it must have the ohos.permission.START_ABILITIES_FROM_BACKGROUND permission.  
 - If **exported** of the target UIAbility is **false** in cross-application scenarios, the caller must have the ohos.permission.START_INVISIBLE_ABILITY permission.  
-- The rules for using this API in the same-device and cross-device scenarios are different. For details, see [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+- The rules for using this API in the same-device and cross-device scenarios are different. For details, see [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 10
 
@@ -654,7 +633,7 @@ Starts a UIAbility with the account ID specified and obtains the caller object f
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Information about the UIAbility to start, including **abilityName**, **moduleName**,**bundleName**, **deviceId** (optional), and **parameters** (optional). If **deviceId** is left blank or null, the local UIAbility is started. If **parameters** is left blank or null, the UIAbility is started in the background. |
-| accountId | number | Yes | ID of a system account. The value **-1** indicates the current user. For details, see [getCreatedOsAccountsCount](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountcount-1). |
+| accountId | number | Yes | ID of a system account. The value **-1** indicates the current user. For details, see [getCreatedOsAccountsCount](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountcount). |
 
 **Return value:**
 
@@ -689,7 +668,6 @@ Starts a UIAbility with the account ID specified and obtains the caller object f
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
-<a id="startabilityforresultwithaccount"></a>
 ## startAbilityForResultWithAccount
 
 ```TypeScript
@@ -697,11 +675,10 @@ startAbilityForResultWithAccount(want: Want, accountId: number, callback: AsyncC
 ```
 
 Starts a UIAbility with the account ID specified and returns the result when the UIAbility is terminated. This API uses an asynchronous callback to return the result. It can be called only on the main thread.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).  
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).  
 > > Permission verification is not required when **accountId** specifies the current user.
 
 **Since:** 9
@@ -721,7 +698,7 @@ Starts a UIAbility with the account ID specified and returns the result when the
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target UIAbility. |
-| accountId | number | Yes | ID of a system account. For details, see [getCreatedOsAccountsCount](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountcount-1). |
+| accountId | number | Yes | ID of a system account. For details, see [getCreatedOsAccountsCount](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountcount). |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AbilityResult&gt; | Yes | Callback used to return the result. If the API call is successful,**code** in **err** is **0** and **data** is the result code and data when the UIAbility is terminated. Otherwise,**err** contains the corresponding error code and error information. |
 
 **Error codes:**
@@ -756,7 +733,6 @@ Starts a UIAbility with the account ID specified and returns the result when the
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
-<a id="startabilityforresultwithaccount-1"></a>
 ## startAbilityForResultWithAccount
 
 ```TypeScript
@@ -769,11 +745,10 @@ startAbilityForResultWithAccount(
 ```
 
 Starts a UIAbility with the account ID and start options specified and returns the result when the UIAbility is terminated. This API uses an asynchronous callback to return the result. It can be called only on the main thread.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).  
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).  
 > > Permission verification is not required when **accountId** specifies the current user.
 
 **Since:** 9
@@ -782,17 +757,7 @@ Starts a UIAbility with the account ID and start options specified and returns t
 
 **Model restriction:** This API can be used only in the stage model.
 
-<!--Device-UIAbilityContext-startAbilityForResultWithAccount(
-    want: Want,
-    accountId: int,
-    options: StartOptions,
-    callback: AsyncCallback<void>
-  ): void--><!--Device-UIAbilityContext-startAbilityForResultWithAccount(
-    want: Want,
-    accountId: int,
-    options: StartOptions,
-    callback: AsyncCallback<void>
-  ): void-End-->
+<!--Device-UIAbilityContext-startAbilityForResultWithAccount(    want: Want,    accountId: int,    options: StartOptions,    callback: AsyncCallback<void>  ): void--><!--Device-UIAbilityContext-startAbilityForResultWithAccount(    want: Want,    accountId: int,    options: StartOptions,    callback: AsyncCallback<void>  ): void-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -803,7 +768,7 @@ Starts a UIAbility with the account ID and start options specified and returns t
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target UIAbility. |
-| accountId | number | Yes | ID of a system account. For details, see [getCreatedOsAccountsCount](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountcount-1). |
+| accountId | number | Yes | ID of a system account. For details, see [getCreatedOsAccountsCount](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountcount). |
 | options | [StartOptions](arkts-ability-app-ability-startoptions-startoptions-c-sys.md) | Yes | Parameters used for starting the UIAbility. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the API call is successful, **code** in **err** is **0**. Otherwise, **err** contains the corresponding error code and error information. |
 
@@ -839,7 +804,6 @@ Starts a UIAbility with the account ID and start options specified and returns t
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
-<a id="startabilityforresultwithaccount-2"></a>
 ## startAbilityForResultWithAccount
 
 ```TypeScript
@@ -847,11 +811,10 @@ startAbilityForResultWithAccount(want: Want, accountId: number, options?: StartO
 ```
 
 Starts a UIAbility with the account ID specified and returns the result when the UIAbility is terminated. This API uses a promise to return the result. It can be called only on the main thread.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).  
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).  
 > > Permission verification is not required when **accountId** specifies the current user.
 
 **Since:** 9
@@ -871,7 +834,7 @@ Starts a UIAbility with the account ID specified and returns the result when the
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target UIAbility. |
-| accountId | number | Yes | ID of a system account. For details, see [getCreatedOsAccountsCount](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountcount-1). |
+| accountId | number | Yes | ID of a system account. For details, see [getCreatedOsAccountsCount](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountcount). |
 | options | [StartOptions](arkts-ability-app-ability-startoptions-startoptions-c-sys.md) | No | Parameters used for starting the UIAbility. |
 
 **Return value:**
@@ -912,7 +875,6 @@ Starts a UIAbility with the account ID specified and returns the result when the
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
-<a id="startabilitywithaccount"></a>
 ## startAbilityWithAccount
 
 ```TypeScript
@@ -920,11 +882,10 @@ startAbilityWithAccount(want: Want, accountId: number, callback: AsyncCallback<v
 ```
 
 Starts a UIAbility with want and the account ID specified. This API uses an asynchronous callback to return the result. It can be called only on the main thread.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).  
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).  
 > > Permission verification is not required when **accountId** specifies the current user.
 
 **Since:** 9
@@ -944,7 +905,7 @@ Starts a UIAbility with want and the account ID specified. This API uses an asyn
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target UIAbility. |
-| accountId | number | Yes | ID of a system account. For details, see [getCreatedOsAccountsCount](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountcount-1). |
+| accountId | number | Yes | ID of a system account. For details, see [getCreatedOsAccountsCount](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountcount). |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the API call is successful, **code** in **err** is **0**. Otherwise, **err** contains the corresponding error code and error information. |
 
 **Error codes:**
@@ -979,7 +940,6 @@ Starts a UIAbility with want and the account ID specified. This API uses an asyn
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
-<a id="startabilitywithaccount-1"></a>
 ## startAbilityWithAccount
 
 ```TypeScript
@@ -987,11 +947,10 @@ startAbilityWithAccount(want: Want, accountId: number, options: StartOptions, ca
 ```
 
 Starts a UIAbility with want, the account ID, and start options specified. This API uses an asynchronous callback to return the result. It can be called only on the main thread.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).  
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).  
 > > Permission verification is not required when **accountId** specifies the current user.
 
 **Since:** 9
@@ -1011,7 +970,7 @@ Starts a UIAbility with want, the account ID, and start options specified. This 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target UIAbility. |
-| accountId | number | Yes | ID of a system account. For details, see [getCreatedOsAccountsCount](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountcount-1). |
+| accountId | number | Yes | ID of a system account. For details, see [getCreatedOsAccountsCount](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountcount). |
 | options | [StartOptions](arkts-ability-app-ability-startoptions-startoptions-c-sys.md) | Yes | Parameters used for starting the UIAbility. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the API call is successful, **code** in **err** is **0**. Otherwise, **err** contains the corresponding error code and error information. |
 
@@ -1047,7 +1006,6 @@ Starts a UIAbility with want, the account ID, and start options specified. This 
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
-<a id="startabilitywithaccount-2"></a>
 ## startAbilityWithAccount
 
 ```TypeScript
@@ -1055,11 +1013,10 @@ startAbilityWithAccount(want: Want, accountId: number, options?: StartOptions): 
 ```
 
 Starts a UIAbility with want, the account ID, and start options specified. This API uses a promise to return the result. It can be called only on the main thread.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).  
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).  
 > > Permission verification is not required when **accountId** specifies the current user.
 
 **Since:** 9
@@ -1079,7 +1036,7 @@ Starts a UIAbility with want, the account ID, and start options specified. This 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information about the target UIAbility. |
-| accountId | number | Yes | ID of a system account. For details, see [getCreatedOsAccountsCount](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountcount-1). |
+| accountId | number | Yes | ID of a system account. For details, see [getCreatedOsAccountsCount](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountcount). |
 | options | [StartOptions](arkts-ability-app-ability-startoptions-startoptions-c-sys.md) | No | Parameters used for starting the UIAbility. |
 
 **Return value:**
@@ -1120,7 +1077,6 @@ Starts a UIAbility with want, the account ID, and start options specified. This 
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
-<a id="startrecentability"></a>
 ## startRecentAbility
 
 ```TypeScript
@@ -1128,7 +1084,6 @@ startRecentAbility(want: Want, callback: AsyncCallback<void>): void
 ```
 
 Starts a UIAbility. If the UIAbility has multiple instances, the latest instance is started. This API uses an asynchronous callback to return the result. It can be called only on the main thread.
-
 > **NOTE**  
 >  
 > - For a successful launch in cross-device scenarios, the caller and target must be the same application and the  
@@ -1144,7 +1099,7 @@ Starts a UIAbility. If the UIAbility has multiple instances, the latest instance
 > - If the caller is running in the background, the ohos.permission.START_ABILITIES_FROM_BACKGROUND permission is  
 > required (available only for system applications).  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 9
 
@@ -1194,7 +1149,6 @@ Starts a UIAbility. If the UIAbility has multiple instances, the latest instance
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
-<a id="startrecentability-1"></a>
 ## startRecentAbility
 
 ```TypeScript
@@ -1202,7 +1156,6 @@ startRecentAbility(want: Want, options: StartOptions, callback: AsyncCallback<vo
 ```
 
 Starts a UIAbility with the start options specified. If the UIAbility has multiple instances, the latest instance is started. This API uses an asynchronous callback to return the result. It can be called only on the main thread.
-
 > **NOTE**  
 >  
 > - For a successful launch in cross-device scenarios, the caller and target must be the same application and the  
@@ -1218,7 +1171,7 @@ Starts a UIAbility with the start options specified. If the UIAbility has multip
 > - If the caller is running in the background, the ohos.permission.START_ABILITIES_FROM_BACKGROUND permission is  
 > required (available only for system applications).  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 9
 
@@ -1269,7 +1222,6 @@ Starts a UIAbility with the start options specified. If the UIAbility has multip
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
-<a id="startrecentability-2"></a>
 ## startRecentAbility
 
 ```TypeScript
@@ -1277,7 +1229,6 @@ startRecentAbility(want: Want, options?: StartOptions): Promise<void>
 ```
 
 Starts a UIAbility. If the UIAbility has multiple instances, the latest instance is started. This API uses a promise to return the result. It can be called only on the main thread.
-
 > **NOTE**  
 >  
 > - For a successful launch in cross-device scenarios, the caller and target must be the same application and the  
@@ -1293,7 +1244,7 @@ Starts a UIAbility. If the UIAbility has multiple instances, the latest instance
 > - If the caller is running in the background, the ohos.permission.START_ABILITIES_FROM_BACKGROUND permission is  
 > required (available only for system applications).  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 9
 
@@ -1349,7 +1300,6 @@ Starts a UIAbility. If the UIAbility has multiple instances, the latest instance
 | [16000079](../errorcode-ability.md#16000079-appinstancekey-cannot-be-specified) | The APP_INSTANCE_KEY cannot be specified.<br>**Applicable version:** 14 and later |
 | [16000080](../errorcode-ability.md#16000080-new-instances-cannot-be-created) | Creating a new instance is not supported.<br>**Applicable version:** 14 and later |
 
-<a id="startserviceextensionability"></a>
 ## startServiceExtensionAbility
 
 ```TypeScript
@@ -1395,7 +1345,6 @@ Starts a ServiceExtensionAbility. This API uses an asynchronous callback to retu
 | [16000013](../errorcode-ability.md#16000013-application-controlled-by-edm) | The application is controlled by EDM.<br>**Applicable version:** 10 and later |
 | [16000019](../errorcode-ability.md#16000019-no-matching-ability-is-found-during-implicit-startup) | No matching ability is found.<br>**Applicable version:** 12 and later |
 
-<a id="startserviceextensionability-1"></a>
 ## startServiceExtensionAbility
 
 ```TypeScript
@@ -1446,7 +1395,6 @@ Starts a ServiceExtensionAbility. This API uses a promise to return the result.
 | [16000013](../errorcode-ability.md#16000013-application-controlled-by-edm) | The application is controlled by EDM.<br>**Applicable version:** 10 and later |
 | [16000019](../errorcode-ability.md#16000019-no-matching-ability-is-found-during-implicit-startup) | No matching ability is found.<br>**Applicable version:** 12 and later |
 
-<a id="startserviceextensionabilitywithaccount"></a>
 ## startServiceExtensionAbilityWithAccount
 
 ```TypeScript
@@ -1454,11 +1402,10 @@ startServiceExtensionAbilityWithAccount(want: Want, accountId: number, callback:
 ```
 
 Starts a ServiceExtensionAbility with the account ID specified. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).  
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).  
 > > Permission verification is not required when **accountId** specifies the current user.
 
 **Since:** 9
@@ -1478,7 +1425,7 @@ Starts a ServiceExtensionAbility with the account ID specified. This API uses an
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information for starting the ServiceExtensionAbility. |
-| accountId | number | Yes | ID of a system account. For details, see [getCreatedOsAccountsCount](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountcount-1). |
+| accountId | number | Yes | ID of a system account. For details, see [getCreatedOsAccountsCount](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountcount). |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the API call is successful, **code** in **err** is **0**. Otherwise, **err** contains the corresponding error code and error information. |
 
 **Error codes:**
@@ -1501,7 +1448,6 @@ Starts a ServiceExtensionAbility with the account ID specified. This API uses an
 | [16000013](../errorcode-ability.md#16000013-application-controlled-by-edm) | The application is controlled by EDM.<br>**Applicable version:** 10 and later |
 | [16000019](../errorcode-ability.md#16000019-no-matching-ability-is-found-during-implicit-startup) | No matching ability is found.<br>**Applicable version:** 12 and later |
 
-<a id="startserviceextensionabilitywithaccount-1"></a>
 ## startServiceExtensionAbilityWithAccount
 
 ```TypeScript
@@ -1509,11 +1455,10 @@ startServiceExtensionAbilityWithAccount(want: Want, accountId: number): Promise<
 ```
 
 Starts a ServiceExtensionAbility with the account ID specified. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).  
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).  
 > > Permission verification is not required when **accountId** specifies the current user.
 
 **Since:** 9
@@ -1533,7 +1478,7 @@ Starts a ServiceExtensionAbility with the account ID specified. This API uses a 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information for starting the ServiceExtensionAbility. |
-| accountId | number | Yes | ID of a system account. For details, see [getCreatedOsAccountsCount](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountcount-1). |
+| accountId | number | Yes | ID of a system account. For details, see [getCreatedOsAccountsCount](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountcount). |
 
 **Return value:**
 
@@ -1561,7 +1506,6 @@ Starts a ServiceExtensionAbility with the account ID specified. This API uses a 
 | [16000013](../errorcode-ability.md#16000013-application-controlled-by-edm) | The application is controlled by EDM.<br>**Applicable version:** 10 and later |
 | [16000019](../errorcode-ability.md#16000019-no-matching-ability-is-found-during-implicit-startup) | No matching ability is found.<br>**Applicable version:** 12 and later |
 
-<a id="stopserviceextensionability"></a>
 ## stopServiceExtensionAbility
 
 ```TypeScript
@@ -1605,7 +1549,6 @@ Stops a ServiceExtensionAbility. This API uses an asynchronous callback to retur
 | [16000012](../errorcode-ability.md#16000012-application-under-control) | The application is controlled.<br>**Applicable version:** 10 and later |
 | [16000013](../errorcode-ability.md#16000013-application-controlled-by-edm) | The application is controlled by EDM.<br>**Applicable version:** 10 and later |
 
-<a id="stopserviceextensionability-1"></a>
 ## stopServiceExtensionAbility
 
 ```TypeScript
@@ -1652,7 +1595,6 @@ Stops a ServiceExtensionAbility in the same application. This API uses a promise
 | [201](../../errorcode-universal.md#201-permission-denied) | The application does not have permission to call the interface.<br>**Applicable version:** 10 and later |
 | [16000004](../errorcode-ability.md#16000004-visibility-verification-failure) | Cannot start an invisible component.<br>**Applicable version:** 10 and later |
 
-<a id="stopserviceextensionabilitywithaccount"></a>
 ## stopServiceExtensionAbilityWithAccount
 
 ```TypeScript
@@ -1660,7 +1602,6 @@ stopServiceExtensionAbilityWithAccount(want: Want, accountId: number, callback: 
 ```
 
 Stops a ServiceExtensionAbility with the account ID specified in the same application. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > Permission verification is not required when **accountId** specifies the current user.
@@ -1682,7 +1623,7 @@ Stops a ServiceExtensionAbility with the account ID specified in the same applic
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information for stopping the ServiceExtensionAbility. |
-| accountId | number | Yes | ID of a system account. For details, see [getCreatedOsAccountsCount](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountcount-1). |
+| accountId | number | Yes | ID of a system account. For details, see [getCreatedOsAccountsCount](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountcount). |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the API call is successful, **code** in **err** is **0**. Otherwise, **err** contains the corresponding error code and error information. |
 
 **Error codes:**
@@ -1701,7 +1642,6 @@ Stops a ServiceExtensionAbility with the account ID specified in the same applic
 | [16200001](../errorcode-ability.md#16200001-caller-released) | The caller has been released. |
 | [16000004](../errorcode-ability.md#16000004-visibility-verification-failure) | Cannot start an invisible component.<br>**Applicable version:** 10 and later |
 
-<a id="stopserviceextensionabilitywithaccount-1"></a>
 ## stopServiceExtensionAbilityWithAccount
 
 ```TypeScript
@@ -1709,7 +1649,6 @@ stopServiceExtensionAbilityWithAccount(want: Want, accountId: number): Promise<v
 ```
 
 Stops a ServiceExtensionAbility with the account ID specified in the same application. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > Permission verification is not required when **accountId** specifies the current user.
@@ -1731,7 +1670,7 @@ Stops a ServiceExtensionAbility with the account ID specified in the same applic
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | want | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | Want information for stopping the ServiceExtensionAbility. |
-| accountId | number | Yes | ID of a system account. For details, see [getCreatedOsAccountsCount](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountcount-1). |
+| accountId | number | Yes | ID of a system account. For details, see [getCreatedOsAccountsCount](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountcount). |
 
 **Return value:**
 

@@ -22,7 +22,7 @@ curve?: Curve | ICurve | string
 
 Animate curve
 
-**Type:** Curve | ICurve | string
+**Type:** Curve \| ICurve \| string
 
 **Since:** 12
 

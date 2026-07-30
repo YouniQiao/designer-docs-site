@@ -1,8 +1,8 @@
 # AVTranscoder
 
-AVTranscoder is a transcoding management class. It provides APIs to transcode videos. Before calling any API in AVTranscoder, you must use [createAVTranscoder()](arkts-media-media-createavtranscoder-f.md#createavtranscoder-1) to create an AVTranscoder instance.
+AVTranscoder is a transcoding management class. It provides APIs to transcode videos. Before calling any API in AVTranscoder, you must use [createAVTranscoder()](arkts-media-media-createavtranscoder-f.md#createavtranscoder) to create an AVTranscoder instance.
 
-For details about the AVTranscoder demo, see [Using AVTranscoder for Transcoding](docroot://media/media/using-avtranscoder-for-transcodering.md).
+For details about the AVTranscoder demo, see [Using AVTranscoder for Transcoding](../../../media/media/using-avtranscoder-for-transcodering.md).
 
 **Since:** 12
 
@@ -16,7 +16,6 @@ For details about the AVTranscoder demo, see [Using AVTranscoder for Transcoding
 import { media } from '@kit.MediaKit';
 ```
 
-<a id="addwatermark"></a>
 ## addWatermark
 
 ```TypeScript
@@ -55,7 +54,6 @@ add a watermark for the AVTranscoder. This API uses a promise to return the resu
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 | [5400108](../errorcode-media.md#5400108-parameter-value-out-of-range) | The parameter check failed, parameter value out of range. |
 
-<a id="cancel"></a>
 ## cancel
 
 ```TypeScript
@@ -64,7 +62,7 @@ cancel(): Promise<void>
 
 Cancels video transcoding. This API uses a promise to return the result.
 
-This API can be called only after the [prepare()](arkts-media-media-avtranscoder-i.md#prepare-1),[start()](arkts-media-media-avtranscoder-i.md#start-1), [pause()](arkts-media-media-avtranscoder-i.md#pause-1), or [resume()](arkts-media-media-avtranscoder-i.md#resume-1) API is called.
+This API can be called only after the [prepare()](arkts-media-media-avtranscoder-i.md#prepare),[start()](arkts-media-media-avtranscoder-i.md#start), [pause()](arkts-media-media-avtranscoder-i.md#pause), or [resume()](arkts-media-media-avtranscoder-i.md#resume) API is called.
 
 **Since:** 12
 
@@ -88,7 +86,6 @@ This API can be called only after the [prepare()](arkts-media-media-avtranscoder
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 
-<a id="off"></a>
 ## off('complete')
 
 ```TypeScript
@@ -112,7 +109,6 @@ Unsubscribes from the event indicating that transcoding is complete.
 | type | 'complete' | Yes | Event type, which is **'complete'** in this case. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | Callback that has been registered to listen for transcoding completion events. |
 
-<a id="off-1"></a>
 ## off('error')
 
 ```TypeScript
@@ -136,7 +132,6 @@ Unsubscribes from AVTranscoder errors. After the unsubscription, your applicatio
 | type | 'error' | Yes | Event type, which is **'error'** in this case.<br>This event is triggered when an error occurs during transcoding. |
 | callback | [ErrorCallback](../../apis-arkui/arkts-components/arkts-arkui-errorcallback-t-sys.md) | No | Callback that has been registered to listen for AVTranscoder errors. |
 
-<a id="off-2"></a>
 ## off('progressUpdate')
 
 ```TypeScript
@@ -160,7 +155,6 @@ Unsubscribes from transcoding progress updates.
 | type | 'progressUpdate' | Yes | Event type, which is **'progressUpdate'** in this case. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | No | Called that has been registered to listen for progress updates. You are advised to use the default value because only the last registered callback is retained in the current callback mechanism. |
 
-<a id="on"></a>
 ## on('complete')
 
 ```TypeScript
@@ -169,7 +163,7 @@ on(type:'complete', callback: Callback<void>):void
 
 Subscribes to the event indicating that transcoding is complete. An application can subscribe to only one transcoding progress update event. When the application initiates multiple subscriptions to this event, the last subscription is applied. This API uses an asynchronous callback to return the result.
 
-When this event is reported, the current transcoding operation is complete. You need to call [release()](arkts-media-media-avtranscoder-i.md#release-1) to exit the transcoding.
+When this event is reported, the current transcoding operation is complete. You need to call [release()](arkts-media-media-avtranscoder-i.md#release) to exit the transcoding.
 
 **Since:** 12
 
@@ -186,14 +180,13 @@ When this event is reported, the current transcoding operation is complete. You 
 | type | 'complete' | Yes | Event type, which is **'complete'** in this case. This event is triggered by the system during transcoding. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | Callback used to return the event callback method. |
 
-<a id="on-1"></a>
 ## on('error')
 
 ```TypeScript
 on(type:'error', callback: ErrorCallback):void
 ```
 
-Subscribes to AVTranscoder errors. If this event is reported, call [release()](arkts-media-media-avtranscoder-i.md#release-1)to exit the transcoding. This API uses an asynchronous callback to return the result.
+Subscribes to AVTranscoder errors. If this event is reported, call [release()](arkts-media-media-avtranscoder-i.md#release)to exit the transcoding. This API uses an asynchronous callback to return the result.
 
 An application can subscribe to only one AVTranscoder error event. When the application initiates multiple subscriptions to this event, the last subscription is applied.
 
@@ -225,7 +218,6 @@ An application can subscribe to only one AVTranscoder error event. When the appl
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. |
 | [5400106](../errorcode-media.md#5400106-format-not-supported) | Unsupported format. |
 
-<a id="on-2"></a>
 ## on('progressUpdate')
 
 ```TypeScript
@@ -249,7 +241,6 @@ Subscribes to transcoding progress updates. An application can subscribe to only
 | type | 'progressUpdate' | Yes | Event type, which is **'progressUpdate'** in this case. This event is triggered by the system during transcoding. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | Yes | Callback used to return the progress update event. The **number** parameter in the function indicates the current transcoding progress, in percentage. |
 
-<a id="pause"></a>
 ## pause
 
 ```TypeScript
@@ -258,7 +249,7 @@ pause(): Promise<void>
 
 Pauses video transcoding. This API uses a promise to return the result.
 
-This API can be called only after the [start()](arkts-media-media-avtranscoder-i.md#start-1) API is called. You can call [resume()](arkts-media-media-avtranscoder-i.md#resume-1) to resume transcoding.
+This API can be called only after the [start()](arkts-media-media-avtranscoder-i.md#start) API is called. You can call [resume()](arkts-media-media-avtranscoder-i.md#resume) to resume transcoding.
 
 **Since:** 12
 
@@ -282,7 +273,6 @@ This API can be called only after the [start()](arkts-media-media-avtranscoder-i
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 
-<a id="prepare"></a>
 ## prepare
 
 ```TypeScript
@@ -321,7 +311,6 @@ Sets video transcoding parameters. This API uses a promise to return the result.
 | [5400106](../errorcode-media.md#5400106-format-not-supported) | Unsupported format. Returned by promise. |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Return by promise.<br>**Applicable version:** 22 and later |
 
-<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -353,7 +342,6 @@ After the resources are released, you can no longer perform any operation on the
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 
-<a id="resume"></a>
 ## resume
 
 ```TypeScript
@@ -362,7 +350,7 @@ resume(): Promise<void>
 
 Resumes video transcoding. This API uses a promise to return the result.
 
-This API can be called only after the [pause()](arkts-media-media-avtranscoder-i.md#pause-1) API is called.
+This API can be called only after the [pause()](arkts-media-media-avtranscoder-i.md#pause) API is called.
 
 **Since:** 12
 
@@ -386,7 +374,6 @@ This API can be called only after the [pause()](arkts-media-media-avtranscoder-i
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 
-<a id="start"></a>
 ## start
 
 ```TypeScript
@@ -395,7 +382,7 @@ start(): Promise<void>
 
 Starts video transcoding. This API uses a promise to return the result.
 
-This API can be called only after the [prepare()](arkts-media-media-avtranscoder-i.md#prepare-1) API is called.
+This API can be called only after the [prepare()](arkts-media-media-avtranscoder-i.md#prepare) API is called.
 
 **Since:** 12
 

@@ -2,7 +2,7 @@
 
 Implements a window manager, which manages each basic window unit, that is, [Window](arkts-window.md) instance.
 
-Before calling any of the following APIs, you must use [onWindowStageCreate()](../../apis-ability-kit/arkts-apis/arkts-ability-app-ability-uiability-uiability-c.md#onwindowstagecreate-1) to create a WindowStage instance.
+Before calling any of the following APIs, you must use [onWindowStageCreate()](../../apis-ability-kit/arkts-apis/arkts-ability-app-ability-uiability-uiability-c.md#onwindowstagecreate) to create a WindowStage instance.
 
 **Since:** 9
 
@@ -16,7 +16,6 @@ Before calling any of the following APIs, you must use [onWindowStageCreate()](.
 import { window } from '@kit.ArkUI';
 ```
 
-<a id="disablewindowdecor"></a>
 ## disableWindowDecor
 
 ```TypeScript
@@ -25,7 +24,7 @@ disableWindowDecor(): void
 
 Disables window decorators.
 
-When window decorators are disabled and the main window transitions into full-screen mode, hovering the cursor over the hot zone of the top window's title bar will cause a floating title bar to appear. To prevent the floating title bar from appearing, call [setTitleAndDockHoverShown()](arkts-arkui-window-window-i.md#settitleanddockhovershown-1).
+When window decorators are disabled and the main window transitions into full-screen mode, hovering the cursor over the hot zone of the top window's title bar will cause a floating title bar to appear. To prevent the floating title bar from appearing, call [setTitleAndDockHoverShown()](arkts-arkui-window-window-i.md#settitleanddockhovershown).
 
 **Since:** 9
 
@@ -62,7 +61,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="removeimageforrecent"></a>
 ## removeImageForRecent
 
 ```TypeScript
@@ -100,7 +98,6 @@ Removes the image that the application has set to be displayed in the multitaski
 | [1300002](../errorcode-window.md#1300002-abnormal-window-state) | This window state is abnormal. |
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 
-<a id="setimageforrecent"></a>
 ## setImageForRecent
 
 ```TypeScript
@@ -108,12 +105,11 @@ setImageForRecent(imageResource: number | image.PixelMap, value: ImageFit): Prom
 ```
 
 Sets the image displayed in the multitasking view and on dock hover. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > Before calling this API, you are advised to complete page loading via  
-> [loadContent](arkts-arkui-window-window-i.md#loadcontent-1) or  
-> [setUIContent](arkts-arkui-window-window-i.md#setuicontent-1). If this API is called before the application  
+> [loadContent](arkts-arkui-window-window-i.md#loadcontent) or  
+> [setUIContent](arkts-arkui-window-window-i.md#setuicontent). If this API is called before the application  
 > completes page loading, the intended functionality does not take effect. As a result, only the application's  
 > launch page is displayed in the multitasking view.
 
@@ -154,7 +150,6 @@ Sets the image displayed in the multitasking view and on dock hover. This API us
 | [1300003](../errorcode-window.md#1300003-abnormal-window-manager-service) | This window manager service works abnormally. |
 | [1300016](../errorcode-window.md#1300016-parameter-verification-error) | Parameter error. Possible cause:1. Invalid parameter range. 2. Invalid parameter length. |
 
-<a id="setimageforrecent-1"></a>
 ## setImageForRecent
 
 ```TypeScript
@@ -223,7 +218,6 @@ export default class EntryAbility extends UIAbility {
 
 ```
 
-<a id="setshowonlockscreen"></a>
 ## setShowOnLockScreen
 
 ```TypeScript

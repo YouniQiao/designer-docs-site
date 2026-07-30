@@ -16,7 +16,6 @@ Provides APIs to implement **IRemoteObject**.
 import { rpc } from '@kit.IPCKit';
 ```
 
-<a id="adddeathrecipient"></a>
 ## addDeathRecipient
 
 ```TypeScript
@@ -29,7 +28,7 @@ Adds a callback for receiving death notifications of the remote object.
 
 **Deprecated since:** 9
 
-**Substitutes:** [registerDeathRecipient(recipient:](arkts-ipc-rpc-iremoteobject-c.md#registerdeathrecipient-1)
+**Substitutes:** [registerDeathRecipient(recipient:](arkts-ipc-rpc-iremoteobject-c.md#registerdeathrecipient)
 
 <!--Device-RemoteProxy-addDeathRecipient(recipient: DeathRecipient, flags: number): boolean--><!--Device-RemoteProxy-addDeathRecipient(recipient: DeathRecipient, flags: number): boolean-End-->
 
@@ -106,7 +105,6 @@ if (proxy != undefined) {
 
 ```
 
-<a id="getdescriptor"></a>
 ## getDescriptor
 
 ```TypeScript
@@ -194,7 +192,6 @@ if (proxy != undefined) {
 
 ```
 
-<a id="getinterfacedescriptor"></a>
 ## getInterfaceDescriptor
 
 ```TypeScript
@@ -207,7 +204,7 @@ Obtains the interface descriptor of this proxy object.
 
 **Deprecated since:** 9
 
-**Substitutes:** [getDescriptor()](arkts-ipc-rpc-iremoteobject-c.md#getdescriptor-1)
+**Substitutes:** [getDescriptor()](arkts-ipc-rpc-iremoteobject-c.md#getdescriptor)
 
 <!--Device-RemoteProxy-getInterfaceDescriptor(): string--><!--Device-RemoteProxy-getInterfaceDescriptor(): string-End-->
 
@@ -272,7 +269,6 @@ if (proxy != undefined) {
 
 ```
 
-<a id="getlocalinterface"></a>
 ## getLocalInterface
 
 ```TypeScript
@@ -366,7 +362,6 @@ if (proxy != undefined) {
 
 ```
 
-<a id="isobjectdead"></a>
 ## isObjectDead
 
 ```TypeScript
@@ -440,7 +435,6 @@ if (proxy != undefined) {
 
 ```
 
-<a id="querylocalinterface"></a>
 ## queryLocalInterface
 
 ```TypeScript
@@ -453,7 +447,7 @@ Obtains the **LocalInterface** object of an interface token.
 
 **Deprecated since:** 9
 
-**Substitutes:** [getLocalInterface(descriptor:](arkts-ipc-rpc-iremoteobject-c.md#getlocalinterface-1)
+**Substitutes:** [getLocalInterface(descriptor:](arkts-ipc-rpc-iremoteobject-c.md#getlocalinterface)
 
 <!--Device-RemoteProxy-queryLocalInterface(interface: string): IRemoteBroker--><!--Device-RemoteProxy-queryLocalInterface(interface: string): IRemoteBroker-End-->
 
@@ -524,7 +518,6 @@ if (proxy != undefined) {
 
 ```
 
-<a id="registerdeathrecipient"></a>
 ## registerDeathRecipient
 
 ```TypeScript
@@ -618,7 +611,6 @@ if (proxy != undefined) {
 
 ```
 
-<a id="removedeathrecipient"></a>
 ## removeDeathRecipient
 
 ```TypeScript
@@ -631,7 +623,7 @@ Removes the callback used to receive death notifications of the remote object.
 
 **Deprecated since:** 9
 
-**Substitutes:** [unregisterDeathRecipient(recipient:](arkts-ipc-rpc-iremoteobject-c.md#unregisterdeathrecipient-1)
+**Substitutes:** [unregisterDeathRecipient(recipient:](arkts-ipc-rpc-iremoteobject-c.md#unregisterdeathrecipient)
 
 <!--Device-RemoteProxy-removeDeathRecipient(recipient: DeathRecipient, flags: number): boolean--><!--Device-RemoteProxy-removeDeathRecipient(recipient: DeathRecipient, flags: number): boolean-End-->
 
@@ -709,7 +701,6 @@ if (proxy != undefined) {
 
 ```
 
-<a id="sendmessagerequest"></a>
 ## sendMessageRequest
 
 ```TypeScript
@@ -725,17 +716,7 @@ Sends a **MessageSequence** message to the remote process in synchronous or asyn
 
 **Since:** 9
 
-<!--Device-RemoteProxy-sendMessageRequest(
-      code: int,
-      data: MessageSequence,
-      reply: MessageSequence,
-      options: MessageOption
-    ): Promise<RequestResult>--><!--Device-RemoteProxy-sendMessageRequest(
-      code: int,
-      data: MessageSequence,
-      reply: MessageSequence,
-      options: MessageOption
-    ): Promise<RequestResult>-End-->
+<!--Device-RemoteProxy-sendMessageRequest(      code: int,      data: MessageSequence,      reply: MessageSequence,      options: MessageOption    ): Promise<RequestResult>--><!--Device-RemoteProxy-sendMessageRequest(      code: int,      data: MessageSequence,      reply: MessageSequence,      options: MessageOption    ): Promise<RequestResult>-End-->
 
 **System capability:** SystemCapability.Communication.IPC.Core
 
@@ -838,7 +819,6 @@ try {
 
 ```
 
-<a id="sendmessagerequest-1"></a>
 ## sendMessageRequest
 
 ```TypeScript
@@ -855,19 +835,7 @@ Sends a **MessageSequence** message to the remote process in synchronous or asyn
 
 **Since:** 9
 
-<!--Device-RemoteProxy-sendMessageRequest(
-      code: int,
-      data: MessageSequence,
-      reply: MessageSequence,
-      options: MessageOption,
-      callback: AsyncCallback<RequestResult>
-    ): void--><!--Device-RemoteProxy-sendMessageRequest(
-      code: int,
-      data: MessageSequence,
-      reply: MessageSequence,
-      options: MessageOption,
-      callback: AsyncCallback<RequestResult>
-    ): void-End-->
+<!--Device-RemoteProxy-sendMessageRequest(      code: int,      data: MessageSequence,      reply: MessageSequence,      options: MessageOption,      callback: AsyncCallback<RequestResult>    ): void--><!--Device-RemoteProxy-sendMessageRequest(      code: int,      data: MessageSequence,      reply: MessageSequence,      options: MessageOption,      callback: AsyncCallback<RequestResult>    ): void-End-->
 
 **System capability:** SystemCapability.Communication.IPC.Core
 
@@ -887,7 +855,6 @@ Sends a **MessageSequence** message to the remote process in synchronous or asyn
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.The number of parameters is incorrect;2.The parameter type does not match;3.Failed to obtain the passed object instance. |
 
-<a id="sendrequest"></a>
 ## sendRequest
 
 ```TypeScript
@@ -900,7 +867,7 @@ Sends a **MessageParcel** message to the remote process in synchronous or asynch
 
 **Deprecated since:** 8
 
-**Substitutes:** [sendMessageRequest(code:](arkts-ipc-rpc-iremoteobject-c.md#sendmessagerequest-1)
+**Substitutes:** [sendMessageRequest(code:](arkts-ipc-rpc-iremoteobject-c.md#sendmessagerequest)
 
 <!--Device-RemoteProxy-sendRequest(code: number, data: MessageParcel, reply: MessageParcel, options: MessageOption): boolean--><!--Device-RemoteProxy-sendRequest(code: number, data: MessageParcel, reply: MessageParcel, options: MessageOption): boolean-End-->
 
@@ -992,7 +959,6 @@ try {
 
 ```
 
-<a id="sendrequest-1"></a>
 ## sendRequest
 
 ```TypeScript
@@ -1010,19 +976,9 @@ Sends a **MessageParcel** message to the remote process in synchronous or asynch
 
 **Deprecated since:** 9
 
-**Substitutes:** [sendMessageRequest(code:](arkts-ipc-rpc-iremoteobject-c.md#sendmessagerequest-1)
+**Substitutes:** [sendMessageRequest(code:](arkts-ipc-rpc-iremoteobject-c.md#sendmessagerequest)
 
-<!--Device-RemoteProxy-sendRequest(
-      code: number,
-      data: MessageParcel,
-      reply: MessageParcel,
-      options: MessageOption
-    ): Promise<SendRequestResult>--><!--Device-RemoteProxy-sendRequest(
-      code: number,
-      data: MessageParcel,
-      reply: MessageParcel,
-      options: MessageOption
-    ): Promise<SendRequestResult>-End-->
+<!--Device-RemoteProxy-sendRequest(      code: number,      data: MessageParcel,      reply: MessageParcel,      options: MessageOption    ): Promise<SendRequestResult>--><!--Device-RemoteProxy-sendRequest(      code: number,      data: MessageParcel,      reply: MessageParcel,      options: MessageOption    ): Promise<SendRequestResult>-End-->
 
 **System capability:** SystemCapability.Communication.IPC.Core
 
@@ -1120,7 +1076,6 @@ try {
 
 ```
 
-<a id="sendrequest-2"></a>
 ## sendRequest
 
 ```TypeScript
@@ -1139,21 +1094,9 @@ Sends a **MessageParcel** message to the remote process in synchronous or asynch
 
 **Deprecated since:** 9
 
-**Substitutes:** [sendMessageRequest(code:](arkts-ipc-rpc-iremoteobject-c.md#sendmessagerequest-1)
+**Substitutes:** [sendMessageRequest(code:](arkts-ipc-rpc-iremoteobject-c.md#sendmessagerequest)
 
-<!--Device-RemoteProxy-sendRequest(
-      code: number,
-      data: MessageParcel,
-      reply: MessageParcel,
-      options: MessageOption,
-      callback: AsyncCallback<SendRequestResult>
-    ): void--><!--Device-RemoteProxy-sendRequest(
-      code: number,
-      data: MessageParcel,
-      reply: MessageParcel,
-      options: MessageOption,
-      callback: AsyncCallback<SendRequestResult>
-    ): void-End-->
+<!--Device-RemoteProxy-sendRequest(      code: number,      data: MessageParcel,      reply: MessageParcel,      options: MessageOption,      callback: AsyncCallback<SendRequestResult>    ): void--><!--Device-RemoteProxy-sendRequest(      code: number,      data: MessageParcel,      reply: MessageParcel,      options: MessageOption,      callback: AsyncCallback<SendRequestResult>    ): void-End-->
 
 **System capability:** SystemCapability.Communication.IPC.Core
 
@@ -1167,7 +1110,6 @@ Sends a **MessageParcel** message to the remote process in synchronous or asynch
 | options | [MessageOption](arkts-ipc-rpc-messageoption-c.md) | Yes | Request sending mode, which can be synchronous (default) or asynchronous. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;SendRequestResult&gt; | Yes | Callback for receiving the sending result. |
 
-<a id="unregisterdeathrecipient"></a>
 ## unregisterDeathRecipient
 
 ```TypeScript

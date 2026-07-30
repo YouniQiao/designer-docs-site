@@ -38,8 +38,8 @@ Enables self as a device administrator.
 | [9200003](../errorcode-enterpriseDeviceManager.md#9200003-invalid-administrator-ability-component) | The administrator ability component is invalid. |
 | [9200004](../errorcode-enterpriseDeviceManager.md#9200004-failed-to-enable-the-device-administrator-application) | Failed to activate the administrator application of the device. |
 | [9200012](../errorcode-enterpriseDeviceManager.md#9200012-parameter-verification-failed) | Parameter verification failed. |
-| 9200017 | The self-activation credential of the enterprise device administrator is invalid. |
-| 9200018 | This device is not an enterprise device. |
+| [9200017](../errorcode-enterpriseDeviceManager.md#9200017-invalid-selfactivation-credential-of-the-enterprise-device-administrator) | The self-activation credential of the enterprise device administrator is invalid. |
+| [9200018](../errorcode-enterpriseDeviceManager.md#9200018-the-device-is-not-an-enterprise-device) | This device is not an enterprise device. |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permission required to call the API. |
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported.Failed to call the API due to limited device capabilities. |
 

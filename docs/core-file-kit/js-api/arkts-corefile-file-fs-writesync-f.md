@@ -6,7 +6,6 @@
 import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
-<a id="writesync"></a>
 ## writeSync
 
 ```TypeScript
@@ -23,15 +22,7 @@ Writes data to a file. This API returns the result synchronously.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
-<!--Device-unnamed-declare function writeSync(
-  fd: number,
-  buffer: ArrayBuffer | string,
-  options?: WriteOptions
-): number--><!--Device-unnamed-declare function writeSync(
-  fd: number,
-  buffer: ArrayBuffer | string,
-  options?: WriteOptions
-): number-End-->
+<!--Device-unnamed-declare function writeSync(  fd: number,  buffer: ArrayBuffer | string,  options?: WriteOptions): number--><!--Device-unnamed-declare function writeSync(  fd: number,  buffer: ArrayBuffer | string,  options?: WriteOptions): number-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 

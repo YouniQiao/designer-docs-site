@@ -9,11 +9,13 @@
 >  
 > 本模块接口仅对设备管理应用开放，且调用接口前需激活设备管理应用，具体请参考[MDM Kit开发指南](../../../mdm/mdm-kit-guide.md)。
 
-**起始版本：** 10
+**起始版本：** 12
 
 <!--Device-unnamed-declare namespace browser--><!--Device-unnamed-declare namespace browser-End-->
 
 **系统能力：** SystemCapability.Customization.EnterpriseDeviceManager
+
+**系统接口：** 此接口为系统接口。
 
 ## 导入模块
 
@@ -29,6 +31,7 @@ import { browser } from '@kit.MDMKit';
 | --- | --- |
 | [getManagedBrowserPolicy](arkts-mdm-browser-getmanagedbrowserpolicy-f.md#getmanagedbrowserpolicy) | 通过应用包名获取指定浏览器的浏览器策略。 |
 | [getPoliciesSync](arkts-mdm-browser-getpoliciessync-f.md#getpoliciessync) | 通过appid获取指定浏览器设置的策略。 |
+| [getPoliciesSync](arkts-mdm-browser-getpoliciessync-f.md#getpoliciessync-1) | 通过appid获取指定浏览器设置的策略，适用于查询当前浏览器策略配置的场景，例如在企业设备管理应用中展示策略详情、验证策略是否生效等。 |
 | [getSelfManagedBrowserPolicy](arkts-mdm-browser-getselfmanagedbrowserpolicy-f.md#getselfmanagedbrowserpolicy) | 获取当前设备浏览器策略。 |
 | [getSelfManagedBrowserPolicyVersion](arkts-mdm-browser-getselfmanagedbrowserpolicyversion-f.md#getselfmanagedbrowserpolicyversion) | 获取指定浏览器的浏览器策略版本。 |
 | [setManagedBrowserPolicy](arkts-mdm-browser-setmanagedbrowserpolicy-f.md#setmanagedbrowserpolicy) | 为指定的浏览器设置浏览器策略，成功后会发布系统公共事件[COMMON_EVENT_MANAGED_BROWSER_POLICY_CHANGED](../../../reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_managed_browser_policy_changed)。 |

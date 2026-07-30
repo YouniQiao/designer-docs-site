@@ -25,7 +25,7 @@ import { userAuth } from '@kit.UserAuthenticationKit';
 cancel(): void
 ```
 
-Cancels this authentication.
+Cancels this authentication. This API is commonly used in the following scenarios: the application needs to abort authentication due to service logic changes; the authentication operation is aborted due to timeout or exceptions.
 > **NOTE**
 > **UserAuthInstance** must be the instance being authenticated.
 
@@ -97,7 +97,7 @@ try {
 off(type: 'result', callback?: IAuthCallback): void
 ```
 
-Unsubscribes from the user authentication result.
+Unsubscribes from the user authentication result. This API is commonly used in the following scenarios:unsubscribing when a page is destroyed or a component is unmounted; releasing resources when it is no longer necessary to listen for authentication results.
 > **NOTE**
 > The [UserAuthInstance](arkts-userauthentication-userauth-userauthinstance-i.md) instance used to invoke this API must be the one used  
 > to subscribe to the event.
@@ -175,7 +175,7 @@ try {
 off(type: 'authTip', callback?: AuthTipCallback): void
 ```
 
-Unsubscribes from the event for intermediate authentication status.
+Unsubscribes from the authentication tip information. This API is commonly used in the following scenarios:cleaning up subscription listeners and releasing resources after authentication is complete; unsubscribing when it is no longer necessary to listen for tip information during the authentication process; unsubscribing when a page is destroyed or a component is unmounted.
 > **NOTE**
 > The [UserAuthInstance](arkts-userauthentication-userauth-userauthinstance-i.md) instance used to invoke this API must be the one used  
 > to subscribe to the event.
@@ -192,8 +192,8 @@ Unsubscribes from the event for intermediate authentication status.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'authTip' | Yes | Event type. The supported event is **'authTip'**. This API unsubscribes from the event triggered by [on('authtip')](arkts-userauthentication-userauth-userauthinstance-i.md#on) after the [start()](arkts-userauthentication-userauth-userauthinstance-i.md#start) call and the initiation of authentication. |
-| callback | [AuthTipCallback](arkts-userauthentication-userauth-authtipcallback-t.md) | No | Callback used to return the intermediate authentication status. If this parameter is not passed, the value passed when the [on('authtip')](arkts-userauthentication-userauth-userauthinstance-i.md#on) API is called is used by default. |
+| type | 'authTip' | Yes | Event type. The supported event is **'authTip'**. This API unsubscribes from the event triggered by [on('authTip')](userAuth.UserAuthInstance.on(type: 'authTip', callback: AuthTipCallback)) after the [start()](arkts-userauthentication-userauth-userauthinstance-i.md#start) call and the initiation of authentication. |
+| callback | [AuthTipCallback](arkts-userauthentication-userauth-authtipcallback-t.md) | No | Callback used to return the intermediate authentication status. If this parameter is not passed, the value passed when the [on('authTip')](userAuth.UserAuthInstance.on(type: 'authTip', callback: AuthTipCallback)) API is called is used by default. |
 
 **Error codes:**
 
@@ -271,7 +271,7 @@ Subscribes to the user authentication result. This API is used to obtain the fin
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'result' | Yes | Event type. The value is **result**, which indicates the authentication result. |
+| type | 'result' | Yes | Event type used to return the authentication result. It is triggered when [start()](arkts-userauthentication-userauth-userauthinstance-i.md#start) is called, identity authentication is initiated, and the authentication interaction is completed. |
 | callback | [IAuthCallback](arkts-userauthentication-userauth-iauthcallback-i.md) | Yes | Callback used to return the user authentication result. |
 
 **Error codes:**
@@ -369,9 +369,10 @@ try {
 start(): void
 ```
 
-Starts authentication.
+Starts authentication. This API is commonly used in the following service scenarios: initiating identity authentication when a user taps the payment button; performing authentication when a user logs in to an application; confirming identity when a user accesses sensitive data or performs sensitive operations.
 > **NOTE**
-> Each **UserAuthInstance** can be used for authentication only once.
+> Each **UserAuthInstance** can be used for authentication only once. To perform authentication again, you must  
+> obtain a new **UserAuthInstance**.
 
 **Since:** 10
 

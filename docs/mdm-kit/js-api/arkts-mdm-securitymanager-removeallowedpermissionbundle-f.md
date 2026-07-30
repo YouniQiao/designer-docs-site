@@ -40,5 +40,5 @@ Removes the application from the list of applications allowed to grant the permi
 | [9200001](../errorcode-enterpriseDeviceManager.md#9200001-deviceadmin-not-enabled) | The application is not an administrator application of the device. |
 | [9200002](../errorcode-enterpriseDeviceManager.md#9200002-permission-denied) | The administrator application does not have permission to manage the device. |
 | [9200012](../errorcode-enterpriseDeviceManager.md#9200012-parameter-verification-failed) | Parameter verification failed. |
-| 9201044 | This permission is not disallowed.Applications cannot be added to or removed from the trustlist. |
+| [9201044](../errorcode-enterpriseDeviceManager.md#9201044-specified-permission-not-disabled) | This permission is not disallowed.Applications cannot be added to or removed from the trustlist. |
 

@@ -1,6 +1,6 @@
 # NotificationRequest
 
-The **NotificationRequest** module provides APIs for defining the notification request.
+Defines the data structure of a notification request, which is used to describe all information about a notification, including the notification content, identifier, display style, and interaction behavior.
 
 **Since:** 7
 
@@ -50,7 +50,7 @@ Application instance key. This parameter is left empty by default.
 classification?: string
 ```
 
-Notification category.Not supported currently.
+Notification classification. Not supported currently.
 
 **Type:** string
 
@@ -126,7 +126,7 @@ Extended parameters customized for the system applications to publish notificati
 forceDistributed?: boolean
 ```
 
-Whether notifications are forcibly displayed in all scenario across devices.**NOTE** This field takes effect only when the application is in the cross-device collaborative management list and **notDistributed** is set to **false**. Check whether the **collaborationFilter** field in the **notification_config.json** file contains the UID or bundle name of the application. For details about the file configuration path, see the **NOTIFICATION_CONFIG_FILE** property in [notification_config_parse.h](https://gitcode.com/openharmony/notification_distributed_notification_service/blob/master/services/ans/include/notification_config_parse.h). If yes, the application is on the cross-device collaborative management list.  
+Whether notifications are forcibly displayed in all scenario across devices. The default value is **false**.**NOTE** This field takes effect only when the application is in the cross-device collaborative management list and **notDistributed** is set to **false**. Check whether the **collaborationFilter** field in the **notification_config.json** file contains the UID or bundle name of the application. For details about the file configuration path, see the **NOTIFICATION_CONFIG_FILE** property in [notification_config_parse.h](https://gitcode.com/openharmony/notification_distributed_notification_service/blob/master/services/ans/include/notification_config_parse.h). If yes, the application is on the cross-device collaborative management list.  
 - **true**: Notifications are displayed on all collaboration devices.  
 - **false**: Notifications are displayed on the applications that are on the collaborative management list.
 
@@ -194,7 +194,7 @@ Whether the notification can be removed. If a notification is not removable, it 
 notDistributed?: boolean
 ```
 
-Whether notifications are not displayed in all scenarios across devices.**NOTE** This field is mutually exclusive with the **forceDistributed** field.When both fields are set to **true**, only the **notDistributed** field takes effect.  
+Whether notifications are not displayed in all scenarios across devices. The default value is **false**.**NOTE** This field is mutually exclusive with the **forceDistributed** field.When both fields are set to **true**, only the **notDistributed** field takes effect.  
 - **true**: Notifications are displayed only on the local device.  
 - **false**: Notifications are displayed on all collaboration devices.
 
@@ -234,9 +234,7 @@ Notification mode control. The default value is **0**. This API can be used to r
 overlayIcon?: image.PixelMap
 ```
 
-Notification overlay icon. This parameter is left empty by default. The total number of the icon pixel bytes cannot exceed 192 KB (which is obtained through [getPixelBytesNumber](../../apis-image-kit/arkts-apis/arkts-image-image-pixelmap-i.md#getpixelbytesnumber)).
-
-This API takes effect only when [notificationSlotType](arkts-notification-notificationrequest-notificationrequest-i.md) is set to **SOCIAL_COMMUNICATION**. The recommended icon size is 128 × 128 pixels. The display effect depends on the device capability and notification center UI style.
+Notification overlay icon. This parameter is left empty by default. The total bytes of the icon pixels cannot exceed 192 KB.
 
 **Type:** image.PixelMap
 

@@ -6,7 +6,6 @@
 import { huks } from '@kit.UniversalKeystoreKit';
 ```
 
-<a id="attestkeyitem"></a>
 ## attestKeyItem
 
 ```TypeScript
@@ -150,7 +149,6 @@ async function generateKeyThenAttestKey() {
 ```
 
 
-<a id="attestkeyitem-1"></a>
 ## attestKeyItem
 
 ```TypeScript

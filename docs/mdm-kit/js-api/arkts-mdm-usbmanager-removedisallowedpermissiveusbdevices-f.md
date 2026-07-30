@@ -6,7 +6,6 @@
 import { usbManager } from '@kit.MDMKit';
 ```
 
-<a id="removedisallowedpermissiveusbdevices"></a>
 ## removeDisallowedPermissiveUsbDevices
 
 ```TypeScript

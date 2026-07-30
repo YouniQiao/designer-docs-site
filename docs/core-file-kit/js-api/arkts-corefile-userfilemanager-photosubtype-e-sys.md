@@ -6,7 +6,7 @@ Enumerates the [FileAsset](arkts-corefile-userfilemanager-fileasset-i-sys.md) ty
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** PhotoSubType
+**Substitutes:** [PhotoSubType](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-photosubtype-e-sys.md)
 
 <!--Device-userFileManager-enum PhotoSubType--><!--Device-userFileManager-enum PhotoSubType-End-->
 
@@ -26,7 +26,7 @@ Default (photo) type.
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** DEFAULT
+**Substitutes:** [DEFAULT](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-photosubtype-e-sys.md#default)
 
 <!--Device-PhotoSubType-DEFAULT--><!--Device-PhotoSubType-DEFAULT-End-->
 
@@ -46,7 +46,7 @@ Screenshots and screen recording files.
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** SCREENSHOT
+**Substitutes:** [SCREENSHOT](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-photosubtype-e-sys.md#screenshot)
 
 <!--Device-PhotoSubType-SCREENSHOT--><!--Device-PhotoSubType-SCREENSHOT-End-->
 
@@ -66,7 +66,7 @@ Photos and videos taken by a camera.
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** SOURCE_GENERIC
+**Substitutes:** [SOURCE_GENERIC](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-albumsubtype-e-sys.md#source_generic)
 
 <!--Device-PhotoSubType-CAMERA--><!--Device-PhotoSubType-CAMERA-End-->
 

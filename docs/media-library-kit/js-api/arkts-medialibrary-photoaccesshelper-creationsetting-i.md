@@ -65,7 +65,7 @@ Title of the image or video.
 If this parameter is not passed, the system generates a value. The parameter specifications are as follows:
 
 - It must not contain a file name extension.  
-- It must not contain any invalid characters, which are:\ / : * ? " ' ` < > | { } [ ]  
+- It must not contain any invalid characters, which are:\ / : * ? " ' ` &lt; &gt; | { } [ ]  
 - The file name consists of the title and file name extension. The file name string length ranges from 1 to 255.Therefore, the title length cannot be too long.
 
 **Type:** string

@@ -14,6 +14,8 @@ function verifyAuthToken(authToken: Uint8Array, allowableDuration: number): Prom
 
 Verifies an authentication token. This API is used to verify the validity of an **AuthToken**, including the integrity and validity check. After the verification is successful, the detailed information about the parsed **AuthToken** is returned. This API uses a promise to return the result.
 
+The integrity check verifies the digital signature of the **AuthToken** to ensure that the token has not been tampered with. The validity check compares the issuance time of the **AuthToken** with the current time and determines whether the token is within the validity period based on the **allowableDuration** parameter.
+
 **Since:** 18
 
 **Required permissions:** ohos.permission.USE_USER_ACCESS_MANAGER
@@ -35,7 +37,7 @@ Verifies an authentication token. This API is used to verify the validity of an 
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;AuthToken&gt; | Promise used to return the result. |
+| Promise&lt;AuthToken&gt; | Promise used to return the result. If the verification is successful, the parsed **AuthToken** data is returned, including the challenge value, authentication trust level,authentication type, and user ID. If the verification fails, the corresponding error code is returned. |
 
 **Error codes:**
 

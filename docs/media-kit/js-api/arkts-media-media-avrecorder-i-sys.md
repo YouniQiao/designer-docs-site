@@ -1,9 +1,8 @@
 # AVRecorder
 
-AVRecorder is a class for audio and video recording management. It provides APIs to record media assets. Before calling any API in AVRecorder, you must use [createAVRecorder()](arkts-media-media-createavrecorder-f.md#createavrecorder-1) to create an AVRecorder instance.
+AVRecorder is a class for audio and video recording management. It provides APIs to record media assets. Before calling any API in AVRecorder, you must use [createAVRecorder()](arkts-media-media-createavrecorder-f.md#createavrecorder) to create an AVRecorder instance.
 
-For details about the audio and video recording demo, see [Audio Recording](docroot://media/media/using-avrecorder-for-recording.md) and [Video Recording](docroot://media/media/video-recording.md).
-
+For details about the audio and video recording demo, see [Audio Recording](../../../media/media/using-avrecorder-for-recording.md) and [Video Recording](../../../media/media/video-recording.md).
 > **NOTE**  
 >  
 > > To use the camera to record videos, the camera module is required. For details about how to use the APIs  
@@ -21,7 +20,6 @@ For details about the audio and video recording demo, see [Audio Recording](docr
 import { media } from '@kit.MediaKit';
 ```
 
-<a id="getinputmetasurface"></a>
 ## getInputMetaSurface
 
 ```TypeScript
@@ -60,7 +58,6 @@ Get input meta surface for specified meta source type. it must be called between
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 
-<a id="iswatermarksupported"></a>
 ## isWatermarkSupported
 
 ```TypeScript
@@ -98,7 +95,6 @@ avRecorder.isWatermarkSupported().then((isWatermarkSupported: boolean) => {
 
 ```
 
-<a id="setmetadata"></a>
 ## setMetadata
 
 ```TypeScript
@@ -132,7 +128,6 @@ This API can be called only after the prepare() event is successfully triggered 
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed.<br>**Applicable version:** 26.0.0 and later |
 | [5400108](../errorcode-media.md#5400108-parameter-value-out-of-range) | Parameter check failed.<br>**Applicable version:** 26.0.0 and later |
 
-<a id="setwatermark"></a>
 ## setWatermark
 
 ```TypeScript

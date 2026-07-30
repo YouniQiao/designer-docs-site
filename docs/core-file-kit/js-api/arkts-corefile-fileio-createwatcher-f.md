@@ -1,6 +1,5 @@
 # createWatcher
 
-<a id="createwatcher"></a>
 ## createWatcher
 
 ```TypeScript
@@ -13,7 +12,7 @@ Listens for file or directory changes. This API uses an asynchronous callback to
 
 **Deprecated since:** 10
 
-**Substitutes:** [fs:createWatcher](arkts-corefile-file-fs-createwatcher-f.md#createwatcher-1)
+**Substitutes:** [fs:createWatcher](arkts-corefile-fileio-createwatcher-f.md#createwatcher)
 
 <!--Device-unnamed-declare function createWatcher(filename: string, events: number, callback: AsyncCallback<number>): Watcher--><!--Device-unnamed-declare function createWatcher(filename: string, events: number, callback: AsyncCallback<number>): Watcher-End-->
 

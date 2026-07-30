@@ -6,7 +6,6 @@
 import { privacyManager } from '@kit.AbilityKit';
 ```
 
-<a id="addpermissionusedrecord"></a>
 ## addPermissionUsedRecord
 
 ```TypeScript
@@ -22,27 +21,14 @@ function addPermissionUsedRecord(
 When an application protected by a permission is called by another service or application, this API can be used to add a permission usage record. It is recommended to call this API after accessing a sensitive permission, so that the system records the corresponding sensitive permission access event. This API uses a promise to return the result.
 
 The permission usage record includes the application identity of the caller, the name of the application permission,and the number of successful and failed accesses to this application by the caller.
-
 > **NOTE**  
-> The permission usage record is controlled by the toggle status set by [setPermissionUsedRecordToggleStatus](arkts-ability-privacymanager-setpermissionusedrecordtogglestatus-f-sys.md#setpermissionusedrecordtogglestatus-1). When the toggle is off, calling this API will not generate a permission usage record.
+> The permission usage record is controlled by the toggle status set by [setPermissionUsedRecordToggleStatus](arkts-ability-privacymanager-setpermissionusedrecordtogglestatus-f-sys.md#setpermissionusedrecordtogglestatus). When the toggle is off, calling this API will not generate a permission usage record.
 
 **Since:** 9
 
 **Required permissions:** ohos.permission.PERMISSION_USED_STATS
 
-<!--Device-privacyManager-function addPermissionUsedRecord(
-    tokenID: int,
-    permissionName: Permissions,
-    successCount: int,
-    failCount: int,
-    options?: AddPermissionUsedRecordOptions
-  ): Promise<void>--><!--Device-privacyManager-function addPermissionUsedRecord(
-    tokenID: int,
-    permissionName: Permissions,
-    successCount: int,
-    failCount: int,
-    options?: AddPermissionUsedRecordOptions
-  ): Promise<void>-End-->
+<!--Device-privacyManager-function addPermissionUsedRecord(    tokenID: int,    permissionName: Permissions,    successCount: int,    failCount: int,    options?: AddPermissionUsedRecordOptions  ): Promise<void>--><!--Device-privacyManager-function addPermissionUsedRecord(    tokenID: int,    permissionName: Permissions,    successCount: int,    failCount: int,    options?: AddPermissionUsedRecordOptions  ): Promise<void>-End-->
 
 **System capability:** SystemCapability.Security.AccessToken
 
@@ -52,7 +38,7 @@ The permission usage record includes the application identity of the caller, the
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| tokenID | number | Yes | Identity identifier of the target application. It can be obtained through the [accessTokenId](arkts-ability-applicationinfo-i.md#accesstokenid) field in ApplicationInfo of BundleInfo. Passing an invalid value returns error code 12100001.<br>The value should be an integer. Value constraint: This parameter must be an integer greater than 0.<br>For BundleInfo acquisition, please refer to:[bundleManager.getBundleInfoSync](arkts-ability-bundlemanager-getbundleinfosync-f.md#getbundleinfosync-1). |
+| tokenID | number | Yes | Identity identifier of the target application. It can be obtained through the [accessTokenId](arkts-ability-applicationinfo-i.md#accesstokenid) field in ApplicationInfo of BundleInfo. Passing an invalid value returns error code 12100001.<br>The value should be an integer. Value constraint: This parameter must be an integer greater than 0.<br>For BundleInfo acquisition, please refer to:[bundleManager.getBundleInfoSync](arkts-ability-bundlemanager-getbundleinfosync-f.md#getbundleinfosync). |
 | permissionName | [Permissions](arkts-ability-permissions-t.md) | Yes | Name of the permission to be recorded. Passing an invalid value returns error code 12100001.<br>Value constraint: The permission name length cannot exceed 256 characters. |
 | successCount | number | Yes | Number of successful accesses. Passing an invalid value returns error code 12100001.<br>The value should be an integer. Value constraint: The value must be a non-negative integer. |
 | failCount | number | Yes | Number of failed accesses. Passing an invalid value returns error code 12100001.<br>The value should be an integer. Value constraint: The value must be a non-negative integer. |
@@ -105,7 +91,6 @@ privacyManager.addPermissionUsedRecord(tokenID, 'ohos.permission.READ_AUDIO', 1,
 ```
 
 
-<a id="addpermissionusedrecord-1"></a>
 ## addPermissionUsedRecord
 
 ```TypeScript
@@ -122,25 +107,13 @@ When an application protected by a permission is called by another service or ap
 
 The permission usage record includes the application identity of the caller, the name of the application permission used, and the number of successful and failed accesses to this application by the caller.
 
-The permission usage record is controlled by the toggle status set by [setPermissionUsedRecordToggleStatus](arkts-ability-privacymanager-setpermissionusedrecordtogglestatus-f-sys.md#setpermissionusedrecordtogglestatus-1). When the toggle is off, calling this API will not generate a permission usage record.
+The permission usage record is controlled by the toggle status set by [setPermissionUsedRecordToggleStatus](arkts-ability-privacymanager-setpermissionusedrecordtogglestatus-f-sys.md#setpermissionusedrecordtogglestatus). When the toggle is off, calling this API will not generate a permission usage record.
 
 **Since:** 9
 
 **Required permissions:** ohos.permission.PERMISSION_USED_STATS
 
-<!--Device-privacyManager-function addPermissionUsedRecord(
-    tokenID: int,
-    permissionName: Permissions,
-    successCount: int,
-    failCount: int,
-    callback: AsyncCallback<void>
-  ): void--><!--Device-privacyManager-function addPermissionUsedRecord(
-    tokenID: int,
-    permissionName: Permissions,
-    successCount: int,
-    failCount: int,
-    callback: AsyncCallback<void>
-  ): void-End-->
+<!--Device-privacyManager-function addPermissionUsedRecord(    tokenID: int,    permissionName: Permissions,    successCount: int,    failCount: int,    callback: AsyncCallback<void>  ): void--><!--Device-privacyManager-function addPermissionUsedRecord(    tokenID: int,    permissionName: Permissions,    successCount: int,    failCount: int,    callback: AsyncCallback<void>  ): void-End-->
 
 **System capability:** SystemCapability.Security.AccessToken
 
@@ -150,7 +123,7 @@ The permission usage record is controlled by the toggle status set by [setPermis
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| tokenID | number | Yes | Identity identifier of the target application. It can be obtained through the [accessTokenId](arkts-ability-applicationinfo-i.md#accesstokenid) field in ApplicationInfo of BundleInfo. Passing an invalid value returns error code 12100001.<br>The value should be an integer. Value constraint: This parameter must be an integer greater than 0.<br>For BundleInfo acquisition, please refer to: [bundleManager.getBundleInfoSync](arkts-ability-bundlemanager-getbundleinfosync-f.md#getbundleinfosync-1). |
+| tokenID | number | Yes | Identity identifier of the target application. It can be obtained through the [accessTokenId](arkts-ability-applicationinfo-i.md#accesstokenid) field in ApplicationInfo of BundleInfo. Passing an invalid value returns error code 12100001.<br>The value should be an integer. Value constraint: This parameter must be an integer greater than 0.<br>For BundleInfo acquisition, please refer to: [bundleManager.getBundleInfoSync](arkts-ability-bundlemanager-getbundleinfosync-f.md#getbundleinfosync). |
 | permissionName | [Permissions](arkts-ability-permissions-t.md) | Yes | Name of the permission to be recorded. Passing an invalid value returns error code 12100001.<br>Value constraint: The permission name length cannot exceed 256 characters. |
 | successCount | number | Yes | Number of successful accesses. Passing an invalid value returns error code 12100001.<br>The value should be an integer. Value constraint: The value must be a non-negative integer. |
 | failCount | number | Yes | Number of failed accesses. Passing an invalid value returns error code 12100001.<br>The value should be an integer. Value constraint: The value must be a non-negative integer. |

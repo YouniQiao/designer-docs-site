@@ -9,10 +9,10 @@ This module provides the following classes for creating complex text paragraphs:
 - [FontDescriptor](arkts-arkgraphics2d-text-fontdescriptor-i.md): provides information about font descriptors.  
 - [ParagraphStyle](arkts-arkgraphics2d-text-paragraphstyle-i.md): controls line break and word break strategies for the entire paragraph.  
 - [ParagraphBuilder](arkts-arkgraphics2d-text-paragraphbuilder-c.md): used to create different paragraph objects.  
-- [Paragraph](arkts-arkgraphics2d-text-paragraph-c.md): created by calling [build()](arkts-arkgraphics2d-text-paragraphbuilder-c.md#build-1) of the **ParagraphBuilder** class.  
-- [LineTypeset](arkts-arkgraphics2d-text-linetypeset-c.md): created by calling [buildLineTypeset()](arkts-arkgraphics2d-text-paragraphbuilder-c.md#buildlinetypeset-1) of the **ParagraphBuilder** class.  
-- [TextLine](arkts-arkgraphics2d-text-textline-c.md): paragraph text on a line-by-line basis, obtained by calling [getTextLines()](arkts-arkgraphics2d-text-paragraph-c.md#gettextlines-1) of the **Paragraph** class.  
-- [Run](arkts-arkgraphics2d-text-runmetrics-i.md): text typesetting unit, obtained by calling [getGlyphRuns()](arkts-arkgraphics2d-text-textline-c.md#getglyphruns-1) of the **TextLine** class.
+- [Paragraph](arkts-arkgraphics2d-text-paragraph-c.md): created by calling [build()](arkts-arkgraphics2d-text-paragraphbuilder-c.md#build) of the **ParagraphBuilder** class.  
+- [LineTypeset](arkts-arkgraphics2d-text-linetypeset-c.md): created by calling [buildLineTypeset()](arkts-arkgraphics2d-text-paragraphbuilder-c.md#buildlinetypeset) of the **ParagraphBuilder** class.  
+- [TextLine](arkts-arkgraphics2d-text-textline-c.md): paragraph text on a line-by-line basis, obtained by calling [getTextLines()](arkts-arkgraphics2d-text-paragraph-c.md#gettextlines) of the **Paragraph** class.  
+- [Run](arkts-arkgraphics2d-text-runmetrics-i.md): text typesetting unit, obtained by calling [getGlyphRuns()](arkts-arkgraphics2d-text-textline-c.md#getglyphruns) of the **TextLine** class.
 
 **Since:** 12
 
@@ -48,11 +48,11 @@ import { text } from '@kit.ArkGraphics2D';
 | Name | Description |
 | --- | --- |
 | [FontCollection](arkts-arkgraphics2d-text-fontcollection-c.md) | Implements a collection of fonts. |
-| [LineTypeset](arkts-arkgraphics2d-text-linetypeset-c.md) | Implements a carrier that stores the text content and style. It can be used to compute layout details for individual lines of text.  Before calling any of the following APIs, you must use [buildLineTypeset()](arkts-arkgraphics2d-text-paragraphbuilder-c.md#buildlinetypeset-1) in the [ParagraphBuilder](arkts-arkgraphics2d-text-paragraphbuilder-c.md) class to create a **LineTypeset** object. |
-| [Paragraph](arkts-arkgraphics2d-text-paragraph-c.md) | Implements a carrier that stores the text content and style. You can perform operations such as layout and drawing.  Before calling any of the following APIs, you must use [build()](arkts-arkgraphics2d-text-paragraphbuilder-c.md#build-1) of the [ParagraphBuilder](arkts-arkgraphics2d-text-paragraphbuilder-c.md) class to create a **Paragraph** object. |
+| [LineTypeset](arkts-arkgraphics2d-text-linetypeset-c.md) | Implements a carrier that stores the text content and style. It can be used to compute layout details for individual lines of text.  Before calling any of the following APIs, you must use [buildLineTypeset()](arkts-arkgraphics2d-text-paragraphbuilder-c.md#buildlinetypeset) in the [ParagraphBuilder](arkts-arkgraphics2d-text-paragraphbuilder-c.md) class to create a **LineTypeset** object. |
+| [Paragraph](arkts-arkgraphics2d-text-paragraph-c.md) | Implements a carrier that stores the text content and style. You can perform operations such as layout and drawing.  Before calling any of the following APIs, you must use [build()](arkts-arkgraphics2d-text-paragraphbuilder-c.md#build) of the [ParagraphBuilder](arkts-arkgraphics2d-text-paragraphbuilder-c.md) class to create a **Paragraph** object. |
 | [ParagraphBuilder](arkts-arkgraphics2d-text-paragraphbuilder-c.md) | Implements a paragraph builder. |
-| [Run](arkts-arkgraphics2d-text-run-c.md) | Implements a unit for text layout.  Before calling any of the following APIs, you must use [getGlyphRuns()](arkts-arkgraphics2d-text-textline-c.md#getglyphruns-1) of the [TextLine](arkts-arkgraphics2d-text-textline-c.md) class to create a **Run** object. |
-| [TextLine](arkts-arkgraphics2d-text-textline-c.md) | Implements a carrier that describes the basic text line structure of a paragraph.  Before calling any of the following APIs, you must use [getTextLines()](arkts-arkgraphics2d-text-paragraph-c.md#gettextlines-1) of the [Paragraph](arkts-arkgraphics2d-text-paragraphstyle-i.md) class or [createLine()](arkts-arkgraphics2d-text-linetypeset-c.md#createline-1) of the [LineTypeset](arkts-arkgraphics2d-text-linetypeset-c.md) class to create a **TextLine** object. |
+| [Run](arkts-arkgraphics2d-text-run-c.md) | Implements a unit for text layout.  Before calling any of the following APIs, you must use [getGlyphRuns()](arkts-arkgraphics2d-text-textline-c.md#getglyphruns) of the [TextLine](arkts-arkgraphics2d-text-textline-c.md) class to create a **Run** object. |
+| [TextLine](arkts-arkgraphics2d-text-textline-c.md) | Implements a carrier that describes the basic text line structure of a paragraph.  Before calling any of the following APIs, you must use [getTextLines()](arkts-arkgraphics2d-text-paragraph-c.md#gettextlines) of the [Paragraph](arkts-arkgraphics2d-text-paragraphstyle-i.md) class or [createLine()](arkts-arkgraphics2d-text-linetypeset-c.md#createline) of the [LineTypeset](arkts-arkgraphics2d-text-linetypeset-c.md) class to create a **TextLine** object. |
 
 ### Interfaces
 
@@ -91,7 +91,7 @@ import { text } from '@kit.ArkGraphics2D';
 | [FontWeight](arkts-arkgraphics2d-text-fontweight-e.md) | Enumerates the font weights. |
 | [FontWidth](arkts-arkgraphics2d-text-fontwidth-e.md) | Enumerates the font widths. |
 | [LineHeightStyle](arkts-arkgraphics2d-text-lineheightstyle-e.md) | Enumerates the line height scaling base. |
-| [PlaceholderAlignment](arkts-arkgraphics2d-text-placeholderalignment-e.md) | Enumerates the vertical alignment modes of a placeholder relative to the surrounding text.  ![image_PlaceholderAlignment.png](docroot://reference/apis-arkgraphics2d/figures/image_PlaceholderAlignment.png) |
+| [PlaceholderAlignment](arkts-arkgraphics2d-text-placeholderalignment-e.md) | Enumerates the vertical alignment modes of a placeholder relative to the surrounding text.  ![image_PlaceholderAlignment.png](../../../reference/apis-arkgraphics2d/figures/image_PlaceholderAlignment.png) |
 | [RectHeightStyle](arkts-arkgraphics2d-text-rectheightstyle-e.md) | Enumerates the rectangle height styles. |
 | [RectWidthStyle](arkts-arkgraphics2d-text-rectwidthstyle-e.md) | Enumerates the rectangle width styles. |
 | [SystemFontType](arkts-arkgraphics2d-text-systemfonttype-e.md) | Enumerates the font types, which can be combined through bitwise OR operations. |

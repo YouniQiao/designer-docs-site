@@ -257,7 +257,7 @@ onSelect(callback: OnAlphabetIndexerSelectCallback)
 onSelected(callback: (index: number) => void)
 ```
 
-索引项选中事件，回调参数为当前选中项索引。
+注册索引项选中事件回调，回调参数为当前选中项索引。
 > **说明：**
 > 从API version 7开始支持，从API version 8开始废弃，建议使用[onSelect](AlphabetIndexerAttribute#onSelect)替代。
 
@@ -453,7 +453,7 @@ popupItemFont(value: Font)
 popupPosition(value: Position)
 ```
 
-设置弹出窗口相对于索引条上边框中点的位置。
+设置提示弹窗相对于索引条上边框中点的位置。
 
 **起始版本：** 8
 

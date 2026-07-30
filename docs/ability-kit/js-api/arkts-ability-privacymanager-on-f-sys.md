@@ -6,7 +6,6 @@
 import { privacyManager } from '@kit.AbilityKit';
 ```
 
-<a id="on"></a>
 ## on('activeStateChange')
 
 ```TypeScript
@@ -15,10 +14,9 @@ function on(type: 'activeStateChange',
     callback: Callback<ActiveChangeResponse>): void
 ```
 
-Subscribes to permission usage status change events for a specified permission list. Permission usage status changes are triggered by calls to [startUsingPermission](arkts-ability-privacymanager-startusingpermission-f-sys.md#startusingpermission-1) and [stopUsingPermission](arkts-ability-privacymanager-stopusingpermission-f-sys.md#stopusingpermission-1). After a successful subscription, when the permission usage status changes, the callback function is triggered, returning an [ActiveChangeResponse](arkts-ability-privacymanager-activechangeresponse-i-sys.md) object containing details of the permission usage status change. This API uses an asynchronous callback to return the result.
+Subscribes to permission usage status change events for a specified permission list. Permission usage status changes are triggered by calls to [startUsingPermission](arkts-ability-privacymanager-startusingpermission-f-sys.md#startusingpermission) and [stopUsingPermission](arkts-ability-privacymanager-stopusingpermission-f-sys.md#stopusingpermission). After a successful subscription, when the permission usage status changes, the callback function is triggered, returning an [ActiveChangeResponse](arkts-ability-privacymanager-activechangeresponse-i-sys.md) object containing details of the permission usage status change. This API uses an asynchronous callback to return the result.
 
 Multiple callback functions are allowed to be subscribed for the same permissionList.
-
 > **NOTE**  
 > It is not allowed to subscribe the same callback function using two permissionLists that have an intersection.  
 > That is, if two permissionLists contain the same permission name, the same callback function cannot be used for subscription.  
@@ -29,11 +27,7 @@ Multiple callback functions are allowed to be subscribed for the same permission
 
 **Required permissions:** ohos.permission.PERMISSION_USED_STATS
 
-<!--Device-privacyManager-function on(type: 'activeStateChange',
-    permissionList: Array<Permissions>,
-    callback: Callback<ActiveChangeResponse>): void--><!--Device-privacyManager-function on(type: 'activeStateChange',
-    permissionList: Array<Permissions>,
-    callback: Callback<ActiveChangeResponse>): void-End-->
+<!--Device-privacyManager-function on(type: 'activeStateChange',    permissionList: Array<Permissions>,    callback: Callback<ActiveChangeResponse>): void--><!--Device-privacyManager-function on(type: 'activeStateChange',    permissionList: Array<Permissions>,    callback: Callback<ActiveChangeResponse>): void-End-->
 
 **System capability:** SystemCapability.Security.AccessToken
 

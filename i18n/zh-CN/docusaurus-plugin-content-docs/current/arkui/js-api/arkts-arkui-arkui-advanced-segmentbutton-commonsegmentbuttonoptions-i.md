@@ -20,9 +20,11 @@ import { CommonSegmentButtonOptions, SegmentButtonItemOptionsConstructorOptions,
 backgroundBlurStyle?: BlurStyle
 ```
 
-分段按钮组件的背景模糊材质。
+背景模糊材质。
 
-值为undefined时，背景模糊材质为BlurStyle.NONE。
+默认值：BlurStyle.NONE
+
+值为undefined时，按默认值处理。
 
 **类型：** BlurStyle
 
@@ -48,9 +50,9 @@ backgroundBorderRadius?: LengthMetrics
 
 此属性仅在borderRadiusMode为BorderRadiusMode.CUSTOM时生效。
 
-对于胶囊类多选按钮(type为"capsule"且multiply为true)，此属性不生效，需要用itemBorderRadius配置圆角。
+对于胶囊类多选分段按钮（type为"capsule"且multiply为true），此属性不生效，需要用itemBorderRadius配置圆角。
 
-圆角大小受组件尺寸限制，最大值为组件宽或高的一半，不支持百分比设置。
+圆角大小受组件尺寸限制，最大值为组件宽或高的一半，不支持百分比设置。超出最大值时自动修正为最大值，使用百分比时按默认值处理。
 
 默认值：`$r('sys.float.segmentbutton_container_shape')`
 
@@ -159,7 +161,7 @@ For text & icon buttons Padding { top: 6, right: 8, bottom: 6, left: 8 }.
 direction?: Direction
 ```
 
-分段按钮组件的布局方向。
+布局方向。
 
 默认值：Direction.Auto
 
@@ -183,9 +185,11 @@ direction?: Direction
 fontColor?: ResourceColor
 ```
 
-分段按钮组件的按钮未选中态的文本颜色。
+按钮未选中态的文本颜色。
 
-值为undefined时，颜色为$r('sys.color.ohos_id_color_text_secondary')。
+默认值：$r('sys.color.ohos_id_color_text_secondary')
+
+值为undefined时，按默认值处理。
 
 **类型：** ResourceColor
 
@@ -208,6 +212,8 @@ fontSize?: DimensionNoPercentage
 按钮未选中态的字体大小（不支持百分比设置）。
 
 默认值：$r('sys.float.ohos_id_text_size_body2')
+
+单位：fp
 
 值为undefined时，按默认值处理。
 
@@ -295,9 +301,9 @@ itemBorderRadius?: LengthMetrics
 
 此属性仅在borderRadiusMode为BorderRadiusMode.CUSTOM时生效。
 
-对于胶囊类多选按钮(type为"capsule"且multiply为true)，只能控制两端的选项圆角。
+对于胶囊类多选分段按钮（type为"capsule"且multiply为true），只能控制两端的选项圆角。
 
-圆角大小受组件尺寸限制，最大值为组件宽或高的一半，不支持百分比设置。
+圆角大小受组件尺寸限制，最大值为组件宽或高的一半，不支持百分比设置。超出最大值时自动修正为最大值，使用百分比时按默认值处理。
 
 默认值：`$r('sys.float.segmentbutton_selected_background_shape')`
 
@@ -321,7 +327,7 @@ itemBorderRadius?: LengthMetrics
 localizedButtonPadding?: LocalizedPadding
 ```
 
-按钮内边距。
+按钮内边距，支持随布局方向（LTR/RTL）自适应。
 
 默认值：
 
@@ -356,9 +362,11 @@ For text & icon buttons LocalizedPadding
 localizedTextPadding?: LocalizedPadding
 ```
 
-文本内边距。
+文本内边距，支持随布局方向（LTR/RTL）自适应。
 
 默认值：0
+
+单位：vp
 
 值为undefined时，按默认值处理。
 
@@ -380,11 +388,15 @@ localizedTextPadding?: LocalizedPadding
 selectedBackgroundColor?: ResourceColor
 ```
 
-分段按钮组件的按钮选中态背景板颜色。
+按钮选中态的背景板颜色。
 
-值为undefined时，type为"tab"时，背景板颜色为`$r('sys.color.segment_button_checked_foreground_color')`。
+默认值：
 
-type为"capsule"时，背景板颜色为`$r('sys.color.ohos_id_color_emphasize')`。
+type为"tab"时，默认值为`$r('sys.color.segment_button_checked_foreground_color')`。
+
+type为"capsule"时，默认值为`$r('sys.color.ohos_id_color_emphasize')`。
+
+值为undefined时，按默认值处理。
 
 **类型：** ResourceColor
 
@@ -404,11 +416,15 @@ type为"capsule"时，背景板颜色为`$r('sys.color.ohos_id_color_emphasize')
 selectedFontColor?: ResourceColor
 ```
 
-分段按钮组件的按钮选中态的文本颜色。
+按钮选中态的文本颜色。
 
-值为undefined时，type为"tab"时，颜色为`$r('sys.color.ohos_id_color_text_primary')`。
+默认值：
 
-type为"capsule"时，颜色为`$r('sys.color.ohos_id_color_foreground_contrary')`。
+type为"tab"时，默认值为`$r('sys.color.ohos_id_color_text_primary')`。
+
+type为"capsule"时，默认值为`$r('sys.color.ohos_id_color_foreground_contrary')`。
+
+值为undefined时，按默认值处理。
 
 **类型：** ResourceColor
 
@@ -431,6 +447,8 @@ selectedFontSize?: DimensionNoPercentage
 按钮选中态的字体大小（不支持百分比设置）。
 
 默认值：$r('sys.float.ohos_id_text_size_body2')
+
+单位：fp
 
 值为undefined时，按默认值处理。
 

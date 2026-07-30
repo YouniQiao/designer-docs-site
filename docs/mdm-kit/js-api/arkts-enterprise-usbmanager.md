@@ -11,11 +11,13 @@ The **usbManager** module provides APIs for USB management.
 > The global restriction policy is provided by **restrictions**. To disable USB globally, see  
 > [@ohos.enterprise.restrictions (restriction policy)](arkts-enterprise-restrictions.md).
 
-**Since:** 10
+**Since:** 12
 
 <!--Device-unnamed-declare namespace usbManager--><!--Device-unnamed-declare namespace usbManager-End-->
 
 **System capability:** SystemCapability.Customization.EnterpriseDeviceManager
+
+**System API:** This is a system API.
 
 ## Modules to Import
 
@@ -33,9 +35,12 @@ import { usbManager } from '@kit.MDMKit';
 | [addDisallowedPermissiveUsbDevices](arkts-mdm-usbmanager-adddisallowedpermissiveusbdevices-f.md#adddisallowedpermissiveusbdevices) | Adds disallowed USB devices via an array of {@link PermissiveUsbDeviceType}. |
 | [addDisallowedUsbDevices](arkts-mdm-usbmanager-adddisallowedusbdevices-f.md#adddisallowedusbdevices) | Adds disallowed USB device types.  A policy conflict is reported when this API is called in the following scenarios:  1. The USB capability of the device has been disabled using the [setDisallowedPolicy](arkts-mdm-restrictions-setdisallowedpolicy-f.md#setdisallowedpolicy) API.2. The available USB devices have been added through [addAllowedUsbDevices](arkts-mdm-usbmanager-addallowedusbdevices-f.md#addallowedusbdevices).3. USB storage write access has been disabled for specific users via the [setDisallowedPolicyForAccount](arkts-mdm-restrictions-setdisallowedpolicyforaccount-f.md#setdisallowedpolicyforaccount) API. |
 | [getAllowedUsbDevices](arkts-mdm-usbmanager-getallowedusbdevices-f.md#getallowedusbdevices) | Obtains allowed USB devices. |
+| [getAllowedUsbDevices](arkts-mdm-usbmanager-getallowedusbdevices-f.md#getallowedusbdevices-1) | Obtains allowed USB devices. |
 | [getDisallowedPermissiveUsbDevices](arkts-mdm-usbmanager-getdisallowedpermissiveusbdevices-f.md#getdisallowedpermissiveusbdevices) | Gets the list of disallowed USB devices. |
 | [getDisallowedUsbDevices](arkts-mdm-usbmanager-getdisallowedusbdevices-f.md#getdisallowedusbdevices) | Obtains the disallowed USB device types. |
+| [getDisallowedUsbDevices](arkts-mdm-usbmanager-getdisallowedusbdevices-f.md#getdisallowedusbdevices-1) | Obtains the disallowed USB device types. |
 | [getUsbStorageDeviceAccessPolicy](arkts-mdm-usbmanager-getusbstoragedeviceaccesspolicy-f.md#getusbstoragedeviceaccesspolicy) | Obtains the access policy of the USB storage device. |
+| [getUsbStorageDeviceAccessPolicy](arkts-mdm-usbmanager-getusbstoragedeviceaccesspolicy-f.md#getusbstoragedeviceaccesspolicy-1) | Obtains the access policy of the USB storage device. |
 | [removeAllowedUsbDevices](arkts-mdm-usbmanager-removeallowedusbdevices-f.md#removeallowedusbdevices) | Removes allowed USB devices. |
 | [removeDisallowedPermissiveUsbDevices](arkts-mdm-usbmanager-removedisallowedpermissiveusbdevices-f.md#removedisallowedpermissiveusbdevices) | Removes disallowed USB devices via an array of {@link PermissiveUsbDeviceType}. |
 | [removeDisallowedUsbDevices](arkts-mdm-usbmanager-removedisallowedusbdevices-f.md#removedisallowedusbdevices) | Removes the disallowed USB device types. |

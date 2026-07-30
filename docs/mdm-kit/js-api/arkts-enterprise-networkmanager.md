@@ -8,11 +8,13 @@ The **networkManager** module provides APIs for network management of enterprise
 > The APIs of this module can be called only by a device administrator application that is enabled. For details, see  
 > [MDM Kit Development](../../../mdm/mdm-kit-guide.md).
 
-**Since:** 10
+**Since:** 12
 
 <!--Device-unnamed-declare namespace networkManager--><!--Device-unnamed-declare namespace networkManager-End-->
 
 **System capability:** SystemCapability.Customization.EnterpriseDeviceManager
+
+**System API:** This is a system API.
 
 ## Modules to Import
 
@@ -38,6 +40,7 @@ import { networkManager } from '@kit.MDMKit';
 | [getIpAddressSync](arkts-mdm-networkmanager-getipaddresssync-f.md#getipaddresssync) | Obtains the device IP address based on the network interface. |
 | [getMacSync](arkts-mdm-networkmanager-getmacsync-f.md#getmacsync) | Obtains the MAC address of a device based on the network interface. |
 | [isNetworkInterfaceDisabledSync](arkts-mdm-networkmanager-isnetworkinterfacedisabledsync-f.md#isnetworkinterfacedisabledsync) | Queries whether a specified network interface is disabled. |
+| [isNetworkInterfaceDisabledSync](arkts-mdm-networkmanager-isnetworkinterfacedisabledsync-f.md#isnetworkinterfacedisabledsync-1) | Queries whether a specified network interface is disabled. |
 | [queryApn](arkts-mdm-networkmanager-queryapn-f.md#queryapn) | Queries the APN ID. |
 | [queryApn](arkts-mdm-networkmanager-queryapn-f.md#queryapn-1) | Queries the APN parameter information. |
 | [removeDomainFilterRule](arkts-mdm-networkmanager-removedomainfilterrule-f.md#removedomainfilterrule) | Removes the domain name filtering rules.  In API version 21 and earlier versions, only IPv4 is supported. IPv4 and IPv6 are supported since API version 22.  [LogType](arkts-mdm-networkmanager-logtype-e.md) is supported since API version 23.  If there is no rule with [Action](arkts-mdm-networkmanager-action-e.md) being **ALLOW** after the rule is removed, the **DENY** rules that are added by default with [addDomainFilterRule](arkts-mdm-networkmanager-adddomainfilterrule-f.md#adddomainfilterrule) will be removed. |

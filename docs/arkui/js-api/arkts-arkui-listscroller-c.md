@@ -1,7 +1,6 @@
 # ListScroller
 
 Implements the scroll controller of the **List** component. A **List** component is bound to a **ListScroller** on a one-to-one basis.
-
 > **NOTE**  
 >  
 > **ListScroller** inherits from [Scroller](arkts-arkui-scroller-c.md) and has all methods of  
@@ -15,7 +14,6 @@ Implements the scroll controller of the **List** component. A **List** component
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="closeallswipeactions"></a>
 ## closeAllSwipeActions
 
 ```TypeScript
@@ -47,7 +45,6 @@ Collapses the [list items](arkts-arkui-listitem.md) in the [EXPANDED](arkts-arku
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 | [100004](../errorcode-router.md#100004-incorrect-route-name) | Controller not bound to a component. |
 
-<a id="getitemrectingroup"></a>
 ## getItemRectInGroup
 
 ```TypeScript
@@ -55,7 +52,6 @@ getItemRectInGroup(index: number, indexInGroup: number): RectResult
 ```
 
 Obtains the size of a [list item](arkts-arkui-listitem.md) in a [list item group](arkts-arkui-listitemgroup.md) and its position relative to the list.
-
 > **NOTE**  
 >  
 > - The value of **index** must be the index of a child component visible in the display area.Otherwise, the value is considered invalid.  
@@ -93,7 +89,6 @@ Obtains the size of a [list item](arkts-arkui-listitem.md) in a [list item group
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 | [100004](../errorcode-router.md#100004-incorrect-route-name) | Controller not bound to a component. |
 
-<a id="getvisiblelistcontentinfo"></a>
 ## getVisibleListContentInfo
 
 ```TypeScript
@@ -132,7 +127,6 @@ Obtains the index information of the child component at the specified coordinate
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 | [100004](../errorcode-router.md#100004-incorrect-route-name) | Controller not bound to a component. |
 
-<a id="scrolltoitemingroup"></a>
 ## scrollToItemInGroup
 
 ```TypeScript

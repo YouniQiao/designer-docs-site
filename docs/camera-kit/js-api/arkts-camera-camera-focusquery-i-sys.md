@@ -14,7 +14,6 @@ Provides the API to check whether the focus assist is supported.
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="isfocusassistsupported"></a>
 ## isFocusAssistSupported
 
 ```TypeScript
@@ -63,7 +62,6 @@ function isFocusAssistSupported(professionalPhotoSession: camera.ProfessionalPho
 
 ```
 
-<a id="isfocusdriventypesupported"></a>
 ## isFocusDrivenTypeSupported
 
 ```TypeScript
@@ -119,7 +117,6 @@ function isFocusDrivenTypeSupported(session: camera.VideoSessionForSys, type: ca
 
 ```
 
-<a id="isfocusrangetypesupported"></a>
 ## isFocusRangeTypeSupported
 
 ```TypeScript

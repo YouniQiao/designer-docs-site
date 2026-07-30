@@ -14,7 +14,6 @@ The **Driver** class is the main entry to the UiTest framework. It provides APIs
 import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPattern, UiDirection, TouchOptions, ComponentEventType, PointerMatrix, WindowChangeType, Component, ON, PenKey, Rect, InputTextMode, UIEventObserver, WindowFilter, WindowChangeOptions, UiWindow, TouchPadSwipeOptions, Point, KeyOptions, DisplayRotation, UIElementInfo, PenKeyOperationOptions, ComponentEventOptions, MouseButton, On } from '@kit.TestKit';
 ```
 
-<a id="assertcomponentexist"></a>
 ## assertComponentExist
 
 ```TypeScript
@@ -64,7 +63,6 @@ async function demo() {
 
 ```
 
-<a id="click"></a>
 ## click
 
 ```TypeScript
@@ -114,7 +112,6 @@ async function demo() {
 
 ```
 
-<a id="clickat"></a>
 ## clickAt
 
 ```TypeScript
@@ -163,7 +160,6 @@ async function demo() {
 
 ```
 
-<a id="clickatwithoptions"></a>
 ## clickAtWithOptions
 
 ```TypeScript
@@ -200,7 +196,6 @@ Click on the specified location on the screen, with optional touch options.
 | [17000002](../errorcode-uitest.md#17000002-unable-to-call-the-api) | The API does not support concurrent calls. |
 | [17000007](../errorcode-uitest.md#17000007-parameters-are-invalid) | Parameter verification failed. |
 
-<a id="create"></a>
 ## create
 
 ```TypeScript
@@ -241,7 +236,6 @@ async function demo() {
 
 ```
 
-<a id="createuieventobserver"></a>
 ## createUIEventObserver
 
 ```TypeScript
@@ -283,7 +277,6 @@ async function demo() {
 
 ```
 
-<a id="crownrotate"></a>
 ## crownRotate
 
 ```TypeScript
@@ -337,7 +330,6 @@ async function demo() {
 
 ```
 
-<a id="delayms"></a>
 ## delayMs
 
 ```TypeScript
@@ -386,7 +378,6 @@ async function demo() {
 
 ```
 
-<a id="doubleclick"></a>
 ## doubleClick
 
 ```TypeScript
@@ -436,7 +427,6 @@ async function demo() {
 
 ```
 
-<a id="doubleclickat"></a>
 ## doubleClickAt
 
 ```TypeScript
@@ -485,7 +475,6 @@ async function demo() {
 
 ```
 
-<a id="drag"></a>
 ## drag
 
 ```TypeScript
@@ -538,7 +527,6 @@ async function demo() {
 
 ```
 
-<a id="dragbetween"></a>
 ## dragBetween
 
 ```TypeScript
@@ -590,7 +578,6 @@ async function demo() {
 
 ```
 
-<a id="dragbetweenwithoptions"></a>
 ## dragBetweenWithOptions
 
 ```TypeScript
@@ -628,7 +615,6 @@ Drag on the screen between the specified points with optional settings.
 | [17000002](../errorcode-uitest.md#17000002-unable-to-call-the-api) | The API does not support concurrent calls. |
 | [17000007](../errorcode-uitest.md#17000007-parameters-are-invalid) | Parameter verification failed. |
 
-<a id="dumplayout"></a>
 ## dumpLayout
 
 ```TypeScript
@@ -649,7 +635,7 @@ Get the current layout information and save as file with json format.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| savePath | string | Yes | the path where to store the json, must be in the application sandbox directory.The path must be the [sandbox path](docroot://file-management/app-sandbox-directory.md) of the current application. |
+| savePath | string | Yes | the path where to store the json, must be in the application sandbox directory.The path must be the [sandbox path](../../../file-management/app-sandbox-directory.md) of the current application. |
 | displayId | number | No | the Id of the specified display, default is the displayId of the main screen. |
 
 **Return value:**
@@ -679,7 +665,6 @@ async function demo() {
 
 ```
 
-<a id="findcomponent"></a>
 ## findComponent
 
 ```TypeScript
@@ -728,7 +713,6 @@ async function demo() {
 
 ```
 
-<a id="findcomponents"></a>
 ## findComponents
 
 ```TypeScript
@@ -777,7 +761,6 @@ async function demo() {
 
 ```
 
-<a id="findwindow"></a>
 ## findWindow
 
 ```TypeScript
@@ -826,7 +809,6 @@ async function demo() {
 
 ```
 
-<a id="fling"></a>
 ## fling
 
 ```TypeScript
@@ -878,7 +860,6 @@ async function demo() {
 
 ```
 
-<a id="fling-1"></a>
 ## fling
 
 ```TypeScript
@@ -928,7 +909,6 @@ async function demo() {
 
 ```
 
-<a id="fling-2"></a>
 ## fling
 
 ```TypeScript
@@ -979,7 +959,6 @@ async function demo() {
 
 ```
 
-<a id="getdisplaydensity"></a>
 ## getDisplayDensity
 
 ```TypeScript
@@ -1021,7 +1000,6 @@ async function demo() {
 
 ```
 
-<a id="getdisplaydensity-1"></a>
 ## getDisplayDensity
 
 ```TypeScript
@@ -1070,7 +1048,6 @@ async function demo() {
 
 ```
 
-<a id="getdisplayrotation"></a>
 ## getDisplayRotation
 
 ```TypeScript
@@ -1112,7 +1089,6 @@ async function demo() {
 
 ```
 
-<a id="getdisplayrotation-1"></a>
 ## getDisplayRotation
 
 ```TypeScript
@@ -1161,7 +1137,6 @@ async function demo() {
 
 ```
 
-<a id="getdisplaysize"></a>
 ## getDisplaySize
 
 ```TypeScript
@@ -1203,7 +1178,6 @@ async function demo() {
 
 ```
 
-<a id="getdisplaysize-1"></a>
 ## getDisplaySize
 
 ```TypeScript
@@ -1252,7 +1226,6 @@ async function demo() {
 
 ```
 
-<a id="injectknucklepointeraction"></a>
 ## injectKnucklePointerAction
 
 ```TypeScript
@@ -1260,7 +1233,6 @@ injectKnucklePointerAction(pointers: PointerMatrix, speed?: number): Promise<voi
 ```
 
 Simulates a multi-point knuckle scrolling operation. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > If the knuckle gesture is disabled on the device<!--RP4--><!--RP4End-->, 17000005 is returned.
@@ -1315,7 +1287,6 @@ async function demo() {
 
 ```
 
-<a id="injectmultipointeraction"></a>
 ## injectMultiPointerAction
 
 ```TypeScript
@@ -1376,7 +1347,6 @@ async function demo() {
 
 ```
 
-<a id="injectpenpointeraction"></a>
 ## injectPenPointerAction
 
 ```TypeScript
@@ -1431,7 +1401,6 @@ async function demo() {
 
 ```
 
-<a id="inputtext"></a>
 ## inputText
 
 ```TypeScript
@@ -1483,7 +1452,6 @@ async function demo() {
 
 ```
 
-<a id="inputtext-1"></a>
 ## inputText
 
 ```TypeScript
@@ -1545,7 +1513,6 @@ async function demo_Chinese() {
 
 ```
 
-<a id="iscomponentpresentwhendrag"></a>
 ## isComponentPresentWhenDrag
 
 ```TypeScript
@@ -1598,7 +1565,6 @@ async function demo() {
 
 ```
 
-<a id="iscomponentpresentwhenlongclick"></a>
 ## isComponentPresentWhenLongClick
 
 ```TypeScript
@@ -1649,7 +1615,6 @@ async function demo() {
 
 ```
 
-<a id="iscomponentpresentwhenswipe"></a>
 ## isComponentPresentWhenSwipe
 
 ```TypeScript
@@ -1701,7 +1666,6 @@ async function demo() {
 
 ```
 
-<a id="knuckleknock"></a>
 ## knuckleKnock
 
 ```TypeScript
@@ -1709,7 +1673,6 @@ knuckleKnock(pointers: Array<Point>, times: number): Promise<void>
 ```
 
 Simulates a knuckle knock on the display. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > If the knuckle gesture is disabled on the device<!--RP4--><!--RP4End-->, 17000005 is returned.
@@ -1758,7 +1721,6 @@ async function demo() {
 
 ```
 
-<a id="longclick"></a>
 ## longClick
 
 ```TypeScript
@@ -1808,7 +1770,6 @@ async function demo() {
 
 ```
 
-<a id="longclickat"></a>
 ## longClickAt
 
 ```TypeScript
@@ -1858,7 +1819,6 @@ async function demo() {
 
 ```
 
-<a id="longclickatwithoptions"></a>
 ## longClickAtWithOptions
 
 ```TypeScript
@@ -1895,7 +1855,6 @@ LongClick on the specified location on the screen, with optional touch settings.
 | [17000002](../errorcode-uitest.md#17000002-unable-to-call-the-api) | The API does not support concurrent calls. |
 | [17000007](../errorcode-uitest.md#17000007-parameters-are-invalid) | Parameter verification failed. |
 
-<a id="mouseclick"></a>
 ## mouseClick
 
 ```TypeScript
@@ -1947,7 +1906,6 @@ async function demo() {
 
 ```
 
-<a id="mousedoubleclick"></a>
 ## mouseDoubleClick
 
 ```TypeScript
@@ -1999,7 +1957,6 @@ async function demo() {
 
 ```
 
-<a id="mousedrag"></a>
 ## mouseDrag
 
 ```TypeScript
@@ -2050,7 +2007,6 @@ async function demo() {
 
 ```
 
-<a id="mousedrag-1"></a>
 ## mouseDrag
 
 ```TypeScript
@@ -2102,7 +2058,6 @@ async function demo() {
 
 ```
 
-<a id="mousedragwithoptions"></a>
 ## mouseDragWithOptions
 
 ```TypeScript
@@ -2141,7 +2096,6 @@ Hold down the left mouse button and drag on the screen between the specified poi
 | [17000002](../errorcode-uitest.md#17000002-unable-to-call-the-api) | The API does not support concurrent calls. |
 | [17000007](../errorcode-uitest.md#17000007-parameters-are-invalid) | Parameter verification failed. |
 
-<a id="mouselongclick"></a>
 ## mouseLongClick
 
 ```TypeScript
@@ -2193,7 +2147,6 @@ async function demo() {
 
 ```
 
-<a id="mouselongclick-1"></a>
 ## mouseLongClick
 
 ```TypeScript
@@ -2246,7 +2199,6 @@ async function demo() {
 
 ```
 
-<a id="mousemoveto"></a>
 ## mouseMoveTo
 
 ```TypeScript
@@ -2295,7 +2247,6 @@ async function demo() {
 
 ```
 
-<a id="mousemovewithtrack"></a>
 ## mouseMoveWithTrack
 
 ```TypeScript
@@ -2346,7 +2297,6 @@ async function demo() {
 
 ```
 
-<a id="mousescroll"></a>
 ## mouseScroll
 
 ```TypeScript
@@ -2399,7 +2349,6 @@ async function demo() {
 
 ```
 
-<a id="mousescroll-1"></a>
 ## mouseScroll
 
 ```TypeScript
@@ -2453,7 +2402,6 @@ async function demo() {
 
 ```
 
-<a id="penclick"></a>
 ## penClick
 
 ```TypeScript
@@ -2502,7 +2450,6 @@ async function demo() {
 
 ```
 
-<a id="pendoubleclick"></a>
 ## penDoubleClick
 
 ```TypeScript
@@ -2551,7 +2498,6 @@ async function demo() {
 
 ```
 
-<a id="penlongclick"></a>
 ## penLongClick
 
 ```TypeScript
@@ -2601,7 +2547,6 @@ async function demo() {
 
 ```
 
-<a id="penswipe"></a>
 ## penSwipe
 
 ```TypeScript
@@ -2653,7 +2598,6 @@ async function demo() {
 
 ```
 
-<a id="pressback"></a>
 ## pressBack
 
 ```TypeScript
@@ -2695,7 +2639,6 @@ async function demo() {
 
 ```
 
-<a id="pressback-1"></a>
 ## pressBack
 
 ```TypeScript
@@ -2744,7 +2687,6 @@ async function demo() {
 
 ```
 
-<a id="presshome"></a>
 ## pressHome
 
 ```TypeScript
@@ -2786,7 +2728,6 @@ async function demo() {
 
 ```
 
-<a id="presshome-1"></a>
 ## pressHome
 
 ```TypeScript
@@ -2835,7 +2776,6 @@ async function demo() {
 
 ```
 
-<a id="screencap"></a>
 ## screenCap
 
 ```TypeScript
@@ -2856,7 +2796,7 @@ Captures the current screen and saves it as a PNG image to the given save path. 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| savePath | string | Yes | File save path. The path must be the [sandbox path](docroot://file-management/app-sandbox-directory.md) of the current application. |
+| savePath | string | Yes | File save path. The path must be the [sandbox path](../../../file-management/app-sandbox-directory.md) of the current application. |
 
 **Return value:**
 
@@ -2884,7 +2824,6 @@ async function demo() {
 
 ```
 
-<a id="screencap-1"></a>
 ## screenCap
 
 ```TypeScript
@@ -2905,7 +2844,7 @@ Captures the specified screen and saves it as a PNG image to the given save path
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| savePath | string | Yes | File save path. The path must be the [sandbox path](docroot://file-management/app-sandbox-directory.md) of the current application. |
+| savePath | string | Yes | File save path. The path must be the [sandbox path](../../../file-management/app-sandbox-directory.md) of the current application. |
 | displayId | number | Yes | Display ID. The value is an integer greater than or equal to 0.<br> **Note**: If the input **displayId** does not exist, the exception **401** is reported. |
 
 **Return value:**
@@ -2934,7 +2873,6 @@ async function demo() {
 
 ```
 
-<a id="screencapture"></a>
 ## screenCapture
 
 ```TypeScript
@@ -2955,7 +2893,7 @@ Captures the specified area of the current screen and saves the captured screens
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| savePath | string | Yes | File save path. The path must be the [sandbox path](docroot://file-management/app-sandbox-directory.md) of the current application. |
+| savePath | string | Yes | File save path. The path must be the [sandbox path](../../../file-management/app-sandbox-directory.md) of the current application. |
 | rect | [Rect](../../apis-form-kit/arkts-apis/arkts-form-forminfo-rect-i.md) | No | Area of the screen to capture. The default value is the entire screen. |
 
 **Return value:**
@@ -2989,7 +2927,6 @@ async function demo() {
 
 ```
 
-<a id="setdisplayrotation"></a>
 ## setDisplayRotation
 
 ```TypeScript
@@ -3038,7 +2975,6 @@ async function demo() {
 
 ```
 
-<a id="setdisplayrotationenabled"></a>
 ## setDisplayRotationEnabled
 
 ```TypeScript
@@ -3087,7 +3023,6 @@ async function demo() {
 
 ```
 
-<a id="swipe"></a>
 ## swipe
 
 ```TypeScript
@@ -3140,7 +3075,6 @@ async function demo() {
 
 ```
 
-<a id="swipebetween"></a>
 ## swipeBetween
 
 ```TypeScript
@@ -3191,7 +3125,6 @@ async function demo() {
 
 ```
 
-<a id="swipebetweenwithoptions"></a>
 ## swipeBetweenWithOptions
 
 ```TypeScript
@@ -3229,7 +3162,6 @@ Swipe on the screen between the specified points with optional touch options.
 | [17000002](../errorcode-uitest.md#17000002-unable-to-call-the-api) | The API does not support concurrent calls. |
 | [17000007](../errorcode-uitest.md#17000007-parameters-are-invalid) | Parameter verification failed. |
 
-<a id="touchpadmultifingerswipe"></a>
 ## touchPadMultiFingerSwipe
 
 ```TypeScript
@@ -3281,7 +3213,6 @@ async function demo() {
 
 ```
 
-<a id="touchpadtwofingersscroll"></a>
 ## touchPadTwoFingersScroll
 
 ```TypeScript
@@ -3334,7 +3265,6 @@ async function demo() {
 
 ```
 
-<a id="triggercombinekeys"></a>
 ## triggerCombineKeys
 
 ```TypeScript
@@ -3385,7 +3315,6 @@ async function demo() {
 
 ```
 
-<a id="triggercombinekeys-1"></a>
 ## triggerCombineKeys
 
 ```TypeScript
@@ -3437,7 +3366,6 @@ async function demo() {
 
 ```
 
-<a id="triggerkey"></a>
 ## triggerKey
 
 ```TypeScript
@@ -3487,7 +3415,6 @@ async function demo() {
 
 ```
 
-<a id="triggerkey-1"></a>
 ## triggerKey
 
 ```TypeScript
@@ -3538,7 +3465,6 @@ async function demo() {
 
 ```
 
-<a id="triggerpenkey"></a>
 ## triggerPenKey
 
 ```TypeScript
@@ -3601,7 +3527,6 @@ async function demo() {
 
 ```
 
-<a id="waitforcomponent"></a>
 ## waitForComponent
 
 ```TypeScript
@@ -3651,7 +3576,6 @@ async function demo() {
 
 ```
 
-<a id="waitforidle"></a>
 ## waitForIdle
 
 ```TypeScript
@@ -3701,7 +3625,6 @@ async function demo() {
 
 ```
 
-<a id="wakeupdisplay"></a>
 ## wakeUpDisplay
 
 ```TypeScript

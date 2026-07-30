@@ -16,14 +16,13 @@ Implements output information used in a photo session. It inherits from [CameraO
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="burstcapture"></a>
 ## burstCapture
 
 ```TypeScript
 burstCapture(setting: PhotoCaptureSetting): Promise<void>
 ```
 
-Starts the burst mode, in which users can capture a series of photos in quick succession. This API is generally used in photo mode. After the burst mode starts, the bottom layer continues displaying photos. You can call [confirmCapture](arkts-camera-camera-photooutput-i-sys.md#confirmcapture-1) to cancel the burst mode. This API uses a promise to return the result.
+Starts the burst mode, in which users can capture a series of photos in quick succession. This API is generally used in photo mode. After the burst mode starts, the bottom layer continues displaying photos. You can call [confirmCapture](arkts-camera-camera-photooutput-i-sys.md#confirmcapture) to cancel the burst mode. This API uses a promise to return the result.
 
 **Since:** 12
 
@@ -80,14 +79,13 @@ function burstCapture(photoOutput: camera.PhotoOutput): void {
 
 ```
 
-<a id="confirmcapture"></a>
 ## confirmCapture
 
 ```TypeScript
 confirmCapture(): void
 ```
 
-Confirms photo capture. This API is generally used in night photo mode when users need to stop the exposure countdown and take a photo in advance.This API is used to end the burst mode, which is started by calling [burstCapture](arkts-camera-camera-photooutput-i-sys.md#burstcapture-1).
+Confirms photo capture. This API is generally used in night photo mode when users need to stop the exposure countdown and take a photo in advance.This API is used to end the burst mode, which is started by calling [burstCapture](arkts-camera-camera-photooutput-i-sys.md#burstcapture).
 
 **Since:** 11
 
@@ -121,7 +119,6 @@ function confirmCapture(photoOutput: camera.PhotoOutput): void {
 
 ```
 
-<a id="deferimagedelivery"></a>
 ## deferImageDelivery
 
 ```TypeScript
@@ -162,7 +159,6 @@ function deferImageDelivery(photoOutput: camera.PhotoOutput, type: camera.Deferr
 
 ```
 
-<a id="enableautocloudimageenhancement"></a>
 ## enableAutoCloudImageEnhancement
 
 ```TypeScript
@@ -193,14 +189,13 @@ Enable auto cloud image enhancement
 | [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="enableautohighqualityphoto"></a>
 ## enableAutoHighQualityPhoto
 
 ```TypeScript
 enableAutoHighQualityPhoto(enabled: boolean): void
 ```
 
-Enables automatic high quality for photos. Before using this API, call [isAutoHighQualityPhotoSupported](arkts-camera-camera-photooutput-i-sys.md#isautohighqualityphotosupported-1) to check whether automatic high quality is supported.
+Enables automatic high quality for photos. Before using this API, call [isAutoHighQualityPhotoSupported](arkts-camera-camera-photooutput-i-sys.md#isautohighqualityphotosupported) to check whether automatic high quality is supported.
 
 **Since:** 13
 
@@ -236,7 +231,6 @@ function enableAutoHighQualityPhoto(photoOutput: camera.PhotoOutput): void {
 
 ```
 
-<a id="enabledepthdatadelivery"></a>
 ## enableDepthDataDelivery
 
 ```TypeScript
@@ -268,7 +262,6 @@ Enable depth data delivery.
 | [7400104](../errorcode-camera.md#7400104-session-not-running) | Session not running. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="enableoffline"></a>
 ## enableOffline
 
 ```TypeScript
@@ -293,7 +286,6 @@ Enable offline processing.
 | [7400104](../errorcode-camera.md#7400104-session-not-running) | session is not running. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="enableoriginalimagegeneration"></a>
 ## enableOriginalImageGeneration
 
 ```TypeScript
@@ -325,14 +317,13 @@ Enable original image generation.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="enablequickthumbnail"></a>
 ## enableQuickThumbnail
 
 ```TypeScript
 enableQuickThumbnail(enabled: boolean): void
 ```
 
-Enables or disables the quick thumbnail feature.This API takes effect after [addOutput](arkts-camera-camera-session-i.md#addoutput-1) and [addInput](arkts-camera-camera-session-i.md#addinput-1) and before [commitConfig](arkts-camera-camera-session-i.md#commitconfig-1).
+Enables or disables the quick thumbnail feature.This API takes effect after [addOutput](arkts-camera-camera-session-i.md#addoutput) and [addInput](arkts-camera-camera-session-i.md#addinput) and before [commitConfig](arkts-camera-camera-session-i.md#commitconfig).
 
 **Since:** 10
 
@@ -393,7 +384,6 @@ async function enableQuickThumbnail(context: common.BaseContext, mode: camera.Sc
 
 ```
 
-<a id="enablerawdelivery"></a>
 ## enableRawDelivery
 
 ```TypeScript
@@ -425,7 +415,6 @@ Enable raw image image delivery.
 | [7400104](../errorcode-camera.md#7400104-session-not-running) | Session not running. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="isautocloudimageenhancementsupported"></a>
 ## isAutoCloudImageEnhancementSupported
 
 ```TypeScript
@@ -455,7 +444,6 @@ Confirm if the auto cloud image enhancement is supported.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="isautohighqualityphotosupported"></a>
 ## isAutoHighQualityPhotoSupported
 
 ```TypeScript
@@ -497,7 +485,6 @@ function isAutoHighQualityPhotoSupported(photoOutput: camera.PhotoOutput): boole
 
 ```
 
-<a id="isdeferredimagedeliveryenabled"></a>
 ## isDeferredImageDeliveryEnabled
 
 ```TypeScript
@@ -546,7 +533,6 @@ function isDeferredImageDeliveryEnabled(photoOutput: camera.PhotoOutput, type: c
 
 ```
 
-<a id="isdeferredimagedeliverysupported"></a>
 ## isDeferredImageDeliverySupported
 
 ```TypeScript
@@ -595,7 +581,6 @@ function isDeferredImageDeliverySupported(photoOutput: camera.PhotoOutput, type:
 
 ```
 
-<a id="isdepthdatadeliverysupported"></a>
 ## isDepthDataDeliverySupported
 
 ```TypeScript
@@ -626,7 +611,6 @@ Check if the depth data delivery is supported.
 | [7400104](../errorcode-camera.md#7400104-session-not-running) | Session not running. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="isofflinesupported"></a>
 ## isOfflineSupported
 
 ```TypeScript
@@ -656,7 +640,6 @@ Confirm if offline processing is supported.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="isoriginalimagegenerationsupported"></a>
 ## isOriginalImageGenerationSupported
 
 ```TypeScript
@@ -688,14 +671,13 @@ Confirm if original image generation supported.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="isquickthumbnailsupported"></a>
 ## isQuickThumbnailSupported
 
 ```TypeScript
 isQuickThumbnailSupported(): boolean
 ```
 
-Checks whether the quick thumbnail feature is supported.This API takes effect after [addOutput](arkts-camera-camera-session-i.md#addoutput-1) and [addInput](arkts-camera-camera-session-i.md#addinput-1) and before [commitConfig](arkts-camera-camera-session-i.md#commitconfig-1).
+Checks whether the quick thumbnail feature is supported.This API takes effect after [addOutput](arkts-camera-camera-session-i.md#addoutput) and [addInput](arkts-camera-camera-session-i.md#addinput) and before [commitConfig](arkts-camera-camera-session-i.md#commitconfig).
 
 **Since:** 10
 
@@ -754,7 +736,6 @@ async function isQuickThumbnailSupported(context: common.BaseContext, mode: came
 
 ```
 
-<a id="israwdeliverysupported"></a>
 ## isRawDeliverySupported
 
 ```TypeScript
@@ -785,7 +766,6 @@ Confirm if the raw image delivery is supported
 | [7400104](../errorcode-camera.md#7400104-session-not-running) | Session not running. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="off"></a>
 ## off('deferredPhotoProxyAvailable')
 
 ```TypeScript
@@ -837,7 +817,6 @@ function unRegisterPhotoOutputDeferredPhotoProxyAvailable(photoOutput: camera.Ph
 
 ```
 
-<a id="off-1"></a>
 ## off('quickThumbnail')
 
 ```TypeScript
@@ -870,7 +849,6 @@ function unregisterQuickThumbnail(photoOutput: camera.PhotoOutput): void {
 
 ```
 
-<a id="off-2"></a>
 ## off('offlineDeliveryFinished')
 
 ```TypeScript
@@ -900,7 +878,6 @@ Unsubscribes offline Delivery finished events.This method is valid only after en
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 
-<a id="on"></a>
 ## on('deferredPhotoProxyAvailable')
 
 ```TypeScript
@@ -952,7 +929,6 @@ function registerPhotoOutputDeferredPhotoProxyAvailable(photoOutput: camera.Phot
 
 ```
 
-<a id="on-1"></a>
 ## on('quickThumbnail')
 
 ```TypeScript
@@ -1024,7 +1000,6 @@ async function registerQuickThumbnail(context: common.BaseContext, mode: camera.
 
 ```
 
-<a id="on-2"></a>
 ## on('offlineDeliveryFinished')
 
 ```TypeScript
@@ -1054,7 +1029,6 @@ Subscribes offline Delivery finished events.This method is valid only after enab
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 
-<a id="seteditdata"></a>
 ## setEditData
 
 ```TypeScript

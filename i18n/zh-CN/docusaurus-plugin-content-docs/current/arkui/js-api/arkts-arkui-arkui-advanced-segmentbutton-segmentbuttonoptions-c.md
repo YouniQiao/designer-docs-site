@@ -2,9 +2,8 @@
 
 > **说明：**  
 >  
-> 不支持设置字体类型。
-
-分段按钮选项类用于提供初始数据和自定义属性。
+> 不支持设置字体类型。  
+> 分段按钮选项类用于提供初始数据和自定义属性。
 
 **起始版本：** 11
 
@@ -26,7 +25,7 @@ import { CommonSegmentButtonOptions, SegmentButtonItemOptionsConstructorOptions,
 static capsule(options: CapsuleSegmentButtonConstructionOptions): SegmentButtonOptions
 ```
 
-创建胶囊类的SegmentButtonOptions。
+创建胶囊类的SegmentButtonOptions，用于定义胶囊类分段按钮。
 
 **起始版本：** 11
 
@@ -48,7 +47,7 @@ static capsule(options: CapsuleSegmentButtonConstructionOptions): SegmentButtonO
 
 | 类型 | 说明 |
 | --- | --- |
-| [SegmentButtonOptions](arkts-arkui-arkui-advanced-segmentbutton-segmentbuttonoptions-c.md) | 分段按钮选项。 |
+| [SegmentButtonOptions](arkts-arkui-arkui-advanced-segmentbutton-segmentbuttonoptions-c.md) | 分段按钮选项，用于定义胶囊类分段按钮。 |
 
 ## constructor
 
@@ -102,7 +101,7 @@ static tab(options: TabSegmentButtonConstructionOptions): SegmentButtonOptions
 
 | 类型 | 说明 |
 | --- | --- |
-| [SegmentButtonOptions](arkts-arkui-arkui-advanced-segmentbutton-segmentbuttonoptions-c.md) | 分段按钮选项。 |
+| [SegmentButtonOptions](arkts-arkui-arkui-advanced-segmentbutton-segmentbuttonoptions-c.md) | 分段按钮选项，用于定义页签类分段按钮。 |
 
 ## backgroundBlurStyle
 
@@ -110,9 +109,11 @@ static tab(options: TabSegmentButtonConstructionOptions): SegmentButtonOptions
 backgroundBlurStyle: BlurStyle
 ```
 
-分段按钮组件的背景模糊材质。
+背景模糊材质。
 
-值为undefined时，背景模糊材质为BlurStyle.NONE。
+默认值：BlurStyle.NONE
+
+值为undefined时，按默认值处理。
 
 **类型：** BlurStyle
 
@@ -138,9 +139,9 @@ backgroundBorderRadius?: LengthMetrics
 
 此属性仅在borderRadiusMode为BorderRadiusMode.CUSTOM时生效。
 
-对于胶囊类多选按钮(type为"capsule"且multiply为true)，此属性不生效，需要用itemBorderRadius配置圆角。
+对于胶囊类多选分段按钮（type为"capsule"且multiply为true），此属性不生效，需要用itemBorderRadius配置圆角。
 
-圆角大小受组件尺寸限制，最大值为组件宽或高的一半，不支持百分比设置。
+圆角大小受组件尺寸限制，最大值为组件宽或高的一半，不支持百分比设置。超出最大值时自动修正为最大值，使用百分比时按默认值处理。
 
 默认值：`$r('sys.float.segmentbutton_container_shape')`
 
@@ -258,7 +259,7 @@ buttons: SegmentButtonItemOptionsArray
 direction?: Direction
 ```
 
-分段按钮组件的布局方向。
+布局方向。
 
 默认值：Direction.Auto
 
@@ -282,9 +283,11 @@ direction?: Direction
 fontColor: ResourceColor
 ```
 
-分段按钮组件的按钮未选中态的文本颜色。
+按钮未选中态的文本颜色。
 
-值为undefined时，颜色为$r('sys.color.ohos_id_color_text_secondary')。
+默认值：$r('sys.color.ohos_id_color_text_secondary')
+
+值为undefined时，按默认值处理。
 
 **类型：** ResourceColor
 
@@ -305,6 +308,8 @@ fontSize: DimensionNoPercentage
 ```
 
 分段按钮组件的按钮未选中态的字体大小，不支持百分比设置。
+
+单位：fp
 
 值为undefined时，字体大小为$r('sys.float.ohos_id_text_size_body2')。
 
@@ -356,7 +361,7 @@ imageSize: SizeOptions
 
 **说明：**
 
-`imageSize`属性对仅图标按钮和图标+文本按钮生效，对仅文字按钮无效果。
+`imageSize`属性对仅图标按钮和图标+文本按钮生效，对纯文本按钮无效果。
 
 **类型：** SizeOptions
 
@@ -382,9 +387,9 @@ itemBorderRadius?: LengthMetrics
 
 此属性仅在borderRadiusMode为BorderRadiusMode.CUSTOM时生效。
 
-对于胶囊类多选按钮(type为"capsule"且multiply为true)，只能控制两端的选项圆角。
+对于胶囊类多选分段按钮（type为"capsule"且multiply为true），只能控制两端的选项圆角。
 
-圆角大小受组件尺寸限制，最大值为组件宽或高的一半，不支持百分比设置。
+圆角大小受组件尺寸限制，最大值为组件宽或高的一半，不支持百分比设置。超出最大值时自动修正为最大值，使用百分比时按默认值处理。
 
 默认值：`$r('sys.float.segmentbutton_selected_background_shape')`
 
@@ -408,7 +413,7 @@ itemBorderRadius?: LengthMetrics
 localizedButtonPadding?: LocalizedPadding
 ```
 
-分段按钮组件的按钮内边距。
+分段按钮组件的按钮内边距，支持随布局方向（LTR/RTL）自适应。
 
 默认值：
 
@@ -436,9 +441,11 @@ localizedButtonPadding?: LocalizedPadding
 localizedTextPadding?: LocalizedPadding
 ```
 
-文本内边距。
+文本内边距，支持随布局方向（LTR/RTL）自适应。
 
 默认值：0
+
+单位：vp
 
 值为undefined时，按默认值处理。
 
@@ -462,9 +469,13 @@ multiply: boolean
 
 分段按钮组件是否可以多选。
 
-true: 可多选；false: 不可多选。页签类分段按钮只支持单选，设置`multiply`为`true`不生效。
+true：可多选；false：不可多选。
 
-值为undefined时，分段按钮不支持多选。
+页签类分段按钮（type为"tab"）时，multiply强制为false，设置true不生效。
+
+默认值： false
+
+值为undefined时，按默认值处理。
 
 **类型：** boolean
 
@@ -484,11 +495,15 @@ true: 可多选；false: 不可多选。页签类分段按钮只支持单选，�
 selectedBackgroundColor: ResourceColor
 ```
 
-分段按钮组件的按钮选中态背景板颜色。
+按钮选中态的背景板颜色。
 
-值为undefined时，type为"tab"时，背景板颜色为`$r('sys.color.segment_button_checked_foreground_color')`。
+默认值：
 
-type为"capsule"时，背景板颜色为`$r('sys.color.ohos_id_color_emphasize')`。
+type为"tab"时，默认值为`$r('sys.color.segment_button_checked_foreground_color')`。
+
+type为"capsule"时，默认值为`$r('sys.color.ohos_id_color_emphasize')`。
+
+值为undefined时，按默认值处理。
 
 **类型：** ResourceColor
 
@@ -508,11 +523,15 @@ type为"capsule"时，背景板颜色为`$r('sys.color.ohos_id_color_emphasize')
 selectedFontColor: ResourceColor
 ```
 
-分段按钮组件的按钮选中态的文本颜色。
+按钮选中态的文本颜色。
 
-值为undefined时，type为"tab"时，颜色为`$r('sys.color.ohos_id_color_text_primary')`。
+默认值：
 
-type为"capsule"时，颜色为`$r('sys.color.ohos_id_color_foreground_contrary')`。
+type为"tab"时，默认值为`$r('sys.color.ohos_id_color_text_primary')`。
+
+type为"capsule"时，默认值为`$r('sys.color.ohos_id_color_foreground_contrary')`。
+
+值为undefined时，按默认值处理。
 
 **类型：** ResourceColor
 
@@ -533,6 +552,8 @@ selectedFontSize: DimensionNoPercentage
 ```
 
 分段按钮组件的按钮选中态的字体大小，不支持百分比设置。
+
+单位：fp
 
 值为undefined时，字体大小为$r('sys.float.ohos_id_text_size_body2')。
 
@@ -600,13 +621,7 @@ textPadding: Padding | Dimension
 type: "tab" | "capsule"
 ```
 
-分段按钮组件的类型。
-
-**说明：**
-
-"tab"：页签类分段按钮，适用于页面或内容区域的切换场景。
-
-"capsule"：胶囊类分段按钮，适用于单选或多选的选择场景。
+类型为页签类分段按钮。
 
 **类型：** "tab" \| "capsule"
 

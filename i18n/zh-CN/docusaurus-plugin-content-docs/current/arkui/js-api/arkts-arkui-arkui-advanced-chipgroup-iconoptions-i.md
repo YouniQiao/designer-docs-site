@@ -1,6 +1,6 @@
 # IconOptions
 
-IconOptions定义图标的共通属性。
+IconOptions定义图标的通用属性。
 
 **起始版本：** 12
 
@@ -20,9 +20,14 @@ import { ChipItemLabelOptions, ChipGroupSpaceOptions, SymbolItemOptions, SuffixI
 size?: SizeOptions
 ```
 
-图标大小，不支持百分比。
+图标大小，不支持百分比。当需要自定义图标尺寸时设置此参数。
 
-默认值：undefined
+默认值：
+
+- ChipItemStyle.size为ChipSize.SMALL时，默认值为：{width: $r('sys.float.chip_small_icon_size'), height: $r('sys.float.chip_small_icon_size')}  
+- 其他情况下，默认值为：{width: $r('sys.float.chip_normal_icon_size'), height: $r('sys.float.chip_normal_icon_size')}
+
+值为undefined时，按默认值处理。
 
 **类型：** SizeOptions
 

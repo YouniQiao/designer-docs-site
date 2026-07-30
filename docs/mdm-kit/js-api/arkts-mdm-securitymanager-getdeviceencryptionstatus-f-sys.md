@@ -6,7 +6,6 @@
 import { securityManager } from '@kit.MDMKit';
 ```
 
-<a id="getdeviceencryptionstatus"></a>
 ## getDeviceEncryptionStatus
 
 ```TypeScript
@@ -19,7 +18,7 @@ Queries the encryption status of the device file system.
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [getSecurityStatus](arkts-mdm-securitymanager-getsecuritystatus-f.md#getsecuritystatus-1)
+**Substitutes:** [getSecurityStatus](arkts-mdm-securitymanager-getsecuritystatus-f.md#getsecuritystatus)
 
 **Required permissions:** ohos.permission.ENTERPRISE_MANAGE_SECURITY
 

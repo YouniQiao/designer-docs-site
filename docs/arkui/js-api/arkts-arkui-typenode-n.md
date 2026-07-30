@@ -2,7 +2,7 @@
 
 Provides APIs for creating a specific type of FrameNode, which can be mounted through the basic API of the FrameNode and be displayed using a placeholder container.
 
-When **typeNode** is used to create [Text](../../apis-arkgraphics2d/arkts-apis/arkts-graphics-text.md), [Image](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md), [Select](../arkts-components/arkts-arkui-select.md), or [Toggle](../arkts-components/arkts-arkui-toggle.md) nodes, if the UI instance corresponding to the input [UIContext](arkts-arkui-uicontext.md)is destroyed, this API returns an invalid FrameNode that cannot be properly mounted or displayed.
+When **typeNode** is used to create [Text](../../apis-arkui/arkts-components/arkts-arkui-text-i),[Image](../../apis-arkui/arkts-components/arkts-arkui-image-i), [Select](../../apis-arkui/arkts-components/arkts-arkui-select-i), or [Toggle](../../apis-arkui/arkts-components/arkts-arkui-toggle-i) nodes, if the UI instance corresponding to the input [UIContext](arkts-arkui-uicontext.md) is destroyed, this API returns an invalid FrameNode that cannot be properly mounted or displayed.
 
 **Since:** 12
 
@@ -42,7 +42,7 @@ When **typeNode** is used to create [Text](../../apis-arkgraphics2d/arkts-apis/a
 | [getAttribute](arkts-arkui-typenode-getattribute-f.md#getattribute-8) | Obtains the attributes of a **RelativeContainer** node. If the node is not created using ArkTS, cross-language access must be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes. |
 | [createNode](arkts-arkui-typenode-createnode-f.md#createnode-11) | Creates a FrameNode of the **Divider** type. |
 | [createNode](arkts-arkui-typenode-createnode-f.md#createnode-12) | Creates a FrameNode of the **LoadingProgress** type. |
-| [getAttribute](arkts-arkui-typenode-getattribute-f.md#getattribute-9) | Obtains the attributes of a [LoadingProgress](../arkts-components/arkts-arkui-loadingprogress.md) node. If the node is not created using ArkTS,cross-language access must be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes. |
+| [getAttribute](arkts-arkui-typenode-getattribute-f.md#getattribute-9) | Obtains the attributes of a [LoadingProgress](../../apis-arkui/arkts-components/arkts-arkui-loading_progress-i) node. If the node is not created using ArkTS, cross-language access must be enabled; otherwise, **undefined** is returned. This API does not support declaratively created nodes. |
 | [createNode](arkts-arkui-typenode-createnode-f.md#createnode-13) | Creates a FrameNode of the **Search** type. |
 | [createNode](arkts-arkui-typenode-createnode-f.md#createnode-14) | Creates a FrameNode of the **Blank** type. |
 | [createNode](arkts-arkui-typenode-createnode-f.md#createnode-15) | Creates a FrameNode of the **Image** type. |
@@ -121,8 +121,8 @@ When **typeNode** is used to create [Text](../../apis-arkgraphics2d/arkts-apis/a
 | [ListItem](arkts-arkui-typenode-listitem-t.md) | Represents a FrameNode of the **ListItem** type. |
 | [TextInput](arkts-arkui-typenode-textinput-t.md) | Represents a FrameNode of the **TextInput** type. |
 | [Button](arkts-arkui-typenode-button-t.md) | Represents a FrameNode of the **Button** type. When created in child component mode, this type of node allows only one child component to be added. When created in label mode, it does not child components to be added. |
-| [ListItemGroup](arkts-arkui-typenode-listitemgroup-t.md) | Represents a FrameNode of the **ListItemGroup** type. Only [ListItem](../arkts-components/arkts-arkui-listitem.md) child components can be added. |
-| [WaterFlow](arkts-arkui-typenode-waterflow-t.md) | Represents a FrameNode of the **WaterFlow** type. Only [FlowItem](../arkts-components/arkts-arkui-flowitem.md) child components can be added. |
+| [ListItemGroup](arkts-arkui-typenode-listitemgroup-t.md) | Represents a FrameNode of the **ListItemGroup** type. Only [ListItem](../../apis-arkui/arkts-components/arkts-arkui-list_item-i)child components can be added. |
+| [WaterFlow](arkts-arkui-typenode-waterflow-t.md) | Represents a FrameNode of the **WaterFlow** type. Only [FlowItem](../../apis-arkui/arkts-components/arkts-arkui-flow_item-i) child components can be added. |
 | [FlowItem](arkts-arkui-typenode-flowitem-t.md) | Represents a FrameNode of the **FlowItem** type. This type of node allows only one child component to be added. |
 | [XComponent](arkts-arkui-typenode-xcomponent-t.md) | Represents a FrameNode of the **XComponent** type. |
 | [Checkbox](arkts-arkui-typenode-checkbox-t.md) | Represents a FrameNode of the **Checkbox** type. |
@@ -131,7 +131,7 @@ When **typeNode** is used to create [Text](../../apis-arkgraphics2d/arkts-apis/a
 | [Rating](arkts-arkui-typenode-rating-t.md) | Represents a FrameNode of the **Rating** type. |
 | [Select](arkts-arkui-typenode-select-t.md) | Represents a FrameNode of the **Select** type. |
 | [Slider](arkts-arkui-typenode-slider-t.md) | Represents a FrameNode of the **Slider** type. |
-| [Toggle](arkts-arkui-typenode-toggle-t.md) | FrameNode of the [Toggle](../arkts-components/arkts-arkui-toggle.md) type. |
+| [Toggle](arkts-arkui-typenode-toggle-t.md) | FrameNode of the [Toggle](../../apis-arkui/arkts-components/arkts-arkui-toggle-i) type. |
 | [Marquee](arkts-arkui-typenode-marquee-t.md) | Represents a FrameNode of the **Marquee** type. |
 | [TextArea](arkts-arkui-typenode-textarea-t.md) | Represents a FrameNode of the **TextArea** type. |
 | [SymbolGlyph](arkts-arkui-typenode-symbolglyph-t.md) | Represents a FrameNode of the **SymbolGlyph** type. |

@@ -46,7 +46,7 @@ import { print } from '@kit.BasicServicesKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
 let jobInfo : print.PrintJob = {
-    fdList : [44,45],
+    fdList : [44, 45], // fdList中的fd可通过fs.open等文件操作获取文件描述符
     jobId : 'jobId_12',
     printerId : 'printerId_32',
     jobState : print.PrintJobState.PRINT_JOB_COMPLETED,
@@ -62,13 +62,13 @@ let jobInfo : print.PrintJob = {
     preview : undefined,
     options : undefined
 };
-print.startPrintJob(jobInfo, (err: BusinessError) => {
-    if (err) {
-        console.error('failed to start Print Job because : ' + JSON.stringify(err));
+print.startPrintJob(jobInfo, (error: BusinessError) => {
+    if (error) {
+        console.error(`Failed to start print job. Code: ${error.code}, message: ${error.message}`);
     } else {
         console.info('start Print Job success');
     }
-})
+});
 
 ```
 
@@ -118,7 +118,7 @@ import { print } from '@kit.BasicServicesKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
 let jobInfo : print.PrintJob = {
-    fdList : [44,45],
+    fdList : [44, 45], // fdList中的fd可通过fs.open等文件操作获取文件描述符
     jobId : 'jobId_12',
     printerId : 'printerId_32',
     jobState : print.PrintJobState.PRINT_JOB_COMPLETED,
@@ -137,8 +137,8 @@ let jobInfo : print.PrintJob = {
 print.startPrintJob(jobInfo).then(() => {
     console.info('start Print success');
 }).catch((error: BusinessError) => {
-    console.error('failed to start Print because : ' + JSON.stringify(error));
-})
+    console.error(`Failed to start print job. Code: ${error.code}, message: ${error.message}`);
+});
 
 ```
 

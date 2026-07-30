@@ -12,7 +12,6 @@ In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-ap
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="autoplay"></a>
 ## autoPlay
 
 ```TypeScript
@@ -39,7 +38,6 @@ If [loop](SwiperAttribute#loop) is set to **false**, the automatic playback stop
 | --- | --- | --- | --- |
 | value | boolean | Yes | Whether to enable automatic playback for child components.<br>**true**: yes; **false**:no<br>If an invalid value is passed, the value **false** is used. |
 
-<a id="autoplay-1"></a>
 ## autoPlay
 
 ```TypeScript
@@ -69,7 +67,6 @@ If [loop](SwiperAttribute#loop) is set to **false**, automatic playback stops at
 | autoPlay | boolean | Yes | Whether to enable automatic playback for child components.<br>**true**: yes;**false**: no<br>If an invalid value is passed, the value **false** is used. |
 | options | [AutoPlayOptions](arkts-arkui-autoplayoptions-i.md) | Yes | Whether child components stop automatic playback when the screen is pressed by fingers, a mouse device, or other input devices. If **stopWhenTouched** is set to **true**, automatic playback resumes after any finger lifts in multi-touch scenarios.<br>Default value: **{ stopWhenTouched: true }**. |
 
-<a id="cachedcount"></a>
 ## cachedCount
 
 ```TypeScript
@@ -77,7 +74,6 @@ cachedCount(value: number)
 ```
 
 Sets the number of child components to be preloaded (cached), which are needed for the specific number of pages immediately before and after the current page. If a preceding item is deleted, the succeeding items will shift forward. For example, if **cachedCount** is set to **1**, the child components on the previous page and the next page are cached. If **swipeByGroup** in **displayCount** is set to **true**, child components are cached by group.For example, if **cachedCount** is set to **1** and **swipeByGroup** is set to **true**, the child components in the previous and next groups are cached.
-
 > **NOTE**  
 >  
 > - In continuous scrolling scenarios where one **Swiper** child component is displayed per screen, setting  
@@ -86,8 +82,8 @@ Sets the number of child components to be preloaded (cached), which are needed f
 >  
 >  
 > - This parameter takes effect only when used with  
-> [LazyForEach](docroot://ui/rendering-control/arkts-rendering-control-lazyforeach.md) or the  
-> [Repeat](docroot://ui/rendering-control/arkts-new-rendering-control-repeat.md) component that has virtualScroll  
+> [LazyForEach](../../../ui/rendering-control/arkts-rendering-control-lazyforeach.md) or the  
+> [Repeat](../../../ui/rendering-control/arkts-new-rendering-control-repeat.md) component that has virtualScroll  
 > enabled. Child components outside the visible area and cache range will be released after this parameter takes  
 > effect.
 
@@ -107,7 +103,6 @@ Sets the number of child components to be preloaded (cached), which are needed f
 | --- | --- | --- | --- |
 | value | number | Yes | Number of child components to be preloaded (cached).<br>Default value: **1**<br>Value range: [0, +∞). If a value less than 0 is set, the default value is used. |
 
-<a id="cachedcount-1"></a>
 ## cachedCount
 
 ```TypeScript
@@ -115,7 +110,6 @@ cachedCount(count: number, isShown: boolean)
 ```
 
 Sets the number of child components to be cached.
-
 > **NOTE**  
 >  
 > - When the value of **isShown** is **true** and the value of **count** is too large, if there are insufficient  
@@ -141,7 +135,6 @@ Sets the number of child components to be cached.
 | count | number | Yes | Number of child components to be preloaded (cached).<br>Default value: **1**<br>Value range: [0, +∞). If a value less than 0 is set, the default value is used. |
 | isShown | boolean | Yes | Whether the cached nodes within the range rendered without being added to the render tree.<br>**true**: yes; **false**: no<br>If an invalid value is passed, the value **false** is used. |
 
-<a id="cachedcount-2"></a>
 ## cachedCount
 
 ```TypeScript
@@ -149,7 +142,6 @@ cachedCount(count: number, options: CachedCountOptions)
 ```
 
 Sets the number of child components to be prloaded and configuration options.
-
 > **NOTE**  
 >  
 > - When **independent** in options is set to **true**, the number of preloaded child components is calculated  
@@ -165,8 +157,8 @@ Sets the number of child components to be prloaded and configuration options.
 > group of the current group are preloaded.  
 >  
 > - This parameter takes effect only when used with  
-> [LazyForEach](docroot://ui/rendering-control/arkts-rendering-control-lazyforeach.md) or the  
-> [Repeat](docroot://ui/rendering-control/arkts-new-rendering-control-repeat.md) component that has virtualScroll  
+> [LazyForEach](../../../ui/rendering-control/arkts-rendering-control-lazyforeach.md) or the  
+> [Repeat](../../../ui/rendering-control/arkts-new-rendering-control-repeat.md) component that has virtualScroll  
 > enabled. Child components outside the cache range will be released after this parameter takes effect.
 
 **Since:** 24
@@ -188,7 +180,6 @@ Sets the number of child components to be prloaded and configuration options.
 | count | number | Yes | - Number of child components to be preloaded (cached).<br>The value range is [0, +∞). If the value is less than 0, the value **1** is used. |
 | options | [CachedCountOptions](arkts-arkui-cachedcountoptions-i.md) | Yes | Configuration options for child components to be preloaded. |
 
-<a id="curve"></a>
 ## curve
 
 ```TypeScript
@@ -211,9 +202,8 @@ Sets the animation curve. The interpolating spring curve is used by default. For
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | [Curve](../arkts-apis/arkts-arkui-curve-e.md) \| string \| ICurve | Yes | Animation curve.<br>The **string** type is deprecated since API version9 (see [curves.init](../arkts-apis/arkts-arkui-curves-init-f.md#init-1), [curves.steps](../arkts-apis/arkts-arkui-curves-steps-f.md#steps-1),[curves.cubicBezier](../arkts-apis/arkts-arkui-curves-cubicbezier-f.md#cubicbezier-1), and [curves.spring](../arkts-apis/arkts-arkui-curves-spring-f.md#spring-1)). Use **Curve** or **ICurve** instead.<br>Default value:**[interpolatingSpring](../arkts-apis/arkts-arkui-curves-interpolatingspring-f.md#interpolatingspring-1)(-1, 1, 328, 34)**.<br>**Since:** 10 |
+| value | [Curve](../arkts-apis/arkts-arkui-curve-e.md) \| string \| ICurve | Yes | Animation curve.<br>The **string** type is deprecated since API version9 (see [curves.init](../arkts-apis/arkts-arkui-curves-init-f.md#init), [curves.steps](../arkts-apis/arkts-arkui-curves-steps-f.md#steps),[curves.cubicBezier](../arkts-apis/arkts-arkui-curves-cubicbezier-f.md#cubicbezier), and [curves.spring](../arkts-apis/arkts-arkui-curves-spring-f.md#spring)). Use **Curve** or **ICurve** instead.<br>Default value:**[interpolatingSpring](../arkts-apis/arkts-arkui-curves-interpolatingspring-f.md#interpolatingspring)(-1, 1, 328, 34)**.<br>**Since:** 10 |
 
-<a id="customcontenttransition"></a>
 ## customContentTransition
 
 ```TypeScript
@@ -244,7 +234,6 @@ Instructions:
 | --- | --- | --- | --- |
 | transition | [SwiperContentAnimatedTransition](arkts-arkui-swipercontentanimatedtransition-i.md) | Yes | Information about the custom page transition animation. |
 
-<a id="disableswipe"></a>
 ## disableSwipe
 
 ```TypeScript
@@ -269,7 +258,6 @@ Sets whether to disable the swipe feature.
 | --- | --- | --- | --- |
 | value | boolean | Yes | Whether to disable the swipe feature. The value **true** means to disable the feature,and **false** means the opposite.<br>Default value: **false**. |
 
-<a id="displayarrow"></a>
 ## displayArrow
 
 ```TypeScript
@@ -277,7 +265,6 @@ displayArrow(value: ArrowStyle | boolean, isHoverShow?: boolean)
 ```
 
 Sets the arrow style of the navigation indicator.
-
 > **NOTE**  
 >  
 > When all child nodes fit within the viewport, resulting in only one screen's worth of content being visible, the  
@@ -300,7 +287,6 @@ Sets the arrow style of the navigation indicator.
 | value | [ArrowStyle](arkts-arkui-arrowstyle-i.md) \| boolean | Yes | Arrow and background to set. In cases of exceptions, the default values in the **ArrowStyle** object are used. The value **true** means to show the arrow and background in the default styles, and **false** means to hide the arrow and background.<br>Default value: **false**. |
 | isHoverShow | boolean | No | Whether to show the arrow on mouse hover.<br>Default value: **false**.<br>**NOTE**<br>1. **false**: The arrow is always displayed.<br>2. **true**: The arrow is displayed.<br>With navigation indicators, the arrow is displayed when the mouse pointer hovers over the indicators or arrow areas.<br>Without navigation indicators, the arrow is displayed when the mouse pointer hovers over the **Swiper** display area.<br>3. When the arrow is displayed, clicking the arrow turns pages. |
 
-<a id="displaycount"></a>
 ## displayCount
 
 ```TypeScript
@@ -314,7 +300,6 @@ Sets the number of elements to display per page.
 **string** type: Only **'auto'** is supported. Child elements are laid out linearly based on their main-axis width without adapting to the **Swiper** component's width.[customContentTransition](SwiperAttribute#customContentTransition) and [onContentDidScroll](SwiperAttribute#onContentDidScroll) events are disabled.
 
 **SwiperAutoFill** type: Child elements' main-axis width adapts to the **Swiper** component's main-axis width. The system automatically works out the number of elements per page based on the width and **minSize** settings of the **Swiper** component. If **minSize** is left empty or set to a value less than or equal to 0, the **Swiper** component displays one column.
-
 > **NOTE**  
 >  
 > - When turning pages by group is used, the drag distance threshold for turning pages is half of the width of the  
@@ -335,7 +320,7 @@ Sets the number of elements to display per page.
 > treated as a group for page switching, allowing only one page to be switched at a time. In this case, you are  
 > advised not to set **swipeByGroup** or set **swipeByGroup** to **false**.  
 >  
-> - This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 18.
+> - This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier) since API version 18.
 
 When the navigation indicator is set to dot style and the number of child elements displayed in the viewport is greater than 1 (multi-page scenario)<!--RP1--><!--RP1End-->, the number of displayed navigation dots follows the rules below.
 
@@ -366,7 +351,6 @@ When the navigation indicator is set to dot style and the number of child elemen
 | value | number \| string \| SwiperAutoFill | Yes | Number of elements to display per page.<br> Default value:**1**<br>Value range: (0, +∞). If this parameter is set to a value less than or equal to 0, the default value is used.<br>**Since:** 10 |
 | swipeByGroup | boolean | No | Whether to turn pages by group. The value **true** means to turn pages by group, and **false** means to turn pages by child element. When turning pages by group is used, the number of child elements per group is the value of **displayCount**.<br> Default value: **false**.<br>**Since:** 11 |
 
-<a id="displaycount-1"></a>
 ## displayCount
 
 ```TypeScript
@@ -404,7 +388,6 @@ For details about the parameter, see [displayCount](SwiperAttribute#displayCount
 | value | number \| string \| SwiperAutoFill \| ItemFillPolicy | Yes | Number of elements to display per page.<br>The value range is (0, +∞). If the value is less than or equal to 0, the value **1** is used. |
 | swipeByGroup | boolean | No | Whether to turn pages by group. The value **true** means to turn pages by group, and **false** means to turn pages by child element. When turning pages by group is used, the number of child elements per group is the value of **displayCount**.<br> Default value: **false**. |
 
-<a id="displaymode"></a>
 ## displayMode
 
 ```TypeScript
@@ -429,7 +412,6 @@ Sets the mode in which elements are displayed along the main axis. This API take
 | --- | --- | --- | --- |
 | value | [SwiperDisplayMode](arkts-arkui-swiperdisplaymode-e.md) | Yes | Mode in which elements are displayed along the main axis.<br>Default value:**SwiperDisplayMode.STRETCH** |
 
-<a id="duration"></a>
 ## duration
 
 ```TypeScript
@@ -440,7 +422,7 @@ Sets the duration of the animation for child component switching.
 
 **duration** must be used in conjunction with [curve](SwiperAttribute#curve).
 
-The default curve for the animation is [interpolatingSpring](../arkts-apis/arkts-arkui-curves-interpolatingspring-f.md#interpolatingspring-1). When this curve is applied, the duration of the animation is determined solely by the parameters of the curve itself and is no longer governed by the **duration** setting. For curves that are not governed by the **duration** setting,see [Interpolation Calculation](../arkts-apis/arkts-curves.md). Among others,[springMotion](../arkts-apis/arkts-arkui-curves-springmotion-f.md#springmotion-1),[responsiveSpringMotion](../arkts-apis/arkts-arkui-curves-responsivespringmotion-f.md#responsivespringmotion-1), and interpolatingSpring do not respect the **duration** setting. To have the animation duration managed by **duration**, you should select a different curve for the **curve** attribute.
+The default curve for the animation is [interpolatingSpring](../arkts-apis/arkts-arkui-curves-interpolatingspring-f.md#interpolatingspring). When this curve is applied, the duration of the animation is determined solely by the parameters of the curve itself and is no longer governed by the **duration** setting. For curves that are not governed by the **duration** setting,see [Interpolation Calculation](../arkts-apis/arkts-curves.md). Among others,[springMotion](../arkts-apis/arkts-arkui-curves-springmotion-f.md#springmotion),[responsiveSpringMotion](../arkts-apis/arkts-arkui-curves-responsivespringmotion-f.md#responsivespringmotion), and interpolatingSpring do not respect the **duration** setting. To have the animation duration managed by **duration**, you should select a different curve for the **curve** attribute.
 
 **Since:** 7
 
@@ -456,14 +438,13 @@ The default curve for the animation is [interpolatingSpring](../arkts-apis/arkts
 | --- | --- | --- | --- |
 | value | number | Yes | Duration of the autoplay for child component switching.<br>Default value: **400**<br>Unit: ms<br>Value range: [0, +∞). If a value less than 0 is set, the default value is used. |
 
-<a id="effectmode"></a>
 ## effectMode
 
 ```TypeScript
 effectMode(value: EdgeEffect)
 ```
 
-Edge sliding effect. This parameter takes effect only when [loop](SwiperAttribute#loop) is set to **false** or all child nodes are displayed on one screen in the **Swiper** viewport. When the [SwiperController.changeIndex()](arkts-arkui-swipercontroller-c.md#changeindex-1),[SwiperController.showNext()](arkts-arkui-swipercontroller-c.md#shownext-1), or [SwiperController.showPrevious()](arkts-arkui-swipercontroller-c.md#showprevious-1) API is called to go to the first or last page, the rebound effect does not take effect.
+Edge sliding effect. This parameter takes effect only when [loop](SwiperAttribute#loop) is set to **false** or all child nodes are displayed on one screen in the **Swiper** viewport. When the [SwiperController.changeIndex()](arkts-arkui-swipercontroller-c.md#changeindex),[SwiperController.showNext()](arkts-arkui-swipercontroller-c.md#shownext), or [SwiperController.showPrevious()](arkts-arkui-swipercontroller-c.md#showprevious) API is called to go to the first or last page, the rebound effect does not take effect.
 
 **Since:** 8
 
@@ -481,7 +462,6 @@ Edge sliding effect. This parameter takes effect only when [loop](SwiperAttribut
 | --- | --- | --- | --- |
 | value | [EdgeEffect](../arkts-apis/arkts-arkui-edgeeffect-e.md) | Yes | Effect used when the component is at one of the edges.<br>Default value:**EdgeEffect.Spring** |
 
-<a id="index"></a>
 ## index
 
 ```TypeScript
@@ -490,7 +470,7 @@ index(value: number)
 
 Sets the index of the child component currently displayed in the container.
 
-Since API version 10, this attribute supports two-way binding through [$$](docroot://ui/state-management/arkts-two-way-sync.md).
+Since API version 10, this attribute supports two-way binding through [$$](../../../ui/state-management/arkts-two-way-sync.md).
 
 **Since:** 7
 
@@ -508,7 +488,6 @@ Since API version 10, this attribute supports two-way binding through [$$](docro
 | --- | --- | --- | --- |
 | value | number | Yes | Index of the child component currently displayed in the container.<br>Default value:**0**<br>**NOTE**<br>If the value specified is less than 0 or greater than the maximum page index, the value **0** is used. |
 
-<a id="indicator"></a>
 ## indicator
 
 ```TypeScript
@@ -533,7 +512,6 @@ Sets the style of the navigation indicator.
 | --- | --- | --- | --- |
 | value | [DotIndicator](arkts-arkui-dotindicator-c.md) \| DigitIndicator \| boolean | Yes | Style of the navigation indicator.<br> -**DotIndicator**: dot-style indicator.<br> - **DigitIndicator**: digit-style indicator.<br> - **boolean**:whether to enable the navigation indicator. **true** to enable, **false** otherwise.<br> Default value:**true**<br> Default style: **DotIndicator**<br>**Since:** 10 |
 
-<a id="indicator-1"></a>
 ## indicator
 
 ```TypeScript
@@ -541,7 +519,6 @@ indicator(indicator: IndicatorComponentController | DotIndicator | DigitIndicato
 ```
 
 Sets the navigation indicator for the component.
-
 > **NOTE**  
 >  
 > An externally bound navigation indicator component can be used together if it is set. The display position and  
@@ -566,7 +543,6 @@ Sets the navigation indicator for the component.
 | --- | --- | --- | --- |
 | indicator | [IndicatorComponentController](arkts-arkui-indicatorcomponentcontroller-c.md) \| DotIndicator \| DigitIndicator \| boolean | Yes | Style of the navigation indicator.<br>- **IndicatorComponentController**: separate navigation indicator controller. This controller can be bound to an external navigation indicator, but the external and internal indicators cannot coexist.<br> - **DotIndicator**: dot-style indicator.<br> - **DigitIndicator**: digit-style indicator.<br> -**boolean**: whether to enable the navigation indicator. **true** to enable, **false** otherwise.<br> Default value: **true**<br> Default style: **DotIndicator** |
 
-<a id="indicatorinteractive"></a>
 ## indicatorInteractive
 
 ```TypeScript
@@ -591,7 +567,6 @@ Sets whether the navigation indicator is interactive.
 | --- | --- | --- | --- |
 | value | boolean | Yes | Whether the navigation indicator is interactive.<br>The value **true** means that the navigation indicator is interactive, and **false** means the opposite.<br>If the input parameter is invalid,the value **true** is used. |
 
-<a id="indicatorstyle"></a>
 ## indicatorStyle
 
 ```TypeScript
@@ -616,7 +591,6 @@ Sets the style of the navigation indicator.
 | --- | --- | --- | --- |
 | value | [IndicatorStyle](arkts-arkui-indicatorstyle-i.md) | No | Style of the navigation indicator. |
 
-<a id="interval"></a>
 ## interval
 
 ```TypeScript
@@ -641,7 +615,6 @@ Sets the interval for automatic playback.
 | --- | --- | --- | --- |
 | value | number | Yes | Interval for automatic playback. If the value is smaller than the value of [duration](SwiperAttribute#duration), the next carousel starts immediately after page switching completes.<br>Default value: **3000**.<br>Unit: ms<br>Value range:[0, +∞). If a value less than 0 is set, the default value is used. |
 
-<a id="itemspace"></a>
 ## itemSpace
 
 ```TypeScript
@@ -668,7 +641,6 @@ If the type is number, the default unit is vp. If the type is string, the pixel 
 | --- | --- | --- | --- |
 | value | number \| string | Yes | Space between child components.<br>Default value: **0**<br>Value range:[0, +∞). Values less than 0 or exceeding the **Swiper** component width are treated as the default value. |
 
-<a id="loop"></a>
 ## loop
 
 ```TypeScript
@@ -693,14 +665,13 @@ Sets whether to enable loop playback. In **LazyForEach** mode, it is recommended
 | --- | --- | --- | --- |
 | value | boolean | Yes | Whether to enable loop playback.<br>**true**: yes; **false**: no<br>If the input parameter is invalid, the value **true** is used. |
 
-<a id="maintainvisiblecontentposition"></a>
 ## maintainVisibleContentPosition
 
 ```TypeScript
 maintainVisibleContentPosition(enabled: boolean)
 ```
 
-Sets whether to maintain the visible content position when data is inserted or deleted above or ahead of the viewport. This applies to **Swiper** components using a single [LazyForEach](docroot://ui/rendering-control/arkts-rendering-control-lazyforeach.md) as the child node, where the data source is modified using **LazyForEach** API such as [onDataAdd](arkts-arkui-datachangelistener-i.md#ondataadd-1) or [onDataDelete](arkts-arkui-datachangelistener-i.md#ondatadelete-1). In other scenarios, the position of the visible content changes when data is inserted or deleted above or before the display area.
+Sets whether to maintain the visible content position when data is inserted or deleted above or ahead of the viewport. This applies to **Swiper** components using a single [LazyForEach](../../../ui/rendering-control/arkts-rendering-control-lazyforeach.md) as the child node, where the data source is modified using **LazyForEach** API such as [onDataAdd](arkts-arkui-datachangelistener-i.md#ondataadd) or [onDataDelete](arkts-arkui-datachangelistener-i.md#ondatadelete). In other scenarios, the position of the visible content changes when data is inserted or deleted above or before the display area.
 
 When **swipeByGroup** in [displayCount](SwiperAttribute#displayCount(value: number | string | SwiperAutoFill, swipeByGroup?: boolean))is set to **true**, the visible content position remains unchanged only if the amount of data inserted or deleted above or before the display area is a multiple of the group size. Otherwise, the visible content position may change during group recalculation.
 
@@ -722,7 +693,6 @@ When **swipeByGroup** in [displayCount](SwiperAttribute#displayCount(value: numb
 | --- | --- | --- | --- |
 | enabled | boolean | Yes | Whether to maintain the visible content position when data is inserted or deleted above or ahead of the viewport.<br>Default value: **false**.<br>**false**: The visible content position will change when data is inserted or deleted. **true**: The visible content position remains unchanged when data is inserted or deleted. Animations stop if the data source is modified during an animation due to target index changes. |
 
-<a id="nestedscroll"></a>
 ## nestedScroll
 
 ```TypeScript
@@ -730,7 +700,6 @@ nestedScroll(value: SwiperNestedScrollMode)
 ```
 
 Sets the nested scrolling mode of the **Swiper** component and its parent container. When [loop](SwiperAttribute#loop) is set to **true**, the **Swiper** component has no edge effect and does not trigger nested scrolling of its parent container.
-
 > **NOTE**  
 >  
 > The **Swiper** component's flick animation logic differs from other scrollable components, as **Swiper** can only  
@@ -755,24 +724,22 @@ Sets the nested scrolling mode of the **Swiper** component and its parent contai
 | --- | --- | --- | --- |
 | value | [SwiperNestedScrollMode](arkts-arkui-swipernestedscrollmode-e.md) | Yes | Nested scrolling mode of the **Swiper** component and its parent container.<br>If an invalid value is passed, the value **SwiperNestedScrollMode.SELF_ONLY** is used. |
 
-<a id="nextmargin"></a>
 ## nextMargin
 
 ```TypeScript
 nextMargin(value: Length, ignoreBlank?: boolean)
 ```
 
-Sets the trailing margin to reveal a portion of the next item. For the implementation example, see [Example 1: Setting the Navigation Indicator Interaction and Page Turning Effect](docroot://reference/apis-arkui/arkui-ts/ts-container-swiper.md#example-1-setting-the-navigation-indicator-interaction-and-page-turning-effect).This attribute is effective only when the layout mode of the child components in **Swiper** is set to stretch,which mainly includes two scenarios: 1. **displayMode** is set to **SwiperDisplayMode.STRETCH**; 2.**displayCount** is assigned a numeric value.
+Sets the trailing margin to reveal a portion of the next item. For the implementation example, see [Example 1: Setting the Navigation Indicator Interaction and Page Turning Effect](../../../reference/apis-arkui/arkui-ts/ts-container-swiper.md#example-1-setting-the-navigation-indicator-interaction-and-page-turning-effect).This attribute is effective only when the layout mode of the child components in **Swiper** is set to stretch,which mainly includes two scenarios: 1. **displayMode** is set to **SwiperDisplayMode.STRETCH**; 2.**displayCount** is assigned a numeric value.
 
 When the main axis runs horizontally and either **nextMargin** or **prevMargin** is greater than the measured width of the child component, both margins are hidden.
 
 When the main axis runs vertically and either **nextMargin** or **prevMargin** is greater than the measured height of the child component, both margins are hidden.
 
-When using the **nextMargin** or **prevMargin** API, avoid applying [size constraints](arkts-arkui-commonmethod-c.md#constraintsize-1) to child components. Otherwise, the main axis of the child nodes will not be stretched to the expected length, causing the margins to lose their effect.
-
+When using the **nextMargin** or **prevMargin** API, avoid applying [size constraints](arkts-arkui-commonmethod-c.md#constraintsize) to child components. Otherwise, the main axis of the child nodes will not be stretched to the expected length, causing the margins to lose their effect.
 > **NOTE**  
 >  
-> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier).
 
 **Since:** 10
 
@@ -791,7 +758,6 @@ When using the **nextMargin** or **prevMargin** API, avoid applying [size constr
 | value | [Length](../arkts-apis/arkts-arkui-length-t.md) | Yes | Trailing margin. Percentage values are not supported.<br>Default value: **0** |
 | ignoreBlank | boolean | No | Whether to hide the trailing margin for the last page in non-loop scenarios.<br>**true**: Hide the trailing margin, in which case, the right edge of the last page is aligned with that of the **Swiper** component's viewable area.<br>**false**: Show the trailing margin, in which case, the last page has a **nextMargin**-specified gap from the **Swiper** component's right edge.<br>Default value: **false**.<br>**NOTE**<br>On the last page, the values of **prevMargin** and **nextMargin** are added to create a left margin that allows the previous page to be displayed partially.<br>**Since:** 12 |
 
-<a id="onanimationend"></a>
 ## onAnimationEnd
 
 ```TypeScript
@@ -818,7 +784,6 @@ This event is triggered when the switching animation of the **Swiper** component
 | --- | --- | --- | --- |
 | event | [OnSwiperAnimationEndCallback](arkts-arkui-onswiperanimationendcallback-t.md) | Yes | Callback triggered when the page transition animation ends.<br>**Since:** 18 |
 
-<a id="onanimationstart"></a>
 ## onAnimationStart
 
 ```TypeScript
@@ -826,7 +791,6 @@ onAnimationStart(event: OnSwiperAnimationStartCallback)
 ```
 
 Triggered when the page transition animation starts.
-
 > **NOTE**  
 >  
 > - When this callback is invoked, the page transition animation logic is executed in the rendering thread,  
@@ -855,7 +819,6 @@ Triggered when the page transition animation starts.
 | --- | --- | --- | --- |
 | event | [OnSwiperAnimationStartCallback](arkts-arkui-onswiperanimationstartcallback-t.md) | Yes | Callback triggered when the page transition animation starts.<br>**Since:** 18 |
 
-<a id="onchange"></a>
 ## onChange
 
 ```TypeScript
@@ -865,7 +828,6 @@ onChange(event: Callback<number>)
 Triggered when the index of the currently displayed element changes. The return value is the index of the currently displayed element.
 
 When the **Swiper** component is used together with **LazyForEach**, the subpage UI update cannot be triggered in the **onChange** event.
-
 > **NOTE**  
 >  
 > If the index change is caused by an animation, this callback is triggered when the animation ends.
@@ -886,7 +848,6 @@ When the **Swiper** component is used together with **LazyForEach**, the subpage
 | --- | --- | --- | --- |
 | event | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;number&gt; | Yes | Index of the currently displayed element.<br>**Since:** 18 |
 
-<a id="oncontentdidscroll"></a>
 ## onContentDidScroll
 
 ```TypeScript
@@ -915,7 +876,6 @@ Instructions:
 | --- | --- | --- | --- |
 | handler | [ContentDidScrollCallback](arkts-arkui-contentdidscrollcallback-t.md) | Yes | Callback triggered when content in the **Swiper** component scrolls. |
 
-<a id="oncontentwillscroll"></a>
 ## onContentWillScroll
 
 ```TypeScript
@@ -948,7 +908,6 @@ Triggered when the **Swiper** component is about to scroll. This event allows yo
 | --- | --- | --- | --- |
 | handler | [ContentWillScrollCallback](arkts-arkui-contentwillscrollcallback-t.md) | Yes | Callback triggered when content in the **Swiper** component scrolls. |
 
-<a id="ongestureswipe"></a>
 ## onGestureSwipe
 
 ```TypeScript
@@ -973,7 +932,6 @@ Triggered on a frame-by-frame basis when the page is turned by a swipe.
 | --- | --- | --- | --- |
 | event | [OnSwiperGestureSwipeCallback](arkts-arkui-onswipergestureswipecallback-t.md) | Yes | Callback triggered on a frame-by-frame basis when the page is turned by a swipe. **onGestureSwipe** is called after **onTouch**. For post-release operations, consider using [onAnimationStart](SwiperAttribute#onAnimationStart).<br>**Since:** 18 |
 
-<a id="onscrollstatechanged"></a>
 ## onScrollStateChanged
 
 ```TypeScript
@@ -1000,7 +958,6 @@ Defines the callback of the swipe state change event for the **Swiper** componen
 | --- | --- | --- | --- |
 | event | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;ScrollState&gt; | Yes | Callback triggered when the sliding status changes. |
 
-<a id="onselected"></a>
 ## onSelected
 
 ```TypeScript
@@ -1027,7 +984,6 @@ Triggered when the selected element changes. The index of the currently selected
 | --- | --- | --- | --- |
 | event | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;number&gt; | Yes | Index of the currently selected element. |
 
-<a id="onunselected"></a>
 ## onUnselected
 
 ```TypeScript
@@ -1054,7 +1010,6 @@ Triggered when the selected element changes. The index of the element that is ab
 | --- | --- | --- | --- |
 | event | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;number&gt; | Yes | Index of the element that is about to be hidden. |
 
-<a id="pageflipmode"></a>
 ## pageFlipMode
 
 ```TypeScript
@@ -1081,24 +1036,22 @@ Sets the mode for flipping pages using the mouse wheel. If this API is not used,
 | --- | --- | --- | --- |
 | mode | [Optional](arkts-arkui-optional-t.md)&lt;PageFlipMode&gt; | Yes | Mode for flipping pages using the mouse wheel.<br>If the value is **undefined**, the value **PageFlipMode.CONTINUOUS** is used. |
 
-<a id="prevmargin"></a>
 ## prevMargin
 
 ```TypeScript
 prevMargin(value: Length, ignoreBlank?: boolean)
 ```
 
-Sets the leading margin to reveal a portion of the previous item. For the implementation example, see [Example 1: Setting the Navigation Indicator Interaction and Page Turning Effect](docroot://reference/apis-arkui/arkui-ts/ts-container-swiper.md#example-1-setting-the-navigation-indicator-interaction-and-page-turning-effect).This attribute is effective only when the layout mode of the child components in **Swiper** is set to stretch,which mainly includes two scenarios: 1. **displayMode** is set to **SwiperDisplayMode.STRETCH**; 2.**displayCount** is assigned a numeric value.
+Sets the leading margin to reveal a portion of the previous item. For the implementation example, see [Example 1: Setting the Navigation Indicator Interaction and Page Turning Effect](../../../reference/apis-arkui/arkui-ts/ts-container-swiper.md#example-1-setting-the-navigation-indicator-interaction-and-page-turning-effect).This attribute is effective only when the layout mode of the child components in **Swiper** is set to stretch,which mainly includes two scenarios: 1. **displayMode** is set to **SwiperDisplayMode.STRETCH**; 2.**displayCount** is assigned a numeric value.
 
 When the main axis runs horizontally and either **nextMargin** or **prevMargin** is greater than the measured width of the child component, both margins are hidden.
 
 When the main axis runs vertically and either **nextMargin** or **prevMargin** is greater than the measured height of the child component, both margins are hidden.
 
-When using the **nextMargin** or **prevMargin** API, avoid applying [size constraints](arkts-arkui-commonmethod-c.md#constraintsize-1) to child components. Otherwise, the main axis of the child nodes will not be stretched to the expected length, causing the margins to lose their effect.
-
+When using the **nextMargin** or **prevMargin** API, avoid applying [size constraints](arkts-arkui-commonmethod-c.md#constraintsize) to child components. Otherwise, the main axis of the child nodes will not be stretched to the expected length, causing the margins to lose their effect.
 > **NOTE**  
 >  
-> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier).
 
 **Since:** 10
 
@@ -1117,7 +1070,6 @@ When using the **nextMargin** or **prevMargin** API, avoid applying [size constr
 | value | [Length](../arkts-apis/arkts-arkui-length-t.md) | Yes | Leading margin. Percentage values are not supported.<br>Default value: **0** |
 | ignoreBlank | boolean | No | Whether to hide the leading margin for the first page in non-loop scenarios.<br>**true**: Hide the leading margin, in which case, the left edge of the first page is aligned with that of the **Swiper** component's viewable area.<br>**false**: Show the leading margin, in which case, the first page has a **prevMargin**-specified gap from the **Swiper** component's left edge.<br>Default value: **false**.<br>**NOTE**<br>On the first page, the values of **prevMargin** and **nextMargin** are added to create a right margin that allows the next page to be displayed partially.<br>**Since:** 12 |
 
-<a id="vertical"></a>
 ## vertical
 
 ```TypeScript

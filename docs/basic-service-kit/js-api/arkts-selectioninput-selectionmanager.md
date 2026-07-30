@@ -1,7 +1,6 @@
 # @ohos.selectionInput.selectionManager
 
 This module provides word selection management capabilities, including creating, displaying, moving, hiding, and destroying windows, listening for word selection events, and retrieving the selected text.
-
 > **NOTE**  
 > - This module is supported only on PCs/2-in-1 devices.  
 > - APIs of this module can be called only by applications that integrate the ExtensionAbility for word selection.

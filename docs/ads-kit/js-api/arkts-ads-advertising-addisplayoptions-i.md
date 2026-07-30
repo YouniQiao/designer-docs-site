@@ -67,7 +67,7 @@ Custom parameter.
 
 <!--RP3--><!--RP3End-->
 
-**Type:** number | boolean | string | undefined
+**Type:** number \| boolean \| string \| undefined
 
 **Since:** 11
 

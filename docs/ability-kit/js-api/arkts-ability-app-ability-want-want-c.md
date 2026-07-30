@@ -38,7 +38,7 @@ Ability name of the application. It represents the ability name of the target ap
 action?: string
 ```
 
-Action to take, such as viewing and sharing application details. In implicit Want, you can define this field and use it together with **uri** or **parameters** to specify the operation to be performed on the data. For details about the definition and matching rules of implicit Want, see [Matching Rules of Explicit Want and Implicit Want](docroot://application-models/explicit-implicit-want-mappings.md).
+Action to take, such as viewing and sharing application details. In implicit Want, you can define this field and use it together with **uri** or **parameters** to specify the operation to be performed on the data. For details about the definition and matching rules of implicit Want, see [Matching Rules of Explicit Want and Implicit Want](../../../application-models/explicit-implicit-want-mappings.md).
 
 **Type:** string
 
@@ -154,7 +154,7 @@ Module name of the application. It represents the module name of the target appl
 
 **NOTE**
 
-If the ability belongs to a [HAR](docroot://quick-start/har-package.md) module, **moduleName** must be set to the name of the [HAP](docroot://quick-start/hap-package.md) or [HSP](docroot://quick-start/in-app-hsp.md) module that depends on this HAR.
+If the ability belongs to a [HAR](../../../quick-start/har-package.md) module, **moduleName** must be set to the name of the [HAP](../../../quick-start/hap-package.md) or [HSP](../../../quick-start/in-app-hsp.md) module that depends on this HAR.
 
 **Type:** string
 
@@ -188,19 +188,19 @@ List of parameters in the Want object.
 - **component.startup.newRules**: enabled status of the new control rule. The value is of the Boolean type.  
 - **moduleName**: module name of the caller. The value is a string.  
 - **ohos.ability.params.abilityRecoveryRestart**: support for ability restart upon fault recovery. The value is of the Boolean type.  
-- **ohos.extra.param.key.showMode**: mode to show the atomic service startup. The value is an enumerated value of [wantConstant.ShowMode](./@ohos.app.ability.wantConstant:wantConstant.showMode).
+- **ohos.extra.param.key.showMode**: mode to show the atomic service startup. The value is an enumerated value of [wantConstant.ShowMode](arkts-ability-wantconstant-showmode-e.md).
 
 **NOTE**
 
 In cross-device scenarios, the following fields do not take effect and cannot be used for identity or permission verification: **ohos.aafwk.param.callerPid**, **ohos.aafwk.param.callerToken**, and **ohos.aafwk.param.callerUid**.
 
-2. Certain keys are defined by the system, and their values need to be manually assigned. For details about the keys and their values, see [wantConstant.Params](./@ohos.app.ability.wantConstant:wantConstant.params).3. In addition to the foregoing cases, applications may further agree on the key-value pairs to transfer.
+2. Certain keys are defined by the system, and their values need to be manually assigned. For details about the keys and their values, see [wantConstant.Params](arkts-ability-wantconstant-params-e.md).3. In addition to the foregoing cases, applications may further agree on the key-value pairs to transfer.
 
 **NOTE**
 
-For details about the constants of **Params** in **want**, see [wantConstant](arkts-app-ability-wantconstant.md).
+For details about the constants of **Params** in **want**, see [wantConstant](arkts-ability-wantconstant.md).
 
-Note that a maximum of 100 KB data that can be transferred by using **WantParams**. If the data volume exceeds 100KB, transfer data in [WriteRawDataBuffer](./@ohos.rpc:rpc.writeRawDataBuffer) or [uri](../../apis-arkts/arkts-apis/arkts-uri.md) mode.
+Note that a maximum of 100 KB data that can be transferred by using **WantParams**. If the data volume exceeds 100KB, transfer data in [WriteRawDataBuffer](./@ohos.rpc:rpc.writeRawDataBuffer) or [uri](arkts-ability-app-ability-want-want-c.md#uri) mode.
 
 The values of **parameters** must be of the following basic data types: String, Number, Boolean, Object, undefined,and null. Functions in an object cannot be transferred.
 

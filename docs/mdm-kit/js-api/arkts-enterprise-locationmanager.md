@@ -8,11 +8,13 @@ The **locationManager** module provides location service management capabilities
 > The APIs of this module can be called only by a device administrator application that is enabled. For details, see  
 > [MDM Kit Development](../../../mdm/mdm-kit-guide.md).
 
-**Since:** 11
+**Since:** 12
 
 <!--Device-unnamed-declare namespace locationManager--><!--Device-unnamed-declare namespace locationManager-End-->
 
 **System capability:** SystemCapability.Customization.EnterpriseDeviceManager
+
+**System API:** This is a system API.
 
 ## Modules to Import
 
@@ -27,6 +29,7 @@ import { locationManager } from '@kit.MDMKit';
 | Name | Description |
 | --- | --- |
 | [getLocationPolicy](arkts-mdm-locationmanager-getlocationpolicy-f.md#getlocationpolicy) | Queries the location service policy. |
+| [getLocationPolicy](arkts-mdm-locationmanager-getlocationpolicy-f.md#getlocationpolicy-1) | Queries the location service policy. |
 | [setLocationPolicy](arkts-mdm-locationmanager-setlocationpolicy-f.md#setlocationpolicy) | Sets a location service policy. |
 
 ### Enums

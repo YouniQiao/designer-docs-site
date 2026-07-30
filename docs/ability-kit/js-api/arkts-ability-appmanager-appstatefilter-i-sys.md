@@ -1,6 +1,6 @@
 # AppStateFilter (System API)
 
-Describes the filter for application lifecycle change events. It can be used as a parameter of [on](arkts-ability-appmanager-on-f-sys.md#on-3) to filter application lifecycle change events you want to listen for.
+Describes the filter for application lifecycle change events. It can be used as a parameter of [on](appManager.on(type: 'applicationState', observer: ApplicationStateObserver, filter: AppStateFilter)) to filter application lifecycle change events you want to listen for.
 
 **Since:** 21
 

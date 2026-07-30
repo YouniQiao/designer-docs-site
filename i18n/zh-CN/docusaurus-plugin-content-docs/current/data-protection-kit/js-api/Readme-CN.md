@@ -10,6 +10,7 @@
   - [generateDLPFile(系统接口)](arkts-dataprotection-dlppermission-generatedlpfile-f-sys.md)<!--DelEnd-->
   <!--Del-->
   - [generateDlpFileForEnterprise(系统接口)](arkts-dataprotection-dlppermission-generatedlpfileforenterprise-f-sys.md)<!--DelEnd-->
+  - [getControlledAppLists](arkts-dataprotection-dlppermission-getcontrolledapplists-f.md)
   - [getDLPFileAccessRecords](arkts-dataprotection-dlppermission-getdlpfileaccessrecords-f.md)
   <!--Del-->
   - [getDLPGatheringPolicy(系统接口)](arkts-dataprotection-dlppermission-getdlpgatheringpolicy-f-sys.md)<!--DelEnd-->
@@ -35,6 +36,7 @@
   <!--Del-->
   - [queryDlpPolicy(系统接口)](arkts-dataprotection-dlppermission-querydlppolicy-f-sys.md)<!--DelEnd-->
   - [queryOpenedEnterpriseDlpFiles](arkts-dataprotection-dlppermission-queryopenedenterprisedlpfiles-f.md)
+  - [setControlledAppLists](arkts-dataprotection-dlppermission-setcontrolledapplists-f.md)
   - [setEnterprisePolicy](arkts-dataprotection-dlppermission-setenterprisepolicy-f.md)
   - [setRetentionState](arkts-dataprotection-dlppermission-setretentionstate-f.md)
   - [setSandboxAppConfig](arkts-dataprotection-dlppermission-setsandboxappconfig-f.md)

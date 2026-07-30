@@ -14,7 +14,6 @@ Serial port object, which provides information and communication capabilities of
 import { serial } from '@kit.BasicServicesKit';
 ```
 
-<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -44,7 +43,6 @@ Closes the serial port device. This API returns the result asynchronously throug
 | [35700001](../../apis-basic-services-kit/errorcode-busmanager-serial.md#35700001-abnormal-service) | Service error. |
 | [35700005](../../apis-basic-services-kit/errorcode-busmanager-serial.md#35700005-port-not-opened) | Port not open. |
 
-<a id="drain"></a>
 ## drain
 
 ```TypeScript
@@ -75,7 +73,6 @@ Waits until all write requests are complete. This API returns the result asynchr
 | [35700003](../../apis-basic-services-kit/errorcode-busmanager-serial.md#35700003-virtual-serial-port-disconnected) | Virtual serial port disconnected. |
 | [35700005](../../apis-basic-services-kit/errorcode-busmanager-serial.md#35700005-port-not-opened) | Port not open. |
 
-<a id="flush"></a>
 ## flush
 
 ```TypeScript
@@ -106,7 +103,6 @@ Flushes the serial port buffer. This API returns the result asynchronously throu
 | [35700003](../../apis-basic-services-kit/errorcode-busmanager-serial.md#35700003-virtual-serial-port-disconnected) | Virtual serial port disconnected. |
 | [35700005](../../apis-basic-services-kit/errorcode-busmanager-serial.md#35700005-port-not-opened) | Port not open. |
 
-<a id="getcts"></a>
 ## getCts
 
 ```TypeScript
@@ -137,7 +133,6 @@ Obtains the CTS signal status. This API returns the result asynchronously throug
 | [35700003](../../apis-basic-services-kit/errorcode-busmanager-serial.md#35700003-virtual-serial-port-disconnected) | Virtual serial port disconnected. |
 | [35700005](../../apis-basic-services-kit/errorcode-busmanager-serial.md#35700005-port-not-opened) | Port not open. |
 
-<a id="getdsr"></a>
 ## getDsr
 
 ```TypeScript
@@ -168,7 +163,6 @@ Obtains the DSR signal status. This API returns the result asynchronously throug
 | [35700003](../../apis-basic-services-kit/errorcode-busmanager-serial.md#35700003-virtual-serial-port-disconnected) | Virtual serial port disconnected. |
 | [35700005](../../apis-basic-services-kit/errorcode-busmanager-serial.md#35700005-port-not-opened) | Port not open. |
 
-<a id="offdataread"></a>
 ## offDataRead
 
 ```TypeScript
@@ -198,7 +192,6 @@ Cancels listening for data receiving events on the serial port.
 | [35700001](../../apis-basic-services-kit/errorcode-busmanager-serial.md#35700001-abnormal-service) | Service error. |
 | [35700005](../../apis-basic-services-kit/errorcode-busmanager-serial.md#35700005-port-not-opened) | Port not open. |
 
-<a id="offdisconnect"></a>
 ## offDisconnect
 
 ```TypeScript
@@ -228,7 +221,6 @@ This command is used to cancel the monitoring of the USB virtual serial port dis
 | [35700001](../../apis-basic-services-kit/errorcode-busmanager-serial.md#35700001-abnormal-service) | Service error. |
 | [35700005](../../apis-basic-services-kit/errorcode-busmanager-serial.md#35700005-port-not-opened) | Port not open. |
 
-<a id="ondataread"></a>
 ## onDataRead
 
 ```TypeScript
@@ -259,7 +251,6 @@ Listens for data received by the serial port. This API uses an asynchronous call
 | [35700003](../../apis-basic-services-kit/errorcode-busmanager-serial.md#35700003-virtual-serial-port-disconnected) | Virtual serial port disconnected. |
 | [35700005](../../apis-basic-services-kit/errorcode-busmanager-serial.md#35700005-port-not-opened) | Port not open. |
 
-<a id="ondisconnect"></a>
 ## onDisconnect
 
 ```TypeScript
@@ -289,7 +280,6 @@ This interface is used to listen to the disconnection event of the USB virtual s
 | [35700001](../../apis-basic-services-kit/errorcode-busmanager-serial.md#35700001-abnormal-service) | Service error. |
 | [35700005](../../apis-basic-services-kit/errorcode-busmanager-serial.md#35700005-port-not-opened) | Port not open. |
 
-<a id="open"></a>
 ## open
 
 ```TypeScript
@@ -328,7 +318,6 @@ Enables the port. This API returns the result asynchronously through a promise.
 | [35700004](../../apis-basic-services-kit/errorcode-busmanager-serial.md#35700004-port-in-use) | Port already in use. |
 | [35700007](../../apis-basic-services-kit/errorcode-busmanager-serial.md#35700007-user-authorization-rejected) | User authorization required. |
 
-<a id="sendbrk"></a>
 ## sendBrk
 
 ```TypeScript
@@ -359,7 +348,6 @@ Sends a BRK signal. This API returns the result asynchronously through a promise
 | [35700003](../../apis-basic-services-kit/errorcode-busmanager-serial.md#35700003-virtual-serial-port-disconnected) | Virtual serial port disconnected. |
 | [35700005](../../apis-basic-services-kit/errorcode-busmanager-serial.md#35700005-port-not-opened) | Port not open. |
 
-<a id="setdtr"></a>
 ## setDtr
 
 ```TypeScript
@@ -396,7 +384,6 @@ Sets the DTR signal status. Use Promise asynchronous callbacks.
 | [35700003](../../apis-basic-services-kit/errorcode-busmanager-serial.md#35700003-virtual-serial-port-disconnected) | Virtual serial port disconnected. |
 | [35700005](../../apis-basic-services-kit/errorcode-busmanager-serial.md#35700005-port-not-opened) | Port not open. |
 
-<a id="setrts"></a>
 ## setRts
 
 ```TypeScript
@@ -433,7 +420,6 @@ Sets the RTS signal. This API returns the result asynchronously through a promis
 | [35700003](../../apis-basic-services-kit/errorcode-busmanager-serial.md#35700003-virtual-serial-port-disconnected) | Virtual serial port disconnected. |
 | [35700005](../../apis-basic-services-kit/errorcode-busmanager-serial.md#35700005-port-not-opened) | Port not open. |
 
-<a id="write"></a>
 ## write
 
 ```TypeScript

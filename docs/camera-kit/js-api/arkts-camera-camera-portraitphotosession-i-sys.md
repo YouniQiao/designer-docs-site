@@ -18,7 +18,6 @@ PortraitPhotoSession extends Session, Flash, AutoExposure, Focus, Zoom, Beauty, 
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="getsessionconflictfunctions"></a>
 ## getSessionConflictFunctions
 
 ```TypeScript
@@ -47,7 +46,6 @@ Gets session conflict functions.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 
-<a id="getsessionfunctions"></a>
 ## getSessionFunctions
 
 ```TypeScript
@@ -83,7 +81,6 @@ Gets session functions.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
 
-<a id="off"></a>
 ## off('error')
 
 ```TypeScript
@@ -116,7 +113,6 @@ function unregisterSessionError(portraitPhotoSession: camera.PortraitPhotoSessio
 
 ```
 
-<a id="off-1"></a>
 ## off('focusStateChange')
 
 ```TypeScript
@@ -149,7 +145,6 @@ function unregisterFocusStateChange(portraitPhotoSession: camera.PortraitPhotoSe
 
 ```
 
-<a id="off-2"></a>
 ## off('smoothZoomInfoAvailable')
 
 ```TypeScript
@@ -182,7 +177,6 @@ function unregisterSmoothZoomInfo(portraitPhotoSession: camera.PortraitPhotoSess
 
 ```
 
-<a id="off-3"></a>
 ## off('lcdFlashStatus')
 
 ```TypeScript
@@ -221,7 +215,6 @@ function unregisterLcdFlashStatus(portraitPhotoSession: camera.PortraitPhotoSess
 
 ```
 
-<a id="on"></a>
 ## on('error')
 
 ```TypeScript
@@ -242,7 +235,7 @@ Subscribes to PortraitSession error events. This API uses an asynchronous callba
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when a session is created. This event is triggered and the error message is returned when an error occurs during the calling of a session-related API such as [beginConfig](arkts-camera-camera-session-i.md#beginconfig-1),[commitConfig](arkts-camera-camera-session-i.md#commitconfig-1), and [addInput](arkts-camera-camera-session-i.md#addinput-1). |
+| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when a session is created. This event is triggered and the error message is returned when an error occurs during the calling of a session-related API such as [beginConfig](arkts-camera-camera-session-i.md#beginconfig),[commitConfig](arkts-camera-camera-session-i.md#commitconfig), and [addInput](arkts-camera-camera-session-i.md#addinput). |
 | callback | [ErrorCallback](../../apis-arkui/arkts-components/arkts-arkui-errorcallback-t-sys.md) | Yes | Callback used to return an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md). |
 
 **Example**
@@ -260,7 +253,6 @@ function registerSessionError(portraitPhotoSession: camera.PortraitPhotoSession)
 
 ```
 
-<a id="on-1"></a>
 ## on('focusStateChange')
 
 ```TypeScript
@@ -303,7 +295,6 @@ function registerFocusStateChange(portraitPhotoSession: camera.PortraitPhotoSess
 
 ```
 
-<a id="on-2"></a>
 ## on('smoothZoomInfoAvailable')
 
 ```TypeScript
@@ -346,7 +337,6 @@ function registerSmoothZoomInfo(portraitPhotoSession: camera.PortraitPhotoSessio
 
 ```
 
-<a id="on-3"></a>
 ## on('lcdFlashStatus')
 
 ```TypeScript

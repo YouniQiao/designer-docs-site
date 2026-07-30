@@ -1,7 +1,6 @@
 # IconCommonOptions
 
 Defines the common icon options of the chip.
-
 > **NOTE**  
 >  
 > **fillColor** and **activatedFillColor** take effect only when the icon format is SVG.

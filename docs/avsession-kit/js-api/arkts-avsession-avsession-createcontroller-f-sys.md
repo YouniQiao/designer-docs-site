@@ -118,6 +118,7 @@ Create an avsession controller
 
 ```TypeScript
 import { avSession } from '@kit.AVSessionKit';
+
 @Entry
 @Component
 struct Index {

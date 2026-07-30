@@ -45,18 +45,18 @@ function requestPrintPreview(jobInfo: PrintJob, callback: Callback<number>): voi
 import { print } from '@kit.BasicServicesKit';
 
 let jobInfo : print.PrintJob = {
-    fdList : [44,45],
+    fdList : [44, 45], // fdList中的fd可通过fs.open等文件操作获取文件描述符
     jobId : 'jobId_12',
     printerId : 'printerId_32',
-    jobState : PRINT_JOB_COMPLETED,
+    jobState : print.PrintJobState.PRINT_JOB_COMPLETED,
     jobSubstate : print.PrintJobSubState.PRINT_JOB_COMPLETED_SUCCESS,
     copyNumber : 1,
     pageRange : {},
     isSequential : false,
     pageSize : {id : '', name : '', width : 10, height : 20},
     isLandscape : false,
-    colorMode : COLOR_MODE_COLOR,
-    duplexMode : DUPLEX_MODE_NONE,
+    colorMode : print.PrintColorMode.COLOR_MODE_COLOR,
+    duplexMode : print.PrintDuplexMode.DUPLEX_MODE_NONE,
     margin : undefined,
     preview : undefined,
     options : undefined
@@ -64,7 +64,7 @@ let jobInfo : print.PrintJob = {
 print.requestPrintPreview(jobInfo, (num : number) => {
     console.info('requestPrintPreview success, num : ' + JSON.stringify(num));
 
-})
+});
 
 ```
 
@@ -114,18 +114,18 @@ import { print } from '@kit.BasicServicesKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 
 let jobInfo : print.PrintJob = {
-    fdList : [44,45],
+    fdList : [44, 45], // fdList中的fd可通过fs.open等文件操作获取文件描述符
     jobId : 'jobId_12',
     printerId : 'printerId_32',
-    jobState : PRINT_JOB_COMPLETED,
+    jobState : print.PrintJobState.PRINT_JOB_COMPLETED,
     jobSubstate : print.PrintJobSubState.PRINT_JOB_COMPLETED_SUCCESS,
     copyNumber : 1,
     pageRange : {},
     isSequential : false,
     pageSize : {id : '', name : '', width : 10, height : 20},
     isLandscape : false,
-    colorMode : COLOR_MODE_COLOR,
-    duplexMode : DUPLEX_MODE_NONE,
+    colorMode : print.PrintColorMode.COLOR_MODE_COLOR,
+    duplexMode : print.PrintDuplexMode.DUPLEX_MODE_NONE,
     margin : undefined,
     preview : undefined,
     options : undefined
@@ -133,8 +133,8 @@ let jobInfo : print.PrintJob = {
 print.requestPrintPreview(jobInfo).then((num: number) => {
     console.info('requestPrintPreview success, num : ' + JSON.stringify(num));
 }).catch((error: BusinessError) => {
-    console.error('requestPrintPreview failed, because : ' + JSON.stringify(error));
-})
+    console.error(`Failed to request print preview. Code: ${error.code}, message: ${error.message}`);
+});
 
 ```
 

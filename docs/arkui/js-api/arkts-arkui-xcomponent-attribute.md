@@ -1,10 +1,12 @@
 # XComponent properties/events
 
-Defines XComponentAttribute.
+In addition to universal attributes, the following attributes are supported.
+
+Since API version 12, the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md) are supported when **type** is set to **SURFACE** or **TEXTURE**.
 
 **Inheritance/Implementation:** XComponentAttribute extends [CommonMethod<XComponentAttribute>](CommonMethod<XComponentAttribute>)
 
-**Since:** 12
+**Since:** 8
 
 <!--Device-unnamed-declare class XComponentAttribute extends CommonMethod<XComponentAttribute>--><!--Device-unnamed-declare class XComponentAttribute extends CommonMethod<XComponentAttribute>-End-->
 
@@ -16,7 +18,11 @@ Defines XComponentAttribute.
 enableAnalyzer(enable: boolean)
 ```
 
-Sets whether to enable the AI image analyzer, which supports subject recognition, text recognition, and object lookup.For the settings to take effect, this attribute must be used together with StartImageAnalyzer and StopImageAnalyzer of XComponentController.This feature cannot be used together with the overlay attribute.If both are set, the CustomBuilder attribute in overlay has no effect. This feature also depends on device capabilities.
+Sets whether to enable the AI image analyzer, which supports subject recognition, text recognition, and object lookup.
+
+For the settings to take effect, this attribute must be used together with [StartImageAnalyzer](arkts-arkui-xcomponentcontroller-c.md#startimageanalyzer) and [StopImageAnalyzer](arkts-arkui-xcomponentcontroller-c.md#stopimageanalyzer) of **XComponentController**.
+
+This feature cannot be used together with the [overlay](../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-overlay.md#overlay) attribute. If they are set at the same time, the **CustomBuilder** attribute in **overlay** has no effect. This feature depends on device capabilities.
 
 **Since:** 12
 
@@ -32,7 +38,7 @@ Sets whether to enable the AI image analyzer, which supports subject recognition
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| enable | boolean | Yes | Whether to enable the AI image analyzer. |
+| enable | boolean | Yes | Whether to enable the AI image analyzer.<br>**true**: enable; **false**: disable<br>Default value: **false**. |
 
 ## enableSecure
 
@@ -56,31 +62,7 @@ Sets whether to enable the secure surface to protect the content rendered within
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| isSecure | boolean | Yes | Whether to enable the secure surface. |
-
-## hdrBrightness
-
-```TypeScript
-hdrBrightness(brightness: number)
-```
-
-Set hdrBrightness for XComponent.
-
-**Since:** 20
-
-**Model restriction:** This API can be used only in the stage model.
-
-**Atomic service API:** This API can be used in atomic services since API version 20.
-
-<!--Device-XComponentAttribute-hdrBrightness(brightness: number): XComponentAttribute--><!--Device-XComponentAttribute-hdrBrightness(brightness: number): XComponentAttribute-End-->
-
-**System capability:** SystemCapability.ArkUI.ArkUI.Full
-
-**Parameters:**
-
-| Name | Type | Mandatory | Description |
-| --- | --- | --- | --- |
-| brightness | number | Yes | control the brightness of HDR video |
+| isSecure | boolean | Yes | Whether to enable the secure surface.<br>The value **true** means to enable the secure surface, and **false** means the opposite.<br>Default value: **false**. |
 
 ## hdrBrightness
 
@@ -104,8 +86,8 @@ Set hdrBrightness for XComponent.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| brightness | number | Yes | control the brightness of HDR video |
-| type | [HdrType](arkts-arkui-hdrtype-e.md) | No | the HDR type of the XComponent |
+| brightness | number | Yes | control the brightness of HDR video. |
+| type | [HdrType](arkts-arkui-hdrtype-e.md) | No | the HDR type of the XComponent. |
 
 ## onDestroy
 
@@ -113,11 +95,11 @@ Set hdrBrightness for XComponent.
 onDestroy(event: VoidCallback)
 ```
 
-Triggered when the plug-in is destroyed.Anonymous Object Rectification.
+Triggered when the plugin is destroyed.
 
-**Since:** 18
+**Since:** 8
 
-**Atomic service API:** This API can be used in atomic services since API version 18.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 <!--Device-XComponentAttribute-onDestroy(event: VoidCallback): XComponentAttribute--><!--Device-XComponentAttribute-onDestroy(event: VoidCallback): XComponentAttribute-End-->
 
@@ -127,7 +109,7 @@ Triggered when the plug-in is destroyed.Anonymous Object Rectification.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| event | [VoidCallback](../arkts-apis/arkts-arkui-voidcallback-t.md) | Yes | Callback after the XComponent is destroyed. |
+| event | [VoidCallback](../arkts-apis/arkts-arkui-voidcallback-t.md) | Yes | Callback triggered after **XComponent** is destroyed.<br>**Since:** 18 |
 
 ## onLoad
 
@@ -135,11 +117,11 @@ Triggered when the plug-in is destroyed.Anonymous Object Rectification.
 onLoad(callback: OnNativeLoadCallback)
 ```
 
-Triggered when the plug-in is loaded.Anonymous Object Rectification.
+Triggered when the plugin is loaded.
 
-**Since:** 18
+**Since:** 8
 
-**Atomic service API:** This API can be used in atomic services since API version 18.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 <!--Device-XComponentAttribute-onLoad(callback: OnNativeLoadCallback): XComponentAttribute--><!--Device-XComponentAttribute-onLoad(callback: OnNativeLoadCallback): XComponentAttribute-End-->
 
@@ -149,5 +131,5 @@ Triggered when the plug-in is loaded.Anonymous Object Rectification.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [OnNativeLoadCallback](arkts-arkui-onnativeloadcallback-t.md) | Yes | Callback after the surface held by the XComponent is created. |
+| callback | [OnNativeLoadCallback](arkts-arkui-onnativeloadcallback-t.md) | Yes | Callback triggered after the surface held by **XComponent** is created.<br>**Since:** 18 |
 

@@ -1,6 +1,5 @@
 # fdopenStreamSync
 
-<a id="fdopenstreamsync"></a>
 ## fdopenStreamSync
 
 ```TypeScript
@@ -13,7 +12,7 @@ Opens a stream based on the file descriptor. This API returns the result synchro
 
 **Deprecated since:** 9
 
-**Substitutes:** [fs:fdopenStreamSync](arkts-corefile-file-fs-fdopenstreamsync-f.md#fdopenstreamsync-1)
+**Substitutes:** [fs:fdopenStreamSync](arkts-corefile-fileio-fdopenstreamsync-f.md#fdopenstreamsync)
 
 <!--Device-unnamed-declare function fdopenStreamSync(fd: number, mode: string): Stream--><!--Device-unnamed-declare function fdopenStreamSync(fd: number, mode: string): Stream-End-->
 

@@ -22,7 +22,7 @@ itemBorderRadius?: Length | BorderRadiuses | LocalizedBorderRadiuses
 
 Rounded corner radius of grid items.
 
-**Type:** Length | BorderRadiuses | LocalizedBorderRadiuses
+**Type:** Length \| BorderRadiuses \| LocalizedBorderRadiuses
 
 **Since:** 20
 

@@ -6,7 +6,6 @@
 import { telephonyManager } from '@kit.MDMKit';
 ```
 
-<a id="removeincomingcallpolicynumbers"></a>
 ## removeIncomingCallPolicyNumbers
 
 ```TypeScript
@@ -17,7 +16,7 @@ Removes the trustlist or blocklist for incoming calls. If the list is not set, t
 
 A policy conflict is reported when this API is called in the following scenario:
 
-1. If the device's call capability has been disabled via the [setDisallowedPolicy](arkts-mdm-restrictions-setdisallowedpolicy-f.md#setdisallowedpolicy-1)API, using this API to remove an incoming call trustlist or blocklist will return error code 203. To resolve the conflict, disable the call restriction via the [setDisallowedPolicy](arkts-mdm-restrictions-setdisallowedpolicy-f.md#setdisallowedpolicy-1)API.
+1. If the device's call capability has been disabled via the [setDisallowedPolicy](arkts-mdm-restrictions-setdisallowedpolicy-f.md#setdisallowedpolicy)API, using this API to remove an incoming call trustlist or blocklist will return error code 203. To resolve the conflict, disable the call restriction via the [setDisallowedPolicy](arkts-mdm-restrictions-setdisallowedpolicy-f.md#setdisallowedpolicy)API.
 
 **Since:** 20
 

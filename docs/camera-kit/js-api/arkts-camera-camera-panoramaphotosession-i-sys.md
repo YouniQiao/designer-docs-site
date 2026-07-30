@@ -18,7 +18,6 @@ PanoramaPhotoSession extends Session, Focus, AutoExposure, WhiteBalance, ColorEf
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="off"></a>
 ## off('error')
 
 ```TypeScript
@@ -57,7 +56,6 @@ function unregisterSessionError(panoramaPhotoSession: camera.PanoramaPhotoSessio
 
 ```
 
-<a id="off-1"></a>
 ## off('focusStateChange')
 
 ```TypeScript
@@ -96,7 +94,6 @@ function unregisterFocusStateChange(panoramaPhotoSession: camera.PanoramaPhotoSe
 
 ```
 
-<a id="on"></a>
 ## on('error')
 
 ```TypeScript
@@ -117,7 +114,7 @@ Subscribes to HighResolutionPhotoSession error events. This API uses an asynchro
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when a session is created. This event is triggered and the error message is returned when an error occurs during the calling of a session-related API such as [beginConfig](arkts-camera-camera-session-i.md#beginconfig-1),[commitConfig](arkts-camera-camera-session-i.md#commitconfig-1), and [addInput](arkts-camera-camera-session-i.md#addinput-1). |
+| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when a session is created. This event is triggered and the error message is returned when an error occurs during the calling of a session-related API such as [beginConfig](arkts-camera-camera-session-i.md#beginconfig),[commitConfig](arkts-camera-camera-session-i.md#commitconfig), and [addInput](arkts-camera-camera-session-i.md#addinput). |
 | callback | [ErrorCallback](../../apis-arkui/arkts-components/arkts-arkui-errorcallback-t-sys.md) | Yes | Callback used to return an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md). |
 
 **Error codes:**
@@ -141,7 +138,6 @@ function registerSessionError(panoramaPhotoSession: camera.PanoramaPhotoSession)
 
 ```
 
-<a id="on-1"></a>
 ## on('focusStateChange')
 
 ```TypeScript

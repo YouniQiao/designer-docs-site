@@ -4,7 +4,7 @@
 
 It implements a secure session, which provides operations on the flash, exposure, white balance, focus, and zoom.
 
-You can call [createSession](arkts-camera-camera-cameramanager-i.md#createsession-1) with [SceneMode](arkts-camera-camera-scenemode-e.md) set to **SECURE_PHOTO** to create a session in secure mode. The secure mode is designed for applications with high security requirements, such as facial recognition systems and banking services. It must be used together with the <!--RP1-->security TA<!--RP1End--> to support service scenarios where both standard preview streams and security streams are output.<!--RP2-->
+You can call [createSession](arkts-camera-camera-cameramanager-i.md#createsession) with [SceneMode](arkts-camera-camera-scenemode-e.md) set to **SECURE_PHOTO** to create a session in secure mode. The secure mode is designed for applications with high security requirements, such as facial recognition systems and banking services. It must be used together with the <!--RP1-->security TA<!--RP1End--> to support service scenarios where both standard preview streams and security streams are output.<!--RP2-->
 
 The security TA can verify the signature of data delivered by the server, sign images, parse and assemble TLV logic, and read, create, and operate keys. It applies to image processing.<!--RP2End-->
 
@@ -22,7 +22,6 @@ The security TA can verify the signature of data delivered by the server, sign i
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="addsecureoutput"></a>
 ## addSecureOutput
 
 ```TypeScript
@@ -53,7 +52,6 @@ Marks a [PreviewOutput](arkts-camera-camera-previewoutput-i.md) stream as secure
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed. |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config.<br>**Applicable version:** 12 - 17 |
 
-<a id="off"></a>
 ## off('error')
 
 ```TypeScript
@@ -77,7 +75,6 @@ Unsubscribes from SecureSession error events.
 | type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when a session is created. |
 | callback | [ErrorCallback](../../apis-arkui/arkts-components/arkts-arkui-errorcallback-t-sys.md) | No | Callback used to return the result. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
 
-<a id="off-1"></a>
 ## off('focusStateChange')
 
 ```TypeScript
@@ -101,7 +98,6 @@ Unsubscribes from focus state change events.
 | type | 'focusStateChange' | Yes | Event type. The value is fixed at **'focusStateChange'**. The event can be listened for when a session is created. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FocusState&gt; | No | Callback used to return the result. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
 
-<a id="on"></a>
 ## on('error')
 
 ```TypeScript
@@ -109,7 +105,6 @@ on(type: 'error', callback: ErrorCallback): void
 ```
 
 Subscribes to SecureSession error events. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
@@ -126,10 +121,9 @@ Subscribes to SecureSession error events. This API uses an asynchronous callback
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when a session is created. This event is triggered and the error message is returned when an error occurs during the calling of a session-related API such as [beginConfig](arkts-camera-camera-session-i.md#beginconfig-1),[commitConfig](arkts-camera-camera-session-i.md#commitconfig-1), and [addInput](arkts-camera-camera-session-i.md#addinput-1). |
+| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when a session is created. This event is triggered and the error message is returned when an error occurs during the calling of a session-related API such as [beginConfig](arkts-camera-camera-session-i.md#beginconfig),[commitConfig](arkts-camera-camera-session-i.md#commitconfig), and [addInput](arkts-camera-camera-session-i.md#addinput). |
 | callback | [ErrorCallback](../../apis-arkui/arkts-components/arkts-arkui-errorcallback-t-sys.md) | Yes | Callback used to return an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md). |
 
-<a id="on-1"></a>
 ## on('focusStateChange')
 
 ```TypeScript
@@ -137,7 +131,6 @@ on(type: 'focusStateChange', callback: AsyncCallback<FocusState>): void
 ```
 
 Subscribes to focus state change events. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.

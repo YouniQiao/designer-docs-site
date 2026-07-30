@@ -118,6 +118,7 @@ import { audio } from '@kit.AudioKit';
 | [AudioRendererChangeInfo](arkts-audio-audio-audiorendererchangeinfo-i-sys.md) | Describes the audio renderer change event. |
 | [AudioRendererFilter](arkts-audio-audio-audiorendererfilter-i-sys.md) | Describes audio renderer filter. |
 | [AudioRendererOptions](arkts-audio-audio-audiorendereroptions-i-sys.md) | Describes audio renderer configurations. |
+| [AudioRendererTargetParams](arkts-audio-audio-audiorenderertargetparams-i-sys.md) | Options for setting the render target of an audio renderer.This parameter takes effect only when the target is non-PLAYBACK.In other cases, this parameter does not need to be specified and does not take effect even if specified.Both uid and streamId must be specified. |
 | [AudioRoutingManager](arkts-audio-audio-audioroutingmanager-i-sys.md) | This interface implements audio routing management.  Before calling any API in AudioRoutingManager, you must use [getRoutingManager](arkts-audio-audio-audiomanager-i.md#getroutingmanager) to obtain an AudioRoutingManager instance. |
 | [AudioSpatialDeviceState](arkts-audio-audio-audiospatialdevicestate-i-sys.md) | Describes spatial device state. |
 | [AudioSpatialEnabledStateForDevice](arkts-audio-audio-audiospatialenabledstatefordevice-i-sys.md) | This interface is used to notify the listener of any device Spatialization or Head Tracking enable or Adaptive Spatial Rendering state change. |
@@ -199,6 +200,7 @@ import { audio } from '@kit.AudioKit';
 | [AudioDevcieSelectStrategy](arkts-audio-audio-audiodevcieselectstrategy-e-sys.md) | Enumerates the device select strategy. |
 | [AudioPlaybackCaptureMode](arkts-audio-audio-audioplaybackcapturemode-e-sys.md) | Defines mode for playback capture, each mode means different target streams to capture. |
 | [AudioSeparationVolumeType](arkts-audio-audio-audioseparationvolumetype-e-sys.md) | Volume type for audio separation effect. |
+| [AudioSessionBehaviorFlags](arkts-audio-audio-audiosessionbehaviorflags-e-sys.md) | Enumerates audio session behavior flags. |
 | [AudioSpatialDeviceType](arkts-audio-audio-audiospatialdevicetype-e-sys.md) | Describes a spatial device type group. |
 | [AudioSpatializationSceneType](arkts-audio-audio-audiospatializationscenetype-e-sys.md) | Describes a spatialization scene type group. |
 | [AudioVolumeType](arkts-audio-audio-audiovolumetype-e-sys.md) | Enumerates the audio volume types. |

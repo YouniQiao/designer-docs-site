@@ -18,7 +18,6 @@ The AutoFillExtensionAbility module provides APIs for automatically filling in a
 import { AutoFillExtensionAbility } from '@kit.AbilityKit';
 ```
 
-<a id="onbackground"></a>
 ## onBackground
 
 ```TypeScript
@@ -51,7 +50,6 @@ class MyAutoFillExtensionAbility extends AutoFillExtensionAbility {
 
 ```
 
-<a id="oncreate"></a>
 ## onCreate
 
 ```TypeScript
@@ -84,7 +82,6 @@ class MyAutoFillExtensionAbility extends AutoFillExtensionAbility {
 
 ```
 
-<a id="ondestroy"></a>
 ## onDestroy
 
 ```TypeScript
@@ -117,7 +114,6 @@ class MyAutoFillExtensionAbility extends AutoFillExtensionAbility {
 
 ```
 
-<a id="onfillrequest"></a>
 ## onFillRequest
 
 ```TypeScript
@@ -180,7 +176,6 @@ class MyAutoFillExtensionAbility extends AutoFillExtensionAbility {
 
 ```
 
-<a id="onforeground"></a>
 ## onForeground
 
 ```TypeScript
@@ -213,7 +208,6 @@ class MyAutoFillExtensionAbility extends AutoFillExtensionAbility {
 
 ```
 
-<a id="onsaverequest"></a>
 ## onSaveRequest
 
 ```TypeScript
@@ -274,7 +268,6 @@ class MyAutoFillExtensionAbility extends AutoFillExtensionAbility {
 
 ```
 
-<a id="onsessiondestroy"></a>
 ## onSessionDestroy
 
 ```TypeScript
@@ -313,7 +306,6 @@ class MyAutoFillExtensionAbility extends AutoFillExtensionAbility {
 
 ```
 
-<a id="onupdaterequest"></a>
 ## onUpdateRequest
 
 ```TypeScript

@@ -2,7 +2,7 @@
 
 Implements a unit for text layout.
 
-Before calling any of the following APIs, you must use [getGlyphRuns()](arkts-arkgraphics2d-text-textline-c.md#getglyphruns-1) of the [TextLine](arkts-arkgraphics2d-text-textline-c.md) class to create a **Run** object.
+Before calling any of the following APIs, you must use [getGlyphRuns()](arkts-arkgraphics2d-text-textline-c.md#getglyphruns) of the [TextLine](arkts-arkgraphics2d-text-textline-c.md) class to create a **Run** object.
 
 **Since:** 12
 
@@ -16,7 +16,6 @@ Before calling any of the following APIs, you must use [getGlyphRuns()](arkts-ar
 import { text } from '@kit.ArkGraphics2D';
 ```
 
-<a id="getadvances"></a>
 ## getAdvances
 
 ```TypeScript
@@ -55,7 +54,6 @@ let advancesNull = runs[0].getAdvances(null); // null is an invalid value, and u
 
 ```
 
-<a id="getfont"></a>
 ## getFont
 
 ```TypeScript
@@ -85,7 +83,6 @@ let font = runs[0].getFont();
 
 ```
 
-<a id="getglyphcount"></a>
 ## getGlyphCount
 
 ```TypeScript
@@ -115,7 +112,6 @@ let glyphs = runs[0].getGlyphCount();
 
 ```
 
-<a id="getglyphs"></a>
 ## getGlyphs
 
 ```TypeScript
@@ -145,7 +141,6 @@ let glyph = runs[0].getGlyphs();
 
 ```
 
-<a id="getglyphs-1"></a>
 ## getGlyphs
 
 ```TypeScript
@@ -203,7 +198,6 @@ struct Index {
 
 ```
 
-<a id="getimagebounds"></a>
 ## getImageBounds
 
 ```TypeScript
@@ -211,17 +205,16 @@ getImageBounds(): common2D.Rect
 ```
 
 Obtains the image boundaries of the typographic unit. Equivalent to visual boundaries, these boundaries are associated with the typographic font, font size, and characters. For example, for the string " a b " (which has a space before "a" and a space after "b"), only "a b" is visible to users, and therefore the image boundaries do not include these spaces at the beginning and end of the line.
-
 > **NOTE**  
 >  
 > The following figure shows the image boundaries of the string " a b ".  
 >  
-> ![image_ImageBounds.png](docroot://reference/apis-arkgraphics2d/figures/image_ImageBounds.png)  
+> ![image_ImageBounds.png](../../../reference/apis-arkgraphics2d/figures/image_ImageBounds.png)  
 >  
 > The following figure shows the image boundaries of the strings "j" and "E".  
 >  
 > !  
-> [image_ImageBounds_Character.png](docroot://reference/apis-arkgraphics2d/figures/image_ImageBounds_Character.png)
+> [image_ImageBounds_Character.png](../../../reference/apis-arkgraphics2d/figures/image_ImageBounds_Character.png)
 
 **Since:** 18
 
@@ -244,7 +237,6 @@ let bounds = runs[0].getImageBounds();
 
 ```
 
-<a id="getoffsets"></a>
 ## getOffsets
 
 ```TypeScript
@@ -274,7 +266,6 @@ let offsets = runs[0].getOffsets();
 
 ```
 
-<a id="getpositions"></a>
 ## getPositions
 
 ```TypeScript
@@ -304,7 +295,6 @@ let positions = runs[0].getPositions();
 
 ```
 
-<a id="getpositions-1"></a>
 ## getPositions
 
 ```TypeScript
@@ -362,7 +352,6 @@ struct Index {
 
 ```
 
-<a id="getstringindices"></a>
 ## getStringIndices
 
 ```TypeScript
@@ -420,7 +409,6 @@ struct Index {
 
 ```
 
-<a id="getstringrange"></a>
 ## getStringRange
 
 ```TypeScript
@@ -452,7 +440,6 @@ let length = runStringRange.end;
 
 ```
 
-<a id="gettextdirection"></a>
 ## getTextDirection
 
 ```TypeScript
@@ -482,7 +469,6 @@ let textDirection = runs[0].getTextDirection();
 
 ```
 
-<a id="gettextstyle"></a>
 ## getTextStyle
 
 ```TypeScript
@@ -507,7 +493,6 @@ Obtains the text style of this run.
 | --- | --- |
 | [TextStyle](arkts-arkgraphics2d-text-textstyle-i.md) | Text style of this run. |
 
-<a id="gettypographicbounds"></a>
 ## getTypographicBounds
 
 ```TypeScript
@@ -515,17 +500,16 @@ getTypographicBounds(): TypographicBounds
 ```
 
 Obtains the typographic boundaries of the typographic unit. These boundaries are associated with the typographic font and font size, but not with the characters. For example, for the string " a b " (which has a space before "a" and a space after "b"), the typographic boundaries include the spaces at the beginning and end of the line.
-
 > **NOTE**  
 >  
 > The following figure shows the typographic boundaries of the string " a b ".  
 >  
-> ![image_TypographicBounds.png](docroot://reference/apis-arkgraphics2d/figures/image_TypographicBounds.png)  
+> ![image_TypographicBounds.png](../../../reference/apis-arkgraphics2d/figures/image_TypographicBounds.png)  
 >  
 > The following figure shows the typographic boundaries of the strings "j" and "E".  
 >  
 > !  
-> [image_TypographicBounds_Character.png](docroot://reference/apis-arkgraphics2d/figures/image_TypographicBounds_Character.png)
+> [image_TypographicBounds_Character.png](../../../reference/apis-arkgraphics2d/figures/image_TypographicBounds_Character.png)
 
 **Since:** 18
 
@@ -548,7 +532,6 @@ let typographicBounds = runs[0].getTypographicBounds();
 
 ```
 
-<a id="paint"></a>
 ## paint
 
 ```TypeScript

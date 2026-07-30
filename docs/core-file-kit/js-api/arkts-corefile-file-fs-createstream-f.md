@@ -6,7 +6,6 @@
 import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
-<a id="createstream"></a>
 ## createStream
 
 ```TypeScript
@@ -69,7 +68,6 @@ Creates a stream based on a file path. This API uses a promise to return the res
 | 13900044 | Network is unreachable<br>**Applicable version:** 12 and later |
 
 
-<a id="createstream-1"></a>
 ## createStream
 
 ```TypeScript

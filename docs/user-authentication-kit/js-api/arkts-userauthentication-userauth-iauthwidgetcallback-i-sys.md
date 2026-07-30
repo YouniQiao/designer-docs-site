@@ -36,7 +36,7 @@ Triggered to receive commands from the user authentication framework. The user a
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| cmdData | string | Yes | Command data. It is a JSON string, containing the command content sent by the user authentication framework to the authentication widget, such as commands for switching the authentication type and returning the authentication result. The widget needs to parse the data and perform the corresponding operations. |
+| cmdData | string | Yes | Command data, which is a JSON string containing the command content sent by the user authentication framework to the authentication widget. The JSON structure includes corresponding fields based on different command types. Common fields include: **commandType** (string, command type), **authType** (array, list of authentication types), **result** (number, authentication result code), etc. The widget must parse this data and perform corresponding operations based on the command type. |
 
 **Example**
 

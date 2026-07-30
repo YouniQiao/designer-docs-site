@@ -64,7 +64,7 @@ Media asset filter, with a maximum length of 50 items. If the limit is exceeded,
 
 1. When this filter is applied, other filters become invalid.2. When setting multiple conditions, enclose the filter conditions in parentheses to prevent conflicts with internal filter items.
 
-**Type:** Array<OperationItem>
+**Type:** Array&lt;OperationItem&gt;
 
 **Since:** 22
 
@@ -84,7 +84,7 @@ autoPlayScenes?: Array<AutoPlayScene>
 
 Playback mode of the moving photo. The maximum array length is 2. If this limit is exceeded, the first two elements are used, and the extra ones are automatically ignored.
 
-**Type:** Array<AutoPlayScene>
+**Type:** Array&lt;AutoPlayScene&gt;
 
 **Since:** 23
 
@@ -118,7 +118,7 @@ If the filter string does not match the specifications, the result is empty.
 
 Only the first three array elements are used; **MIMETypes** and **mimeTypeFilter** are ignored.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 20
 
@@ -314,7 +314,7 @@ An array used to filter media files by type and size.
 
 Only the first three array elements are used; **MIMETypes** and **fileSizeFilter** are ignored.
 
-**Type:** Array<PhotoViewMimeTypeFileSizeFilter>
+**Type:** Array&lt;PhotoViewMimeTypeFileSizeFilter&gt;
 
 **Since:** 20
 
@@ -352,7 +352,7 @@ preselectedUris?: Array<string>
 
 URI of the preselected image.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 11
 

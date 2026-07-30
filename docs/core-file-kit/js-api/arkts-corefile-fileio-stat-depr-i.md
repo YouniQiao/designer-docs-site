@@ -1,18 +1,17 @@
 # Stat
 
-Provides detailed file information. Before calling a method of the **Stat** class, use the [stat()](arkts-corefile-fileio-stat-f.md#stat-1)method synchronously or asynchronously to create a **Stat** instance.
+Provides detailed file information. Before calling a method of the **Stat** class, use the [stat()](arkts-corefile-fileio-stat-f.md#stat)method synchronously or asynchronously to create a **Stat** instance.
 
 **Since:** 6
 
 **Deprecated since:** 9
 
-**Substitutes:** [fs:Stat](arkts-corefile-file-fs-stat-i.md)
+**Substitutes:** [fs:Stat](arkts-corefile-fileio-stat-depr-i.md)
 
 <!--Device-unnamed-declare interface Stat--><!--Device-unnamed-declare interface Stat-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
-<a id="isblockdevice"></a>
 ## isBlockDevice
 
 ```TypeScript
@@ -25,7 +24,7 @@ Checks whether this file is a block special file. A block special file supports 
 
 **Deprecated since:** 9
 
-**Substitutes:** [isBlockDevice](arkts-corefile-file-fs-stat-i.md#isblockdevice-1)
+**Substitutes:** [isBlockDevice](arkts-corefile-fileio-stat-depr-i.md#isblockdevice)
 
 <!--Device-Stat-isBlockDevice(): boolean--><!--Device-Stat-isBlockDevice(): boolean-End-->
 
@@ -45,7 +44,6 @@ let isBLockDevice = fileio.statSync(filePath).isBlockDevice();
 
 ```
 
-<a id="ischaracterdevice"></a>
 ## isCharacterDevice
 
 ```TypeScript
@@ -58,7 +56,7 @@ Checks whether this file is a character special file. A character special file s
 
 **Deprecated since:** 9
 
-**Substitutes:** [isCharacterDevice](arkts-corefile-file-fs-stat-i.md#ischaracterdevice-1)
+**Substitutes:** [isCharacterDevice](arkts-corefile-fileio-stat-depr-i.md#ischaracterdevice)
 
 <!--Device-Stat-isCharacterDevice(): boolean--><!--Device-Stat-isCharacterDevice(): boolean-End-->
 
@@ -78,7 +76,6 @@ let isCharacterDevice = fileio.statSync(filePath).isCharacterDevice();
 
 ```
 
-<a id="isdirectory"></a>
 ## isDirectory
 
 ```TypeScript
@@ -91,7 +88,7 @@ Checks whether this file is a directory.
 
 **Deprecated since:** 9
 
-**Substitutes:** [isDirectory](arkts-corefile-file-fs-stat-i.md#isdirectory-1)
+**Substitutes:** [isDirectory](arkts-corefile-fileio-stat-depr-i.md#isdirectory)
 
 <!--Device-Stat-isDirectory(): boolean--><!--Device-Stat-isDirectory(): boolean-End-->
 
@@ -111,7 +108,6 @@ let isDirectory = fileio.statSync(dirPath).isDirectory();
 
 ```
 
-<a id="isfifo"></a>
 ## isFIFO
 
 ```TypeScript
@@ -124,7 +120,7 @@ Checks whether this file is a named pipe (or FIFO). Named pipes are used for int
 
 **Deprecated since:** 9
 
-**Substitutes:** [isFIFO](arkts-corefile-file-fs-stat-i.md#isfifo-1)
+**Substitutes:** [isFIFO](arkts-corefile-fileio-stat-depr-i.md#isfifo)
 
 <!--Device-Stat-isFIFO(): boolean--><!--Device-Stat-isFIFO(): boolean-End-->
 
@@ -144,7 +140,6 @@ let isFIFO = fileio.statSync(filePath).isFIFO();
 
 ```
 
-<a id="isfile"></a>
 ## isFile
 
 ```TypeScript
@@ -157,7 +152,7 @@ Checks whether this file is a regular file.
 
 **Deprecated since:** 9
 
-**Substitutes:** [isFile](arkts-corefile-file-fs-stat-i.md#isfile-1)
+**Substitutes:** [isFile](arkts-corefile-fileio-stat-depr-i.md#isfile)
 
 <!--Device-Stat-isFile(): boolean--><!--Device-Stat-isFile(): boolean-End-->
 
@@ -177,7 +172,6 @@ let isFile = fileio.statSync(filePath).isFile();
 
 ```
 
-<a id="issocket"></a>
 ## isSocket
 
 ```TypeScript
@@ -190,7 +184,7 @@ Checks whether this file is a socket.
 
 **Deprecated since:** 9
 
-**Substitutes:** [isSocket](arkts-corefile-file-fs-stat-i.md#issocket-1)
+**Substitutes:** [isSocket](arkts-corefile-fileio-stat-depr-i.md#issocket)
 
 <!--Device-Stat-isSocket(): boolean--><!--Device-Stat-isSocket(): boolean-End-->
 
@@ -210,7 +204,6 @@ let isSocket = fileio.statSync(filePath).isSocket();
 
 ```
 
-<a id="issymboliclink"></a>
 ## isSymbolicLink
 
 ```TypeScript
@@ -223,7 +216,7 @@ Checks whether this file is a symbolic link.
 
 **Deprecated since:** 9
 
-**Substitutes:** [isSymbolicLink](arkts-corefile-file-fs-stat-i.md#issymboliclink-1)
+**Substitutes:** [isSymbolicLink](arkts-corefile-fileio-stat-depr-i.md#issymboliclink)
 
 <!--Device-Stat-isSymbolicLink(): boolean--><!--Device-Stat-isSymbolicLink(): boolean-End-->
 
@@ -257,7 +250,7 @@ Time when the file was last accessed. The value is the number of seconds elapsed
 
 **Deprecated since:** 9
 
-**Substitutes:** [atime](arkts-corefile-file-fs-stat-i.md#atime)
+**Substitutes:** [atime](arkts-corefile-fileio-stat-depr-i.md#atime)
 
 <!--Device-Stat-readonly atime: number--><!--Device-Stat-readonly atime: number-End-->
 
@@ -295,7 +288,7 @@ Time of the last status change of the file. The value is the number of seconds e
 
 **Deprecated since:** 9
 
-**Substitutes:** [ctime](arkts-corefile-file-fs-stat-i.md#ctime)
+**Substitutes:** [ctime](arkts-corefile-fileio-stat-depr-i.md#ctime)
 
 <!--Device-Stat-readonly ctime: number--><!--Device-Stat-readonly ctime: number-End-->
 
@@ -333,7 +326,7 @@ ID of the user group of the file.
 
 **Deprecated since:** 9
 
-**Substitutes:** [gid](arkts-corefile-file-fs-stat-i.md#gid)
+**Substitutes:** [gid](arkts-corefile-fileio-stat-depr-i.md#gid)
 
 <!--Device-Stat-readonly gid: number--><!--Device-Stat-readonly gid: number-End-->
 
@@ -393,7 +386,7 @@ File type and permissions. The first four bits indicate the file type, and the l
 
 **Deprecated since:** 9
 
-**Substitutes:** [mode](arkts-corefile-file-fs-stat-i.md#mode)
+**Substitutes:** [mode](arkts-corefile-fileio-stat-depr-i.md#mode)
 
 <!--Device-Stat-readonly mode: number--><!--Device-Stat-readonly mode: number-End-->
 
@@ -413,7 +406,7 @@ Time when the file content was last modified. The value is the number of seconds
 
 **Deprecated since:** 9
 
-**Substitutes:** [mtime](arkts-corefile-file-fs-stat-i.md#mtime)
+**Substitutes:** [mtime](arkts-corefile-fileio-stat-depr-i.md#mtime)
 
 <!--Device-Stat-readonly mtime: number--><!--Device-Stat-readonly mtime: number-End-->
 
@@ -469,7 +462,7 @@ File size, in bytes. This parameter is valid only for regular files.
 
 **Deprecated since:** 9
 
-**Substitutes:** [size](arkts-corefile-file-fs-stat-i.md#size)
+**Substitutes:** [size](arkts-corefile-fileio-stat-depr-i.md#size)
 
 <!--Device-Stat-readonly size: number--><!--Device-Stat-readonly size: number-End-->
 
@@ -489,7 +482,7 @@ ID of the file owner.
 
 **Deprecated since:** 9
 
-**Substitutes:** [uid](arkts-corefile-file-fs-stat-i.md#uid)
+**Substitutes:** [uid](arkts-corefile-fileio-stat-depr-i.md#uid)
 
 <!--Device-Stat-readonly uid: number--><!--Device-Stat-readonly uid: number-End-->
 

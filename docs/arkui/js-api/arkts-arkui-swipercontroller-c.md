@@ -8,7 +8,6 @@ Implements the controller for the **Swiper** component. Bind this object to a **
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="changeindex"></a>
 ## changeIndex
 
 ```TypeScript
@@ -36,7 +35,6 @@ Goes to a specified page.
 | index | number | Yes | Index of the target page in the **Swiper** component.<br>**NOTE**<br>If the value specified is less than 0 or greater than the maximum page index, the value **0** is used. |
 | useAnimation | boolean | No | Whether to use an animation for when the target page is reached. The value **true** means to use an animation, and **false** means the opposite.<br>Default value: **false** |
 
-<a id="changeindex-1"></a>
 ## changeIndex
 
 ```TypeScript
@@ -44,7 +42,6 @@ changeIndex(index: number, animationMode?: SwiperAnimationMode | boolean)
 ```
 
 Moves to a specific page.
-
 > **NOTE**  
 >  
 > This API itself supports jumping without animation (set **animationMode** to **false** or  
@@ -70,7 +67,6 @@ Moves to a specific page.
 | index | number | Yes | Index of the target page in the **Swiper** component.<br>**NOTE**<br>If the value specified is less than 0 or greater than the maximum page index, the value **0** is used. |
 | animationMode | [SwiperAnimationMode](arkts-arkui-swiperanimationmode-e.md) \| boolean | No | Animation mode for moving to the specified page.<br>Default value: **SwiperAnimationMode.NO_ANIMATION**<br> **NOTE**<br>The value **true** is equivalent to **SwiperAnimationMode.DEFAULT_ANIMATION**, which means to use the default animation. The value **false** is equivalent to **SwiperAnimationMode.NO_ANIMATION**, which means to use no animation. |
 
-<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -89,7 +85,6 @@ A constructor used to create a **SwiperController** object.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="fakedragby"></a>
 ## fakeDragBy
 
 ```TypeScript
@@ -97,7 +92,6 @@ fakeDragBy(offset: number): boolean
 ```
 
 Sets the drag distance of drag simulation.
-
 > **NOTE**  
 >  
 > - The drag distance of drag simulation depends on the layout. You are advised to call this API before the layout,  
@@ -139,7 +133,6 @@ Sets the drag distance of drag simulation.
 | --- | --- |
 | boolean | Whether to consume the passed drag distance.<br>**true** means to consume any passed drag distance; **false** means not to consume the passed drag distance because it is not in the drag simulation or has been dragged to the boundary.<br>If the drag distance is set to **0**, it cannot be consumed. |
 
-<a id="finishanimation"></a>
 ## finishAnimation
 
 ```TypeScript
@@ -164,7 +157,6 @@ Stops an animation.
 | --- | --- | --- | --- |
 | callback | [VoidCallback](../arkts-apis/arkts-arkui-voidcallback-t.md) | No | Callback invoked when the animation stops.<br>**Since:** 18 |
 
-<a id="isfakedragging"></a>
 ## isFakeDragging
 
 ```TypeScript
@@ -191,7 +183,6 @@ Obtains whether drag simulation is enabled.
 | --- | --- |
 | boolean | Whether the drag simulation is enabled.<br>**true** indicates that drag simulation is enabled; **false** indicates the opposite. |
 
-<a id="preloaditems"></a>
 ## preloadItems
 
 ```TypeScript
@@ -202,12 +193,11 @@ Preloads child nodes for **Swiper**. After this API is called, all specified chi
 
 If the **SwiperController** object is not bound to any **Swiper** component, any attempt to call APIs on it will result in a JavaScript exception, together with the error code 100004. Therefore, you are advised to use **try-catch** to handle potential exceptions when calling APIs on **SwiperController**.
 
-When combining with [LazyForEach](docroot://ui/rendering-control/arkts-rendering-control-lazyforeach.md) and custom components, be aware that [LazyForEach](docroot://ui/rendering-control/arkts-rendering-control-lazyforeach.md) only retains custom components within the cache range. Components outside this range are removed. Therefore, make sure the indexes of nodes to be preloaded via this API are within the cache range to avoid issues.
-
+When combining with [LazyForEach](../../../ui/rendering-control/arkts-rendering-control-lazyforeach.md) and custom components, be aware that [LazyForEach](../../../ui/rendering-control/arkts-rendering-control-lazyforeach.md) only retains custom components within the cache range. Components outside this range are removed. Therefore, make sure the indexes of nodes to be preloaded via this API are within the cache range to avoid issues.
 > **NOTE**  
 >  
 > **preloadItems** of **Swiper** needs to be called after **Swiper** is created. You are advised to control the  
-> first preloading in the [onAppear](arkts-arkui-commonmethod-c.md#onappear-1) lifecycle of **Swiper**.
+> first preloading in the [onAppear](arkts-arkui-commonmethod-c.md#onappear) lifecycle of **Swiper**.
 
 **Since:** 18
 
@@ -240,7 +230,6 @@ When combining with [LazyForEach](docroot://ui/rendering-control/arkts-rendering
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter invalid. Possible causes:<br> 1. The parameter type is not Array<number>.<br> 2. The parameter is an empty array.<br> 3. The parameter contains an invalid index. |
 | [100004](../errorcode-router.md#100004-incorrect-route-name) | Controller not bound to component. |
 
-<a id="shownext"></a>
 ## showNext
 
 ```TypeScript
@@ -259,7 +248,6 @@ Turns to the next page. The page turning includes a transition animation, with t
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="showprevious"></a>
 ## showPrevious
 
 ```TypeScript
@@ -278,7 +266,6 @@ Turns to the previous page. The page turning includes a transition animation, wi
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="startfakedrag"></a>
 ## startFakeDrag
 
 ```TypeScript
@@ -286,7 +273,6 @@ startFakeDrag(): boolean
 ```
 
 Enables drag simulation.
-
 > **NOTE**  
 >  
 > - If the **Swiper** component is dragged using real gestures or the drag simulation is enabled, the API returns  
@@ -312,7 +298,6 @@ Enables drag simulation.
 | --- | --- |
 | boolean | Whether to enable drag simulation.<br>**true** if enabled; **false** the opposite |
 
-<a id="stopfakedrag"></a>
 ## stopFakeDrag
 
 ```TypeScript
@@ -320,7 +305,6 @@ stopFakeDrag(): boolean
 ```
 
 Disables drag simulation.
-
 > **NOTE**  
 >  
 > After drag simulation is enabled, it will end if a real drag gesture is received.

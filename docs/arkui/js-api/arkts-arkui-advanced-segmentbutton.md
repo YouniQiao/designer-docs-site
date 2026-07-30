@@ -28,7 +28,7 @@ import { CommonSegmentButtonOptions, SegmentButtonItemOptionsConstructorOptions,
 
 | Name | Description |
 | --- | --- |
-| [SegmentButton](arkts-arkui-arkui-advanced-segmentbutton-segmentbutton-s.md) | **SegmentButton** is a versatile component that organizes related options into visually grouped buttons. It supports three variants: tab-style, capsule-style single-select, and capsule-style multi-select.  >@Prop are optional. They are required during construction only when used together with the @Require decorator. |
+| [SegmentButton](arkts-arkui-arkui-advanced-segmentbutton-segmentbutton-s.md) | **SegmentButton** is a versatile component that organizes related options into visually grouped buttons. It supports three variants: tab-style, capsule-style single-select, and capsule-style multi-select. >@Prop are optional. They are required during construction only when used together with the @Require decorator. |
 
 ### Interfaces
 

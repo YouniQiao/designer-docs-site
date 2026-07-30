@@ -6,7 +6,6 @@
 import { securityManager } from '@kit.MDMKit';
 ```
 
-<a id="installenterpriseresignaturecertificate"></a>
 ## installEnterpriseReSignatureCertificate
 
 ```TypeScript
@@ -15,7 +14,7 @@ function installEnterpriseReSignatureCertificate(admin: Want, certificateAlias: 
 
 Installs the enterprise re-signing certificate.
 
-A maximum of 10 distinct certificates can be deployed per user. The certificate alias serves as a unique identifier for each certificate and cannot be duplicated during deployment. To update a certificate with an existing alias,you must first uninstall the old certificate by calling [uninstallEnterpriseReSignatureCertificate](arkts-mdm-securitymanager-uninstallenterpriseresignaturecertificate-f.md#uninstallenterpriseresignaturecertificate-1).
+A maximum of 10 distinct certificates can be deployed per user. The certificate alias serves as a unique identifier for each certificate and cannot be duplicated during deployment. To update a certificate with an existing alias,you must first uninstall the old certificate by calling [uninstallEnterpriseReSignatureCertificate](arkts-mdm-securitymanager-uninstallenterpriseresignaturecertificate-f.md#uninstallenterpriseresignaturecertificate).
 
 The installed certificates are retained on the device and will not be removed when the MDM app is uninstalled or the admin privilege is deactivated.
 
@@ -45,8 +44,8 @@ Specifications:
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
 | certificateAlias | string | Yes | Certificate alias, which must end with **.cer**. |
-| fd | number | Yes | Descriptor of an existing re-signing certificate file. The certificate file must be stored in the [app sandbox directory](docroot://file-management/app-sandbox-directory.md). |
-| accountId | number | Yes | Account ID, which must be greater than or equal to 0. You can call [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-1) of **@ohos.account.osAccount** to obtain the account ID. |
+| fd | number | Yes | Descriptor of an existing re-signing certificate file. The certificate file must be stored in the [app sandbox directory](../../../file-management/app-sandbox-directory.md). |
+| accountId | number | Yes | Account ID, which must be greater than or equal to 0. You can call [getOsAccountLocalId](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid) of **@ohos.account.osAccount** to obtain the account ID. |
 
 **Error codes:**
 

@@ -14,7 +14,6 @@ Provides the API to obtain the equivalent focal length information list in the c
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="getzoompointinfos"></a>
 ## getZoomPointInfos
 
 ```TypeScript
@@ -46,7 +45,6 @@ Obtains the equivalent focal length information list in the current mode.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application.<br>**Applicable version:** 12 - 24 |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config, only throw in session usage. |
 
-<a id="iszoomcenterpointsupported"></a>
 ## isZoomCenterPointSupported
 
 ```TypeScript

@@ -6,7 +6,6 @@
 import { deviceSettings } from '@kit.MDMKit';
 ```
 
-<a id="setunlockwallpaper"></a>
 ## setUnlockWallpaper
 
 ```TypeScript
@@ -30,7 +29,7 @@ Sets the lock screen wallpaper. This API uses a promise to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| fd | number | Yes | File descriptor of the image to be set as the lock screen wallpaper. The file descriptor of an image in the application's sandbox directory can be obtained via the file.fs.[openSync](docroot://reference/apis-core-file-kit/js-apis-file-fs.md#fileioopensync) API. The size of the wallpaper image must not exceed 100 MB. |
+| fd | number | Yes | File descriptor of the image to be set as the lock screen wallpaper. The file descriptor of an image in the application's sandbox directory can be obtained via the file.fs.[openSync](../../../reference/apis-core-file-kit/js-apis-file-fs.md#fileioopensync) API. The size of the wallpaper image must not exceed 100 MB. |
 
 **Return value:**
 

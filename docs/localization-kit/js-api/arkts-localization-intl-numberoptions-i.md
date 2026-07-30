@@ -26,7 +26,7 @@ The default value is **short**.
 
 This API can be used in atomic services since API version 12.
 
-For details about their display effects, see [Table 18](docroot://reference/apis-localization-kit/js-apis-intl.md#appendix).
+For details about their display effects, see [Table 18](../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** string
 
@@ -72,7 +72,7 @@ The default value is **symbol**.
 
 This API can be used in atomic services since API version 12.
 
-For details about their display effects, see [Table 20](docroot://reference/apis-localization-kit/js-apis-intl.md#appendix).
+For details about their display effects, see [Table 20](../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** string
 
@@ -96,7 +96,7 @@ The default value is **standard**.
 
 This API can be used in atomic services since API version 12.
 
-For details about their display effects, see [Table 19](docroot://reference/apis-localization-kit/js-apis-intl.md#appendix).
+For details about their display effects, see [Table 19](../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** string
 
@@ -164,7 +164,7 @@ The default value is **3**.
 
 This API can be used in atomic services since API version 12.
 
-For details about their display effects, see [Table 13](docroot://reference/apis-localization-kit/js-apis-intl.md#appendix).
+For details about their display effects, see [Table 13](../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** number
 
@@ -188,7 +188,7 @@ The default value is **21**.
 
 This API can be used in atomic services since API version 12.
 
-For details about their display effects, see [Table 15](docroot://reference/apis-localization-kit/js-apis-intl.md#appendix).
+For details about their display effects, see [Table 15](../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** number
 
@@ -212,7 +212,7 @@ The default value is **0**.
 
 This API can be used in atomic services since API version 12.
 
-For details about their display effects, see [Table 12](docroot://reference/apis-localization-kit/js-apis-intl.md#appendix).
+For details about their display effects, see [Table 12](../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** number
 
@@ -236,7 +236,7 @@ The default value is **1**.
 
 This API can be used in atomic services since API version 12.
 
-For details about their display effects, see [Table 11](docroot://reference/apis-localization-kit/js-apis-intl.md#appendix).
+For details about their display effects, see [Table 11](../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** number
 
@@ -260,7 +260,7 @@ The default value is **1**.
 
 This API can be used in atomic services since API version 12.
 
-For details about their display effects, see [Table 14](docroot://reference/apis-localization-kit/js-apis-intl.md#appendix).
+For details about their display effects, see [Table 14](../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** number
 
@@ -284,7 +284,7 @@ The default value is **standard**.
 
 This API can be used in atomic services since API version 12.
 
-For details about their display effects, see [Table 17](docroot://reference/apis-localization-kit/js-apis-intl.md#appendix).
+For details about their display effects, see [Table 17](../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** string
 
@@ -479,7 +479,7 @@ The default value is **short**.
 
 This API can be used in atomic services since API version 12.
 
-For details about their display effects, see [Table 21](docroot://reference/apis-localization-kit/js-apis-intl.md#appendix).
+For details about their display effects, see [Table 21](../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** string
 
@@ -504,7 +504,7 @@ The default value is **default**.
 
 This API can be used in atomic services since API version 12.
 
-For details about their display effects, see [Table 22](docroot://reference/apis-localization-kit/js-apis-intl.md#appendix).
+For details about their display effects, see [Table 22](../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** string
 
@@ -528,7 +528,7 @@ The default value is **true**.
 
 This API can be used in atomic services since API version 12.
 
-For details about their display effects, see [Table 16](docroot://reference/apis-localization-kit/js-apis-intl.md#appendix).
+For details about their display effects, see [Table 16](../../../reference/apis-localization-kit/js-apis-intl.md#appendix).
 
 **Type:** boolean
 

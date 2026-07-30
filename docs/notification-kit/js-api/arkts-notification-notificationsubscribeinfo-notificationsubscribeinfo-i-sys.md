@@ -3,6 +3,9 @@
 The **NotificationSubscribeInfo** module provides APIs for defining the information about the publisher for notification subscription.
 > **NOTE**  
 >  
+> The initial APIs of this module are supported since API version 7. Newly added APIs will be marked with a  
+> superscript to indicate their earliest API version.  
+>  
 > The APIs provided by this module are system APIs.
 
 **Since:** 7
@@ -37,7 +40,7 @@ Bundle names of the applications whose notifications to subscribe to. If this pa
 deviceType?: string
 ```
 
-Device type. If this parameter is not specified, the subscription defaults to notifications from the current device. The value is obtained based on device information.
+Device type. If this parameter is not specified, the subscription defaults to notifications from the current device. The value is obtained based on [device information](../../apis-basic-service-kit/arkts-apis/arkts-deviceinfo.md).
 
 **Type:** string
 
@@ -181,7 +184,7 @@ User ID. If this parameter is not specified, the subscription defaults to notifi
 voiceContentOptions?: VoiceContentOptions
 ```
 
-Voice broadcast options of the notification.
+Configuration options for notification voice broadcast.
 
 **Type:** VoiceContentOptions
 

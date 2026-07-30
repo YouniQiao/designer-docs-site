@@ -6,7 +6,6 @@
 import { LevelMode, ImmersiveMode, LevelOrder } from '@kit.ArkUI';
 ```
 
-<a id="showdialog"></a>
 ## showDialog
 
 ```TypeScript
@@ -14,7 +13,6 @@ function showDialog(options: ShowDialogOptions, callback: AsyncCallback<ShowDial
 ```
 
 Creates and displays a dialog box. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > - This API is supported since API version 9 and deprecated since API version 18.You are advised to use [showDialog](arkts-apis-uicontext-promptaction.md#showdialog) instead.Before calling this API, you need to obtain the [PromptAction](arkts-apis-uicontext-promptaction.md) object using the [getPromptAction](arkts-apis-uicontext-uicontext.md#getpromptaction) method in [UIContext](arkts-apis-uicontext-uicontext.md). Directly using **showDialog** can lead to the issue of [ambiguous UI context](../../ui/arkts-global-interface.md#ambiguous-ui-context).  
@@ -314,7 +312,6 @@ struct DialogExample {
 ```
 
 
-<a id="showdialog-1"></a>
 ## showDialog
 
 ```TypeScript
@@ -322,7 +319,6 @@ function showDialog(options: ShowDialogOptions): Promise<ShowDialogSuccessRespon
 ```
 
 Creates and displays a dialog box in the given settings. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > - This API is supported since API version 9 and deprecated since API version 18.You are advised to use [showDialog](arkts-apis-uicontext-promptaction.md#showdialog-1) instead.Before calling this API, you need to obtain the [PromptAction](arkts-apis-uicontext-promptaction.md) object using the [getPromptAction](arkts-apis-uicontext-uicontext.md#getpromptaction) method in [UIContext](arkts-apis-uicontext-uicontext.md).Directly using **showDialog** can lead to the issue of [ambiguous UI context](../../ui/arkts-global-interface.md#ambiguous-ui-context).  

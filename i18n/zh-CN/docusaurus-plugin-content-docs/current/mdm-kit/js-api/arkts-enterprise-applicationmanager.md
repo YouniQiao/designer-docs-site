@@ -8,11 +8,13 @@
 > 本模块接口仅对设备管理应用开放，且调用接口前需激活设备管理应用，具体请参考[MDM Kit开发指南](../../../mdm/mdm-kit-guide.md)。  
 > [applicationManager.isAppKioskAllowed](arkts-mdm-applicationmanager-isappkioskallowed-f.md#isappkioskallowed)除外，该接口对所有应用开放。
 
-**起始版本：** 10
+**起始版本：** 12
 
 <!--Device-unnamed-declare namespace applicationManager--><!--Device-unnamed-declare namespace applicationManager-End-->
 
 **系统能力：** SystemCapability.Customization.EnterpriseDeviceManager
+
+**系统接口：** 此接口为系统接口。
 
 ## 导入模块
 
@@ -41,22 +43,30 @@ import { applicationManager } from '@kit.MDMKit';
 | [clearUpApplicationData](arkts-mdm-applicationmanager-clearupapplicationdata-f.md#clearupapplicationdata) | 清除应用产生的所有数据。 |
 | [getAllowedDistributeAbilityConnBundles](arkts-mdm-applicationmanager-getalloweddistributeabilityconnbundles-f.md#getalloweddistributeabilityconnbundles) | 获取指定用户下允许使用指定类型的分布式能力的应用名单。 |
 | [getAllowedKioskApps](arkts-mdm-applicationmanager-getallowedkioskapps-f.md#getallowedkioskapps) | 获取允许在Kiosk模式下运行的应用。 |
+| [getAllowedKioskApps](arkts-mdm-applicationmanager-getallowedkioskapps-f.md#getallowedkioskapps-1) | 获取允许在Kiosk模式下运行的应用。 |
 | [getAllowedNotificationBundles](arkts-mdm-applicationmanager-getallowednotificationbundles-f.md#getallowednotificationbundles) | 获取允许发送通知的应用名单。 |
 | [getAllowedRunningBundles](arkts-mdm-applicationmanager-getallowedrunningbundles-f.md#getallowedrunningbundles) | 获取指定用户下的应用运行允许名单。 |
+| [getAllowedRunningBundles](arkts-mdm-applicationmanager-getallowedrunningbundles-f.md#getallowedrunningbundles-1) | 获取指定用户下的应用运行允许名单。 |
 | [getApplicationWindowStates](arkts-mdm-applicationmanager-getapplicationwindowstates-f.md#getapplicationwindowstates) | 查询应用窗口状态 |
-| [getAutoStartApps](arkts-mdm-applicationmanager-getautostartapps-f.md#getautostartapps) | 查询当前用户开机自启动应用名单。 |
-| [getAutoStartApps](arkts-mdm-applicationmanager-getautostartapps-f.md#getautostartapps-1) | 查询指定用户下的开机自启动应用名单。 |
+| [getAutoStartApps](arkts-mdm-applicationmanager-getautostartapps-f.md#getautostartapps) | 查询指定用户下的开机自启动应用名单。 |
+| [getAutoStartApps](arkts-mdm-applicationmanager-getautostartapps-f.md#getautostartapps-1) | 查询当前用户开机自启动应用名单。 |
+| [getAutoStartApps](arkts-mdm-applicationmanager-getautostartapps-f.md#getautostartapps-2) | 查询当前用户开机自启动应用名单。 |
+| [getAutoStartApps](arkts-mdm-applicationmanager-getautostartapps-f.md#getautostartapps-3) | 查询当前用户开机自启动应用名单。 |
 | [getDisallowedRunningBundlesSync](arkts-mdm-applicationmanager-getdisallowedrunningbundlessync-f.md#getdisallowedrunningbundlessync) | 获取当前/指定用户下的应用运行禁止名单。 |
+| [getDisallowedRunningBundlesSync](arkts-mdm-applicationmanager-getdisallowedrunningbundlessync-f.md#getdisallowedrunningbundlessync-1) | 获取当前/指定用户下的应用运行禁止名单。 |
 | [getDockApps](arkts-mdm-applicationmanager-getdockapps-f.md#getdockapps) | 获取当前快捷栏中应用信息的列表。 |
 | [getFreezeExemptedApps](arkts-mdm-applicationmanager-getfreezeexemptedapps-f.md#getfreezeexemptedapps) | 获取当前设备下所有用户后台防冻结应用名单。 |
+| [getFreezeExemptedApps](arkts-mdm-applicationmanager-getfreezeexemptedapps-f.md#getfreezeexemptedapps-1) | 获取当前设备下所有用户后台防冻结应用名单。 |
 | [getHideLauncherIcon](arkts-mdm-applicationmanager-gethidelaunchericon-f.md#gethidelaunchericon) | 查询当前用户下隐藏桌面应用图标名单。 |
 | [getKeepAliveApps](arkts-mdm-applicationmanager-getkeepaliveapps-f.md#getkeepaliveapps) | 获取保活应用包名。 |
+| [getKeepAliveApps](arkts-mdm-applicationmanager-getkeepaliveapps-f.md#getkeepaliveapps-1) | 获取保活应用包名。 |
 | [getUserNonStopApps](arkts-mdm-applicationmanager-getusernonstopapps-f.md#getusernonstopapps) | 获取当前设备下所有用户不可关停应用名单。 |
+| [getUserNonStopApps](arkts-mdm-applicationmanager-getusernonstopapps-f.md#getusernonstopapps-1) | 获取当前设备下所有用户不可关停应用名单。 |
 | [isAbilityDisabled](arkts-mdm-applicationmanager-isabilitydisabled-f.md#isabilitydisabled) | 获取指定应用（系统应用和三方应用均支持）的Ability组件是否被禁用。 |
+| [isAbilityDisabled](arkts-mdm-applicationmanager-isabilitydisabled-f.md#isabilitydisabled-1) | 获取指定应用（系统应用和三方应用均支持）的Ability组件是否被禁用。 |
 | [isAppKioskAllowed](arkts-mdm-applicationmanager-isappkioskallowed-f.md#isappkioskallowed) | 查询某应用是否允许在Kiosk模式下运行。 |
 | [isModifyAutoStartAppsDisallowed](arkts-mdm-applicationmanager-ismodifyautostartappsdisallowed-f.md#ismodifyautostartappsdisallowed) | 查询指定用户是否禁止取消应用自启动。 |
 | [isModifyKeepAliveAppsDisallowed](arkts-mdm-applicationmanager-ismodifykeepaliveappsdisallowed-f.md#ismodifykeepaliveappsdisallowed) | 查询应用是否禁止取消保活。 |
-| [publishFormToDesktop](arkts-mdm-applicationmanager-publishformtodesktop-f.md#publishformtodesktop) | 卡片加桌 |
 | [queryBundleStatsInfos](arkts-mdm-applicationmanager-querybundlestatsinfos-f.md#querybundlestatsinfos) | 查询指定用户账户在给定时间段内，各应用在前台运行的累计时长统计信息。查询的最小粒度是天，调用时需要传入起始时间（startTime）、结束时间（endTime）以及目标用户账户ID（accountId）。请求参数startTime和endTime为毫秒级时间戳，支持调用方传入自定义值，startTime默认取当天的00:00:00.000，endTime默认取当天的24:00:00.000（即次日零点）。请求参数接口返回BundleStatsInfo数组，每个元素包含一个应用的包名，其分身索引值及其对应时间段内的前台使用时长（毫秒级时间戳）。若startTime为0，则表示从设备首次开机的时间开始查询。若起始时间晚于结束时间，接口将返回错误码9200012。 |
 | [queryTrafficStats](arkts-mdm-applicationmanager-querytrafficstats-f.md#querytrafficstats) | 查询当前用户下指定应用在特定时间段内使用流量情况。使用Promise异步回调。 |
 | [removeAllowedDistributeAbilityConnBundles](arkts-mdm-applicationmanager-removealloweddistributeabilityconnbundles-f.md#removealloweddistributeabilityconnbundles) | 为指定用户移除允许使用分布式能力的应用名单。移除后，若名单中还有剩余的应用，则仅名单中的应用在指定用户下可以使用指定类型的分布式能力；若名单中已被清空，无剩余的应用，则所有应用在指定用户下都不允许使用指定类型的分布式能力。 |

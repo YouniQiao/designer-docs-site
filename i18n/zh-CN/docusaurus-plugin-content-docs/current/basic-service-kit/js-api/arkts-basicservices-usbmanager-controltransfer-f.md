@@ -47,6 +47,7 @@ function controlTransfer(pipe: USBDevicePipe, controlparam: USBControlParams, ti
 **示例：**
 
 ```TypeScript
+import {BusinessError} from '@kit.BasicServicesKit';
 let param: usbManager.USBControlParams = {
   request: 0x06,
   reqType: 0x80,

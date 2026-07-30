@@ -40,7 +40,7 @@ uris?: Array<string>
 
 The uri data of the asset that displays the badge.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 21
 

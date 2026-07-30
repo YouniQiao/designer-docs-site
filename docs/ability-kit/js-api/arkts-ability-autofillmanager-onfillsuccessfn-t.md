@@ -20,5 +20,5 @@ Called when auto fill request is successfully handled.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| viewData | ViewData | Yes | Indicates the ui context where the filling operation will be performed. |
+| viewData | [ViewData](arkts-ability-autofillmanager-viewdata-t-sys.md) | Yes | Indicates the ui context where the filling operation will be performed.  |
 

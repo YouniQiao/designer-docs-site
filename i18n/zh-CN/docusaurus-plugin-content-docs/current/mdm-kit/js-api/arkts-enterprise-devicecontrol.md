@@ -7,11 +7,13 @@
 >  
 > 本模块接口仅对设备管理应用开放，且调用接口前需激活设备管理应用，具体请参考[MDM Kit开发指南](../../../mdm/mdm-kit-guide.md)。
 
-**起始版本：** 10
+**起始版本：** 12
 
 <!--Device-unnamed-declare namespace deviceControl--><!--Device-unnamed-declare namespace deviceControl-End-->
 
 **系统能力：** SystemCapability.Customization.EnterpriseDeviceManager
+
+**系统接口：** 此接口为系统接口。
 
 ## 导入模块
 
@@ -26,6 +28,7 @@ import { deviceControl } from '@kit.MDMKit';
 | 名称 | 说明 |
 | --- | --- |
 | [operateDevice](arkts-mdm-devicecontrol-operatedevice-f.md#operatedevice) | 允许管理员操作设备。 |
+| [operateDevice](arkts-mdm-devicecontrol-operatedevice-f.md#operatedevice-1) | 允许管理员操作设备。 |
 
 <!--Del-->
 ### 函数（系统接口）
@@ -38,4 +41,10 @@ import { deviceControl } from '@kit.MDMKit';
 | [resetFactory](arkts-mdm-devicecontrol-resetfactory-f-sys.md#resetfactory-1) | 使设备恢复出厂设置。使用Promise异步回调。 |
 | [shutdown](arkts-mdm-devicecontrol-shutdown-f-sys.md#shutdown) | 使设备关机。 |
 <!--DelEnd-->
+
+### 枚举
+
+| 名称 | 说明 |
+| --- | --- |
+| [Operation](arkts-mdm-devicecontrol-operation-e.md) | 要执行的操作 |
 

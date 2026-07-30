@@ -16,7 +16,6 @@
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="getactivevideostabilizationmode"></a>
 ## getActiveVideoStabilizationMode
 
 ```TypeScript
@@ -45,14 +44,13 @@ Obtains the video stabilization mode in use.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="setvideostabilizationmode"></a>
 ## setVideoStabilizationMode
 
 ```TypeScript
 setVideoStabilizationMode(mode: VideoStabilizationMode): void
 ```
 
-Sets a video stabilization mode. Before the setting, call [isVideoStabilizationModeSupported](arkts-camera-camera-stabilizationquery-i.md#isvideostabilizationmodesupported-1)to check whether the target video stabilization mode is supported. It is recommended that you set the video stabilization mode between [commitConfig](arkts-camera-camera-session-i.md#commitconfig-1) and [Start](arkts-camera-camera-session-i.md#start-1).
+Sets a video stabilization mode. Before the setting, call [isVideoStabilizationModeSupported](arkts-camera-camera-stabilizationquery-i.md#isvideostabilizationmodesupported)to check whether the target video stabilization mode is supported. It is recommended that you set the video stabilization mode between [commitConfig](arkts-camera-camera-session-i.md#commitconfig) and [Start](arkts-camera-camera-session-i.md#start).
 
 **Since:** 11
 

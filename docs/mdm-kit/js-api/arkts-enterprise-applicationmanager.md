@@ -10,11 +10,13 @@ The **applicationManager** module provides application management capabilities, 
 > [applicationManager.isAppKioskAllowed](arkts-mdm-applicationmanager-isappkioskallowed-f.md#isappkioskallowed) API is available to all  
 > applications.
 
-**Since:** 10
+**Since:** 12
 
 <!--Device-unnamed-declare namespace applicationManager--><!--Device-unnamed-declare namespace applicationManager-End-->
 
 **System capability:** SystemCapability.Customization.EnterpriseDeviceManager
+
+**System API:** This is a system API.
 
 ## Modules to Import
 
@@ -43,18 +45,27 @@ import { applicationManager } from '@kit.MDMKit';
 | [clearUpApplicationData](arkts-mdm-applicationmanager-clearupapplicationdata-f.md#clearupapplicationdata) | Clears all application data. |
 | [getAllowedDistributeAbilityConnBundles](arkts-mdm-applicationmanager-getalloweddistributeabilityconnbundles-f.md#getalloweddistributeabilityconnbundles) | Gets the applications that are allowed to distribute ability connection. |
 | [getAllowedKioskApps](arkts-mdm-applicationmanager-getallowedkioskapps-f.md#getallowedkioskapps) | Obtains the applications allowed to run in kiosk mode. |
+| [getAllowedKioskApps](arkts-mdm-applicationmanager-getallowedkioskapps-f.md#getallowedkioskapps-1) | Obtains the applications allowed to run in kiosk mode. |
 | [getAllowedNotificationBundles](arkts-mdm-applicationmanager-getallowednotificationbundles-f.md#getallowednotificationbundles) | Gets applications that are allowed to send notifications. |
 | [getAllowedRunningBundles](arkts-mdm-applicationmanager-getallowedrunningbundles-f.md#getallowedrunningbundles) | Obtains the list of applications allowed to run by a specified user. |
+| [getAllowedRunningBundles](arkts-mdm-applicationmanager-getallowedrunningbundles-f.md#getallowedrunningbundles-1) | Obtains the list of applications allowed to run by a specified user. |
 | [getApplicationWindowStates](arkts-mdm-applicationmanager-getapplicationwindowstates-f.md#getapplicationwindowstates) | Gets the window states of the application. |
 | [getAutoStartApps](arkts-mdm-applicationmanager-getautostartapps-f.md#getautostartapps) | Checks the auto-start applications for the current user. |
-| [getAutoStartApps](arkts-mdm-applicationmanager-getautostartapps-f.md#getautostartapps-1) | Checks the auto-start applications for the specified user. |
+| [getAutoStartApps](arkts-mdm-applicationmanager-getautostartapps-f.md#getautostartapps-1) | Checks the auto-start applications for the current user. |
+| [getAutoStartApps](arkts-mdm-applicationmanager-getautostartapps-f.md#getautostartapps-2) | Checks the auto-start applications for the specified user. |
+| [getAutoStartApps](arkts-mdm-applicationmanager-getautostartapps-f.md#getautostartapps-3) | Checks the auto-start applications for the specified user. |
 | [getDisallowedRunningBundlesSync](arkts-mdm-applicationmanager-getdisallowedrunningbundlessync-f.md#getdisallowedrunningbundlessync) | Obtains applications that are not allowed to run by the current user or specified user. |
+| [getDisallowedRunningBundlesSync](arkts-mdm-applicationmanager-getdisallowedrunningbundlessync-f.md#getdisallowedrunningbundlessync-1) | Obtains applications that are not allowed to run by the current user or specified user. |
 | [getDockApps](arkts-mdm-applicationmanager-getdockapps-f.md#getdockapps) | Obtains the list of applications in the shortcut bar currently. |
 | [getFreezeExemptedApps](arkts-mdm-applicationmanager-getfreezeexemptedapps-f.md#getfreezeexemptedapps) | Obtains the background freeze-exempt application list of all users on the current device. |
+| [getFreezeExemptedApps](arkts-mdm-applicationmanager-getfreezeexemptedapps-f.md#getfreezeexemptedapps-1) | Obtains the background freeze-exempt application list of all users on the current device. |
 | [getHideLauncherIcon](arkts-mdm-applicationmanager-gethidelaunchericon-f.md#gethidelaunchericon) | Gets applications that hide launcher icons. |
 | [getKeepAliveApps](arkts-mdm-applicationmanager-getkeepaliveapps-f.md#getkeepaliveapps) | Obtains the bundle name of the keep-alive application. |
+| [getKeepAliveApps](arkts-mdm-applicationmanager-getkeepaliveapps-f.md#getkeepaliveapps-1) | Obtains the bundle name of the keep-alive application. |
 | [getUserNonStopApps](arkts-mdm-applicationmanager-getusernonstopapps-f.md#getusernonstopapps) | Obtains the non-stoppable application list of all users on the current device. |
+| [getUserNonStopApps](arkts-mdm-applicationmanager-getusernonstopapps-f.md#getusernonstopapps-1) | Obtains the non-stoppable application list of all users on the current device. |
 | [isAbilityDisabled](arkts-mdm-applicationmanager-isabilitydisabled-f.md#isabilitydisabled) | Checks whether the Ability component of a specified application (system application or third-party application) is disabled. |
+| [isAbilityDisabled](arkts-mdm-applicationmanager-isabilitydisabled-f.md#isabilitydisabled-1) | Checks whether the Ability component of a specified application (system application or third-party application) is disabled. |
 | [isAppKioskAllowed](arkts-mdm-applicationmanager-isappkioskallowed-f.md#isappkioskallowed) | Checks whether an application is allowed to run in kiosk mode. |
 | [isModifyAutoStartAppsDisallowed](arkts-mdm-applicationmanager-ismodifyautostartappsdisallowed-f.md#ismodifyautostartappsdisallowed) | Checks whether a specified user is prohibited from canceling application auto-start. |
 | [isModifyKeepAliveAppsDisallowed](arkts-mdm-applicationmanager-ismodifykeepaliveappsdisallowed-f.md#ismodifykeepaliveappsdisallowed) | Checks whether the application is forbidden to cancel the keep-alive status. |

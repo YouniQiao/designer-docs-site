@@ -6,7 +6,6 @@
 import { connection } from '@kit.ConnectivityKit';
 ```
 
-<a id="on"></a>
 ## on('bluetoothDeviceFind')
 
 ```TypeScript
@@ -61,7 +60,6 @@ try {
 ```
 
 
-<a id="on-1"></a>
 ## on('bondStateChange')
 
 ```TypeScript
@@ -114,7 +112,6 @@ try {
 ```
 
 
-<a id="on-2"></a>
 ## on('pinRequired')
 
 ```TypeScript
@@ -167,7 +164,6 @@ try {
 ```
 
 
-<a id="on-3"></a>
 ## on('batteryChange')
 
 ```TypeScript

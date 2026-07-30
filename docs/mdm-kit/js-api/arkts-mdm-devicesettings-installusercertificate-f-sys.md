@@ -6,7 +6,6 @@
 import { deviceSettings } from '@kit.MDMKit';
 ```
 
-<a id="installusercertificate"></a>
 ## installUserCertificate
 
 ```TypeScript
@@ -19,7 +18,7 @@ Installs a user certificate. This API uses a callback to return the result.
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [installUserCertificate](arkts-mdm-securitymanager-installusercertificate-f.md#installusercertificate-1)
+**Substitutes:** [installUserCertificate](arkts-mdm-securitymanager-installusercertificate-f.md#installusercertificate)
 
 **Required permissions:** ohos.permission.ENTERPRISE_MANAGE_CERTIFICATE
 
@@ -36,7 +35,7 @@ Installs a user certificate. This API uses a callback to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| certificate | [CertBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-certificatemanager-certblob-i.md) | Yes | Certificate information. The certificate file must be stored in the path that the app has the permission to access, such as the app sandbox path. For details about the mapping between the app sandbox path and the actual physical path, see [Mappings Between App Sandbox Paths and Physical Paths](docroot://file-management/app-sandbox-directory.md#mappings-between-application-sandbox-paths-and-physical-paths). |
+| certificate | [CertBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-certificatemanager-certblob-i.md) | Yes | Certificate information. The certificate file must be stored in the path that the app has the permission to access, such as the app sandbox path. For details about the mapping between the app sandbox path and the actual physical path, see [Mappings Between App Sandbox Paths and Physical Paths](../../../file-management/app-sandbox-directory.md#mappings-between-application-sandbox-paths-and-physical-paths). |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;string&gt; | Yes | Callback invoked to return the result. If the operation is successful,**err** is **null**. Otherwise, **err** is an error object. |
 
 **Error codes:**
@@ -84,7 +83,6 @@ context.resourceManager.getRawFileContent("test.cer").then((value) => {
 ```
 
 
-<a id="installusercertificate-1"></a>
 ## installUserCertificate
 
 ```TypeScript
@@ -97,7 +95,7 @@ Installs a user certificate. This API uses a promise to return the result.
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [installUserCertificate](arkts-mdm-securitymanager-installusercertificate-f.md#installusercertificate-1)
+**Substitutes:** [installUserCertificate](arkts-mdm-securitymanager-installusercertificate-f.md#installusercertificate)
 
 **Required permissions:** ohos.permission.ENTERPRISE_MANAGE_CERTIFICATE
 
@@ -114,7 +112,7 @@ Installs a user certificate. This API uses a promise to return the result.
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| certificate | [CertBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-certificatemanager-certblob-i.md) | Yes | Certificate information. The certificate file must be stored in the path that the app has the permission to access, such as the app sandbox path. For details about the mapping between the app sandbox path and the actual physical path, see [Mappings Between App Sandbox Paths and Physical Paths](docroot://file-management/app-sandbox-directory.md#mappings-between-application-sandbox-paths-and-physical-paths). |
+| certificate | [CertBlob](../../apis-device-certificate-kit/arkts-apis/arkts-devicecertificate-certificatemanager-certblob-i.md) | Yes | Certificate information. The certificate file must be stored in the path that the app has the permission to access, such as the app sandbox path. For details about the mapping between the app sandbox path and the actual physical path, see [Mappings Between App Sandbox Paths and Physical Paths](../../../file-management/app-sandbox-directory.md#mappings-between-application-sandbox-paths-and-physical-paths). |
 
 **Return value:**
 

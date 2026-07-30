@@ -18,7 +18,6 @@ Provides the APIs for aperture settings. It inherits from [ApertureQuery](arkts-
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="getphysicalaperture"></a>
 ## getPhysicalAperture
 
 ```TypeScript
@@ -51,7 +50,6 @@ Gets current physical aperture value.
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed, the inputDevice or the session is abnormal.<br>**Applicable version:** 24 and later |
 
-<a id="getvirtualaperture"></a>
 ## getVirtualAperture
 
 ```TypeScript
@@ -91,7 +89,6 @@ function getVirtualAperture(session: camera.PortraitPhotoSession): number {
 
 ```
 
-<a id="setphysicalaperture"></a>
 ## setPhysicalAperture
 
 ```TypeScript
@@ -114,7 +111,7 @@ Sets physical aperture value.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| aperture | number | Yes | physical aperture value. The supported physical aperture range can be obtained by calling [getSupportedPhysicalApertures](arkts-camera-camera-aperturequery-i-sys.md#getsupportedphysicalapertures-1) |
+| aperture | number | Yes | physical aperture value. The supported physical aperture range can be obtained by calling [getSupportedPhysicalApertures](arkts-camera-camera-aperturequery-i-sys.md#getsupportedphysicalapertures) |
 
 **Error codes:**
 
@@ -124,14 +121,13 @@ Sets physical aperture value.
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed, the inputDevice or the session is abnormal.<br>**Applicable version:** 24 and later |
 
-<a id="setvirtualaperture"></a>
 ## setVirtualAperture
 
 ```TypeScript
 setVirtualAperture(aperture: number): void
 ```
 
-Sets a virtual aperture. Before the setting, call [getSupportedVirtualApertures](arkts-camera-camera-aperturequery-i-sys.md#getsupportedvirtualapertures-1) to obtain the supported virtual apertures.
+Sets a virtual aperture. Before the setting, call [getSupportedVirtualApertures](arkts-camera-camera-aperturequery-i-sys.md#getsupportedvirtualapertures) to obtain the supported virtual apertures.
 
 **Since:** 11
 

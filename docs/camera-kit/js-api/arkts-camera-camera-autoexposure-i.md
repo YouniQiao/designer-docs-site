@@ -16,7 +16,6 @@ AutoExposure inherits from [AutoExposureQuery](arkts-camera-camera-autoexposureq
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="getexposuremode"></a>
 ## getExposureMode
 
 ```TypeScript
@@ -24,11 +23,10 @@ getExposureMode(): ExposureMode
 ```
 
 Obtains the exposure mode in use.
-
 > **NOTE**  
 >  
 > This API directly returns an invalid value if you have not set the exposure mode using  
-> [setExposureMode](arkts-camera-camera-autoexposure-i.md#setexposuremode-1).
+> [setExposureMode](arkts-camera-camera-autoexposure-i.md#setexposuremode).
 
 **Since:** 11
 
@@ -50,7 +48,6 @@ Obtains the exposure mode in use.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="getexposurevalue"></a>
 ## getExposureValue
 
 ```TypeScript
@@ -79,7 +76,6 @@ Obtains the exposure value in use.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="getmeteringpoint"></a>
 ## getMeteringPoint
 
 ```TypeScript
@@ -108,7 +104,6 @@ Obtains the metering point of the camera device.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="offexposurestatechange"></a>
 ## offExposureStateChange
 
 ```TypeScript
@@ -133,7 +128,6 @@ Unregisters the callback used to listen for exposure state changes.
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ExposureState&gt; | No | Callback used to get the exposure state change. |
 
-<a id="onexposurestatechange"></a>
 ## onExposureStateChange
 
 ```TypeScript
@@ -158,14 +152,13 @@ Registers a callback to listen for exposure state changes.
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ExposureState&gt; | Yes | Callback used to get the exposure state change. |
 
-<a id="setexposurebias"></a>
 ## setExposureBias
 
 ```TypeScript
 setExposureBias(exposureBias: number): void
 ```
 
-Sets an exposure compensation value (EV).Before the setting, you are advised to use [getExposureBiasRange](arkts-camera-camera-autoexposurequery-i.md#getexposurebiasrange-1) to obtain the supported values.
+Sets an exposure compensation value (EV).Before the setting, you are advised to use [getExposureBiasRange](arkts-camera-camera-autoexposurequery-i.md#getexposurebiasrange) to obtain the supported values.
 
 **Since:** 11
 
@@ -179,7 +172,7 @@ Sets an exposure compensation value (EV).Before the setting, you are advised to 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| exposureBias | number | Yes | EV. The supported EV range can be obtained by calling [getExposureBiasRange](arkts-camera-camera-autoexposurequery-i.md#getexposurebiasrange-1). If the value passed is not within the supported range, the nearest critical point is used.<br>Exposure compensation is adjusted in steps, and the step size may vary across devices due to hardware differences. For example, if the step size is 0.5, setting a value of 1.2 would result in an actual effective exposure compensation value of 1.0.<br>If the operation fails, an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md) is returned. |
+| exposureBias | number | Yes | EV. The supported EV range can be obtained by calling [getExposureBiasRange](arkts-camera-camera-autoexposurequery-i.md#getexposurebiasrange). If the value passed is not within the supported range, the nearest critical point is used.<br>Exposure compensation is adjusted in steps, and the step size may vary across devices due to hardware differences. For example, if the step size is 0.5, setting a value of 1.2 would result in an actual effective exposure compensation value of 1.0.<br>If the operation fails, an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md) is returned. |
 
 **Error codes:**
 
@@ -188,14 +181,13 @@ Sets an exposure compensation value (EV).Before the setting, you are advised to 
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed.<br>**Applicable version:** 12 and later |
 
-<a id="setexposuremode"></a>
 ## setExposureMode
 
 ```TypeScript
 setExposureMode(aeMode: ExposureMode): void
 ```
 
-Sets an exposure mode. Before the setting, call [isExposureModeSupported](arkts-camera-camera-autoexposurequery-i.md#isexposuremodesupported-1) to check whether the exposure mode is supported.
+Sets an exposure mode. Before the setting, call [isExposureModeSupported](arkts-camera-camera-autoexposurequery-i.md#isexposuremodesupported) to check whether the exposure mode is supported.
 
 **Since:** 11
 
@@ -218,7 +210,6 @@ Sets an exposure mode. Before the setting, call [isExposureModeSupported](arkts-
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed.<br>**Applicable version:** 19 and later |
 
-<a id="setmeteringpoint"></a>
 ## setMeteringPoint
 
 ```TypeScript

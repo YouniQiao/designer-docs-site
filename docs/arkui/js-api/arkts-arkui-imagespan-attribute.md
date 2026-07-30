@@ -12,7 +12,6 @@ Among all the universal events, only the [click event](../../apis-ability-kit/ar
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="alt"></a>
 ## alt
 
 ```TypeScript
@@ -37,7 +36,6 @@ Sets the placeholder image displayed during image loading.
 | --- | --- | --- | --- |
 | value | [PixelMap](../../apis-image-kit/arkts-apis/arkts-image-image-pixelmap-i.md) | Yes | Placeholder image displayed during image loading. The [PixelMap](../../apis-image-kit/arkts-apis/arkts-image-image-pixelmap-i.md) type is supported.<br>Default value: **null** |
 
-<a id="colorfilter"></a>
 ## colorFilter
 
 ```TypeScript
@@ -60,9 +58,8 @@ Sets the color filter for the image.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| filter | [ColorFilter](../arkts-apis/arkts-arkui-colorfilter-c.md) \| DrawingColorFilter | Yes | 1. Color filter of the image. The input parameter is a 4 x 5RGBA transformation matrix.<br>The first row of the matrix represents a vector value of R (red), the second row represents a vector value of G (green), the third row represents a vector value of B (blue), and the fourth row represents a vector value of A (alpha). The four rows represent different RGBA vector values.<br>If the matrix contains entries of 1 on the diagonal and entries of 0 in other places, the original color of the image is retained.<br> **Calculation rule:**<br>If the input filter matrix is as follows:<br>![image-matrix-1](docroot://reference/apis-arkui/arkui-ts/figures/image_matrix_1.png)<br>And the pixel point is [R, G, B, A] with color values in the [0, 255] range,<br>Then the color after filtering is [R', G', B', A'].<br   >![image-matrix-2](docroot://reference/apis-arkui/arkui-ts/figures/image_matrix_2.png)<br>2. The ColorFilter type of **@ohos.graphics.drawing** can be used as the input parameter.<br>**NOTE**<br>The DrawingColorfilter type can be used in atomic services. The SVG image source takes effect only for the stroke attribute. |
+| filter | [ColorFilter](../arkts-apis/arkts-arkui-colorfilter-c.md) \| DrawingColorFilter | Yes | 1. Color filter of the image. The input parameter is a 4 x 5RGBA transformation matrix.<br>The first row of the matrix represents a vector value of R (red), the second row represents a vector value of G (green), the third row represents a vector value of B (blue), and the fourth row represents a vector value of A (alpha). The four rows represent different RGBA vector values.<br>If the matrix contains entries of 1 on the diagonal and entries of 0 in other places, the original color of the image is retained.<br> **Calculation rule:**<br>If the input filter matrix is as follows:<br>![image-matrix-1](../../../reference/apis-arkui/arkui-ts/figures/image_matrix_1.png)<br>And the pixel point is [R, G, B, A] with color values in the [0, 255] range,<br>Then the color after filtering is [R', G', B', A'].<br   >![image-matrix-2](../../../reference/apis-arkui/arkui-ts/figures/image_matrix_2.png)<br>2. The ColorFilter type of **@ohos.graphics.drawing** can be used as the input parameter.<br>**NOTE**<br>The DrawingColorfilter type can be used in atomic services. The SVG image source takes effect only for the stroke attribute. |
 
-<a id="objectfit"></a>
 ## objectFit
 
 ```TypeScript
@@ -87,7 +84,6 @@ Sets the image scale type.
 | --- | --- | --- | --- |
 | value | [ImageFit](../arkts-apis/arkts-arkui-imagefit-e.md) | Yes | Image scale type.<br>Default value: **ImageFit.Cover** |
 
-<a id="oncomplete"></a>
 ## onComplete
 
 ```TypeScript
@@ -112,7 +108,6 @@ Triggered when the image is successfully loaded or decoded. The size of the load
 | --- | --- | --- | --- |
 | callback | [ImageCompleteCallback](arkts-arkui-imagecompletecallback-t.md) | Yes | Callback triggered when the image is successfully loaded or decoded. |
 
-<a id="onerror"></a>
 ## onError
 
 ```TypeScript
@@ -137,14 +132,13 @@ Triggered when an error occurs during image loading.
 | --- | --- | --- | --- |
 | callback | [ImageErrorCallback](arkts-arkui-imageerrorcallback-t.md) | Yes | Callback triggered when an error occurs during image loading. |
 
-<a id="supportsvg2"></a>
 ## supportSvg2
 
 ```TypeScript
 supportSvg2(enable: Optional<boolean>)
 ```
 
-Sets whether to enable [enhanced SVG tag parsing](docroot://reference/apis-arkui/arkui-ts/ts-image-svg2-capabilities.md). When this feature is enabled, SVG image rendering behavior changes accordingly.
+Sets whether to enable [enhanced SVG tag parsing](../../../reference/apis-arkui/arkui-ts/ts-image-svg2-capabilities.md). When this feature is enabled, SVG image rendering behavior changes accordingly.
 
 After the **ImageSpan** component is created, the value of this attribute cannot be dynamically changed.
 
@@ -162,9 +156,8 @@ After the **ImageSpan** component is created, the value of this attribute cannot
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| enable | [Optional](arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | Whether to enable [enhanced SVG tag parsing capabilities](docroot://reference/apis-arkui/arkui-ts/ts-image-svg2-capabilities.md).<br>**true**: Enable enhanced SVG parsing. **false**: Use original SVG parsing.<br>Default value: **false**. |
+| enable | [Optional](arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | Whether to enable [enhanced SVG tag parsing capabilities](../../../reference/apis-arkui/arkui-ts/ts-image-svg2-capabilities.md).<br>**true**: Enable enhanced SVG parsing. **false**: Use original SVG parsing.<br>Default value: **false**. |
 
-<a id="verticalalign"></a>
 ## verticalAlign
 
 ```TypeScript

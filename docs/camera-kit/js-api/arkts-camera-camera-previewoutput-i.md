@@ -16,19 +16,17 @@ Implements preview output. It inherits from [CameraOutput](arkts-camera-camera-c
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="enablebandwidthcompression"></a>
 ## enableBandwidthCompression
 
 ```TypeScript
 enableBandwidthCompression(enabled: boolean): void
 ```
 
-Enables preview bandwidth compression.Before enabling this feature, you can call [isBandwidthCompressionSupported](arkts-camera-camera-previewoutput-i.md#isbandwidthcompressionsupported-1) to check whether the device supports preview bandwidth compression.
-
+Enables preview bandwidth compression.Before enabling this feature, you can call [isBandwidthCompressionSupported](arkts-camera-camera-previewoutput-i.md#isbandwidthcompressionsupported) to check whether the device supports preview bandwidth compression.
 > **NOTE**  
 >  
 > This function must be called prior to  
-> [Session.commitConfig](arkts-camera-camera-session-i.md#commitconfig-1).  
+> [Session.commitConfig](arkts-camera-camera-session-i.md#commitconfig).  
 > Otherwise, the preview output stream format will be affected.
 
 **Since:** 23
@@ -53,14 +51,13 @@ Enables preview bandwidth compression.Before enabling this feature, you can call
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="getactiveframerate"></a>
 ## getActiveFrameRate
 
 ```TypeScript
 getActiveFrameRate(): FrameRateRange
 ```
 
-Obtains the configured frame rate range.This API is valid only after [setFrameRate](arkts-camera-camera-previewoutput-i.md#setframerate-1) is called to set a frame rate range for preview streams.
+Obtains the configured frame rate range.This API is valid only after [setFrameRate](arkts-camera-camera-previewoutput-i.md#setframerate) is called to set a frame rate range for preview streams.
 
 **Since:** 12
 
@@ -76,7 +73,6 @@ Obtains the configured frame rate range.This API is valid only after [setFrameRa
 | --- | --- |
 | [FrameRateRange](arkts-camera-camera-frameraterange-i.md) | Frame rate range. |
 
-<a id="getactiveprofile"></a>
 ## getActiveProfile
 
 ```TypeScript
@@ -105,7 +101,6 @@ Obtains the profile that takes effect currently.
 | --- | --- |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="getpreviewrotation"></a>
 ## getPreviewRotation
 
 ```TypeScript
@@ -132,7 +127,7 @@ Obtains the preview rotation angle.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| displayRotation | number | No | Screen rotation angle of the display. It is obtained by calling [display.getDefaultDisplaySync](../../apis-arkui/arkts-apis/arkts-arkui-display-getdefaultdisplaysync-f.md#getdefaultdisplaysync-1).<br> Since API version 23,the input parameter **displayRotation** is optional. If no parameter is passed, the system obtains the **displayRotation** value to calculate rotation angle of a video.<br>**Since:** 23 |
+| displayRotation | number | No | Screen rotation angle of the display. It is obtained by calling [display.getDefaultDisplaySync](../../apis-arkui/arkts-apis/arkts-arkui-display-getdefaultdisplaysync-f.md#getdefaultdisplaysync).<br> Since API version 23,the input parameter **displayRotation** is optional. If no parameter is passed, the system obtains the **displayRotation** value to calculate rotation angle of a video.<br>**Since:** 23 |
 
 **Return value:**
 
@@ -147,7 +142,6 @@ Obtains the preview rotation angle.
 | [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect.<br>**Applicable version:** 12 - 22 |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="getsupportedframerates"></a>
 ## getSupportedFrameRates
 
 ```TypeScript
@@ -170,7 +164,6 @@ Obtains the supported frame rates.
 | --- | --- |
 | Array&lt;FrameRateRange&gt; | Array of supported frame rates. If the API call fails, undefined is returned. |
 
-<a id="isbandwidthcompressionsupported"></a>
 ## isBandwidthCompressionSupported
 
 ```TypeScript
@@ -193,7 +186,6 @@ Checks whether preview bandwidth compression is supported. This involves reducin
 | --- | --- |
 | boolean | Check result for the support of preview bandwidth compression. **true** if supported,**false** otherwise. |
 
-<a id="islogviewassistsupported"></a>
 ## isLogViewAssistSupported
 
 ```TypeScript
@@ -218,7 +210,6 @@ Checks whether log video view assistance is supported.
 | --- | --- |
 | boolean | Check result for the support of log video view assistance. **true** if supported,**false** otherwise. |
 
-<a id="off"></a>
 ## off('frameStart')
 
 ```TypeScript
@@ -242,7 +233,6 @@ Unsubscribes from preview frame start events.
 | type | 'frameStart' | Yes | Event type. The value is fixed at **'frameStart'**. The event can be listened for when a previewOutput instance is created. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | No | Callback used to return the result. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
 
-<a id="off-1"></a>
 ## off('frameEnd')
 
 ```TypeScript
@@ -266,7 +256,6 @@ Unsubscribes from preview frame end events.
 | type | 'frameEnd' | Yes | Event type. The value is fixed at **'frameEnd'**. The event can be listened for when a previewOutput instance is created. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | No | Callback used to return the result. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
 
-<a id="off-2"></a>
 ## off('error')
 
 ```TypeScript
@@ -290,7 +279,6 @@ Unsubscribes from PreviewOutput error events.
 | type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when a previewOutput instance is created. |
 | callback | [ErrorCallback](../../apis-arkui/arkts-components/arkts-arkui-errorcallback-t-sys.md) | No | Callback used to return the result. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
 
-<a id="on"></a>
 ## on('frameStart')
 
 ```TypeScript
@@ -298,7 +286,6 @@ on(type: 'frameStart', callback: AsyncCallback<void>): void
 ```
 
 Subscribes to preview frame start events. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
@@ -318,7 +305,6 @@ Subscribes to preview frame start events. This API uses an asynchronous callback
 | type | 'frameStart' | Yes | Event type. The value is fixed at **'frameStart'**. The event can be listened for when a previewOutput instance is created. This event is triggered and returned when the bottom layer starts exposure for the first time. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. The preview starts as long as this event is returned. |
 
-<a id="on-1"></a>
 ## on('frameEnd')
 
 ```TypeScript
@@ -326,7 +312,6 @@ on(type: 'frameEnd', callback: AsyncCallback<void>): void
 ```
 
 Subscribes to preview frame end events. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
@@ -346,7 +331,6 @@ Subscribes to preview frame end events. This API uses an asynchronous callback t
 | type | 'frameEnd' | Yes | Event type. The value is fixed at **'frameEnd'**. The event can be listened for when a previewOutput instance is created. This event is triggered and returned when the last frame of preview ends. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. The preview ends as long as this event is returned. |
 
-<a id="on-2"></a>
 ## on('error')
 
 ```TypeScript
@@ -354,7 +338,6 @@ on(type: 'error', callback: ErrorCallback): void
 ```
 
 Subscribes to PreviewOutput error events. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
@@ -371,18 +354,16 @@ Subscribes to PreviewOutput error events. This API uses an asynchronous callback
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when a previewOutput instance is created. This event is triggered and the corresponding error message is returned when an error occurs during the use of a preview-related API such as [Session.start](arkts-camera-camera-session-i.md#start-1) or [CameraOutput.release](arkts-camera-camera-cameraoutput-i.md#release-1). |
+| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when a previewOutput instance is created. This event is triggered and the corresponding error message is returned when an error occurs during the use of a preview-related API such as [Session.start](arkts-camera-camera-session-i.md#start) or [CameraOutput.release](arkts-camera-camera-cameraoutput-i.md#release). |
 | callback | [ErrorCallback](../../apis-arkui/arkts-components/arkts-arkui-errorcallback-t-sys.md) | Yes | Callback used to return an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md). |
 
-<a id="setframerate"></a>
 ## setFrameRate
 
 ```TypeScript
 setFrameRate(minFps: number, maxFps: number): void
 ```
 
-Sets a frame rate range for preview streams. The range must be within the supported frame rate range, which can be obtained by calling [getSupportedFrameRates](arkts-camera-camera-previewoutput-i.md#getsupportedframerates-1).
-
+Sets a frame rate range for preview streams. The range must be within the supported frame rate range, which can be obtained by calling [getSupportedFrameRates](arkts-camera-camera-previewoutput-i.md#getsupportedframerates).
 > **NOTE**  
 >  
 > This API is valid only in [PhotoSession](arkts-camera-camera-photosession-i.md) or  
@@ -410,14 +391,13 @@ Sets a frame rate range for preview streams. The range must be within the suppor
 | [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
 | [7400110](../errorcode-camera.md#7400110-configuration-conflicts) | Unresolved conflicts with current configurations. |
 
-<a id="setlogviewassistenable"></a>
 ## setLogViewAssistEnable
 
 ```TypeScript
 setLogViewAssistEnable(enable: boolean): void
 ```
 
-Log video view assistance toggle. Before enabling this feature, you can call [isLogViewAssistSupported](arkts-camera-camera-previewoutput-i.md#islogviewassistsupported-1) to check whether the device supports log video view assistance.
+Log video view assistance toggle. Before enabling this feature, you can call [isLogViewAssistSupported](arkts-camera-camera-previewoutput-i.md#islogviewassistsupported) to check whether the device supports log video view assistance.
 
 **Since:** 26.0.0
 
@@ -443,7 +423,6 @@ Log video view assistance toggle. Before enabling this feature, you can call [is
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="setpreviewrotation"></a>
 ## setPreviewRotation
 
 ```TypeScript
@@ -474,7 +453,6 @@ Sets the preview rotation angle.
 | [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="start"></a>
 ## start
 
 ```TypeScript
@@ -487,7 +465,7 @@ Starts to output preview streams. This API uses an asynchronous callback to retu
 
 **Deprecated since:** 11
 
-**Substitutes:** [start(callback:](arkts-camera-camera-session-i.md#start-1)
+**Substitutes:** [start(callback:](arkts-camera-camera-session-i.md#start)
 
 <!--Device-PreviewOutput-start(callback: AsyncCallback<void>): void--><!--Device-PreviewOutput-start(callback: AsyncCallback<void>): void-End-->
 
@@ -505,7 +483,6 @@ Starts to output preview streams. This API uses an asynchronous callback to retu
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="start-1"></a>
 ## start
 
 ```TypeScript
@@ -518,7 +495,7 @@ Starts to output preview streams. This API uses a promise to return the result.
 
 **Deprecated since:** 11
 
-**Substitutes:** [start()](arkts-camera-camera-session-i.md#start-1)
+**Substitutes:** [start()](arkts-camera-camera-session-i.md#start)
 
 <!--Device-PreviewOutput-start(): Promise<void>--><!--Device-PreviewOutput-start(): Promise<void>-End-->
 
@@ -536,7 +513,6 @@ Starts to output preview streams. This API uses a promise to return the result.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="stop"></a>
 ## stop
 
 ```TypeScript
@@ -549,7 +525,7 @@ Stops outputting preview streams. This API uses an asynchronous callback to retu
 
 **Deprecated since:** 11
 
-**Substitutes:** [stop(callback:](arkts-camera-camera-session-i.md#stop-1)
+**Substitutes:** [stop(callback:](arkts-camera-camera-session-i.md#stop)
 
 <!--Device-PreviewOutput-stop(callback: AsyncCallback<void>): void--><!--Device-PreviewOutput-stop(callback: AsyncCallback<void>): void-End-->
 
@@ -561,7 +537,6 @@ Stops outputting preview streams. This API uses an asynchronous callback to retu
 | --- | --- | --- | --- |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the preview stream output stops successfully, **err** is **undefined**; otherwise, **err** is an error object. |
 
-<a id="stop-1"></a>
 ## stop
 
 ```TypeScript
@@ -574,7 +549,7 @@ Stops outputting preview streams. This API uses a promise to return the result.
 
 **Deprecated since:** 11
 
-**Substitutes:** [stop()](arkts-camera-camera-session-i.md#stop-1)
+**Substitutes:** [stop()](arkts-camera-camera-session-i.md#stop)
 
 <!--Device-PreviewOutput-stop(): Promise<void>--><!--Device-PreviewOutput-stop(): Promise<void>-End-->
 

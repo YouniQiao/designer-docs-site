@@ -16,7 +16,6 @@ Flash extends [FlashQuery](arkts-camera-camera-flashquery-i.md)Provides APIs rel
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="getflashmode"></a>
 ## getFlashMode
 
 ```TypeScript
@@ -45,7 +44,6 @@ Obtains the flash mode in use.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="offflashstatechange"></a>
 ## offFlashStateChange
 
 ```TypeScript
@@ -70,7 +68,6 @@ Unsubscribes flash state change event callback.
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;FlashState&gt; | No | Callback used to get the flash state change. |
 
-<a id="onflashstatechange"></a>
 ## onFlashStateChange
 
 ```TypeScript
@@ -95,7 +92,6 @@ Subscribes flash state change event callback.
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;FlashState&gt; | Yes | Callback used to get the flash state change. |
 
-<a id="setflashmode"></a>
 ## setFlashMode
 
 ```TypeScript
@@ -106,7 +102,7 @@ Sets a flash mode.
 
 Before the setting, do the following checks:
 
-1. Use [hasFlash](arkts-camera-camera-flashquery-i.md#hasflash-1) to check whether the camera device has flash.2. Use [isFlashModeSupported](arkts-camera-camera-flashquery-i.md#isflashmodesupported-1) to check whether the camera device supports the flash mode.
+1. Use [hasFlash](arkts-camera-camera-flashquery-i.md#hasflash) to check whether the camera device has flash.2. Use [isFlashModeSupported](arkts-camera-camera-flashquery-i.md#isflashmodesupported) to check whether the camera device supports the flash mode.
 
 **Since:** 11
 

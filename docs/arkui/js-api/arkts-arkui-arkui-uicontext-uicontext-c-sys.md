@@ -1,18 +1,17 @@
 # UIContext
 
 Implements a **UIContext** instance.
-
 > **NOTE**  
 >  
 > - You can preview how this component looks on a real device, but not in DevEco Studio Previewer.  
 >  
 > - The following APIs must be called through a corresponding UIContext instance. There are three ways to obtain a  
 > **UIContext** instance: (1) using the  
-> [getUIContext()](docroot://reference/apis-arkui/arkts-apis-window-Window.md#getuicontext10) method from  
+> [getUIContext()](../../../reference/apis-arkui/arkts-apis-window-Window.md#getuicontext10) method from  
 > ohos.window; (2) using the built-in method  
-> [getUIContext()](docroot://reference/apis-arkui/arkui-ts/ts-custom-component-api.md#getuicontext) of a custom  
+> [getUIContext()](../../../reference/apis-arkui/arkui-ts/ts-custom-component-api.md#getuicontext) of a custom  
 > component; (3) using static methods of the UIContext class such as  
-> [getCallingScopeUIContext](arkts-arkui-arkui-uicontext-uicontext-c.md#getcallingscopeuicontext-1). In this document, the **UIContext** instance  
+> [getCallingScopeUIContext](arkts-arkui-arkui-uicontext-uicontext-c.md#getcallingscopeuicontext). In this document, the **UIContext** instance  
 > is represented by **uiContext**.
 
 **Since:** 10
@@ -27,7 +26,6 @@ Implements a **UIContext** instance.
 import { OverlayManager, FrameCallback, ResolvedUIContext, NodeRenderStateChangeCallback, MediaQuery, OverlayManagerOptions, TextMenuController, UIObserver, Font, KeyboardAvoidMode, MarqueeDynamicSyncScene, PromptAction, NodeRenderState, UIContext, TextSelectionClearPolicy, SwiperDynamicSyncScene, Router, MarqueeDynamicSyncSceneType, DialogPresenter, Magnifier, ContextMenuController, UIInspector, CursorController, SwiperDynamicSyncSceneType, AtomicServiceBar, PageInfo, TargetInfo, ComponentUtils, DragController, MeasureUtils, NodeIdentity } from '@kit.ArkUI';
 ```
 
-<a id="animatetoimmediately"></a>
 ## animateToImmediately
 
 ```TypeScript
@@ -55,7 +53,6 @@ Specifies a clear animation host instance context via the UIContext object and t
 | param | [AnimateParam](../arkts-components/arkts-arkui-animateparam-i.md) | Yes | Animation settings. |
 | processor | [Callback](../arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | Callback function. It specifies the closure function that displays the animation. The system automatically inserts the transition animation if the state changes in the closure function. |
 
-<a id="clearresourcecache"></a>
 ## clearResourceCache
 
 ```TypeScript
@@ -101,7 +98,6 @@ struct MyStateSample {
 
 ```
 
-<a id="freezeuinode"></a>
 ## freezeUINode
 
 ```TypeScript
@@ -133,7 +129,6 @@ Sets whether to freeze a specific component by **id** to prevent it from being m
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | The caller is not a system application. |
 
-<a id="freezeuinode-1"></a>
 ## freezeUINode
 
 ```TypeScript
@@ -165,7 +160,6 @@ Sets whether to freeze a specific component by **uniqueId** to prevent it from b
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | The caller is not a system application. |
 
-<a id="getluminancesampler"></a>
 ## getLuminanceSampler
 
 ```TypeScript
@@ -200,7 +194,6 @@ get the luminance sampler of the specified node. If the node cannot be found, re
 
 For details, see the example of [offBackgroundLuminanceChange](arkts-apis-uicontext-luminancesampler-sys.md#offbackgroundluminancechange23).
 
-<a id="recycleinvisibleimagememory"></a>
 ## recycleInvisibleImageMemory
 
 ```TypeScript
@@ -250,7 +243,6 @@ struct ImageRecycleSample {
 
 ```
 
-<a id="setdynamicdimming"></a>
 ## setDynamicDimming
 
 ```TypeScript
@@ -258,7 +250,6 @@ setDynamicDimming(id: string, value: number): void
 ```
 
 Sets the dynamic dimming degree of the component.
-
 > **NOTE**  
 >  
 > Applying other visual effects after this API is called may result in conflicts.
@@ -303,7 +294,6 @@ struct Index {
 
 ```
 
-<a id="setkeyboardappearanceconfig"></a>
 ## setKeyboardAppearanceConfig
 
 ```TypeScript

@@ -14,7 +14,6 @@ UIExtensionContentSession is the UI operation class for the UIExtensionAbility. 
 import { UIExtensionContentSession } from '@kit.AbilityKit';
 ```
 
-<a id="getuiextensionhostwindowproxy"></a>
 ## getUIExtensionHostWindowProxy
 
 ```TypeScript
@@ -93,7 +92,6 @@ export default class UIExtAbility extends UIExtensionAbility {
 
 ```
 
-<a id="senddata"></a>
 ## sendData
 
 ```TypeScript
@@ -161,7 +159,6 @@ struct Index {
 
 ```
 
-<a id="setreceivedatacallback"></a>
 ## setReceiveDataCallback
 
 ```TypeScript
@@ -222,7 +219,6 @@ struct Index {
 
 ```
 
-<a id="setreceivedataforresultcallback"></a>
 ## setReceiveDataForResultCallback
 
 ```TypeScript
@@ -284,14 +280,13 @@ struct Index {
 
 ```
 
-<a id="setwindowbackgroundcolor"></a>
 ## setWindowBackgroundColor
 
 ```TypeScript
 setWindowBackgroundColor(color: string): void
 ```
 
-Sets the background color for the loading page of the UIExtensionAbility. This API can be used only after [loadContent()](arkts-ability-app-ability-uiextensioncontentsession-uiextensioncontentsession-c.md#loadcontent-1) is called and takes effect.
+Sets the background color for the loading page of the UIExtensionAbility. This API can be used only after [loadContent()](arkts-ability-app-ability-uiextensioncontentsession-uiextensioncontentsession-c.md#loadcontent) is called and takes effect.
 
 **Since:** 10
 
@@ -347,7 +342,6 @@ export default class UIExtAbility extends UIExtensionAbility {
 
 ```
 
-<a id="startability"></a>
 ## startAbility
 
 ```TypeScript
@@ -355,11 +349,10 @@ startAbility(want: Want, callback: AsyncCallback<void>): void
 ```
 
 Starts an ability. This API uses an asynchronous callback to return the result.UI extension uses this method to start a specific ability.If the caller application is in foreground,you can use this method to start ability; If the caller application is in the background,you need to apply for permission:ohos.permission.START_ABILITIES_FROM_BACKGROUND.If the target ability is visible, you can start the target ability; If the target ability is invisible,you need to apply for permission:ohos.permission.START_INVISIBLE_ABILITY to start target invisible ability.If the target ability is in cross-device, you need to apply for permission:ohos.permission.DISTRIBUTED_DATASYNC.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).  
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).  
 > > The application where the UIExtensionComponent is located must be running in the foreground and gain focus.
 
 **Since:** 10
@@ -426,7 +419,6 @@ export default class UIExtAbility extends UIExtensionAbility {
 
 ```
 
-<a id="startability-1"></a>
 ## startAbility
 
 ```TypeScript
@@ -434,11 +426,10 @@ startAbility(want: Want, options: StartOptions, callback: AsyncCallback<void>): 
 ```
 
 Starts an ability with **options** specified. This API uses an asynchronous callback to return the result.UI extension uses this method to start a specific ability.If the caller application is in foreground,you can use this method to start ability; If the caller application is in the background,you need to apply for permission:ohos.permission.START_ABILITIES_FROM_BACKGROUND.If the target ability is visible, you can start the target ability; If the target ability is invisible,you need to apply for permission:ohos.permission.START_INVISIBLE_ABILITY to start target invisible ability.If the target ability is in cross-device, you need to apply for permission:ohos.permission.DISTRIBUTED_DATASYNC.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).  
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).  
 > > The application where the UIExtensionComponent is located must be running in the foreground and gain focus.
 
 **Since:** 10
@@ -508,7 +499,6 @@ export default class UIExtAbility extends UIExtensionAbility {
 
 ```
 
-<a id="startability-2"></a>
 ## startAbility
 
 ```TypeScript
@@ -516,11 +506,10 @@ startAbility(want: Want, options?: StartOptions): Promise<void>
 ```
 
 Starts an ability. This API uses a promise to return the result.UI extension uses this method to start a specific ability.If the caller application is in foreground,you can use this method to start ability; If the caller application is in the background,you need to apply for permission:ohos.permission.START_ABILITIES_FROM_BACKGROUND.If the target ability is visible, you can start the target ability; If the target ability is invisible,you need to apply for permission:ohos.permission.START_INVISIBLE_ABILITY to start target invisible ability.If the target ability is in cross-device, you need to apply for permission:ohos.permission.DISTRIBUTED_DATASYNC.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).  
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).  
 > > The application where the UIExtensionComponent is located must be running in the foreground and gain focus.
 
 **Since:** 10
@@ -597,7 +586,6 @@ export default class UIExtAbility extends UIExtensionAbility {
 
 ```
 
-<a id="startabilityascaller"></a>
 ## startAbilityAsCaller
 
 ```TypeScript
@@ -675,7 +663,6 @@ export default class UIExtAbility extends UIExtensionAbility {
 
 ```
 
-<a id="startabilityascaller-1"></a>
 ## startAbilityAsCaller
 
 ```TypeScript
@@ -756,7 +743,6 @@ export default class UIExtAbility extends UIExtensionAbility {
 
 ```
 
-<a id="startabilityascaller-2"></a>
 ## startAbilityAsCaller
 
 ```TypeScript
@@ -844,7 +830,6 @@ export default class UIExtAbility extends UIExtensionAbility {
 
 ```
 
-<a id="startabilityforresult"></a>
 ## startAbilityForResult
 
 ```TypeScript
@@ -855,14 +840,13 @@ Starts an ability and returns the result to the caller after the ability is term
 
 An ability can be terminated in the following ways:
 
-- Normally, you can call [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)to terminate the ability. The result is returned to the caller.  
+- Normally, you can call [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult)to terminate the ability. The result is returned to the caller.  
 - If an exception occurs, for example, the ability is killed, an error message, in which **resultCode** is **-1**,is returned to the caller.  
-- If different applications call this API to start an ability that uses the singleton mode and then call [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)to terminate the ability, the normal result is returned to the last caller, and an exception message, in which **resultCode** is **-1**, is returned to others.
-
+- If different applications call this API to start an ability that uses the singleton mode and then call [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult)to terminate the ability, the normal result is returned to the last caller, and an exception message, in which **resultCode** is **-1**, is returned to others.
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).  
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).  
 > > The application where the UIExtensionComponent is located must be running in the foreground and gain focus.
 
 **Since:** 10
@@ -929,7 +913,6 @@ export default class UIExtAbility extends UIExtensionAbility {
 
 ```
 
-<a id="startabilityforresult-1"></a>
 ## startAbilityForResult
 
 ```TypeScript
@@ -940,14 +923,13 @@ Starts an ability with **options** specified and returns the result to the calle
 
 An ability can be terminated in the following ways:
 
-- Normally, you can call [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)to terminate the ability. The result is returned to the caller.  
+- Normally, you can call [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult)to terminate the ability. The result is returned to the caller.  
 - If an exception occurs, for example, the ability is killed, an error message, in which **resultCode** is **-1**,is returned to the caller.  
-- If different applications call this API to start an ability that uses the singleton mode and then call [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)to terminate the ability, the normal result is returned to the last caller, and an exception message, in which **resultCode** is **-1**, is returned to others.
-
+- If different applications call this API to start an ability that uses the singleton mode and then call [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult)to terminate the ability, the normal result is returned to the last caller, and an exception message, in which **resultCode** is **-1**, is returned to others.
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).  
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).  
 > The application where the UIExtensionComponent is located must be running in the foreground and gain focus.
 
 **Since:** 10
@@ -1017,7 +999,6 @@ export default class UIExtAbility extends UIExtensionAbility {
 
 ```
 
-<a id="startabilityforresult-2"></a>
 ## startAbilityForResult
 
 ```TypeScript
@@ -1028,14 +1009,13 @@ Starts an ability and returns the result to the caller after the ability is term
 
 An ability can be terminated in the following ways:
 
-- Normally, you can call [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)to terminate the ability. The result is returned to the caller.  
+- Normally, you can call [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult)to terminate the ability. The result is returned to the caller.  
 - If an exception occurs, for example, the ability is killed, an error message, in which **resultCode** is **-1**,is returned to the caller.  
-- If different applications call this API to start an ability that uses the singleton mode and then call [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult-1)to terminate the ability, the normal result is returned to the last caller, and an exception message, in which **resultCode** is **-1**, is returned to others.
-
+- If different applications call this API to start an ability that uses the singleton mode and then call [terminateSelfWithResult](arkts-ability-uiabilitycontext-c.md#terminateselfwithresult)to terminate the ability, the normal result is returned to the last caller, and an exception message, in which **resultCode** is **-1**, is returned to others.
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).  
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).  
 > The application where the UIExtensionComponent is located must be running in the foreground and gain focus.
 
 **Since:** 10

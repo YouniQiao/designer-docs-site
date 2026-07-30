@@ -4,6 +4,8 @@ AlbumPickerComponent: can select a certain album and display the images in that 
 
 **Since:** 12
 
+**Decorator:** @Component
+
 <!--Device-unnamed-export declare struct AlbumPickerComponent--><!--Device-unnamed-export declare struct AlbumPickerComponent-End-->
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
@@ -58,7 +60,7 @@ onAlbumClick?: (albumInfo: AlbumInfo) => boolean
 
 Callback when select an album, will return album uri
 
-**Type:** (albumInfo: AlbumInfo) => boolean
+**Type:** (albumInfo: AlbumInfo) =&gt; boolean
 
 **Since:** 12
 

@@ -27,8 +27,8 @@ import { print } from '@kit.BasicServicesKit';
 | [notifyWatermarkComplete](arkts-basicservices-print-notifywatermarkcomplete-f.md#notifywatermarkcomplete) | Notify watermark complete. |
 | [off](arkts-basicservices-print-off-f.md#off-3) | Unregisters the listener for printer state change events. This API uses a callback to return the result. |
 | [on](arkts-basicservices-print-on-f.md#on-3) | Registers a listener for the printer change events. This API uses a callback to return the result. |
-| [print](arkts-basicservices-print-f.md#print) | Prints files. This API uses an asynchronous callback to return the result. To start the system print preview page,call the [print](arkts-basicservices-print-f.md#print-1) API and pass in context. |
-| [print](arkts-basicservices-print-f.md#print-1) | Prints files. This API uses a promise to return the result. To start the system print preview page, call the [print](arkts-basicservices-print-f.md#print-1) API and pass in context. |
+| [print](arkts-basicservices-print-f.md#print) | Prints files. This API uses an asynchronous callback to return the result. To start the system print preview page,call the [print](arkts-basicservices-print-f.md#print) API and pass in context. |
+| [print](arkts-basicservices-print-f.md#print-1) | Prints files. This API uses a promise to return the result. To start the system print preview page, call the [print](arkts-basicservices-print-f.md#print) API and pass in context. |
 | [print](arkts-basicservices-print-f.md#print-2) | Prints files. This API uses an asynchronous callback to return the result. |
 | [print](arkts-basicservices-print-f.md#print-3) | Prints files. This API uses a promise to return the result. |
 | [print](arkts-basicservices-print-f.md#print-4) | Prints a file. This API uses a promise to return the result. |

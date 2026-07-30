@@ -1,6 +1,5 @@
 # createStream
 
-<a id="createstream"></a>
 ## createStream
 
 ```TypeScript
@@ -13,7 +12,7 @@ Creates a stream based on the file path. This API uses a promise to return the r
 
 **Deprecated since:** 9
 
-**Substitutes:** [fs:createStream](arkts-corefile-file-fs-createstream-f.md#createstream-1)
+**Substitutes:** [fs:createStream](arkts-corefile-fileio-createstream-f.md#createstream)
 
 <!--Device-unnamed-declare function createStream(path: string, mode: string): Promise<Stream>--><!--Device-unnamed-declare function createStream(path: string, mode: string): Promise<Stream>-End-->
 
@@ -33,7 +32,6 @@ Creates a stream based on the file path. This API uses a promise to return the r
 | Promise&lt;Stream&gt; | Promise that returns the file stream. |
 
 
-<a id="createstream-1"></a>
 ## createStream
 
 ```TypeScript
@@ -46,7 +44,7 @@ Creates a stream based on the file path. This API uses an asynchronous callback 
 
 **Deprecated since:** 9
 
-**Substitutes:** [fs:createStream](arkts-corefile-file-fs-createstream-f.md#createstream-1)
+**Substitutes:** [fs:createStream](arkts-corefile-fileio-createstream-f.md#createstream)
 
 <!--Device-unnamed-declare function createStream(path: string, mode: string, callback: AsyncCallback<Stream>): void--><!--Device-unnamed-declare function createStream(path: string, mode: string, callback: AsyncCallback<Stream>): void-End-->
 

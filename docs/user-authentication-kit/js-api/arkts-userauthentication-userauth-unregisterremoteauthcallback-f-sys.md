@@ -12,7 +12,7 @@ import { userAuth } from '@kit.UserAuthenticationKit';
 function unregisterRemoteAuthCallback(): void
 ```
 
-Unregisters the callback for remote authentication.
+Unregisters the remote authentication callback. This API is used to unregister a previously registered remote authentication callback. After unregistration, the system no longer receives remote authentication page parameter requests or authentication result notification.
 
 **Since:** 26.0.0
 

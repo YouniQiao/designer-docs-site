@@ -20,5 +20,5 @@ The callback of onError event
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| pickerError | PickerError | Yes |  |
+| pickerError | [PickerError](arkts-medialibrary-file-photopickercomponent-pickererror-c.md) | Yes |  |
 

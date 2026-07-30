@@ -16,7 +16,6 @@ Implements preview output. It inherits from [CameraOutput](arkts-camera-camera-c
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="adddeferredsurface"></a>
 ## addDeferredSurface
 
 ```TypeScript
@@ -48,7 +47,6 @@ Adds a deferred surface.
 | [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API.<br>**Applicable version:** 13 - 23 |
 
-<a id="attachsketchsurface"></a>
 ## attachSketchSurface
 
 ```TypeScript
@@ -102,7 +100,6 @@ function attachSketchSurface(previewOutput: camera.PreviewOutput, session: camer
 
 ```
 
-<a id="enablesketch"></a>
 ## enableSketch
 
 ```TypeScript
@@ -155,7 +152,6 @@ function enableSketch(previewOutput: camera.PreviewOutput, session: camera.Sessi
 
 ```
 
-<a id="getsketchratio"></a>
 ## getSketchRatio
 
 ```TypeScript
@@ -195,7 +191,6 @@ function getSketchRatio(previewOutput: camera.PreviewOutput): number {
 
 ```
 
-<a id="issketchsupported"></a>
 ## isSketchSupported
 
 ```TypeScript
@@ -243,7 +238,6 @@ function isSketchSupported(previewOutput: camera.PreviewOutput): boolean {
 
 ```
 
-<a id="off"></a>
 ## off('sketchStatusChanged')
 
 ```TypeScript
@@ -282,7 +276,6 @@ function unregisterSketchStatusChanged(previewOutput: camera.PreviewOutput): voi
 
 ```
 
-<a id="on"></a>
 ## on('sketchStatusChanged')
 
 ```TypeScript

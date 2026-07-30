@@ -24,7 +24,7 @@ Animation curve.
 
 Default value: **Curve.EaseInOut**
 
-**Type:** Curve | ICurve
+**Type:** Curve \| ICurve
 
 **Since:** 11
 

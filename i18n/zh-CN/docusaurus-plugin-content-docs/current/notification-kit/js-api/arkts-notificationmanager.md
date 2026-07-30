@@ -42,23 +42,23 @@ import { notificationManager } from '@kit.NotificationKit';
 | [addSlot](arkts-notification-notificationmanager-addslot-f.md#addslot-2) | 创建指定类型的通知渠道。使用callback异步回调。  通知渠道NotificationSlot定义了通知的提醒方式（如提示音、振动、横幅等）和级别。发布通知前，应用需先创建对应类型的通知渠道，或者发布通知时系统将自动创建对应类型的通知渠道。同一类型的通知渠道只能创建一个。 |
 | [addSlot](arkts-notification-notificationmanager-addslot-f.md#addslot-3) | 创建指定类型的通知渠道。使用Promise异步回调。  通知渠道NotificationSlot定义了通知的提醒方式（如提示音、振动、横幅等）和级别。发布通知前，应用需先创建对应类型的通知渠道，或者发布通知时系统将自动创建对应类型的通知渠道。同一类型的通知渠道只能创建一个。 |
 | [cancel](arkts-notification-notificationmanager-cancel-f.md#cancel) | 根据指定的通知ID取消已发布的通知。使用callback异步回调。  取消后，对应的通知将从通知中心、状态栏等位置移除，用户不再可见。与带label参数的notificationManager.cancel(id, label, callback)相比，此接口不传入label，将取消与指定ID匹配的通知。当发布通知，label不为空时，则需使用接口notificationManager.cancel(id, label, callback)取消通知。 |
-| [cancel](arkts-notification-notificationmanager-cancel-f.md#cancel-1) | 根据通知ID和标签取消已发布的通知。使用callback异步回调。  取消后，对应的通知将从通知中心、状态栏等位置移除，用户不再可见。适用于需要精确取消某一条带有特定标签的通知的场景。与仅传入通知ID的notificationManager.cancel(id, callback)相比，此接口额外传入label参数，可精确取消同一ID下不同标签的通知。 |
-| [cancel](arkts-notification-notificationmanager-cancel-f.md#cancel-2) | 根据通知ID和标签取消已发布的通知，若标签为空，则取消与指定通知ID匹配，标签为空的已发布通知。使用Promise异步回调。  取消后，对应的通知将从通知中心、状态栏等位置移除，用户不再可见。 |
+| [cancel](arkts-notification-notificationmanager-cancel-f.md#cancel-1) | 根据通知ID和标签取消已发布的通知。使用callback异步回调。  取消后，对应的通知将从通知中心、状态栏等位置移除，用户不再可见。适用于需要精确取消某一条带有特定标签的通知的场景。与仅传入通知ID的notificationManager.cancel(id, callback)相比，此接口额外传入label参数，可精确取消同一ID，不同标签的通知。 |
+| [cancel](arkts-notification-notificationmanager-cancel-f.md#cancel-2) | 根据通知ID和标签label取消已发布的通知。使用Promise异步回调。  取消后，对应的通知将从通知中心、状态栏等位置移除，用户不再可见。 |
 | [cancelAll](arkts-notification-notificationmanager-cancelall-f.md#cancelall) | 取消当前应用所有已发布的通知。使用callback异步回调。  取消后，当前应用的所有通知将从通知中心、状态栏等位置移除，用户不再可见。适用于应用退出或用户手动清除全部通知的场景。 |
 | [cancelAll](arkts-notification-notificationmanager-cancelall-f.md#cancelall-1) | 取消当前应用所有已发布的通知。使用Promise异步回调。  取消后，当前应用的所有通知将从通知中心、状态栏等位置移除，用户不再可见。适用于应用退出或用户手动清除全部通知的场景。 |
 | [cancelGroup](arkts-notification-notificationmanager-cancelgroup-f.md#cancelgroup) | 取消当前应用指定组下的通知。使用callback异步回调。  通知组groupName是在发布通知时通过NotificationRequest的groupName字段指定的分组标识。取消后，该组下所有通知将从通知中心移除。适用于需要按业务分组批量取消通知的场景。 |
 | [cancelGroup](arkts-notification-notificationmanager-cancelgroup-f.md#cancelgroup-1) | 取消当前应用指定组下的通知。使用Promise异步回调。  通知组groupName是在发布通知时通过NotificationRequest的groupName字段指定的分组标识。取消后，该组下所有通知将从通知中心移除。适用于需要按业务分组批量取消通知的场景。 |
-| [getActiveNotificationCount](arkts-notification-notificationmanager-getactivenotificationcount-f.md#getactivenotificationcount) | 获取当前应用未删除的通知数。使用callback异步回调。 |
-| [getActiveNotificationCount](arkts-notification-notificationmanager-getactivenotificationcount-f.md#getactivenotificationcount-1) | 获取当前应用未删除的通知数。使用Promise异步回调。 |
-| [getActiveNotifications](arkts-notification-notificationmanager-getactivenotifications-f.md#getactivenotifications) | 获取当前应用未删除的通知列表。使用callback异步回调。 |
-| [getActiveNotifications](arkts-notification-notificationmanager-getactivenotifications-f.md#getactivenotifications-1) | 获取当前应用未删除的通知列表。使用Promise异步回调。 |
+| [getActiveNotificationCount](arkts-notification-notificationmanager-getactivenotificationcount-f.md#getactivenotificationcount) | 获取当前应用的通知数量。使用callback异步回调。  用于查询当前应用在通知中心中已发布的存量通知数量。适用于需要展示未读通知数量提示的场景。 |
+| [getActiveNotificationCount](arkts-notification-notificationmanager-getactivenotificationcount-f.md#getactivenotificationcount-1) | 获取当前应用的通知数量。使用Promise异步回调。  用于查询当前应用在通知中心中已发布的存量通知数量。适用于需要展示未读通知数量提示的场景。 |
+| [getActiveNotifications](arkts-notification-notificationmanager-getactivenotifications-f.md#getactivenotifications) | 获取当前应用未删除的通知列表。使用callback异步回调。  用于查询当前应用在通知中心中所有存量通知的详细信息列表，包括每条通知的ID、标签、内容、创建时间等。 |
+| [getActiveNotifications](arkts-notification-notificationmanager-getactivenotifications-f.md#getactivenotifications-1) | 获取当前应用未删除的通知列表。使用Promise异步回调。  用于查询当前应用在通知中心中所有存量通知的详细信息列表，包括每条通知的ID、标签、内容、创建时间等。 |
 | [getBadgeNumber](arkts-notification-notificationmanager-getbadgenumber-f.md#getbadgenumber) | 获取当前应用角标数量。使用Promise异步回调。  用于查询当前应用桌面图标上显示的角标数字。 |
 | [getNotificationParameters](arkts-notification-notificationmanager-getnotificationparameters-f.md#getnotificationparameters) | 获取通知[NotificationRequest](arkts-notification-notificationrequest-notificationrequest-i.md)中wantAgent字段的部分信息。使用Promise异步回调。 |
-| [getNotificationSetting](arkts-notification-notificationmanager-getnotificationsetting-f.md#getnotificationsetting) | 获取应用程序的通知设置，包括锁屏通知、横幅通知、桌面角标、振动、铃声等开关状态。使用Promise异步回调。 |
+| [getNotificationSetting](arkts-notification-notificationmanager-getnotificationsetting-f.md#getnotificationsetting) | 获取应用的通知设置，包括锁屏通知、横幅通知、桌面角标、振动、铃声等开关状态。使用Promise异步回调。 |
 | [getSlot](arkts-notification-notificationmanager-getslot-f.md#getslot) | 获取指定类型的通知渠道。使用callback异步回调。  用于查询已创建的通知渠道的详细配置信息，包括提醒方式、级别、锁屏显示等设置。需先通过addSlot创建对应类型的通知渠道，否则获取结果为空。 |
 | [getSlot](arkts-notification-notificationmanager-getslot-f.md#getslot-1) | 获取指定类型的通知渠道。使用Promise异步回调。  用于查询已创建的通知渠道的详细配置信息，包括提醒方式、级别、锁屏显示等设置。需先通过addSlot创建对应类型的通知渠道，否则获取结果为空。 |
-| [getSlots](arkts-notification-notificationmanager-getslots-f.md#getslots) | 获取当前应用的所有通知渠道。使用callback异步回调。  用于批量查询当前应用已创建的所有通知渠道的配置信息，包括各渠道的类型、提醒方式、级别等设置。适用于需要查看所有渠道配置的场景。 |
-| [getSlots](arkts-notification-notificationmanager-getslots-f.md#getslots-1) | 获取当前应用的所有通知渠道。使用Promise异步回调。  用于批量查询当前应用已创建的所有通知渠道的配置信息，包括各渠道的类型、提醒方式、级别等设置。适用于需要查看所有渠道配置的场景。 |
+| [getSlots](arkts-notification-notificationmanager-getslots-f.md#getslots) | 获取当前应用的所有通知渠道。使用callback异步回调。  用于批量查询当前应用已创建的所有通知渠道的配置信息，包括各渠道的类型、提醒方式、级别等设置。适用于需要查看所有渠道配置的场景。需先通过addSlot创建对应类型的通知渠道，否则获取结果为空。 |
+| [getSlots](arkts-notification-notificationmanager-getslots-f.md#getslots-1) | 获取当前应用的所有通知渠道。使用Promise异步回调。  用于批量查询当前应用已创建的所有通知渠道的配置信息，包括各渠道的类型、提醒方式、级别等设置。适用于需要查看所有渠道配置的场景。需先通过addSlot创建对应类型的通知渠道，否则获取结果为空。 |
 | [isDistributedEnabled](arkts-notification-notificationmanager-isdistributedenabled-f.md#isdistributedenabled) | 查询设备是否支持跨设备协同通知。使用callback异步回调。 |
 | [isDistributedEnabled](arkts-notification-notificationmanager-isdistributedenabled-f.md#isdistributedenabled-1) | 查询设备是否支持跨设备协同通知。使用Promise异步回调。 |
 | [isGeofenceEnabled](arkts-notification-notificationmanager-isgeofenceenabled-f.md#isgeofenceenabled) | 检查地理围栏功能是否已启用。使用Promise异步回调。 |
@@ -103,8 +103,8 @@ import { notificationManager } from '@kit.NotificationKit';
 | [getActiveNotificationByFilter](arkts-notification-notificationmanager-getactivenotificationbyfilter-f-sys.md#getactivenotificationbyfilter-1) | 获取满足条件的普通实况通知信息。使用Promise异步回调。 |
 | [getAllActiveNotifications](arkts-notification-notificationmanager-getallactivenotifications-f-sys.md#getallactivenotifications) | 获取当前未删除的所有通知。使用callback异步回调。 |
 | [getAllActiveNotifications](arkts-notification-notificationmanager-getallactivenotifications-f-sys.md#getallactivenotifications-1) | 获取当前未删除的所有通知。使用Promise异步回调。 |
-| [getAllNotificationEnabledBundles](arkts-notification-notificationmanager-getallnotificationenabledbundles-f-sys.md#getallnotificationenabledbundles) | 获取允许通知的应用程序列表。使用Promise异步回调。 |
-| [getAllNotificationEnabledBundles](arkts-notification-notificationmanager-getallnotificationenabledbundles-f-sys.md#getallnotificationenabledbundles-1) | 获取指定用户下允许通知的应用程序列表。使用Promise异步回调。 |
+| [getAllNotificationEnabledBundles](arkts-notification-notificationmanager-getallnotificationenabledbundles-f-sys.md#getallnotificationenabledbundles) | 获取允许通知的应用列表。使用Promise异步回调。 |
+| [getAllNotificationEnabledBundles](arkts-notification-notificationmanager-getallnotificationenabledbundles-f-sys.md#getallnotificationenabledbundles-1) | 获取指定用户下允许通知的应用列表。使用Promise异步回调。 |
 | [getBadgeDisplayStatusByBundles](arkts-notification-notificationmanager-getbadgedisplaystatusbybundles-f-sys.md#getbadgedisplaystatusbybundles) | 批量获取应用角标显示状态。使用Promise异步回调。 |
 | [getBundlePriorityConfig](arkts-notification-notificationmanager-getbundlepriorityconfig-f-sys.md#getbundlepriorityconfig) | 获取应用的优先功能配置。 |
 | [getDeviceRemindType](arkts-notification-notificationmanager-getdeviceremindtype-f-sys.md#getdeviceremindtype) | 获取通知的提醒方式。使用callback异步回调。 |
@@ -128,12 +128,12 @@ import { notificationManager } from '@kit.NotificationKit';
 | [getSlotNumByBundle](arkts-notification-notificationmanager-getslotnumbybundle-f-sys.md#getslotnumbybundle-1) | 获取指定应用的通知渠道数量。使用Promise异步回调。 |
 | [getSlotsByBundle](arkts-notification-notificationmanager-getslotsbybundle-f-sys.md#getslotsbybundle) | 获取指定应用的所有通知渠道。使用callback异步回调。 |
 | [getSlotsByBundle](arkts-notification-notificationmanager-getslotsbybundle-f-sys.md#getslotsbybundle-1) | 获取指定应用的所有通知渠道。使用Promise异步回调。 |
-| [getSyncNotificationEnabledWithoutApp](arkts-notification-notificationmanager-getsyncnotificationenabledwithoutapp-f-sys.md#getsyncnotificationenabledwithoutapp) | 获取同步通知到未安装应用程序设备的开关是否开启(callback形式)。 |
-| [getSyncNotificationEnabledWithoutApp](arkts-notification-notificationmanager-getsyncnotificationenabledwithoutapp-f-sys.md#getsyncnotificationenabledwithoutapp-1) | 获取同步通知到未安装应用程序设备的开关是否开启(Promise形式)。 |
+| [getSyncNotificationEnabledWithoutApp](arkts-notification-notificationmanager-getsyncnotificationenabledwithoutapp-f-sys.md#getsyncnotificationenabledwithoutapp) | 获取同步通知到未安装应用设备的开关是否开启(callback形式)。 |
+| [getSyncNotificationEnabledWithoutApp](arkts-notification-notificationmanager-getsyncnotificationenabledwithoutapp-f-sys.md#getsyncnotificationenabledwithoutapp-1) | 获取同步通知到未安装应用设备的开关是否开启(Promise形式)。 |
 | [isBadgeDisplayed](arkts-notification-notificationmanager-isbadgedisplayed-f-sys.md#isbadgedisplayed) | 获取指定应用的角标使能状态。使用callback异步回调。 |
 | [isBadgeDisplayed](arkts-notification-notificationmanager-isbadgedisplayed-f-sys.md#isbadgedisplayed-1) | 获取指定应用的角标使能状态。使用Promise异步回调。 |
 | [isDistributedEnabled](arkts-notification-notificationmanager-isdistributedenabled-f-sys.md#isdistributedenabled-2) | 查询设备是否支持跨设备协同通知。使用Promise异步回调。 |
-| [isDistributedEnabledByBundle](arkts-notification-notificationmanager-isdistributedenabledbybundle-f-sys.md#isdistributedenabledbybundle) | 根据应用的包获取应用程序是否支持分布式通知。使用callback异步回调。 |
+| [isDistributedEnabledByBundle](arkts-notification-notificationmanager-isdistributedenabledbybundle-f-sys.md#isdistributedenabledbybundle) | 根据应用的包获取应用是否支持分布式通知。使用callback异步回调。 |
 | [isDistributedEnabledByBundle](arkts-notification-notificationmanager-isdistributedenabledbybundle-f-sys.md#isdistributedenabledbybundle-1) | 查询指定应用是否支持分布式通知。使用Promise异步回调。 |
 | [isDistributedEnabledByBundle](arkts-notification-notificationmanager-isdistributedenabledbybundle-f-sys.md#isdistributedenabledbybundle-2) | 获取指定应用是否支持跨设备协同。使用Promise异步回调。 |
 | [isDistributedEnabledBySlot](arkts-notification-notificationmanager-isdistributedenabledbyslot-f-sys.md#isdistributedenabledbyslot) | 查询指定渠道的通知是否支持通知跨设备协同至指定类型设备。使用Promise异步回调。 |
@@ -202,8 +202,8 @@ import { notificationManager } from '@kit.NotificationKit';
 | [setSlotByBundle](arkts-notification-notificationmanager-setslotbybundle-f-sys.md#setslotbybundle-1) | 设置指定应用的通知渠道。使用Promise异步回调。  设置前需要先通过[addSlot](arkts-notification-notificationmanager-addslot-f.md#addslot)创建通知渠道。 |
 | [setSlotFlagsByBundle](arkts-notification-notificationmanager-setslotflagsbybundle-f-sys.md#setslotflagsbybundle) | 设定指定应用的通知提醒方式开关。使用Promise异步回调。 |
 | [setSmartReminderEnabled](arkts-notification-notificationmanager-setsmartreminderenabled-f-sys.md#setsmartreminderenabled) | 设置设备是否与其他设备协同智能提醒。使用Promise异步回调。 |
-| [setSyncNotificationEnabledWithoutApp](arkts-notification-notificationmanager-setsyncnotificationenabledwithoutapp-f-sys.md#setsyncnotificationenabledwithoutapp) | 设置是否将通知同步到未安装应用程序的设备(callback形式)。 |
-| [setSyncNotificationEnabledWithoutApp](arkts-notification-notificationmanager-setsyncnotificationenabledwithoutapp-f-sys.md#setsyncnotificationenabledwithoutapp-1) | 设置是否将通知同步到未安装应用程序的设备(Promise形式)。 |
+| [setSyncNotificationEnabledWithoutApp](arkts-notification-notificationmanager-setsyncnotificationenabledwithoutapp-f-sys.md#setsyncnotificationenabledwithoutapp) | 设置是否将通知同步到未安装应用的设备(callback形式)。 |
+| [setSyncNotificationEnabledWithoutApp](arkts-notification-notificationmanager-setsyncnotificationenabledwithoutapp-f-sys.md#setsyncnotificationenabledwithoutapp-1) | 设置是否将通知同步到未安装应用的设备(Promise形式)。 |
 | [setTargetDeviceStatus](arkts-notification-notificationmanager-settargetdevicestatus-f-sys.md#settargetdevicestatus) | 设置设备配对成功后的状态。当发布通知时，会根据各个设备的状态来确定当前设备的通知提醒方式。 |
 | [snoozeNotification](arkts-notification-notificationmanager-snoozenotification-f-sys.md#snoozenotification) | 设置通知稍后提醒。该通知在指定时间后再次提醒，每次设置只会提醒一次，提醒方式与该通知相同。设置后该通知被删除。 |
 | [subscribeSystemLiveView](arkts-notification-notificationmanager-subscribesystemliveview-f-sys.md#subscribesystemliveview) | 订阅系统实况窗。使用Promise异步回调。 |
@@ -272,7 +272,7 @@ import { notificationManager } from '@kit.NotificationKit';
 | [NotificationContent](arkts-notification-notificationmanager-notificationcontent-t.md) | 通知内容。 |
 | [NotificationLongTextContent](arkts-notification-notificationmanager-notificationlongtextcontent-t.md) | 长文本通知。 |
 | [NotificationMultiLineContent](arkts-notification-notificationmanager-notificationmultilinecontent-t.md) | 多行文本通知。 |
-| [NotificationParameters](arkts-notification-notificationmanager-notificationparameters-t.md) | 描述NotificationRequest中wantAgent的部分信息。 |
+| [NotificationParameters](arkts-notification-notificationmanager-notificationparameters-t.md) | 描述通知请求中wantAgent的部分信息。 |
 | [NotificationPictureContent](arkts-notification-notificationmanager-notificationpicturecontent-t.md) | 附有图片的通知。 |
 | [NotificationProgress](arkts-notification-notificationmanager-notificationprogress-t.md) | 通知进度。 |
 | [NotificationRequest](arkts-notification-notificationmanager-notificationrequest-t.md) | 通知请求。 |

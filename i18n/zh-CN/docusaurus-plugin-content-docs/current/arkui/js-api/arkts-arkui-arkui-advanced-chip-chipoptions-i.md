@@ -1,21 +1,27 @@
 # ChipOptions
 
-ChipOptions定义Chip的样式及具体式样参数。
+ChipOptions定义Chip的样式及具体样式参数。
 > **说明：**  
 >  
 > 1. 当`suffixSymbol`有传入参数时，`suffixIcon`和`allowClose`不生效；当`suffixSymbol`没有传入参数而`suffixIcon`有传入参数时，`allowClose`不生效；当  
-> `suffixSymbol`和`suffixIcon`都没有传入参数时，`allowClose`决定是否显示删除图标。  
+> `suffixSymbol`和`suffixIcon`都没有传入参数时，`allowClose`决定是否显示关闭图标。  
 >  
 > 2. `backgroundColor`和`activatedBackgroundColor`赋值为`undefined`时，显示默认背景颜色；赋值为非法值时，背景颜色透明。  
 >  
-> 3. prefixSymbol/suffixSymbol的fontColor默认值为：normalFontColor: `[$r('sys.color.ohos_id_color_primary')]`、  
-> activatedFontColor: `[$r('sys.color.ohos_id_color_text_primary_contrary')]`。fontColor默认值为16。  
+> 3. 当prefixSymbol或suffixSymbol设置了图标时，若Chip为非激活状态，图标颜色fontColor为`[$r('sys.color.ohos_id_color_secondary')]`，若Chip为激活状  
+> 态，图标颜色fontColor为`[$r('sys.color.ohos_id_color_text_primary_contrary')]`。此外，当size为ChipSize.SMALL时，图标的默认字体大小fontSize为  
+> `$r('sys.float.chip_small_icon_size')`；当size为ChipSize.NORMAL或自定义大小时，图标的默认字体大小fontSize为  
+> `$r('sys.float.chip_normal_icon_size')`。  
 >  
-> 4. prefixIcon的fillColor默认值为：`$r('sys.color.ohos_id_color_secondary')`，suffixIcon的fillColor默认值为：  
-> `$r('sys.color.ohos_id_color_primary')`。fillColor对颜色的解析与Image组件保持一致。  
+> 4. 当prefixIcon和suffixIcon设置了图标时，fillColor默认值均为：`$r('sys.color.chip_usually_icon_color')`。fillColor对颜色的解析与Image组件保持一  
+> 致。  
 >  
-> 5. prefixIcon和suffixIcon的activatedFillColor默认值均为：`$r('sys.color.ohos_id_color_text_primary_contrary')`。  
-> activatedFillColor对颜色的解析与Image组件保持一致。
+> 5. 当prefixIcon和suffixIcon设置了图标时，activatedFillColor默认值均为：`$r('sys.color.chip_active_icon_color')`。activatedFillColor  
+> 对颜色的解析与Image组件保持一致。  
+>  
+> 6. 从API版本26.0.0开始，当配置backgroundSystemMaterial为自动反色材质时，prefixIcon和suffixIcon的填充色以及prefixSymbol和suffixSymbol在非激活状态下的文  
+> 字颜色会使用支持反色的系统资源，这些颜色会根据背景材质自动匹配反色效果。当设置activatedBackgroundSystemMaterial为自动反色材质时，prefixIcon和suffixIcon的激活态填充色以及  
+> prefixSymbol和suffixSymbol在激活状态下的文字颜色同样采用支持反色的系统资源，实现与背景材质反色的自动适配。
 
 **起始版本：** 11
 
@@ -35,7 +41,7 @@ import { SuffixIconOptions, CloseOptions, ChipSymbolGlyphOptions, Chip, Accessib
 accessibilityDescription?: ResourceStr
 ```
 
-Chip组件的无障碍描述。此描述用于向用户详细解释当前组件，开发人员应为组件的这一属性提供较为详尽的文本说明，以协助用户理解即将执行的操作及其可能产生的结果。特别是当这些结果无法仅从组件的属性和无障碍文本中直接获知时。如果组件同时具备文本属性和无障碍说明属性，当组件被选中时，系统将首先播报组件的文本属性，随后播报无障碍说明属性的内容。
+Chip组件的无障碍描述。用于向用户详细解释当前组件，开发人员应提供详尽的文本说明，协助用户理解即将执行的操作及其结果。特别是当这些结果无法仅从组件属性和无障碍文本中直接获知时。如果组件同时具备文本属性和无障碍说明属性，当组件被选中时，系统将首先播报组件的文本属性，随后播报无障碍说明属性的内容。
 
 默认值：空字符串。
 
@@ -59,9 +65,9 @@ Chip组件的无障碍描述。此描述用于向用户详细解释当前组件�
 accessibilityLevel?: string
 ```
 
-Chip组件无障碍重要性。用于控制后缀图标是否可被无障碍辅助服务所识别。
+Chip组件无障碍重要性。用于控制Chip组件是否可被无障碍辅助服务所识别。
 
-支持的值为:
+支持的值为：
 
 "auto"：当前组件会转化为"yes"。
 
@@ -123,9 +129,11 @@ Chip是否为激活态。
 
 默认值：false。
 
-true：操作块为激活态；false：操作块为非激活态。
+true：Chip为激活态；false：Chip为非激活态。
 
 值为undefined时，按默认值处理。
+
+**使用场景**：常用于标签选择场景表示当前选中项等。
 
 **类型：** boolean
 
@@ -145,11 +153,11 @@ true：操作块为激活态；false：操作块为非激活态。
 activatedBackgroundColor?: ResourceColor
 ```
 
-Chip激活时的背景颜色。
+Chip激活态的背景颜色。
 
 默认值：$r('sys.color.ohos_id_color_emphasize')。
 
-值为undefined时，按默认值处理。
+值为undefined时，按默认值处理。赋值为非法值时，背景颜色透明。
 
 **类型：** ResourceColor
 
@@ -175,6 +183,8 @@ activatedBackgroundSystemMaterial?: uiMaterial.Material
 
 值为undefined时，不应用材质样式。
 
+**说明**：当设置activatedBackgroundSystemMaterial时，应将activatedBackgroundColor设为Color.Transparent，否则会与系统材质冲突；当activatedBackgroundSystemMaterial为undefined时，activatedBackgroundColor属性生效。
+
 **类型：** uiMaterial.Material
 
 **起始版本：** 26.0.0
@@ -197,9 +207,11 @@ allowClose?: boolean
 
 默认值：true
 
-true：删除图标显示；false：删除图标不显示。
+true：关闭图标显示；false：关闭图标不显示。
 
 值为undefined时，按默认值处理。
+
+**说明**：当suffixSymbol有传入参数时，allowClose不生效；当suffixSymbol没有传入参数而suffixIcon有传入参数时，allowClose不生效；当suffixSymbol和suffixIcon都没有传入参数时，allowClose决定是否显示关闭图标。
 
 **类型：** boolean
 
@@ -223,7 +235,7 @@ Chip背景颜色。
 
 默认值：$r('sys.color.ohos_id_color_button_normal')。
 
-值为undefined时，按默认值处理。
+值为undefined时，按默认值处理。赋值为非法值时，背景颜色透明。
 
 **类型：** ResourceColor
 
@@ -249,6 +261,8 @@ backgroundSystemMaterial?: uiMaterial.Material
 
 值为undefined时，不应用材质样式。
 
+**说明**：当设置backgroundSystemMaterial时，应将backgroundColor设为Color.Transparent，否则会与系统材质冲突；当backgroundSystemMaterial为undefined时，backgroundColor属性生效。
+
 **类型：** uiMaterial.Material
 
 **起始版本：** 26.0.0
@@ -267,9 +281,13 @@ backgroundSystemMaterial?: uiMaterial.Material
 borderRadius?: Dimension
 ```
 
-Chip背景圆角半径大小，不支持百分比。
+Chip背景圆角半径大小，不支持百分比，传入百分比时按默认值处理。
+
+取值范围：[0, +∞)
 
 默认值：$r('sys.float.ohos_id_corner_radius_button')。
+
+单位：vp
 
 值为undefined时，按默认值处理。
 
@@ -291,7 +309,7 @@ Chip背景圆角半径大小，不支持百分比。
 closeOptions?: CloseOptions
 ```
 
-默认关闭图标的无障碍朗读功能属性。
+默认关闭图标的功能属性，包括无障碍朗读功能和字体大小等属性。仅在默认关闭图标显示时生效，即allowClose为true且suffixSymbol和suffixIcon均未设置传入参数时。
 
 值为undefined时，按默认值处理。
 
@@ -319,6 +337,8 @@ direction?: Direction
 
 值为undefined时，按默认值处理。
 
+**使用场景**：常用于国际化场景，适配阿拉伯语等从右到左（RTL）阅读习惯的语言环境，实现界面镜像效果。
+
 **类型：** Direction
 
 **起始版本：** 12
@@ -337,11 +357,13 @@ direction?: Direction
 enabled?: boolean
 ```
 
-Chip是否可选中。
+Chip是否可用。
 
 默认值：true。
 
-true：操作块可选中；false：操作块不可选中。
+true：Chip可用；false：Chip不可用。
+
+**使用场景**：设置为false禁用Chip，适用于权限受限、数据未加载完成、条件不满足等需要禁止用户操作的场景。
 
 值为undefined时，按默认值处理。
 
@@ -363,14 +385,16 @@ true：操作块可选中；false：操作块不可选中。
 fontSize?: Dimension
 ```
 
-统一设置Chip组件的文本与图标的字体大小，不支持百分比。
+统一设置Chip组件的文本与图标的字体大小，不支持百分比，传入百分比时按默认值处理。
 
 该fontSize的优先级低于prefixSymbol、label、suffixSymbol和closeOptions中的fontSize属性。
 
 默认值：
 
-- size为ChipSize.SMALL时，文本默认值：`$r('sys.float.chip_small_font_size')`；图标默认值：`$r('sys.float.chip_small_icon_size')`  
-- 其他情况下，文本默认值：`$r('sys.float.chip_normal_font_size')`；图标默认值：`$r('sys.float.chip_normal_icon_size')`
+- size为ChipSize.SMALL时，文本：`$r('sys.float.chip_small_font_size')`；图标：`$r('sys.float.chip_small_icon_size')`  
+- 其他情况下，文本：`$r('sys.float.chip_normal_font_size')`；图标：`$r('sys.float.chip_normal_icon_size')`
+
+单位：fp
 
 值为undefined时，按默认值处理。
 
@@ -392,7 +416,7 @@ fontSize?: Dimension
 label: LabelOptions
 ```
 
-文本属性。
+设置Chip组件显示的文本内容及样式。
 
 **类型：** LabelOptions
 
@@ -412,7 +436,17 @@ label: LabelOptions
 maxFontScale?: number | Resource
 ```
 
-Chip组件文本与图标的最大的字体缩放倍数。取值范围：[1, +∞)。
+Chip组件文本与图标的最大的字体缩放倍数。
+
+取值范围：[1, +∞)
+
+设置的值小于1时，按值为1处理。异常值默认不生效。
+
+默认值：1
+
+值为undefined时，按默认值处理。
+
+**使用场景**：适用于需要限制字体放大上限的无障碍场景，防止字体过大导致布局溢出。
 
 **类型：** number \| Resource
 
@@ -432,7 +466,17 @@ Chip组件文本与图标的最大的字体缩放倍数。取值范围：[1, +�
 minFontScale?: number | Resource
 ```
 
-Chip组件文本与图标的最小的字体缩放倍数。取值范围：[0, 1]。
+Chip组件文本与图标的最小的字体缩放倍数。
+
+取值范围：[0, 1]
+
+设置的值小于0时，按值为0处理。设置的值大于1时，按值为1处理。异常值默认不生效。
+
+默认值：1
+
+值为undefined时，按默认值处理。
+
+**使用场景**：适用于需要限制字体缩小下限的场景，保证文本可读性。
 
 **类型：** number \| Resource
 
@@ -452,7 +496,7 @@ Chip组件文本与图标的最小的字体缩放倍数。取值范围：[0, 1]�
 onClicked?: Callback<void>
 ```
 
-Chip点击事件。
+Chip组件点击事件。
 
 值为undefined时，Chip不能被点击。
 
@@ -476,7 +520,9 @@ onClose?: () => void
 
 默认关闭图标点击事件。
 
-值为undefined时，关闭图标点击事件。
+值为undefined时，不触发关闭图标点击事件。
+
+**说明**：仅当关闭图标显示时生效，即suffixSymbol和suffixIcon都未传入参数且allowClose为true时。
 
 **类型：** () =&gt; void
 
@@ -528,7 +574,7 @@ Chip组件的内边距。
 prefixIcon?: PrefixIconOptions
 ```
 
-前缀图标属性。
+设置Chip组件的前缀图标，显示在组件左侧。
 
 默认值：不显示前缀图标。
 
@@ -554,7 +600,7 @@ prefixIcon和prefixSymbol同时设置时，显示prefixSymbol的效果，prefixI
 prefixSymbol?: ChipSymbolGlyphOptions
 ```
 
-前缀图标属性，symbol类型。
+前缀图标属性，symbol类型。常用于需要系统标准图标、动态图标效果的场景。
 
 默认值：不显示前缀图标。
 
@@ -584,6 +630,8 @@ Chip尺寸。
 
 默认值：ChipSize.NORMAL
 
+**使用场景**：ChipSize.NORMAL适用于常规场景；ChipSize.SMALL适用于紧凑布局场景，如标签列表、筛选栏等；自定义SizeOptions适用于需要特定尺寸的场景。
+
 SizeOptions类型参数不支持百分比设置，异常值按默认值处理。
 
 **说明**：[适老化](../../../ui/arkui-support-for-aging-adaptation.md)在size指定具体宽高时不生效，size设置为{ height: 0, width: 0 }除外。
@@ -606,7 +654,7 @@ SizeOptions类型参数不支持百分比设置，异常值按默认值处理。
 suffixIcon?: SuffixIconOptions
 ```
 
-后缀图标属性。
+设置Chip组件的后缀图标，显示在组件右侧。
 
 默认值：不显示后缀图标。
 
@@ -632,7 +680,7 @@ suffixIcon和suffixSymbol同时设置时，显示suffixSymbol的效果，suffixI
 suffixSymbol?: ChipSymbolGlyphOptions
 ```
 
-后缀图标属性，symbol类型。
+后缀图标属性，symbol类型。常用于需要系统标准图标、动态图标效果的场景。
 
 默认值：不显示后缀图标。
 
@@ -658,9 +706,9 @@ suffixIcon和suffixSymbol同时设置时，显示suffixSymbol的效果，suffixI
 suffixSymbolOptions?: ChipSuffixSymbolGlyphOptions
 ```
 
-symbol类型后缀图标属性的无障碍朗读功能属性。
+symbol类型后缀图标的无障碍朗读功能属性及点击事件回调等。
 
-默认值：不显示后缀图标。
+默认值：不设置对应属性。
 
 值为undefined时，按默认值处理。
 

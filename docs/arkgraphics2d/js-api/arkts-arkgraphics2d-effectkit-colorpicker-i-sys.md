@@ -14,7 +14,6 @@ A class used to obtain the color from an image. Before calling any method of Col
 import { effectKit } from '@kit.ArkGraphics2D';
 ```
 
-<a id="discriminatepicturelightdegree"></a>
 ## discriminatePictureLightDegree
 
 ```TypeScript
@@ -70,7 +69,6 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
-<a id="getalphazerotransparentproportion"></a>
 ## getAlphaZeroTransparentProportion
 
 ```TypeScript
@@ -130,7 +128,6 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
-<a id="getcomplexitydegree"></a>
 ## getComplexityDegree
 
 ```TypeScript
@@ -190,7 +187,6 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
-<a id="getdeepenimmersioncolor"></a>
 ## getDeepenImmersionColor
 
 ```TypeScript
@@ -246,7 +242,6 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
-<a id="getimmersivebackgroundcolor"></a>
 ## getImmersiveBackgroundColor
 
 ```TypeScript
@@ -302,7 +297,6 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
-<a id="getimmersiveforegroundcolor"></a>
 ## getImmersiveForegroundColor
 
 ```TypeScript
@@ -358,7 +352,6 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
-<a id="getmorandishadowcolor"></a>
 ## getMorandiShadowColor
 
 ```TypeScript
@@ -414,7 +407,6 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
-<a id="getreversecolor"></a>
 ## getReverseColor
 
 ```TypeScript
@@ -470,7 +462,6 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
-<a id="getshadedegree"></a>
 ## getShadeDegree
 
 ```TypeScript
@@ -530,7 +521,6 @@ image.createPixelMap(color, opts).then((pixelMap) => {
 
 ```
 
-<a id="gettopproportioncolorsandpercentage"></a>
 ## getTopProportionColorsAndPercentage
 
 ```TypeScript

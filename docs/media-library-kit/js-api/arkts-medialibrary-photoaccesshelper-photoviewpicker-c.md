@@ -14,7 +14,6 @@ PhotoViewPicker provides APIs for the user to select images and videos. Before u
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
-<a id="select"></a>
 ## select
 
 ```TypeScript
@@ -22,14 +21,13 @@ select(option?: PhotoSelectOptions): Promise<PhotoSelectResult>
 ```
 
 Starts a **photoPicker** page for the user to select one or more images or videos. This API uses a promise to return the result. You can pass in **PhotoSelectOptions** to specify the type and maximum number of the files to select. A **PhotoSelectResult** object is returned.
-
 > **NOTE**  
 >  
 > **photoUris** in the PhotoSelectResult object returned by this API has permanent authorization and can be used  
 > only by calling  
-> [photoAccessHelper.getAssets](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i.md#getassets-1)  
+> [photoAccessHelper.getAssets](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i.md#getassets)  
 > . For details, see  
-> [Using a Media File URI](docroot://file-management/user-file-uri-intro.md#using-a-media-file-uri).
+> [Using a Media File URI](../../../file-management/user-file-uri-intro.md#using-a-media-file-uri).
 
 **Since:** 10
 
@@ -59,7 +57,6 @@ Starts a **photoPicker** page for the user to select one or more images or video
 | 13900042 | Unknown error |
 | [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | Scene parameters validate failed, possible causes:<br>1. An illegal enumeration value was passed to PhotoSelectOptions.globalMovingPhotoState.Only MOVING_PHOTO_ENABLE and MOVING_PHOTO_DISABLE are supported for configuration;<br>2. An illegal enumeration value was passed to PhotoSelectOptions.assetCompatibleAbility.<br>**Applicable version:** 12 and later |
 
-<a id="select-1"></a>
 ## select
 
 ```TypeScript
@@ -67,14 +64,13 @@ select(option: PhotoSelectOptions, callback: AsyncCallback<PhotoSelectResult>): 
 ```
 
 Starts a **photoPicker** page for the user to select one or more images or videos. This API uses an asynchronous callback to return the result. You can pass in **PhotoSelectOptions** to specify the media file type and the maximum number of files to select.
-
 > **NOTE**  
 >  
 > **photoUris** in the PhotoSelectResult object returned by this API has permanent authorization and can be used  
 > only by calling  
-> [photoAccessHelper.getAssets](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i.md#getassets-1)  
+> [photoAccessHelper.getAssets](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i.md#getassets)  
 > . For details, see  
-> [Using a Media File URI](docroot://file-management/user-file-uri-intro.md#using-a-media-file-uri).
+> [Using a Media File URI](../../../file-management/user-file-uri-intro.md#using-a-media-file-uri).
 
 **Since:** 10
 
@@ -99,7 +95,6 @@ Starts a **photoPicker** page for the user to select one or more images or video
 | 13900042 | Unknown error |
 | [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | Scene parameters validate failed, possible causes:<br>1. An illegal enumeration value was passed to PhotoSelectOptions.globalMovingPhotoState.Only MOVING_PHOTO_ENABLE and MOVING_PHOTO_DISABLE are supported for configuration;<br>**Applicable version:** 12 and later |
 
-<a id="select-2"></a>
 ## select
 
 ```TypeScript
@@ -107,14 +102,13 @@ select(callback: AsyncCallback<PhotoSelectResult>): void
 ```
 
 Starts a **photoPicker** page for the user to select one or more images or videos. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > **photoUris** in the PhotoSelectResult object returned by this API has permanent authorization and can be used  
 > only by calling  
-> [photoAccessHelper.getAssets](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i.md#getassets-1)  
+> [photoAccessHelper.getAssets](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i.md#getassets)  
 > . For details, see  
-> [Using a Media File URI](docroot://file-management/user-file-uri-intro.md#using-a-media-file-uri).
+> [Using a Media File URI](../../../file-management/user-file-uri-intro.md#using-a-media-file-uri).
 
 **Since:** 10
 

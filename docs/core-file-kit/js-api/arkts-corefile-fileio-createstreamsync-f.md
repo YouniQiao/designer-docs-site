@@ -1,6 +1,5 @@
 # createStreamSync
 
-<a id="createstreamsync"></a>
 ## createStreamSync
 
 ```TypeScript
@@ -13,7 +12,7 @@ Creates a stream based on the file path. This API returns the result synchronous
 
 **Deprecated since:** 9
 
-**Substitutes:** [fs:createStreamSync](arkts-corefile-file-fs-createstreamsync-f.md#createstreamsync-1)
+**Substitutes:** [fs:createStreamSync](arkts-corefile-fileio-createstreamsync-f.md#createstreamsync)
 
 <!--Device-unnamed-declare function createStreamSync(path: string, mode: string): Stream--><!--Device-unnamed-declare function createStreamSync(path: string, mode: string): Stream-End-->
 

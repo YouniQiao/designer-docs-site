@@ -2,7 +2,7 @@
 
 Implements a floating ball controller instance, which is used to start, update, and stop floating balls, and register callbacks.
 
-Before calling any of the following APIs, you must use [floatingBall.create()](arkts-arkui-floatingball-create-f.md#create-1) to create a floating ball controller instance.
+Before calling any of the following APIs, you must use [floatingBall.create()](arkts-arkui-floatingball-create-f.md#create) to create a floating ball controller instance.
 
 **Since:** 20
 
@@ -16,7 +16,6 @@ Before calling any of the following APIs, you must use [floatingBall.create()](a
 import { floatingBall } from '@kit.ArkUI';
 ```
 
-<a id="getfloatingballwindowinfo"></a>
 ## getFloatingBallWindowInfo
 
 ```TypeScript
@@ -62,7 +61,6 @@ floatingBallController.getFloatingBallWindowInfo().then((data: floatingBall.Floa
 
 ```
 
-<a id="off"></a>
 ## off('stateChange')
 
 ```TypeScript
@@ -108,7 +106,6 @@ try {
 
 ```
 
-<a id="off-1"></a>
 ## off('click')
 
 ```TypeScript
@@ -154,7 +151,6 @@ try {
 
 ```
 
-<a id="offdestroy"></a>
 ## offDestroy
 
 ```TypeScript
@@ -207,7 +203,6 @@ try {
 
 ```
 
-<a id="on"></a>
 ## on('stateChange')
 
 ```TypeScript
@@ -254,7 +249,6 @@ try {
 
 ```
 
-<a id="on-1"></a>
 ## on('click')
 
 ```TypeScript
@@ -301,7 +295,6 @@ try {
 
 ```
 
-<a id="ondestroy"></a>
 ## onDestroy
 
 ```TypeScript
@@ -349,7 +342,6 @@ try {
 
 ```
 
-<a id="restoremainwindow"></a>
 ## restoreMainWindow
 
 ```TypeScript
@@ -416,7 +408,6 @@ try {
 
 ```
 
-<a id="setfloatingballvisibilityinapp"></a>
 ## setFloatingBallVisibilityInApp
 
 ```TypeScript
@@ -425,9 +416,9 @@ setFloatingBallVisibilityInApp(isVisible: boolean): Promise<void>
 
 Sets whether the floating ball is visible in the application. This API uses a promise to return the result.
 
-- When the application is on the recent tasks screen (the [lifecycle state](docroot://windowmanager/window-overview.md#lifecycle-states) is **PAUSED**), the floating ball is invisible.  
+- When the application is on the recent tasks screen (the [lifecycle state](../../../windowmanager/window-overview.md#lifecycle-states) is **PAUSED**), the floating ball is invisible.  
 - By default (when this API is not called) or when this API is called with the value **true** passed in, the floating ball is visible except on the recent tasks screen.  
-- When this API is called with the value **false** passed in, the floating ball is invisible when the application is in the foreground (the [lifecycle state](docroot://windowmanager/window-overview.md#lifecycle-states) is **SHOWN** or **RESUMED**) and is visible when the application is in the background (the [lifecycle state](docroot://windowmanager/window-overview.md#lifecycle-states) is **HIDDEN**).
+- When this API is called with the value **false** passed in, the floating ball is invisible when the application is in the foreground (the [lifecycle state](../../../windowmanager/window-overview.md#lifecycle-states) is **SHOWN** or **RESUMED**) and is visible when the application is in the background (the [lifecycle state](../../../windowmanager/window-overview.md#lifecycle-states) is **HIDDEN**).
 
 **Since:** 24
 
@@ -471,7 +462,6 @@ floatingBallController?.setFloatingBallVisibilityInApp(false).then(() => {
 
 ```
 
-<a id="startfloatingball"></a>
 ## startFloatingBall
 
 ```TypeScript
@@ -538,7 +528,6 @@ try {
 
 ```
 
-<a id="stopfloatingball"></a>
 ## stopFloatingBall
 
 ```TypeScript
@@ -581,7 +570,6 @@ floatingBallController.stopFloatingBall().then(() => {
 
 ```
 
-<a id="updatefloatingball"></a>
 ## updateFloatingBall
 
 ```TypeScript

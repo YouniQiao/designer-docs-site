@@ -263,7 +263,7 @@ builder: any
 cancel?: () => void
 ```
 
-返回、ESC键和点击遮障层弹窗退出时的回调。
+返回、ESC键和点击遮障层弹窗退出时的回调。未设置时不执行任何操作。
 
 **类型：** () =&gt; void
 
@@ -337,7 +337,7 @@ cornerRadius?: Dimension | BorderRadiuses
 customStyle?: boolean
 ```
 
-弹窗容器样式是否自定义。值为true表示弹窗容器样式不能自定义，值为false表示弹窗容器样式能自定义。
+弹窗容器样式是否自定义。值为true表示弹窗容器样式能自定义，值为false表示弹窗容器样式不能自定义。
 
 默认值：false
 
@@ -365,7 +365,7 @@ customStyle?: boolean
 displayModeInSubWindow?: DialogDisplayMode
 ```
 
-弹窗在子窗口中的显示模式。
+弹窗在子窗口中的显示模式。取值范围及显示效果请参考DialogDisplayMode枚举说明，例如SCREEN_BASED表示弹窗在屏幕居中显示，WINDOW_BASED表示弹窗在应用窗口居中显示。
 
 默认值：DialogDisplayMode.SCREEN_BASED
 
@@ -393,7 +393,7 @@ displayModeInSubWindow?: DialogDisplayMode
 enableHoverMode?: boolean
 ```
 
-是否响应悬停态，值为true时，响应悬停态。
+是否响应悬停态。值为true时响应悬停态，值为false时不响应悬停态。
 
 默认值：false，默认不响应。
 
@@ -899,7 +899,7 @@ onWillDismiss?: Callback<DismissDialogAction>
 openAnimation?: AnimateParam
 ```
 
-自定义设置弹窗弹出的动画效果相关参数。
+自定义设置弹窗弹出的动画效果相关参数。未设置时使用系统默认弹出动画。
 
 **说明**：
 
@@ -949,7 +949,7 @@ shadow?: ShadowOptions | ShadowStyle
 showInSubWindow?: boolean
 ```
 
-某弹框需要显示在主窗口之外时，是否在子窗口显示此弹窗。值为true表示在子窗口显示弹窗。
+某弹窗需要显示在主窗口之外时，是否在子窗口显示此弹窗。值为true表示在子窗口显示弹窗。
 
 默认值：false，弹窗显示在应用内，而非独立子窗口。
 

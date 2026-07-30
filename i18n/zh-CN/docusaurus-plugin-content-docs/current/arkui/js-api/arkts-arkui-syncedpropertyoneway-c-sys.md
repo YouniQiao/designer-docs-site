@@ -1,6 +1,6 @@
 # SyncedPropertyOneWay（系统接口）
 
-继承自[SubscribedAbstractProperty<T>](arkts-arkui-subscribedabstractproperty-c-sys.md)。用来定义父组件的状态值。
+继承自[SubscribedAbstractProperty\&lt;T\&gt;](arkts-arkui-subscribedabstractproperty-c-sys.md)。用于接收父组件状态值的单向同步，当父组件状态变化时更新自身值。
 
 **继承/实现关系：** SyncedPropertyOneWay extends [SubscribedAbstractProperty<T>](SubscribedAbstractProperty<T>) implements [ISinglePropertyChangeSubscriber<T>](ISinglePropertyChangeSubscriber<T>)
 
@@ -32,7 +32,7 @@ aboutToBeDeleted(unsubscribeMe?: IPropertySubscriber): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| unsubscribeMe | [IPropertySubscriber](arkts-arkui-ipropertysubscriber-i-sys.md) | 否 | 被取消的订阅者。 |
+| unsubscribeMe | [IPropertySubscriber](arkts-arkui-ipropertysubscriber-i-sys.md) | 否 | 被取消的订阅者，需为已订阅的订阅者；不传入则取消所有订阅者。 |
 
 ## constructor
 
@@ -40,7 +40,7 @@ aboutToBeDeleted(unsubscribeMe?: IPropertySubscriber): void
 constructor(source: SubscribedAbstractProperty<T>, subscribeMe?: IPropertySubscriber, info?: string)
 ```
 
-构造函数。
+构造函数。订阅关系不再需要时，应调用[unlinkSuscriber()](arkts-arkui-subscribedabstractproperty-c-sys.md#unlinksuscriber)解除订阅（订阅者ID通过[IPropertySubscriber](arkts-arkui-ipropertysubscriber-i-sys.md).[id()](arkts-arkui-ipropertysubscriber-i-sys.md#id)获取），或调用本对象的[aboutToBeDeleted()](arkts-arkui-syncedpropertyoneway-c-sys.md#abouttobedeleted)方法处理取消订阅。
 
 **起始版本：** 7
 
@@ -55,8 +55,8 @@ constructor(source: SubscribedAbstractProperty<T>, subscribeMe?: IPropertySubscr
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | source | [SubscribedAbstractProperty](arkts-arkui-subscribedabstractproperty-c-sys.md)&lt;T&gt; | 是 | 单向同步属性的数据源。 |
-| subscribeMe | [IPropertySubscriber](arkts-arkui-ipropertysubscriber-i-sys.md) | 否 | 订阅者。 |
-| info | string | 否 | 订阅者信息。 |
+| subscribeMe | [IPropertySubscriber](arkts-arkui-ipropertysubscriber-i-sys.md) | 否 | 订阅者，用于接收属性变化通知；不传入则不建立订阅关系。 |
+| info | string | 否 | 变量信息，用于标识该订阅关系；不传入时默认为undefined。 |
 
 ## get
 
@@ -64,7 +64,7 @@ constructor(source: SubscribedAbstractProperty<T>, subscribeMe?: IPropertySubscr
 get(): T
 ```
 
-获取数据源时调用。
+获取数据时调用。
 
 **起始版本：** 7
 
@@ -78,7 +78,7 @@ get(): T
 
 | 类型 | 说明 |
 | --- | --- |
-| T | - T类型实例。 |
+| T | - 返回单向同步属性当前的数据值。 |
 
 ## hasChanged
 
@@ -100,7 +100,7 @@ hasChanged(newValue: T): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| newValue | T | 是 | T类型实例。 |
+| newValue | T | 是 | 更改后的新值。 |
 
 ## set
 
@@ -122,7 +122,7 @@ set(newValue: T): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| newValue | T | 是 | T类型实例。 |
+| newValue | T | 是 | 要设置的新值。 |
 
 ## source_
 
@@ -130,7 +130,7 @@ set(newValue: T): void
 private source_
 ```
 
-双向同步属性的数据源。
+单向同步属性的数据源。
 
 **起始版本：** 7
 

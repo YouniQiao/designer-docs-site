@@ -18,7 +18,6 @@ Control center session object.
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="enableautoframing"></a>
 ## enableAutoFraming
 
 ```TypeScript
@@ -49,7 +48,6 @@ Enable auto-framing effect.
 | [7400104](../errorcode-camera.md#7400104-session-not-running) | Session not running. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="getautoframingstatus"></a>
 ## getAutoFramingStatus
 
 ```TypeScript
@@ -78,7 +76,6 @@ Gets the status of auto-framing effect.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 
-<a id="getcontrolcenterheight"></a>
 ## getControlCenterHeight
 
 ```TypeScript
@@ -109,7 +106,6 @@ Gets the control center height.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 
-<a id="getcurrentdevice"></a>
 ## getCurrentDevice
 
 ```TypeScript
@@ -141,7 +137,6 @@ Gets the current camera device.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 | [7400104](../errorcode-camera.md#7400104-session-not-running) | Session not running. |
 
-<a id="isautoframingsupported"></a>
 ## isAutoFramingSupported
 
 ```TypeScript
@@ -170,7 +165,6 @@ Checks whether auto-framing is supported.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 
-<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -199,7 +193,6 @@ Release control center session object.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 
-<a id="usedasposition"></a>
 ## usedAsPosition
 
 ```TypeScript

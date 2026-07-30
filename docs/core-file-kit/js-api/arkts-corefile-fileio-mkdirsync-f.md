@@ -1,6 +1,5 @@
 # mkdirSync
 
-<a id="mkdirsync"></a>
 ## mkdirSync
 
 ```TypeScript
@@ -13,7 +12,7 @@ Creates a directory. This API returns the result synchronously.
 
 **Deprecated since:** 9
 
-**Substitutes:** [fs:mkdirSync](arkts-corefile-file-fs-mkdirsync-f.md#mkdirsync-1)
+**Substitutes:** [fs:mkdirSync](arkts-corefile-fileio-mkdirsync-f.md#mkdirsync)
 
 <!--Device-unnamed-declare function mkdirSync(path: string, mode?: number): void--><!--Device-unnamed-declare function mkdirSync(path: string, mode?: number): void-End-->
 

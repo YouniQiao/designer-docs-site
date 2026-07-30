@@ -18,7 +18,7 @@
 columnsGap(value: LengthMetrics): T
 ```
 
-设置列与列的间距。默认值为0vp，设置为小于0的值时，按默认值显示。
+设置列与列的间距。设置为小于0的值时，按默认值显示。
 
 **起始版本：** 19
 
@@ -116,8 +116,7 @@ onVisibleIndexesChange(callback: OnVisibleIndexesChangeCallback | undefined): T
 设置onVisibleIndexesChange回调函数。当LazyVGridLayout可视区域内子组件的索引值发生变化时触发回调，返回可视区域内子组件的起始索引值和结束索引值。
 > **说明：**  
 >  
-> 当父组件设置主轴方向尺寸时，LazyVGridLayout按照父组件可视区域进行懒加载。此时onVisibleIndexesChange回调中start返回当前可视区域起始位置子组件的索引值，end返回当前可视区域结束位置子组件的  
-> 索引值。  
+>当父组件设置主轴方向尺寸时，LazyVGridLayout按照父组件可视区域进行懒加载。此时onVisibleIndexesChange回调中start返回当前可视区域起始位置子组件的索引值，end返回当前可视区域结束位置子组件的索引值。  
 >  
 > 当父组件未设置主轴方向尺寸时，LazyVGridLayout会被内容撑开，导致所有子组件都会被加载布局。此时onVisibleIndexesChange回调中start返回0，end返回数据源最后一个子组件的索引值。  
 >  
@@ -151,7 +150,7 @@ onVisibleIndexesChange(callback: OnVisibleIndexesChangeCallback | undefined): T
 rowsGap(value: LengthMetrics): T
 ```
 
-设置行与行的间距。默认值为0vp，设置为小于0的值时，按默认值显示。
+设置行与行的间距。设置为小于0的值时，按默认值显示。
 
 **起始版本：** 19
 
@@ -181,10 +180,7 @@ rowsGap(value: LengthMetrics): T
 sticky(sticky: StickyStyle | undefined): T
 ```
 
-设置[header](#header)和[footer](#footer)的吸附效果。当本组件随滚动容器滚动至可视区域内，且通过sticky设置header吸顶或footer吸底时，header会吸附在滚动容器可视区域顶部，footer会吸附在滚动容器可视区域底部。
-> **说明：**  
->  
-> 由于浮点数计算精度，设置sticky后，在滚动过程中小概率产生缝隙，可以通过[pixelRound](arkts-arkui-commonmethod-c.md#pixelround)指定当前组件向下像素取整解决该问题。
+设置头部和尾部组件的吸顶吸底样式。
 
 **起始版本：** 26.0.0
 
@@ -200,7 +196,7 @@ sticky(sticky: StickyStyle | undefined): T
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| sticky | [StickyStyle](arkts-arkui-stickystyle-e.md) \| undefined | 是 | 头部组件和尾部组件的吸附模式。sticky属性可以设置为StickyStyle.Header或StickyStyle.Footer，也可以设置为StickyStyle.BOTH，以同时支持头部组件吸顶和尾部组件吸底。<br/>方法入参为undefined时，恢复为默认值StickyStyle.None。<br/>未通过该接口设置时，默认头部组件不吸顶、尾部组件不吸底。 |
+| sticky | [StickyStyle](arkts-arkui-stickystyle-e.md) \| undefined | 是 | 头部和尾部组件的吸顶吸底样式。 |
 
 **返回值：**
 

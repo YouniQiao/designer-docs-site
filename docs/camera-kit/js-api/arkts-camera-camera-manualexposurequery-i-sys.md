@@ -16,7 +16,6 @@ Provides APIs to obtain the manual exposure range supported.
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="getsupportedexposurerange"></a>
 ## getSupportedExposureRange
 
 ```TypeScript

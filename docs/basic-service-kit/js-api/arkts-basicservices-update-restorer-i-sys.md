@@ -1,7 +1,6 @@
 # Restorer (System API)
 
 Defines a tool class for restoring factory settings, such as clearing data in the user partition, deeply clearing data in the user and OS partitions, and synchronously clearing file keys.
-
 > **Factory reset**
 
 - Call **getRestorer** to obtain a **Restorer** object.  
@@ -28,7 +27,6 @@ This method quickly clears errors, releases storage space, and protects private 
 import { update } from '@kit.BasicServicesKit';
 ```
 
-<a id="deepfactoryreset"></a>
 ## deepFactoryReset
 
 ```TypeScript
@@ -112,7 +110,6 @@ try {
 
 ```
 
-<a id="factoryreset"></a>
 ## factoryReset
 
 ```TypeScript
@@ -182,7 +179,6 @@ try {
 
 ```
 
-<a id="factoryreset-1"></a>
 ## factoryReset
 
 ```TypeScript
@@ -249,7 +245,6 @@ try {
 
 ```
 
-<a id="forcefactoryreset"></a>
 ## forceFactoryReset
 
 ```TypeScript
@@ -317,7 +312,6 @@ try {
 
 ```
 
-<a id="getdeepfactoryresetinfo"></a>
 ## getDeepFactoryResetInfo
 
 ```TypeScript

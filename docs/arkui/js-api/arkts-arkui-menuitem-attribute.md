@@ -10,7 +10,6 @@ In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkt
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="contentfont"></a>
 ## contentFont
 
 ```TypeScript
@@ -35,7 +34,6 @@ Sets the font style of the menu item content.
 | --- | --- | --- | --- |
 | value | [Font](../arkts-apis/arkts-arkui-arkui-uicontext-font-c.md) | Yes | Font style of the menu item content. |
 
-<a id="contentfontcolor"></a>
 ## contentFontColor
 
 ```TypeScript
@@ -60,7 +58,6 @@ Sets the font color of the menu item content.
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Font color of the menu item content.<br>Default value: **'#E5000000'** |
 
-<a id="labelfont"></a>
 ## labelFont
 
 ```TypeScript
@@ -85,7 +82,6 @@ Sets the font style of the menu item label.
 | --- | --- | --- | --- |
 | value | [Font](../arkts-apis/arkts-arkui-arkui-uicontext-font-c.md) | Yes | Font style of the menu item label. |
 
-<a id="labelfontcolor"></a>
 ## labelFontColor
 
 ```TypeScript
@@ -110,7 +106,6 @@ Sets the font color of the menu item label.
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Font color of the menu item label.<br>Default value: **'#99000000'** |
 
-<a id="onchange"></a>
 ## onChange
 
 ```TypeScript
@@ -133,7 +128,6 @@ Triggered when the selection status of the menu item is changed manually.
 | --- | --- | --- | --- |
 | callback | (selected: boolean) =&gt; void | Yes | Invoked when the selected status changes.<br>**true**: selected; **false**:unselected. |
 
-<a id="selecticon"></a>
 ## selectIcon
 
 ```TypeScript
@@ -156,7 +150,6 @@ Sets whether to display the selected icon when the menu item is selected.
 | --- | --- | --- | --- |
 | value | boolean \| ResourceStr \| SymbolGlyphModifier | Yes | Whether to display the selected icon when the menu item is selected.<br>**true**: Display the default check mark icon. **false**: Hide the selected state icon.<br   >**ResourceStr**: Display the specified custom icon resource.<br>**SymbolGlyphModifier**: Display the specified HMSymbol icon.<br>Default value: **false**.<br>**Since:** 12 |
 
-<a id="selected"></a>
 ## selected
 
 ```TypeScript
@@ -165,9 +158,9 @@ selected(value: boolean)
 
 Sets whether the menu item is selected.
 
-Since API version 10, this parameter supports two-way binding through [$$](docroot://ui/state-management/arkts-two-way-sync.md).
+Since API version 10, this parameter supports two-way binding through [$$](../../../ui/state-management/arkts-two-way-sync.md).
 
-Since API version 18, this parameter supports two-way binding through [!!](docroot://ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
+Since API version 18, this parameter supports two-way binding through [!!](../../../ui/state-management/arkts-new-binding.md#two-way-binding-between-built-in-component-parameters).
 
 **Since:** 9
 
@@ -183,7 +176,6 @@ Since API version 18, this parameter supports two-way binding through [!!](docro
 | --- | --- | --- | --- |
 | value | boolean | Yes | Whether the menu item is selected.<br>**true**: The menu item is selected. **false**:The menu item is not selected.<br>Default value: **false**. |
 
-<a id="submenubuilder"></a>
 ## subMenuBuilder
 
 ```TypeScript

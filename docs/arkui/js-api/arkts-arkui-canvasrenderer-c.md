@@ -1,7 +1,6 @@
 # CanvasRenderer
 
 After the **CanvasRenderingContext2D** object is bound to the **Canvas** component, you can draw shapes,texts, and images on the **Canvas** component.
-
 > **NOTE**  
 >  
 > * It is recommended that the **CanvasRenderingContext2D** object and the **Canvas** component be  
@@ -25,7 +24,6 @@ After the **CanvasRenderingContext2D** object is bound to the **Canvas** compone
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="beginpath"></a>
 ## beginPath
 
 ```TypeScript
@@ -44,7 +42,6 @@ Creates a drawing path.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="clearrect"></a>
 ## clearRect
 
 ```TypeScript
@@ -72,7 +69,6 @@ Clears the content in a rectangle on the canvas.
 | w | number | Yes | Width of the rectangle.<br>**undefined**, **null**, **NaN**, and **Infinity** are treated as invalid values and no rendering will be performed.<br>Default unit: vp |
 | h | number | Yes | Height of the rectangle.<br>**undefined**, **null**, **NaN**, and **Infinity** are treated as invalid values and no rendering will be performed.<br>Default unit: vp |
 
-<a id="clip"></a>
 ## clip
 
 ```TypeScript
@@ -97,7 +93,6 @@ Sets the current path to a clipping path.
 | --- | --- | --- | --- |
 | fillRule | [CanvasFillRule](arkts-arkui-canvasfillrule-t.md) | No | Rule by which to determine whether a point is inside or outside the area to clip.<br>The options are **"nonzero"** and **"evenodd"**.<br>Invalid values **undefined** and **null** are treated as the default value.<br>Default value: **"nonzero"** |
 
-<a id="clip-1"></a>
 ## clip
 
 ```TypeScript
@@ -123,7 +118,6 @@ Sets a specified path as the clipping path.
 | path | [Path2D](arkts-arkui-path2d-c.md) | Yes | **Path2D** path to clip.<br>**undefined** and **null** are treated as invalid values. |
 | fillRule | [CanvasFillRule](arkts-arkui-canvasfillrule-t.md) | No | Rule by which to determine whether a point is inside or outside the area to clip.<br>The options are **"nonzero"** and **"evenodd"**.<br>Invalid values **undefined** and **null** are treated as the default value.<br>Default value: **"nonzero"** |
 
-<a id="createconicgradient"></a>
 ## createConicGradient
 
 ```TypeScript
@@ -142,15 +136,7 @@ Creates a conic gradient.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
-<!--Device-CanvasRenderer-createConicGradient(
-    startAngle: number,
-    x: number,
-    y: number
-  ): CanvasGradient--><!--Device-CanvasRenderer-createConicGradient(
-    startAngle: number,
-    x: number,
-    y: number
-  ): CanvasGradient-End-->
+<!--Device-CanvasRenderer-createConicGradient(    startAngle: number,    x: number,    y: number  ): CanvasGradient--><!--Device-CanvasRenderer-createConicGradient(    startAngle: number,    x: number,    y: number  ): CanvasGradient-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -168,7 +154,6 @@ Creates a conic gradient.
 | --- | --- |
 | [CanvasGradient](arkts-arkui-canvasgradient-c.md) | New **CanvasGradient** object used to create a gradient on the canvas. |
 
-<a id="createimagedata"></a>
 ## createImageData
 
 ```TypeScript
@@ -200,7 +185,6 @@ Creates a blank ImageData object of a specified size. This API involves time-con
 | --- | --- |
 | [ImageData](arkts-arkui-imagedata-c.md) | New **ImageData** object. |
 
-<a id="createimagedata-1"></a>
 ## createImageData
 
 ```TypeScript
@@ -231,7 +215,6 @@ Creates an **ImageData** object with the same width and height of an existing **
 | --- | --- |
 | [ImageData](arkts-arkui-imagedata-c.md) | New **ImageData** object. |
 
-<a id="createlineargradient"></a>
 ## createLinearGradient
 
 ```TypeScript
@@ -265,7 +248,6 @@ Creates a linear gradient.
 | --- | --- |
 | [CanvasGradient](arkts-arkui-canvasgradient-c.md) | New **CanvasGradient** object used to create a gradient on the canvas. |
 
-<a id="createpattern"></a>
 ## createPattern
 
 ```TypeScript
@@ -297,7 +279,6 @@ Creates a pattern for image filling based on a specified source image and repeti
 | --- | --- |
 | [CanvasPattern](../arkts-apis/arkts-arkui-canvaspattern-canvaspattern-i.md) | Pattern for image filling based on a specified source image and repetition mode. |
 
-<a id="createradialgradient"></a>
 ## createRadialGradient
 
 ```TypeScript
@@ -333,7 +314,6 @@ Creates a radial gradient.
 | --- | --- |
 | [CanvasGradient](arkts-arkui-canvasgradient-c.md) | New **CanvasGradient** object used to create a gradient on the canvas. |
 
-<a id="drawimage"></a>
 ## drawImage
 
 ```TypeScript
@@ -360,7 +340,6 @@ Draws an image on the canvas.
 | dx | number | Yes | X-coordinate of the top-left corner of the drawing area on the canvas.<br>Invalid values **undefined** and **null** are treated as **0**. **NaN** and **Infinity** are treated as invalid and no rendering will be performed.<br>Default unit: vp |
 | dy | number | Yes | Y-coordinate of the top-left corner of the drawing area on the canvas.<br>Invalid values **undefined** and **null** are treated as **0**. **NaN** and **Infinity** are treated as invalid and no rendering will be performed.<br>Default unit: vp |
 
-<a id="drawimage-1"></a>
 ## drawImage
 
 ```TypeScript
@@ -389,7 +368,6 @@ Draws an image by stretching or compressing it to the specified dimensions.
 | dw | number | Yes | Width of the drawing area. If the width of the drawing area is different from that of the cropped image, the latter will be stretched or compressed to the former.<br>Negative values, **undefined**, and **null** are treated as **0**. **NaN** and **Infinity** are treated as invalid and no rendering will be performed.<br>Default unit: vp |
 | dh | number | Yes | Height of the drawing area. If the height of the drawing area is different from that of the cropped image, the latter will be stretched or compressed to the former.<br>Negative values, **undefined**, and **null** are treated as **0**. **NaN** and **Infinity** are treated as invalid and no rendering will be performed.<br>Default unit: vp |
 
-<a id="drawimage-2"></a>
 ## drawImage
 
 ```TypeScript
@@ -414,27 +392,7 @@ Draws a cropped portion of an image by stretching or compressing it to the speci
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
-<!--Device-CanvasRenderer-drawImage(
-    image: ImageBitmap | PixelMap,
-    sx: number,
-    sy: number,
-    sw: number,
-    sh: number,
-    dx: number,
-    dy: number,
-    dw: number,
-    dh: number,
-  ): void--><!--Device-CanvasRenderer-drawImage(
-    image: ImageBitmap | PixelMap,
-    sx: number,
-    sy: number,
-    sw: number,
-    sh: number,
-    dx: number,
-    dy: number,
-    dw: number,
-    dh: number,
-  ): void-End-->
+<!--Device-CanvasRenderer-drawImage(    image: ImageBitmap | PixelMap,    sx: number,    sy: number,    sw: number,    sh: number,    dx: number,    dy: number,    dw: number,    dh: number,  ): void--><!--Device-CanvasRenderer-drawImage(    image: ImageBitmap | PixelMap,    sx: number,    sy: number,    sw: number,    sh: number,    dx: number,    dy: number,    dw: number,    dh: number,  ): void-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -452,7 +410,6 @@ Draws a cropped portion of an image by stretching or compressing it to the speci
 | dw | number | Yes | Width of the drawing area.<br>Negative values, **undefined**, and **null** are treated as **0**. **NaN** and **Infinity** are treated as invalid and no rendering will be performed. If the width of the drawing area is different from that of the cropped image, the latter will be stretched or compressed to the former.<br>Default unit: vp |
 | dh | number | Yes | Height of the drawing area.<br>Negative values, **undefined**, and **null** are treated as **0**. **NaN** and **Infinity** are treated as invalid and no rendering will be performed. If the height of the drawing area is different from that of the cropped image, the latter will be stretched or compressed to the former.<br>Default unit: vp |
 
-<a id="fill"></a>
 ## fill
 
 ```TypeScript
@@ -477,7 +434,6 @@ Fills the current path.
 | --- | --- | --- | --- |
 | fillRule | [CanvasFillRule](arkts-arkui-canvasfillrule-t.md) | No | Rule by which to determine whether a point is inside or outside the area to fill.<br>The options are **"nonzero"** and **"evenodd"**.<br>Invalid values **undefined** and **null** are treated as the default value.<br>Default value: **"nonzero"** |
 
-<a id="fill-1"></a>
 ## fill
 
 ```TypeScript
@@ -503,7 +459,6 @@ Fills a specified path.
 | path | [Path2D](arkts-arkui-path2d-c.md) | Yes | **Path2D** path to fill.<br>**undefined** and **null** are treated as invalid values. |
 | fillRule | [CanvasFillRule](arkts-arkui-canvasfillrule-t.md) | No | Rule by which to determine whether a point is inside or outside the area to fill.<br>The options are **"nonzero"** and **"evenodd"**.<br>Invalid values **undefined** and **null** are treated as the default value.<br>Default value: **"nonzero"** |
 
-<a id="fillrect"></a>
 ## fillRect
 
 ```TypeScript
@@ -531,7 +486,6 @@ Fills a rectangle on the canvas.
 | w | number | Yes | Width of the rectangle.<br>**undefined**, **null**, **NaN**, and **Infinity** are treated as invalid values and no rendering will be performed.<br>Default unit: vp |
 | h | number | Yes | Height of the rectangle.<br>**undefined**, **null**, **NaN**, and **Infinity** are treated as invalid values and no rendering will be performed.<br>Default unit: vp |
 
-<a id="filltext"></a>
 ## fillText
 
 ```TypeScript
@@ -559,7 +513,6 @@ Draws filled text on the canvas.
 | y | number | Yes | Y-coordinate of the start point for text rendering.<br>**undefined**, **null**,**NaN**, and **Infinity** are treated as invalid values and no rendering will be performed.<br>Default unit: vp |
 | maxWidth | number | No | Maximum width allowed for the text.<br>**null** is treated as an invalid value and no rendering will be performed. **undefined**, **NaN**, or **Infinity** is treated as the default value.<br>Default value: no width restriction<br>Default unit: vp |
 
-<a id="getimagedata"></a>
 ## getImageData
 
 ```TypeScript
@@ -593,7 +546,6 @@ Obtains the **ImageData** object created with the pixels within the specified ar
 | --- | --- |
 | [ImageData](arkts-arkui-imagedata-c.md) | New **ImageData** object. |
 
-<a id="getlinedash"></a>
 ## getLineDash
 
 ```TypeScript
@@ -618,7 +570,6 @@ Obtains the dash line style.
 | --- | --- |
 | number[] | Interval of alternate line segments and the length of spacing.<br>Values undefined and null are treated as invalid.<br>Default unit: vp |
 
-<a id="getpixelmap"></a>
 ## getPixelMap
 
 ```TypeScript
@@ -650,7 +601,6 @@ Obtains the **PixelMap** object created with the pixels within the specified are
 | --- | --- |
 | [PixelMap](../../apis-image-kit/arkts-apis/arkts-image-image-pixelmap-i.md) | **PixelMap** object. |
 
-<a id="gettransform"></a>
 ## getTransform
 
 ```TypeScript
@@ -675,7 +625,6 @@ Obtains the current transformation matrix being applied to the context.
 | --- | --- |
 | [Matrix2D](../arkts-apis/arkts-arkui-canvaspattern-matrix2d-c.md) | Current transformation matrix applied to the context. |
 
-<a id="measuretext"></a>
 ## measureText
 
 ```TypeScript
@@ -706,7 +655,6 @@ Returns a **TextMetrics** object used to obtain the width of specified text. Not
 | --- | --- |
 | [TextMetrics](arkts-arkui-textmetrics-i.md) | **TextMetrics** object.<br>If the input value is **undefined** or **null**, the value is calculated based on "undefined" or "null". |
 
-<a id="putimagedata"></a>
 ## putImageData
 
 ```TypeScript
@@ -733,7 +681,6 @@ Puts an **ImageData** object onto a rectangular area on the canvas.
 | dx | number \| string | Yes | X-axis offset of the rectangular area on the canvas.<br>Invalid values **undefined**, **null**, **NaN**, and **Infinity** are treated as **0**.<br>Default unit: vp |
 | dy | number \| string | Yes | Y-axis offset of the rectangular area on the canvas.<br>Invalid values **undefined**, **null**, **NaN**, and **Infinity** are treated as **0**.<br>Default unit: vp |
 
-<a id="putimagedata-1"></a>
 ## putImageData
 
 ```TypeScript
@@ -756,23 +703,7 @@ Fills the new rectangular area with the **ImageData** data after cropping.
 
 **Widget capability:** This API can be used in ArkTS widgets since API version 9.
 
-<!--Device-CanvasRenderer-putImageData(
-    imageData: ImageData,
-    dx: number | string,
-    dy: number | string,
-    dirtyX: number | string,
-    dirtyY: number | string,
-    dirtyWidth: number | string,
-    dirtyHeight: number | string
-  ): void--><!--Device-CanvasRenderer-putImageData(
-    imageData: ImageData,
-    dx: number | string,
-    dy: number | string,
-    dirtyX: number | string,
-    dirtyY: number | string,
-    dirtyWidth: number | string,
-    dirtyHeight: number | string
-  ): void-End-->
+<!--Device-CanvasRenderer-putImageData(    imageData: ImageData,    dx: number | string,    dy: number | string,    dirtyX: number | string,    dirtyY: number | string,    dirtyWidth: number | string,    dirtyHeight: number | string  ): void--><!--Device-CanvasRenderer-putImageData(    imageData: ImageData,    dx: number | string,    dy: number | string,    dirtyX: number | string,    dirtyY: number | string,    dirtyWidth: number | string,    dirtyHeight: number | string  ): void-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -788,7 +719,6 @@ Fills the new rectangular area with the **ImageData** data after cropping.
 | dirtyWidth | number \| string | Yes | Width of the rectangular area to crop the source image.<br>Invalid values **undefined**, **null**, **NaN**, and **Infinity** are treated as **0**.<br>Default unit: vp |
 | dirtyHeight | number \| string | Yes | Height of the rectangular area to crop the source image.<br>Invalid values **undefined**, **null**, **NaN**, and **Infinity** are treated as **0**.<br>Default unit: vp |
 
-<a id="reset"></a>
 ## reset
 
 ```TypeScript
@@ -807,7 +737,6 @@ Resets this **CanvasRenderingContext2D** object to its default state and clears 
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="resettransform"></a>
 ## resetTransform
 
 ```TypeScript
@@ -826,7 +755,6 @@ Resets the current transform to the identity matrix.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="restore"></a>
 ## restore
 
 ```TypeScript
@@ -834,7 +762,6 @@ restore(): void
 ```
 
 Restores the saved drawing context.
-
 > **NOTE**  
 >  
 > When the number of calls to **restore()** does not exceed the number of calls to **save()**,  
@@ -854,7 +781,6 @@ Restores the saved drawing context.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="restorelayer"></a>
 ## restoreLayer
 
 ```TypeScript
@@ -873,7 +799,6 @@ Restores the image transformation and cropping state to the state before **saveL
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="rotate"></a>
 ## rotate
 
 ```TypeScript
@@ -898,7 +823,6 @@ Rotates a canvas clockwise around its coordinate axes.
 | --- | --- | --- | --- |
 | angle | number | Yes | Clockwise rotation angle. You can convert degrees to radians using the following formula: degree * Math.PI/180.<br>In versions earlier than API version 18, values **NaN** and **Infinity** cause the failure to call the drawing APIs following this API for rendering. Values **null** and **undefined** cause the current API to have no effect. Since API version 18, **NaN**, **Infinity**, **null**, or **undefined** causes the current API to have no effect, and other drawing APIs with valid arguments continue to render correctly.<br>Unit: radian |
 
-<a id="save"></a>
 ## save
 
 ```TypeScript
@@ -917,7 +841,6 @@ Saves the current drawing context.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="savelayer"></a>
 ## saveLayer
 
 ```TypeScript
@@ -936,7 +859,6 @@ Saves this layer.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="scale"></a>
 ## scale
 
 ```TypeScript
@@ -962,7 +884,6 @@ Scales the canvas based on the given scale factors.
 | x | number | Yes | Horizontal scale factor.<br>In versions earlier than API version 18,values **NaN** and **Infinity** cause the failure to call the drawing APIs following this API for rendering. Values **0**, **null**, **undefined**, and negative numbers cause the current API to have no effect. Since API version 18, **NaN**, **Infinity**, **0**, **null**,**undefined**, and negative numbers cause the current API to have no effect, and other drawing APIs with valid arguments continue to render correctly. |
 | y | number | Yes | Vertical scaling factor. Negative numbers are not supported.<br>In versions earlier than API version 18, values **NaN** and **Infinity** cause the failure to call the drawing APIs following this API for rendering. Values **0**, **null**, **undefined**,and negative numbers cause the current API to have no effect. Since API version 18, **NaN**,**Infinity**, **0**, **null**, **undefined**, and negative numbers cause the current API to have no effect, and other drawing APIs with valid arguments continue to render correctly. |
 
-<a id="setlinedash"></a>
 ## setLineDash
 
 ```TypeScript
@@ -987,7 +908,6 @@ Sets the dash line style.
 | --- | --- | --- | --- |
 | segments | number[] | Yes | An array of numbers that specify distances to alternately draw a line and a gap.<br>**undefined** and **null** are treated as invalid values.<br>Default unit: vp |
 
-<a id="setpixelmap"></a>
 ## setPixelMap
 
 ```TypeScript
@@ -1010,7 +930,6 @@ Draws the input **PixelMap** object on the canvas.The example is the same as tha
 | --- | --- | --- | --- |
 | value | [PixelMap](../../apis-image-kit/arkts-apis/arkts-image-image-pixelmap-i.md) | No | **PixelMap** object that contains pixel values.<br>**undefined** and **null** are treated as invalid values and no rendering will be performed.<br>Default value: **null** |
 
-<a id="settransform"></a>
 ## setTransform
 
 ```TypeScript
@@ -1018,7 +937,6 @@ setTransform(a: number, b: number, c: number, d: number, e: number, f: number): 
 ```
 
 Resets the existing transformation matrix and creates a new transformation matrix by using the same parameters as the **transform()** API.
-
 > **NOTE**  
 >  
 > The coordinates of each point in the graph after transformation can be calculated  
@@ -1052,7 +970,6 @@ Resets the existing transformation matrix and creates a new transformation matri
 | e | number | Yes | **translateX**: horizontal translation distance. A negative value is supported.<br>In versions earlier than API version 18, values **NaN** and **Infinity** cause the failure to call the drawing APIs following this API for rendering. Values **null** and **undefined** cause the current API to have no effect. Since API version 18, **NaN**,**Infinity**, **null**, or **undefined** causes the current API to have no effect, and other drawing APIs with valid arguments continue to render correctly.<br>Default unit: vp |
 | f | number | Yes | **translateY**: vertical translation distance. A negative value is supported.<br>In versions earlier than API version 18, values **NaN** and **Infinity** cause the failure to call the drawing APIs following this API for rendering. Values **null** and **undefined** cause the current API to have no effect. Since API version 18, **NaN**,**Infinity**, **null**, or **undefined** causes the current API to have no effect, and other drawing APIs with valid arguments continue to render correctly.<br>Default unit: vp |
 
-<a id="settransform-1"></a>
 ## setTransform
 
 ```TypeScript
@@ -1077,7 +994,6 @@ Resets the current transformation to the identity matrix, and then creates a new
 | --- | --- | --- | --- |
 | transform | [Matrix2D](../arkts-apis/arkts-arkui-canvaspattern-matrix2d-c.md) | No | Transformation matrix.<br>**undefined** and **null** are treated as invalid values.<br>Default value: **null** |
 
-<a id="stroke"></a>
 ## stroke
 
 ```TypeScript
@@ -1096,7 +1012,6 @@ Strokes (outlines) this path.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="stroke-1"></a>
 ## stroke
 
 ```TypeScript
@@ -1121,7 +1036,6 @@ Strokes (outlines) a specified path.
 | --- | --- | --- | --- |
 | path | [Path2D](arkts-arkui-path2d-c.md) | Yes | Specified stroke path object |
 
-<a id="strokerect"></a>
 ## strokeRect
 
 ```TypeScript
@@ -1149,7 +1063,6 @@ Draws an outlined rectangle on the canvas without filling its interior.
 | w | number | Yes | Width of the rectangle.<br>**undefined**, **null**, **NaN**, and **Infinity** are treated as invalid values and no rendering will be performed.<br>Default unit: vp |
 | h | number | Yes | Height of the rectangle.<br>**undefined**, **null**, **NaN**, and **Infinity** are treated as invalid values and no rendering will be performed.<br>Default unit: vp |
 
-<a id="stroketext"></a>
 ## strokeText
 
 ```TypeScript
@@ -1177,7 +1090,6 @@ Draws stroked text on the canvas.
 | y | number | Yes | Y-coordinate of the start point for text rendering.<br>**undefined**, **null**,**NaN**, and **Infinity** are treated as invalid values and no rendering will be performed.<br>Default unit: vp |
 | maxWidth | number | No | Maximum width of the text.<br>**null** is treated as an invalid value and no rendering will be performed. **undefined**, **NaN**, or **Infinity** is treated as the default value.<br>Default unit: vp<br>Default value: no width restriction |
 
-<a id="transferfromimagebitmap"></a>
 ## transferFromImageBitmap
 
 ```TypeScript
@@ -1202,7 +1114,6 @@ Displays the specified **ImageBitmap** object.
 | --- | --- | --- | --- |
 | bitmap | [ImageBitmap](arkts-arkui-imagebitmap-c.md) | Yes | **ImageBitmap** object to display. |
 
-<a id="transform"></a>
 ## transform
 
 ```TypeScript
@@ -1210,7 +1121,6 @@ transform(a: number, b: number, c: number, d: number, e: number, f: number): voi
 ```
 
 Defines a transformation matrix. To transform a graph, you only need to set parameters of the matrix. The coordinates of the graph are multiplied by the matrix values to obtain new coordinates of the transformed graph. You can use the matrix to implement multiple transform effects.
-
 > **NOTE**  
 >  
 > The coordinates of each point in the graph after transformation can be calculated  
@@ -1244,7 +1154,6 @@ Defines a transformation matrix. To transform a graph, you only need to set para
 | e | number | Yes | Cell at row 1, column 3 of the transformation matrix. **translateX**:horizontal translation distance. A negative value is supported.<br>In versions earlier than API version 18, values **NaN** and **Infinity** cause the failure to call the drawing APIs following this API for rendering. Values **null** and **undefined** cause the current API to have no effect.Since API version 18, **NaN**, **Infinity**, **null**, or **undefined** causes the current API to have no effect, and other drawing APIs with valid arguments continue to render correctly.<br>Default unit: vp |
 | f | number | Yes | Cell at row 2, column 3 of the transformation matrix. **translateY**:vertical translation distance. A negative value is supported.<br>In versions earlier than API version 18, values **NaN** and **Infinity** cause the failure to call the drawing APIs following this API for rendering. Values **null** and **undefined** cause the current API to have no effect.Since API version 18, **NaN**, **Infinity**, **null**, or **undefined** causes the current API to have no effect, and other drawing APIs with valid arguments continue to render correctly.<br>Default unit: vp |
 
-<a id="translate"></a>
 ## translate
 
 ```TypeScript
@@ -1365,7 +1274,6 @@ filter: string
 ```
 
 Sets the filter for an image. Any number of filters can be combined. This attribute is write-only. You can set its value through an assignment statement, but cannot obtain its current value through a read operation. If you attempt to read its current value,**undefined** will be returned.
-
 > **NOTE**  
 >  
 > The resources used in this example are not located in the **src** > **main** > **resource** directory. Starting  
@@ -1421,9 +1329,9 @@ Syntax: ctx.font = 'font-style font-weight font-size font-family'
 
 Starting from API version 20, this API is used to set registered custom fonts (the DevEco Studio Previewer does not support custom fonts). You can register a custom font in either of the following ways:
 
-Register a custom font by calling the asynchronous API this.uiContext.getFont().[registerFont](../arkts-apis/arkts-arkui-arkui-uicontext-font-c.md#registerfont-1)of ArkUI. Immediate rendering after calling this API may result in the custom font not taking effect.
+Register a custom font by calling the asynchronous API this.uiContext.getFont().[registerFont](../arkts-apis/arkts-arkui-arkui-uicontext-font-c.md#registerfont)of ArkUI. Immediate rendering after calling this API may result in the custom font not taking effect.
 
-Directly call the fontCollection.[loadFontSync](docroot://reference/apis-arkgraphics2d/js-apis-graphics-text.md#loadfontsync)API of the font engine to register the custom font. In this case, the **fontCollection** instance must be **text.FontCollection.getGlobalInstance()** because the component loads fonts from this instance by default. If you use another instance, the custom font may not take effect.
+Directly call the fontCollection.[loadFontSync](../../../reference/apis-arkgraphics2d/js-apis-graphics-text.md#loadfontsync)API of the font engine to register the custom font. In this case, the **fontCollection** instance must be **text.FontCollection.getGlobalInstance()** because the component loads fonts from this instance by default. If you use another instance, the custom font may not take effect.
 
 **Type:** string
 
@@ -1594,7 +1502,6 @@ If **LengthMetricsUnit** is set to px, the default unit is px.
 If the value of **letterSpacing** is specified with a unit (for example,**letterSpacing='10vp'**), the letter spacing is set based on the specified unit.
 
 Default value: **0** (Invalid values are treated as the default value.)
-
 > **NOTE**  
 >  
 > The LengthMetrics type is recommended for better performance.

@@ -6,7 +6,6 @@
 import { restrictions } from '@kit.MDMKit';
 ```
 
-<a id="setuserrestriction"></a>
 ## setUserRestriction
 
 ```TypeScript
@@ -19,7 +18,7 @@ Sets restrictions on user behaviors.
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [setUserRestriction(admin:](arkts-mdm-restrictions-setuserrestriction-f.md#setuserrestriction-1)
+**Substitutes:** [setUserRestriction(admin:](arkts-mdm-restrictions-setuserrestriction-f.md#setuserrestriction)
 
 **Required permissions:** ohos.permission.ENTERPRISE_SET_USER_RESTRICTION
 
@@ -68,7 +67,6 @@ try {
 ```
 
 
-<a id="setuserrestriction-1"></a>
 ## setUserRestriction
 
 ```TypeScript

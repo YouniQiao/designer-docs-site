@@ -13,7 +13,7 @@ import { PanelInfo, PanelType } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [PanelInfo](arkts-basicservices-panelinfo-i-sys.md) | Describes the properties of the word selection panel. |
+| [PanelInfo](arkts-basicservices-selectioninput-selectionpanel-panelinfo-i-sys.md) | Describes the properties of the word selection panel. |
 <!--DelEnd-->
 
 <!--Del-->
@@ -21,6 +21,6 @@ import { PanelInfo, PanelType } from '@kit.BasicServicesKit';
 
 | Name | Description |
 | --- | --- |
-| [PanelType](arkts-basicservices-paneltype-e-sys.md) | Enumerates the word selection panel types. |
+| [PanelType](arkts-basicservices-selectioninput-selectionpanel-paneltype-e-sys.md) | Enumerates the word selection panel types. |
 <!--DelEnd-->
 

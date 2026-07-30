@@ -16,7 +16,6 @@ System material object on the UI.
 import { uiMaterial } from '@kit.ArkUI';
 ```
 
-<a id="constructor"></a>
 ## constructor
 
 ```TypeScript

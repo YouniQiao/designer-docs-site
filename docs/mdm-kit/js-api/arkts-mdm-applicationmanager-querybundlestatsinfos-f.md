@@ -6,7 +6,6 @@
 import { applicationManager } from '@kit.MDMKit';
 ```
 
-<a id="querybundlestatsinfos"></a>
 ## queryBundleStatsInfos
 
 ```TypeScript

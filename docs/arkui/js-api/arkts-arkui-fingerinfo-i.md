@@ -8,7 +8,6 @@ Defines the finger information type.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="getcurrentlocalposition"></a>
 ## getCurrentLocalPosition
 
 ```TypeScript

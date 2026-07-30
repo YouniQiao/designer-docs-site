@@ -1,8 +1,8 @@
 # AlphabetIndexer properties/events
 
-When the [width](arkts-arkui-commonmethod-c.md#width-1) attribute is set to **"auto"**, the width is adaptive. This means that the width will adjust according to the maximum width of the index items.
+When the [width](arkts-arkui-commonmethod-c.md#width) attribute is set to **"auto"**, the width is adaptive. This means that the width will adjust according to the maximum width of the index items.
 
-The default value of the [padding](arkts-arkui-commonmethod-c.md#padding-1) attribute is 4 vp.
+The default value of the [padding](arkts-arkui-commonmethod-c.md#padding) attribute is 4 vp.
 
 The [maxFontScale](TextAttribute#maxFontScale) and [minFontScale](TextAttribute#minFontScale) attributes are both set to a constant value of 1, which means that they do not change with the system font size.
 
@@ -18,7 +18,6 @@ In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-ap
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="alignstyle"></a>
 ## alignStyle
 
 ```TypeScript
@@ -42,7 +41,6 @@ Sets the alignment style of the indexer pop-up window.
 | value | [IndexerAlign](arkts-arkui-indexeralign-e.md) | Yes | Alignment style of the indexer pop-up window. The pop-up window can be displayed on the right or left of the indexer.<br>Default value: **IndexerAlign.END** |
 | offset | [Length](../arkts-apis/arkts-arkui-length-t.md) | No | Spacing between the pop-up window and the alphabetic index bar. A value greater than or equal to **0** is valid. If this parameter is set to a value less than **0** or is not set, the spacing is the same as **popupPosition**. When this parameter and [popupPosition](AlphabetIndexerAttribute#popupPosition) are set at the same time, **offset** takes effect in the horizontal direction, and **popupPosition.y** takes effect in the vertical direction.<br>**Since:** 10 |
 
-<a id="autocollapse"></a>
 ## autoCollapse
 
 ```TypeScript
@@ -51,13 +49,11 @@ autoCollapse(value: boolean)
 
 Sets whether to enable the adaptive collapse behavior for the indexer.
 
-When the first index item is **"#"**: Remaining items ≤ 9: Full display mode; 9 < Remaining items ≤ 13: Adapts between full display and short collapse modes based on the indexer height; remaining items > 13: Adapts between short and long collapse modes based on the indexer height.
+When the first index item is **"#"**: Remaining items ≤ 9: Full display mode; 9 &lt; Remaining items ≤ 13: Adapts between full display and short collapse modes based on the indexer height; remaining items &gt; 13: Adapts between short and long collapse modes based on the indexer height.
 
-When the first index item is not **"#"**: All items ≤ 9: Full display mode; 9 < All items ≤ 13: Adapts between full display and short collapse modes based on the indexer height; all items > 13: Adapts between short and long collapse modes based on the indexer height.
-
+When the first index item is not **"#"**: All items ≤ 9: Full display mode; 9 &lt; All items ≤ 13: Adapts between full display and short collapse modes based on the indexer height; all items &gt; 13: Adapts between short and long collapse modes based on the indexer height.
 > **NOTE**
-
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 12.
+> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier) since API version 12.
 
 **Since:** 11
 
@@ -75,7 +71,6 @@ When the first index item is not **"#"**: All items ≤ 9: Full display mode; 9 
 | --- | --- | --- | --- |
 | value | boolean | Yes | Whether to auto-collapse or expand the indexer bar.<br>Default value:<br>Before API version 12: **false**<br>Since API version 12: **true**<br>**true**: Enable the adaptive collapse behavior.<br>**false**: Disable the adaptive collapse behavior. |
 
-<a id="color"></a>
 ## color
 
 ```TypeScript
@@ -98,7 +93,6 @@ Sets the text color for unselected items.
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Text color of unselected items.<br>Default value: **0x99182431**, which is a slightly transparent brown. |
 
-<a id="enablehapticfeedback"></a>
 ## enableHapticFeedback
 
 ```TypeScript
@@ -121,9 +115,8 @@ Sets whether to enable haptic feedback.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | boolean | Yes | Whether to enable haptic feedback.<br>**true**: To enable haptic feedback.<br>**false**:Not to enable haptic feedback.<br>Default value: **true**<br>To enable haptic feedback, you must declare the **ohos.permission.VIBRATE** permission under **requestPermissions** in the [module.json5](docroot://quick-start/module-configuration-file.md) file of the project.<br>"requestPermissions": [{"name": "ohos.permission.VIBRATE"}] |
+| value | boolean | Yes | Whether to enable haptic feedback.<br>**true**: To enable haptic feedback.<br>**false**:Not to enable haptic feedback.<br>Default value: **true**<br>To enable haptic feedback, you must declare the **ohos.permission.VIBRATE** permission under **requestPermissions** in the [module.json5](../../../quick-start/module-configuration-file.md) file of the project.<br>"requestPermissions": [{"name": "ohos.permission.VIBRATE"}] |
 
-<a id="font"></a>
 ## font
 
 ```TypeScript
@@ -146,7 +139,6 @@ Sets the text style for unselected items.
 | --- | --- | --- | --- |
 | value | [Font](../arkts-apis/arkts-arkui-arkui-uicontext-font-c.md) | Yes | Text style of unselected items.<br>Default value:<br>API version 11 and earlier:<br>{<br>size:'12.0fp',<br> style:FontStyle.Normal,<br> weight:FontWeight.Regular,<br> family:'HarmonyOS Sans'<br>}<br>API version 12 and later:<br>{<br>size:'10.0vp',<br> style:FontStyle.Normal,<br> weight:FontWeight.Medium,<br>family:'HarmonyOS Sans'<br>} |
 
-<a id="itemborderradius"></a>
 ## itemBorderRadius
 
 ```TypeScript
@@ -171,7 +163,6 @@ Sets the radius of the index background border corners in the alphabetic index b
 | --- | --- | --- | --- |
 | value | number | Yes | <br>Unit: vp.   - Radius of the index background border corners in the alphabetic index bar.<br>Default value: **8vp**<br>This parameter cannot be set in percentage. If the value specified is less than **0**, **0** is used.<br>The radius of the index background border corners in the alphabetic index bar is automatically adaptive (radius of the index corners + 4 vp). |
 
-<a id="itemsize"></a>
 ## itemSize
 
 ```TypeScript
@@ -192,9 +183,8 @@ Sets the size of the index item area.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| value | string \| number | Yes | Size of the index item area, which is a square, meaning the side length of the square. This attribute cannot be set in percentage.<br>The actual value is restricted by the component size.The maximum width of an index item is the component width minus the left and right [padding](arkts-arkui-commonmethod-c.md#padding-1), and the maximum height of an index item is (component height minus the top and bottom [padding](arkts-arkui-commonmethod-c.md#padding-1))/number of index items. If the input value is less than or equal to 0, the default value is used.<br>Default value: **16.0**<br>Unit: vp |
+| value | string \| number | Yes | Size of the index item area, which is a square, meaning the side length of the square. This attribute cannot be set in percentage.<br>The actual value is restricted by the component size.The maximum width of an index item is the component width minus the left and right [padding](arkts-arkui-commonmethod-c.md#padding), and the maximum height of an index item is (component height minus the top and bottom [padding](arkts-arkui-commonmethod-c.md#padding))/number of index items. If the input value is less than or equal to 0, the default value is used.<br>Default value: **16.0**<br>Unit: vp |
 
-<a id="onpopupselect"></a>
 ## onPopupSelect
 
 ```TypeScript
@@ -217,7 +207,6 @@ Triggered when a secondary index item in the pop-up window is selected. The call
 | --- | --- | --- | --- |
 | callback | [OnAlphabetIndexerPopupSelectCallback](arkts-arkui-onalphabetindexerpopupselectcallback-t.md) | Yes | Event triggered when a secondary index item in the pop-up window is selected.<br>**Since:** 18 |
 
-<a id="onrequestpopupdata"></a>
 ## onRequestPopupData
 
 ```TypeScript
@@ -240,7 +229,6 @@ Triggered for a secondary index item content event in the pop-up window. The cal
 | --- | --- | --- | --- |
 | callback | [OnAlphabetIndexerRequestPopupDataCallback](arkts-arkui-onalphabetindexerrequestpopupdatacallback-t.md) | Yes | Callback for setting the secondary index item content event in the pop-up window.<br>**Since:** 18 |
 
-<a id="onselect"></a>
 ## onSelect
 
 ```TypeScript
@@ -263,7 +251,6 @@ Triggered when an index item is selected, with the callback parameter being the 
 | --- | --- | --- | --- |
 | callback | [OnAlphabetIndexerSelectCallback](arkts-arkui-onalphabetindexerselectcallback-t.md) | Yes | Event triggered when an index item is selected.<br>**Since:** 18 |
 
-<a id="onselected"></a>
 ## onSelected
 
 ```TypeScript
@@ -271,7 +258,6 @@ onSelected(callback: (index: number) => void)
 ```
 
 Triggered when an index item is selected, with the callback parameter being the index of the currently selected item.
-
 > **NOTE**
 
 **Since:** 7
@@ -290,7 +276,6 @@ Triggered when an index item is selected, with the callback parameter being the 
 | --- | --- | --- | --- |
 | callback | (index: number) =&gt; void | Yes | Index of the selected item. |
 
-<a id="popupbackground"></a>
 ## popupBackground
 
 ```TypeScript
@@ -305,7 +290,7 @@ In API version 11 and earlier versions, the default background color of the pop-
 
 In API versions 12 to 24, the default background color is **#66808080**, which is translucent gray.
 
-Since API version 26.0.0, if neither **popupBackground** nor [popupBackgroundBlurStyle](AlphabetIndexerAttribute#popupBackgroundBlurStyle) is called or the **value** parameter is set to **undefined**, the **THIN** style of **[ImmersiveStyle](docroot://reference/apis-arkui/arkts-apis-uimaterial.md#immersivestyle)** is displayed by default on devices with high- and mid-level computing power, and the white background is displayed by default on devices with low-level computing power. If **popupBackgroundBlurStyle** is called and the **value** parameter is set to a valid value, the background color of the pop-up is **#66808080** by default, which is translucent gray.
+Since API version 26.0.0, if neither **popupBackground** nor [popupBackgroundBlurStyle](AlphabetIndexerAttribute#popupBackgroundBlurStyle) is called or the **value** parameter is set to **undefined**, the **THIN** style of **[ImmersiveStyle](../../../reference/apis-arkui/arkts-apis-uimaterial.md#immersivestyle)** is displayed by default on devices with high- and mid-level computing power, and the white background is displayed by default on devices with low-level computing power. If **popupBackgroundBlurStyle** is called and the **value** parameter is set to a valid value, the background color of the pop-up is **#66808080** by default, which is translucent gray.
 
 **Since:** 7
 
@@ -321,14 +306,13 @@ Since API version 26.0.0, if neither **popupBackground** nor [popupBackgroundBlu
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Background color of the pop-up window.<br>The background blur effect of the pop-up text can affect the background color. You can disable the effect by setting [popupBackgroundBlurStyle](AlphabetIndexerAttribute#popupBackgroundBlurStyle) to **NONE**.<br> |
 
-<a id="popupbackgroundblurstyle"></a>
 ## popupBackgroundBlurStyle
 
 ```TypeScript
 popupBackgroundBlurStyle(value: BlurStyle)
 ```
 
-Sets the background blur style of the pop-up window. In versions earlier than API version 26.0.0, if this API is not called, the **COMPONENT_REGULAR** value in **BlurStyle** is used by default. Since API version 26.0.0, if neither [popupBackground](AlphabetIndexerAttribute#popupBackground) nor **popupBackgroundBlurStyle** is called or the value is **undefined**, the **THIN** style of [ImmersiveStyle](docroot://reference/apis-arkui/arkts-apis-uimaterial.md#immersivestyle) is used by default on devices with high- and mid-level computing power, and the white background is used by default on devices with low-level computing power.
+Sets the background blur style of the pop-up window. In versions earlier than API version 26.0.0, if this API is not called, the **COMPONENT_REGULAR** value in **BlurStyle** is used by default. Since API version 26.0.0, if neither [popupBackground](AlphabetIndexerAttribute#popupBackground) nor **popupBackgroundBlurStyle** is called or the value is **undefined**, the **THIN** style of [ImmersiveStyle](../../../reference/apis-arkui/arkts-apis-uimaterial.md#immersivestyle) is used by default on devices with high- and mid-level computing power, and the white background is used by default on devices with low-level computing power.
 
 **Since:** 12
 
@@ -346,7 +330,6 @@ Sets the background blur style of the pop-up window. In versions earlier than AP
 | --- | --- | --- | --- |
 | value | [BlurStyle](arkts-arkui-blurstyle-e.md) | Yes | Background blur style of the pop-up window.<br>The background blur effect can affect [popupBackground](AlphabetIndexerAttribute#popupBackground). You can disable the effect by setting it to **NONE**. |
 
-<a id="popupcolor"></a>
 ## popupColor
 
 ```TypeScript
@@ -369,7 +352,6 @@ Sets the text color for the primary index item in the pop-up window.
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Text color of the primary index item in the pop-up window.<br>Default value:**0xFF007DFF**, which is blue. |
 
-<a id="popupfont"></a>
 ## popupFont
 
 ```TypeScript
@@ -392,7 +374,6 @@ Sets the text style for the primary index item in the pop-up window.
 | --- | --- | --- | --- |
 | value | [Font](../arkts-apis/arkts-arkui-arkui-uicontext-font-c.md) | Yes | Text style of the primary index item in the pop-up window.<br>Default value:<br>{<br>size:'24.0vp',<br> style:FontStyle.Normal,<br> weight:FontWeight.Medium,<br> family:'HarmonyOS Sans'<br>} |
 
-<a id="popupitembackgroundcolor"></a>
 ## popupItemBackgroundColor
 
 ```TypeScript
@@ -417,7 +398,6 @@ Sets the background color for the secondary index item in the pop-up window.
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Background color of the secondary index item in the pop-up window.<br>Default value:<br>API version 11 and earlier: **#FFFFFFFF**, which is white.<br>API version 12 and later:**#00000000**, which is transparent. |
 
-<a id="popupitemborderradius"></a>
 ## popupItemBorderRadius
 
 ```TypeScript
@@ -442,7 +422,6 @@ Sets the radius of the index border corners in the pop-up window.
 | --- | --- | --- | --- |
 | value | number | Yes | Radius of the index background border corners in the pop-up window.<br>Unit: vp.**24vp**.<br>This parameter cannot be set in percentage. If the value specified is less than **0**, **0** is used.<br>The radius of the index background border corners in the pop-up window is automatically adaptive (radius of the index corners + 4 vp). |
 
-<a id="popupitemfont"></a>
 ## popupItemFont
 
 ```TypeScript
@@ -467,7 +446,6 @@ Sets the text style for the secondary index item in the pop-up window.
 | --- | --- | --- | --- |
 | value | [Font](../arkts-apis/arkts-arkui-arkui-uicontext-font-c.md) | Yes | Text style of the secondary index item in the pop-up window.<br>Default value:<br>{<br>size:24,<br>weight:FontWeight.Medium<br>} |
 
-<a id="popupposition"></a>
 ## popupPosition
 
 ```TypeScript
@@ -490,7 +468,6 @@ Sets the position of the pop-up window relative to the center of the indexer's t
 | --- | --- | --- | --- |
 | value | [Position](../arkts-apis/arkts-arkui-display-position-i.md) | Yes | Position of the pop-up window relative to the center of the indexer's top border.<br>Default value: **{x: 60.0, y: 48.0}** |
 
-<a id="popupselectedcolor"></a>
 ## popupSelectedColor
 
 ```TypeScript
@@ -515,7 +492,6 @@ Sets the text color for the selected secondary index item in the pop-up window.
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Text color of the selected secondary index items in the pop-up window.<br>Default value: **#FF182431**, which is dark blue. |
 
-<a id="popuptitlebackground"></a>
 ## popupTitleBackground
 
 ```TypeScript
@@ -540,7 +516,6 @@ Sets the background color for the primary index item in the pop-up window.
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Background color for the primary index item in the pop-up window.<br>Default value:<br>If the pop-up window has only one index: **#00FFFFFF**.<br>If the pop-up window has multiple indexes:**#0c182431**. |
 
-<a id="popupunselectedcolor"></a>
 ## popupUnselectedColor
 
 ```TypeScript
@@ -565,7 +540,6 @@ Sets the text color for the unselected secondary index items in the pop-up windo
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Text color of the unselected secondary index items in the pop-up window.<br>Default value: **#FF182431**, which is dark blue. |
 
-<a id="selected"></a>
 ## selected
 
 ```TypeScript
@@ -574,7 +548,7 @@ selected(index: number)
 
 Sets the index of the selected item.
 
-Since API version 10, this parameter supports two-way binding through [$$](docroot://ui/state-management/arkts-two-way-sync.md).
+Since API version 10, this parameter supports two-way binding through [$$](../../../ui/state-management/arkts-two-way-sync.md).
 
 **Since:** 8
 
@@ -590,7 +564,6 @@ Since API version 10, this parameter supports two-way binding through [$$](docro
 | --- | --- | --- | --- |
 | index | number | Yes | Index of the selected item.<br>Value range:[0, [arrayValue](arkts-arkui-alphabetindexeroptions-i.md).length – 1]<br>Default value: **0** |
 
-<a id="selectedbackgroundcolor"></a>
 ## selectedBackgroundColor
 
 ```TypeScript
@@ -613,7 +586,6 @@ Sets the background color of the selected item.
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Background color of the selected item.<br>Default value: **0x1A007DFF**, which is semi-transparent blue-green. |
 
-<a id="selectedcolor"></a>
 ## selectedColor
 
 ```TypeScript
@@ -636,7 +608,6 @@ Sets the text color for the selected item.
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Text color of the selected item.<br>Default value: **0xFF007DFF**, which is blue. |
 
-<a id="selectedfont"></a>
 ## selectedFont
 
 ```TypeScript
@@ -659,7 +630,6 @@ Sets the text style for the selected item.
 | --- | --- | --- | --- |
 | value | [Font](../arkts-apis/arkts-arkui-arkui-uicontext-font-c.md) | Yes | Text style of the selected item.<br>Default value:<br>API version 11 and earlier:<br>{<br>size:'12.0fp',<br> style:FontStyle.Normal,<br> weight:FontWeight.Regular,<br> family:'HarmonyOS Sans'<br>}<br>API version 12 and later:<br>{<br>size:'10.0vp',<br> style:FontStyle.Normal,<br> weight:FontWeight.Medium,<br>family:'HarmonyOS Sans'<br>} |
 
-<a id="usingpopup"></a>
 ## usingPopup
 
 ```TypeScript

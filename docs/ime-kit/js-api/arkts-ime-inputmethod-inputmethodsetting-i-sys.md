@@ -1,6 +1,6 @@
 # InputMethodSetting
 
-In the following API examples, you must first use [getSetting](arkts-ime-inputmethod-getsetting-f.md#getsetting-1) to obtain an **InputMethodSetting** instance, and then call the APIs using the obtained instance.
+In the following API examples, you must first use [getSetting](arkts-ime-inputmethod-getsetting-f.md#getsetting) to obtain an **InputMethodSetting** instance, and then call the APIs using the obtained instance.
 
 **Since:** 8
 
@@ -14,7 +14,6 @@ In the following API examples, you must first use [getSetting](arkts-ime-inputme
 import { inputMethod } from '@kit.IMEKit';
 ```
 
-<a id="enableinputmethod"></a>
 ## enableInputMethod
 
 ```TypeScript
@@ -83,7 +82,6 @@ enableInputMethodSafely();
 
 ```
 
-<a id="enableinputmethod-1"></a>
 ## enableInputMethod
 
 ```TypeScript
@@ -99,9 +97,7 @@ Change the enabled state of an input method of a specified user.
 
 **Model restriction:** This API can be used only in the stage model.
 
-<!--Device-InputMethodSetting-enableInputMethod(
-      bundleName: string, extensionName: string, enabledState: EnabledState, userId?: int): Promise<void>--><!--Device-InputMethodSetting-enableInputMethod(
-      bundleName: string, extensionName: string, enabledState: EnabledState, userId?: int): Promise<void>-End-->
+<!--Device-InputMethodSetting-enableInputMethod(      bundleName: string, extensionName: string, enabledState: EnabledState, userId?: int): Promise<void>--><!--Device-InputMethodSetting-enableInputMethod(      bundleName: string, extensionName: string, enabledState: EnabledState, userId?: int): Promise<void>-End-->
 
 **System capability:** SystemCapability.MiscServices.InputMethodFramework
 
@@ -135,7 +131,6 @@ Change the enabled state of an input method of a specified user.
 | 12800024 | the specified user is not in the foreground. |
 | 12800025 | cross-user operation denied.Only user 0 applications are authorized for this operation. |
 
-<a id="getallinputmethodssync"></a>
 ## getAllInputMethodsSync
 
 ```TypeScript
@@ -177,7 +172,6 @@ Get all input methods sync of a specified user.
 | 12800024 | the specified user is not in the foreground. |
 | 12800025 | cross-user operation denied.Only user 0 applications are authorized for this operation. |
 
-<a id="getcursorinfo"></a>
 ## getCursorInfo
 
 ```TypeScript
@@ -234,7 +228,6 @@ try {
 
 ```
 
-<a id="getdefaultinputmethodability"></a>
 ## getDefaultInputMethodAbility
 
 ```TypeScript
@@ -278,7 +271,6 @@ try {
 
 ```
 
-<a id="getinputmethodsubtypes"></a>
 ## getInputMethodSubtypes
 
 ```TypeScript
@@ -321,7 +313,6 @@ Get subtypes of a specified input method of a specified user.
 | 12800024 | the specified user is not in the foreground. |
 | 12800025 | cross-user operation denied.Only user 0 applications are authorized for this operation. |
 
-<a id="getinputmethodssync"></a>
 ## getInputMethodsSync
 
 ```TypeScript
@@ -364,7 +355,6 @@ List enabled or disabled input methods sync of a specified user.
 | 12800024 | the specified user is not in the foreground. |
 | 12800025 | cross-user operation denied.Only user 0 applications are authorized for this operation. |
 
-<a id="ispanelshown"></a>
 ## isPanelShown
 
 ```TypeScript
@@ -416,7 +406,6 @@ console.info('Succeeded in querying isPanelShown, result: ' + result);
 
 ```
 
-<a id="ispanelshown-1"></a>
 ## isPanelShown
 
 ```TypeScript
@@ -471,7 +460,6 @@ console.info('Succeeded in querying isPanelShown, result: ' + result);
 
 ```
 
-<a id="off"></a>
 ## off('imeShow')
 
 ```TypeScript
@@ -502,7 +490,6 @@ inputMethod.getSetting().off('imeShow');
 
 ```
 
-<a id="off-1"></a>
 ## off('imeHide')
 
 ```TypeScript
@@ -533,7 +520,6 @@ inputMethod.getSetting().off('imeHide');
 
 ```
 
-<a id="offimechangewithuserid"></a>
 ## offImeChangeWithUserId
 
 ```TypeScript
@@ -564,7 +550,6 @@ Unsubscribe from the input method change event.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | not system application. |
 
-<a id="on"></a>
 ## on('imeShow')
 
 ```TypeScript
@@ -603,7 +588,6 @@ inputMethod.getSetting().on('imeShow', (info: Array<inputMethod.InputWindowInfo>
 
 ```
 
-<a id="on-1"></a>
 ## on('imeHide')
 
 ```TypeScript
@@ -642,7 +626,6 @@ inputMethod.getSetting().on('imeHide', (info: Array<inputMethod.InputWindowInfo>
 
 ```
 
-<a id="onimechangewithuserid"></a>
 ## onImeChangeWithUserId
 
 ```TypeScript

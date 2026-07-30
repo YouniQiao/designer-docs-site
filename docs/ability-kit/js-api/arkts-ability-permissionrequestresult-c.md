@@ -68,10 +68,10 @@ Reason code corresponding to each permission request. Mainly used to explain the
 - 0: This request is valid.  
 - 1: Invalid permission name, please check the permission name format and value.  
 - 2: Permission not declared, please declare this permission in module.json.  
-- 3: The request conditions for the corresponding permission are not met, for example, some location permissions require additional prerequisites. Currently only applies to location permissions, including [ohos.permission.LOCATION](docroot://security/AccessToken/permissions-for-all-user.md#ohospermissionlocation) and [ohos.permission.APPROXIMATELY_LOCATION](docroot://security/AccessToken/permissions-for-all-user.md#ohospermissionapproximately_location).  
+- 3: The request conditions for the corresponding permission are not met, for example, some location permissions require additional prerequisites. Currently only applies to location permissions, including [ohos.permission.LOCATION](../../../security/AccessToken/permissions-for-all-user.md#ohospermissionlocation) and [ohos.permission.APPROXIMATELY_LOCATION](../../../security/AccessToken/permissions-for-all-user.md#ohospermissionapproximately_location).  
 - 4: The user has not agreed to the privacy statement, please guide the user to agree to the privacy statement before requesting permissions.  
 - 5: This permission does not support requesting via permission dialog; the request method may be restricted or controlled by system policy. Please use the authorization method supported by this permission.  
-- 6: This permission is of the [manual_settings](docroot://security/AccessToken/app-permission-mgmt-overview.md#manual_settings-manual-authorization)type and can only be authorized through the settings page. This reason code is supported starting from API version21.  
+- 6: This permission is of the [manual_settings](../../../security/AccessToken/app-permission-mgmt-overview.md#manual_settings-manual-authorization)type and can only be authorized through the settings page. This reason code is supported starting from API version21.  
 - 12: Service exception, please try again later.
 
 **Type:** Array&lt;number&gt;

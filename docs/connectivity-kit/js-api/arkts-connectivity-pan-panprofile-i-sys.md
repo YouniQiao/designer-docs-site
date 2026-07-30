@@ -16,7 +16,6 @@ Manager pan host profile.
 import { pan } from '@kit.ConnectivityKit';
 ```
 
-<a id="connect"></a>
 ## connect
 
 ```TypeScript
@@ -54,7 +53,6 @@ Initiate the PAN connection with the remote device.
 | 2900004 | Remote Device profile not supported. |
 | 2900099 | Operation failed. |
 
-<a id="disconnect"></a>
 ## disconnect
 
 ```TypeScript
@@ -107,7 +105,6 @@ try {
 
 ```
 
-<a id="istetheringon"></a>
 ## isTetheringOn
 
 ```TypeScript
@@ -155,7 +152,6 @@ try {
 
 ```
 
-<a id="settethering"></a>
 ## setTethering
 
 ```TypeScript

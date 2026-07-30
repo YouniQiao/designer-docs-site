@@ -14,7 +14,6 @@ Provides APIs to decode byte arrays into strings. It supports multiple formats, 
 import { util } from '@kit.ArkTS';
 ```
 
-<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -41,7 +40,6 @@ console.info('retStr = ' + retStr);
 
 ```
 
-<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -54,7 +52,7 @@ A constructor used to create a **TextDecoder** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** [create](arkts-arkts-util-textdecoder-c.md#create-1)
+**Substitutes:** [create](arkts-arkts-util-textdecoder-c.md#create)
 
 <!--Device-TextDecoder-constructor(encoding?: string, options?: { fatal?: boolean; ignoreBOM?: boolean })--><!--Device-TextDecoder-constructor(encoding?: string, options?: { fatal?: boolean; ignoreBOM?: boolean })-End-->
 
@@ -74,7 +72,6 @@ let textDecoder = new util.TextDecoder("utf-8",{ignoreBOM: true});
 
 ```
 
-<a id="create"></a>
 ## create
 
 ```TypeScript
@@ -118,7 +115,6 @@ console.info('retStr = ' + retStr);
 
 ```
 
-<a id="decode"></a>
 ## decode
 
 ```TypeScript
@@ -131,7 +127,7 @@ Decodes the input content into a string.
 
 **Deprecated since:** 9
 
-**Substitutes:** [decodeToString](arkts-arkts-util-textdecoder-c.md#decodetostring-1)
+**Substitutes:** [decodeToString](arkts-arkts-util-textdecoder-c.md#decodetostring)
 
 <!--Device-TextDecoder-decode(input: Uint8Array, options?: { stream?: false }): string--><!--Device-TextDecoder-decode(input: Uint8Array, options?: { stream?: false }): string-End-->
 
@@ -168,7 +164,6 @@ console.info("retStr = " + retStr);
 
 ```
 
-<a id="decodetostring"></a>
 ## decodeToString
 
 ```TypeScript
@@ -216,7 +211,6 @@ console.info("retStr = " + retStr);
 
 ```
 
-<a id="decodewithstream"></a>
 ## decodeWithStream
 
 ```TypeScript
@@ -229,7 +223,7 @@ Decodes the input content into a string. If **input** is an empty array, **undef
 
 **Deprecated since:** 12
 
-**Substitutes:** [decodeToString](arkts-arkts-util-textdecoder-c.md#decodetostring-1)
+**Substitutes:** [decodeToString](arkts-arkts-util-textdecoder-c.md#decodetostring)
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 

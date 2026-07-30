@@ -6,7 +6,6 @@
 import { systemManager } from '@kit.MDMKit';
 ```
 
-<a id="startcollectlog"></a>
 ## startCollectLog
 
 ```TypeScript
@@ -17,9 +16,9 @@ Starts to collect the [fault logs](../../apis-performance-analysis-kit/arkts-api
 
 - After the API is called, the system starts a log collection task. The API returns a response immediately after the task is started. The task may fail due to system performance constraints.  
 - This API can be called by multiple MDM apps. Logs collected by different MDM apps under different users are saved separately and do not affect each other. Only one MDM app can start a log collection task at a time. If this API is called before the task is complete, the error code 9201009 is returned, and other MDM apps may call the API only after the task finishes.  
-- Upon task completion, the MDM app is notified via the [EnterpriseAdminExtensionAbility.onLogCollected](arkts-mdm-enterprise-enterpriseadminextensionability-enterpriseadminextensionability-c.md#onlogcollected-1)callback. The system mounts the collected log files to the MDM app sandbox path, enabling the MDM app to read the logs within the callback.  
-- If the log collection task takes more than 5 minutes, the [EnterpriseAdminExtensionAbility.onLogCollected](arkts-mdm-enterprise-enterpriseadminextensionability-enterpriseadminextensionability-c.md#onlogcollected-1)callback returns a task execution failure message.  
-- After the app obtains the logs, you are advised to call [systemManager.finishLogCollected](arkts-mdm-systemmanager-finishlogcollected-f.md#finishlogcollected-1) to remove the collected logs.
+- Upon task completion, the MDM app is notified via the [EnterpriseAdminExtensionAbility.onLogCollected](arkts-mdm-enterprise-enterpriseadminextensionability-enterpriseadminextensionability-c.md#onlogcollected)callback. The system mounts the collected log files to the MDM app sandbox path, enabling the MDM app to read the logs within the callback.  
+- If the log collection task takes more than 5 minutes, the [EnterpriseAdminExtensionAbility.onLogCollected](arkts-mdm-enterprise-enterpriseadminextensionability-enterpriseadminextensionability-c.md#onlogcollected)callback returns a task execution failure message.  
+- After the app obtains the logs, you are advised to call [systemManager.finishLogCollected](arkts-mdm-systemmanager-finishlogcollected-f.md#finishlogcollected) to remove the collected logs.
 
 **Since:** 23
 

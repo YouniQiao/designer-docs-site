@@ -14,7 +14,6 @@ Provides APIs to obtain information about trusted devices and local devices. Bef
 import { distributedDeviceManager } from '@kit.DistributedServiceKit';
 ```
 
-<a id="getdeviceiconinfo"></a>
 ## getDeviceIconInfo
 
 ```TypeScript
@@ -86,7 +85,6 @@ try {
 
 ```
 
-<a id="getdevicenetworkidlist"></a>
 ## getDeviceNetworkIdList
 
 ```TypeScript
@@ -151,7 +149,6 @@ try {
 
 ```
 
-<a id="getdeviceprofileinfolist"></a>
 ## getDeviceProfileInfoList
 
 ```TypeScript
@@ -213,7 +210,6 @@ try {
 
 ```
 
-<a id="getidentificationbydeviceids"></a>
 ## getIdentificationByDeviceIds
 
 ```TypeScript
@@ -283,7 +279,6 @@ getDeviceUdids(deviceIds: Array<string>): void {
 
 ```
 
-<a id="getlocaldisplaydevicename"></a>
 ## getLocalDisplayDeviceName
 
 ```TypeScript
@@ -344,7 +339,6 @@ try {
 
 ```
 
-<a id="off"></a>
 ## off('replyResult')
 
 ```TypeScript
@@ -394,7 +388,6 @@ try {
 
 ```
 
-<a id="on"></a>
 ## on('replyResult')
 
 ```TypeScript
@@ -457,7 +450,6 @@ try {
 
 ```
 
-<a id="putdeviceprofileinfolist"></a>
 ## putDeviceProfileInfoList
 
 ```TypeScript
@@ -518,7 +510,6 @@ try {
 
 ```
 
-<a id="replyuiaction"></a>
 ## replyUiAction
 
 ```TypeScript
@@ -577,7 +568,6 @@ try {
 
 ```
 
-<a id="restorelocaldeivcename"></a>
 ## restoreLocalDeivceName
 
 ```TypeScript
@@ -590,7 +580,7 @@ Restores the local device name by resetting the network settings.
 
 **Deprecated since:** 24
 
-**Substitutes:** [restoreLocalDeviceName](arkts-distributedservice-distributeddevicemanager-devicemanager-i-sys.md#restorelocaldevicename-1)
+**Substitutes:** [restoreLocalDeviceName](arkts-distributedservice-distributeddevicemanager-devicemanager-i-sys.md#restorelocaldevicename)
 
 **Required permissions:** ohos.permission.ACCESS_SERVICE_DM
 
@@ -624,7 +614,6 @@ try {
 
 ```
 
-<a id="restorelocaldevicename"></a>
 ## restoreLocalDeviceName
 
 ```TypeScript
@@ -669,7 +658,6 @@ try {
 
 ```
 
-<a id="setheartbeatpolicy"></a>
 ## setHeartbeatPolicy
 
 ```TypeScript
@@ -722,7 +710,6 @@ try {
 
 ```
 
-<a id="setlocaldevicename"></a>
 ## setLocalDeviceName
 
 ```TypeScript
@@ -786,7 +773,6 @@ try {
 
 ```
 
-<a id="setremotedevicename"></a>
 ## setRemoteDeviceName
 
 ```TypeScript

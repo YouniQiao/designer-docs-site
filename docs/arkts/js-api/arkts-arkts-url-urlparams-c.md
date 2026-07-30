@@ -14,7 +14,6 @@ The URLParams interface defines some practical methods to process URL query stri
 import { url } from '@kit.ArkTS';
 ```
 
-<a id="[symbol.iterator]"></a>
 ## [Symbol.iterator]
 
 ```TypeScript
@@ -50,7 +49,6 @@ for (let pair of iter) {
 
 ```
 
-<a id="append"></a>
 ## append
 
 ```TypeScript
@@ -83,7 +81,6 @@ paramsObject.append('fod', '3');
 
 ```
 
-<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -104,7 +101,7 @@ A constructor used to create a URLParams instance.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| init | string[][] \| Record&lt;string, string&gt; \| string \| URLParams | No | Input parameter objects, which include the following:   - string[][]: two-dimensional string array.   - Record<string, string>: list of objects.   - string: string.   - URLParams: object.The default value is null. |
+| init | string[][] \| Record&lt;string, string&gt; \| string \| URLParams | No | Input parameter objects, which include the following:   - string[][]: two-dimensional string array.   - Record&lt;string, string&gt;: list of objects.   - string: string.   - URLParams: object.The default value is null. |
 
 **Example**
 
@@ -124,7 +121,6 @@ let objectParams4 = urlObject1.params;
 
 ```
 
-<a id="delete"></a>
 ## delete
 
 ```TypeScript
@@ -156,7 +152,6 @@ paramsObject.delete('fod');
 
 ```
 
-<a id="entries"></a>
 ## entries
 
 ```TypeScript
@@ -192,7 +187,6 @@ for (let item of pair) {
 
 ```
 
-<a id="foreach"></a>
 ## forEach
 
 ```TypeScript
@@ -226,7 +220,6 @@ myURLObject.params.forEach((value, name, searchParams) => {
 
 ```
 
-<a id="get"></a>
 ## get
 
 ```TypeScript
@@ -265,7 +258,6 @@ let getObj = paramsObject.get("abc"); // undefined
 
 ```
 
-<a id="getall"></a>
 ## getAll
 
 ```TypeScript
@@ -304,7 +296,6 @@ console.info(params.getAll('fod').toString()) // Output ["1","3"].
 
 ```
 
-<a id="has"></a>
 ## has
 
 ```TypeScript
@@ -342,7 +333,6 @@ let result = paramsObject.has('bard');
 
 ```
 
-<a id="keys"></a>
 ## keys
 
 ```TypeScript
@@ -378,7 +368,6 @@ for (let key of keys) {
 
 ```
 
-<a id="set"></a>
 ## set
 
 ```TypeScript
@@ -411,7 +400,6 @@ paramsObject.set('baz', '3'); // Add a third parameter.
 
 ```
 
-<a id="sort"></a>
 ## sort
 
 ```TypeScript
@@ -437,7 +425,6 @@ console.info(paramsObject.toString()); // Display the sorted query string // Out
 
 ```
 
-<a id="tostring"></a>
 ## toString
 
 ```TypeScript
@@ -470,7 +457,6 @@ console.info(params.toString()); // Output 'fod=1&bard=2&fod=3'
 
 ```
 
-<a id="values"></a>
 ## values
 
 ```TypeScript

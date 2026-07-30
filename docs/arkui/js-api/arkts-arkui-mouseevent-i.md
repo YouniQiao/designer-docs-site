@@ -10,7 +10,6 @@ Inherits from [BaseEvent](arkts-arkui-baseevent-i.md).
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="getcurrentlocalposition"></a>
 ## getCurrentLocalPosition
 
 ```TypeScript
@@ -35,7 +34,6 @@ Gets the coordinates of the top-left corner of the current component based on it
 | --- | --- |
 | [Coordinate2D](../arkts-apis/arkts-arkui-coordinate2d-i.md) | - return the coordinates of the top-left corner of the current component based on its real-time position. |
 
-<a id="gethistoricalpoints"></a>
 ## getHistoricalPoints
 
 ```TypeScript
@@ -44,7 +42,7 @@ getHistoricalPoints?(): Array<MouseHistoricalPoint>
 
 Obtains all historical point information of the current frame. Historical points can be used to achieve smoother drawing effects.
 
-This API can only be called from [MouseEvent](arkts-arkui-mouseevent-i.md) to obtain information about historical points of the current frame when [onMouse](arkts-arkui-commonmethod-c.md#onmouse-1) is triggered. The mouse event reporting frequency per frame varies across different devices. Typically, only one mouse event is reported per frame. If the number of [MouseEvent](arkts-arkui-mouseevent-i.md) instances received in the current frame is greater than 1, the last point of that frame is returned via [onMouse](arkts-arkui-commonmethod-c.md#onmouse-1), and the remaining points are treated as historical points.
+This API can only be called from [MouseEvent](arkts-arkui-mouseevent-i.md) to obtain information about historical points of the current frame when [onMouse](arkts-arkui-commonmethod-c.md#onmouse) is triggered. The mouse event reporting frequency per frame varies across different devices. Typically, only one mouse event is reported per frame. If the number of [MouseEvent](arkts-arkui-mouseevent-i.md) instances received in the current frame is greater than 1, the last point of that frame is returned via [onMouse](arkts-arkui-commonmethod-c.md#onmouse), and the remaining points are treated as historical points.
 
 **Since:** 26.0.0
 
@@ -154,7 +152,7 @@ Value range: [0, +∞)
 
 **NOTE**
 
-This field is used when dispatching events using the [postInputEventWithStrategy](../arkts-apis/arkts-arkui-buildernode-c.md#postinputeventwithstrategy-1) API. Each time an event is dispatched, this field is increased by 100000.
+This field is used when dispatching events using the [postInputEventWithStrategy](../arkts-apis/arkts-arkui-buildernode-c.md#postinputeventwithstrategy) API. Each time an event is dispatched, this field is increased by 100000.
 
 Using the same **eventHandleId** for multiple event dispatches will cause abnormal event responses. This field only needs to be assigned when constructing an event; developers do not need to handle it in other cases.
 
@@ -176,7 +174,7 @@ Using the same **eventHandleId** for multiple event dispatches will cause abnorm
 globalDisplayX?: number
 ```
 
-X coordinate of the mouse position in the [global coordinate system](docroot://windowmanager/window-terminology.md#global-coordinate-system).
+X coordinate of the mouse position in the [global coordinate system](../../../windowmanager/window-terminology.md#global-coordinate-system).
 
 Unit: vp.
 
@@ -200,7 +198,7 @@ Value range: (-∞, +∞).
 globalDisplayY?: number
 ```
 
-Y coordinate of the mouse position in the [global coordinate system](docroot://windowmanager/window-terminology.md#global-coordinate-system).
+Y coordinate of the mouse position in the [global coordinate system](../../../windowmanager/window-terminology.md#global-coordinate-system).
 
 Unit: vp.
 
@@ -340,7 +338,7 @@ Note: This API is supported since API version 8 and deprecated since API version
 stopPropagation: () => void
 ```
 
-Disables [event bubbling](docroot://ui/arkts-interaction-basic-principles.md#event-bubbling) propagation.
+Disables [event bubbling](../../../ui/arkts-interaction-basic-principles.md#event-bubbling) propagation.
 
 **Type:** () =&gt; void
 
@@ -402,7 +400,7 @@ Unit: vp.
 x: number
 ```
 
-X coordinate of the mouse point in the [component coordinate system](docroot://ui/arkui-glossary.md#component-coordinate-system) based on the event-responsive component.
+X coordinate of the mouse point in the [component coordinate system](../../../ui/arkui-glossary.md#component-coordinate-system) based on the event-responsive component.
 
 Unit: vp.
 
@@ -422,7 +420,7 @@ Unit: vp.
 y: number
 ```
 
-Y coordinate of the mouse point in the [component coordinate system](docroot://ui/arkui-glossary.md#component-coordinate-system) based on the event-responsive component.
+Y coordinate of the mouse point in the [component coordinate system](../../../ui/arkui-glossary.md#component-coordinate-system) based on the event-responsive component.
 
 Unit: vp.
 

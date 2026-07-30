@@ -11,11 +11,13 @@ The **bluetoothManager** module provides Bluetooth management capabilities, incl
 > The global restriction policies are provided by **restrictions**. To disable Bluetooth globally, see  
 > [@ohos.enterprise.restrictions](arkts-enterprise-restrictions.md).
 
-**Since:** 11
+**Since:** 12
 
 <!--Device-unnamed-declare namespace bluetoothManager--><!--Device-unnamed-declare namespace bluetoothManager-End-->
 
 **System capability:** SystemCapability.Customization.EnterpriseDeviceManager
+
+**System API:** This is a system API.
 
 ## Modules to Import
 
@@ -34,8 +36,10 @@ import { bluetoothManager } from '@kit.MDMKit';
 | [addDisallowedBluetoothProtocols](arkts-mdm-bluetoothmanager-adddisallowedbluetoothprotocols-f.md#adddisallowedbluetoothprotocols) | Adds disallowed Bluetooth protocols. Specified users cannot use the disallowed Bluetooth protocols to send files to other devices. This API is used to disable the GATT or SPP protocol, which does not take effect for system services and system applications. |
 | [addDisallowedBluetoothProtocols](arkts-mdm-bluetoothmanager-adddisallowedbluetoothprotocols-f.md#adddisallowedbluetoothprotocols-1) | Adds protocols to the list of bluetooth server that are disallowed to use. |
 | [getAllowedBluetoothDevices](arkts-mdm-bluetoothmanager-getallowedbluetoothdevices-f.md#getallowedbluetoothdevices) | Obtains allowed Bluetooth devices. |
+| [getAllowedBluetoothDevices](arkts-mdm-bluetoothmanager-getallowedbluetoothdevices-f.md#getallowedbluetoothdevices-1) | Obtains allowed Bluetooth devices. |
 | [getBluetoothInfo](arkts-mdm-bluetoothmanager-getbluetoothinfo-f.md#getbluetoothinfo) | Obtains device Bluetooth information. |
 | [getDisallowedBluetoothDevices](arkts-mdm-bluetoothmanager-getdisallowedbluetoothdevices-f.md#getdisallowedbluetoothdevices) | Obtains disallowed Bluetooth devices. |
+| [getDisallowedBluetoothDevices](arkts-mdm-bluetoothmanager-getdisallowedbluetoothdevices-f.md#getdisallowedbluetoothdevices-1) | Obtains disallowed Bluetooth devices. |
 | [getDisallowedBluetoothProtocols](arkts-mdm-bluetoothmanager-getdisallowedbluetoothprotocols-f.md#getdisallowedbluetoothprotocols) | Obtains the disallowed Bluetooth protocols of a specified user. |
 | [getDisallowedBluetoothProtocols](arkts-mdm-bluetoothmanager-getdisallowedbluetoothprotocols-f.md#getdisallowedbluetoothprotocols-1) | Gets protocols from the list of bluetooth server that are disallowed to use. |
 | [removeAllowedBluetoothDevices](arkts-mdm-bluetoothmanager-removeallowedbluetoothdevices-f.md#removeallowedbluetoothdevices) | Removes allowed Bluetooth devices. |

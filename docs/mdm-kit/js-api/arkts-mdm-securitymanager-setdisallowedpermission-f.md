@@ -41,5 +41,5 @@ Sets the permissions that are disallowed to be granted for an account.
 | [9200001](../errorcode-enterpriseDeviceManager.md#9200001-deviceadmin-not-enabled) | The application is not an administrator application of the device. |
 | [9200002](../errorcode-enterpriseDeviceManager.md#9200002-permission-denied) | The administrator application does not have permission to manage the device. |
 | [9200012](../errorcode-enterpriseDeviceManager.md#9200012-parameter-verification-failed) | Parameter verification failed. |
-| 9201045 | This permission cannot be disallowed. |
+| [9201045](../errorcode-enterpriseDeviceManager.md#9201045-specified-permission-cannot-be-disabled) | This permission cannot be disallowed. |
 

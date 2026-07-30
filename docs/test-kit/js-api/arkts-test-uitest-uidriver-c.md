@@ -18,7 +18,6 @@ The **UiDriver** class is the main entry to the UiTest framework. It provides AP
 import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPattern, UiDirection, TouchOptions, ComponentEventType, PointerMatrix, WindowChangeType, Component, ON, PenKey, Rect, InputTextMode, UIEventObserver, WindowFilter, WindowChangeOptions, UiWindow, TouchPadSwipeOptions, Point, KeyOptions, DisplayRotation, UIElementInfo, PenKeyOperationOptions, ComponentEventOptions, MouseButton, On } from '@kit.TestKit';
 ```
 
-<a id="assertcomponentexist"></a>
 ## assertComponentExist
 
 ```TypeScript
@@ -31,7 +30,7 @@ Asserts that a component that matches the given attributes exists on the current
 
 **Deprecated since:** 9
 
-**Substitutes:** [assertComponentExist](arkts-test-uitest-driver-c.md#assertcomponentexist-1)
+**Substitutes:** [assertComponentExist](arkts-test-uitest-driver-c.md#assertcomponentexist)
 
 <!--Device-UiDriver-assertComponentExist(by: By): Promise<void>--><!--Device-UiDriver-assertComponentExist(by: By): Promise<void>-End-->
 
@@ -70,7 +69,6 @@ async function demo() {
 
 ```
 
-<a id="click"></a>
 ## click
 
 ```TypeScript
@@ -83,7 +81,7 @@ Clicks a specific point of this **UiDriver** object based on the given coordinat
 
 **Deprecated since:** 9
 
-**Substitutes:** [click](arkts-test-uitest-component-c.md#click-1)
+**Substitutes:** [click](arkts-test-uitest-component-c.md#click)
 
 <!--Device-UiDriver-click(x: number, y: number): Promise<void>--><!--Device-UiDriver-click(x: number, y: number): Promise<void>-End-->
 
@@ -115,7 +113,6 @@ async function demo() {
 
 ```
 
-<a id="create"></a>
 ## create
 
 ```TypeScript
@@ -123,17 +120,16 @@ static create(): UiDriver
 ```
 
 Creates a **UiDriver** object and returns the object created. This API is a static API.
-
 > **NOTE**  
 >  
 > This method is supported since API version 8 and deprecated since API version 9. You are advised to use  
-> [create<sup>9+</sup>](arkts-test-uitest-driver-c.md#create-1) instead.
+> [create<sup>9+</sup>](arkts-test-uitest-driver-c.md#create) instead.
 
 **Since:** 8
 
 **Deprecated since:** 9
 
-**Substitutes:** [create](arkts-test-uitest-driver-c.md#create-1)
+**Substitutes:** [create](arkts-test-uitest-driver-c.md#create)
 
 <!--Device-UiDriver-static create(): UiDriver--><!--Device-UiDriver-static create(): UiDriver-End-->
 
@@ -157,7 +153,6 @@ async function demo() {
 
 ```
 
-<a id="delayms"></a>
 ## delayMs
 
 ```TypeScript
@@ -170,7 +165,7 @@ Delays this **UiDriver** object within the specified duration. This API uses a p
 
 **Deprecated since:** 9
 
-**Substitutes:** [delayMs](arkts-test-uitest-driver-c.md#delayms-1)
+**Substitutes:** [delayMs](arkts-test-uitest-driver-c.md#delayms)
 
 <!--Device-UiDriver-delayMs(duration: number): Promise<void>--><!--Device-UiDriver-delayMs(duration: number): Promise<void>-End-->
 
@@ -201,7 +196,6 @@ async function demo() {
 
 ```
 
-<a id="doubleclick"></a>
 ## doubleClick
 
 ```TypeScript
@@ -214,7 +208,7 @@ Double-clicks a specific point of this **UiDriver** object based on the given co
 
 **Deprecated since:** 9
 
-**Substitutes:** [doubleClick](arkts-test-uitest-component-c.md#doubleclick-1)
+**Substitutes:** [doubleClick](arkts-test-uitest-component-c.md#doubleclick)
 
 <!--Device-UiDriver-doubleClick(x: number, y: number): Promise<void>--><!--Device-UiDriver-doubleClick(x: number, y: number): Promise<void>-End-->
 
@@ -246,7 +240,6 @@ async function demo() {
 
 ```
 
-<a id="findcomponent"></a>
 ## findComponent
 
 ```TypeScript
@@ -259,7 +252,7 @@ Searches this **UiDriver** object for the target component that matches the give
 
 **Deprecated since:** 9
 
-**Substitutes:** [findComponent(on:](arkts-test-uitest-driver-c.md#findcomponent-1)
+**Substitutes:** [findComponent(on:](arkts-test-uitest-driver-c.md#findcomponent)
 
 <!--Device-UiDriver-findComponent(by: By): Promise<UiComponent>--><!--Device-UiDriver-findComponent(by: By): Promise<UiComponent>-End-->
 
@@ -290,7 +283,6 @@ async function demo() {
 
 ```
 
-<a id="findcomponents"></a>
 ## findComponents
 
 ```TypeScript
@@ -303,7 +295,7 @@ Searches this **UiDriver** object for all components that match the given attrib
 
 **Deprecated since:** 9
 
-**Substitutes:** [findComponents(on:](arkts-test-uitest-driver-c.md#findcomponents-1)
+**Substitutes:** [findComponents(on:](arkts-test-uitest-driver-c.md#findcomponents)
 
 <!--Device-UiDriver-findComponents(by: By): Promise<Array<UiComponent>>--><!--Device-UiDriver-findComponents(by: By): Promise<Array<UiComponent>>-End-->
 
@@ -334,7 +326,6 @@ async function demo() {
 
 ```
 
-<a id="longclick"></a>
 ## longClick
 
 ```TypeScript
@@ -347,7 +338,7 @@ Long-clicks a specific point of this **UiDriver** object based on the given coor
 
 **Deprecated since:** 9
 
-**Substitutes:** [longClick](arkts-test-uitest-component-c.md#longclick-1)
+**Substitutes:** [longClick](arkts-test-uitest-component-c.md#longclick)
 
 <!--Device-UiDriver-longClick(x: number, y: number): Promise<void>--><!--Device-UiDriver-longClick(x: number, y: number): Promise<void>-End-->
 
@@ -379,7 +370,6 @@ async function demo() {
 
 ```
 
-<a id="pressback"></a>
 ## pressBack
 
 ```TypeScript
@@ -392,7 +382,7 @@ Presses the Back button on this **UiDriver** object. This API uses a promise to 
 
 **Deprecated since:** 9
 
-**Substitutes:** [pressBack()](arkts-test-uitest-driver-c.md#pressback-1)
+**Substitutes:** [pressBack()](arkts-test-uitest-driver-c.md#pressback)
 
 <!--Device-UiDriver-pressBack(): Promise<void>--><!--Device-UiDriver-pressBack(): Promise<void>-End-->
 
@@ -417,7 +407,6 @@ async function demo() {
 
 ```
 
-<a id="screencap"></a>
 ## screenCap
 
 ```TypeScript
@@ -430,7 +419,7 @@ Captures the current screen of this **UiDriver** object and saves it as a PNG im
 
 **Deprecated since:** 9
 
-**Substitutes:** [screenCap(savePath:](arkts-test-uitest-driver-c.md#screencap-1)
+**Substitutes:** [screenCap(savePath:](arkts-test-uitest-driver-c.md#screencap)
 
 <!--Device-UiDriver-screenCap(savePath: string): Promise<boolean>--><!--Device-UiDriver-screenCap(savePath: string): Promise<boolean>-End-->
 
@@ -461,7 +450,6 @@ async function demo() {
 
 ```
 
-<a id="swipe"></a>
 ## swipe
 
 ```TypeScript
@@ -474,7 +462,7 @@ Swipes on this **UiDriver** object from the start point to the end point based o
 
 **Deprecated since:** 9
 
-**Substitutes:** [swipe](arkts-test-uitest-driver-c.md#swipe-1)
+**Substitutes:** [swipe](arkts-test-uitest-driver-c.md#swipe)
 
 <!--Device-UiDriver-swipe(startx: number, starty: number, endx: number, endy: number): Promise<void>--><!--Device-UiDriver-swipe(startx: number, starty: number, endx: number, endy: number): Promise<void>-End-->
 
@@ -508,7 +496,6 @@ async function demo() {
 
 ```
 
-<a id="triggerkey"></a>
 ## triggerKey
 
 ```TypeScript
@@ -521,7 +508,7 @@ Triggers the key of this **UiDriver** object that matches the given key code. Th
 
 **Deprecated since:** 9
 
-**Substitutes:** [triggerKey(keyCode:](arkts-test-uitest-driver-c.md#triggerkey-1)
+**Substitutes:** [triggerKey(keyCode:](arkts-test-uitest-driver-c.md#triggerkey)
 
 <!--Device-UiDriver-triggerKey(keyCode: number): Promise<void>--><!--Device-UiDriver-triggerKey(keyCode: number): Promise<void>-End-->
 

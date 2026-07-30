@@ -12,7 +12,7 @@ import { userAuth } from '@kit.UserAuthenticationKit';
 function registerRemoteAuthCallback(callback: IRemoteAuthCallback): void
 ```
 
-Registers the callback for remote authentication.
+Registers a remote authentication callback. This API is used in remote authentication scenarios. After registration, the system can obtain the page parameters required for remote authentication through the callback and receive the authentication result after the authentication is complete. Duplicate registration is not allowed. When the callback is no longer needed, call [unregisterRemoteAuthCallback](arkts-userauthentication-userauth-unregisterremoteauthcallback-f-sys.md#unregisterremoteauthcallback)to unregister it to prevent the callback from being unable to be released.
 
 **Since:** 26.0.0
 
@@ -30,7 +30,7 @@ Registers the callback for remote authentication.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| callback | [IRemoteAuthCallback](arkts-userauthentication-userauth-iremoteauthcallback-i-sys.md) | Yes | Callback used to get remote authentication WidgetParam and return the result |
+| callback | [IRemoteAuthCallback](arkts-userauthentication-userauth-iremoteauthcallback-i-sys.md) | Yes | Remote authentication callback API, which includes the callbacks for obtaining authentication widget parameters and returning authentication results. |
 
 **Error codes:**
 

@@ -4,6 +4,8 @@ Declare struct RecentPhotoComponent
 
 **Since:** 12
 
+**Decorator:** @Component
+
 <!--Device-unnamed-export declare struct RecentPhotoComponent--><!--Device-unnamed-export declare struct RecentPhotoComponent-End-->
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core

@@ -18,7 +18,6 @@ Provides APIs for managing the **UserAuth** object.
 import { userAuth } from '@kit.UserAuthenticationKit';
 ```
 
-<a id="auth"></a>
 ## auth
 
 ```TypeScript
@@ -40,17 +39,7 @@ Starts user authentication. This API uses a callback to return the result.
 
 **Required permissions:** ohos.permission.ACCESS_BIOMETRIC
 
-<!--Device-UserAuth-auth(
-      challenge: Uint8Array,
-      authType: UserAuthType,
-      authTrustLevel: AuthTrustLevel,
-      callback: IUserAuthCallback
-    ): Uint8Array--><!--Device-UserAuth-auth(
-      challenge: Uint8Array,
-      authType: UserAuthType,
-      authTrustLevel: AuthTrustLevel,
-      callback: IUserAuthCallback
-    ): Uint8Array-End-->
+<!--Device-UserAuth-auth(      challenge: Uint8Array,      authType: UserAuthType,      authTrustLevel: AuthTrustLevel,      callback: IUserAuthCallback    ): Uint8Array--><!--Device-UserAuth-auth(      challenge: Uint8Array,      authType: UserAuthType,      authTrustLevel: AuthTrustLevel,      callback: IUserAuthCallback    ): Uint8Array-End-->
 
 **System capability:** SystemCapability.UserIAM.UserAuth.Core
 
@@ -67,7 +56,7 @@ Starts user authentication. This API uses a callback to return the result.
 
 | Type | Description |
 | --- | --- |
-| Uint8Array | Context ID, which is used as the input parameter of [cancelAuth](arkts-userauthentication-userauth-userauth-c.md#cancelauth-1). |
+| Uint8Array | Context ID, which is used as the input parameter of [cancelAuth](arkts-userauthentication-userauth-userauth-c.md#cancelauth). |
 
 **Example**
 
@@ -93,7 +82,6 @@ auth.auth(challenge, userAuth.UserAuthType.FACE, userAuth.AuthTrustLevel.ATL1, {
 
 ```
 
-<a id="cancelauth"></a>
 ## cancelAuth
 
 ```TypeScript
@@ -118,7 +106,7 @@ Cancels the authentication based on the context ID.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| contextID | Uint8Array | Yes | Context ID, which is obtained by [auth](arkts-userauthentication-userauth-userauth-c.md#auth-1). |
+| contextID | Uint8Array | Yes | Context ID, which is obtained by [auth](arkts-userauthentication-userauth-userauth-c.md#auth). |
 
 **Return value:**
 
@@ -143,7 +131,6 @@ if (cancelCode == userAuth.ResultCode.SUCCESS) {
 
 ```
 
-<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -156,7 +143,7 @@ A constructor used to create a **UserAuth** instance.
 
 **Deprecated since:** 9
 
-**Substitutes:** [getAuthInstance](arkts-userauthentication-userauth-getauthinstance-f.md#getauthinstance-1)
+**Substitutes:** [getAuthInstance](arkts-userauthentication-userauth-getauthinstance-f.md#getauthinstance)
 
 <!--Device-UserAuth-constructor()--><!--Device-UserAuth-constructor()-End-->
 
@@ -171,7 +158,6 @@ let auth = new userAuth.UserAuth();
 
 ```
 
-<a id="getavailablestatus"></a>
 ## getAvailableStatus
 
 ```TypeScript
@@ -184,7 +170,7 @@ Checks whether the specified authentication capability is supported.
 
 **Deprecated since:** 9
 
-**Substitutes:** [getAvailableStatus](arkts-userauthentication-userauth-getavailablestatus-f.md#getavailablestatus-1)
+**Substitutes:** [getAvailableStatus](arkts-userauthentication-userauth-getavailablestatus-f.md#getavailablestatus)
 
 **Required permissions:** ohos.permission.ACCESS_BIOMETRIC
 
@@ -220,7 +206,6 @@ if (checkCode == userAuth.ResultCode.SUCCESS) {
 
 ```
 
-<a id="getversion"></a>
 ## getVersion
 
 ```TypeScript

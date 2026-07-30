@@ -1,6 +1,5 @@
 # fdopenStream
 
-<a id="fdopenstream"></a>
 ## fdopenStream
 
 ```TypeScript
@@ -13,7 +12,7 @@ Opens a stream based on the file descriptor. This API uses a promise to return t
 
 **Deprecated since:** 9
 
-**Substitutes:** [fs:fdopenStream](arkts-corefile-file-fs-fdopenstream-f.md#fdopenstream-1)
+**Substitutes:** [fs:fdopenStream](arkts-corefile-fileio-fdopenstream-f.md#fdopenstream)
 
 <!--Device-unnamed-declare function fdopenStream(fd: number, mode: string): Promise<Stream>--><!--Device-unnamed-declare function fdopenStream(fd: number, mode: string): Promise<Stream>-End-->
 
@@ -33,7 +32,6 @@ Opens a stream based on the file descriptor. This API uses a promise to return t
 | Promise&lt;Stream&gt; | Promise that returns the file stream. |
 
 
-<a id="fdopenstream-1"></a>
 ## fdopenStream
 
 ```TypeScript
@@ -46,7 +44,7 @@ Opens a stream based on the file descriptor. This API uses an asynchronous callb
 
 **Deprecated since:** 9
 
-**Substitutes:** [fs:fdopenStream](arkts-corefile-file-fs-fdopenstream-f.md#fdopenstream-1)
+**Substitutes:** [fs:fdopenStream](arkts-corefile-fileio-fdopenstream-f.md#fdopenstream)
 
 <!--Device-unnamed-declare function fdopenStream(fd: number, mode: string, callback: AsyncCallback<Stream>): void--><!--Device-unnamed-declare function fdopenStream(fd: number, mode: string, callback: AsyncCallback<Stream>): void-End-->
 

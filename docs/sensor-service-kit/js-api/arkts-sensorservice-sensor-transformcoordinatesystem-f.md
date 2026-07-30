@@ -6,7 +6,6 @@
 import { sensor } from '@kit.SensorServiceKit';
 ```
 
-<a id="transformcoordinatesystem"></a>
 ## transformCoordinateSystem
 
 ```TypeScript
@@ -20,11 +19,9 @@ Rotates a rotation vector so that it can represent the coordinate system in diff
 
 **Deprecated since:** 9
 
-**Substitutes:** [transformRotationMatrix(inRotationVector:](arkts-sensorservice-sensor-transformrotationmatrix-f.md#transformrotationmatrix-1)
+**Substitutes:** [transformRotationMatrix(inRotationVector:](arkts-sensorservice-sensor-transformrotationmatrix-f.md#transformrotationmatrix)
 
-<!--Device-sensor-function transformCoordinateSystem(inRotationVector: Array<number>, coordinates: CoordinatesOptions,
-    callback: AsyncCallback<Array<number>>): void--><!--Device-sensor-function transformCoordinateSystem(inRotationVector: Array<number>, coordinates: CoordinatesOptions,
-    callback: AsyncCallback<Array<number>>): void-End-->
+<!--Device-sensor-function transformCoordinateSystem(inRotationVector: Array<number>, coordinates: CoordinatesOptions,    callback: AsyncCallback<Array<number>>): void--><!--Device-sensor-function transformCoordinateSystem(inRotationVector: Array<number>, coordinates: CoordinatesOptions,    callback: AsyncCallback<Array<number>>): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -57,7 +54,6 @@ sensor.transformCoordinateSystem([1, 0, 0, 0, 1, 0, 0, 0, 1], { x: 2, y: 3 },
 ```
 
 
-<a id="transformcoordinatesystem-1"></a>
 ## transformCoordinateSystem
 
 ```TypeScript
@@ -70,7 +66,7 @@ Rotates a rotation vector so that it can represent the coordinate system in diff
 
 **Deprecated since:** 9
 
-**Substitutes:** [transformRotationMatrix(inRotationVector:](arkts-sensorservice-sensor-transformrotationmatrix-f.md#transformrotationmatrix-1)
+**Substitutes:** [transformRotationMatrix(inRotationVector:](arkts-sensorservice-sensor-transformrotationmatrix-f.md#transformrotationmatrix)
 
 <!--Device-sensor-function transformCoordinateSystem(inRotationVector: Array<number>, coordinates: CoordinatesOptions): Promise<Array<number>>--><!--Device-sensor-function transformCoordinateSystem(inRotationVector: Array<number>, coordinates: CoordinatesOptions): Promise<Array<number>>-End-->
 

@@ -16,7 +16,6 @@ The class for AlbumPickerController
 import { EmptyAreaClickCallback, AlbumPickerComponent, AlbumInfo, AlbumPickerOptions, AlbumPickerController } from '@kit.MediaLibraryKit';
 ```
 
-<a id="setfontsize"></a>
 ## setFontSize
 
 ```TypeScript

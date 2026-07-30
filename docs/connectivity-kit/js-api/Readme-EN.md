@@ -1026,7 +1026,6 @@
   - [GroupOwnerBand](arkts-connectivity-wifimanager-groupownerband-e.md)
   <!--Del-->
   - [IpType(system api)](arkts-connectivity-wifimanager-iptype-e-sys.md)<!--DelEnd-->
-  - [NetworkType](arkts-connectivity-wifimanager-networktype-e.md)
   - [P2pConnectState](arkts-connectivity-wifimanager-p2pconnectstate-e.md)
   - [P2pDeviceStatus](arkts-connectivity-wifimanager-p2pdevicestatus-e.md)
   - [Phase2Method](arkts-connectivity-wifimanager-phase2method-e.md)

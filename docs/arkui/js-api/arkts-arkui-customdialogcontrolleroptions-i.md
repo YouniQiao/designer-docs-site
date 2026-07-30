@@ -1,7 +1,6 @@
 # CustomDialogControllerOptions
 
 Defines the style of the custom dialog box.
-
 > **NOTE**  
 >  
 > - Pressing the Back or ESC key closes the dialog box.  
@@ -22,8 +21,8 @@ Defines the style of the custom dialog box.
 >  
 > - In ArkUI, dialog boxes do not close automatically when you switch pages unless you manually call **close**. To  
 > enable a dialog box to be dismissed during page navigation, consider using the  
-> [navigation subpage displayed in dialog mode](docroot://ui/arkts-navigation-navdestination.md#page-display-mode) or  
-> [page-level dialog box](docroot://ui/arkts-embedded-dialog.md).
+> [navigation subpage displayed in dialog mode](../../../ui/arkts-navigation-navdestination.md#page-display-mode) or  
+> [page-level dialog box](../../../ui/arkts-embedded-dialog.md).
 
 **Since:** 7
 
@@ -327,7 +326,7 @@ You can set separate radii for the four corners.
 
 Default value: **{ topLeft: '32vp', topRight: '32vp', bottomLeft: '32vp', bottomRight: '32vp' }**
 
-Note: The default corner radius of the background is 32 vp. This attribute must be used together with the [borderRadius](../arkts-components/arkts-arkui-commonmethod-c.md#borderradius-1)attribute.
+Note: The default corner radius of the background is 32 vp. This attribute must be used together with the [borderRadius](../arkts-components/arkts-arkui-commonmethod-c.md#borderradius)attribute.
 
 **Type:** Dimension \| BorderRadiuses
 
@@ -453,7 +452,7 @@ Only dialog boxes that are displayed on top of the current window can gain focus
 gridCount?: number
 ```
 
-Number of [grid columns](docroot://ui/arkts-layout-development-grid-layout.md) occupied by the dialog box.
+Number of [grid columns](../../../ui/arkts-layout-development-grid-layout.md) occupied by the dialog box.
 
 The default value is subject to the window size, and the maximum value is the maximum number of columns supported by the system. If this parameter is set to an invalid value, the default value is used.
 
@@ -683,7 +682,7 @@ Display order of the dialog box.
 levelUniqueId?: number
 ```
 
-[Unique ID](arkts-arkui-framenode-c.md#getuniqueid-1) of the node under the display level for the page-level dialog box.
+[Unique ID](arkts-arkui-framenode-c.md#getuniqueid) of the node under the display level for the page-level dialog box.
 
 Value range: a number no less than 0
 

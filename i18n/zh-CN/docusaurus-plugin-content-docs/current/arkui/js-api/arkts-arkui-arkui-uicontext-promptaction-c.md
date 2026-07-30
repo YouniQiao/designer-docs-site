@@ -1,6 +1,13 @@
 # PromptAction
 
-class PromptAction
+创建并显示即时反馈、对话框、操作菜单以及自定义弹窗。
+> **说明：**  
+>  
+> - 本模块首批接口从API version 10开始支持。后续版本的新增接口，采用上角标单独标记接口的起始版本。  
+>  
+> - 本Class首批接口从API version 10开始支持。  
+>  
+> - 以下API需先使用UIContext中的[getPromptAction()](arkts-arkui-arkui-uicontext-uicontext-c.md#getpromptaction)方法获取到PromptAction对象，再通过该对象调用对应方法。
 
 **起始版本：** 10
 
@@ -20,7 +27,7 @@ import { OverlayManager, FrameCallback, ResolvedUIContext, NodeRenderStateChange
 closeCustomDialog<T extends Object>(dialogContent: ComponentContent<T>): Promise<void>
 ```
 
-Closes a custom dialog box corresponding to dialogContent. This API uses a promise to return the result.
+关闭已弹出的dialogContent对应的自定义弹窗，使用Promise异步回调。
 
 **起始版本：** 12
 
@@ -36,13 +43,13 @@ Closes a custom dialog box corresponding to dialogContent. This API uses a promi
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| dialogContent | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)&lt;T&gt; | 是 | Content of the custom dialog box. |
+| dialogContent | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)&lt;T&gt; | 是 | 自定义弹窗中显示的组件内容。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise对象，无返回结果。 |
 
 **错误码：**
 
@@ -58,7 +65,7 @@ Closes a custom dialog box corresponding to dialogContent. This API uses a promi
 closeCustomDialog(dialogId: number): void
 ```
 
-Close the custom dialog.
+关闭自定义弹窗。
 
 **起始版本：** 12
 
@@ -74,7 +81,7 @@ Close the custom dialog.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| dialogId | number | 是 | ID of the custom dialog box to close. It is returned from **openCustomDialog**. |
+| dialogId | number | 是 | openCustomDialog返回的对话框id。 |
 
 **错误码：**
 
@@ -89,7 +96,7 @@ Close the custom dialog.
 closeMenu<T extends Object>(content: ComponentContent<T>): Promise<void>
 ```
 
-Close menu with frameNode.
+关闭content对应的Menu弹窗。使用Promise异步回调。
 
 **起始版本：** 18
 
@@ -105,13 +112,13 @@ Close menu with frameNode.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| content | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)&lt;T&gt; | 是 | Content displayed in the menu. |
+| content | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)&lt;T&gt; | 是 | menu弹窗中显示的组件内容。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise对象，无返回结果。 |
 
 **错误码：**
 
@@ -127,7 +134,7 @@ Close menu with frameNode.
 closePopup<T extends Object>(content: ComponentContent<T>): Promise<void>
 ```
 
-Close popup with frameNode.
+关闭content对应的Popup弹窗，使用Promise异步回调。
 
 **起始版本：** 18
 
@@ -143,13 +150,13 @@ Close popup with frameNode.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| content | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)&lt;T&gt; | 是 | Content displayed in the popup. |
+| content | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)&lt;T&gt; | 是 | popup弹窗中显示的组件内容。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise对象，无返回结果。 |
 
 **错误码：**
 
@@ -165,7 +172,7 @@ Close popup with frameNode.
 closeToast(toastId: number): void
 ```
 
-Close the notification text.
+关闭即时反馈。
 
 **起始版本：** 18
 
@@ -181,7 +188,7 @@ Close the notification text.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| toastId | number | 是 | Toast ID returned from **openToast**. |
+| toastId | number | 是 | openToast返回的id。 |
 
 **错误码：**
 
@@ -197,7 +204,7 @@ Close the notification text.
 getBottomOrder(): LevelOrder
 ```
 
-Get order value of bottom dialog.
+获取最底层显示的弹窗的顺序，可以在下一个弹窗时指定期望的顺序。
 
 **起始版本：** 18
 
@@ -213,7 +220,7 @@ Get order value of bottom dialog.
 
 | 类型 | 说明 |
 | --- | --- |
-| [LevelOrder](arkts-arkui-levelorder-t.md) | Order of the topmost dialog box. |
+| [LevelOrder](arkts-arkui-levelorder-t.md) | 返回弹窗层级信息。 |
 
 ## getTopOrder
 
@@ -221,7 +228,9 @@ Get order value of bottom dialog.
 getTopOrder(): LevelOrder
 ```
 
-Get order value of top dialog.
+返回最顶层显示的弹窗的顺序。
+
+获取最顶层显示的弹窗的顺序，可以在下一个弹窗时指定期望的顺序。
 
 **起始版本：** 18
 
@@ -237,7 +246,7 @@ Get order value of top dialog.
 
 | 类型 | 说明 |
 | --- | --- |
-| [LevelOrder](arkts-arkui-levelorder-t.md) | Order of the topmost dialog box. |
+| [LevelOrder](arkts-arkui-levelorder-t.md) | 返回弹窗层级信息。 |
 
 ## openCustomDialog
 
@@ -245,7 +254,7 @@ Get order value of top dialog.
 openCustomDialog<T extends Object>(dialogContent: ComponentContent<T>, options?: promptAction.BaseDialogOptions): Promise<void>
 ```
 
-使用frameNode打开自定义对话框。
+创建并弹出dialogContent对应的自定义弹窗，使用Promise异步回调。通过该接口弹出的弹窗内容样式完全按照dialogContent中设置的样式显示，即相当于customDialog设置customStyle为true时的显示效果。
 
 **起始版本：** 12
 
@@ -261,14 +270,14 @@ openCustomDialog<T extends Object>(dialogContent: ComponentContent<T>, options?:
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| dialogContent | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)&lt;T&gt; | 是 | 自定义对话框的内容。 |
-| options | promptAction.BaseDialogOptions | 否 | 选项。 |
+| dialogContent | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)&lt;T&gt; | 是 | 自定义弹窗中显示的组件内容。 |
+| options | promptAction.BaseDialogOptions | 否 | 弹窗样式。<br>**说明：** 如果BaseDialogOptions中的[isModal](arkts-arkui-promptaction-basedialogoptions-i.md)与[showInSubWindow](arkts-arkui-promptaction-basedialogoptions-i.md)同时设置为true，则只生效showInSubWindow = true，此时为非模态弹出框且不会显示蒙层，并在子窗口中显示。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | 函数返回的promise。 |
+| Promise&lt;void&gt; | Promise对象，无返回结果。 |
 
 **错误码：**
 
@@ -284,9 +293,7 @@ openCustomDialog<T extends Object>(dialogContent: ComponentContent<T>, options?:
 openCustomDialog(options: promptAction.CustomDialogOptions): Promise<number>
 ```
 
-打开自定义对话框。
-
-isModal = true和showInSubWindow = true不能同时使用。* @param { promptAction.CustomDialogOptions } options - 选项。 * @returns { Promise<number> } 返回将由closeCustomDialog使用的对话框ID。
+创建并弹出自定义弹窗。使用Promise异步回调返回对话框的id，可供closeCustomDialog使用。
 
 **起始版本：** 12
 
@@ -302,13 +309,13 @@ isModal = true和showInSubWindow = true不能同时使用。* @param { promptAct
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | promptAction.CustomDialogOptions | 是 | 选项。 * |
+| options | promptAction.CustomDialogOptions | 是 | 自定义弹窗的内容。<br>**说明：** 如果BaseDialogOptions中的[isModal](arkts-arkui-promptaction-basedialogoptions-i.md)与[showInSubWindow](arkts-arkui-promptaction-basedialogoptions-i.md)同时设置为true，则只生效showInSubWindow = true，此时为非模态弹出框且不会显示蒙层，并在子窗口中显示。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;number&gt; | 返回将由closeCustomDialog使用的对话框ID。 |
+| Promise&lt;number&gt; | Promise对象。返回对话框id，可供closeCustomDialog使用。 |
 
 **错误码：**
 
@@ -324,9 +331,9 @@ openCustomDialogWithController<T extends Object>(dialogContent: ComponentContent
     options?: promptAction.BaseDialogOptions): Promise<void>
 ```
 
-打开带有frameNode和控制器的自定义对话框。
+创建并弹出dialogContent对应的自定义弹窗，使用Promise异步回调。支持传入弹窗控制器与自定义弹窗绑定，后续可以通过控制器控制自定义弹窗。
 
-isModal = true和showInSubWindow = true不能同时使用。
+通过该接口弹出的弹窗内容样式完全按照dialogContent中设置的样式显示，即相当于customDialog设置customStyle为true时的显示效果。
 
 **起始版本：** 18
 
@@ -342,15 +349,15 @@ isModal = true和showInSubWindow = true不能同时使用。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| dialogContent | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)&lt;T&gt; | 是 | 自定义对话框的内容。 |
-| controller | promptAction.DialogController | 是 | 对话框控制器。 |
-| options | promptAction.BaseDialogOptions | 否 | 选项。 |
+| dialogContent | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)&lt;T&gt; | 是 | 自定义弹窗中显示的组件内容。 |
+| controller | promptAction.DialogController | 是 | 自定义弹窗的控制器。 |
+| options | promptAction.BaseDialogOptions | 否 | 自定义弹窗的样式。 <br>**说明：** 如果BaseDialogOptions中的[isModal](arkts-arkui-promptaction-basedialogoptions-i.md)与[showInSubWindow](arkts-arkui-promptaction-basedialogoptions-i.md)同时设置为true，则只生效showInSubWindow = true，此时为非模态弹出框且不会显示蒙层，并在子窗口中显示。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | 函数返回的promise。 |
+| Promise&lt;void&gt; | Promise对象，无返回结果。 |
 
 **错误码：**
 
@@ -366,7 +373,16 @@ isModal = true和showInSubWindow = true不能同时使用。
 openMenu<T extends Object>(content: ComponentContent<T>, target: TargetInfo, options?: MenuOptions): Promise<void>
 ```
 
-Open menu with frameNode.
+创建并弹出以content作为内容的Menu弹窗。使用Promise异步回调。
+> **说明：**  
+>  
+> - 使用该接口时，若未传入有效的target，则无法弹出menu弹窗。  
+>  
+> - 由于[updateMenu](arkts-arkui-arkui-uicontext-promptaction-c.md#updatemenu)和[closeMenu](arkts-arkui-arkui-uicontext-promptaction-c.md#closemenu)依赖content去更新或者关闭指定的menu弹窗，开发者需自行维护传入的content。  
+>  
+> - 如果在wrapBuilder中包含其他组件（例如：[Popup](arkts-arkui-advanced-popup.md)、[Chip](arkts-arkui-advanced-chip.md)组件），则[ComponentContent](arkts-arkui-componentcontent-c.md)应采用带有四个参数的构造函数constructor，其中options参数应传递{ nestingBuilderSupported: true }。  
+>  
+> - 子窗弹窗里不能再弹出子窗弹窗，例如[openMenu](arkts-arkui-arkui-uicontext-promptaction-c.md#openmenu)设置了showInSubWindow为true时，则不能再弹出另一个设置了showInSubWindow为true的弹窗。
 
 **起始版本：** 18
 
@@ -382,15 +398,15 @@ Open menu with frameNode.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| content | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)&lt;T&gt; | 是 | Content displayed in the menu. |
-| target | [TargetInfo](arkts-arkui-arkui-uicontext-targetinfo-i.md) | 是 | Information about the target component to bind. |
-| options | [MenuOptions](../arkts-components/arkts-arkui-menuoptions-i.md) | 否 | Style of the menu.<br>**NOTE**<br>The **title** property is not effective.<br>The **preview** parameter supports only the **MenuPreviewMode** type. |
+| content | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)&lt;T&gt; | 是 | menu弹窗中显示的组件内容。 |
+| target | [TargetInfo](arkts-arkui-arkui-uicontext-targetinfo-i.md) | 是 | 需要绑定组件的信息。 |
+| options | [MenuOptions](../arkts-components/arkts-arkui-menuoptions-i.md) | 否 | menu弹窗样式。<br/>**说明：**<br/>title属性不生效。<br/>preview参数仅支持设置MenuPreviewMode类型。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise对象，无返回结果。 |
 
 **错误码：**
 
@@ -408,7 +424,14 @@ Open menu with frameNode.
 openPopup<T extends Object>(content: ComponentContent<T>, target: TargetInfo, options?: PopupCommonOptions): Promise<void>
 ```
 
-Open popup with frameNode.
+创建并弹出以content作为内容的Popup弹窗，使用Promise异步回调。
+> **说明：**  
+>  
+> - 使用该接口时，若未传入有效的target，则无法弹出popup弹窗。  
+>  
+> - 由于[updatePopup](arkts-arkui-arkui-uicontext-promptaction-c.md#updatepopup)和[closePopup](arkts-arkui-arkui-uicontext-promptaction-c.md#closepopup)依赖content去更新或者关闭指定的popup弹窗，开发者需自行维护传入的content。  
+>  
+> - 如果在wrapBuilder中包含其他组件（例如：[Popup](arkts-arkui-advanced-popup.md)、[Chip](arkts-arkui-advanced-chip.md)组件），则[ComponentContent](arkts-arkui-componentcontent-c.md)应采用带有四个参数的构造函数constructor，其中options参数应传递{ nestingBuilderSupported: true }。
 
 **起始版本：** 18
 
@@ -424,15 +447,15 @@ Open popup with frameNode.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| content | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)&lt;T&gt; | 是 | Content displayed in the popup. |
-| target | [TargetInfo](arkts-arkui-arkui-uicontext-targetinfo-i.md) | 是 | Information about the target component to bind. |
-| options | [PopupCommonOptions](../arkts-components/arkts-arkui-popupcommonoptions-i.md) | 否 | Style of the popup. |
+| content | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)&lt;T&gt; | 是 | popup弹窗中显示的组件内容。 |
+| target | [TargetInfo](arkts-arkui-arkui-uicontext-targetinfo-i.md) | 是 | 需要绑定组件的信息。 |
+| options | [PopupCommonOptions](../arkts-components/arkts-arkui-popupcommonoptions-i.md) | 否 | popup弹窗样式。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise对象，无返回结果。 |
 
 **错误码：**
 
@@ -450,7 +473,7 @@ Open popup with frameNode.
 openToast(options: promptAction.ShowToastOptions): Promise<number>
 ```
 
-Displays the notification text.
+显示即时反馈。使用Promise异步回调返回即时反馈的id，可供closeToast使用。
 
 **起始版本：** 18
 
@@ -466,13 +489,13 @@ Displays the notification text.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | promptAction.ShowToastOptions | 是 | Toast configuration options. |
+| options | promptAction.ShowToastOptions | 是 | Toast选项。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;number&gt; | Promise that returns the toast ID for use with **closeToast**. |
+| Promise&lt;number&gt; | Promise对象。返回即时反馈的id，可供closeToast使用。 |
 
 **错误码：**
 
@@ -488,9 +511,9 @@ presentCustomDialog(builder: CustomBuilder | CustomBuilderWithId, controller?: p
     options?: promptAction.DialogOptions): Promise<number>
 ```
 
-使用控制器显示自定义对话框。
+创建并弹出自定义弹窗。使用Promise异步回调返回对话框的id，可供closeCustomDialog使用。
 
-isModal = true和showInSubWindow = true不能同时使用。
+支持在自定义弹窗内容中持有弹窗ID进行对应操作。支持传入弹窗控制器与自定义弹窗绑定，后续可以通过控制器控制自定义弹窗。
 
 **起始版本：** 18
 
@@ -506,15 +529,15 @@ isModal = true和showInSubWindow = true不能同时使用。
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| builder | [CustomBuilder](../arkts-components/arkts-arkui-custombuilder-t.md) \| CustomBuilderWithId | 是 | 对话框生成器。 |
-| controller | promptAction.DialogController | 否 | Controller of the custom dialog box.<br>**起始版本：** 26.0.0 |
-| options | promptAction.DialogOptions | 否 | Style of the custom dialog box.<br>Note: If both [isModal](arkts-arkui-promptaction-basedialogoptions-i.md)and [showInSubWindow](arkts-arkui-promptaction-basedialogoptions-i.md) in **BaseDialogOptions** are set to **true**, only **showInSubWindow** takes effect. In this case, the non-modal dialog box is displayed without mask in the subwindow.<br>**起始版本：** 26.0.0 |
+| builder | [CustomBuilder](../arkts-components/arkts-arkui-custombuilder-t.md) \| CustomBuilderWithId | 是 | 自定义弹窗的内容。 |
+| controller | promptAction.DialogController | 否 | 自定义弹窗的控制器。<br>**起始版本：** 26.0.0 |
+| options | promptAction.DialogOptions | 否 | 自定义弹窗的样式。<br>**说明：** 如果BaseDialogOptions中的[isModal](arkts-arkui-promptaction-basedialogoptions-i.md)与[showInSubWindow](arkts-arkui-promptaction-basedialogoptions-i.md)同时设置为true，则只生效showInSubWindow = true，此时为非模态弹出框且不会显示蒙层，并在子窗口中显示。<br>**起始版本：** 26.0.0 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;number&gt; | Promise Promise used to return the custom dialog box ID. |
+| Promise&lt;number&gt; | Promise对象。返回自定义弹窗ID。 |
 
 **错误码：**
 
@@ -529,7 +552,7 @@ isModal = true和showInSubWindow = true不能同时使用。
 showActionMenu(options: promptAction.ActionMenuOptions, callback: promptAction.ActionMenuSuccessResponse): void
 ```
 
-Shows an action menu in the given settings. This API uses an asynchronous callback to return the result.
+创建并显示操作菜单，菜单响应结果使用callback异步回调返回。
 
 **起始版本：** 10
 
@@ -545,8 +568,8 @@ Shows an action menu in the given settings. This API uses an asynchronous callba
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | promptAction.ActionMenuOptions | 是 | Action menu options. |
-| callback | promptAction.ActionMenuSuccessResponse | 是 | Callback used to return the menu response. |
+| options | promptAction.ActionMenuOptions | 是 | 操作菜单选项。 |
+| callback | promptAction.ActionMenuSuccessResponse | 是 | 回调函数，返回菜单的响应结果。 |
 
 **错误码：**
 
@@ -561,7 +584,7 @@ Shows an action menu in the given settings. This API uses an asynchronous callba
 showActionMenu(options: promptAction.ActionMenuOptions, callback: AsyncCallback<promptAction.ActionMenuSuccessResponse>): void
 ```
 
-显示给定设置中的操作菜单。该接口使用异步回调返回结果。
+创建并显示操作菜单，菜单响应结果使用callback异步回调返回。
 
 **起始版本：** 11
 
@@ -577,8 +600,8 @@ showActionMenu(options: promptAction.ActionMenuOptions, callback: AsyncCallback<
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | promptAction.ActionMenuOptions | 是 | 操作菜单选项。 |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;promptAction.ActionMenuSuccessResponse&gt; | 是 | 用于返回操作的回调菜单响应结果。 |
+| options | promptAction.ActionMenuOptions | 是 | 操作菜单选项。用于配置操作菜单的显示内容和样式，包括title、buttons等属性。 |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;promptAction.ActionMenuSuccessResponse&gt; | 是 | 菜单响应结果。 |
 
 **错误码：**
 
@@ -593,7 +616,7 @@ showActionMenu(options: promptAction.ActionMenuOptions, callback: AsyncCallback<
 showActionMenu(options: promptAction.ActionMenuOptions): Promise<promptAction.ActionMenuSuccessResponse>
 ```
 
-显示菜单。
+创建并显示操作菜单，通过Promise异步回调获取菜单的响应结果。
 
 **起始版本：** 10
 
@@ -609,13 +632,13 @@ showActionMenu(options: promptAction.ActionMenuOptions): Promise<promptAction.Ac
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | promptAction.ActionMenuOptions | 是 | 选项。 |
+| options | promptAction.ActionMenuOptions | 是 | 操作菜单选项。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;promptAction.ActionMenuSuccessResponse&gt; | callback - Promise that returns the action menu response. |
+| Promise&lt;promptAction.ActionMenuSuccessResponse&gt; | callback - Promise对象，返回菜单的响应结果。 |
 
 **错误码：**
 
@@ -630,7 +653,7 @@ showActionMenu(options: promptAction.ActionMenuOptions): Promise<promptAction.Ac
 showDialog(options: promptAction.ShowDialogOptions, callback: AsyncCallback<promptAction.ShowDialogSuccessResponse>): void
 ```
 
-弹出对话框。
+创建并显示对话框，对话框响应结果使用callback异步回调返回。
 
 **起始版本：** 10
 
@@ -646,8 +669,8 @@ showDialog(options: promptAction.ShowDialogOptions, callback: AsyncCallback<prom
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | promptAction.ShowDialogOptions | 是 | 选项。 |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;promptAction.ShowDialogSuccessResponse&gt; | 是 | showDialog的回调。 |
+| options | promptAction.ShowDialogOptions | 是 | 页面显示对话框信息描述。 |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;promptAction.ShowDialogSuccessResponse&gt; | 是 | 回调函数。弹出对话框成功，err为undefined，data为获取到的对话框响应结果，否则为错误对象。 |
 
 **错误码：**
 
@@ -662,7 +685,7 @@ showDialog(options: promptAction.ShowDialogOptions, callback: AsyncCallback<prom
 showDialog(options: promptAction.ShowDialogOptions): Promise<promptAction.ShowDialogSuccessResponse>
 ```
 
-弹出对话框。
+创建并显示对话框，使用Promise异步回调获取对话框的响应结果。
 
 **起始版本：** 10
 
@@ -678,13 +701,13 @@ showDialog(options: promptAction.ShowDialogOptions): Promise<promptAction.ShowDi
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | promptAction.ShowDialogOptions | 是 | 选项。 |
+| options | promptAction.ShowDialogOptions | 是 | 对话框选项。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;promptAction.ShowDialogSuccessResponse&gt; | Promise that returns the dialog box response. |
+| Promise&lt;promptAction.ShowDialogSuccessResponse&gt; | Promise对象，返回对话框的响应结果。 |
 
 **错误码：**
 
@@ -699,7 +722,7 @@ showDialog(options: promptAction.ShowDialogOptions): Promise<promptAction.ShowDi
 showToast(options: promptAction.ShowToastOptions): void
 ```
 
-Displays the notification text.
+创建并显示即时反馈。
 
 **起始版本：** 10
 
@@ -715,7 +738,7 @@ Displays the notification text.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | promptAction.ShowToastOptions | 是 | Toast configuration options. |
+| options | promptAction.ShowToastOptions | 是 | Toast选项。 |
 
 **错误码：**
 
@@ -730,7 +753,7 @@ Displays the notification text.
 updateCustomDialog<T extends Object>(dialogContent: ComponentContent<T>, options: promptAction.BaseDialogOptions): Promise<void>
 ```
 
-Update the custom dialog with frameNode.
+更新已弹出的dialogContent对应的自定义弹窗的样式，使用Promise异步回调。
 
 **起始版本：** 12
 
@@ -746,14 +769,14 @@ Update the custom dialog with frameNode.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| dialogContent | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)&lt;T&gt; | 是 | Content of the custom dialog box. |
-| options | promptAction.BaseDialogOptions | 是 | Dialog box style. Currently,only **alignment**, **offset**, **autoCancel**, and **maskColor** can be updated. |
+| dialogContent | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)&lt;T&gt; | 是 | 自定义弹窗中显示的组件内容。 |
+| options | promptAction.BaseDialogOptions | 是 | 弹窗样式，目前仅支持更新alignment、offset、autoCancel、maskColor。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise对象，无返回结果。 |
 
 **错误码：**
 
@@ -769,7 +792,13 @@ Update the custom dialog with frameNode.
 updateMenu<T extends Object>(content: ComponentContent<T>, options: MenuOptions, partialUpdate?: boolean): Promise<void>
 ```
 
-Update menu with frameNode.
+更新content对应的Menu弹窗的样式。使用Promise异步回调。
+> **说明：**  
+>  
+> - 不支持更新showInSubWindow、preview、previewAnimationOptions、transition、onAppear、aboutToAppear、onDisappear、  
+> aboutToDisappear、onWillAppear、onDidAppear、onWillDisappear和onDidDisappear。  
+>  
+> - 支持mask通过设置[MenuMaskType](../arkts-components/arkts-arkui-menumasktype-i.md)实现更新蒙层样式，不支持mask通过设置boolean实现蒙层从无到有或者从有到无的更新。
 
 **起始版本：** 18
 
@@ -785,15 +814,15 @@ Update menu with frameNode.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| content | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)&lt;T&gt; | 是 | Content displayed in the menu. |
-| options | [MenuOptions](../arkts-components/arkts-arkui-menuoptions-i.md) | 是 | Style of the menu.<br>**NOTE**<br>1. Updating for the following is not supported:**showInSubWindow**, **preview**, **previewAnimationOptions**, **transition**, **onAppear**, **aboutToAppear**,**onDisappear**, **aboutToDisappear**, **onWillAppear**, **onDidAppear**, **onWillDisappear**, and **onDidDisappear**.<br>2. The mask style can be updated by configuring [MenuMaskType](../arkts-components/arkts-arkui-menumasktype-i.md).However, this API does not support mask presence toggling (that is, switching the mask from non-existent to existent or vice versa) by setting a boolean value. |
-| partialUpdate | boolean | 否 | Whether to update the menu in incremental mode. Default value: **false**.<br>**NOTE**<br>1. **true**: incremental update, where the specified properties in **options** are updated, and other properties stay at their current value.<br>2. **false**: full update, where all properties except those specified in **options** are restored to default values. |
+| content | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)&lt;T&gt; | 是 | menu弹窗中显示的组件内容。 |
+| options | [MenuOptions](../arkts-components/arkts-arkui-menuoptions-i.md) | 是 | menu弹窗样式。<br/>**说明：** <br/>1. 不支持更新showInSubWindow、preview、previewAnimationOptions、transition、onAppear、aboutToAppear、onDisappear、aboutToDisappear、onWillAppear、onDidAppear、onWillDisappear和onDidDisappear。<br/>2. 支持mask通过设置[MenuMaskType](../arkts-components/arkts-arkui-menumasktype-i.md)实现更新蒙层样式，不支持mask通过设置boolean实现蒙层从无到有或者从有到无的更新。 |
+| partialUpdate | boolean | 否 | menu弹窗更新方式，默认值为false。<br/>**说明：** <br/>1. true为增量更新，保留当前值，更新options中的指定属性。 <br/>2. false为全量更新，除options中的指定属性，其他属性恢复默认值。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise对象，无返回结果。 |
 
 **错误码：**
 
@@ -809,7 +838,10 @@ Update menu with frameNode.
 updatePopup<T extends Object>(content: ComponentContent<T>, options: PopupCommonOptions, partialUpdate?: boolean): Promise<void>
 ```
 
-Update popup with frameNode.
+更新content对应的Popup弹窗的样式，使用Promise异步回调。
+> **说明：**  
+>  
+> 不支持更新showInSubWindow、focusable、onStateChange、onWillDismiss、transition。
 
 **起始版本：** 18
 
@@ -825,15 +857,15 @@ Update popup with frameNode.
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| content | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)&lt;T&gt; | 是 | Content displayed in the popup. |
-| options | [PopupCommonOptions](../arkts-components/arkts-arkui-popupcommonoptions-i.md) | 是 | Style of the popup.<br>**NOTE**<br>Updating the following properties is not supported: **showInSubWindow**, **focusable**, **onStateChange**,**onWillDismiss**, and **transition**. |
-| partialUpdate | boolean | 否 | Whether to update the popup in incremental mode.<br>Default value: **false**<br>**NOTE**<br>**true**: Incremental update. Only specified attributes in **options** are updated, and the other attributes retain their current values. If the attribute value passed in **options** is invalid or **undefined**,the attribute is not updated.<br>**false**: Full update. Specified attributes in **options** are updated,and the other attributes are restored to their default values. |
+| content | [ComponentContent](../arkts-components/arkts-arkui-componentcontent-t.md)&lt;T&gt; | 是 | popup弹窗中显示的组件内容。 |
+| options | [PopupCommonOptions](../arkts-components/arkts-arkui-popupcommonoptions-i.md) | 是 | popup弹窗样式。<br/>**说明：** <br/>不支持更新showInSubWindow、focusable、onStateChange、onWillDismiss、transition。 |
+| partialUpdate | boolean | 否 | popup弹窗更新方式，默认值为false。<br/>**说明：** <br/>true：增量更新，此时更新options中的指定属性，其它属性保留当前值。options中传入的属性为异常值或undefined时，不会对该属性进行更新。false：全量更新，此时更新options中的指定属性，并且其他属性恢复默认值。 |
 
 **返回值：**
 
 | 类型 | 说明 |
 | --- | --- |
-| Promise&lt;void&gt; | Promise that returns no value. |
+| Promise&lt;void&gt; | Promise对象，无返回结果。 |
 
 **错误码：**
 

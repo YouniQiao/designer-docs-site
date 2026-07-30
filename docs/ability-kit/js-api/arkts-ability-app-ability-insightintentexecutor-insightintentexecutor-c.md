@@ -1,6 +1,6 @@
 # InsightIntentExecutor
 
-The module provides the base class for intent execution. You can use this module to interface with the [InsightIntent framework](docroot://application-models/insight-intent-overview.md) on the device side and implement intent service logic through [configuration files](docroot://application-models/insight-intent-config-development.md).In addition to developing intents via configuration files, intents can also be developed using decorators. For API version 20 and later, you are advised to [develop intents using decorators](docroot://application-models/insight-intent-decorator-development.md).
+The module provides the base class for intent execution. You can use this module to interface with the [InsightIntent framework](../../../application-models/insight-intent-overview.md) on the device side and implement intent service logic through [configuration files](../../../application-models/insight-intent-config-development.md).In addition to developing intents via configuration files, intents can also be developed using decorators. For API version 20 and later, you are advised to [develop intents using decorators](../../../application-models/insight-intent-decorator-development.md).
 
 **Since:** 11
 
@@ -14,7 +14,6 @@ The module provides the base class for intent execution. You can use this module
 import { InsightIntentExecutor } from '@kit.AbilityKit';
 ```
 
-<a id="onexecuteinserviceextensionability"></a>
 ## onExecuteInServiceExtensionAbility
 
 ```TypeScript
@@ -30,9 +29,7 @@ Called during the ServiceExtensionAbility lifecycle when the ServiceExtensionAbi
 
 **Model restriction:** This API can be used only in the stage model.
 
-<!--Device-InsightIntentExecutor-onExecuteInServiceExtensionAbility(name: string, param: Record<string, Object>):
-    insightIntent.ExecuteResult | Promise<insightIntent.ExecuteResult>--><!--Device-InsightIntentExecutor-onExecuteInServiceExtensionAbility(name: string, param: Record<string, Object>):
-    insightIntent.ExecuteResult | Promise<insightIntent.ExecuteResult>-End-->
+<!--Device-InsightIntentExecutor-onExecuteInServiceExtensionAbility(name: string, param: Record<string, Object>):    insightIntent.ExecuteResult | Promise<insightIntent.ExecuteResult>--><!--Device-InsightIntentExecutor-onExecuteInServiceExtensionAbility(name: string, param: Record<string, Object>):    insightIntent.ExecuteResult | Promise<insightIntent.ExecuteResult>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -126,7 +123,6 @@ export default class IntentExecutorImpl extends InsightIntentExecutor {
 
 ```
 
-<a id="onexecuteinuiabilitybackgroundmode"></a>
 ## onExecuteInUIAbilityBackgroundMode
 
 ```TypeScript
@@ -136,7 +132,7 @@ onExecuteInUIAbilityBackgroundMode(name: string, param: Record<string, Object>):
 
 Called during the UIAbility lifecycle when the [UIAbility](arkts-app-ability-uiability.md) that the intent execution depends on is started in the background. Both synchronous calls and asynchronous calls using Promise are supported.
 
-- If the UIAbility is cold started, the UIAbility lifecycle callbacks are triggered in the following sequence during intent execution: [onCreate](arkts-ability-app-ability-uiability-uiability-c.md#oncreate-1),onExecuteInUIAbilityBackgroundMode, and [onBackground](arkts-ability-app-ability-uiability-uiability-c.md#onbackground-1).  
+- If the UIAbility is cold started, the UIAbility lifecycle callbacks are triggered in the following sequence during intent execution: [onCreate](arkts-ability-app-ability-uiability-uiability-c.md#oncreate),onExecuteInUIAbilityBackgroundMode, and [onBackground](arkts-ability-app-ability-uiability-uiability-c.md#onbackground).  
 - If the UIAbility is hot started, the UIAbility lifecycle callbacks are triggered in the following sequence during intent execution: onExecuteInUIAbilityBackgroundMode.
 
 **Since:** 11
@@ -145,9 +141,7 @@ Called during the UIAbility lifecycle when the [UIAbility](arkts-app-ability-uia
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
-<!--Device-InsightIntentExecutor-onExecuteInUIAbilityBackgroundMode(name: string, param: Record<string, Object>):
-    insightIntent.ExecuteResult | Promise<insightIntent.ExecuteResult>--><!--Device-InsightIntentExecutor-onExecuteInUIAbilityBackgroundMode(name: string, param: Record<string, Object>):
-    insightIntent.ExecuteResult | Promise<insightIntent.ExecuteResult>-End-->
+<!--Device-InsightIntentExecutor-onExecuteInUIAbilityBackgroundMode(name: string, param: Record<string, Object>):    insightIntent.ExecuteResult | Promise<insightIntent.ExecuteResult>--><!--Device-InsightIntentExecutor-onExecuteInUIAbilityBackgroundMode(name: string, param: Record<string, Object>):    insightIntent.ExecuteResult | Promise<insightIntent.ExecuteResult>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
@@ -213,7 +207,6 @@ export default class IntentExecutorImpl extends InsightIntentExecutor {
 
 ```
 
-<a id="onexecuteinuiabilityforegroundmode"></a>
 ## onExecuteInUIAbilityForegroundMode
 
 ```TypeScript
@@ -223,8 +216,8 @@ onExecuteInUIAbilityForegroundMode(name: string, param: Record<string, Object>, 
 
 Called during the UIAbility lifecycle when the [UIAbility](arkts-app-ability-uiability.md) that the intent execution depends on is started in the foreground. Both synchronous calls and asynchronous calls using Promise are supported.
 
-- If the UIAbility is cold started, the UIAbility lifecycle callbacks are triggered in the following sequence during intent execution: [onCreate](arkts-ability-app-ability-uiability-uiability-c.md#oncreate-1),[onWindowStageCreate](arkts-ability-app-ability-uiability-uiability-c.md#onwindowstagecreate-1),onExecuteInUIAbilityForegroundMode, and [onForeground](arkts-ability-app-ability-uiability-uiability-c.md#onforeground-1).  
-- If the UIAbility is hot started in the background, the UIAbility lifecycle callbacks are triggered in the following sequence during intent execution: [onNewWant](arkts-ability-app-ability-uiability-uiability-c.md#onnewwant-1),onExecuteInUIAbilityForegroundMode, and [onForeground](arkts-ability-app-ability-uiability-uiability-c.md#onforeground-1).  
+- If the UIAbility is cold started, the UIAbility lifecycle callbacks are triggered in the following sequence during intent execution: [onCreate](arkts-ability-app-ability-uiability-uiability-c.md#oncreate),[onWindowStageCreate](arkts-ability-app-ability-uiability-uiability-c.md#onwindowstagecreate),onExecuteInUIAbilityForegroundMode, and [onForeground](arkts-ability-app-ability-uiability-uiability-c.md#onforeground).  
+- If the UIAbility is hot started in the background, the UIAbility lifecycle callbacks are triggered in the following sequence during intent execution: [onNewWant](arkts-ability-app-ability-uiability-uiability-c.md#onnewwant),onExecuteInUIAbilityForegroundMode, and [onForeground](arkts-ability-app-ability-uiability-uiability-c.md#onforeground).  
 - If the UIAbility is hot started in the foreground, the UIAbility lifecycle callbacks are triggered in the following sequence during intent execution: onExecuteInUIAbilityForegroundMode.
 
 **Since:** 11
@@ -233,9 +226,7 @@ Called during the UIAbility lifecycle when the [UIAbility](arkts-app-ability-uia
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
-<!--Device-InsightIntentExecutor-onExecuteInUIAbilityForegroundMode(name: string, param: Record<string, Object>, pageLoader: window.WindowStage):
-    insightIntent.ExecuteResult | Promise<insightIntent.ExecuteResult>--><!--Device-InsightIntentExecutor-onExecuteInUIAbilityForegroundMode(name: string, param: Record<string, Object>, pageLoader: window.WindowStage):
-    insightIntent.ExecuteResult | Promise<insightIntent.ExecuteResult>-End-->
+<!--Device-InsightIntentExecutor-onExecuteInUIAbilityForegroundMode(name: string, param: Record<string, Object>, pageLoader: window.WindowStage):    insightIntent.ExecuteResult | Promise<insightIntent.ExecuteResult>--><!--Device-InsightIntentExecutor-onExecuteInUIAbilityForegroundMode(name: string, param: Record<string, Object>, pageLoader: window.WindowStage):    insightIntent.ExecuteResult | Promise<insightIntent.ExecuteResult>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.AbilityCore
 
@@ -245,7 +236,7 @@ Called during the UIAbility lifecycle when the [UIAbility](arkts-app-ability-uia
 | --- | --- | --- | --- |
 | name | string | Yes | Intent name. |
 | param | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | Yes | Intent parameter, which is the data passed from the system entry point to the application for this intent execution. |
-| pageLoader | window.WindowStage | Yes | WindowStage instance, which is the same as the WindowStage instance in the [onWindowStageCreate](arkts-ability-app-ability-uiability-uiability-c.md#onwindowstagecreate-1) API and can be used to load the page for intent execution. |
+| pageLoader | window.WindowStage | Yes | WindowStage instance, which is the same as the WindowStage instance in the [onWindowStageCreate](arkts-ability-app-ability-uiability-uiability-c.md#onwindowstagecreate) API and can be used to load the page for intent execution. |
 
 **Return value:**
 
@@ -342,7 +333,6 @@ export default class IntentExecutorImpl extends InsightIntentExecutor {
 
 ```
 
-<a id="onexecuteinuiextensionability"></a>
 ## onExecuteInUIExtensionAbility
 
 ```TypeScript
@@ -352,15 +342,13 @@ onExecuteInUIExtensionAbility(name: string, param: Record<string, Object>, pageL
 
 Called during the UIExtensionAbility lifecycle when the [UIExtensionAbility](arkts-ability-app-ability-uiextensionability-uiextensionability-c.md) that the intent execution depends on is started. Both synchronous calls and asynchronous calls using Promise are supported.
 
-- The UIExtensionAbility lifecycle callbacks are triggered in the following sequence during intent execution:[onCreate](arkts-ability-app-ability-uiextensionability-uiextensionability-c.md#oncreate-1),[onSessionCreate](arkts-ability-app-ability-uiextensionability-uiextensionability-c.md#onsessioncreate-1),onExecuteInUIExtensionAbility, and [onForeground](arkts-ability-app-ability-uiextensionability-uiextensionability-c.md#onforeground-1).
+- The UIExtensionAbility lifecycle callbacks are triggered in the following sequence during intent execution:[onCreate](arkts-ability-app-ability-uiextensionability-uiextensionability-c.md#oncreate),[onSessionCreate](arkts-ability-app-ability-uiextensionability-uiextensionability-c.md#onsessioncreate),onExecuteInUIExtensionAbility, and [onForeground](arkts-ability-app-ability-uiextensionability-uiextensionability-c.md#onforeground).
 
 **Since:** 11
 
 **Model restriction:** This API can be used only in the stage model.
 
-<!--Device-InsightIntentExecutor-onExecuteInUIExtensionAbility(name: string, param: Record<string, Object>, pageLoader: UIExtensionContentSession):
-    insightIntent.ExecuteResult | Promise<insightIntent.ExecuteResult>--><!--Device-InsightIntentExecutor-onExecuteInUIExtensionAbility(name: string, param: Record<string, Object>, pageLoader: UIExtensionContentSession):
-    insightIntent.ExecuteResult | Promise<insightIntent.ExecuteResult>-End-->
+<!--Device-InsightIntentExecutor-onExecuteInUIExtensionAbility(name: string, param: Record<string, Object>, pageLoader: UIExtensionContentSession):    insightIntent.ExecuteResult | Promise<insightIntent.ExecuteResult>--><!--Device-InsightIntentExecutor-onExecuteInUIExtensionAbility(name: string, param: Record<string, Object>, pageLoader: UIExtensionContentSession):    insightIntent.ExecuteResult | Promise<insightIntent.ExecuteResult>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -370,7 +358,7 @@ Called during the UIExtensionAbility lifecycle when the [UIExtensionAbility](ark
 | --- | --- | --- | --- |
 | name | string | Yes | Intent name. |
 | param | [Record](../../apis-na/arkts-apis/arkts-na-record-t.md)&lt;string, Object&gt; | Yes | Intent parameter, which is the data passed from the system entry point to the application for this intent execution. |
-| pageLoader | [UIExtensionContentSession](arkts-ability-app-ability-uiextensioncontentsession-uiextensioncontentsession-c.md) | Yes | UIExtensionContentSession instance, which is the same as the UIExtensionContentSession instance in the [onSessionCreate](arkts-ability-app-ability-uiextensionability-uiextensionability-c.md#onsessioncreate-1) API and can be used to load the page for intent execution. |
+| pageLoader | [UIExtensionContentSession](arkts-ability-app-ability-uiextensioncontentsession-uiextensioncontentsession-c.md) | Yes | UIExtensionContentSession instance, which is the same as the UIExtensionContentSession instance in the [onSessionCreate](arkts-ability-app-ability-uiextensionability-uiextensionability-c.md#onsessioncreate) API and can be used to load the page for intent execution. |
 
 **Return value:**
 

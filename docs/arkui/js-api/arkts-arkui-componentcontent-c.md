@@ -1,6 +1,15 @@
 # ComponentContent
 
-Inherits from [Content](../../../reference/apis-arkui/js-apis-arkui-Content.md#content-1).
+You can create an entity encapsulation component in either of the following ways: You can select either of the following methods during development:
+
+**ComponentContent** represents an entity encapsulation of component content, which can be created and transmitted outside of UI components. It allows you to encapsulate and decouple dialog box components. Its underlying implementation uses BuilderNode. For details, see [BuilderNode](arkts-arkui-buildernode-c.md).
+
+**ReactiveComponentContent** represents an entity encapsulation of component content, which can be created and transmitted outside of UI components. It allows you to encapsulate and decouple dialog box components. Its underlying implementation uses **ReactiveBuilderNode**. For details, see [ReactiveBuilderNode](arkts-arkui-buildernode-reactivebuildernode-c.md).
+> **NOTE**  
+>  
+> - **ComponentContent** and **ReactiveComponentContent** are not available in DevEco Studio Previewer.  
+>  
+> - ComponentContent objects do not support JSON serialization.
 
 **Inheritance/Implementation:** ComponentContent extends [Content](arkts-arkui-content-c.md)
 
@@ -118,7 +127,7 @@ Immediately releases the reference relationship between this **ComponentContent*
 inheritFreezeOptions(enabled: boolean): void
 ```
 
-Sets whether this **ComponentContent** object inherits the freeze policy from its parent component's custom components. When inheritance is disabled (set to **false**), the **ComponentContent** object's freeze policy is set to **false**, which means its associated node remains unfrozen even in an inactive state.
+Sets whether the current **ComponentContent** object inherits the freeze policy from its parent component's custom components. When inheritance is disabled (set to **false**), the **ComponentContent** object's freeze policy is set to **false**, which means its associated node remains unfrozen even in an inactive state.
 > **NOTE**  
 >  
 > When **inheritFreezeOptions** is set to **true** for **ComponentContent** and the parent component is a custom  
@@ -263,7 +272,7 @@ Updates the builder function parameters encapsulated by the [WrappedBuilder](../
 updateConfiguration(): void
 ```
 
-Updates the configuration of the entire node by passing in a [system environment change](../../apis-ability-kit/arkts-apis/arkts-ability-app-ability-configuration-configuration-i.md) event.
+Transfers a system environment change event and triggers full update of a node. For details about system environment changes, see [@ohos.app.ability.Configuration (Environment Variables)](../../apis-ability-kit/arkts-apis/arkts-ability-app-ability-configuration-configuration-i.md).
 > **NOTE**  
 >  
 > The updateConfiguration API is used to notify an object of updating the current system environment change.

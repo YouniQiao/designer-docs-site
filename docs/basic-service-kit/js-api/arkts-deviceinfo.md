@@ -1,7 +1,6 @@
 # @ohos.deviceInfo
 
 The **deviceInfo** module provides terminal device information query, which cannot be configured by developers.
-
 > **NOTE**  
 >  
 > The initial APIs of this module are supported since API version 6. Newly added APIs  
@@ -54,7 +53,7 @@ import { deviceInfo } from '@kit.BasicServicesKit';
 | [buildVersion](arkts-basicservices-deviceinfo-con.md#buildversion) | Build version number. The value is the fourth digit in **osFullName**. You are advised to use **deviceInfo.buildVersion** instead of parsing **osFullName** to obtain the value, facilitating efficiency improvement.  Example: 1 |
 | [chipType](arkts-basicservices-deviceinfo-con.md#chiptype) | Obtains the device CPU chipType by a string. |
 | [deviceColor](arkts-basicservices-deviceinfo-con.md#devicecolor) | Obtain the device color represented by a string. If it cannot be obtained, return an empty string |
-| [deviceType](arkts-basicservices-deviceinfo-con.md#devicetype) | Device type. For details, see [deviceTypes tag](docroot://quick-start/module-configuration-file.md#devicetypes).  Example: <!--RP1-->wearable<!--RP1End--> |
+| [deviceType](arkts-basicservices-deviceinfo-con.md#devicetype) | Device type. For details, see [deviceTypes tag](../../../quick-start/module-configuration-file.md#devicetypes).  Example: <!--RP1-->wearable<!--RP1End--> |
 | [diskSN](arkts-basicservices-deviceinfo-con.md#disksn) | Disk SN. |
 | [displayVersion](arkts-basicservices-deviceinfo-con.md#displayversion) | Product version.  Example: <!--RP8-->XXX X.X.X.X<!--RP8End--> |
 | [distributionOSApiName](arkts-basicservices-deviceinfo-con.md#distributionosapiname) | Distribution OS API name.<!--Del--> It is defined by the issuer.<!--DelEnd--> |

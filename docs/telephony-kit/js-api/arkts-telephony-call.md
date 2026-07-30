@@ -20,166 +20,166 @@ import { call } from '@kit.TelephonyKit';
 
 | Name | Description |
 | --- | --- |
+| [dial](arkts-telephony-call-dial-f.md#dial) | Makes a call. |
 | [dial](arkts-telephony-call-dial-f.md#dial-1) | Makes a call. |
 | [dial](arkts-telephony-call-dial-f.md#dial-2) | Makes a call. |
-| [dial](arkts-telephony-call-dial-f.md#dial-3) | Makes a call. |
+| [formatPhoneNumber](arkts-telephony-call-formatphonenumber-f.md#formatphonenumber) | Formats a phone number according to the Chinese Telephone Code Plan. Before the formatting,a phone number is in the format of country code (if any) + 3-digit service provider code+ 4-digit area code + 4-digit subscriber number. After the formatting,each part is separated by a space. |
 | [formatPhoneNumber](arkts-telephony-call-formatphonenumber-f.md#formatphonenumber-1) | Formats a phone number according to the Chinese Telephone Code Plan. Before the formatting,a phone number is in the format of country code (if any) + 3-digit service provider code+ 4-digit area code + 4-digit subscriber number. After the formatting,each part is separated by a space. |
 | [formatPhoneNumber](arkts-telephony-call-formatphonenumber-f.md#formatphonenumber-2) | Formats a phone number according to the Chinese Telephone Code Plan. Before the formatting,a phone number is in the format of country code (if any) + 3-digit service provider code+ 4-digit area code + 4-digit subscriber number. After the formatting,each part is separated by a space. |
-| [formatPhoneNumber](arkts-telephony-call-formatphonenumber-f.md#formatphonenumber-3) | Formats a phone number according to the Chinese Telephone Code Plan. Before the formatting,a phone number is in the format of country code (if any) + 3-digit service provider code+ 4-digit area code + 4-digit subscriber number. After the formatting,each part is separated by a space. |
+| [formatPhoneNumberToE164](arkts-telephony-call-formatphonenumbertoe164-f.md#formatphonenumbertoe164) | Formats a phone number into an E.164 representation. |
 | [formatPhoneNumberToE164](arkts-telephony-call-formatphonenumbertoe164-f.md#formatphonenumbertoe164-1) | Formats a phone number into an E.164 representation. |
-| [formatPhoneNumberToE164](arkts-telephony-call-formatphonenumbertoe164-f.md#formatphonenumbertoe164-2) | Formats a phone number into an E.164 representation. |
-| [getCallState](arkts-telephony-call-getcallstate-f.md#getcallstate-1) | Obtains the call state.If an incoming call is ringing or waiting, the system returns {@code CallState#CALL_STATE_RINGING}.If at least one call is in the active, hold, or dialing state, the system returns{@code CallState#CALL_STATE_OFFHOOK}.In other cases, the system returns {@code CallState#CALL_STATE_IDLE}. |
-| [getCallState](arkts-telephony-call-getcallstate-f.md#getcallstate-2) | Obtains the call state.If an incoming call is ringing or waiting, the system returns {@code CallState#CALL_STATE_RINGING}.If at least one call is in the active, hold, or dialing state, the system returns{@code CallState#CALL_STATE_OFFHOOK}.In other cases, the system returns {@code CallState#CALL_STATE_IDLE}. |
-| [getCallStateSync](arkts-telephony-call-getcallstatesync-f.md#getcallstatesync-1) | Obtains the call state.If an incoming call is ringing or waiting, the system returns {@code CallState#CALL_STATE_RINGING}.If at least one call is in the active, hold, or dialing state, the system returns{@code CallState#CALL_STATE_OFFHOOK}. In other cases, the system returns {@code CallState#CALL_STATE_IDLE}. |
-| [getCallTransferInfo](arkts-telephony-call-getcalltransferinfo-f.md#getcalltransferinfo-1) | Obtains call transfer information with the phone number. |
+| [getCallState](arkts-telephony-call-getcallstate-f.md#getcallstate) | Obtains the call state.  If an incoming call is ringing or waiting, the system returns {@code CallState#CALL_STATE_RINGING}.If at least one call is in the active, hold, or dialing state, the system returns{@code CallState#CALL_STATE_OFFHOOK}.In other cases, the system returns {@code CallState#CALL_STATE_IDLE}. |
+| [getCallState](arkts-telephony-call-getcallstate-f.md#getcallstate-1) | Obtains the call state.  If an incoming call is ringing or waiting, the system returns {@code CallState#CALL_STATE_RINGING}.If at least one call is in the active, hold, or dialing state, the system returns{@code CallState#CALL_STATE_OFFHOOK}.In other cases, the system returns {@code CallState#CALL_STATE_IDLE}. |
+| [getCallStateSync](arkts-telephony-call-getcallstatesync-f.md#getcallstatesync) | Obtains the call state.  If an incoming call is ringing or waiting, the system returns {@code CallState#CALL_STATE_RINGING}.If at least one call is in the active, hold, or dialing state, the system returns{@code CallState#CALL_STATE_OFFHOOK}. In other cases, the system returns {@code CallState#CALL_STATE_IDLE}. |
+| [getCallTransferInfo](arkts-telephony-call-getcalltransferinfo-f.md#getcalltransferinfo) | Obtains call transfer information with the phone number. |
+| [hasCall](arkts-telephony-call-hascall-f.md#hascall) | Checks whether a call is ongoing. |
 | [hasCall](arkts-telephony-call-hascall-f.md#hascall-1) | Checks whether a call is ongoing. |
-| [hasCall](arkts-telephony-call-hascall-f.md#hascall-2) | Checks whether a call is ongoing. |
-| [hasCallSync](arkts-telephony-call-hascallsync-f.md#hascallsync-1) | Checks whether a call is ongoing. |
-| [hasVoiceCapability](arkts-telephony-call-hasvoicecapability-f.md#hasvoicecapability-1) | Checks whether a device supports voice calls.The system checks whether the device has the capability to initiate a circuit switching (CS) or IP multimedia subsystem domain (IMS) call on a telephone service network. If the device supports only packet switching(even if the device supports OTT calls), {@code false} is returned. |
+| [hasCallSync](arkts-telephony-call-hascallsync-f.md#hascallsync) | Checks whether a call is ongoing. |
+| [hasVoiceCapability](arkts-telephony-call-hasvoicecapability-f.md#hasvoicecapability) | Checks whether a device supports voice calls.  The system checks whether the device has the capability to initiate a circuit switching (CS) or IP multimedia subsystem domain (IMS) call on a telephone service network. If the device supports only packet switching(even if the device supports OTT calls), {@code false} is returned. |
+| [isEmergencyPhoneNumber](arkts-telephony-call-isemergencyphonenumber-f.md#isemergencyphonenumber) | Checks whether a phone number is on the emergency number list. |
 | [isEmergencyPhoneNumber](arkts-telephony-call-isemergencyphonenumber-f.md#isemergencyphonenumber-1) | Checks whether a phone number is on the emergency number list. |
 | [isEmergencyPhoneNumber](arkts-telephony-call-isemergencyphonenumber-f.md#isemergencyphonenumber-2) | Checks whether a phone number is on the emergency number list. |
-| [isEmergencyPhoneNumber](arkts-telephony-call-isemergencyphonenumber-f.md#isemergencyphonenumber-3) | Checks whether a phone number is on the emergency number list. |
+| [makeCall](arkts-telephony-call-makecall-f.md#makecall) | Go to the dial screen and the called number is displayed. |
 | [makeCall](arkts-telephony-call-makecall-f.md#makecall-1) | Go to the dial screen and the called number is displayed. |
 | [makeCall](arkts-telephony-call-makecall-f.md#makecall-2) | Go to the dial screen and the called number is displayed. |
 | [makeCall](arkts-telephony-call-makecall-f.md#makecall-3) | Go to the dial screen and the called number is displayed. |
-| [makeCall](arkts-telephony-call-makecall-f.md#makecall-4) | Go to the dial screen and the called number is displayed. |
-| [makeCallWithToken](arkts-telephony-call-makecallwithtoken-f.md#makecallwithtoken-1) | Go to the dial screen and the called number is displayed.The authentication challenge value is returned. |
+| [makeCallWithToken](arkts-telephony-call-makecallwithtoken-f.md#makecallwithtoken) | Go to the dial screen and the called number is displayed.The authentication challenge value is returned. |
 
 <!--Del-->
 ### Functions（系统接口）
 
 | Name | Description |
 | --- | --- |
+| [answerCall](arkts-telephony-call-answercall-f-sys.md#answercall) | Answers the incoming call. |
 | [answerCall](arkts-telephony-call-answercall-f-sys.md#answercall-1) | Answers the incoming call. |
-| [answerCall](arkts-telephony-call-answercall-f-sys.md#answercall-2) | Answers the incoming call. |
-| [answerCall](arkts-telephony-call-answercall-f-sys.md#answercall-3) | Answers the incoming call without callId. |
-| [answerCall](arkts-telephony-call-answercall-f-sys.md#answercall-4) | Answers the incoming video call |
-| [answerCall](arkts-telephony-call-answercall-f-sys.md#answercall-5) | Answers the incoming rtt |
-| [canSetCallTransferTime](arkts-telephony-call-cansetcalltransfertime-f-sys.md#cansetcalltransfertime-1) | Checks whether can set call transfer time.The system checks whether IP multimedia subsystem domain (IMS) can set call transfer time. |
-| [canSetCallTransferTime](arkts-telephony-call-cansetcalltransfertime-f-sys.md#cansetcalltransfertime-2) | Checks whether can set call transfer time.The system checks whether IP multimedia subsystem domain (IMS) can set call transfer time. |
-| [cancelCallUpgrade](arkts-telephony-call-cancelcallupgrade-f-sys.md#cancelcallupgrade-1) | Cancel call upgrade when voice call upgrade to video call. |
+| [answerCall](arkts-telephony-call-answercall-f-sys.md#answercall-2) | Answers the incoming call without callId. |
+| [answerCall](arkts-telephony-call-answercall-f-sys.md#answercall-3) | Answers the incoming video call |
+| [answerCall](arkts-telephony-call-answercall-f-sys.md#answercall-4) | Answers the incoming rtt |
+| [canSetCallTransferTime](arkts-telephony-call-cansetcalltransfertime-f-sys.md#cansetcalltransfertime) | Checks whether can set call transfer time.  The system checks whether IP multimedia subsystem domain (IMS) can set call transfer time. |
+| [canSetCallTransferTime](arkts-telephony-call-cansetcalltransfertime-f-sys.md#cansetcalltransfertime-1) | Checks whether can set call transfer time.  The system checks whether IP multimedia subsystem domain (IMS) can set call transfer time. |
+| [cancelCallUpgrade](arkts-telephony-call-cancelcallupgrade-f-sys.md#cancelcallupgrade) | Cancel call upgrade when voice call upgrade to video call. |
+| [cancelMuted](arkts-telephony-call-cancelmuted-f-sys.md#cancelmuted) | Unmute during a call. |
 | [cancelMuted](arkts-telephony-call-cancelmuted-f-sys.md#cancelmuted-1) | Unmute during a call. |
-| [cancelMuted](arkts-telephony-call-cancelmuted-f-sys.md#cancelmuted-2) | Unmute during a call. |
+| [closeUnfinishedUssd](arkts-telephony-call-closeunfinishedussd-f-sys.md#closeunfinishedussd) | Close unfinished ussd. |
 | [closeUnfinishedUssd](arkts-telephony-call-closeunfinishedussd-f-sys.md#closeunfinishedussd-1) | Close unfinished ussd. |
-| [closeUnfinishedUssd](arkts-telephony-call-closeunfinishedussd-f-sys.md#closeunfinishedussd-2) | Close unfinished ussd. |
+| [combineConference](arkts-telephony-call-combineconference-f-sys.md#combineconference) | Merge calls, merge two calls into conference calls. |
 | [combineConference](arkts-telephony-call-combineconference-f-sys.md#combineconference-1) | Merge calls, merge two calls into conference calls. |
-| [combineConference](arkts-telephony-call-combineconference-f-sys.md#combineconference-2) | Merge calls, merge two calls into conference calls. |
-| [controlCamera](arkts-telephony-call-controlcamera-f-sys.md#controlcamera-1) | Control camera to open/close/switch camera by cameraId when video call. |
+| [controlCamera](arkts-telephony-call-controlcamera-f-sys.md#controlcamera) | Control camera to open/close/switch camera by cameraId when video call. |
+| [dialCall](arkts-telephony-call-dialcall-f-sys.md#dialcall) | Makes a call. |
 | [dialCall](arkts-telephony-call-dialcall-f-sys.md#dialcall-1) | Makes a call. |
 | [dialCall](arkts-telephony-call-dialcall-f-sys.md#dialcall-2) | Makes a call. |
-| [dialCall](arkts-telephony-call-dialcall-f-sys.md#dialcall-3) | Makes a call. |
+| [disableImsSwitch](arkts-telephony-call-disableimsswitch-f-sys.md#disableimsswitch) | Turn off Ims switch. |
 | [disableImsSwitch](arkts-telephony-call-disableimsswitch-f-sys.md#disableimsswitch-1) | Turn off Ims switch. |
-| [disableImsSwitch](arkts-telephony-call-disableimsswitch-f-sys.md#disableimsswitch-2) | Turn off Ims switch. |
+| [enableImsSwitch](arkts-telephony-call-enableimsswitch-f-sys.md#enableimsswitch) | Turn on Ims switch. |
 | [enableImsSwitch](arkts-telephony-call-enableimsswitch-f-sys.md#enableimsswitch-1) | Turn on Ims switch. |
-| [enableImsSwitch](arkts-telephony-call-enableimsswitch-f-sys.md#enableimsswitch-2) | Turn on Ims switch. |
+| [getCallIdListForConference](arkts-telephony-call-getcallidlistforconference-f-sys.md#getcallidlistforconference) | Get the call Id list of the conference. |
 | [getCallIdListForConference](arkts-telephony-call-getcallidlistforconference-f-sys.md#getcallidlistforconference-1) | Get the call Id list of the conference. |
-| [getCallIdListForConference](arkts-telephony-call-getcallidlistforconference-f-sys.md#getcallidlistforconference-2) | Get the call Id list of the conference. |
+| [getCallRestrictionStatus](arkts-telephony-call-getcallrestrictionstatus-f-sys.md#getcallrestrictionstatus) | Get call barring status. |
 | [getCallRestrictionStatus](arkts-telephony-call-getcallrestrictionstatus-f-sys.md#getcallrestrictionstatus-1) | Get call barring status. |
-| [getCallRestrictionStatus](arkts-telephony-call-getcallrestrictionstatus-f-sys.md#getcallrestrictionstatus-2) | Get call barring status. |
+| [getCallTransferInfo](arkts-telephony-call-getcalltransferinfo-f-sys.md#getcalltransferinfo-1) | Get call forwarding information. |
 | [getCallTransferInfo](arkts-telephony-call-getcalltransferinfo-f-sys.md#getcalltransferinfo-2) | Get call forwarding information. |
-| [getCallTransferInfo](arkts-telephony-call-getcalltransferinfo-f-sys.md#getcalltransferinfo-3) | Get call forwarding information. |
+| [getCallWaitingStatus](arkts-telephony-call-getcallwaitingstatus-f-sys.md#getcallwaitingstatus) | Get call waiting status. |
 | [getCallWaitingStatus](arkts-telephony-call-getcallwaitingstatus-f-sys.md#getcallwaitingstatus-1) | Get call waiting status. |
-| [getCallWaitingStatus](arkts-telephony-call-getcallwaitingstatus-f-sys.md#getcallwaitingstatus-2) | Get call waiting status. |
+| [getMainCallId](arkts-telephony-call-getmaincallid-f-sys.md#getmaincallid) | Get the main call Id. |
 | [getMainCallId](arkts-telephony-call-getmaincallid-f-sys.md#getmaincallid-1) | Get the main call Id. |
-| [getMainCallId](arkts-telephony-call-getmaincallid-f-sys.md#getmaincallid-2) | Get the main call Id. |
+| [getSubCallIdList](arkts-telephony-call-getsubcallidlist-f-sys.md#getsubcallidlist) | Get the list of sub-call Ids. |
 | [getSubCallIdList](arkts-telephony-call-getsubcallidlist-f-sys.md#getsubcallidlist-1) | Get the list of sub-call Ids. |
-| [getSubCallIdList](arkts-telephony-call-getsubcallidlist-f-sys.md#getsubcallidlist-2) | Get the list of sub-call Ids. |
+| [getVoNRState](arkts-telephony-call-getvonrstate-f-sys.md#getvonrstate) | Get switch state for voice over NR. |
 | [getVoNRState](arkts-telephony-call-getvonrstate-f-sys.md#getvonrstate-1) | Get switch state for voice over NR. |
-| [getVoNRState](arkts-telephony-call-getvonrstate-f-sys.md#getvonrstate-2) | Get switch state for voice over NR. |
+| [hangUpCall](arkts-telephony-call-hangupcall-f-sys.md#hangupcall) | Hang up the foreground call. |
 | [hangUpCall](arkts-telephony-call-hangupcall-f-sys.md#hangupcall-1) | Hang up the foreground call. |
-| [hangUpCall](arkts-telephony-call-hangupcall-f-sys.md#hangupcall-2) | Hang up the foreground call. |
-| [hangUpCall](arkts-telephony-call-hangupcall-f-sys.md#hangupcall-3) | Hang up the foreground call without callId. |
+| [hangUpCall](arkts-telephony-call-hangupcall-f-sys.md#hangupcall-2) | Hang up the foreground call without callId. |
+| [holdCall](arkts-telephony-call-holdcall-f-sys.md#holdcall) | Keep a call on hold. |
 | [holdCall](arkts-telephony-call-holdcall-f-sys.md#holdcall-1) | Keep a call on hold. |
-| [holdCall](arkts-telephony-call-holdcall-f-sys.md#holdcall-2) | Keep a call on hold. |
+| [inputDialerSpecialCode](arkts-telephony-call-inputdialerspecialcode-f-sys.md#inputdialerspecialcode) | Enters the special code on the keypad. |
 | [inputDialerSpecialCode](arkts-telephony-call-inputdialerspecialcode-f-sys.md#inputdialerspecialcode-1) | Enters the special code on the keypad. |
-| [inputDialerSpecialCode](arkts-telephony-call-inputdialerspecialcode-f-sys.md#inputdialerspecialcode-2) | Enters the special code on the keypad. |
+| [isImsSwitchEnabled](arkts-telephony-call-isimsswitchenabled-f-sys.md#isimsswitchenabled) | Judge whether the Ims switch is enabled. |
 | [isImsSwitchEnabled](arkts-telephony-call-isimsswitchenabled-f-sys.md#isimsswitchenabled-1) | Judge whether the Ims switch is enabled. |
-| [isImsSwitchEnabled](arkts-telephony-call-isimsswitchenabled-f-sys.md#isimsswitchenabled-2) | Judge whether the Ims switch is enabled. |
-| [isImsSwitchEnabledSync](arkts-telephony-call-isimsswitchenabledsync-f-sys.md#isimsswitchenabledsync-1) | Judge whether the Ims switch is enabled. |
+| [isImsSwitchEnabledSync](arkts-telephony-call-isimsswitchenabledsync-f-sys.md#isimsswitchenabledsync) | Judge whether the Ims switch is enabled. |
+| [isInEmergencyCall](arkts-telephony-call-isinemergencycall-f-sys.md#isinemergencycall) | Judge whether the emergency call is in progress. |
 | [isInEmergencyCall](arkts-telephony-call-isinemergencycall-f-sys.md#isinemergencycall-1) | Judge whether the emergency call is in progress. |
-| [isInEmergencyCall](arkts-telephony-call-isinemergencycall-f-sys.md#isinemergencycall-2) | Judge whether the emergency call is in progress. |
+| [isNewCallAllowed](arkts-telephony-call-isnewcallallowed-f-sys.md#isnewcallallowed) | Judge whether to allow another new call. |
 | [isNewCallAllowed](arkts-telephony-call-isnewcallallowed-f-sys.md#isnewcallallowed-1) | Judge whether to allow another new call. |
-| [isNewCallAllowed](arkts-telephony-call-isnewcallallowed-f-sys.md#isnewcallallowed-2) | Judge whether to allow another new call. |
+| [isRinging](arkts-telephony-call-isringing-f-sys.md#isringing) | Judge whether there is a ringing call. |
 | [isRinging](arkts-telephony-call-isringing-f-sys.md#isringing-1) | Judge whether there is a ringing call. |
-| [isRinging](arkts-telephony-call-isringing-f-sys.md#isringing-2) | Judge whether there is a ringing call. |
+| [joinConference](arkts-telephony-call-joinconference-f-sys.md#joinconference) | Join the conference call. |
 | [joinConference](arkts-telephony-call-joinconference-f-sys.md#joinconference-1) | Join the conference call. |
-| [joinConference](arkts-telephony-call-joinconference-f-sys.md#joinconference-2) | Join the conference call. |
+| [kickOutFromConference](arkts-telephony-call-kickoutfromconference-f-sys.md#kickoutfromconference) | Kick out call from the conference call. |
 | [kickOutFromConference](arkts-telephony-call-kickoutfromconference-f-sys.md#kickoutfromconference-1) | Kick out call from the conference call. |
-| [kickOutFromConference](arkts-telephony-call-kickoutfromconference-f-sys.md#kickoutfromconference-2) | Kick out call from the conference call. |
-| [muteRinger](arkts-telephony-call-muteringer-f-sys.md#muteringer-1) | Stops the ringtone.If an incoming call is ringing, the phone stops ringing. Otherwise, this method does not function. |
-| [muteRinger](arkts-telephony-call-muteringer-f-sys.md#muteringer-2) | Stops the ringtone.If an incoming call is ringing, the phone stops ringing. Otherwise, this method does not function. |
-| [off](arkts-telephony-call-off-f-sys.md#off-1) | Unsubscribe from the callDetailsChange event. |
-| [off](arkts-telephony-call-off-f-sys.md#off-2) | Unsubscribe from the callEventChange event. |
-| [off](arkts-telephony-call-off-f-sys.md#off-3) | Unsubscribe from the callDisconnectedCause event. |
-| [off](arkts-telephony-call-off-f-sys.md#off-4) | Unsubscribe from the mmiCodeResult event. |
-| [off](arkts-telephony-call-off-f-sys.md#off-5) | Unsubscribe from the audioDeviceChange event. |
-| [off](arkts-telephony-call-off-f-sys.md#off-6) | Unsubscribe from the postDialDelay event. |
-| [off](arkts-telephony-call-off-f-sys.md#off-7) | Unsubscribe from the imsCallModeChange event. |
-| [off](arkts-telephony-call-off-f-sys.md#off-8) | Unsubscribe from the callSessionEvent. |
-| [off](arkts-telephony-call-off-f-sys.md#off-9) | Unsubscribe from the peerDimensionsChange event. |
-| [off](arkts-telephony-call-off-f-sys.md#off-10) | Unsubscribe from the cameraCapabilitiesChange event. |
-| [offReceiveRttMessage](arkts-telephony-call-offreceiverttmessage-f-sys.md#offreceiverttmessage-1) | Unsubscribe from the rtt message event. |
-| [offRttErrCause](arkts-telephony-call-offrtterrcause-f-sys.md#offrtterrcause-1) | Unsubscribe from the rtt error report event. |
-| [offRttModifyInd](arkts-telephony-call-offrttmodifyind-f-sys.md#offrttmodifyind-1) | Unsubscribe from the rtt modify indication. |
-| [on](arkts-telephony-call-on-f-sys.md#on-1) | Subscribe to the callDetailsChange event. |
-| [on](arkts-telephony-call-on-f-sys.md#on-2) | Subscribe to the callEventChange event. |
-| [on](arkts-telephony-call-on-f-sys.md#on-3) | Subscribe to the callDisconnectedCause event. |
-| [on](arkts-telephony-call-on-f-sys.md#on-4) | Subscribe to the mmiCodeResult event. |
-| [on](arkts-telephony-call-on-f-sys.md#on-5) | Subscribe to the audioDeviceChange event. |
-| [on](arkts-telephony-call-on-f-sys.md#on-6) | Subscribe to the postDialDelay event. |
-| [on](arkts-telephony-call-on-f-sys.md#on-7) | Subscribe to the imsCallModeChange event. |
-| [on](arkts-telephony-call-on-f-sys.md#on-8) | Subscribe to the callSessionEvent. |
-| [on](arkts-telephony-call-on-f-sys.md#on-9) | Subscribe to the peerDimensionsChange event. |
-| [on](arkts-telephony-call-on-f-sys.md#on-10) | Subscribe to the cameraCapabilitiesChange event. |
-| [onReceiveRttMessage](arkts-telephony-call-onreceiverttmessage-f-sys.md#onreceiverttmessage-1) | Subscribe to the rtt message event. |
-| [onRttErrCause](arkts-telephony-call-onrtterrcause-f-sys.md#onrtterrcause-1) | Subscribe to the rtt error event. |
-| [onRttModifyInd](arkts-telephony-call-onrttmodifyind-f-sys.md#onrttmodifyind-1) | Subscribe to the rtt modify indication. |
+| [muteRinger](arkts-telephony-call-muteringer-f-sys.md#muteringer) | Stops the ringtone.  If an incoming call is ringing, the phone stops ringing. Otherwise, this method does not function. |
+| [muteRinger](arkts-telephony-call-muteringer-f-sys.md#muteringer-1) | Stops the ringtone.  If an incoming call is ringing, the phone stops ringing. Otherwise, this method does not function. |
+| [off](arkts-telephony-call-off-f-sys.md#off) | Unsubscribe from the callDetailsChange event. |
+| [off](arkts-telephony-call-off-f-sys.md#off-1) | Unsubscribe from the callEventChange event. |
+| [off](arkts-telephony-call-off-f-sys.md#off-2) | Unsubscribe from the callDisconnectedCause event. |
+| [off](arkts-telephony-call-off-f-sys.md#off-3) | Unsubscribe from the mmiCodeResult event. |
+| [off](arkts-telephony-call-off-f-sys.md#off-4) | Unsubscribe from the audioDeviceChange event. |
+| [off](arkts-telephony-call-off-f-sys.md#off-5) | Unsubscribe from the postDialDelay event. |
+| [off](arkts-telephony-call-off-f-sys.md#off-6) | Unsubscribe from the imsCallModeChange event. |
+| [off](arkts-telephony-call-off-f-sys.md#off-7) | Unsubscribe from the callSessionEvent. |
+| [off](arkts-telephony-call-off-f-sys.md#off-8) | Unsubscribe from the peerDimensionsChange event. |
+| [off](arkts-telephony-call-off-f-sys.md#off-9) | Unsubscribe from the cameraCapabilitiesChange event. |
+| [offReceiveRttMessage](arkts-telephony-call-offreceiverttmessage-f-sys.md#offreceiverttmessage) | Unsubscribe from the rtt message event. |
+| [offRttErrCause](arkts-telephony-call-offrtterrcause-f-sys.md#offrtterrcause) | Unsubscribe from the rtt error report event. |
+| [offRttModifyInd](arkts-telephony-call-offrttmodifyind-f-sys.md#offrttmodifyind) | Unsubscribe from the rtt modify indication. |
+| [on](arkts-telephony-call-on-f-sys.md#on) | Subscribe to the callDetailsChange event. |
+| [on](arkts-telephony-call-on-f-sys.md#on-1) | Subscribe to the callEventChange event. |
+| [on](arkts-telephony-call-on-f-sys.md#on-2) | Subscribe to the callDisconnectedCause event. |
+| [on](arkts-telephony-call-on-f-sys.md#on-3) | Subscribe to the mmiCodeResult event. |
+| [on](arkts-telephony-call-on-f-sys.md#on-4) | Subscribe to the audioDeviceChange event. |
+| [on](arkts-telephony-call-on-f-sys.md#on-5) | Subscribe to the postDialDelay event. |
+| [on](arkts-telephony-call-on-f-sys.md#on-6) | Subscribe to the imsCallModeChange event. |
+| [on](arkts-telephony-call-on-f-sys.md#on-7) | Subscribe to the callSessionEvent. |
+| [on](arkts-telephony-call-on-f-sys.md#on-8) | Subscribe to the peerDimensionsChange event. |
+| [on](arkts-telephony-call-on-f-sys.md#on-9) | Subscribe to the cameraCapabilitiesChange event. |
+| [onReceiveRttMessage](arkts-telephony-call-onreceiverttmessage-f-sys.md#onreceiverttmessage) | Subscribe to the rtt message event. |
+| [onRttErrCause](arkts-telephony-call-onrtterrcause-f-sys.md#onrtterrcause) | Subscribe to the rtt error event. |
+| [onRttModifyInd](arkts-telephony-call-onrttmodifyind-f-sys.md#onrttmodifyind) | Subscribe to the rtt modify indication. |
+| [postDialProceed](arkts-telephony-call-postdialproceed-f-sys.md#postdialproceed) | Continue post-dial DTMF(Dual Tone Multi Frequency). |
 | [postDialProceed](arkts-telephony-call-postdialproceed-f-sys.md#postdialproceed-1) | Continue post-dial DTMF(Dual Tone Multi Frequency). |
-| [postDialProceed](arkts-telephony-call-postdialproceed-f-sys.md#postdialproceed-2) | Continue post-dial DTMF(Dual Tone Multi Frequency). |
-| [preloadCallUI](arkts-telephony-call-preloadcallui-f-sys.md#preloadcallui-1) | Preload callUI. |
+| [preloadCallUI](arkts-telephony-call-preloadcallui-f-sys.md#preloadcallui) | Preload callUI. |
+| [rejectCall](arkts-telephony-call-rejectcall-f-sys.md#rejectcall) | Reject the incoming call. |
 | [rejectCall](arkts-telephony-call-rejectcall-f-sys.md#rejectcall-1) | Reject the incoming call. |
 | [rejectCall](arkts-telephony-call-rejectcall-f-sys.md#rejectcall-2) | Reject the incoming call. |
-| [rejectCall](arkts-telephony-call-rejectcall-f-sys.md#rejectcall-3) | Reject the incoming call. |
+| [rejectCall](arkts-telephony-call-rejectcall-f-sys.md#rejectcall-3) | Reject the incoming call without callId. |
 | [rejectCall](arkts-telephony-call-rejectcall-f-sys.md#rejectcall-4) | Reject the incoming call without callId. |
-| [rejectCall](arkts-telephony-call-rejectcall-f-sys.md#rejectcall-5) | Reject the incoming call without callId. |
+| [removeMissedIncomingCallNotification](arkts-telephony-call-removemissedincomingcallnotification-f-sys.md#removemissedincomingcallnotification) | Remove missed incoming call notification. |
 | [removeMissedIncomingCallNotification](arkts-telephony-call-removemissedincomingcallnotification-f-sys.md#removemissedincomingcallnotification-1) | Remove missed incoming call notification. |
-| [removeMissedIncomingCallNotification](arkts-telephony-call-removemissedincomingcallnotification-f-sys.md#removemissedincomingcallnotification-2) | Remove missed incoming call notification. |
-| [sendCallUiEvent](arkts-telephony-call-sendcalluievent-f-sys.md#sendcalluievent-1) | Send call ui event. |
-| [sendRttMessage](arkts-telephony-call-sendrttmessage-f-sys.md#sendrttmessage-1) | Send rtt message. |
-| [sendUssdResponse](arkts-telephony-call-sendussdresponse-f-sys.md#sendussdresponse-1) | Send ussd response. |
+| [sendCallUiEvent](arkts-telephony-call-sendcalluievent-f-sys.md#sendcalluievent) | Send call ui event. |
+| [sendRttMessage](arkts-telephony-call-sendrttmessage-f-sys.md#sendrttmessage) | Send rtt message. |
+| [sendUssdResponse](arkts-telephony-call-sendussdresponse-f-sys.md#sendussdresponse) | Send ussd response. |
+| [separateConference](arkts-telephony-call-separateconference-f-sys.md#separateconference) | Split conference call. |
 | [separateConference](arkts-telephony-call-separateconference-f-sys.md#separateconference-1) | Split conference call. |
-| [separateConference](arkts-telephony-call-separateconference-f-sys.md#separateconference-2) | Split conference call. |
+| [setAudioDevice](arkts-telephony-call-setaudiodevice-f-sys.md#setaudiodevice) | Set the audio device. |
 | [setAudioDevice](arkts-telephony-call-setaudiodevice-f-sys.md#setaudiodevice-1) | Set the audio device. |
-| [setAudioDevice](arkts-telephony-call-setaudiodevice-f-sys.md#setaudiodevice-2) | Set the audio device. |
+| [setCallRestriction](arkts-telephony-call-setcallrestriction-f-sys.md#setcallrestriction) | Set call barring status. |
 | [setCallRestriction](arkts-telephony-call-setcallrestriction-f-sys.md#setcallrestriction-1) | Set call barring status. |
-| [setCallRestriction](arkts-telephony-call-setcallrestriction-f-sys.md#setcallrestriction-2) | Set call barring status. |
+| [setCallRestrictionPassword](arkts-telephony-call-setcallrestrictionpassword-f-sys.md#setcallrestrictionpassword) | Set call barring password. |
 | [setCallRestrictionPassword](arkts-telephony-call-setcallrestrictionpassword-f-sys.md#setcallrestrictionpassword-1) | Set call barring password. |
-| [setCallRestrictionPassword](arkts-telephony-call-setcallrestrictionpassword-f-sys.md#setcallrestrictionpassword-2) | Set call barring password. |
+| [setCallTransfer](arkts-telephony-call-setcalltransfer-f-sys.md#setcalltransfer) | Set call forwarding information. |
 | [setCallTransfer](arkts-telephony-call-setcalltransfer-f-sys.md#setcalltransfer-1) | Set call forwarding information. |
-| [setCallTransfer](arkts-telephony-call-setcalltransfer-f-sys.md#setcalltransfer-2) | Set call forwarding information. |
+| [setCallWaiting](arkts-telephony-call-setcallwaiting-f-sys.md#setcallwaiting) | Set call waiting. |
 | [setCallWaiting](arkts-telephony-call-setcallwaiting-f-sys.md#setcallwaiting-1) | Set call waiting. |
-| [setCallWaiting](arkts-telephony-call-setcallwaiting-f-sys.md#setcallwaiting-2) | Set call waiting. |
-| [setDeviceDirection](arkts-telephony-call-setdevicedirection-f-sys.md#setdevicedirection-1) | Set device direction when video call. |
-| [setDisplaySurface](arkts-telephony-call-setdisplaysurface-f-sys.md#setdisplaysurface-1) | Set display surface when video call. |
+| [setDeviceDirection](arkts-telephony-call-setdevicedirection-f-sys.md#setdevicedirection) | Set device direction when video call. |
+| [setDisplaySurface](arkts-telephony-call-setdisplaysurface-f-sys.md#setdisplaysurface) | Set display surface when video call. |
+| [setMuted](arkts-telephony-call-setmuted-f-sys.md#setmuted) | Set mute during a call. |
 | [setMuted](arkts-telephony-call-setmuted-f-sys.md#setmuted-1) | Set mute during a call. |
-| [setMuted](arkts-telephony-call-setmuted-f-sys.md#setmuted-2) | Set mute during a call. |
-| [setPreviewSurface](arkts-telephony-call-setpreviewsurface-f-sys.md#setpreviewsurface-1) | Set preview surface when video call. |
-| [setRttCapability](arkts-telephony-call-setrttcapability-f-sys.md#setrttcapability-1) | Set rtt capability. |
+| [setPreviewSurface](arkts-telephony-call-setpreviewsurface-f-sys.md#setpreviewsurface) | Set preview surface when video call. |
+| [setRttCapability](arkts-telephony-call-setrttcapability-f-sys.md#setrttcapability) | Set rtt capability. |
+| [setVoNRState](arkts-telephony-call-setvonrstate-f-sys.md#setvonrstate) | Set switch state for voice over NR. |
 | [setVoNRState](arkts-telephony-call-setvonrstate-f-sys.md#setvonrstate-1) | Set switch state for voice over NR. |
-| [setVoNRState](arkts-telephony-call-setvonrstate-f-sys.md#setvonrstate-2) | Set switch state for voice over NR. |
+| [startDTMF](arkts-telephony-call-startdtmf-f-sys.md#startdtmf) | Start DTMF(Dual Tone Multi Frequency). |
 | [startDTMF](arkts-telephony-call-startdtmf-f-sys.md#startdtmf-1) | Start DTMF(Dual Tone Multi Frequency). |
-| [startDTMF](arkts-telephony-call-startdtmf-f-sys.md#startdtmf-2) | Start DTMF(Dual Tone Multi Frequency). |
-| [startRtt](arkts-telephony-call-startrtt-f-sys.md#startrtt-1) | Start rtt. |
+| [startRtt](arkts-telephony-call-startrtt-f-sys.md#startrtt) | Start rtt. |
+| [stopDTMF](arkts-telephony-call-stopdtmf-f-sys.md#stopdtmf) | Stop DTMF(Dual Tone Multi Frequency). |
 | [stopDTMF](arkts-telephony-call-stopdtmf-f-sys.md#stopdtmf-1) | Stop DTMF(Dual Tone Multi Frequency). |
-| [stopDTMF](arkts-telephony-call-stopdtmf-f-sys.md#stopdtmf-2) | Stop DTMF(Dual Tone Multi Frequency). |
-| [stopRtt](arkts-telephony-call-stoprtt-f-sys.md#stoprtt-1) | Stop rtt. |
+| [stopRtt](arkts-telephony-call-stoprtt-f-sys.md#stoprtt) | Stop rtt. |
+| [switchCall](arkts-telephony-call-switchcall-f-sys.md#switchcall) | Switch call. |
 | [switchCall](arkts-telephony-call-switchcall-f-sys.md#switchcall-1) | Switch call. |
-| [switchCall](arkts-telephony-call-switchcall-f-sys.md#switchcall-2) | Switch call. |
-| [unHoldCall](arkts-telephony-call-unholdcall-f-sys.md#unholdcall-1) | Cancel call hold status. |
-| [unHoldCall](arkts-telephony-call-unholdcall-f-sys.md#unholdcall-2) | Keep a call on hold. |
-| [unloadCallUI](arkts-telephony-call-unloadcallui-f-sys.md#unloadcallui-1) | Unload callUI. |
+| [unHoldCall](arkts-telephony-call-unholdcall-f-sys.md#unholdcall) | Cancel call hold status. |
+| [unHoldCall](arkts-telephony-call-unholdcall-f-sys.md#unholdcall-1) | Keep a call on hold. |
+| [unloadCallUI](arkts-telephony-call-unloadcallui-f-sys.md#unloadcallui) | Unload callUI. |
+| [updateImsCallMode](arkts-telephony-call-updateimscallmode-f-sys.md#updateimscallmode) | Update Ims call mode. |
 | [updateImsCallMode](arkts-telephony-call-updateimscallmode-f-sys.md#updateimscallmode-1) | Update Ims call mode. |
-| [updateImsCallMode](arkts-telephony-call-updateimscallmode-f-sys.md#updateimscallmode-2) | Update Ims call mode. |
 <!--DelEnd-->
 
 ### Interfaces

@@ -14,7 +14,6 @@ Provides the API to obtain the equivalent focal length information list in the c
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="getrawcapturezoomratiorange"></a>
 ## getRAWCaptureZoomRatioRange
 
 ```TypeScript
@@ -46,7 +45,6 @@ Gets supported zoom ratio range during raw-capture.
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed, the inputDevice or the session is abnormal. |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="getzoomratiorange"></a>
 ## getZoomRatioRange
 
 ```TypeScript

@@ -1,7 +1,6 @@
 # CanvasRenderingContext2D
 
 After the **CanvasRenderingContext2D** object is bound to the **Canvas** component, you can draw shapes, texts, and images on the **Canvas** component.
-
 > **NOTE**  
 >  
 > * It is recommended that the **CanvasRenderingContext2D** object and the **Canvas** component be  
@@ -13,7 +12,7 @@ After the **CanvasRenderingContext2D** object is bound to the **Canvas** compone
 > rendering phase and the associated **Canvas** component is visible. Therefore, when the **Canvas**  
 > component is invisible (for example, off-screen or hidden), avoid frequent drawing calls to prevent  
 > command queue buildup and excessive memory usage. For best practices, see  
-> [Controlling Canvas Rendering Based on Component Visibility](docroot://ui/arkts-drawing-customization-on-canvas.md#controlling-canvas-rendering-based-on-component-visibility).  
+> [Controlling Canvas Rendering Based on Component Visibility](../../../ui/arkts-drawing-customization-on-canvas.md#controlling-canvas-rendering-based-on-component-visibility).  
 >  
 > * The following path-related APIs apply only to paths created within **CanvasRenderingContext2D**  
 > and do not affect paths defined in  
@@ -34,7 +33,6 @@ After the **CanvasRenderingContext2D** object is bound to the **Canvas** compone
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -59,7 +57,6 @@ Constructs a canvas object, which supports configuration of parameters for the *
 | --- | --- | --- | --- |
 | settings | [RenderingContextSettings](arkts-arkui-renderingcontextsettings-c.md) | No | Settings of the **CanvasRenderingContext2D** object. For details, see [RenderingContextSettings](#renderingcontextsettings).<br>If the value is **undefined** or **null**, the default value of [RenderingContextSettings](#renderingcontextsettings) is used. |
 
-<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -87,7 +84,6 @@ Creates a **CanvasRenderingContext2D** object, allowing for initial configuratio
 | settings | [RenderingContextSettings](arkts-arkui-renderingcontextsettings-c.md) | No | Settings of the **CanvasRenderingContext2D** object. For details, see [RenderingContextSettings](#renderingcontextsettings).<br>If the value is **undefined** or **null**, the default value of [RenderingContextSettings](#renderingcontextsettings) is used. |
 | unit | [LengthMetricsUnit](../arkts-apis/arkts-arkui-graphics-lengthmetricsunit-e.md) | No | Unit mode of the **CanvasRenderingContext2D** object.The value cannot be dynamically changed once set.<br>Invalid values **undefined**, **NaN** and **Infinity** are treated as the default value.<br>Default value: **DEFAULT**. |
 
-<a id="getcontext2dfromdrawingcontext"></a>
 ## getContext2DFromDrawingContext
 
 ```TypeScript
@@ -95,7 +91,6 @@ static getContext2DFromDrawingContext(drawingContext: DrawingRenderingContext, o
 ```
 
 Obtains a **CanvasRenderingContext2D** object from a **DrawingRenderingContext** object.This **CanvasRenderingContext2D** object is bound to the same **Canvas** component as the input **DrawingRenderingContext** object.
-
 > **NOTE**  
 >  
 > - The **CanvasRenderingContext2D** object obtained via this API cannot be used as a  
@@ -134,7 +129,6 @@ Obtains a **CanvasRenderingContext2D** object from a **DrawingRenderingContext**
 | --- | --- |
 | [103702](../errorcode-canvas.md#103702-drawing-context-is-not-bound-to-any-canvas-component) | The drawingContext is not bound to a canvas component. |
 
-<a id="off"></a>
 ## off('onAttach')
 
 ```TypeScript
@@ -166,7 +160,6 @@ Unsubscribes from the event when a **CanvasRenderingContext2D** object is bound 
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Input parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 
-<a id="off-1"></a>
 ## off('onDetach')
 
 ```TypeScript
@@ -198,7 +191,6 @@ Unsubscribes from the event when a **CanvasRenderingContext2D** object is unboun
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Input parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 
-<a id="on"></a>
 ## on('onAttach')
 
 ```TypeScript
@@ -206,7 +198,6 @@ on(type: 'onAttach', callback: Callback<void>): void
 ```
 
 Subscribes to the event when a **CanvasRenderingContext2D** object is bound to a **Canvas** component.
-
 > **NOTE**  
 >  
 > A **CanvasRenderingContext2D** object can only be bound to one **Canvas** component  
@@ -247,7 +238,6 @@ Subscribes to the event when a **CanvasRenderingContext2D** object is bound to a
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Input parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 
-<a id="on-1"></a>
 ## on('onDetach')
 
 ```TypeScript
@@ -255,7 +245,6 @@ on(type: 'onDetach', callback: Callback<void>): void
 ```
 
 Subscribes to the event when a **CanvasRenderingContext2D** object is unbound from a **Canvas** component.
-
 > **NOTE**  
 >  
 > When a **CanvasRenderingContext2D** object is unbound from a **Canvas** component,  
@@ -289,7 +278,6 @@ Subscribes to the event when a **CanvasRenderingContext2D** object is unbound fr
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Input parameter error. Possible causes:1. Mandatory parameters are left unspecified;2. Incorrect parameter types;3. Parameter verification failed. |
 
-<a id="startimageanalyzer"></a>
 ## startImageAnalyzer
 
 ```TypeScript
@@ -297,7 +285,6 @@ startImageAnalyzer(config: ImageAnalyzerConfig): Promise<void>
 ```
 
 Configures and starts the AI analyzer. This API uses a promise to return the result.Before use, set [enableAnalyzer](CanvasAttribute#enableAnalyzer)to **true** to enable the image AI analyzer.<br>Because the image frame used for analysis is the one captured when this API is called, pay attention to the invoking time of this API.<br>Repeated calls to this method before completion trigger an error callback. For the sample code,see the code for **stopImageAnalyzer**.
-
 > **NOTE**  
 >  
 > The image analysis type cannot be dynamically modified.  
@@ -336,7 +323,6 @@ Configures and starts the AI analyzer. This API uses a promise to return the res
 | [110002](../arkui-ts/errorcode-image-analyzer.md#110002-ai-image-analysis-already-in-progress) | Image analysis is currently being executed. |
 | [110003](../arkui-ts/errorcode-image-analyzer.md#110003-ai-image-analysis-terminated) | Image analysis is stopped. |
 
-<a id="stopimageanalyzer"></a>
 ## stopImageAnalyzer
 
 ```TypeScript
@@ -344,7 +330,6 @@ stopImageAnalyzer(): void
 ```
 
 Stops AI image analysis. The content displayed by the AI image analyzer will be destroyed.
-
 > **NOTE**  
 >  
 > If this API is called when the **startImageAnalyzer** API has not yet returned any result,  
@@ -361,7 +346,6 @@ Stops AI image analysis. The content displayed by the AI image analyzer will be 
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="todataurl"></a>
 ## toDataURL
 
 ```TypeScript

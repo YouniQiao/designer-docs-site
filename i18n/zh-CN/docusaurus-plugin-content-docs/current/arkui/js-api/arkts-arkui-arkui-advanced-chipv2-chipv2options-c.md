@@ -1,6 +1,6 @@
 # ChipV2Options
 
-定义Chip选项类。
+ChipV2Options定义ChipV2的样式及具体样式参数。
 
 **起始版本：** 26.0.0
 
@@ -22,7 +22,7 @@ import { ChipV2SuffixSymbolIconConfig, ChipV2Label, ChipV2PrefixSymbolIconConfig
 constructor(config: IChipV2OptionsConfig)
 ```
 
-ChipV2Options的构造函数
+ChipV2Options的构造函数。
 
 **起始版本：** 26.0.0
 
@@ -38,7 +38,7 @@ ChipV2Options的构造函数
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| config | [IChipV2OptionsConfig](arkts-arkui-arkui-advanced-chipv2-ichipv2optionsconfig-i.md) | 是 | Chip的选项 |
+| config | [IChipV2OptionsConfig](arkts-arkui-arkui-advanced-chipv2-ichipv2optionsconfig-i.md) | 是 | ChipV2样式配置，用于自定义ChipV2组件的外观和行为，包含label、prefixIcon、suffixIcon、allowClose、activated、backgroundColor等配置项。 |
 
 ## accessibilityDescription
 
@@ -46,7 +46,11 @@ ChipV2Options的构造函数
 public accessibilityDescription?: ResourceStr
 ```
 
-为Chip设置无障碍描述
+ChipV2的无障碍描述。此描述用于向用户详细解释当前组件，开发人员应为组件的这一属性提供详尽的文本说明，以协助用户理解即将执行的操作及其可能产生的结果，特别是当这些结果无法仅从组件的属性和无障碍文本中直接获知时。如果组件同时具备文本属性和无障碍说明属性，当组件被选中时，系统将首先播报组件的文本属性，随后播报无障碍说明属性的内容。
+
+默认值：空字符串。
+
+值为undefined时，按默认值处理。
 
 **类型：** ResourceStr
 
@@ -66,7 +70,21 @@ public accessibilityDescription?: ResourceStr
 public accessibilityLevel?: string
 ```
 
-设置Chip的无障碍级别。
+ChipV2的无障碍重要性。用于控制组件是否可被无障碍辅助服务所识别。
+
+支持的值为：
+
+"auto"：当前组件会转换为"yes"。
+
+"yes"：当前组件可被无障碍辅助服务所识别。
+
+"no"：当前组件不可被无障碍辅助服务所识别。
+
+"no-hide-descendants"：当前组件及其所有子组件不可被无障碍辅助服务所识别。
+
+默认值："auto"
+
+值为undefined时，按默认值处理。
 
 **类型：** string
 
@@ -86,7 +104,11 @@ public accessibilityLevel?: string
 public accessibilitySelectedType?: ChipV2AccessibilitySelectedType
 ```
 
-为Chip设置无障碍选择类型。
+ChipV2组件选中态类型。
+
+默认值：当activated属性为true但未指定accessibilitySelectedType时，默认使用CHECKED类型。当activated属性为false或未设置时，默认使用CLICKED类型。
+
+值为undefined时，按默认值处理。
 
 **类型：** ChipV2AccessibilitySelectedType
 
@@ -106,7 +128,13 @@ public accessibilitySelectedType?: ChipV2AccessibilitySelectedType
 public activated?: boolean
 ```
 
-设置Chip是否处于活动状态。
+ChipV2是否为激活态。
+
+默认值：false
+
+true：ChipV2为激活态；false：ChipV2为非激活态。
+
+值为undefined时，按默认值处理。
 
 **类型：** boolean
 
@@ -126,7 +154,13 @@ public activated?: boolean
 public activatedBackgroundColor?: ColorMetrics
 ```
 
-Chip激活时的背景色。
+ChipV2激活时的背景颜色。
+
+默认值：$r('sys.color.chip_container_activated_color')
+
+值为undefined时，按默认值处理。
+
+值为非法值时，背景颜色透明。
 
 **类型：** ColorMetrics
 
@@ -146,7 +180,9 @@ Chip激活时的背景色。
 public activatedBackgroundSystemMaterial?: uiMaterial.Material
 ```
 
-为激活的组件设置系统样式材质。不同的材料有不同的效果，它可以影响组件的背景颜色、边框、阴影和其他视觉属性。
+设置组件激活状态下的系统材质样式。不同材质具有不同的效果，能够影响组件的背景色[backgroundColor](../arkts-components/arkts-arkui-commonmethod-c.md#backgroundcolor)、边框颜色[borderColor](../arkts-components/arkts-arkui-commonmethod-c.md#bordercolor)、边框宽度[borderWidth](../arkts-components/arkts-arkui-commonmethod-c.md#borderwidth)、阴影[shadow](../arkts-components/arkts-arkui-commonmethod-c.md#shadow)效果、材质层滤镜效果[materialFilter](../arkts-components/arkts-arkui-commonmethod-c.md#materialfilter)。
+
+默认值：undefined，不应用材质样式。
 
 **类型：** uiMaterial.Material
 
@@ -166,7 +202,15 @@ public activatedBackgroundSystemMaterial?: uiMaterial.Material
 public allowClose?: boolean
 ```
 
-显示关闭图标。
+是否显示关闭图标。
+
+当`suffixIcon`有传入参数时，`allowClose`不生效；`suffixIcon`没有传入参数时，`allowClose`决定是否显示关闭图标。
+
+默认值：true
+
+true：关闭图标显示；false：关闭图标不显示。
+
+值为undefined时，按默认值处理。
 
 **类型：** boolean
 
@@ -186,7 +230,13 @@ public allowClose?: boolean
 public backgroundColor?: ColorMetrics
 ```
 
-Chip背景色。
+ChipV2背景颜色。
+
+默认值：$r('sys.color.chip_background_color')
+
+值为undefined时，按默认值处理。
+
+值为非法值时，背景颜色透明。
 
 **类型：** ColorMetrics
 
@@ -206,7 +256,9 @@ Chip背景色。
 public backgroundSystemMaterial?: uiMaterial.Material
 ```
 
-为组件设置系统样式材质。不同的材料有不同的效果，会影响组件的背景颜色、边框、阴影和其他视觉属性。
+设置组件系统材质样式。不同材质具有不同的效果，能够影响组件的背景色[backgroundColor](../arkts-components/arkts-arkui-commonmethod-c.md#backgroundcolor)、边框颜色[borderColor](../arkts-components/arkts-arkui-commonmethod-c.md#bordercolor)、边框宽度[borderWidth](../arkts-components/arkts-arkui-commonmethod-c.md#borderwidth)、阴影[shadow](../arkts-components/arkts-arkui-commonmethod-c.md#shadow)效果、材质层滤镜效果[materialFilter](../arkts-components/arkts-arkui-commonmethod-c.md#materialfilter)。
+
+默认值：undefined，不应用材质样式。
 
 **类型：** uiMaterial.Material
 
@@ -226,7 +278,17 @@ public backgroundSystemMaterial?: uiMaterial.Material
 public borderRadius?: LengthMetrics
 ```
 
-Chip半径。
+ChipV2背景圆角半径大小，不支持百分比。传入百分比时按默认值处理。
+
+默认值：
+
+size为ChipV2Size.NORMAL时，borderRadius默认值为：`$r('sys.float.chip_border_radius_normal')`。
+
+size为ChipV2Size.SMALL时，borderRadius默认值为：`$r('sys.float.chip_border_radius_small')`
+
+单位：vp
+
+值为undefined时，按默认值处理。
 
 **类型：** LengthMetrics
 
@@ -246,7 +308,14 @@ Chip半径。
 public closeIcon?: ChipV2CloseIcon
 ```
 
-当'allowClose'为true时，为默认关闭图标设置config。
+关闭图标的配置，包括无障碍属性配置。当需要自定义关闭图标的大小或无障碍属性时设置此属性。
+
+默认值：
+
+- 尺寸默认值：size为ChipV2Size.SMALL时，默认值为`$r('sys.float.chip_small_font_size')`；其他情况默认值为`$r('sys.float.chip_normal_font_size')`。  
+- 无障碍默认值：无无障碍描述。
+
+值为undefined时，按默认值处理。
 
 **类型：** ChipV2CloseIcon
 
@@ -266,7 +335,11 @@ public closeIcon?: ChipV2CloseIcon
 public direction?: Direction
 ```
 
-当前Chip方向属性
+布局方向。
+
+默认值：Direction.Auto
+
+值为undefined时，按默认值处理。
 
 **类型：** Direction
 
@@ -286,7 +359,13 @@ public direction?: Direction
 public enabled?: boolean
 ```
 
-Chip使能。
+ChipV2是否可用。
+
+默认值：true
+
+true：ChipV2可用；false：ChipV2不可用。
+
+值为undefined时，按默认值处理。
 
 **类型：** boolean
 
@@ -306,7 +385,18 @@ Chip使能。
 public fontSize?: LengthMetrics
 ```
 
-设置标签文本和关闭图标的字体大小。
+统一设置ChipV2组件的文本与图标的字体大小，不支持百分比。传入百分比时按默认值处理。
+
+该fontSize的优先级低于prefixIcon、label、suffixIcon和closeIcon中的fontSize属性。
+
+默认值：
+
+- size为ChipV2Size.SMALL时，文本默认值：`$r('sys.float.chip_small_font_size')`；图标默认值：`$r('sys.float.chip_small_icon_size')`。  
+- 其他情况下，文本默认值：`$r('sys.float.chip_normal_font_size')`；图标默认值：`$r('sys.float.chip_normal_icon_size')`
+
+单位：fp
+
+值为undefined时，按默认值处理。
 
 **类型：** LengthMetrics
 
@@ -326,7 +416,11 @@ public fontSize?: LengthMetrics
 public label: ChipV2Label
 ```
 
-Chip前缀图标。
+ChipV2前缀图标。
+
+默认值：不显示前缀图标。
+
+值为undefined时，按默认值处理。
 
 **类型：** ChipV2Label
 
@@ -346,7 +440,15 @@ Chip前缀图标。
 public maxFontScale?: number | Resource
 ```
 
-Chip的最大字体比例。
+ChipV2组件文本与图标的最大字体缩放倍数。
+
+取值范围：[1, +∞)
+
+设置的值小于1时，按值为1处理。异常值默认不生效。
+
+默认值：1。
+
+值为undefined时，按默认值处理。
 
 **类型：** number \| Resource
 
@@ -366,7 +468,15 @@ Chip的最大字体比例。
 public minFontScale?: number | Resource
 ```
 
-Chip的最小字体比例。
+ChipV2组件文本与图标的最小字体缩放倍数。
+
+取值范围：[0, 1]
+
+设置的值小于0时，按值为0处理。设置的值大于1时，按值为1处理。异常值默认不生效。
+
+默认值：1。
+
+值为undefined时，按默认值处理。
 
 **类型：** number \| Resource
 
@@ -386,7 +496,13 @@ Chip的最小字体比例。
 public onClicked?: Callback<void>
 ```
 
-点击Chip时触发的回调。
+ChipV2点击事件回调函数。
+
+当enabled为true时，点击ChipV2触发点击事件；当enabled为false时，不触发点击事件。
+
+默认值：不执行该回调函数。
+
+值为undefined时，按默认值处理。
 
 **类型：** Callback&lt;void&gt;
 
@@ -406,7 +522,13 @@ public onClicked?: Callback<void>
 public onClose?: VoidCallback
 ```
 
-关闭Chip时触发的回调。
+默认关闭图标点击事件回调函数。
+
+当allowClose为true且suffixIcon没有传入参数时，点击关闭图标执行此回调函数。
+
+默认值：不执行该回调函数。
+
+值为undefined时，按默认值处理。
 
 **类型：** VoidCallback
 
@@ -426,7 +548,19 @@ public onClose?: VoidCallback
 public padding?: LocalizedPadding
 ```
 
-Chip填充大小。
+ChipV2的内边距。
+
+默认值：
+
+- size为ChipV2Size.SMALL并且activated为true时，默认值：`{ start: LengthMetrics.resource('sys.float.chip_activated_small_text_padding'),end: LengthMetrics.resource('sys.float.chip_activated_small_text_padding'),top: LengthMetrics.vp(4), bottom: LengthMetrics.vp(4)}`。
+
+- size为ChipV2Size.SMALL并且activated为false时，默认值：`{ start: LengthMetrics.resource('sys.float.chip_small_text_padding'),end: LengthMetrics.resource('sys.float.chip_small_text_padding'),top: LengthMetrics.vp(4), bottom: LengthMetrics.vp(4)}`。
+
+- size不为ChipV2Size.SMALL并且activated为true时，默认值：`{ start: LengthMetrics.resource('sys.float.chip_activated_normal_text_padding'),end: LengthMetrics.resource('sys.float.chip_activated_normal_text_padding'),top: LengthMetrics.vp(4), bottom: LengthMetrics.vp(4)}`。
+
+- size不为ChipV2Size.SMALL并且activated为false时，默认值：`{ start: LengthMetrics.resource('sys.float.chip_normal_text_padding'),end: LengthMetrics.resource('sys.float.chip_normal_text_padding'),top: LengthMetrics.vp(4), bottom: LengthMetrics.vp(4)}`。
+
+值为undefined时，按默认值处理。
 
 **类型：** LocalizedPadding
 
@@ -446,7 +580,11 @@ Chip填充大小。
 public prefixIcon?: ChipV2Icon
 ```
 
-Chip前缀图标。
+ChipV2前缀图标。
+
+默认值：不显示前缀图标。
+
+值为undefined时，按默认值处理。
 
 **类型：** ChipV2Icon
 
@@ -466,7 +604,13 @@ Chip前缀图标。
 public size?: ChipV2Size | SizeT<LengthMetrics>
 ```
 
-Chip尺寸。
+ChipV2尺寸。
+
+默认值：ChipV2Size.NORMAL
+
+SizeT<LengthMetrics>类型参数不支持百分比设置，异常值按默认值处理。
+
+**说明**：[适老化](../../../ui/arkui-support-for-aging-adaptation.md)在size指定具体宽高时不生效，size设置为{ height: 0, width: 0 }除外。
 
 **类型：** ChipV2Size \| SizeT&lt;LengthMetrics&gt;
 
@@ -486,7 +630,13 @@ Chip尺寸。
 public suffixIcon?: ChipV2Icon
 ```
 
-Chip后缀图标。
+ChipV2后缀图标。
+
+默认值：不显示后缀图标。
+
+值为undefined时，按默认值处理。
+
+说明：当suffixIcon有传入参数时，allowClose属性不生效。
 
 **类型：** ChipV2Icon
 

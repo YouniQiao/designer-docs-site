@@ -1,18 +1,17 @@
 # UIContext
 
 Implements a **UIContext** instance.
-
 > **NOTE**  
 >  
 > - You can preview how this component looks on a real device, but not in DevEco Studio Previewer.  
 >  
 > - The following APIs must be called through a corresponding UIContext instance. There are three ways to obtain a  
 > **UIContext** instance: (1) using the  
-> [getUIContext()](docroot://reference/apis-arkui/arkts-apis-window-Window.md#getuicontext10) method from  
+> [getUIContext()](../../../reference/apis-arkui/arkts-apis-window-Window.md#getuicontext10) method from  
 > ohos.window; (2) using the built-in method  
-> [getUIContext()](docroot://reference/apis-arkui/arkui-ts/ts-custom-component-api.md#getuicontext) of a custom  
+> [getUIContext()](../../../reference/apis-arkui/arkui-ts/ts-custom-component-api.md#getuicontext) of a custom  
 > component; (3) using static methods of the UIContext class such as  
-> [getCallingScopeUIContext](arkts-arkui-arkui-uicontext-uicontext-c.md#getcallingscopeuicontext-1). In this document, the **UIContext** instance  
+> [getCallingScopeUIContext](arkts-arkui-arkui-uicontext-uicontext-c.md#getcallingscopeuicontext). In this document, the **UIContext** instance  
 > is represented by **uiContext**.
 
 **Since:** 10
@@ -27,7 +26,6 @@ Implements a **UIContext** instance.
 import { OverlayManager, FrameCallback, ResolvedUIContext, NodeRenderStateChangeCallback, MediaQuery, OverlayManagerOptions, TextMenuController, UIObserver, Font, KeyboardAvoidMode, MarqueeDynamicSyncScene, PromptAction, NodeRenderState, UIContext, TextSelectionClearPolicy, SwiperDynamicSyncScene, Router, MarqueeDynamicSyncSceneType, DialogPresenter, Magnifier, ContextMenuController, UIInspector, CursorController, SwiperDynamicSyncSceneType, AtomicServiceBar, PageInfo, TargetInfo, ComponentUtils, DragController, MeasureUtils, NodeIdentity } from '@kit.ArkUI';
 ```
 
-<a id="addlocalinputeventmonitor"></a>
 ## addLocalInputEventMonitor
 
 ```TypeScript
@@ -74,7 +72,6 @@ Usage Examples:
 | --- | --- |
 | [InputEventMonitor](../arkts-components/arkts-arkui-inputeventmonitor-i.md) | Unique identifier object for the monitor, used for subsequent cancellation of registration. |
 
-<a id="animateto"></a>
 ## animateTo
 
 ```TypeScript
@@ -82,31 +79,30 @@ animateTo(value: AnimateParam, event: () => void): void
 ```
 
 Adds transition animations for state changes in closure code.
-
 > **NOTE**  
 >  
 > - Avoid using **animateTo** in **aboutToAppear** or **aboutToDisappear**.  
 >  
 > - When **animateTo** is called in  
-> [aboutToAppear](docroot://reference/apis-arkui/arkui-ts/ts-custom-component-lifecycle.md#abouttoappear), the  
+> [aboutToAppear](../../../reference/apis-arkui/arkui-ts/ts-custom-component-lifecycle.md#abouttoappear), the  
 > component's build method is not executed yet, and internal components are not created. This means the animation  
 > has no initial values to work with and will not function as expected.  
 >  
 > - During execution of  
-> [aboutToDisappear](docroot://reference/apis-arkui/arkui-ts/ts-custom-component-lifecycle.md#abouttodisappear),  
+> [aboutToDisappear](../../../reference/apis-arkui/arkui-ts/ts-custom-component-lifecycle.md#abouttodisappear),  
 > the component is being destroyed, so animations should not be used.  
 >  
 > - When a component appears or disappears, animation effects can be added through  
 > [component transition](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md).  
 >  
 > - For properties that component transitions do not support, refer to  
-> [Example 2: Enabling Component Disappearance After Animation Completion](docroot://reference/apis-arkui/arkui-ts/ts-explicit-animation.md#example-2-enabling-component-disappearance-after-animation-completion),  
+> [Example 2: Enabling Component Disappearance After Animation Completion](../../../reference/apis-arkui/arkui-ts/ts-explicit-animation.md#example-2-enabling-component-disappearance-after-animation-completion),  
 > which uses **animateTo** to achieve the effect of the component disappearing after the animation finishes.  
 >  
 > - In certain scenarios, using animateTo with  
-> [state management V2](docroot://ui/state-management/arkts-state-management-overview.md#state-management-v2) may  
+> [state management V2](../../../ui/state-management/arkts-state-management-overview.md#state-management-v2) may  
 > produce unexpected results. For details, see  
-> [Using animateTo Failed in State Management V2](docroot://ui/state-management/arkts-new-local.md#using-animateto-failed-in-state-management-v2).  
+> [Using animateTo Failed in State Management V2](../../../ui/state-management/arkts-new-local.md#using-animateto-failed-in-state-management-v2).  
 >  
 >  
 > - When a UIAbility switches from the foreground to the background, any limited iteration animations that are  
@@ -134,7 +130,6 @@ Adds transition animations for state changes in closure code.
 | value | [AnimateParam](../arkts-components/arkts-arkui-animateparam-i.md) | Yes | Animation settings. |
 | event | () =&gt; void | Yes | Closure function that displays the animation. The system automatically inserts the transition animation if the state changes in the closure function. |
 
-<a id="bindtabstonestedscrollable"></a>
 ## bindTabsToNestedScrollable
 
 ```TypeScript
@@ -161,7 +156,6 @@ Bind tabs to nested scrollable container components to automatically hide tab ba
 | parentScroller | [Scroller](../arkts-components/arkts-arkui-scroller-c.md) | Yes | The controller of the parent scrollable container component. |
 | childScroller | [Scroller](../arkts-components/arkts-arkui-scroller-c.md) | Yes | The controller of the child scrollable container component. |
 
-<a id="bindtabstoscrollable"></a>
 ## bindTabsToScrollable
 
 ```TypeScript
@@ -187,7 +181,6 @@ Bind tabs to scrollable container component to automatically hide tab bar.
 | tabsController | [TabsController](../arkts-components/arkts-arkui-tabscontroller-c.md) | Yes | The controller of the tabs. |
 | scroller | [Scroller](../arkts-components/arkts-arkui-scroller-c.md) | Yes | The controller of the scrollable container component. |
 
-<a id="closebindsheet"></a>
 ## closeBindSheet
 
 ```TypeScript
@@ -195,7 +188,6 @@ closeBindSheet<T extends Object>(bindSheetContent: ComponentContent<T>): Promise
 ```
 
 Closes the sheet corresponding to **bindSheetContent**. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > Closing a sheet using this API will not invoke the **shouldDismiss** callback.
@@ -230,7 +222,6 @@ Closes the sheet corresponding to **bindSheetContent**. This API uses a promise 
 | [120001](../errorcode-bindSheet.md#120001-incorrect-bindsheetcontent) | The bindSheetContent is incorrect. |
 | [120003](../errorcode-bindSheet.md#120003-no-matching-modal-found) | The bindSheetContent cannot be found. |
 
-<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -238,7 +229,6 @@ constructor()
 ```
 
 Construct a **UIContext** object.
-
 > **NOTE**  
 >  
 > A **UIContext** object created using the constructor points to an ambiguous UI context, meaning it is not bound  
@@ -254,7 +244,6 @@ Construct a **UIContext** object.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="createanimator"></a>
 ## createAnimator
 
 ```TypeScript
@@ -291,14 +280,13 @@ Creates an **Animator** object.
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 
-<a id="createanimator-1"></a>
 ## createAnimator
 
 ```TypeScript
 createAnimator(options: AnimatorOptions | SimpleAnimatorOptions): AnimatorResult
 ```
 
-Creates an **AnimatorResult** object for animations. Compared to the previous [createAnimator](arkts-arkui-arkui-uicontext-uicontext-c.md#createanimator-1) API, this API adds support for the [SimpleAnimatorOptions](arkts-arkui-animator-simpleanimatoroptions-c.md) type.
+Creates an **AnimatorResult** object for animations. Compared to the previous [createAnimator](arkts-arkui-arkui-uicontext-uicontext-c.md#createanimator) API, this API adds support for the [SimpleAnimatorOptions](arkts-arkui-animator-simpleanimatoroptions-c.md) type.
 
 **Since:** 18
 
@@ -328,7 +316,6 @@ Creates an **AnimatorResult** object for animations. Compared to the previous [c
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 
-<a id="createuicontextwithoutwindow"></a>
 ## createUIContextWithoutWindow
 
 ```TypeScript
@@ -336,10 +323,9 @@ static createUIContextWithoutWindow(context: common.UIAbilityContext | common.Ex
 ```
 
 Creates a UI instance that does not depend on a window and returns its UI context. The created UI instance is a singleton.
-
 > **NOTE**  
 >  
-> The returned UI context can only be used to create [custom nodes](docroot://ui/arkts-user-defined-node.md). It  
+> The returned UI context can only be used to create [custom nodes](../../../ui/arkts-user-defined-node.md). It  
 > cannot be used for other UI operations.
 
 **Since:** 17
@@ -371,14 +357,13 @@ Creates a UI instance that does not depend on a window and returns its UI contex
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. The number of parameters is incorrect.<br> 2. Invalid parameter type of context. |
 | [100001](../errorcode-internal.md#100001-internal-error) | Internal error. |
 
-<a id="destroyuicontextwithoutwindow"></a>
 ## destroyUIContextWithoutWindow
 
 ```TypeScript
 static destroyUIContextWithoutWindow(): void
 ```
 
-Destroys the UI instance created using [createUIContextWithoutWindow](arkts-arkui-arkui-uicontext-uicontext-c.md#createuicontextwithoutwindow-1).
+Destroys the UI instance created using [createUIContextWithoutWindow](arkts-arkui-arkui-uicontext-uicontext-c.md#createuicontextwithoutwindow).
 
 **Since:** 17
 
@@ -390,7 +375,6 @@ Destroys the UI instance created using [createUIContextWithoutWindow](arkts-arku
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="dispatchkeyevent"></a>
 ## dispatchKeyEvent
 
 ```TypeScript
@@ -422,7 +406,6 @@ Dispach keyboard event to the frameNode with inspector key.
 | --- | --- |
 | boolean | Returns whether the key event is consumed. |
 
-<a id="enableeventpassthrough"></a>
 ## enableEventPassthrough
 
 ```TypeScript
@@ -448,7 +431,6 @@ Whether to enable or disable event passthrough.
 | enabled | boolean | Yes | enable or disable event passthrough. The default value is false. |
 | eventType | [RawInputEventType](arkts-arkui-rawinputeventtype-e.md) | Yes | the type of raw input event. |
 
-<a id="enableswipeback"></a>
 ## enableSwipeBack
 
 ```TypeScript
@@ -471,7 +453,6 @@ whether to enable or disable swipe to back event.
 | --- | --- | --- | --- |
 | enabled | [Optional](../arkts-components/arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | enable or disable swipe to back event. |
 
-<a id="fp2px"></a>
 ## fp2px
 
 ```TypeScript
@@ -502,7 +483,6 @@ Converts a value in fp units to a value in px.
 | --- | --- |
 | number | @syscap SystemCapability.ArkUI.ArkUI.Full@stagemodelonly@crossplatform |
 
-<a id="getalluicontexts"></a>
 ## getAllUIContexts
 
 ```TypeScript
@@ -527,7 +507,6 @@ Obtains all currently valid UIContext instances.
 | --- | --- |
 | [UIContext](../arkts-components/arkts-arkui-uicontext-t.md)[] | Array of all currently valid UIContext instances. Returns an empty array if no valid UIContext instance exists. |
 
-<a id="getatomicservicebar"></a>
 ## getAtomicServiceBar
 
 ```TypeScript
@@ -552,7 +531,6 @@ Get AtomicServiceBar.
 | --- | --- |
 | [Nullable](arkts-arkui-nullable-t.md)&lt;AtomicServiceBar&gt; | The atomic service bar. |
 
-<a id="getattachedframenodebyid"></a>
 ## getAttachedFrameNodeById
 
 ```TypeScript
@@ -583,20 +561,18 @@ Get the FrameNode attached to current window by id.
 | --- | --- |
 | [FrameNode](../arkts-components/arkts-arkui-framenode-t.md) | The instance of FrameNode. |
 
-<a id="getcallingscopeuicontext"></a>
 ## getCallingScopeUIContext
 
 ```TypeScript
 static getCallingScopeUIContext(): UIContext | undefined
 ```
 
-Obtains the UIContext of this [calling scope](docroot://ui/arkts-global-interface.md#basic-concepts). This API returns **undefined** if the calling scope is ambiguous.
-
+Obtains the UIContext of this [calling scope](../../../ui/arkts-global-interface.md#basic-concepts). This API returns **undefined** if the calling scope is ambiguous.
 > **NOTE**  
 >  
 > The returned UIContext object may point to a destroyed UI instance, which usually occurs when an asynchronous  
 > task is dispatched from an instance that has already been destroyed. As such, you are advised to verify its  
-> validity via the [isAvailable](arkts-arkui-arkui-uicontext-uicontext-c.md#isavailable-1) API.
+> validity via the [isAvailable](arkts-arkui-arkui-uicontext-uicontext-c.md#isavailable) API.
 
 **Since:** 22
 
@@ -612,9 +588,8 @@ Obtains the UIContext of this [calling scope](docroot://ui/arkts-global-interfac
 
 | Type | Description |
 | --- | --- |
-| [UIContext](../arkts-components/arkts-arkui-uicontext-t.md) | UIContext of the current [calling scope](docroot://ui/arkts-global-interface.md#basic-concepts). Returns **undefined** if the calling scope is ambiguous. |
+| [UIContext](../arkts-components/arkts-arkui-uicontext-t.md) | UIContext of the current [calling scope](../../../ui/arkts-global-interface.md#basic-concepts). Returns **undefined** if the calling scope is ambiguous. |
 
-<a id="getcomponentsnapshot"></a>
 ## getComponentSnapshot
 
 ```TypeScript
@@ -639,7 +614,6 @@ Get ComponentSnapshot.
 | --- | --- |
 | [ComponentSnapshot](arkts-arkui-arkui-uicontext-componentsnapshot-c.md) | the ComponentSnapshot |
 
-<a id="getcomponentutils"></a>
 ## getComponentUtils
 
 ```TypeScript
@@ -664,7 +638,6 @@ get object ComponentUtils.
 | --- | --- |
 | [ComponentUtils](arkts-arkui-arkui-uicontext-componentutils-c.md) | object ComponentUtils. |
 
-<a id="getcontextmenucontroller"></a>
 ## getContextMenuController
 
 ```TypeScript
@@ -689,7 +662,6 @@ Get object context menu controller.
 | --- | --- |
 | [ContextMenuController](arkts-arkui-arkui-uicontext-contextmenucontroller-c.md) | object context menu controller. |
 
-<a id="getcursorcontroller"></a>
 ## getCursorController
 
 ```TypeScript
@@ -714,7 +686,6 @@ Get object cursor controller.
 | --- | --- |
 | [CursorController](arkts-arkui-arkui-uicontext-cursorcontroller-c.md) | object cursor controller. |
 
-<a id="getdialogpresenter"></a>
 ## getDialogPresenter
 
 ```TypeScript
@@ -739,7 +710,6 @@ Get the Dialog object.
 | --- | --- |
 | [DialogPresenter](arkts-arkui-arkui-uicontext-dialogpresenter-c.md) | Dialog object. |
 
-<a id="getdragcontroller"></a>
 ## getDragController
 
 ```TypeScript
@@ -764,7 +734,6 @@ Get DragController.
 | --- | --- |
 | [DragController](arkts-arkui-arkui-uicontext-dragcontroller-c.md) | the DragController |
 
-<a id="getfilteredinspectortree"></a>
 ## getFilteredInspectorTree
 
 ```TypeScript
@@ -793,7 +762,7 @@ Obtains the component tree and component attributes. This API has a long process
 
 | Type | Description |
 | --- | --- |
-| string | JSON string of the component tree and component attributes. For details about each field in the component, see the return value description of [getInspectorInfo](arkts-arkui-framenode-c.md#getinspectorinfo-1). |
+| string | JSON string of the component tree and component attributes. For details about each field in the component, see the return value description of [getInspectorInfo](arkts-arkui-framenode-c.md#getinspectorinfo). |
 
 **Error codes:**
 
@@ -801,7 +770,6 @@ Obtains the component tree and component attributes. This API has a long process
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 
-<a id="getfilteredinspectortreebyid"></a>
 ## getFilteredInspectorTreeById
 
 ```TypeScript
@@ -824,7 +792,7 @@ Obtains the attributes of the specified component and its child components. This
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| id | string | Yes | [ID](../arkts-components/arkts-arkui-commonmethod-c.md#id-1) of the target component. |
+| id | string | Yes | [ID](../arkts-components/arkts-arkui-commonmethod-c.md#id) of the target component. |
 | depth | number | Yes | Number of layers of child components. If the value is **0**, the attributes of the specified component and all its child components are obtained. If the value is **1**, only the attributes of<br>the specified component are obtained. If the value is **2**, the attributes of<br>the specified component and its<br>level-1 child components are obtained. The rest can be deduced by analogy. |
 | filters | Array&lt;string&gt; | No | List of component attributes used for filtering. Currently, only the following filter fields are supported:<br>**"id"**: unique ID of the component.<br>**"src"**: source of the resource.<br>**"content"**: information or data contained in the element, component, or object.<br>**"editable"**: whether the component is editable.<br>**"scrollable"**: whether the component is scrollable.<br>**"selectable"**: whether the component is selectable.<br>**"focusable"**: whether the component is focusable.<br>**"focused"**: whether the component is currently focused.<br>If **filters** includes one or more fields, unspecified fields will be filtered out from the results.<br>If **filters** is not provided or is an empty array, none of the aforementioned fields<br>will be filtered out.<br>Other filter fields are used only in testing scenarios. |
 
@@ -832,7 +800,7 @@ Obtains the attributes of the specified component and its child components. This
 
 | Type | Description |
 | --- | --- |
-| string | JSON string of the attributes of the specified component and its child components. For details about each field in the component, see the return value<br>description of [getInspectorInfo](arkts-arkui-framenode-c.md#getinspectorinfo-1). |
+| string | JSON string of the attributes of the specified component and its child components. For details about each field in the component, see the return value<br>description of [getInspectorInfo](arkts-arkui-framenode-c.md#getinspectorinfo). |
 
 **Error codes:**
 
@@ -840,7 +808,6 @@ Obtains the attributes of the specified component and its child components. This
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br> 1. Mandatory parameters are left unspecified.<br> 2. Incorrect parameters types.<br> 3. Parameter verification failed. |
 
-<a id="getfocuscontroller"></a>
 ## getFocusController
 
 ```TypeScript
@@ -865,7 +832,6 @@ Get FocusController.
 | --- | --- |
 | [FocusController](arkts-arkui-arkui-uicontext-focuscontroller-c.md) | - the FocusController |
 
-<a id="getfont"></a>
 ## getFont
 
 ```TypeScript
@@ -890,7 +856,6 @@ Obtains a **Font** object.
 | --- | --- |
 | [Font](arkts-arkui-arkui-uicontext-font-c.md) | **Font** object. |
 
-<a id="getframenodebyid"></a>
 ## getFrameNodeById
 
 ```TypeScript
@@ -921,7 +886,6 @@ Get FrameNode by id.
 | --- | --- |
 | [FrameNode](../arkts-components/arkts-arkui-framenode-t.md) | The instance of FrameNode. |
 
-<a id="getframenodebyuniqueid"></a>
 ## getFrameNodeByUniqueId
 
 ```TypeScript
@@ -954,7 +918,6 @@ Get FrameNode by uniqueId.Obtains the entity node, FrameNode, of a component on 
 | --- | --- |
 | [FrameNode](../arkts-components/arkts-arkui-framenode-t.md) | - The FrameNode with the target uniqueId, or null if the frameNode is not existed. |
 
-<a id="gethostcontext"></a>
 ## getHostContext
 
 ```TypeScript
@@ -979,7 +942,6 @@ Obtains the context of this ability.
 | --- | --- |
 | [Context](../../apis-mind-spore-lite-kit/arkts-apis/arkts-mindsporelite-mindsporelite-context-i.md) | Context of the ability. The context type depends on the ability type. For example,if this API is called in a page within a UIAbility window, the returned context type is [UIAbilityContext](../../apis-ability-kit/arkts-apis/arkts-ability-uiabilitycontext-c.md). If this API is called in a page within an ExtensionAbility window, the returned context type is [ExtensionContext](../../apis-ability-kit/arkts-apis/arkts-ability-extensioncontext-c.md). If the ability context does not exist,**undefined** is returned. |
 
-<a id="getid"></a>
 ## getId
 
 ```TypeScript
@@ -1004,7 +966,6 @@ Obtains the unique ID of a UI instance object. In multi-instance scenarios, you 
 | --- | --- |
 | number | Unique ID of the backend instance. The value range is [-1, +∞). |
 
-<a id="getkeyboardavoidmode"></a>
 ## getKeyboardAvoidMode
 
 ```TypeScript
@@ -1029,7 +990,6 @@ Obtains the avoidance mode of the virtual keyboard.
 | --- | --- |
 | [KeyboardAvoidMode](arkts-arkui-arkui-uicontext-keyboardavoidmode-e.md) | Avoidance mode of the virtual keyboard. |
 
-<a id="getlastfocuseduicontext"></a>
 ## getLastFocusedUIContext
 
 ```TypeScript
@@ -1054,7 +1014,6 @@ Obtains the UIContext of the UI instance that most recently switched to the focu
 | --- | --- |
 | [UIContext](../arkts-components/arkts-arkui-uicontext-t.md) | UIContext of the UI instance that most recently switched to the focused state.Returns **undefined** if the most recently focused instance has been destroyed or if no instance has ever been focused. |
 
-<a id="getlastforegrounduicontext"></a>
 ## getLastForegroundUIContext
 
 ```TypeScript
@@ -1079,7 +1038,6 @@ Obtains the UIContext of the UI instance that most recently switched to the fore
 | --- | --- |
 | [UIContext](../arkts-components/arkts-arkui-uicontext-t.md) | UIContext of the UI instance that most recently switched to the foreground state. Returns **undefined** if the most recently foreground UI instance has been destroyed or if no UI instance has ever been in the foreground. |
 
-<a id="getmagnifier"></a>
 ## getMagnifier
 
 ```TypeScript
@@ -1104,7 +1062,6 @@ Obtains a [Magnifier](arkts-arkui-arkui-uicontext-magnifier-c.md) object, which 
 | --- | --- |
 | [Magnifier](arkts-arkui-arkui-uicontext-magnifier-c.md) | **Magnifier** object, which can be used to control the display and hiding of a magnifier. |
 
-<a id="getmaxfontscale"></a>
 ## getMaxFontScale
 
 ```TypeScript
@@ -1129,7 +1086,6 @@ Get the max font scale.
 | --- | --- |
 | number | The max font scale. |
 
-<a id="getmeasureutils"></a>
 ## getMeasureUtils
 
 ```TypeScript
@@ -1154,7 +1110,6 @@ Obtains a **MeasureUtils** object for text calculation.
 | --- | --- |
 | [MeasureUtils](arkts-arkui-arkui-uicontext-measureutils-c.md) | Text metrics, such as text height and width. |
 
-<a id="getmediaquery"></a>
 ## getMediaQuery
 
 ```TypeScript
@@ -1179,7 +1134,6 @@ get object mediaQuery.
 | --- | --- |
 | [MediaQuery](arkts-arkui-mediaquery-mediaquery-c.md) | object MediaQuery. |
 
-<a id="getnavigationinfobyuniqueid"></a>
 ## getNavigationInfoByUniqueId
 
 ```TypeScript
@@ -1210,7 +1164,6 @@ Get navigation information of the frameNode with uniqueId.
 | --- | --- |
 | observer.NavigationInfo | - The navigation information of the frameNode with the target uniqueId, or undefined if the frameNode is not existed or does not have navigation information. |
 
-<a id="getoverlaymanager"></a>
 ## getOverlayManager
 
 ```TypeScript
@@ -1235,7 +1188,6 @@ Obtains the OverlayManager object.
 | --- | --- |
 | [OverlayManager](arkts-arkui-arkui-uicontext-overlaymanager-c.md) | OverlayManager instance obtained. |
 
-<a id="getoverlaymanageroptions"></a>
 ## getOverlayManagerOptions
 
 ```TypeScript
@@ -1260,7 +1212,6 @@ Get object OverlayManagerOptions.
 | --- | --- |
 | [OverlayManagerOptions](arkts-arkui-arkui-uicontext-overlaymanageroptions-i.md) | object OverlayManagerOptions. |
 
-<a id="getpageinfobyuniqueid"></a>
 ## getPageInfoByUniqueId
 
 ```TypeScript
@@ -1291,7 +1242,6 @@ Get page information of the frameNode with uniqueId.
 | --- | --- |
 | [PageInfo](arkts-arkui-arkui-uicontext-pageinfo-i.md) | - The page information of the frameNode with the target uniqueId, includes navDestination and router page information. If the frame node does not have navDestination and router page information, it will return an empty object. |
 
-<a id="getpagerootnode"></a>
 ## getPageRootNode
 
 ```TypeScript
@@ -1320,7 +1270,6 @@ Obtains the root node of the page corresponding to the UIContext.
 | --- | --- |
 | [120007](../errorcode-uicontext.md#120007-instance-not-exist) | The UIContext is not available. |
 
-<a id="getpixelroundmode"></a>
 ## getPixelRoundMode
 
 ```TypeScript
@@ -1345,7 +1294,6 @@ Obtains the pixel rounding mode for this page.
 | --- | --- |
 | [PixelRoundMode](arkts-arkui-pixelroundmode-e.md) | Pixel rounding mode of the current page. |
 
-<a id="getpromptaction"></a>
 ## getPromptAction
 
 ```TypeScript
@@ -1370,7 +1318,6 @@ Obtains a PromptAction object.
 | --- | --- |
 | [PromptAction](arkts-arkui-arkui-uicontext-promptaction-c.md) | PromptAction object. |
 
-<a id="getrouter"></a>
 ## getRouter
 
 ```TypeScript
@@ -1395,7 +1342,6 @@ Obtains a Router object.
 | --- | --- |
 | [Router](arkts-arkui-router-router-c.md) | Router object. |
 
-<a id="getsharedlocalstorage"></a>
 ## getSharedLocalStorage
 
 ```TypeScript
@@ -1420,7 +1366,6 @@ Obtains the **LocalStorage** instance shared by this stage.
 | --- | --- |
 | [LocalStorage](arkts-arkui-localstorage-c.md) | **LocalStorage** instance if it exists; **undefined** if it does not exist. |
 
-<a id="getsmartgesturecontroller"></a>
 ## getSmartGestureController
 
 ```TypeScript
@@ -1445,7 +1390,6 @@ Get object smart gesture controller.
 | --- | --- |
 | [SmartGestureController](arkts-arkui-arkui-uicontext-smartgesturecontroller-c.md) | object smart gesture controller. |
 
-<a id="gettextmenucontroller"></a>
 ## getTextMenuController
 
 ```TypeScript
@@ -1470,7 +1414,6 @@ Obtains a [TextMenuController](arkts-arkui-arkui-uicontext-textmenucontroller-c.
 | --- | --- |
 | [TextMenuController](arkts-arkui-arkui-uicontext-textmenucontroller-c.md) | Obtained **TextMenuController** object. |
 
-<a id="getuiinspector"></a>
 ## getUIInspector
 
 ```TypeScript
@@ -1495,7 +1438,6 @@ Obtains the **UIInspector** object.
 | --- | --- |
 | [UIInspector](arkts-arkui-arkui-uicontext-uiinspector-c.md) | **UIInspector** object. |
 
-<a id="getuiobserver"></a>
 ## getUIObserver
 
 ```TypeScript
@@ -1520,7 +1462,6 @@ Obtains the **UIObserver** object.
 | --- | --- |
 | [UIObserver](arkts-arkui-arkui-uicontext-uiobserver-c.md) | **UIObserver** object. |
 
-<a id="getwindowheightbreakpoint"></a>
 ## getWindowHeightBreakpoint
 
 ```TypeScript
@@ -1545,7 +1486,6 @@ Obtains the height breakpoint value of the window where this instance is located
 | --- | --- |
 | [HeightBreakpoint](arkts-arkui-heightbreakpoint-e.md) | Height breakpoint value of the window where the current instance is located. If the window aspect ratio is 0, **HEIGHT_SM** is returned. |
 
-<a id="getwindowid"></a>
 ## getWindowId
 
 ```TypeScript
@@ -1553,7 +1493,6 @@ getWindowId(): number | undefined
 ```
 
 Obtains the ID of the window to which the current application instance belongs.
-
 > **NOTE**  
 >  
 > If the UIContext resides inside a  
@@ -1576,7 +1515,6 @@ Obtains the ID of the window to which the current application instance belongs.
 | --- | --- |
 | number | ID of the window to which the current application instance belongs. If the window does not exist, **undefined** is returned. |
 
-<a id="getwindowname"></a>
 ## getWindowName
 
 ```TypeScript
@@ -1601,7 +1539,6 @@ Obtains the name of the window where this instance is located.
 | --- | --- |
 | string | Name of the window where the current instance is located. If the window does not exist, **undefined** is returned. |
 
-<a id="getwindowwidthbreakpoint"></a>
 ## getWindowWidthBreakpoint
 
 ```TypeScript
@@ -1626,14 +1563,13 @@ Obtains the width breakpoint value of the window where this instance is located.
 | --- | --- |
 | [WidthBreakpoint](arkts-arkui-widthbreakpoint-e.md) | Width breakpoint value of the window where the current instance is located. If the window width is 0 vp, **WIDTH_XS** is returned. |
 
-<a id="isavailable"></a>
 ## isAvailable
 
 ```TypeScript
 isAvailable(): boolean
 ```
 
-Checks whether the UI instance corresponding to this **UIContext** object is valid. The **UIContext** object can be obtained using the [getUIContext](docroot://reference/apis-arkui/arkts-apis-window-Window.md#getuicontext10) API. A UI instance is considered valid when the backend UI instance exists. UIContext objects created using **new UIContext()** have no corresponding UI instance. After multiple [loadContent](docroot://reference/apis-arkui/arkts-apis-window-Window.md#loadcontent9) operations, old UI instances become invalid. In multi-window scenarios, when a window is closed, its UI instance becomes invalid. In summary, a UIContext object is invalid when it has no corresponding backend UI instance.
+Checks whether the UI instance corresponding to this **UIContext** object is valid. The **UIContext** object can be obtained using the [getUIContext](../../../reference/apis-arkui/arkts-apis-window-Window.md#getuicontext10) API. A UI instance is considered valid when the backend UI instance exists. UIContext objects created using **new UIContext()** have no corresponding UI instance. After multiple [loadContent](../../../reference/apis-arkui/arkts-apis-window-Window.md#loadcontent9) operations, old UI instances become invalid. In multi-window scenarios, when a window is closed, its UI instance becomes invalid. In summary, a UIContext object is invalid when it has no corresponding backend UI instance.
 
 **Since:** 20
 
@@ -1651,7 +1587,6 @@ Checks whether the UI instance corresponding to this **UIContext** object is val
 | --- | --- |
 | boolean | Whether the UI instance corresponding to the current **UIContext** object is valid. The value **true** indicates yes, and the value **false** indicates no. |
 
-<a id="iseasysplit"></a>
 ## isEasySplit
 
 ```TypeScript
@@ -1676,7 +1611,6 @@ Checks whether the current UI instance is in easy split mode.
 | --- | --- |
 | boolean | Returns true if the current UI instance is in easy split mode; returns false otherwise. |
 
-<a id="isfollowingsystemfontscale"></a>
 ## isFollowingSystemFontScale
 
 ```TypeScript
@@ -1701,7 +1635,6 @@ Checks whether current font scale follows the system.
 | --- | --- |
 | boolean | Returns true if current font scale follows the system; returns false otherwise. |
 
-<a id="keyframeanimateto"></a>
 ## keyframeAnimateTo
 
 ```TypeScript
@@ -1727,7 +1660,6 @@ Generates a key frame animation. For details about how to use this API, see [key
 | param | [KeyframeAnimateParam](../arkts-components/arkts-arkui-keyframeanimateparam-i.md) | Yes | Overall animation parameter of the keyframe animation. |
 | keyframes | Array&lt;KeyframeState&gt; | Yes | List of all keyframe states. |
 
-<a id="lpx2px"></a>
 ## lpx2px
 
 ```TypeScript
@@ -1758,7 +1690,6 @@ Converts a value in lpx units to a value in px.
 | --- | --- |
 | number | @syscap SystemCapability.ArkUI.ArkUI.Full@stagemodelonly@crossplatform |
 
-<a id="openbindsheet"></a>
 ## openBindSheet
 
 ```TypeScript
@@ -1766,13 +1697,12 @@ openBindSheet<T extends Object>(bindSheetContent: ComponentContent<T>, sheetOpti
 ```
 
 Creates a sheet whose content is as defined in **bindSheetContent** and displays the sheet. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > 1. When calling this API, if no valid value is provided for **targetId**, you won't be able to set  
 > **SheetOptions.preferType** to **POPUP** or **SheetOptions.mode** to **EMBEDDED**.  
 >  
-> 2. Since [updateBindSheet](arkts-arkui-arkui-uicontext-uicontext-c.md#updatebindsheet-1) and [closeBindSheet](arkts-arkui-arkui-uicontext-uicontext-c.md#closebindsheet-1)  
+> 2. Since [updateBindSheet](arkts-arkui-arkui-uicontext-uicontext-c.md#updatebindsheet) and [closeBindSheet](arkts-arkui-arkui-uicontext-uicontext-c.md#closebindsheet)  
 > depend on **bindSheetContent**, you need to maintain the passed **bindSheetContent** yourself.  
 >  
 > 3. Setting **SheetOptions.UIContext** is not supported.
@@ -1812,7 +1742,6 @@ Creates a sheet whose content is as defined in **bindSheetContent** and displays
 | [120005](../errorcode-bindSheet.md#120005-node-specified-by-targetid-is-not-in-the-component-tree) | The node of targetId is not in the component tree. |
 | [120006](../errorcode-bindSheet.md#120006-node-specified-by-targetid-is-not-a-child-of-a-page-node-or-navdestination-node) | The node of targetId is not a child of the page node or NavDestination node. |
 
-<a id="postdelayedframecallback"></a>
 ## postDelayedFrameCallback
 
 ```TypeScript
@@ -1838,7 +1767,6 @@ Post a frame callback to run on the next frame after the specified delay.
 | frameCallback | [FrameCallback](arkts-arkui-arkui-uicontext-framecallback-c.md) | Yes | The frame callback to run on the next frame. |
 | delayTime | number | Yes | The delay time in milliseconds, |
 
-<a id="postframecallback"></a>
 ## postFrameCallback
 
 ```TypeScript
@@ -1863,7 +1791,6 @@ Post a frame callback to run on the next frame.
 | --- | --- | --- | --- |
 | frameCallback | [FrameCallback](arkts-arkui-arkui-uicontext-framecallback-c.md) | Yes | The frame callback to run on the next frame. |
 
-<a id="px2fp"></a>
 ## px2fp
 
 ```TypeScript
@@ -1894,7 +1821,6 @@ Converts a value in px units to a value in fp.
 | --- | --- |
 | number | @syscap SystemCapability.ArkUI.ArkUI.Full@stagemodelonly@crossplatform |
 
-<a id="px2lpx"></a>
 ## px2lpx
 
 ```TypeScript
@@ -1925,7 +1851,6 @@ Converts a value in px units to a value in lpx.
 | --- | --- |
 | number | @syscap SystemCapability.ArkUI.ArkUI.Full@stagemodelonly@crossplatform |
 
-<a id="px2vp"></a>
 ## px2vp
 
 ```TypeScript
@@ -1956,7 +1881,6 @@ Converts a value in px units to a value in vp.
 | --- | --- |
 | number | @syscap SystemCapability.ArkUI.ArkUI.Full@stagemodelonly@crossplatform |
 
-<a id="removelocalinputeventmonitor"></a>
 ## removeLocalInputEventMonitor
 
 ```TypeScript
@@ -1987,7 +1911,6 @@ Removes a local input event monitor.
 | --- | --- | --- | --- |
 | monitor | [InputEventMonitor](../arkts-components/arkts-arkui-inputeventmonitor-i.md) | Yes | Monitor identifier object (returned by addLocalInputEventMonitor). |
 
-<a id="requiredynamicsyncscene"></a>
 ## requireDynamicSyncScene
 
 ```TypeScript
@@ -2018,7 +1941,6 @@ Require DynamicSyncScene by id.
 | --- | --- |
 | Array&lt;DynamicSyncScene&gt; | The instance of SwiperDynamicSyncScene. |
 
-<a id="resolveuicontext"></a>
 ## resolveUIContext
 
 ```TypeScript
@@ -2026,7 +1948,6 @@ static resolveUIContext(): ResolvedUIContext
 ```
 
 Obtains a UIContext instance along with its resolution strategy using a predefined priority order.
-
 > **NOTE**  
 >  
 > This API resolves and returns a UIContext instance together with the strategy used to determine it,  
@@ -2063,7 +1984,6 @@ Obtains a UIContext instance along with its resolution strategy using a predefin
 | --- | --- |
 | [ResolvedUIContext](arkts-arkui-arkui-uicontext-resolveduicontext-c.md) | UIContext instance along with its resolution strategy. |
 
-<a id="runscopedtask"></a>
 ## runScopedTask
 
 ```TypeScript
@@ -2088,7 +2008,6 @@ Run custom functions inside the UIContext scope.
 | --- | --- | --- | --- |
 | callback | () =&gt; void | Yes | The function called through UIContext. |
 
-<a id="setcustomkeyboardcontinuefeature"></a>
 ## setCustomKeyboardContinueFeature
 
 ```TypeScript
@@ -2113,7 +2032,6 @@ Set custom keyboard continue feature.
 | --- | --- | --- | --- |
 | feature | [CustomKeyboardContinueFeature](arkts-arkui-arkui-uicontext-customkeyboardcontinuefeature-e.md) | Yes | The custom keyboard continue feature. |
 
-<a id="setimagecachecount"></a>
 ## setImageCacheCount
 
 ```TypeScript
@@ -2138,7 +2056,6 @@ Set image cache capacity of decoded image count.if not set, the application will
 | --- | --- | --- | --- |
 | value | number | Yes | capacity of decoded image count. |
 
-<a id="setimagerawdatacachesize"></a>
 ## setImageRawDataCacheSize
 
 ```TypeScript
@@ -2163,7 +2080,6 @@ Set image cache capacity of raw image data size in bytes before decode.if not se
 | --- | --- | --- | --- |
 | value | number | Yes | capacity of raw image data size in bytes. |
 
-<a id="setkeyboardavoidmode"></a>
 ## setKeyboardAvoidMode
 
 ```TypeScript
@@ -2171,7 +2087,6 @@ setKeyboardAvoidMode(value: KeyboardAvoidMode): void
 ```
 
 Sets the avoidance mode for the virtual keyboard.
-
 > **NOTE**  
 >  
 > With **KeyboardAvoidMode.RESIZE**, the page is resized to prevent the virtual keyboard from obstructing the  
@@ -2186,7 +2101,7 @@ Sets the avoidance mode for the virtual keyboard.
 > **setKeyboardAvoidMode** only affects page layouts. It does not apply to popup components, including the  
 > following: **Dialog**, **Popup**, **Menu**, **BindSheet**, **BindContentCover**, **Toast**, **OverlayManager**.  
 > For details about the avoidance mode of popup components, see  
-> [CustomDialogControllerOptions](docroot://reference/arkui-ts/ts-methods-custom-dialog-box.md).
+> [CustomDialogControllerOptions](../../../reference/arkui-ts/ts-methods-custom-dialog-box.md).
 
 **Since:** 11
 
@@ -2204,7 +2119,6 @@ Sets the avoidance mode for the virtual keyboard.
 | --- | --- | --- | --- |
 | value | [KeyboardAvoidMode](arkts-arkui-arkui-uicontext-keyboardavoidmode-e.md) | Yes | Avoidance mode of the virtual keyboard.<br>Default value:**KeyboardAvoidMode.OFFSET**, which means that the page moves up when the keyboard is displayed.<br>When **setKeyboardAvoidMode** is set to an invalid value, this attribute does not take effect. |
 
-<a id="setoverlaymanageroptions"></a>
 ## setOverlayManagerOptions
 
 ```TypeScript
@@ -2235,7 +2149,6 @@ Init OverlayManager.
 | --- | --- |
 | boolean | Returns true if it is called first and before getting an OverlayManager instance; returns false otherwise. |
 
-<a id="setpixelroundmode"></a>
 ## setPixelRoundMode
 
 ```TypeScript
@@ -2260,7 +2173,6 @@ Sets the pixel rounding mode for this page.
 | --- | --- | --- | --- |
 | mode | [PixelRoundMode](arkts-arkui-pixelroundmode-e.md) | Yes | Pixel rounding mode.Default value:**PixelRoundMode.PIXEL_ROUND_ON_LAYOUT_FINISH**.<br>If this parameter is set to an invalid value,the default value will be used. |
 
-<a id="setresourcemanagercachemaxcountforhsp"></a>
 ## setResourceManagerCacheMaxCountForHSP
 
 ```TypeScript
@@ -2295,7 +2207,6 @@ If the upper limit of the cache is set too high, there is a risk of excessive me
 | [100102](../errorcode-uicontext.md#100102-incorrect-parameter-type) | The parameter value cannot be a floating point number. |
 | [100103](../errorcode-uicontext.md#100103-invalid-thread-context) | The function cannot be called from a non main thread. |
 
-<a id="settextselectionclearpolicy"></a>
 ## setTextSelectionClearPolicy
 
 ```TypeScript
@@ -2320,7 +2231,6 @@ Sets the text selection clear policy for text component.Default policy: **TextSe
 | --- | --- | --- | --- |
 | policy | [TextSelectionClearPolicy](arkts-arkui-arkui-uicontext-textselectionclearpolicy-e.md) | Yes | The text selection clear policy. |
 
-<a id="showactionsheet"></a>
 ## showActionSheet
 
 ```TypeScript
@@ -2345,7 +2255,6 @@ Shows an action sheet in the given settings.
 | --- | --- | --- | --- |
 | value | [ActionSheetOptions](arkts-arkui-actionsheetoptions-i.md) | Yes | Parameters of the action sheet. |
 
-<a id="showalertdialog"></a>
 ## showAlertDialog
 
 ```TypeScript
@@ -2370,7 +2279,6 @@ Shows an alert dialog box.
 | --- | --- | --- | --- |
 | options | [AlertDialogParamWithConfirm](arkts-arkui-alertdialogparamwithconfirm-i.md) \| AlertDialogParamWithButtons \| AlertDialogParamWithOptions | Yes | Shows an AlertDialog component in the given settings. |
 
-<a id="showdatepickerdialog"></a>
 ## showDatePickerDialog
 
 ```TypeScript
@@ -2395,7 +2303,6 @@ datePickerDialog display.
 | --- | --- | --- | --- |
 | options | [DatePickerDialogOptions](../arkts-components/arkts-arkui-datepickerdialogoptions-i.md) | Yes | Options. |
 
-<a id="showtextpickerdialog"></a>
 ## showTextPickerDialog
 
 ```TypeScript
@@ -2420,7 +2327,6 @@ textPickerDialog display.
 | --- | --- | --- | --- |
 | options | [TextPickerDialogOptions](../arkts-components/arkts-arkui-textpickerdialogoptions-i.md) | Yes | Options. |
 
-<a id="showtextpickerdialog-1"></a>
 ## showTextPickerDialog
 
 ```TypeScript
@@ -2445,7 +2351,6 @@ textPickerDialog display.
 | --- | --- | --- | --- |
 | style | [TextPickerDialogOptions](../arkts-components/arkts-arkui-textpickerdialogoptions-i.md) \| TextPickerDialogOptionsExt | Yes | Dialog style. |
 
-<a id="showtimepickerdialog"></a>
 ## showTimePickerDialog
 
 ```TypeScript
@@ -2470,7 +2375,6 @@ timePickerDialog display.
 | --- | --- | --- | --- |
 | options | [TimePickerDialogOptions](../arkts-components/arkts-arkui-timepickerdialogoptions-i.md) | Yes | Options. |
 
-<a id="unbindtabsfromnestedscrollable"></a>
 ## unbindTabsFromNestedScrollable
 
 ```TypeScript
@@ -2497,7 +2401,6 @@ Unbind tabs from nested scrollable container components.
 | parentScroller | [Scroller](../arkts-components/arkts-arkui-scroller-c.md) | Yes | The controller of the parent scrollable container component. |
 | childScroller | [Scroller](../arkts-components/arkts-arkui-scroller-c.md) | Yes | The controller of the child scrollable container component. |
 
-<a id="unbindtabsfromscrollable"></a>
 ## unbindTabsFromScrollable
 
 ```TypeScript
@@ -2523,7 +2426,6 @@ Unbind tabs from scrollable container component.
 | tabsController | [TabsController](../arkts-components/arkts-arkui-tabscontroller-c.md) | Yes | The controller of the tabs. |
 | scroller | [Scroller](../arkts-components/arkts-arkui-scroller-c.md) | Yes | The controller of the scrollable container component. |
 
-<a id="updatebindsheet"></a>
 ## updateBindSheet
 
 ```TypeScript
@@ -2531,7 +2433,6 @@ updateBindSheet<T extends Object>(bindSheetContent: ComponentContent<T>, sheetOp
 ```
 
 Updates the style of the sheet corresponding to the provided **bindSheetContent**. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > **SheetOptions.UIContext**, **SheetOptions.mode**, and callback functions cannot be updated.
@@ -2568,7 +2469,6 @@ Updates the style of the sheet corresponding to the provided **bindSheetContent*
 | [120001](../errorcode-bindSheet.md#120001-incorrect-bindsheetcontent) | The bindSheetContent is incorrect. |
 | [120003](../errorcode-bindSheet.md#120003-no-matching-modal-found) | The bindSheetContent cannot be found. |
 
-<a id="vp2px"></a>
 ## vp2px
 
 ```TypeScript

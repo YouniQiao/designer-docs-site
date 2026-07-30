@@ -6,7 +6,6 @@
 import { usbManager } from '@kit.MDMKit';
 ```
 
-<a id="addallowedusbdevices"></a>
 ## addAllowedUsbDevices
 
 ```TypeScript
@@ -17,7 +16,7 @@ Adds allowed USB devices.
 
 A policy conflict is reported when this API is called in the following scenarios:
 
-1. The USB capability of the device or the USB-to-Serial capability has been disabled using the [setDisallowedPolicy](arkts-mdm-restrictions-setdisallowedpolicy-f.md#setdisallowedpolicy-1) API.2. The USB storage device access policy has been disabled using the [setUsbStorageDeviceAccessPolicy](arkts-mdm-usbmanager-setusbstoragedeviceaccesspolicy-f.md#setusbstoragedeviceaccesspolicy-1) API.3. Disallowed USB device types have been added using the [addDisallowedUsbDevices](arkts-mdm-usbmanager-adddisallowedusbdevices-f.md#adddisallowedusbdevices-1) API.
+1. The USB capability of the device or the USB-to-Serial capability has been disabled using the [setDisallowedPolicy](arkts-mdm-restrictions-setdisallowedpolicy-f.md#setdisallowedpolicy) API.2. The USB storage device access policy has been disabled using the [setUsbStorageDeviceAccessPolicy](arkts-mdm-usbmanager-setusbstoragedeviceaccesspolicy-f.md#setusbstoragedeviceaccesspolicy) API.3. Disallowed USB device types have been added using the [addDisallowedUsbDevices](arkts-mdm-usbmanager-adddisallowedusbdevices-f.md#adddisallowedusbdevices) API.
 
 **Since:** 12
 
@@ -34,7 +33,7 @@ A policy conflict is reported when this API is called in the following scenarios
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
-| usbDeviceIds | Array&lt;UsbDeviceId&gt; | Yes | USB device IDs, which can be obtained through [getDevices](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-usbmanager-getdevices-f.md#getdevices-1). The maximum number of USB devices is 1,000. If there are already 300 USB device IDs, only 700 more can be added. |
+| usbDeviceIds | Array&lt;UsbDeviceId&gt; | Yes | USB device IDs, which can be obtained through [getDevices](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-usbmanager-getdevices-f.md#getdevices). The maximum number of USB devices is 1,000. If there are already 300 USB device IDs, only 700 more can be added. |
 
 **Error codes:**
 

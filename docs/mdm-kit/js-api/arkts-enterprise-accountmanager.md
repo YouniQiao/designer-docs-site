@@ -8,11 +8,13 @@ The **accountManager** module provides APIs for account management of enterprise
 > The APIs of this module can be called only by a device administrator application that is enabled. For details, see  
 > [MDM Kit Development](../../../mdm/mdm-kit-guide.md).
 
-**Since:** 10
+**Since:** 12
 
 <!--Device-unnamed-declare namespace accountManager--><!--Device-unnamed-declare namespace accountManager-End-->
 
 **System capability:** SystemCapability.Customization.EnterpriseDeviceManager
+
+**System API:** This is a system API.
 
 ## Modules to Import
 
@@ -32,6 +34,7 @@ import { accountManager } from '@kit.MDMKit';
 | [disallowOsAccountAddition](arkts-mdm-accountmanager-disallowosaccountaddition-f.md#disallowosaccountaddition) | Users are not allowed to add accounts. |
 | [getDomainAccountPolicy](arkts-mdm-accountmanager-getdomainaccountpolicy-f.md#getdomainaccountpolicy) | Obtains the domain account policy. |
 | [isOsAccountAdditionDisallowed](arkts-mdm-accountmanager-isosaccountadditiondisallowed-f.md#isosaccountadditiondisallowed) | Queries whether a user is not allowed to add an account. |
+| [isOsAccountAdditionDisallowed](arkts-mdm-accountmanager-isosaccountadditiondisallowed-f.md#isosaccountadditiondisallowed-1) | Queries whether a user is not allowed to add an account. |
 | [removeOsAccount](arkts-mdm-accountmanager-removeosaccount-f.md#removeosaccount) | Removes an OS account by ID. |
 | [setDomainAccountPolicy](arkts-mdm-accountmanager-setdomainaccountpolicy-f.md#setdomainaccountpolicy) | Sets the domain account policy. |
 

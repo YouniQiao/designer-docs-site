@@ -68,6 +68,11 @@ async function claimInterface() {
   }
   let interfaces: usbManager.USBInterface = device.configs?.[0]?.interfaces?.[0];
   let ret: number = usbManager.claimInterface(devicepipe, interfaces);
+  if (ret !== 0) {
+    console.error(`claim interface failed`);
+    usbManager.closePipe(devicepipe);
+    return;
+  }
   console.info(`claimInterface = ${ret}`);
   ret = usbManager.releaseInterface(devicepipe, interfaces);
   console.info(`releaseInterface = ${ret}`);

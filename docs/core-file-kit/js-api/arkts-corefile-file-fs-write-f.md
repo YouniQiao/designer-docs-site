@@ -6,7 +6,6 @@
 import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventListener, TaskSignal, WriteOptions, ListFileExtOptions, DfsListeners, Filter, ReadOptions, ListFileOptions, WatchEvent, FileFilter, ConflictFiles } from '@kit.CoreFileKit';
 ```
 
-<a id="write"></a>
 ## write
 
 ```TypeScript
@@ -23,15 +22,7 @@ Writes data into a file. This API uses a promise to return the result.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
-<!--Device-unnamed-declare function write(
-  fd: number,
-  buffer: ArrayBuffer | string,
-  options?: WriteOptions
-): Promise<number>--><!--Device-unnamed-declare function write(
-  fd: number,
-  buffer: ArrayBuffer | string,
-  options?: WriteOptions
-): Promise<number>-End-->
+<!--Device-unnamed-declare function write(  fd: number,  buffer: ArrayBuffer | string,  options?: WriteOptions): Promise<number>--><!--Device-unnamed-declare function write(  fd: number,  buffer: ArrayBuffer | string,  options?: WriteOptions): Promise<number>-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 
@@ -67,7 +58,6 @@ Writes data into a file. This API uses a promise to return the result.
 | 13900042 | Unknown error |
 
 
-<a id="write-1"></a>
 ## write
 
 ```TypeScript
@@ -110,7 +100,6 @@ Writes data to a file. This API uses an asynchronous callback to return the resu
 | 13900042 | Unknown error |
 
 
-<a id="write-2"></a>
 ## write
 
 ```TypeScript
@@ -128,17 +117,7 @@ Writes data to a file. This API uses an asynchronous callback to return the resu
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
-<!--Device-unnamed-declare function write(
-  fd: number,
-  buffer: ArrayBuffer | string,
-  options: WriteOptions,
-  callback: AsyncCallback<number>
-): void--><!--Device-unnamed-declare function write(
-  fd: number,
-  buffer: ArrayBuffer | string,
-  options: WriteOptions,
-  callback: AsyncCallback<number>
-): void-End-->
+<!--Device-unnamed-declare function write(  fd: number,  buffer: ArrayBuffer | string,  options: WriteOptions,  callback: AsyncCallback<number>): void--><!--Device-unnamed-declare function write(  fd: number,  buffer: ArrayBuffer | string,  options: WriteOptions,  callback: AsyncCallback<number>): void-End-->
 
 **System capability:** SystemCapability.FileManagement.File.FileIO
 

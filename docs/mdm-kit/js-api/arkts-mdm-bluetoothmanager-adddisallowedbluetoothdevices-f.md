@@ -6,7 +6,6 @@
 import { bluetoothManager } from '@kit.MDMKit';
 ```
 
-<a id="adddisallowedbluetoothdevices"></a>
 ## addDisallowedBluetoothDevices
 
 ```TypeScript
@@ -17,7 +16,7 @@ Adds Bluetooth devices to the blocklist. The current device cannot connect to th
 
 A policy conflict is reported when this API is called in the following scenarios:
 
-1. Bluetooth has been disabled by calling [setDisallowedPolicy](arkts-mdm-restrictions-setdisallowedpolicy-f.md#setdisallowedpolicy-1).You can resolve the conflict by enabling the Bluetooth through [setDisallowedPolicy](arkts-mdm-restrictions-setdisallowedpolicy-f.md#setdisallowedpolicy-1).2. Allowed Bluetooth devices have been added by calling [addAllowedBluetoothDevices](arkts-mdm-bluetoothmanager-addallowedbluetoothdevices-f.md#addallowedbluetoothdevices-1).You can resolve the conflict by removing allowed Bluetooth devices through [removeAllowedBluetoothDevices](arkts-mdm-bluetoothmanager-removeallowedbluetoothdevices-f.md#removeallowedbluetoothdevices-1).
+1. Bluetooth has been disabled by calling [setDisallowedPolicy](arkts-mdm-restrictions-setdisallowedpolicy-f.md#setdisallowedpolicy).You can resolve the conflict by enabling the Bluetooth through [setDisallowedPolicy](arkts-mdm-restrictions-setdisallowedpolicy-f.md#setdisallowedpolicy).2. Allowed Bluetooth devices have been added by calling [addAllowedBluetoothDevices](arkts-mdm-bluetoothmanager-addallowedbluetoothdevices-f.md#addallowedbluetoothdevices).You can resolve the conflict by removing allowed Bluetooth devices through [removeAllowedBluetoothDevices](arkts-mdm-bluetoothmanager-removeallowedbluetoothdevices-f.md#removeallowedbluetoothdevices).
 
 **Since:** 20
 

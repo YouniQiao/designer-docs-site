@@ -36,7 +36,7 @@ Since API version 10:
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| min | number \| string | No | Minimum size of the **Blank** component in the container along the main axis.<br>Default value: **0**<br>If the type is number, the default unit is vp. If the type is string, thepixel unit can be explicitly specified, for example, '**10px**'. If the unit is not specified,the default unit vp is used, in which case **'10'** is equivalent to **10vp**.<br>Invalid values are treated asthe default value.<br>**NOTE**<br>This parameter cannot be set in percentage. If the value is negative, thedefault value is used. If the minimum size is larger than the available space of the container, it is used asthe component size, and the component extends beyond the container. |
+| min | number \| string | No | Minimum size of the **Blank** component in the container along the main axis.<br> Default value: **0**<br>If the type is number, the default unit is vp. If the type is string, the pixel unit can be explicitly specified, for example, '**10px**'. If the unit is not specified, the default unit vp is used, in which case **'10'** is equivalent to **10vp**.<br>Invalid values are treated as the default value.<br>**NOTE**<br>This parameter cannot be set in percentage. If the value is negative, the default value is used. If the minimum size is larger than the available space of the container, it is used as the component size, and the component extends beyond the container.  |
 
 ## Summary
 

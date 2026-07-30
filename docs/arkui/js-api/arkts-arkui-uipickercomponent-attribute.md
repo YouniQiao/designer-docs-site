@@ -12,7 +12,6 @@ In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-ap
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="canloop"></a>
 ## canLoop
 
 ```TypeScript
@@ -42,7 +41,6 @@ Default value: true If the value of isLoop is undefined, the default value is us
 | --- | --- | --- | --- |
 | isLoop | [Optional](arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | Whether loop scrolling is enabled. |
 
-<a id="displayeditemcount"></a>
 ## displayedItemCount
 
 ```TypeScript
@@ -67,7 +65,6 @@ Sets the total number of visible items.
 | --- | --- | --- | --- |
 | count | [Optional](arkts-arkui-optional-t.md)&lt;number&gt; | Yes | The total number of visible items. |
 
-<a id="enablehapticfeedback"></a>
 ## enableHapticFeedback
 
 ```TypeScript
@@ -99,7 +96,6 @@ Default value: true If the value of enable is undefined, the default value is us
 | --- | --- | --- | --- |
 | enable | [Optional](arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | Whether to enable haptic feedback. |
 
-<a id="itemheight"></a>
 ## itemHeight
 
 ```TypeScript
@@ -124,7 +120,6 @@ Sets the height of each item.
 | --- | --- | --- | --- |
 | height | [Optional](arkts-arkui-optional-t.md)&lt;LengthMetrics&gt; | Yes | Height of each item. |
 
-<a id="onchange"></a>
 ## onChange
 
 ```TypeScript
@@ -157,7 +152,6 @@ NOTE
 | --- | --- | --- | --- |
 | callback | [Optional](arkts-arkui-optional-t.md)&lt;OnUIPickerComponentCallback&gt; | Yes | Callback triggered when the selected item changes. |
 
-<a id="onscrollstop"></a>
 ## onScrollStop
 
 ```TypeScript
@@ -184,7 +178,6 @@ If callback is set to undefined, the callback is not used.
 | --- | --- | --- | --- |
 | callback | [Optional](arkts-arkui-optional-t.md)&lt;OnUIPickerComponentCallback&gt; | Yes | Callback triggered when the picker scrolling stops. |
 
-<a id="selectionindicator"></a>
 ## selectionIndicator
 
 ```TypeScript

@@ -63,7 +63,7 @@ Sets the surface ID of the face preview page during face enrollment. This API mu
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| surfaceId | string | Yes | ID of the surface held by [XComponent](../../apis-arkui/arkts-components/arkts-arkui-xcomponentcontroller-c.md#getxcomponentsurfaceid). This ID is used to display the face preview page during face enrollment. It must be obtained using the **getXComponentSurfaceId** method of **XComponentController**. |
+| surfaceId | string | Yes | ID of the surface held by [XComponent](../../apis-arkui/arkts-components/arkts-arkui-xcomponent-i).This ID is used to display the face preview page during face enrollment.<br>**Note:** A valid **surfaceId** must be obtained through the [getXComponentSurfaceId](../../apis-arkui/arkts-components/arkts-arkui-xcomponentcontroller-c.md#getxcomponentsurfaceid) method after **XComponent** initialization. An invalid **surfaceId** may cause the preview page to fail to display or the API call to fail. |
 
 **Error codes:**
 

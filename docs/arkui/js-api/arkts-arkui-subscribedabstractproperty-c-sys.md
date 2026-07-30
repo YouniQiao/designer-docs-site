@@ -1,6 +1,6 @@
 # SubscribedAbstractProperty (System API)
 
-Represents a synchronized property from [AppStorage](docroot://ui/state-management/arkts-appstorage.md) or [LocalStorage](docroot://ui/state-management/arkts-localstorage.md).
+Represents a synchronized property from [AppStorage](../../../ui/state-management/arkts-appstorage.md) or [LocalStorage](../../../ui/state-management/arkts-localstorage.md).
 
 **Since:** 9
 
@@ -10,7 +10,6 @@ Represents a synchronized property from [AppStorage](docroot://ui/state-manageme
 
 **System API:** This is a system API.
 
-<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -34,33 +33,7 @@ Constructor.
 
 **Since:** 7
 
-<!--Device-SubscribedAbstractProperty-constructor(
-    /**
-     * Subscriber IPropertySubscriber.
-     *
-     **** 
-     */
-    subscribeMe?: IPropertySubscriber,
-    /**
-     * Subscriber info.
-     *
-     **** 
-     */
-    info?: string,
-  )--><!--Device-SubscribedAbstractProperty-constructor(
-    /**
-     * Subscriber IPropertySubscriber.
-     *
-     **** 
-     */
-    subscribeMe?: IPropertySubscriber,
-    /**
-     * Subscriber info.
-     *
-     **** 
-     */
-    info?: string,
-  )-End-->
+<!--Device-SubscribedAbstractProperty-constructor(    /**     * Subscriber IPropertySubscriber.     *     ****      */    subscribeMe?: IPropertySubscriber,    /**     * Subscriber info.     *     ****      */    info?: string,  )--><!--Device-SubscribedAbstractProperty-constructor(    /**     * Subscriber IPropertySubscriber.     *     ****      */    subscribeMe?: IPropertySubscriber,    /**     * Subscriber info.     *     ****      */    info?: string,  )-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -73,7 +46,6 @@ Constructor.
 | subscribeMe | [IPropertySubscriber](arkts-arkui-ipropertysubscriber-i-sys.md) | No | Variable properties. |
 | info | string | No | Variable information. |
 
-<a id="createonewaysync"></a>
 ## createOneWaySync
 
 ```TypeScript
@@ -103,7 +75,6 @@ Creates one-way synchronization.
 | --- | --- |
 | [SyncedPropertyOneWay](arkts-arkui-syncedpropertyoneway-c-sys.md)&lt;T&gt; | One-way synchronized property. |
 
-<a id="createtwowaysync"></a>
 ## createTwoWaySync
 
 ```TypeScript
@@ -133,7 +104,6 @@ Creates two-way synchronization.
 | --- | --- |
 | [SyncedPropertyTwoWay](arkts-arkui-syncedpropertytwoway-c-sys.md)&lt;T&gt; | Two-way synchronized property. |
 
-<a id="id"></a>
 ## id
 
 ```TypeScript
@@ -156,7 +126,6 @@ Called when the subscriber ID is entered.
 | --- | --- |
 | number | @syscap SystemCapability.ArkUI.ArkUI.Full@systemapi@FaAndStageModel |
 
-<a id="notifyhaschanged"></a>
 ## notifyHasChanged
 
 ```TypeScript
@@ -179,7 +148,6 @@ Notifies subscribers that the value has changed.
 | --- | --- | --- | --- |
 | newValue | T | Yes | New value after the change. |
 
-<a id="notifypropertyread"></a>
 ## notifyPropertyRead
 
 ```TypeScript
@@ -196,7 +164,6 @@ Notifies subscribers that the property has been read.
 
 **System API:** This is a system API.
 
-<a id="numberofsubscrbers"></a>
 ## numberOfSubscrbers
 
 ```TypeScript
@@ -219,7 +186,6 @@ Obtains the number of subscribers.
 | --- | --- |
 | number | Number of subscribers. |
 
-<a id="unlinksuscriber"></a>
 ## unlinkSuscriber
 
 ```TypeScript

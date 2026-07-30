@@ -1,7 +1,6 @@
 # ChipOptions
 
 Defines the type and style parameters of the chip.
-
 > **NOTE**  
 >  
 > 1. When **suffixSymbol** is provided with an argument, **suffixIcon** and **allowClose** will not take effect. If  
@@ -588,7 +587,7 @@ Default value: **ChipSize.NORMAL**
 
 The SizeOptions type parameter does not support percentage values. If an invalid value is provided, the system will use the default value instead.
 
-Note: [Aging-friendly design implementation](docroot://ui/arkui-support-for-aging-adaptation.md) does not take effect when size specifies specific width and height, except when size is set to { height: 0, width: 0 }.
+Note: [Aging-friendly design implementation](../../../ui/arkui-support-for-aging-adaptation.md) does not take effect when size specifies specific width and height, except when size is set to { height: 0, width: 0 }.
 
 **Type:** ChipSize \| SizeOptions
 

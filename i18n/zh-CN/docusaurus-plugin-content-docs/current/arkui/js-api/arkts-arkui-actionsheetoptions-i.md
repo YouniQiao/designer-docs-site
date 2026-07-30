@@ -249,7 +249,7 @@ than its height, the dialog box may not display as expected.
 cancel?: VoidCallback
 ```
 
-点击遮障层关闭dialog时的回调。
+点击遮障层关闭弹窗时的回调。
 
 **类型：** VoidCallback
 
@@ -267,7 +267,7 @@ cancel?: VoidCallback
 confirm?: ActionSheetButtonOptions
 ```
 
-确认Button的使能状态、默认焦点、按钮风格、文本内容和点击回调。在弹窗获焦且未进行tab键走焦时，该按钮默认响应Enter键。多重弹窗情况下，可自动获焦并连续响应。默认响应Enter键能力在defaultFocus为true时不生效。
+确认Button的使能状态、默认焦点、按钮风格、文本内容和点击回调。
 
 **类型：** ActionSheetButtonOptions
 
@@ -780,7 +780,7 @@ sheets: Array<SheetInfo>
 showInSubWindow?: boolean
 ```
 
-某弹窗需要显示在主窗口之外时，是否在子窗口显示此弹窗。值为true表示在子窗口显示弹窗。
+当弹窗需要显示在主窗口之外时，是否在子窗口显示此弹窗。值为true表示在子窗口显示弹窗。
 
 默认值：false，弹窗显示在应用内，而非独立子窗口。
 

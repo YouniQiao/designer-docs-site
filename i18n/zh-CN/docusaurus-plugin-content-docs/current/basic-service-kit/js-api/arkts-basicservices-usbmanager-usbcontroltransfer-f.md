@@ -44,6 +44,7 @@ function usbControlTransfer(pipe: USBDevicePipe, requestparam: USBDeviceRequestP
 **示例：**
 
 ```TypeScript
+import {BusinessError} from '@kit.BasicServicesKit';
 // 控制传输参数：根据USB协议规范、设备描述符或设备规格文档设置各字段值
 // bmRequestType：请求控制类型，常见取值0x00(标准设备请求)、0x01(类请求)、0x02(厂商请求)
 // bRequest：具体控制请求命令（如获取描述符、设置地址等）

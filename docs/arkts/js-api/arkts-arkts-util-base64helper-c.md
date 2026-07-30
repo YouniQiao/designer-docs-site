@@ -14,7 +14,6 @@ Provides encoding and decoding for Base64 and Base64URL. The Base64 encoding tab
 import { util } from '@kit.ArkTS';
 ```
 
-<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -31,7 +30,6 @@ A constructor used to create a **Base64Helper** instance.
 
 **System capability:** SystemCapability.Utils.Lang
 
-<a id="decode"></a>
 ## decode
 
 ```TypeScript
@@ -61,7 +59,6 @@ Decodes the input content into a Uint8Array object. This API uses a promise to r
 | --- | --- |
 | Promise&lt;Uint8Array&gt; | Promise used to return the Uint8Array object obtained. |
 
-<a id="decodesync"></a>
 ## decodeSync
 
 ```TypeScript
@@ -91,7 +88,6 @@ Decodes a string into a Uint8Array object. This API returns the result synchrono
 | --- | --- |
 | Uint8Array | Uint8Array object obtained. |
 
-<a id="encode"></a>
 ## encode
 
 ```TypeScript
@@ -121,7 +117,6 @@ Encodes the input content into a Uint8Array object. This API uses a promise to r
 | --- | --- |
 | Promise&lt;Uint8Array&gt; | Promise used to return the Uint8Array object obtained. |
 
-<a id="encodesync"></a>
 ## encodeSync
 
 ```TypeScript
@@ -151,7 +146,6 @@ Encodes the input content into a Uint8Array object.
 | --- | --- |
 | Uint8Array | Uint8Array object obtained. |
 
-<a id="encodetostring"></a>
 ## encodeToString
 
 ```TypeScript
@@ -181,7 +175,6 @@ Encodes the input content into a string. This API uses a promise to return the r
 | --- | --- |
 | Promise&lt;string&gt; | Promise used to return the string obtained. |
 
-<a id="encodetostringsync"></a>
 ## encodeToStringSync
 
 ```TypeScript

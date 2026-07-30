@@ -1,11 +1,10 @@
 # TransitionOptions
 
 Defines the transition effect by setting parameters in the struct.
-
 > **NOTE**  
 >  
 > 1. When set to a value of the **TransitionOptions** type, the **transition** attribute must work with  
-> [animateTo](docroot://reference/apis-arkui/arkts-apis-uicontext-uicontext.md#animateto). The animation duration,  
+> [animateTo](../../../reference/apis-arkui/arkts-apis-uicontext-uicontext.md#animateto). The animation duration,  
 > curve, and delay follow the settings in **animateTo**.  
 >  
 > 2. If the value of the **TransitionOptions** type has only **type** specified, the transition effect will take on  
@@ -43,7 +42,7 @@ If the value specified is less than 0, the value **0** is used. If the value spe
 
 **Deprecated since:** 10
 
-**Substitutes:** [opacity](arkts-arkui-transitioneffect-c.md#opacity-1)
+**Substitutes:** [opacity](arkts-arkui-transitioneffect-c.md#opacity)
 
 <!--Device-TransitionOptions-opacity?: number--><!--Device-TransitionOptions-opacity?: number-End-->
 
@@ -69,7 +68,7 @@ Rotation of the component during transition, which is the value of the start poi
 
 **Deprecated since:** 10
 
-**Substitutes:** [rotate](arkts-arkui-transitioneffect-c.md#rotate-1)
+**Substitutes:** [rotate](arkts-arkui-transitioneffect-c.md#rotate)
 
 <!--Device-TransitionOptions-rotate?: RotateOptions--><!--Device-TransitionOptions-rotate?: RotateOptions-End-->
 
@@ -99,7 +98,7 @@ If **centerX** or **centerY** is set to an invalid string (for example, **"illeg
 
 **Deprecated since:** 10
 
-**Substitutes:** [scale](arkts-arkui-transitioneffect-c.md#scale-1)
+**Substitutes:** [scale](arkts-arkui-transitioneffect-c.md#scale)
 
 <!--Device-TransitionOptions-scale?: ScaleOptions--><!--Device-TransitionOptions-scale?: ScaleOptions-End-->
 
@@ -125,7 +124,7 @@ Translation of the component during transition, which is the value of the start 
 
 **Deprecated since:** 10
 
-**Substitutes:** [translate](arkts-arkui-transitioneffect-c.md#translate-1)
+**Substitutes:** [translate](arkts-arkui-transitioneffect-c.md#translate)
 
 <!--Device-TransitionOptions-translate?: TranslateOptions--><!--Device-TransitionOptions-translate?: TranslateOptions-End-->
 

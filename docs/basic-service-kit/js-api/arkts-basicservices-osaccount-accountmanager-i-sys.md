@@ -14,7 +14,6 @@ Provides APIs for managing OS accounts.
 import { osAccount } from '@kit.BasicServicesKit';
 ```
 
-<a id="activateosaccount"></a>
 ## activateOsAccount
 
 ```TypeScript
@@ -78,7 +77,6 @@ try {
 
 ```
 
-<a id="activateosaccount-1"></a>
 ## activateOsAccount
 
 ```TypeScript
@@ -145,7 +143,6 @@ try {
 
 ```
 
-<a id="activateosaccount-2"></a>
 ## activateOsAccount
 
 ```TypeScript
@@ -215,7 +212,6 @@ try {
 
 ```
 
-<a id="binddomainaccount"></a>
 ## bindDomainAccount
 
 ```TypeScript
@@ -284,7 +280,6 @@ try {
 
 ```
 
-<a id="createosaccount"></a>
 ## createOsAccount
 
 ```TypeScript
@@ -348,7 +343,6 @@ try {
 
 ```
 
-<a id="createosaccount-1"></a>
 ## createOsAccount
 
 ```TypeScript
@@ -422,7 +416,6 @@ try {
 
 ```
 
-<a id="createosaccountfordomain"></a>
 ## createOsAccountForDomain
 
 ```TypeScript
@@ -439,15 +432,7 @@ Creates an OS account and associates it with the specified domain account. This 
 
 **Required permissions:** ohos.permission.MANAGE_LOCAL_ACCOUNTS
 
-<!--Device-AccountManager-createOsAccountForDomain(
-      type: OsAccountType,
-      domainInfo: DomainAccountInfo,
-      callback: AsyncCallback<OsAccountInfo>
-    ): void--><!--Device-AccountManager-createOsAccountForDomain(
-      type: OsAccountType,
-      domainInfo: DomainAccountInfo,
-      callback: AsyncCallback<OsAccountInfo>
-    ): void-End-->
+<!--Device-AccountManager-createOsAccountForDomain(      type: OsAccountType,      domainInfo: DomainAccountInfo,      callback: AsyncCallback<OsAccountInfo>    ): void--><!--Device-AccountManager-createOsAccountForDomain(      type: OsAccountType,      domainInfo: DomainAccountInfo,      callback: AsyncCallback<OsAccountInfo>    ): void-End-->
 
 **System capability:** SystemCapability.Account.OsAccount
 
@@ -501,7 +486,6 @@ try {
 
 ```
 
-<a id="createosaccountfordomain-1"></a>
 ## createOsAccountForDomain
 
 ```TypeScript
@@ -576,7 +560,6 @@ try {
 
 ```
 
-<a id="deactivateosaccount"></a>
 ## deactivateOsAccount
 
 ```TypeScript
@@ -641,7 +624,6 @@ try {
 
 ```
 
-<a id="getbundleidforuid"></a>
 ## getBundleIdForUid
 
 ```TypeScript
@@ -697,7 +679,6 @@ try {
 
 ```
 
-<a id="getbundleidforuid-1"></a>
 ## getBundleIdForUid
 
 ```TypeScript
@@ -755,7 +736,6 @@ try {
 
 ```
 
-<a id="getbundleidforuidsync"></a>
 ## getBundleIdForUidSync
 
 ```TypeScript
@@ -809,7 +789,6 @@ try {
 
 ```
 
-<a id="getenabledosaccountconstraints"></a>
 ## getEnabledOsAccountConstraints
 
 ```TypeScript
@@ -838,7 +817,7 @@ Obtains all the enabled constraints of an OS account. This API uses a promise to
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return all the enabled [constraints](docroot://reference/apis-basic-services-kit/js-apis-osAccount.md#constraints)of the OS account. |
+| Promise&lt;Array&lt;string&gt;&gt; | Promise used to return all the enabled [constraints](../../../reference/apis-basic-services-kit/js-apis-osAccount.md#constraints)of the OS account. |
 
 **Error codes:**
 
@@ -872,7 +851,6 @@ try {
 
 ```
 
-<a id="getforegroundosaccountdisplayid"></a>
 ## getForegroundOsAccountDisplayId
 
 ```TypeScript
@@ -932,7 +910,6 @@ try {
 
 ```
 
-<a id="getforegroundosaccountlocalid"></a>
 ## getForegroundOsAccountLocalId
 
 ```TypeScript
@@ -992,7 +969,6 @@ try {
 
 ```
 
-<a id="getosaccountconstraintsourcetypes"></a>
 ## getOsAccountConstraintSourceTypes
 
 ```TypeScript
@@ -1016,8 +992,8 @@ Obtains the constraint source information of an OS account. This API uses an asy
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | localId | number | Yes | ID of the target OS account. |
-| constraint | string | Yes | [Constraint](docroot://reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) whose source information is to be obtained. |
-| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;ConstraintSourceTypeInfo&gt;&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **null** and **data** is the [constraint](docroot://reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) source information obtained. Otherwise, **err** is an error object. |
+| constraint | string | Yes | [Constraint](../../../reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) whose source information is to be obtained. |
+| callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;Array&lt;ConstraintSourceTypeInfo&gt;&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **null** and **data** is the [constraint](../../../reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) source information obtained. Otherwise, **err** is an error object. |
 
 **Error codes:**
 
@@ -1052,7 +1028,6 @@ try {
 
 ```
 
-<a id="getosaccountconstraintsourcetypes-1"></a>
 ## getOsAccountConstraintSourceTypes
 
 ```TypeScript
@@ -1076,13 +1051,13 @@ Obtains the constraint source information of an OS account. This API uses a prom
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | localId | number | Yes | ID of the target OS account. |
-| constraint | string | Yes | [Constraint](docroot://reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) whose source information is to be obtained. |
+| constraint | string | Yes | [Constraint](../../../reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) whose source information is to be obtained. |
 
 **Return value:**
 
 | Type | Description |
 | --- | --- |
-| Promise&lt;Array&lt;ConstraintSourceTypeInfo&gt;&gt; | Promise used to return the source information of the specified [constraint](docroot://reference/apis-basic-services-kit/js-apis-osAccount.md#constraints). |
+| Promise&lt;Array&lt;ConstraintSourceTypeInfo&gt;&gt; | Promise used to return the source information of the specified [constraint](../../../reference/apis-basic-services-kit/js-apis-osAccount.md#constraints). |
 
 **Error codes:**
 
@@ -1115,7 +1090,6 @@ try {
 
 ```
 
-<a id="getosaccountprofilephoto"></a>
 ## getOsAccountProfilePhoto
 
 ```TypeScript
@@ -1176,7 +1150,6 @@ try {
 
 ```
 
-<a id="getosaccountprofilephoto-1"></a>
 ## getOsAccountProfilePhoto
 
 ```TypeScript
@@ -1240,7 +1213,6 @@ try {
 
 ```
 
-<a id="getosaccounttype"></a>
 ## getOsAccountType
 
 ```TypeScript
@@ -1301,7 +1273,6 @@ try {
 
 ```
 
-<a id="ismainosaccount"></a>
 ## isMainOsAccount
 
 ```TypeScript
@@ -1356,7 +1327,6 @@ try {
 
 ```
 
-<a id="ismainosaccount-1"></a>
 ## isMainOsAccount
 
 ```TypeScript
@@ -1408,7 +1378,6 @@ try {
 
 ```
 
-<a id="isosaccountactivated"></a>
 ## isOsAccountActivated
 
 ```TypeScript
@@ -1471,7 +1440,6 @@ try {
 
 ```
 
-<a id="isosaccountconstraintenabled"></a>
 ## isOsAccountConstraintEnabled
 
 ```TypeScript
@@ -1495,7 +1463,7 @@ Checks whether a constraint is enabled for an OS account. This API uses a promis
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | localId | number | Yes | ID of the target OS account. |
-| constraint | string | Yes | [Constraint](docroot://reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) to check. |
+| constraint | string | Yes | [Constraint](../../../reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) to check. |
 
 **Return value:**
 
@@ -1536,7 +1504,6 @@ try {
 
 ```
 
-<a id="isosaccountunlocked"></a>
 ## isOsAccountUnlocked
 
 ```TypeScript
@@ -1597,7 +1564,6 @@ try {
 
 ```
 
-<a id="off"></a>
 ## off('activate' | 'activating')
 
 ```TypeScript
@@ -1654,7 +1620,6 @@ try {
 
 ```
 
-<a id="off-1"></a>
 ## off('activate' | 'activating')
 
 ```TypeScript
@@ -1711,7 +1676,6 @@ try {
 
 ```
 
-<a id="off-2"></a>
 ## off('switching')
 
 ```TypeScript
@@ -1763,7 +1727,6 @@ try {
 
 ```
 
-<a id="off-3"></a>
 ## off('switched')
 
 ```TypeScript
@@ -1815,7 +1778,6 @@ try {
 
 ```
 
-<a id="offconstraintchanged"></a>
 ## offConstraintChanged
 
 ```TypeScript
@@ -1872,7 +1834,6 @@ try {
 
 ```
 
-<a id="on"></a>
 ## on('activate' | 'activating')
 
 ```TypeScript
@@ -1929,7 +1890,6 @@ try {
 
 ```
 
-<a id="on-1"></a>
 ## on('activate' | 'activating')
 
 ```TypeScript
@@ -1986,7 +1946,6 @@ try {
 
 ```
 
-<a id="on-2"></a>
 ## on('switching')
 
 ```TypeScript
@@ -2043,7 +2002,6 @@ try {
 
 ```
 
-<a id="on-3"></a>
 ## on('switched')
 
 ```TypeScript
@@ -2100,7 +2058,6 @@ try {
 
 ```
 
-<a id="onconstraintchanged"></a>
 ## onConstraintChanged
 
 ```TypeScript
@@ -2121,7 +2078,7 @@ Subscribes to one or more constraint change events of the OS account to which th
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| constraints | string[] | Yes | List of [constraints](docroot://reference/apis-basic-services-kit/js-apis-osAccount.md#constraints)to be subscribed to. |
+| constraints | string[] | Yes | List of [constraints](../../../reference/apis-basic-services-kit/js-apis-osAccount.md#constraints)to be subscribed to. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ConstraintChangeInfo&gt; | Yes | Callback used to listen for the constraint change events. |
 
 **Error codes:**
@@ -2152,7 +2109,6 @@ try {
 
 ```
 
-<a id="queryallcreatedosaccounts"></a>
 ## queryAllCreatedOsAccounts
 
 ```TypeScript
@@ -2207,7 +2163,6 @@ try {
 
 ```
 
-<a id="queryallcreatedosaccounts-1"></a>
 ## queryAllCreatedOsAccounts
 
 ```TypeScript
@@ -2259,7 +2214,6 @@ try {
 
 ```
 
-<a id="querymaxloggedinosaccountnumber"></a>
 ## queryMaxLoggedInOsAccountNumber
 
 ```TypeScript
@@ -2308,7 +2262,6 @@ try {
 
 ```
 
-<a id="querymaxosaccountnumber"></a>
 ## queryMaxOsAccountNumber
 
 ```TypeScript
@@ -2360,7 +2313,6 @@ try {
 
 ```
 
-<a id="querymaxosaccountnumber-1"></a>
 ## queryMaxOsAccountNumber
 
 ```TypeScript
@@ -2409,7 +2361,6 @@ try {
 
 ```
 
-<a id="queryosaccount"></a>
 ## queryOsAccount
 
 ```TypeScript
@@ -2461,7 +2412,6 @@ try {
 
 ```
 
-<a id="queryosaccountbyid"></a>
 ## queryOsAccountById
 
 ```TypeScript
@@ -2522,7 +2472,6 @@ try {
 
 ```
 
-<a id="queryosaccountbyid-1"></a>
 ## queryOsAccountById
 
 ```TypeScript
@@ -2586,7 +2535,6 @@ try {
 
 ```
 
-<a id="removeosaccount"></a>
 ## removeOsAccount
 
 ```TypeScript
@@ -2650,7 +2598,6 @@ try {
 
 ```
 
-<a id="removeosaccount-1"></a>
 ## removeOsAccount
 
 ```TypeScript
@@ -2717,7 +2664,6 @@ try {
 
 ```
 
-<a id="removeosaccount-2"></a>
 ## removeOsAccount
 
 ```TypeScript
@@ -2789,7 +2735,6 @@ try {
 
 ```
 
-<a id="setosaccountconstraints"></a>
 ## setOsAccountConstraints
 
 ```TypeScript
@@ -2813,7 +2758,7 @@ Sets or removes constraints for an OS account. This API uses an asynchronous cal
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | localId | number | Yes | ID of the target OS account. |
-| constraints | Array&lt;string&gt; | Yes | [Constraints](docroot://reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) to set or remove. |
+| constraints | Array&lt;string&gt; | Yes | [Constraints](../../../reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) to set or remove. |
 | enable | boolean | Yes | Whether to set or remove constraints. The value **true** means to set constraints, and **false** means to remove constraints. |
 | callback | [AsyncCallback](arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. If the operation is successful, **err** is **null**. Otherwise, **err** is an error object. |
 
@@ -2854,7 +2799,6 @@ try {
 
 ```
 
-<a id="setosaccountconstraints-1"></a>
 ## setOsAccountConstraints
 
 ```TypeScript
@@ -2878,7 +2822,7 @@ Sets or removes constraints for an OS account. This API uses a promise to return
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | localId | number | Yes | ID of the target OS account. |
-| constraints | Array&lt;string&gt; | Yes | [Constraints](docroot://reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) to set or remove. |
+| constraints | Array&lt;string&gt; | Yes | [Constraints](../../../reference/apis-basic-services-kit/js-apis-osAccount.md#constraints) to set or remove. |
 | enable | boolean | Yes | Set or remove constraints. The value **true** means to set constraints,and **false** means to remove constraints. |
 
 **Return value:**
@@ -2921,7 +2865,6 @@ try {
 
 ```
 
-<a id="setosaccountname"></a>
 ## setOsAccountName
 
 ```TypeScript
@@ -2985,7 +2928,6 @@ try {
 
 ```
 
-<a id="setosaccountname-1"></a>
 ## setOsAccountName
 
 ```TypeScript
@@ -3052,7 +2994,6 @@ try {
 
 ```
 
-<a id="setosaccountprofilephoto"></a>
 ## setOsAccountProfilePhoto
 
 ```TypeScript
@@ -3119,7 +3060,6 @@ try {
 
 ```
 
-<a id="setosaccountprofilephoto-1"></a>
 ## setOsAccountProfilePhoto
 
 ```TypeScript
@@ -3189,7 +3129,6 @@ try {
 
 ```
 
-<a id="setosaccounttype"></a>
 ## setOsAccountType
 
 ```TypeScript

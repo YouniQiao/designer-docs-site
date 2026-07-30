@@ -1,13 +1,12 @@
 # Set
 
 A non-linear data structure.
-
 > **NOTE**  
 >  
 > - This module can be imported only to ArkTS files (with the file name extension .ets).  
 > This section uses the following to identify the use of generics:
 
-- T: type, which can be any of the [sendable data types](docroot://arkts-utils/arkts-sendable.md#sendable-data-types).**Decorator**: \@Sendable
+- T: type, which can be any of the [sendable data types](../../../arkts-utils/arkts-sendable.md#sendable-data-types).**Decorator**: \@Sendable
 
 **Since:** 12
 
@@ -23,7 +22,6 @@ A non-linear data structure.
 import { collections } from '@kit.ArkTS';
 ```
 
-<a id="[symbol.iterator]"></a>
 ## [Symbol.iterator]
 
 ```TypeScript
@@ -52,7 +50,6 @@ Returns an iterator, each item of which is a JavaScript object.NOTE:This API can
 | --- | --- |
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The Symbol.iterator method cannot be bound. |
 
-<a id="add"></a>
 ## add
 
 ```TypeScript
@@ -88,7 +85,6 @@ Checks whether a value exists in this ArkTS set, and if not, adds the value to t
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The add method cannot be bound with non-sendable. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
-<a id="clear"></a>
 ## clear
 
 ```TypeScript
@@ -112,7 +108,6 @@ Removes all elements from this ArkTS set.
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The clear method cannot be bound with non-sendable. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
-<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -141,7 +136,6 @@ A constructor used to create an ArkTS set.
 | --- | --- |
 | [10200012](../errorcode-utils.md#10200012-constructor-calling-failure) | The ArkTS Set's constructor cannot be directly invoked. |
 
-<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -170,7 +164,6 @@ A constructor used to create an ArkTS set.
 | --- | --- |
 | [10200012](../errorcode-utils.md#10200012-constructor-calling-failure) | The ArkTS Set's constructor cannot be directly invoked. |
 
-<a id="delete"></a>
 ## delete
 
 ```TypeScript
@@ -206,7 +199,6 @@ Deletes an element from this ArkTS set.
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The delete method cannot be bound with non-sendable. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
-<a id="entries"></a>
 ## entries
 
 ```TypeScript
@@ -236,7 +228,6 @@ Returns a set iterator object that contains the key-value pair of each element i
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The entries method cannot be bound with non-sendable. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
-<a id="foreach"></a>
 ## forEach
 
 ```TypeScript
@@ -266,7 +257,6 @@ Calls a callback function for each key-value pair in this ArkTS set.
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The forEach method cannot be bound with non-sendable. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
-<a id="has"></a>
 ## has
 
 ```TypeScript
@@ -302,7 +292,6 @@ Checks whether a value exists in this ArkTS set.
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The has method cannot be bound with non-sendable. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
-<a id="keys"></a>
 ## keys
 
 ```TypeScript
@@ -332,7 +321,6 @@ Returns a set iterator object that contains the key of each element in this ArkT
 | [10200011](../errorcode-utils.md#10200011-passed-thisobject-is-not-an-instance-of-the-containers-class) | The keys method cannot be bound with non-sendable. |
 | [10200201](../errorcode-utils.md#10200201-concurrent-modification-error) | Concurrent modification error. |
 
-<a id="values"></a>
 ## values
 
 ```TypeScript

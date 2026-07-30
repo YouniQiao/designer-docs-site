@@ -8,7 +8,6 @@ Provides coordinate information for tap gestures.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="getcurrentlocalposition"></a>
 ## getCurrentLocalPosition
 
 ```TypeScript

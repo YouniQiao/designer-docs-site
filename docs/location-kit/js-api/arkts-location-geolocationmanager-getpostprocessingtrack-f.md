@@ -6,7 +6,6 @@
 import { geoLocationManager } from '@kit.LocationKit';
 ```
 
-<a id="getpostprocessingtrack"></a>
 ## getPostProcessingTrack
 
 ```TypeScript

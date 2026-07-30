@@ -12,20 +12,20 @@ import { RecentPhotoComponent, RecentPhotoCheckResultCallback, RecentPhotoCheckI
 
 | Name | Description |
 | --- | --- |
-| [RecentPhotoInfo](arkts-medialibrary-recentphotoinfo-c.md) | Recent photo info |
-| [RecentPhotoOptions](arkts-medialibrary-recentphotooptions-c.md) | RecentPhotoOptions Object |
+| [RecentPhotoInfo](arkts-medialibrary-file-recentphotocomponent-recentphotoinfo-c.md) | Recent photo info |
+| [RecentPhotoOptions](arkts-medialibrary-file-recentphotocomponent-recentphotooptions-c.md) | RecentPhotoOptions Object |
 
 ### Structs
 
 | Name | Description |
 | --- | --- |
-| [RecentPhotoComponent](arkts-medialibrary-recentphotocomponent-s.md) | Declare struct RecentPhotoComponent |
+| [RecentPhotoComponent](arkts-medialibrary-file-recentphotocomponent-recentphotocomponent-s.md) | Declare struct RecentPhotoComponent |
 
 ### Enums
 
 | Name | Description |
 | --- | --- |
-| [PhotoSource](arkts-medialibrary-photosource-e.md) | Enumeration of PhotoSource type |
+| [PhotoSource](arkts-medialibrary-file-recentphotocomponent-photosource-e.md) | Enumeration of PhotoSource type |
 
 ### Types
 

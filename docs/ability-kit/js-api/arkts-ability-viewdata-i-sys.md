@@ -44,7 +44,7 @@ Bundle name.The value cannot exceed 512 characters.
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 <!--Device-ViewData-bundleName: string--><!--Device-ViewData-bundleName: string-End-->
 
@@ -126,7 +126,7 @@ Page node information.
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 <!--Device-ViewData-pageNodeInfos: Array<PageNodeInfo>--><!--Device-ViewData-pageNodeInfos: Array<PageNodeInfo>-End-->
 
@@ -148,7 +148,7 @@ Coordinates, width, and height of the page.
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** This API can be used in atomic services since API version 12.
 
 <!--Device-ViewData-pageRect: AutoFillRect--><!--Device-ViewData-pageRect: AutoFillRect-End-->
 
@@ -170,7 +170,7 @@ URL of the page.
 
 **Model restriction:** This API can be used only in the stage model.
 
-**Atomic service API:** This API can be used in atomic services since API version 26.0.0.
+**Atomic service API:** This API can be used in atomic services since API version 11.
 
 <!--Device-ViewData-pageUrl: string--><!--Device-ViewData-pageUrl: string-End-->
 

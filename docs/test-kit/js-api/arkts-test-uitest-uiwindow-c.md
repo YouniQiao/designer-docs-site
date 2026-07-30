@@ -14,7 +14,6 @@ The **UiWindow** class represents a window on the UI and provides APIs for obtai
 import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPattern, UiDirection, TouchOptions, ComponentEventType, PointerMatrix, WindowChangeType, Component, ON, PenKey, Rect, InputTextMode, UIEventObserver, WindowFilter, WindowChangeOptions, UiWindow, TouchPadSwipeOptions, Point, KeyOptions, DisplayRotation, UIElementInfo, PenKeyOperationOptions, ComponentEventOptions, MouseButton, On } from '@kit.TestKit';
 ```
 
-<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -59,7 +58,6 @@ async function demo() {
 
 ```
 
-<a id="focus"></a>
 ## focus
 
 ```TypeScript
@@ -103,7 +101,6 @@ async function demo() {
 
 ```
 
-<a id="getbounds"></a>
 ## getBounds
 
 ```TypeScript
@@ -147,7 +144,6 @@ async function demo() {
 
 ```
 
-<a id="getbundlename"></a>
 ## getBundleName
 
 ```TypeScript
@@ -191,7 +187,6 @@ async function demo() {
 
 ```
 
-<a id="getdisplayid"></a>
 ## getDisplayId
 
 ```TypeScript
@@ -235,7 +230,6 @@ async function demo() {
 
 ```
 
-<a id="gettitle"></a>
 ## getTitle
 
 ```TypeScript
@@ -279,7 +273,6 @@ async function demo() {
 
 ```
 
-<a id="getwindowmode"></a>
 ## getWindowMode
 
 ```TypeScript
@@ -323,7 +316,6 @@ async function demo() {
 
 ```
 
-<a id="isactive"></a>
 ## isActive
 
 ```TypeScript
@@ -367,7 +359,6 @@ async function demo() {
 
 ```
 
-<a id="isactived"></a>
 ## isActived
 
 ```TypeScript
@@ -380,7 +371,7 @@ Checks whether a window is active. This API uses a promise to return the result.
 
 **Deprecated since:** 11
 
-**Substitutes:** [isActive](arkts-test-uitest-uiwindow-c.md#isactive-1)
+**Substitutes:** [isActive](arkts-test-uitest-uiwindow-c.md#isactive)
 
 <!--Device-UiWindow-isActived(): Promise<boolean>--><!--Device-UiWindow-isActived(): Promise<boolean>-End-->
 
@@ -413,7 +404,6 @@ async function demo() {
 
 ```
 
-<a id="isfocused"></a>
 ## isFocused
 
 ```TypeScript
@@ -457,7 +447,6 @@ async function demo() {
 
 ```
 
-<a id="maximize"></a>
 ## maximize
 
 ```TypeScript
@@ -502,7 +491,6 @@ async function demo() {
 
 ```
 
-<a id="minimize"></a>
 ## minimize
 
 ```TypeScript
@@ -547,7 +535,6 @@ async function demo() {
 
 ```
 
-<a id="moveto"></a>
 ## moveTo
 
 ```TypeScript
@@ -600,7 +587,6 @@ async function demo() {
 
 ```
 
-<a id="resize"></a>
 ## resize
 
 ```TypeScript
@@ -640,7 +626,6 @@ Resizes a window based on the specified width, height, and direction. This API u
 | [17000004](../errorcode-uitest.md#17000004-target-componentwindow-lost) | The window or component is invisible or destroyed. |
 | [17000005](../errorcode-uitest.md#17000005-operation-not-supported) | This operation is not supported. |
 
-<a id="resume"></a>
 ## resume
 
 ```TypeScript
@@ -685,7 +670,6 @@ async function demo() {
 
 ```
 
-<a id="split"></a>
 ## split
 
 ```TypeScript

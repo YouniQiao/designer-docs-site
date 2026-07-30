@@ -12,6 +12,8 @@
 - [@ohos.app.form.formAgent](arkts-app-form-formagent.md)
   <!--Del-->
   - [requestPublishForm(system api)](arkts-form-formagent-requestpublishform-f-sys.md)<!--DelEnd-->
+  <!--Del-->
+  - [updateFormCrossBundle(system api)](arkts-form-formagent-updateformcrossbundle-f-sys.md)<!--DelEnd-->
 - [@ohos.app.form.formBindingData](arkts-app-form-formbindingdata.md)
   - [createFormBindingData](arkts-form-formbindingdata-createformbindingdata-f.md)
   - [FormBindingData](arkts-form-formbindingdata-formbindingdata-i.md)

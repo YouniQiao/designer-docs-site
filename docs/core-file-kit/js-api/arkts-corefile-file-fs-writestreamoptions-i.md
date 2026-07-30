@@ -20,7 +20,7 @@ import { Options, ReaderIteratorResult, Watcher, ReadTextOptions, WatchEventList
 mode?: number
 ```
 
-[Option](docroot://reference/apis-core-file-kit/js-apis-file-fs.md#openmode) for creating the writeable stream. You must specify one of the following options.
+[Option](../../../reference/apis-core-file-kit/js-apis-file-fs.md#openmode) for creating the writeable stream. You must specify one of the following options.
 
 - **OpenMode.READ_ONLY(0o0)**: read-only, which is the default value.  
 - **OpenMode.WRITE_ONLY(0o1)**: write-only.  

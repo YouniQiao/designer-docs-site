@@ -42,7 +42,7 @@ movingPhotoBadgeStates: Array<photoAccessHelper.MovingPhotoBadgeStateType>
 
 M​oving photo badge states for the selected media files in the gallery.When isMovingPhotoBadgeShown is true, movingPhotoBadgeStates contains the moving photo states;otherwise, it is empty.
 
-**Type:** Array<photoAccessHelper.MovingPhotoBadgeStateType>
+**Type:** Array&lt;photoAccessHelper.MovingPhotoBadgeStateType&gt;
 
 **Since:** 26.0.0
 
@@ -62,7 +62,7 @@ photoUris: Array<string>
 
 URIs of the images or videos selected. The URI array can be used only by calling photoAccessHelper.getAssets with temporary authorization. For details about how to use the media file URI, see Using a Media File URI.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 26.0.0
 

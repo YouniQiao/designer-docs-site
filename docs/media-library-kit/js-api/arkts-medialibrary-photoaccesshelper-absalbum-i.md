@@ -14,7 +14,6 @@ Defines the abstract interface of albums.
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
-<a id="getassets"></a>
 ## getAssets
 
 ```TypeScript
@@ -48,7 +47,6 @@ Obtains image and video assets. This API uses an asynchronous callback to return
 | 13900020 | Invalid argument |
 | 14000011 | System inner fail |
 
-<a id="getassets-1"></a>
 ## getAssets
 
 ```TypeScript

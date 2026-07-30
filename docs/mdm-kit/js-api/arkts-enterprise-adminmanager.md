@@ -6,11 +6,13 @@ The **adminManager** module provides administrator permission management capabil
 > The APIs of this module can be called only by a device administrator application. For details, see  
 > [MDM Kit Development](../../../mdm/mdm-kit-guide.md).
 
-**Since:** 9
+**Since:** 12
 
 <!--Device-unnamed-declare namespace adminManager--><!--Device-unnamed-declare namespace adminManager-End-->
 
 **System capability:** SystemCapability.Customization.EnterpriseDeviceManager
+
+**System API:** This is a system API.
 
 ## Modules to Import
 

@@ -16,7 +16,6 @@ Represents a media asset change request.
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
-<a id="addresource"></a>
 ## addResource
 
 ```TypeScript
@@ -24,7 +23,6 @@ addResource(type: ResourceType, fileUri: string): void
 ```
 
 Adds resources from the application sandbox based on the file URI. For details about the data source, see [@ohos.file.fileuri (File URI)](../../apis-core-file-kit/arkts-apis/arkts-file-fileuri.md).
-
 > **NOTE**  
 >  
 > For the same asset change request, this API cannot be repeatedly called after the resource is successfully  
@@ -54,7 +52,6 @@ Adds resources from the application sandbox based on the file URI. For details a
 | 14000011 | System inner fail |
 | 14000016 | Operation Not Support |
 
-<a id="addresource-1"></a>
 ## addResource
 
 ```TypeScript
@@ -62,7 +59,6 @@ addResource(type: ResourceType, data: ArrayBuffer): void
 ```
 
 Adds a resource using **ArrayBuffer** data.
-
 > **NOTE**  
 >  
 > For the same asset change request, this API cannot be repeatedly called after the resource is successfully  
@@ -91,7 +87,6 @@ Adds a resource using **ArrayBuffer** data.
 | 14000011 | System inner fail |
 | 14000016 | Operation Not Support |
 
-<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -121,7 +116,6 @@ Constructor used to initialize an asset change request.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | System inner fail |
 
-<a id="createassetrequest"></a>
 ## createAssetRequest
 
 ```TypeScript
@@ -145,7 +139,7 @@ Create an asset change request based on the file type and filename extension.
 | context | [Context](../../apis-arkui/arkts-components/arkts-arkui-context-t.md) | Yes | Context of the ability instance. |
 | photoType | [PhotoType](arkts-medialibrary-sendablephotoaccesshelper-phototype-e.md) | Yes | Type of the file to create, which can be **IMAGE** or **VIDEO**. |
 | extension | string | Yes | File name extension, for example, **'jpg'**. |
-| options | [CreateOptions](arkts-medialibrary-photoaccesshelper-createoptions-i.md) | No | Options for creating the image or video asset, for example,**{title: 'testPhoto'}**.<br>The file name must not contain any invalid characters, which are:.. \ / : * ? " ' ` < > \| { } [ ] |
+| options | [CreateOptions](arkts-medialibrary-photoaccesshelper-createoptions-i.md) | No | Options for creating the image or video asset, for example,**{title: 'testPhoto'}**.<br>The file name must not contain any invalid characters, which are:.. \ / : * ? " ' ` &lt; &gt; \| { } [ ] |
 
 **Return value:**
 
@@ -160,7 +154,6 @@ Create an asset change request based on the file type and filename extension.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | System inner fail |
 
-<a id="createimageassetrequest"></a>
 ## createImageAssetRequest
 
 ```TypeScript
@@ -200,7 +193,6 @@ For details about data source of the asset to be created, see [@ohos.file.fileur
 | 13900002 | The file corresponding to the URI is not in the app sandbox. |
 | 14000011 | System inner fail |
 
-<a id="createvideoassetrequest"></a>
 ## createVideoAssetRequest
 
 ```TypeScript
@@ -238,7 +230,6 @@ For details about data source of the asset to be created, see [@ohos.file.fileur
 | 13900002 | The file corresponding to the URI is not in the app sandbox. |
 | 14000011 | System inner fail |
 
-<a id="deleteassets"></a>
 ## deleteAssets
 
 ```TypeScript
@@ -276,7 +267,6 @@ Deletes media assets. The deleted assets are moved to the trash. This API uses a
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | System inner fail |
 
-<a id="deleteassets-1"></a>
 ## deleteAssets
 
 ```TypeScript
@@ -315,7 +305,6 @@ Deletes media assets. The deleted assets are moved to the trash. This API uses a
 | 14000002 | The uri format is incorrect or does not exist. |
 | 14000011 | System inner fail |
 
-<a id="discardcameraphoto"></a>
 ## discardCameraPhoto
 
 ```TypeScript
@@ -337,7 +326,6 @@ Discards the photo taken by the camera.
 | 14000011 | Internal system error |
 | 14000016 | Operation Not Support |
 
-<a id="getasset"></a>
 ## getAsset
 
 ```TypeScript
@@ -345,11 +333,10 @@ getAsset(): PhotoAsset
 ```
 
 Obtains the asset in this asset change request.
-
 > **NOTE**  
 >  
 > For the change request used to create an asset, this API returns **null** before  
-> [applyChanges](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i.md#applychanges-1) is called  
+> [applyChanges](arkts-medialibrary-photoaccesshelper-photoaccesshelper-i.md#applychanges) is called  
 > to apply the changes.
 
 **Since:** 11
@@ -373,7 +360,6 @@ Obtains the asset in this asset change request.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 | 14000011 | System inner fail |
 
-<a id="getwritecachehandler"></a>
 ## getWriteCacheHandler
 
 ```TypeScript
@@ -381,7 +367,6 @@ getWriteCacheHandler(): Promise<number>
 ```
 
 Obtains the handler used for writing a file to cache. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > For the same asset change request, this API cannot be repeatedly called after a temporary file write handle is  
@@ -410,7 +395,6 @@ Obtains the handler used for writing a file to cache. This API uses a promise to
 | 14000011 | System inner fail. Possible causes:<br>1. The database is corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 | 14000016 | Operation Not Support |
 
-<a id="savecameraphoto"></a>
 ## saveCameraPhoto
 
 ```TypeScript
@@ -432,7 +416,6 @@ Saves the photo taken by the camera.
 | 14000011 | System inner fail |
 | 14000016 | Operation Not Support |
 
-<a id="savecameraphoto-1"></a>
 ## saveCameraPhoto
 
 ```TypeScript
@@ -460,7 +443,6 @@ Saves the photo taken by the camera.
 | 14000011 | System inner fail |
 | 14000016 | Operation Not Support |
 
-<a id="setorientation"></a>
 ## setOrientation
 
 ```TypeScript
@@ -488,7 +470,6 @@ Sets the orientation of this image.
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | Internal system error |
 
-<a id="settitle"></a>
 ## setTitle
 
 ```TypeScript

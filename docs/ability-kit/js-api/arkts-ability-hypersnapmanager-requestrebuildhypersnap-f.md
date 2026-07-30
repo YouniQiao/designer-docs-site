@@ -6,7 +6,6 @@
 import { hyperSnapManager } from '@kit.AbilityKit';
 ```
 
-<a id="requestrebuildhypersnap"></a>
 ## requestRebuildHyperSnap
 
 ```TypeScript

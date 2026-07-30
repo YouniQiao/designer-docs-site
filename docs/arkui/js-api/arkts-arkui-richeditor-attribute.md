@@ -12,7 +12,6 @@ In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-ap
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="abouttodelete"></a>
 ## aboutToDelete
 
 ```TypeScript
@@ -39,7 +38,6 @@ This callback is not supported when the **RichEditor** component constructed wit
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;RichEditorDeleteValue, boolean&gt; | Yes | [RichEditorDeleteValue](arkts-arkui-richeditordeletevalue-i.md)indicates the text or image span where the content to be deleted is located.<br>**true**: Content is deleted.<br>**false**: Content is not deleted.<br>Callback invoked when content is about to be deleted in the input method. It is executed when a candidate word is touched in preview text.<br>**Since:** 12 |
 
-<a id="abouttoimeinput"></a>
 ## aboutToIMEInput
 
 ```TypeScript
@@ -66,7 +64,6 @@ This callback is not supported when the **RichEditor** component constructed wit
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;RichEditorInsertValue, boolean&gt; | Yes | [RichEditorInsertValue](arkts-arkui-richeditorinsertvalue-i.md)indicates whether content will be entered in the input method.<br>**true**: The component adds the content.<br>**false**: The component does not add the content.<br>Callback invoked when content is about to be entered in the input method.<br>**Since:** 12 |
 
-<a id="barstate"></a>
 ## barState
 
 ```TypeScript
@@ -74,11 +71,10 @@ barState(state: BarState)
 ```
 
 Sets the display mode of the **RichEditor** scrollbar.
-
 > **NOTE**  
 >  
 > This API can be called within  
-> [attributeModifier](docroot://reference/apis-arkui/arkui-ts/ts-universal-attributes-attribute-modifier.md#attributemodifier)  
+> [attributeModifier](../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-attribute-modifier.md#attributemodifier)  
 > since API version 18.
 
 **Since:** 13
@@ -97,7 +93,6 @@ Sets the display mode of the **RichEditor** scrollbar.
 | --- | --- | --- | --- |
 | state | [BarState](../arkts-apis/arkts-arkui-barstate-e.md) | Yes | Scrollbar display mode.<br>Default value: **BarState.Auto** |
 
-<a id="bindselectionmenu"></a>
 ## bindSelectionMenu
 
 ```TypeScript
@@ -113,9 +108,7 @@ Sets the custom context menu on text selection. If the custom menu is too long, 
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
-<!--Device-RichEditorAttribute-bindSelectionMenu(spanType: RichEditorSpanType, content: CustomBuilder, responseType: ResponseType | RichEditorResponseType,
-    options?: SelectionMenuOptions): RichEditorAttribute--><!--Device-RichEditorAttribute-bindSelectionMenu(spanType: RichEditorSpanType, content: CustomBuilder, responseType: ResponseType | RichEditorResponseType,
-    options?: SelectionMenuOptions): RichEditorAttribute-End-->
+<!--Device-RichEditorAttribute-bindSelectionMenu(spanType: RichEditorSpanType, content: CustomBuilder, responseType: ResponseType | RichEditorResponseType,    options?: SelectionMenuOptions): RichEditorAttribute--><!--Device-RichEditorAttribute-bindSelectionMenu(spanType: RichEditorSpanType, content: CustomBuilder, responseType: ResponseType | RichEditorResponseType,    options?: SelectionMenuOptions): RichEditorAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -128,7 +121,6 @@ Sets the custom context menu on text selection. If the custom menu is too long, 
 | responseType | [ResponseType](../arkts-apis/arkts-arkui-responsetype-e.md) \| RichEditorResponseType | Yes | Response type of the menu.<br> Default value:<br>ResponseType.LongPress<br>**Since:** 11 |
 | options | [SelectionMenuOptions](../arkts-apis/arkts-arkui-arkui-advanced-selectionmenu-selectionmenuoptions-i.md) | No | Menu options. |
 
-<a id="caretcolor"></a>
 ## caretColor
 
 ```TypeScript
@@ -153,7 +145,6 @@ Sets the color of the caret and selection handle in the text box.
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Color of the caret and selection handle in the text box.<br>Default value:**'#007DFF'** |
 
-<a id="compressleadingpunctuation"></a>
 ## compressLeadingPunctuation
 
 ```TypeScript
@@ -161,7 +152,6 @@ compressLeadingPunctuation(enabled: Optional<boolean>)
 ```
 
 Sets whether to enable punctuation compression at the beginning of a line.
-
 > **NOTE**  
 >  
 > By default, the punctuation at the beginning of a line is not compressed.  
@@ -185,7 +175,6 @@ Sets whether to enable punctuation compression at the beginning of a line.
 | --- | --- | --- | --- |
 | enabled | [Optional](arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | Whether to enable punctuation compression at the beginning of a line.<br>true indicates that punctuation compression is enabled at the beginning of a line. false indicates that punctuation compression is disabled at the beginning of a line. |
 
-<a id="copyoptions"></a>
 ## copyOptions
 
 ```TypeScript
@@ -197,7 +186,7 @@ Specifies whether copy and paste is allowed for text content.
 Since API version 20, copied or cut text from the **RichEditor** component includes HTML-formatted content in the pasteboard.
 
 - Only TextSpan and ImageSpan can add HTML content to the pasteboard. Other span types (such as BuilderSpan,SymbolSpan, and CustomSpan) cannot add HTML content to the pasteboard.  
-- For styled strings, refer to [toHtml](../arkts-apis/arkts-arkui-styledstring-c.md#tohtml-1) for supported HTML conversion scope.
+- For styled strings, refer to [toHtml](../arkts-apis/arkts-arkui-styledstring-c.md#tohtml) for supported HTML conversion scope.
 
 If copyOptions is not set to CopyOptions.None, a text selection menu will be displayed when you long-press the component content. If a custom context menu is defined through **bindSelectionMenu** or other approaches, it will be displayed.
 
@@ -219,7 +208,6 @@ If copyOptions is set to CopyOptions.None, the copy, cut, translate, share, sear
 | --- | --- | --- | --- |
 | value | [CopyOptions](../arkts-apis/arkts-arkui-copyoptions-e.md) | Yes | Whether copy and paste is allowed for text content.<br>Default value:**CopyOptions.LocalDevice** |
 
-<a id="customkeyboard"></a>
 ## customKeyboard
 
 ```TypeScript
@@ -236,11 +224,10 @@ The custom keyboard's height can be set through the **height** attribute of the 
 The custom keyboard cannot obtain focus, but it blocks gesture events.
 
 By default, the custom keyboard is closed when the input component loses the focus.
-
 > **NOTE**  
 >  
 > This API can be called within  
-> [attributeModifier](docroot://reference/apis-arkui/arkui-ts/ts-universal-attributes-attribute-modifier.md#attributemodifier)  
+> [attributeModifier](../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-attribute-modifier.md#attributemodifier)  
 > since API version 23.
 
 **Since:** 10
@@ -249,9 +236,7 @@ By default, the custom keyboard is closed when the input component loses the foc
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
-<!--Device-RichEditorAttribute-customKeyboard(value: CustomBuilder | ComponentContent | undefined,
-                 options?: KeyboardOptions | undefined): RichEditorAttribute--><!--Device-RichEditorAttribute-customKeyboard(value: CustomBuilder | ComponentContent | undefined,
-                 options?: KeyboardOptions | undefined): RichEditorAttribute-End-->
+<!--Device-RichEditorAttribute-customKeyboard(value: CustomBuilder | ComponentContent | undefined,                 options?: KeyboardOptions | undefined): RichEditorAttribute--><!--Device-RichEditorAttribute-customKeyboard(value: CustomBuilder | ComponentContent | undefined,                 options?: KeyboardOptions | undefined): RichEditorAttribute-End-->
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
@@ -262,7 +247,6 @@ By default, the custom keyboard is closed when the input component loses the foc
 | value | [CustomBuilder](arkts-arkui-custombuilder-t.md) \| ComponentContent \| undefined | Yes | Custom keyboard.<br>When undefined is passed, the system keyboard is used by default.<br>**Since:** 23 |
 | options | [KeyboardOptions](arkts-arkui-keyboardoptions-i.md) \| undefined | No | Whether to support keyboard avoidance.<br>When undefined is passed, avoidance is not supported by default.<br>**Since:** 23 |
 
-<a id="datadetectorconfig"></a>
 ## dataDetectorConfig
 
 ```TypeScript
@@ -293,7 +277,6 @@ When entities A and B overlap, the following rules are followed:
 | --- | --- | --- | --- |
 | config | [TextDataDetectorConfig](../arkts-apis/arkts-arkui-textdatadetectorconfig-i.md) | Yes | Text recognition configuration. |
 
-<a id="editmenuoptions"></a>
 ## editMenuOptions
 
 ```TypeScript
@@ -302,14 +285,13 @@ editMenuOptions(editMenu: EditMenuOptions)
 
 Sets the extended options of the default system menu, including the text content, icon, and callback.
 
-When [disableMenuItems](docroot://reference/apis-arkui/arkts-apis-uicontext-textmenucontroller.md#disablemenuitems20) or
+When [disableMenuItems](../../../reference/apis-arkui/arkts-apis-uicontext-textmenucontroller.md#disablemenuitems20) or
 
-[disableSystemServiceMenuItems](docroot://reference/apis-arkui/arkts-apis-uicontext-textmenucontroller.md#disablesystemservicemenuitems20)is used to disable system service menu items in the context menu on selection, the disabled menu options will be excluded from the parameter list in the [onCreateMenu](../arkts-apis/arkts-arkui-editmenuoptions-i.md#oncreatemenu-1) callback of **editMenuOptions**.
-
+[disableSystemServiceMenuItems](../../../reference/apis-arkui/arkts-apis-uicontext-textmenucontroller.md#disablesystemservicemenuitems20)is used to disable system service menu items in the context menu on selection, the disabled menu options will be excluded from the parameter list in the [onCreateMenu](../arkts-apis/arkts-arkui-editmenuoptions-i.md#oncreatemenu) callback of **editMenuOptions**.
 > **NOTE**  
 >  
 > This API can be called within  
-> [attributeModifier](docroot://reference/apis-arkui/arkui-ts/ts-universal-attributes-attribute-modifier.md#attributemodifier)  
+> [attributeModifier](../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-attribute-modifier.md#attributemodifier)  
 > since API version 18.
 
 **Since:** 12
@@ -328,7 +310,6 @@ When [disableMenuItems](docroot://reference/apis-arkui/arkts-apis-uicontext-text
 | --- | --- | --- | --- |
 | editMenu | [EditMenuOptions](../arkts-apis/arkts-arkui-editmenuoptions-i.md) | Yes | Extended options of the custom context menu on selection. |
 
-<a id="enableautospacing"></a>
 ## enableAutoSpacing
 
 ```TypeScript
@@ -353,7 +334,6 @@ Sets whether to enable automatic spacing between Chinese and Western characters.
 | --- | --- | --- | --- |
 | enable | [Optional](arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | Whether to enable automatic spacing between Chinese and Western characters.<br>**true** to enable, **false** otherwise.<br>Default value: **false**. |
 
-<a id="enabledatadetector"></a>
 ## enableDataDetector
 
 ```TypeScript
@@ -390,7 +370,6 @@ When **copyOptions** is set to **CopyOptions.None**, the menu displayed after an
 | --- | --- | --- | --- |
 | enable | boolean | Yes | Whether to enable text recognition.<br>**true** to enable, **false** otherwise.<br>Default value: **false**. |
 
-<a id="enablehapticfeedback"></a>
 ## enableHapticFeedback
 
 ```TypeScript
@@ -398,11 +377,10 @@ enableHapticFeedback(isEnabled: boolean)
 ```
 
 Sets whether to enable haptic feedback.
-
 > **NOTE**  
 >  
 > This API can be called in  
-> [attributeModifier](docroot://reference/apis-arkui/arkui-ts/ts-universal-attributes-attribute-modifier.md#attributemodifier)  
+> [attributeModifier](../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-attribute-modifier.md#attributemodifier)  
 > since API version 20.
 
 **Since:** 13
@@ -421,7 +399,6 @@ Sets whether to enable haptic feedback.
 | --- | --- | --- | --- |
 | isEnabled | boolean | Yes | Whether to enable haptic feedback.<br>Default value: **true**. **true** to enable;**false** otherwise.<br>**NOTE**<br>Haptic feedback takes effect only when the application has the ohos.permission.VIBRATE permission, the user has enabled haptic feedback, and the system hardware supports it. |
 
-<a id="enablekeyboardonfocus"></a>
 ## enableKeyboardOnFocus
 
 ```TypeScript
@@ -429,11 +406,10 @@ enableKeyboardOnFocus(isEnabled: boolean)
 ```
 
 Sets whether to enable the input method when the **RichEditor** component obtains focus in a way other than clicking.
-
 > **NOTE**  
 >  
 > This API can be called within  
-> [attributeModifier](docroot://reference/apis-arkui/arkui-ts/ts-universal-attributes-attribute-modifier.md#attributemodifier)  
+> [attributeModifier](../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-attribute-modifier.md#attributemodifier)  
 > since API version 18.
 
 **Since:** 12
@@ -452,7 +428,6 @@ Sets whether to enable the input method when the **RichEditor** component obtain
 | --- | --- | --- | --- |
 | isEnabled | boolean | Yes | Whether to bring up the keyboard when a component obtains focus in a way other than clicking.<br>**true**: yes; **false**: no<br>Default value: **true** |
 
-<a id="enablepreviewtext"></a>
 ## enablePreviewText
 
 ```TypeScript
@@ -460,11 +435,10 @@ enablePreviewText(enable: boolean)
 ```
 
 Sets whether to enable preview text.
-
 > **NOTE**  
 >  
 > This API can be called within  
-> [attributeModifier](docroot://reference/apis-arkui/arkui-ts/ts-universal-attributes-attribute-modifier.md#attributemodifier)  
+> [attributeModifier](../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-attribute-modifier.md#attributemodifier)  
 > since API version 18.
 
 **Since:** 12
@@ -483,7 +457,6 @@ Sets whether to enable preview text.
 | --- | --- | --- | --- |
 | enable | boolean | Yes | Whether to enable preview text.<br>**true** to enable, **false** otherwise.<br>Default value: **true** |
 
-<a id="enableselecteddatadetector"></a>
 ## enableSelectedDataDetector
 
 ```TypeScript
@@ -516,7 +489,6 @@ This API depends on the text recognition capability at the bottom layer of the d
 | --- | --- | --- | --- |
 | enable | boolean \| undefined | Yes | Whether to enable text recognition. The value **true** means to enable text recognition, and **false** means the opposite.<br>If **undefined** or **null** is passed, the attribute is reset to the default value. |
 
-<a id="enterkeytype"></a>
 ## enterKeyType
 
 ```TypeScript
@@ -541,7 +513,6 @@ Sets the Enter key type of the soft keyboard.
 | --- | --- | --- | --- |
 | value | [EnterKeyType](arkts-arkui-enterkeytype-e.md) | Yes | Type of the Enter key.<br>Default value: **EnterKeyType.NEW_LINE** |
 
-<a id="fallbacklinespacing"></a>
 ## fallbackLineSpacing
 
 ```TypeScript
@@ -568,7 +539,6 @@ This API depends on the lineHeight attribute of [RichEditorTextStyle](arkts-arku
 | --- | --- | --- | --- |
 | enabled | [Optional](arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | Whether the line height is adaptive based on the actual text height.<br>The value true indicates that the line height is automatically adjusted based on the actual text height. The value false indicates that the line height is not automatically adjusted based on the actual text height. |
 
-<a id="horizontalscrolling"></a>
 ## horizontalScrolling
 
 ```TypeScript
@@ -593,7 +563,6 @@ Whether to enable horizontal scrolling when text is wider than the view.The defa
 | --- | --- | --- | --- |
 | enabled | [Optional](arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | whether to enable horizontal scrolling.True means enable this feature, false means disable this feature. |
 
-<a id="includefontpadding"></a>
 ## includeFontPadding
 
 ```TypeScript
@@ -618,7 +587,6 @@ Sets whether to add a spacing between the first and last lines to avoid text tru
 | --- | --- | --- | --- |
 | include | [Optional](arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | Whether to add a spacing between the first and last lines to avoid text truncation.<br>The value true indicates that the space between the first line and the last line is added. The value false indicates that the space between the first line and the last line is not added. |
 
-<a id="keyboardappearance"></a>
 ## keyboardAppearance
 
 ```TypeScript
@@ -643,7 +611,6 @@ Sets the keyboard appearance.
 | --- | --- | --- | --- |
 | appearance | [Optional](arkts-arkui-optional-t.md)&lt;KeyboardAppearance&gt; | Yes | Keyboard appearance.<br>Default value:**KeyboardAppearance.NONE_IMMERSIVE** |
 
-<a id="maxlength"></a>
 ## maxLength
 
 ```TypeScript
@@ -668,7 +635,6 @@ Sets the maximum length of the component content. When the total length of the c
 | --- | --- | --- | --- |
 | maxLength | [Optional](arkts-arkui-optional-t.md)&lt;number&gt; | Yes | Maximum number of characters for text input.<br>Default value: **Infinity**, which means unlimited input. The **undefined** type is supported.<br>**NOTE**<br>If this attribute is not set or is set to an invalid value, the default value is used. If a decimal number is specified, the integer part is used. |
 
-<a id="maxlines"></a>
 ## maxLines
 
 ```TypeScript
@@ -693,7 +659,6 @@ Sets the maximum number of lines that the rich text can display. When **maxLines
 | --- | --- | --- | --- |
 | maxLines | [Optional](arkts-arkui-optional-t.md)&lt;number&gt; | Yes | Maximum number of lines that the rich text can display. When **maxLines** is set, content that exceeds the specified number of lines can be scrolled to display. If both the component height and **maxLines** are set, the component height takes precedence.<br>Default value: **UINT32_MAX**, which means unlimited input. The **undefined** type is supported.<br>Value range: (0, UINT32_MAX] |
 
-<a id="oncopy"></a>
 ## onCopy
 
 ```TypeScript
@@ -720,7 +685,6 @@ The **RichEditor** component constructed using [RichEditorStyledStringOptions](a
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;CopyEvent&gt; | Yes | User copy event. |
 
-<a id="oncut"></a>
 ## onCut
 
 ```TypeScript
@@ -747,7 +711,6 @@ The **RichEditor** component constructed using [RichEditorStyledStringOptions](a
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;CutEvent&gt; | Yes | Defines a custom cut event. |
 
-<a id="ondeletecomplete"></a>
 ## onDeleteComplete
 
 ```TypeScript
@@ -774,7 +737,6 @@ This callback is not supported when the **RichEditor** component constructed wit
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;void&gt; | Yes | Triggered when deletion in the input method is completed.<br>**Since:** 12 |
 
-<a id="ondidchange"></a>
 ## onDidChange
 
 ```TypeScript
@@ -784,11 +746,10 @@ onDidChange(callback: OnDidChangeCallback) : RichEditorAttribute
 Triggered after an addition or deletion operation is performed in the component. This callback is not executed if there is no actual addition or deletion of text.
 
 This callback is not supported when the **RichEditor** component constructed with [RichEditorStyledStringOptions](arkts-arkui-richeditorstyledstringoptions-i.md) is used.
-
 > **NOTE**  
 >  
 > This API can be called within  
-> [attributeModifier](docroot://reference/apis-arkui/arkui-ts/ts-universal-attributes-attribute-modifier.md#attributemodifier)  
+> [attributeModifier](../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-attribute-modifier.md#attributemodifier)  
 > since API version 18.
 
 **Since:** 12
@@ -807,7 +768,6 @@ This callback is not supported when the **RichEditor** component constructed wit
 | --- | --- | --- | --- |
 | callback | [OnDidChangeCallback](../arkts-apis/arkts-arkui-ondidchangecallback-t.md) | Yes | The triggered function after content changed. |
 
-<a id="ondidimeinput"></a>
 ## onDidIMEInput
 
 ```TypeScript
@@ -817,11 +777,10 @@ onDidIMEInput(callback: Callback<TextRange>)
 Triggered when text input in the input method is complete.
 
 This callback is not supported when the **RichEditor** component constructed with [RichEditorStyledStringOptions](arkts-arkui-richeditorstyledstringoptions-i.md) is used.
-
 > **NOTE**  
 >  
 > This API can be called in  
-> [attributeModifier](docroot://reference/apis-arkui/arkui-ts/ts-universal-attributes-attribute-modifier.md#attributemodifier)  
+> [attributeModifier](../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-attribute-modifier.md#attributemodifier)  
 > since API version 20.
 
 **Since:** 12
@@ -840,7 +799,6 @@ This callback is not supported when the **RichEditor** component constructed wit
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;TextRange&gt; | Yes | **TextRange** indicates the text range for the current input.<br>Callback invoked when text input in the input method is complete. |
 
-<a id="oneditingchange"></a>
 ## onEditingChange
 
 ```TypeScript
@@ -865,7 +823,6 @@ Triggered when the content editing state in the component changes.
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;boolean&gt; | Yes | Callback invoked when the editing state of all content in the component changes. The value **true** indicates the editing state, and **false** indicates the non-editing state. |
 
-<a id="onimeinputcomplete"></a>
 ## onIMEInputComplete
 
 ```TypeScript
@@ -894,7 +851,6 @@ This callback is not supported when the **RichEditor** component constructed wit
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;RichEditorTextSpanResult&gt; | Yes | [RichEditorTextSpanResult](arkts-arkui-richeditortextspanresult-i.md)indicates the text span information after text input is complete.<br>Callback invoked when text input in the input method is complete.<br>**Since:** 12 |
 
-<a id="onpaste"></a>
 ## onPaste
 
 ```TypeScript
@@ -919,7 +875,6 @@ Triggered when a paste operation is performed. You can use this API to override 
 | --- | --- | --- | --- |
 | callback | [PasteEventCallback](arkts-arkui-pasteeventcallback-t.md) | Yes | Callback used to subscribe to the pasted text content.<br>**Since:** 12 |
 
-<a id="onready"></a>
 ## onReady
 
 ```TypeScript
@@ -944,7 +899,6 @@ Triggered after the **RichEditor** component is initialized.
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;void&gt; | Yes | Triggered when initialization of the **RichEditor** component is complete.<br>**Since:** 12 |
 
-<a id="onselect"></a>
 ## onSelect
 
 ```TypeScript
@@ -977,7 +931,6 @@ If the selection area needs to be detected in real time or the RichEditor compon
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;RichEditorSelection&gt; | Yes | [RichEditorSelection](arkts-arkui-richeditorselection-i.md) indicates information about all the selected spans.<br>Callback invoked when content is selected.<br>**Since:** 12 |
 
-<a id="onselectionchange"></a>
 ## onSelectionChange
 
 ```TypeScript
@@ -1002,7 +955,6 @@ Triggered when the selection area or caret position changes in the editing state
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;RichEditorRange&gt; | Yes | [RichEditorRange](arkts-arkui-richeditorrange-i.md) indicates the start and end positions of the content selection area.<br>Callback invoked when the content selection area changes or the caret position changes in the editing state. |
 
-<a id="onsubmit"></a>
 ## onSubmit
 
 ```TypeScript
@@ -1027,7 +979,6 @@ Triggered when the Enter key on the soft keyboard is pressed.
 | --- | --- | --- | --- |
 | callback | [SubmitCallback](arkts-arkui-submitcallback-t.md) | Yes | Callback used to return the subscription event. |
 
-<a id="onwillattachime"></a>
 ## onWillAttachIME
 
 ```TypeScript
@@ -1036,7 +987,7 @@ onWillAttachIME(callback: Callback<IMEClient> | undefined)
 
 Triggers a callback before a component is bound to an input method.
 
-Call the [setExtraConfig](../arkts-apis/arkts-arkui-imeclient-i.md#setextraconfig-1) method of [IMEClient](../arkts-apis/arkts-arkui-imeclient-i.md) to set input method extension information. After the input method is bound, it receives this extension information, which can be used to implement custom functionality.
+Call the [setExtraConfig](../arkts-apis/arkts-arkui-imeclient-i.md#setextraconfig) method of [IMEClient](../arkts-apis/arkts-arkui-imeclient-i.md) to set input method extension information. After the input method is bound, it receives this extension information, which can be used to implement custom functionality.
 
 **Since:** 22
 
@@ -1054,7 +1005,6 @@ Call the [setExtraConfig](../arkts-apis/arkts-arkui-imeclient-i.md#setextraconfi
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;IMEClient&gt; \| undefined | Yes | Callback triggered before the component is bound to an input method.<br>If the value is undefined, the bound callback event is cleared. |
 
-<a id="onwillchange"></a>
 ## onWillChange
 
 ```TypeScript
@@ -1064,11 +1014,10 @@ onWillChange(callback: Callback<RichEditorChangeValue, boolean>) : RichEditorAtt
 Invoked when any addition or deletion operation is about to be performed in the component.
 
 This callback is not supported when the **RichEditor** component constructed with [RichEditorStyledStringOptions](arkts-arkui-richeditorstyledstringoptions-i.md) is used.
-
 > **NOTE**  
 >  
 > This API can be called within  
-> [attributeModifier](docroot://reference/apis-arkui/arkui-ts/ts-universal-attributes-attribute-modifier.md#attributemodifier)  
+> [attributeModifier](../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-attribute-modifier.md#attributemodifier)  
 > since API version 18.
 
 **Since:** 12
@@ -1087,7 +1036,6 @@ This callback is not supported when the **RichEditor** component constructed wit
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;RichEditorChangeValue, boolean&gt; | Yes | The triggered function before text content is about to change. |
 
-<a id="orphancharoptimization"></a>
 ## orphanCharOptimization
 
 ```TypeScript
@@ -1110,7 +1058,6 @@ Whether to avoid an orphan word on the last line of the paragraph.
 | --- | --- | --- | --- |
 | enabled | [Optional](arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | The default value is false,indicates the flag whether to enable this feature. |
 
-<a id="placeholder"></a>
 ## placeholder
 
 ```TypeScript
@@ -1118,11 +1065,10 @@ placeholder(value: ResourceStr, style?: PlaceholderStyle)
 ```
 
 Sets the placeholder text, which is displayed when there is no input.
-
 > **NOTE**  
 >  
 > This API can be called within  
-> [attributeModifier](docroot://reference/apis-arkui/arkui-ts/ts-universal-attributes-attribute-modifier.md#attributemodifier)  
+> [attributeModifier](../../../reference/apis-arkui/arkui-ts/ts-universal-attributes-attribute-modifier.md#attributemodifier)  
 > since API version 18.
 
 **Since:** 12
@@ -1142,7 +1088,6 @@ Sets the placeholder text, which is displayed when there is no input.
 | value | [ResourceStr](../arkts-apis/arkts-arkui-resourcestr-t.md) | Yes | Placeholder text. |
 | style | [PlaceholderStyle](arkts-arkui-placeholderstyle-i.md) | No | Style of the placeholder text.<br>By default, the style follows the theme. |
 
-<a id="punctuationoverflow"></a>
 ## punctuationOverflow
 
 ```TypeScript
@@ -1167,7 +1112,6 @@ Whether to enable punctuation overflow at line ends.
 | --- | --- | --- | --- |
 | enabled | [Optional](arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | Whether to enable the feature, the default value is false. |
 
-<a id="scrollbarcolor"></a>
 ## scrollBarColor
 
 ```TypeScript
@@ -1192,7 +1136,6 @@ Sets the color of the scrollbar.
 | --- | --- | --- | --- |
 | color | [Optional](arkts-arkui-optional-t.md)&lt;ColorMetrics&gt; | Yes | Color of the scrollbar.<br>Default value: **'#66182431'**, displayed as gray.<br>Note: If an abnormal value is set, the default value is used. |
 
-<a id="selectedbackgroundcolor"></a>
 ## selectedBackgroundColor
 
 ```TypeScript
@@ -1217,7 +1160,6 @@ Sets the background color of the selected text. If the opacity is not set, a 20%
 | --- | --- | --- | --- |
 | value | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | Yes | Background color of the selected text.<br>By default, a 20% opacity is applied. |
 
-<a id="selecteddragpreviewstyle"></a>
 ## selectedDragPreviewStyle
 
 ```TypeScript
@@ -1242,7 +1184,6 @@ Sets the drag and view style.
 | --- | --- | --- | --- |
 | value | [SelectedDragPreviewStyle](../arkts-apis/arkts-arkui-selecteddragpreviewstyle-i.md) \| undefined | Yes | Drag and preview style. If this attribute is set to undefined, the style will be reset. |
 
-<a id="singleline"></a>
 ## singleLine
 
 ```TypeScript
@@ -1250,7 +1191,6 @@ singleLine(isEnable: boolean | undefined)
 ```
 
 Sets whether to enable the single-line mode. If this interface is not used, the single-line mode is disabled by default.
-
 > **NOTE**  
 >  
 > The scroll bar is not displayed in single-line mode.  
@@ -1273,7 +1213,6 @@ Sets whether to enable the single-line mode. If this interface is not used, the 
 | --- | --- | --- | --- |
 | isEnable | boolean \| undefined | Yes | Whether to enable the single-line mode.<br>The value true indicates that the single-line mode is enabled, and the value false indicates that the single-line mode is disabled.<br>If this attribute is set to undefined or null, the value false is used and the single-line mode is not enabled. |
 
-<a id="stopbackpress"></a>
 ## stopBackPress
 
 ```TypeScript
@@ -1298,7 +1237,6 @@ Sets whether to prevent the back button press from being propagated to other com
 | --- | --- | --- | --- |
 | isStopped | [Optional](arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | Whether to prevent the back button press from being propagated to other components or applications.<br>**true** to prevent, **false** otherwise.<br>Default value: **true**. If an invalid value is provided, the default value is used. |
 
-<a id="undostyle"></a>
 ## undoStyle
 
 ```TypeScript

@@ -16,7 +16,6 @@ Zoom extend [ZoomQuery](arkts-camera-camera-zoomquery-i.md)Provides APIs to proc
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="getzoomcenterpoint"></a>
 ## getZoomCenterPoint
 
 ```TypeScript
@@ -46,7 +45,6 @@ Gets zoom center point.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="preparezoom"></a>
 ## prepareZoom
 
 ```TypeScript
@@ -87,7 +85,6 @@ function prepareZoom(sessionExtendsZoom: camera.Zoom): void {
 
 ```
 
-<a id="setzoomcenterpoint"></a>
 ## setZoomCenterPoint
 
 ```TypeScript
@@ -117,7 +114,6 @@ Sets zoom center point.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="unpreparezoom"></a>
 ## unprepareZoom
 
 ```TypeScript

@@ -1,6 +1,6 @@
 # promptAction
 
-创建并显示即时反馈、对话框和操作菜单。
+创建并显示即时反馈、对话框和操作菜单，适用于系统通知、交互确认、菜单选择等场景。
 > **说明：**
 > - 本模块不支持在[UIAbility](../../apis-ability-kit/arkts-apis/arkts-app-ability-uiability.md)的文件声明处使用，即不能在UIAbility的生命周期中调用，需要在创建组件实例后使用。  
 >  
@@ -54,7 +54,7 @@ import { LevelMode, ImmersiveMode, LevelOrder } from '@kit.ArkUI';
 | [ShowDialogOptions](arkts-arkui-promptaction-showdialogoptions-i.md) | 对话框的选项。 |
 | [BaseDialogOptions](arkts-arkui-promptaction-basedialogoptions-i.md) | 弹窗的选项。 |
 | [CustomDialogOptions](arkts-arkui-promptaction-customdialogoptions-i.md) | 自定义弹窗的内容，继承自[BaseDialogOptions](#basedialogoptions11)。 |
-| [DialogOptions](arkts-arkui-promptaction-dialogoptions-i.md) | 自定义弹窗的内容，继承自[BaseDialogOptions](#basedialogoptions11)。 |
+| [DialogOptions](arkts-arkui-promptaction-dialogoptions-i.md) | 自定义弹窗的内容，继承自[BaseDialogOptions](#basedialogoptions11)，用于配置自定义弹窗的显示参数和行为。 |
 | [ActionMenuSuccessResponse](arkts-arkui-promptaction-actionmenusuccessresponse-i.md) | 操作菜单的响应结果。 |
 | [ActionMenuOptions](arkts-arkui-promptaction-actionmenuoptions-i.md) | 操作菜单的选项。 |
 

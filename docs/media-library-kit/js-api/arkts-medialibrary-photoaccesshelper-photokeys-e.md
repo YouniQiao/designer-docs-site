@@ -18,7 +18,7 @@ URI of the file.
 
 **Note**:
 
-Only the [DataSharePredicates.equalTo](../../apis-arkdata/arkts-apis/arkts-arkdata-datasharepredicates-datasharepredicates-c.md#equalto-1)predicate can be used for this field during photo query.
+Only the [DataSharePredicates.equalTo](../../apis-arkdata/arkts-apis/arkts-arkdata-datasharepredicates-datasharepredicates-c.md#equalto)predicate can be used for this field during photo query.
 
 **Since:** 10
 
@@ -54,7 +54,7 @@ File name displayed. The file name must meet the following requirements:
 
 - A valid file name must include a base name and a supported image or video extension.  
 - The file name length ranges from 1 to 255.  
-- The base name must not contain any invalid characters, which are:.. \ / : * ? " ' ` < > | { } [ ]
+- The base name must not contain any invalid characters, which are:.. \ / : * ? " ' ` &lt; &gt; | { } [ ]
 
 **Since:** 10
 

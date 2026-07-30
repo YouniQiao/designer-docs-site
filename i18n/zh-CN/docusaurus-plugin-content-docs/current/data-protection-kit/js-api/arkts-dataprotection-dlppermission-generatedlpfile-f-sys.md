@@ -81,7 +81,7 @@ async function ExampleFunction() {
   };
   dlpFile = await dlpPermission.generateDLPFile(file, dlp, dlpProperty); // 生成DLP文件。
 
-  dlpFile?.closeDLPFile(); // 关闭DLP对象。
+  await dlpFile?.closeDLPFile(); // 关闭DLP对象。
   if (file) {
     fileIo.closeSync(file);
   }
@@ -162,7 +162,7 @@ let dlpProperty: dlpPermission.DLPProperty = {
   everyoneAccessList: []
 };
 dlpPermission.generateDLPFile(file, dlp, dlpProperty, (err, res) => { // 生成DLP文件。
-  if (err !== undefined) {
+  if (err) {
     console.error('generateDLPFile error,', err.code, err.message);
   } else {
     console.info('res', JSON.stringify(res));

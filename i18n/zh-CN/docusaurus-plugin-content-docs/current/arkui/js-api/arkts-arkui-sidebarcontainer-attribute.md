@@ -56,7 +56,7 @@ controlButton(value: ButtonStyle)
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [ButtonStyle](arkts-arkui-buttonstyle-i.md) | 是 | 侧边栏控制按钮的属性，用于配置控制按钮的位置、大小和图标。 |
+| value | [ButtonStyle](arkts-arkui-buttonstyle-i.md) | 是 | 侧边栏控制按钮的样式，用于配置控制按钮的位置、大小和图标。 |
 
 ## divider
 
@@ -104,7 +104,7 @@ maxSideBarWidth优先于侧边栏子组件maxWidth，maxSideBarWidth未设置时
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 设置侧边栏最大宽度。<br/>默认值：280vp<br/>单位：vp<br/>取值范围：[0, +∞)<br/>异常值时取默认值。<br/>值不能超过侧边栏容器本身宽度，超过则使用侧边栏容器本身宽度。 |
+| value | number | 是 | 侧边栏最大宽度。<br/>默认值：280vp<br/>单位：vp<br/>取值范围：[0, +∞)<br/>异常值时取默认值。<br/>值不能超过侧边栏容器本身宽度，超过则使用侧边栏容器本身宽度。 |
 
 ## maxSideBarWidth
 
@@ -128,7 +128,7 @@ maxSideBarWidth优先于侧边栏子组件maxWidth，maxSideBarWidth未设置时
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | [Length](../arkts-apis/arkts-arkui-length-t.md) | 是 | 设置侧边栏最大宽度。<br/>默认值：280vp<br/>单位：vp<br/>取值范围：[0, +∞)<br/>异常值时取默认值。<br/>值不能超过侧边栏容器本身宽度，超过则使用侧边栏容器本身宽度。 |
+| value | [Length](../arkts-apis/arkts-arkui-length-t.md) | 是 | 侧边栏最大宽度。<br/>默认值：280vp<br/>单位：vp<br/>取值范围：[0, +∞)<br/>异常值时取默认值。<br/>值不能超过侧边栏容器本身宽度，超过则使用侧边栏容器本身宽度。 |
 
 ## minContentWidth
 
@@ -189,7 +189,7 @@ minSideBarWidth优先于侧边栏子组件minWidth，minSideBarWidth未设置时
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| value | number | 是 | 侧边栏最小宽度。<br/>。<br>单位为：vp。取值范围：[0, +∞)。默认值：API version 9及以下版本默认值为200vp，API version 10的默认值为240vp。 |
+| value | number | 是 | 侧边栏最小宽度。<br/>。<br>单位为：vp。取值范围：[0, +∞)。默认值：API version 9及以下版本默认值为200vp，API version 10及以上版本的默认值为240vp。 |
 
 ## minSideBarWidth
 

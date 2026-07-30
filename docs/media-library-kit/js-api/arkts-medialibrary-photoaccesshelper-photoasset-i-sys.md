@@ -14,7 +14,6 @@ PhotoAsset provides APIs for encapsulating file asset attributes.
 import { photoAccessHelper } from '@kit.MediaLibraryKit';
 ```
 
-<a id="cancelphotorequest"></a>
 ## cancelPhotoRequest
 
 ```TypeScript
@@ -87,7 +86,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="commiteditedasset"></a>
 ## commitEditedAsset
 
 ```TypeScript
@@ -97,7 +95,6 @@ commitEditedAsset(editData: string, uri: string, callback: AsyncCallback<void>):
 Commits the edited image or video asset. This API uses an asynchronous callback to return the result.
 
 The edited file is transferred to the media library based on the URI, which is **FileUri** of the edited file in the application sandbox directory. For details, see [File URI](../../apis-core-file-kit/arkts-apis/arkts-file-fileuri.md).
-
 > **NOTE**  
 >  
 > The commit operation overwrites the previous edited data.
@@ -129,7 +126,6 @@ The edited file is transferred to the media library based on the URI, which is *
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types;<br>3. Parameter verification failed. |
 | 14000011 | System inner fail. Possible causes:<br>1. The database is corrupted;<br>2. The file system is abnormal;<br>3. The IPC request timed out. |
 
-<a id="commiteditedasset-1"></a>
 ## commitEditedAsset
 
 ```TypeScript
@@ -139,7 +135,6 @@ commitEditedAsset(editData: string, uri: string): Promise<void>
 Commits the edited image or video asset. This API uses a promise to return the result.
 
 The edited file is transferred to the media library based on the URI, which is **FileUri** of the edited file in the application sandbox directory. For details, see [File URI](../../apis-core-file-kit/arkts-apis/arkts-file-fileuri.md).
-
 > **NOTE**  
 >  
 > The commit operation overwrites the previous edited data.
@@ -204,7 +199,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="convertimageformat"></a>
 ## convertImageFormat
 
 ```TypeScript
@@ -270,7 +264,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="createtemporarycompatibleduplicate"></a>
 ## createTemporaryCompatibleDuplicate
 
 ```TypeScript
@@ -328,7 +321,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="getanalysisdata"></a>
 ## getAnalysisData
 
 ```TypeScript
@@ -398,7 +390,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="geteditdata"></a>
 ## getEditData
 
 ```TypeScript
@@ -461,7 +452,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="getexif"></a>
 ## getExif
 
 ```TypeScript
@@ -471,7 +461,6 @@ getExif(callback: AsyncCallback<string>): void
 Obtains the Exif data from a JPG image and returns a JSON string. This API uses an asynchronous callback to return the result.
 
 The Exif data obtained are provided by the [image](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md) module. For details about the Exif data, see [image.PropertyKey](../../apis-image-kit/arkts-apis/arkts-image-image-propertykey-e.md).
-
 > **NOTE**  
 >  
 > This API returns a JSON string consisting of Exif tags. The complete Exif data consists of **all_exif** and  
@@ -540,7 +529,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="getexif-1"></a>
 ## getExif
 
 ```TypeScript
@@ -550,7 +538,6 @@ getExif(): Promise<string>
 Obtains the Exif data from a JPG image and returns a JSON string. This API uses a promise to return the result.
 
 The Exif data obtained are provided by the [image](../../apis-image-kit/arkts-apis/arkts-multimedia-image.md) module. For details about the Exif data, see [image.PropertyKey](../../apis-image-kit/arkts-apis/arkts-image-image-propertykey-e.md).
-
 > **NOTE**  
 >  
 > This API returns a JSON string consisting of Exif tags. The complete Exif data consists of **all_exif** and  
@@ -612,7 +599,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="getkeyframethumbnail"></a>
 ## getKeyFrameThumbnail
 
 ```TypeScript
@@ -683,7 +669,39 @@ async function example(context: Context) {
 
 ```
 
-<a id="getthumbnaildata"></a>
+## getReadOnlyFdWithCached
+
+```TypeScript
+getReadOnlyFdWithCached(): Promise<number>
+```
+
+Open the file and cache it in the gallery sandbox when streaming video from the cloud.
+
+**Since:** 26.0.0
+
+**Required permissions:** ohos.permission.READ_IMAGEVIDEO
+
+<!--Device-PhotoAsset-getReadOnlyFdWithCached(): Promise<int>--><!--Device-PhotoAsset-getReadOnlyFdWithCached(): Promise<int>-End-->
+
+**System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
+
+**System API:** This is a system API.
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;number&gt; | Promise used to return the file fd. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Called by non-system application. |
+| [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | Scene parameters validate failed, possible causes:The image and video files corresponding to the photoasset do not exist. |
+| 23800302 | Failed to open the file. Possible causes:1. Unable to access cloud images due to network connectivity issues;2. File system malfunction. |
+
 ## getThumbnailData
 
 ```TypeScript
@@ -748,7 +766,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="isedited"></a>
 ## isEdited
 
 ```TypeScript
@@ -817,7 +834,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="isedited-1"></a>
 ## isEdited
 
 ```TypeScript
@@ -881,7 +897,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="open"></a>
 ## open
 
 ```TypeScript
@@ -891,7 +906,6 @@ open(mode: string, callback: AsyncCallback<number>): void
 Opens this file asset. This API uses an asynchronous callback to return the result.
 
 The returned FD must be closed when it is not required.
-
 > **NOTE**  
 >  
 > This API is supported since API version 10 and deprecated since API version 11. For security purposes, the API  
@@ -949,7 +963,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="open-1"></a>
 ## open
 
 ```TypeScript
@@ -959,7 +972,6 @@ open(mode: string): Promise<number>
 Opens this file asset. This API uses a promise to return the result.
 
 The returned FD must be closed when it is not required.
-
 > **NOTE**  
 >  
 > This API is supported since API version 10 and deprecated since API version 11. For security purposes, the API  
@@ -1025,7 +1037,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="requesteditdata"></a>
 ## requestEditData
 
 ```TypeScript
@@ -1092,7 +1103,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="requesteditdata-1"></a>
 ## requestEditData
 
 ```TypeScript
@@ -1154,7 +1164,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="requestphoto"></a>
 ## requestPhoto
 
 ```TypeScript
@@ -1228,7 +1237,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="requestphoto-1"></a>
 ## requestPhoto
 
 ```TypeScript
@@ -1307,7 +1315,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="requestsource"></a>
 ## requestSource
 
 ```TypeScript
@@ -1372,7 +1379,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="requestsource-1"></a>
 ## requestSource
 
 ```TypeScript
@@ -1432,7 +1438,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="reverttooriginal"></a>
 ## revertToOriginal
 
 ```TypeScript
@@ -1440,7 +1445,6 @@ revertToOriginal(callback: AsyncCallback<void>): void
 ```
 
 Reverts to the state of the file before being edited. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > This API deletes the edited data and edited image or video asset, and the deleted data cannot be restored.  
@@ -1471,7 +1475,6 @@ Reverts to the state of the file before being edited. This API uses an asynchron
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:<br>1. Mandatory parameters are left unspecified;<br>2. Incorrect parameter types. |
 | 14000011 | System inner fail |
 
-<a id="reverttooriginal-1"></a>
 ## revertToOriginal
 
 ```TypeScript
@@ -1479,7 +1482,6 @@ revertToOriginal(): Promise<void>
 ```
 
 Reverts to the state of the file before being edited. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > This API deletes the edited data and edited image or video asset, and the deleted data cannot be restored.  
@@ -1540,7 +1542,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="setfavorite"></a>
 ## setFavorite
 
 ```TypeScript
@@ -1553,7 +1554,7 @@ Favorites or unfavorites this file asset. This API uses an asynchronous callback
 
 **Deprecated since:** 11
 
-**Substitutes:** [setFavorite](arkts-medialibrary-photoaccesshelper-mediaassetchangerequest-c-sys.md#setfavorite-1)
+**Substitutes:** [setFavorite](arkts-medialibrary-photoaccesshelper-mediaassetchangerequest-c-sys.md#setfavorite)
 
 **Required permissions:** ohos.permission.WRITE_IMAGEVIDEO
 
@@ -1607,7 +1608,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="setfavorite-1"></a>
 ## setFavorite
 
 ```TypeScript
@@ -1620,7 +1620,7 @@ Favorites or unfavorites this file asset. This API uses a promise to return the 
 
 **Deprecated since:** 11
 
-**Substitutes:** [setFavorite](arkts-medialibrary-photoaccesshelper-mediaassetchangerequest-c-sys.md#setfavorite-1)
+**Substitutes:** [setFavorite](arkts-medialibrary-photoaccesshelper-mediaassetchangerequest-c-sys.md#setfavorite)
 
 **Required permissions:** ohos.permission.WRITE_IMAGEVIDEO
 
@@ -1682,7 +1682,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="sethidden"></a>
 ## setHidden
 
 ```TypeScript
@@ -1697,7 +1696,7 @@ Private files are stored in the private album. After obtaining private files fro
 
 **Deprecated since:** 11
 
-**Substitutes:** [setHidden](arkts-medialibrary-photoaccesshelper-mediaassetchangerequest-c-sys.md#sethidden-1)
+**Substitutes:** [setHidden](arkts-medialibrary-photoaccesshelper-mediaassetchangerequest-c-sys.md#sethidden)
 
 **Required permissions:** ohos.permission.WRITE_IMAGEVIDEO
 
@@ -1751,7 +1750,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="sethidden-1"></a>
 ## setHidden
 
 ```TypeScript
@@ -1766,7 +1764,7 @@ Private files are stored in the private album. After obtaining private files fro
 
 **Deprecated since:** 11
 
-**Substitutes:** [setHidden](arkts-medialibrary-photoaccesshelper-mediaassetchangerequest-c-sys.md#sethidden-1)
+**Substitutes:** [setHidden](arkts-medialibrary-photoaccesshelper-mediaassetchangerequest-c-sys.md#sethidden)
 
 **Required permissions:** ohos.permission.WRITE_IMAGEVIDEO
 
@@ -1827,7 +1825,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="setpending"></a>
 ## setPending
 
 ```TypeScript
@@ -1837,7 +1834,6 @@ setPending(pendingState: boolean, callback: AsyncCallback<void>): void
 Sets the pending state for this image or video asset. This API uses an asynchronous callback to return the result.
 
 The pending state can be removed only through **setPending(false)**. You can use **photoAsset.get(photoAccessHelper.PhotoKeys.PENDING)** to check whether the asset state is pending. If the asset is in pending state, **true** is returned. Otherwise, **false** is returned.
-
 > **NOTE**  
 >  
 > **setPending** can be used only during the file creation process. Once the FD is closed, **setPending(true)**  
@@ -1899,7 +1895,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="setpending-1"></a>
 ## setPending
 
 ```TypeScript
@@ -1909,7 +1904,6 @@ setPending(pendingState: boolean): Promise<void>
 Sets the pending state for this image or video asset. This API uses a promise to return the result.
 
 The pending state can be removed only through **setPending(false)**. You can use **photoAsset.get(photoAccessHelper.PhotoKeys.PENDING)** to check whether the asset state is pending. If the asset is in pending state, **true** is returned. Otherwise, **false** is returned.
-
 > **NOTE**  
 >  
 > **setPending** can be used only during the file creation process. Once the FD is closed, **setPending(true)**  
@@ -1966,7 +1960,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="setusercomment"></a>
 ## setUserComment
 
 ```TypeScript
@@ -1979,7 +1972,7 @@ Sets user comment information of an image or video. This API uses an asynchronou
 
 **Deprecated since:** 11
 
-**Substitutes:** [setUserComment](arkts-medialibrary-photoaccesshelper-mediaassetchangerequest-c-sys.md#setusercomment-1)
+**Substitutes:** [setUserComment](arkts-medialibrary-photoaccesshelper-mediaassetchangerequest-c-sys.md#setusercomment)
 
 **Required permissions:** ohos.permission.WRITE_IMAGEVIDEO
 
@@ -2038,7 +2031,6 @@ async function example(phAccessHelper: photoAccessHelper.PhotoAccessHelper) {
 
 ```
 
-<a id="setusercomment-1"></a>
 ## setUserComment
 
 ```TypeScript
@@ -2051,7 +2043,7 @@ Sets user comment information of an image or video. This API uses a promise to r
 
 **Deprecated since:** 11
 
-**Substitutes:** [setUserComment](arkts-medialibrary-photoaccesshelper-mediaassetchangerequest-c-sys.md#setusercomment-1)
+**Substitutes:** [setUserComment](arkts-medialibrary-photoaccesshelper-mediaassetchangerequest-c-sys.md#setusercomment)
 
 **Required permissions:** ohos.permission.WRITE_IMAGEVIDEO
 

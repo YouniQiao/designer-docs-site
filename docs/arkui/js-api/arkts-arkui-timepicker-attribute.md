@@ -1,8 +1,8 @@
 # TimePicker properties/events
 
-In addition to the [universal attributes](./common), the following attributes are supported.
+In addition to the [universal attributes](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following attributes are supported.
 
-In addition to the [universal events](./common), the following events are supported.
+In addition to the [universal events](../../apis-ability-kit/arkts-apis/arkts-app-ability-common.md), the following events are supported.
 
 **Inheritance/Implementation:** TimePickerAttribute extends [CommonMethod<TimePickerAttribute>](CommonMethod<TimePickerAttribute>)
 
@@ -12,7 +12,6 @@ In addition to the [universal events](./common), the following events are suppor
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="datetimeoptions"></a>
 ## dateTimeOptions
 
 ```TypeScript
@@ -37,7 +36,6 @@ Sets whether to display a leading zero for the hours, minutes, and seconds.
 | --- | --- | --- | --- |
 | value | [DateTimeOptions](../../apis-localization-kit/arkts-apis/arkts-localization-intl-datetimeoptions-i.md) | Yes | Whether to display a leading zero for the hours, minutes, and seconds.<br>Default value:<br>**hour**: For the 24-hour format, the default value is **"2-digit"**, meaning the hour is displayed as a two-digit number. If the actual value is less than 10, a leading zero is added, displayed as "0X". For the 12-hour format, the default value is **"numeric"**, meaning no leading zero.<br>**minute**: The default value is **"2-digit"**, meaning the minute is displayed as a two-digit number. If the actual value is less than 10, a leading zero is added, displayed as "0X".<br>**second**: The default value is **"2-digit"**,meaning the minute is displayed as a two-digit number. If the actual value is less than 10, a leading zero is added, displayed as "0X".<br> If **hour**, **minute**, or **second** is set to **undefined**, the display follows the default rules. |
 
-<a id="datetimeoptions-1"></a>
 ## dateTimeOptions
 
 ```TypeScript
@@ -62,7 +60,6 @@ Sets whether to display a leading zero for the hours, minutes, and seconds. Comp
 | --- | --- | --- | --- |
 | timeFormat | [Optional](arkts-arkui-optional-t.md)&lt;DateTimeOptions&gt; | Yes | Whether to display a leading zero for the hours, minutes, and seconds. Currently only the configuration of the **hour**, **minute**, and **second** parameters is supported.Default value:<br>**hour**: For the 24-hour format, the default value is **"2-digit"**, meaning the hour is displayed as a two-digit number. If the actual value is less than 10, a leading zero is added, displayed as "0X". For the 12-hour format, the default value is **"numeric"**, meaning no leading zero.<br>**minute**: The default value is **"2-digit"**, meaning the minute is displayed as a two-digit number. If the actual value is less than 10, a leading zero is added, displayed as "0X".<br>**second**: The default value is **"2-digit"**,meaning the minute is displayed as a two-digit number. If the actual value is less than 10, a leading zero is added, displayed as "0X".<br> If **hour**, **minute**, or **second** is set to **undefined**, the display follows the default rules. |
 
-<a id="digitalcrownsensitivity"></a>
 ## digitalCrownSensitivity
 
 ```TypeScript
@@ -87,7 +84,6 @@ Sets the sensitivity to the digital crown rotation.
 | --- | --- | --- | --- |
 | sensitivity | [Optional](arkts-arkui-optional-t.md)&lt;CrownSensitivity&gt; | Yes | Sensitivity to the digital crown rotation.<br>Default value:**CrownSensitivity.MEDIUM** |
 
-<a id="disappeartextstyle"></a>
 ## disappearTextStyle
 
 ```TypeScript
@@ -112,7 +108,6 @@ Sets the text color, font size, and font weight of edge items (the second item a
 | --- | --- | --- | --- |
 | value | [PickerTextStyle](arkts-arkui-pickertextstyle-i.md) | Yes | Text color, font size, and font weight for edge items.<br>Default value:<br>{<br   >color: '#ff182431',<br>font: {<br>size: '14fp', <br>weight: FontWeight.Regular<br>}<br>} |
 
-<a id="disappeartextstyle-1"></a>
 ## disappearTextStyle
 
 ```TypeScript
@@ -137,7 +132,6 @@ Sets the text color, font size, and font weight of edge items (the second item a
 | --- | --- | --- | --- |
 | style | [Optional](arkts-arkui-optional-t.md)&lt;PickerTextStyle&gt; | Yes | Text color, font size, and font weight for edge items.<br>Default value:<br>{<br>color: '#ff182431',<br>font: {<br>size: '14fp', <br>weight: FontWeight.Regular<br>}<br>}<br>If the value of **style** is **undefined**, the default value is used. |
 
-<a id="enablecascade"></a>
 ## enableCascade
 
 ```TypeScript
@@ -162,7 +156,6 @@ Sets whether the AM/PM indicator automatically switches based on the hour value.
 | --- | --- | --- | --- |
 | enabled | boolean | Yes | Sets whether the AM/PM indicator automatically switches based on the hour value. This setting only takes effect when **useMilitaryTime** is set to **false**.<br>- **true**: The AM/PM indicator automatically switches based on the hour value.<br>- **false**: The AM/PM indicator remains static regardless of hour changes.<br>Default value: **false**.<br>When **enabled** is set to **true**, it only takes effect if the **loop** parameter is also **true**. |
 
-<a id="enablehapticfeedback"></a>
 ## enableHapticFeedback
 
 ```TypeScript
@@ -172,10 +165,9 @@ enableHapticFeedback(enable: boolean)
 Sets whether to enable haptic feedback.
 
 To enable haptic feedback, you must declare the following permission under **requestPermissions** in **module** in **src/main/module.json5** of the project.
-
 > **NOTE**  
 >  
-> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1) since API version 18.
+> This API can be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier) since API version 18.
 
 **Since:** 12
 
@@ -193,7 +185,6 @@ To enable haptic feedback, you must declare the following permission under **req
 | --- | --- | --- | --- |
 | enable | boolean | Yes | Whether to enable haptic feedback.<br>- **true**: Enable haptic feedback.<br>-**false**: Disable haptic feedback.<br>Default value: **true**.<br>Whether this parameter takes effect after being set to **true** depends on hardware support. |
 
-<a id="enablehapticfeedback-1"></a>
 ## enableHapticFeedback
 
 ```TypeScript
@@ -220,7 +211,6 @@ To enable haptic feedback, you must declare the following permission under **req
 | --- | --- | --- | --- |
 | enable | [Optional](arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | Whether to enable haptic feedback.<br>- **true**: Enable haptic feedback.   - **false**: Disable haptic feedback.<br>Default value: **true**.<br>If the value of **enable** is **undefined**, the default value is used.<br>Whether this parameter takes effect after being set to **true** depends on hardware support. |
 
-<a id="loop"></a>
 ## loop
 
 ```TypeScript
@@ -245,7 +235,6 @@ Sets whether to enable loop scrolling.
 | --- | --- | --- | --- |
 | value | boolean | Yes | Whether to enable loop scrolling.<br>- **true**: Enable loop scrolling.<br>- **false**:Disable loop scrolling.<br>Default value: **true**. |
 
-<a id="loop-1"></a>
 ## loop
 
 ```TypeScript
@@ -270,7 +259,6 @@ Sets whether to enable loop scrolling. Compared with [loop<sup>11+</sup>](TimePi
 | --- | --- | --- | --- |
 | isLoop | [Optional](arkts-arkui-optional-t.md)&lt;boolean&gt; | Yes | Whether to enable loop scrolling.<br>- **true**: Enable loop scrolling.<br>-**false**: Disable loop scrolling.<br>Default value: **true**.<br>If the value of **isLoop** is **undefined**,the default value is used. |
 
-<a id="onchange"></a>
 ## onChange
 
 ```TypeScript
@@ -295,7 +283,6 @@ This callback is triggered only after the scroll animation completes. To obtain 
 | --- | --- | --- | --- |
 | callback | (value: TimePickerResult) =&gt; void | Yes | Time in 24-hour format. |
 
-<a id="onchange-1"></a>
 ## onChange
 
 ```TypeScript
@@ -322,7 +309,6 @@ This callback is triggered only after the scroll animation completes. To obtain 
 | --- | --- | --- | --- |
 | callback | [Optional](arkts-arkui-optional-t.md)&lt;OnTimePickerChangeCallback&gt; | Yes | Callback invoked when a time option is selected.<br>If **callback** is set to **undefined**, the callback function is not used. |
 
-<a id="onenterselectedarea"></a>
 ## onEnterSelectedArea
 
 ```TypeScript
@@ -332,10 +318,9 @@ onEnterSelectedArea(callback: Callback<TimePickerResult>)
 Triggered during the scrolling of the time picker when an item enters the divider area.
 
 Compared with the [onChange](TimePickerAttribute#onChange(callback: TimePickerResult)) event, this event is triggered earlier, specifically when the scroll distance of the current column exceeds half the height of the selected item, which indicates that the item has entered the divider area. When [enableCascade](TimePickerAttribute#enableCascade) is set to **true**, using this callback is not recommended due to the interdependent relationship between the AM/PM and hour columns. This callback indicates the moment an option enters the divider area during scrolling, and only the value of the currently scrolled column will change.The values of other non-scrolled columns will remain unchanged.
-
 > **NOTE**  
 >  
-> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier-1).
+> This API cannot be called within [attributeModifier](arkts-arkui-commonmethod-c.md#attributemodifier).
 
 **Since:** 18
 
@@ -353,7 +338,6 @@ Compared with the [onChange](TimePickerAttribute#onChange(callback: TimePickerRe
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-callback-i.md)&lt;TimePickerResult&gt; | Yes | Callback triggered during the scrolling of the time picker when an item enters the divider area. |
 
-<a id="selectedtextstyle"></a>
 ## selectedTextStyle
 
 ```TypeScript
@@ -380,7 +364,6 @@ Default value: { color: '#ff007dff', font: { size: '20fp', weight: FontWeight.Me
 | --- | --- | --- | --- |
 | value | [PickerTextStyle](arkts-arkui-pickertextstyle-i.md) | Yes | Font color, font size, and font weight of the selected item.<br>Default value:{ color: '#ff007dff', font: { size: '20fp', weight: FontWeight.Medium } } |
 
-<a id="selectedtextstyle-1"></a>
 ## selectedTextStyle
 
 ```TypeScript
@@ -405,7 +388,6 @@ Sets the text color, font size, and font weight of the selected item. Compared w
 | --- | --- | --- | --- |
 | style | [Optional](arkts-arkui-optional-t.md)&lt;PickerTextStyle&gt; | Yes | Font color, font size, and font weight of the selected item.Default value: { color: '#ff007dff', font: { size: '20fp', weight: FontWeight.Medium } }If the value of **style** is **undefined**, the default value is used. |
 
-<a id="textstyle"></a>
 ## textStyle
 
 ```TypeScript
@@ -430,7 +412,6 @@ Sets the text color, font size, and font weight of candidate items (the item imm
 | --- | --- | --- | --- |
 | value | [PickerTextStyle](arkts-arkui-pickertextstyle-i.md) | Yes | Text color, font size, and font weight for candidate items.<br>Default value:{<br>color: '#ff182431',<br>font: {<br>size: '16fp', <br>weight: FontWeight.Regular<br>}<br>} |
 
-<a id="textstyle-1"></a>
 ## textStyle
 
 ```TypeScript
@@ -455,7 +436,6 @@ Sets the text color, font size, and font weight of candidate items (the item imm
 | --- | --- | --- | --- |
 | style | [Optional](arkts-arkui-optional-t.md)&lt;PickerTextStyle&gt; | Yes | Text color, font size, and font weight for candidate items.<br>Default value:<br>{<br>color: '#ff182431',<br>font: {<br>size: '16fp', <br>weight: FontWeight.Regular<br>}<br>}<br>If the value of **style** is **undefined**, the default value is used. |
 
-<a id="usemilitarytime"></a>
 ## useMilitaryTime
 
 ```TypeScript
@@ -478,7 +458,6 @@ Sets whether the time is displayed in 24-hour format. If this attribute is not s
 | --- | --- | --- | --- |
 | value | boolean | Yes | Whether to display the time in 24-hour format or 12-hour format.<br>- **true**: 24-hour format.<br>- **false**: 12-hour format. |
 
-<a id="usemilitarytime-1"></a>
 ## useMilitaryTime
 
 ```TypeScript

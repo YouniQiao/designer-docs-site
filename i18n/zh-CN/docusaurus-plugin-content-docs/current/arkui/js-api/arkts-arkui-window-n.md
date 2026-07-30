@@ -1,7 +1,5 @@
 # window
 
-Window manager.
-
 **起始版本：** 6
 
 <!--Device-unnamed-declare namespace window--><!--Device-unnamed-declare namespace window-End-->

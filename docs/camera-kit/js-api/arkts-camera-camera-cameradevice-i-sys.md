@@ -80,7 +80,7 @@ readonly lensEquivalentFocalLength?: Array<number>
 
 Equivalent focal length of the camera lens.
 
-**Type:** Array<number>
+**Type:** Array&lt;number&gt;
 
 **Since:** 24
 

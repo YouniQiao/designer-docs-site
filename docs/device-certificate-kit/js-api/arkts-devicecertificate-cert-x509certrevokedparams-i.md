@@ -45,7 +45,9 @@ Indicates whether to allow CRL download. The default value is false. true: The C
 allowOcspCheckOnline?: boolean
 ```
 
-Indicates whether to allow online OCSP check. The default value is false. true: Perform online OCSP check, that is, attempt to obtain the OCSP URL from the certificate AIA extension and send a request to obtain the response.false: Do not perform online OCSP check.
+Indicates whether to allow online OCSP check. The default value is false.  
+- **true**: performs online OCSP check, that is, attempts to obtain the OCSP URL from the AIA extension of the certificate and send a request to obtain a response;  
+- **false**: does not perform online OCSP check.
 > **NOTE**  
 >  
 > Skip online OCSP check if a matching OCSP response is found in ocspResponses.

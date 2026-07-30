@@ -179,7 +179,7 @@ userId?: number
 voiceContentOptions?: VoiceContentOptions
 ```
 
-订阅通知的语音播报内容配置项。
+通知语音播报配置项。
 
 **类型：** VoiceContentOptions
 

@@ -16,7 +16,6 @@ Flash extends [FlashQuery](arkts-camera-camera-flashquery-i.md)Provides APIs rel
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="enablelcdflash"></a>
 ## enableLcdFlash
 
 ```TypeScript
@@ -25,7 +24,7 @@ enableLcdFlash(enabled: boolean): void
 
 Enables or disables the LCD flash.
 
-Before the setting, call [isLcdFlashSupported](arkts-camera-camera-flashquery-i-sys.md#islcdflashsupported-1) to check whether the device supports the LCD flash.
+Before the setting, call [isLcdFlashSupported](arkts-camera-camera-flashquery-i-sys.md#islcdflashsupported) to check whether the device supports the LCD flash.
 
 **Since:** 13
 

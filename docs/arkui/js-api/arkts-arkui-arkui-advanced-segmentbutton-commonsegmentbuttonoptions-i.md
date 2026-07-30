@@ -138,7 +138,7 @@ Unit: vp
 
 If the value is **undefined**, the default value is used.
 
-**Type:** Padding | Dimension
+**Type:** Padding \| Dimension
 
 **Default:** For text only / icon only buttons Padding { top: 4, right: 8, bottom: 4, left: 8 }.
 For text & icon buttons Padding { top: 6, right: 8, bottom: 6, left: 8 }.
@@ -488,7 +488,7 @@ Unit: vp
 
 If the value is **undefined**, the default value is used.
 
-**Type:** Padding | Dimension
+**Type:** Padding \| Dimension
 
 **Default:** 0
 

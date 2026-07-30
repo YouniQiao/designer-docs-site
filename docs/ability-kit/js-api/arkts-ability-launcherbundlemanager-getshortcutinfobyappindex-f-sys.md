@@ -6,14 +6,13 @@
 import { launcherBundleManager } from '@kit.AbilityKit';
 ```
 
-<a id="getshortcutinfobyappindex"></a>
 ## getShortcutInfoByAppIndex
 
 ```TypeScript
 function getShortcutInfoByAppIndex(bundleName: string, appIndex: number): Array<ShortcutInfo>
 ```
 
-Obtains the [shortcut information](arkts-ability-shortcutinfo-i-sys.md) of the current user based on the index of an application clone.
+Obtains the [shortcut information](arkts-ability-launcherbundlemanager-shortcutinfo-t-sys.md) of the current user based on the index of an application clone.
 
 No permission is required for obtaining the caller's own information.
 
@@ -38,7 +37,7 @@ No permission is required for obtaining the caller's own information.
 
 | Type | Description |
 | --- | --- |
-| Array&lt;ShortcutInfo&gt; | Array of the [ShortcutInfo](arkts-ability-shortcutinfo-i-sys.md) objects obtained. |
+| Array&lt;ShortcutInfo&gt; | Array of the [ShortcutInfo](arkts-ability-launcherbundlemanager-shortcutinfo-t-sys.md) objects obtained. |
 
 **Error codes:**
 

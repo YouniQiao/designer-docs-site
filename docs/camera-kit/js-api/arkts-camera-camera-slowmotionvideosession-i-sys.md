@@ -1,7 +1,6 @@
 # SlowMotionVideoSession (System API)
 
 SlowMotionVideoSession extends Session, Flash, AutoExposure, Focus, Zoom, ColorEffect Implements a slow-motion video session, which sets the parameters of the slow-motion video mode and saves all [CameraInput](arkts-camera-camera-camerainput-i.md) and [CameraOutput](arkts-camera-camera-cameraoutput-i.md)instances required to run the camera. It inherits from [Session](arkts-camera-camera-session-i.md).
-
 > **NOTE**  
 > > In slow-motion video mode, only preview streams and video streams can be added.
 
@@ -21,7 +20,6 @@ SlowMotionVideoSession extends Session, Flash, AutoExposure, Focus, Zoom, ColorE
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="isslowmotiondetectionsupported"></a>
 ## isSlowMotionDetectionSupported
 
 ```TypeScript
@@ -29,9 +27,8 @@ isSlowMotionDetectionSupported(): boolean
 ```
 
 Checks whether the device supports slow-motion detection.
-
 > **NOTE**  
-> > This API must be called after [commitConfig](arkts-camera-camera-session-i.md#commitconfig-1) is  
+> > This API must be called after [commitConfig](arkts-camera-camera-session-i.md#commitconfig) is  
 > called.
 
 **Since:** 12
@@ -74,7 +71,6 @@ function isSlowMotionDetectionSupported(slowMotionVideoSession: camera.SlowMotio
 
 ```
 
-<a id="off"></a>
 ## off('error')
 
 ```TypeScript
@@ -113,7 +109,6 @@ function unregisterSessionError(slowMotionVideoSession: camera.SlowMotionVideoSe
 
 ```
 
-<a id="off-1"></a>
 ## off('focusStateChange')
 
 ```TypeScript
@@ -152,7 +147,6 @@ function unregisterFocusStateChange(slowMotionVideoSession: camera.SlowMotionVid
 
 ```
 
-<a id="off-2"></a>
 ## off('smoothZoomInfoAvailable')
 
 ```TypeScript
@@ -191,7 +185,6 @@ function unregisterSmoothZoomInfo(slowMotionVideoSession: camera.SlowMotionVideo
 
 ```
 
-<a id="off-3"></a>
 ## off('slowMotionStatus')
 
 ```TypeScript
@@ -230,7 +223,6 @@ function unregisterSlowMotionStatus(slowMotionVideoSession: camera.SlowMotionVid
 
 ```
 
-<a id="on"></a>
 ## on('error')
 
 ```TypeScript
@@ -251,7 +243,7 @@ Subscribes to HighResolutionPhotoSession error events. This API uses an asynchro
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when a session is created. This event is triggered and the error message is returned when an error occurs during the calling of a session-related API such as [beginConfig](arkts-camera-camera-session-i.md#beginconfig-1),[commitConfig](arkts-camera-camera-session-i.md#commitconfig-1), and [addInput](arkts-camera-camera-session-i.md#addinput-1). |
+| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when a session is created. This event is triggered and the error message is returned when an error occurs during the calling of a session-related API such as [beginConfig](arkts-camera-camera-session-i.md#beginconfig),[commitConfig](arkts-camera-camera-session-i.md#commitconfig), and [addInput](arkts-camera-camera-session-i.md#addinput). |
 | callback | [ErrorCallback](../../apis-arkui/arkts-components/arkts-arkui-errorcallback-t-sys.md) | Yes | Callback used to return an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md). |
 
 **Error codes:**
@@ -275,7 +267,6 @@ function registerSessionError(slowMotionVideoSession: camera.SlowMotionVideoSess
 
 ```
 
-<a id="on-1"></a>
 ## on('focusStateChange')
 
 ```TypeScript
@@ -324,7 +315,6 @@ function registerFocusStateChange(slowMotionVideoSession: camera.SlowMotionVideo
 
 ```
 
-<a id="on-2"></a>
 ## on('smoothZoomInfoAvailable')
 
 ```TypeScript
@@ -373,7 +363,6 @@ function registerSmoothZoomInfo(slowMotionVideoSession: camera.SlowMotionVideoSe
 
 ```
 
-<a id="on-3"></a>
 ## on('slowMotionStatus')
 
 ```TypeScript
@@ -422,7 +411,6 @@ function registerSlowMotionStatus(slowMotionVideoSession: camera.SlowMotionVideo
 
 ```
 
-<a id="setslowmotiondetectionarea"></a>
 ## setSlowMotionDetectionArea
 
 ```TypeScript
@@ -430,12 +418,11 @@ setSlowMotionDetectionArea(area: Rect): void
 ```
 
 Sets an area for slow-motion detection.
-
 > **NOTE**  
 > > Before the setting, call  
-> [isSlowMotionDetectionSupported](arkts-camera-camera-slowmotionvideosession-i-sys.md#isslowmotiondetectionsupported-1) to check  
+> [isSlowMotionDetectionSupported](arkts-camera-camera-slowmotionvideosession-i-sys.md#isslowmotiondetectionsupported) to check  
 > whether the device supports slow-motion detection.  
-> This API must be called after [commitConfig](arkts-camera-camera-session-i.md#commitconfig-1) is  
+> This API must be called after [commitConfig](arkts-camera-camera-session-i.md#commitconfig) is  
 > called.
 
 **Since:** 12

@@ -234,7 +234,7 @@ Obtain the device color represented by a string. If it cannot be obtained, retur
 const deviceType: string
 ```
 
-Device type. For details, see [deviceTypes tag](docroot://quick-start/module-configuration-file.md#devicetypes).
+Device type. For details, see [deviceTypes tag](../../../quick-start/module-configuration-file.md#devicetypes).
 
 Example: <!--RP1-->wearable<!--RP1End-->
 

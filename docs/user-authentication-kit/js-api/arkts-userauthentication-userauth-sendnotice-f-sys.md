@@ -29,7 +29,7 @@ Sends a notification from the user authentication widget. When the unified authe
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | noticeType | [NoticeType](arkts-userauthentication-userauth-noticetype-e-sys.md) | Yes | Notification type. It identifies the source of a notification. Currently,**WIDGET_NOTICE (1)** is supported, indicating that the notification is from the authentication widget. |
-| eventData | string | Yes | Event data. It is a string in JSON format, containing the notification details, such as the authentication type and ready event. The data length ranges from 0 to 65536 bytes. |
+| eventData | string | Yes | Event data, which is a JSON string that contains the specific content of the notification, such as the authentication type ready event. The data length ranges from 0 to 65536 bytes. The JSON object should contain fields such as **widgetContextId** (number type, widget context ID), **event** (string type, event type), **version** (string type, version number), and **payload** (object type, event payload object). |
 
 **Error codes:**
 

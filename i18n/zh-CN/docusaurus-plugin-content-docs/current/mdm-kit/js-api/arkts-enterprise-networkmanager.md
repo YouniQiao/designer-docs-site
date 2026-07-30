@@ -7,11 +7,13 @@
 >  
 > 本模块接口仅对设备管理应用开放，且调用接口前需激活设备管理应用，具体请参考[MDM Kit开发指南](../../../mdm/mdm-kit-guide.md)。
 
-**起始版本：** 10
+**起始版本：** 12
 
 <!--Device-unnamed-declare namespace networkManager--><!--Device-unnamed-declare namespace networkManager-End-->
 
 **系统能力：** SystemCapability.Customization.EnterpriseDeviceManager
+
+**系统接口：** 此接口为系统接口。
 
 ## 导入模块
 
@@ -37,6 +39,7 @@ import { networkManager } from '@kit.MDMKit';
 | [getIpAddressSync](arkts-mdm-networkmanager-getipaddresssync-f.md#getipaddresssync) | 根据网络接口获取设备IP地址。 |
 | [getMacSync](arkts-mdm-networkmanager-getmacsync-f.md#getmacsync) | 根据网络接口获取设备MAC地址。 |
 | [isNetworkInterfaceDisabledSync](arkts-mdm-networkmanager-isnetworkinterfacedisabledsync-f.md#isnetworkinterfacedisabledsync) | 查询指定网络接口是否被禁用。 |
+| [isNetworkInterfaceDisabledSync](arkts-mdm-networkmanager-isnetworkinterfacedisabledsync-f.md#isnetworkinterfacedisabledsync-1) | 查询指定网络接口是否被禁用。适用于企业网络管理场景，例如检查网络接口状态、审计网络接口使用情况、验证网络策略执行效果，帮助企业确认网络接口管理策略是否生效，便于策略调整和问题排查。 |
 | [queryApn](arkts-mdm-networkmanager-queryapn-f.md#queryapn) | 查询符合特定APN信息的APN ID。 |
 | [queryApn](arkts-mdm-networkmanager-queryapn-f.md#queryapn-1) | 查询特定APN的APN参数信息。 |
 | [removeDomainFilterRule](arkts-mdm-networkmanager-removedomainfilterrule-f.md#removedomainfilterrule) | 移除设备域名过滤规则。  API version 21及之前版本，仅支持IPv4。从API version 22开始，支持IPv4和IPv6。  从API version 23开始，支持[LogType](arkts-mdm-networkmanager-logtype-e.md)。  移除规则后如果不存在[Action](arkts-mdm-networkmanager-action-e.md)为ALLOW规则后，会将[addDomainFilterRule](arkts-mdm-networkmanager-adddomainfilterrule-f.md#adddomainfilterrule)添加的默认DENY规则清空。 |

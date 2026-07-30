@@ -1,6 +1,6 @@
 # @ohos.promptAction
 
-创建并显示即时反馈、对话框和操作菜单。
+创建并显示即时反馈、对话框和操作菜单，适用于系统通知、交互确认、菜单选择等场景。
 > **说明：**
 > - 本模块不支持在[UIAbility](../../apis-ability-kit/arkts-apis/arkts-app-ability-uiability.md)的文件声明处使用，即不能在UIAbility的生命周期中调用，需要在创建组件实例后使用。  
 >  
@@ -21,7 +21,7 @@ import { LevelMode, ImmersiveMode, LevelOrder } from '@kit.ArkUI';
 
 | 名称 | 说明 |
 | --- | --- |
-| [promptAction](arkts-arkui-promptaction-n.md) | 创建并显示即时反馈、对话框和操作菜单。 |
+| [promptAction](arkts-arkui-promptaction-n.md) | 创建并显示即时反馈、对话框和操作菜单，适用于系统通知、交互确认、菜单选择等场景。 |
 
 ### 类
 

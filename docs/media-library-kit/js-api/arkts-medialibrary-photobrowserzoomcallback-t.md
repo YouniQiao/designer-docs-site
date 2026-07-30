@@ -20,5 +20,5 @@ The callback of onPhotoBrowserZoom event
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| scale | double | Yes |  |
+| scale | number | Yes |  |
 

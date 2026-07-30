@@ -8,7 +8,6 @@ Type of the touch event.
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="getcurrentlocalposition"></a>
 ## getCurrentLocalPosition
 
 ```TypeScript
@@ -83,7 +82,7 @@ Unit: vp.
 globalDisplayX?: number
 ```
 
-X coordinate of the touch point in the [global coordinate system](docroot://windowmanager/window-terminology.md#global-coordinate-system).
+X coordinate of the touch point in the [global coordinate system](../../../windowmanager/window-terminology.md#global-coordinate-system).
 
 Unit: vp.
 
@@ -107,7 +106,7 @@ Value range: (-∞, +∞).
 globalDisplayY?: number
 ```
 
-Y coordinate of the touch point in the [global coordinate system](docroot://windowmanager/window-terminology.md#global-coordinate-system).
+Y coordinate of the touch point in the [global coordinate system](../../../windowmanager/window-terminology.md#global-coordinate-system).
 
 Unit: vp.
 
@@ -367,7 +366,7 @@ Unit: vp.
 x: number
 ```
 
-X coordinate of the touch point in the [component coordinate system](docroot://ui/arkui-glossary.md#component-coordinate-system) based on the event-responsive component.
+X coordinate of the touch point in the [component coordinate system](../../../ui/arkui-glossary.md#component-coordinate-system) based on the event-responsive component.
 
 Unit: vp.
 
@@ -387,7 +386,7 @@ Unit: vp.
 y: number
 ```
 
-Y coordinate of the touch point in the [component coordinate system](docroot://ui/arkui-glossary.md#component-coordinate-system) based on the event-responsive component.
+Y coordinate of the touch point in the [component coordinate system](../../../ui/arkui-glossary.md#component-coordinate-system) based on the event-responsive component.
 
 Unit: vp.
 

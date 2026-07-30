@@ -6,7 +6,6 @@
 import { sensor } from '@kit.SensorServiceKit';
 ```
 
-<a id="on"></a>
 ## on
 
 ```TypeScript
@@ -22,9 +21,7 @@ Subscribes to data of the acceleration sensor.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
-<!--Device-sensor-function on(type: SensorId.ACCELEROMETER, callback: Callback<AccelerometerResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorId.ACCELEROMETER, callback: Callback<AccelerometerResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorId.ACCELEROMETER, callback: Callback<AccelerometerResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorId.ACCELEROMETER, callback: Callback<AccelerometerResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -68,7 +65,6 @@ try {
 ```
 
 
-<a id="on-1"></a>
 ## on
 
 ```TypeScript
@@ -82,9 +78,7 @@ Subscribes to data of the uncalibrated acceleration sensor.
 
 **Required permissions:** ohos.permission.ACCELEROMETER
 
-<!--Device-sensor-function on(type: SensorId.ACCELEROMETER_UNCALIBRATED, callback: Callback<AccelerometerUncalibratedResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorId.ACCELEROMETER_UNCALIBRATED, callback: Callback<AccelerometerUncalibratedResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorId.ACCELEROMETER_UNCALIBRATED, callback: Callback<AccelerometerUncalibratedResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorId.ACCELEROMETER_UNCALIBRATED, callback: Callback<AccelerometerUncalibratedResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -131,7 +125,6 @@ try {
 ```
 
 
-<a id="on-2"></a>
 ## on
 
 ```TypeScript
@@ -183,7 +176,6 @@ try {
 ```
 
 
-<a id="on-3"></a>
 ## on
 
 ```TypeScript
@@ -195,9 +187,7 @@ Subscribes to data of the ambient temperature sensor.
 
 **Since:** 9
 
-<!--Device-sensor-function on(type: SensorId.AMBIENT_TEMPERATURE, callback: Callback<AmbientTemperatureResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorId.AMBIENT_TEMPERATURE, callback: Callback<AmbientTemperatureResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorId.AMBIENT_TEMPERATURE, callback: Callback<AmbientTemperatureResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorId.AMBIENT_TEMPERATURE, callback: Callback<AmbientTemperatureResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -238,7 +228,6 @@ try {
 ```
 
 
-<a id="on-4"></a>
 ## on
 
 ```TypeScript
@@ -290,7 +279,6 @@ try {
 ```
 
 
-<a id="on-5"></a>
 ## on
 
 ```TypeScript
@@ -302,9 +290,7 @@ Subscribes to data of the gravity sensor.
 
 **Since:** 9
 
-<!--Device-sensor-function on(type: SensorId.GRAVITY, callback: Callback<GravityResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorId.GRAVITY, callback: Callback<GravityResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorId.GRAVITY, callback: Callback<GravityResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorId.GRAVITY, callback: Callback<GravityResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -347,7 +333,6 @@ try {
 ```
 
 
-<a id="on-6"></a>
 ## on
 
 ```TypeScript
@@ -363,9 +348,7 @@ Subscribes to data of the gyroscope sensor.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
-<!--Device-sensor-function on(type: SensorId.GYROSCOPE, callback: Callback<GyroscopeResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorId.GYROSCOPE, callback: Callback<GyroscopeResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorId.GYROSCOPE, callback: Callback<GyroscopeResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorId.GYROSCOPE, callback: Callback<GyroscopeResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -409,7 +392,6 @@ try {
 ```
 
 
-<a id="on-7"></a>
 ## on
 
 ```TypeScript
@@ -423,9 +405,7 @@ Subscribes to data of the uncalibrated gyroscope sensor.
 
 **Required permissions:** ohos.permission.GYROSCOPE
 
-<!--Device-sensor-function on(type: SensorId.GYROSCOPE_UNCALIBRATED, callback: Callback<GyroscopeUncalibratedResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorId.GYROSCOPE_UNCALIBRATED, callback: Callback<GyroscopeUncalibratedResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorId.GYROSCOPE_UNCALIBRATED, callback: Callback<GyroscopeUncalibratedResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorId.GYROSCOPE_UNCALIBRATED, callback: Callback<GyroscopeUncalibratedResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -473,7 +453,6 @@ try {
 ```
 
 
-<a id="on-8"></a>
 ## on
 
 ```TypeScript
@@ -526,7 +505,6 @@ try {
 ```
 
 
-<a id="on-9"></a>
 ## on
 
 ```TypeScript
@@ -540,9 +518,7 @@ Subscribes to data of the heart rate sensor.
 
 **Required permissions:** ohos.permission.READ_HEALTH_DATA
 
-<!--Device-sensor-function on(type: SensorId.HEART_RATE, callback: Callback<HeartRateResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorId.HEART_RATE, callback: Callback<HeartRateResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorId.HEART_RATE, callback: Callback<HeartRateResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorId.HEART_RATE, callback: Callback<HeartRateResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -584,7 +560,6 @@ try {
 ```
 
 
-<a id="on-10"></a>
 ## on
 
 ```TypeScript
@@ -596,9 +571,7 @@ Subscribes to data of the humidity sensor.
 
 **Since:** 9
 
-<!--Device-sensor-function on(type: SensorId.HUMIDITY, callback: Callback<HumidityResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorId.HUMIDITY, callback: Callback<HumidityResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorId.HUMIDITY, callback: Callback<HumidityResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorId.HUMIDITY, callback: Callback<HumidityResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -639,7 +612,6 @@ try {
 ```
 
 
-<a id="on-11"></a>
 ## on
 
 ```TypeScript
@@ -653,9 +625,7 @@ Subscribes to data of the linear acceleration sensor.
 
 **Required permissions:** ohos.permission.ACCELEROMETER
 
-<!--Device-sensor-function on(type: SensorId.LINEAR_ACCELEROMETER, callback: Callback<LinearAccelerometerResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorId.LINEAR_ACCELEROMETER, callback: Callback<LinearAccelerometerResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorId.LINEAR_ACCELEROMETER, callback: Callback<LinearAccelerometerResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorId.LINEAR_ACCELEROMETER, callback: Callback<LinearAccelerometerResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -699,7 +669,6 @@ try {
 ```
 
 
-<a id="on-12"></a>
 ## on
 
 ```TypeScript
@@ -711,9 +680,7 @@ Subscribes to data of the magnetic field sensor.
 
 **Since:** 9
 
-<!--Device-sensor-function on(type: SensorId.MAGNETIC_FIELD, callback: Callback<MagneticFieldResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorId.MAGNETIC_FIELD, callback: Callback<MagneticFieldResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorId.MAGNETIC_FIELD, callback: Callback<MagneticFieldResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorId.MAGNETIC_FIELD, callback: Callback<MagneticFieldResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -756,7 +723,6 @@ try {
 ```
 
 
-<a id="on-13"></a>
 ## on
 
 ```TypeScript
@@ -768,9 +734,7 @@ Subscribes to data of the uncalibrated magnetic field sensor.
 
 **Since:** 9
 
-<!--Device-sensor-function on(type: SensorId.MAGNETIC_FIELD_UNCALIBRATED, callback: Callback<MagneticFieldUncalibratedResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorId.MAGNETIC_FIELD_UNCALIBRATED, callback: Callback<MagneticFieldUncalibratedResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorId.MAGNETIC_FIELD_UNCALIBRATED, callback: Callback<MagneticFieldUncalibratedResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorId.MAGNETIC_FIELD_UNCALIBRATED, callback: Callback<MagneticFieldUncalibratedResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -816,7 +780,6 @@ try {
 ```
 
 
-<a id="on-14"></a>
 ## on
 
 ```TypeScript
@@ -825,7 +788,6 @@ function on(type: SensorId.ORIENTATION, callback: Callback<OrientationResponse>,
 ```
 
 Subscribes to data of the orientation sensor.
-
 > **NOTE**  
 >  
 > Applications or services invoking this API can prompt users to use figure-8 calibration to improve the accuracy  
@@ -836,9 +798,7 @@ Subscribes to data of the orientation sensor.
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 
-<!--Device-sensor-function on(type: SensorId.ORIENTATION, callback: Callback<OrientationResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorId.ORIENTATION, callback: Callback<OrientationResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorId.ORIENTATION, callback: Callback<OrientationResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorId.ORIENTATION, callback: Callback<OrientationResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -881,7 +841,6 @@ try {
 ```
 
 
-<a id="on-15"></a>
 ## on
 
 ```TypeScript
@@ -936,7 +895,6 @@ try {
 ```
 
 
-<a id="on-16"></a>
 ## on
 
 ```TypeScript
@@ -950,9 +908,7 @@ Subscribes to data of the pedometer detection sensor.
 
 **Required permissions:** ohos.permission.ACTIVITY_MOTION
 
-<!--Device-sensor-function on(type: SensorId.PEDOMETER_DETECTION, callback: Callback<PedometerDetectionResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorId.PEDOMETER_DETECTION, callback: Callback<PedometerDetectionResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorId.PEDOMETER_DETECTION, callback: Callback<PedometerDetectionResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorId.PEDOMETER_DETECTION, callback: Callback<PedometerDetectionResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -994,7 +950,6 @@ try {
 ```
 
 
-<a id="on-17"></a>
 ## on
 
 ```TypeScript
@@ -1046,7 +1001,6 @@ try {
 ```
 
 
-<a id="on-18"></a>
 ## on
 
 ```TypeScript
@@ -1058,9 +1012,7 @@ Subscribes to data of the rotation vector sensor.
 
 **Since:** 9
 
-<!--Device-sensor-function on(type: SensorId.ROTATION_VECTOR, callback: Callback<RotationVectorResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorId.ROTATION_VECTOR, callback: Callback<RotationVectorResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorId.ROTATION_VECTOR, callback: Callback<RotationVectorResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorId.ROTATION_VECTOR, callback: Callback<RotationVectorResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -1104,7 +1056,6 @@ try {
 ```
 
 
-<a id="on-19"></a>
 ## on
 
 ```TypeScript
@@ -1116,9 +1067,7 @@ Subscribes to the significant motion sensor data.
 
 **Since:** 9
 
-<!--Device-sensor-function on(type: SensorId.SIGNIFICANT_MOTION, callback: Callback<SignificantMotionResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorId.SIGNIFICANT_MOTION, callback: Callback<SignificantMotionResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorId.SIGNIFICANT_MOTION, callback: Callback<SignificantMotionResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorId.SIGNIFICANT_MOTION, callback: Callback<SignificantMotionResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -1159,7 +1108,6 @@ try {
 ```
 
 
-<a id="on-20"></a>
 ## on
 
 ```TypeScript
@@ -1171,9 +1119,7 @@ Subscribes to data of the wear detection sensor.
 
 **Since:** 9
 
-<!--Device-sensor-function on(type: SensorId.WEAR_DETECTION, callback: Callback<WearDetectionResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorId.WEAR_DETECTION, callback: Callback<WearDetectionResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorId.WEAR_DETECTION, callback: Callback<WearDetectionResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorId.WEAR_DETECTION, callback: Callback<WearDetectionResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -1214,7 +1160,6 @@ try {
 ```
 
 
-<a id="on-21"></a>
 ## on
 
 ```TypeScript
@@ -1226,9 +1171,7 @@ Subscribes to the fused pressure sensor data.
 
 **Since:** 22
 
-<!--Device-sensor-function on(type: SensorId.FUSION_PRESSURE, callback: Callback<FusionPressureResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorId.FUSION_PRESSURE, callback: Callback<FusionPressureResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorId.FUSION_PRESSURE, callback: Callback<FusionPressureResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorId.FUSION_PRESSURE, callback: Callback<FusionPressureResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -1269,7 +1212,6 @@ try {
 ```
 
 
-<a id="on-22"></a>
 ## on
 
 ```TypeScript
@@ -1287,9 +1229,7 @@ Subscribes to data changes of the acceleration sensor. If this API is called mul
 
 **Required permissions:** ohos.permission.ACCELEROMETER
 
-<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_ACCELEROMETER, callback: Callback<AccelerometerResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_ACCELEROMETER, callback: Callback<AccelerometerResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_ACCELEROMETER, callback: Callback<AccelerometerResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_ACCELEROMETER, callback: Callback<AccelerometerResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -1317,7 +1257,6 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_ACCELEROMETER, (data: sensor.Accelero
 ```
 
 
-<a id="on-23"></a>
 ## on
 
 ```TypeScript
@@ -1335,9 +1274,7 @@ Subscribes to data changes of the uncalibrated acceleration sensor. If this API 
 
 **Required permissions:** ohos.permission.ACCELEROMETER
 
-<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_ACCELEROMETER_UNCALIBRATED, callback: Callback<AccelerometerUncalibratedResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_ACCELEROMETER_UNCALIBRATED, callback: Callback<AccelerometerUncalibratedResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_ACCELEROMETER_UNCALIBRATED, callback: Callback<AccelerometerUncalibratedResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_ACCELEROMETER_UNCALIBRATED, callback: Callback<AccelerometerUncalibratedResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -1369,7 +1306,6 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_ACCELEROMETER_UNCALIBRATED, (data: se
 ```
 
 
-<a id="on-24"></a>
 ## on
 
 ```TypeScript
@@ -1385,9 +1321,7 @@ Subscribes to data changes of the ambient light sensor. If this API is called mu
 
 **Substitutes:** on(type:
 
-<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_AMBIENT_LIGHT, callback: Callback<LightResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_AMBIENT_LIGHT, callback: Callback<LightResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_AMBIENT_LIGHT, callback: Callback<LightResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_AMBIENT_LIGHT, callback: Callback<LightResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -1413,7 +1347,6 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_AMBIENT_LIGHT, (data: sensor.LightRes
 ```
 
 
-<a id="on-25"></a>
 ## on
 
 ```TypeScript
@@ -1429,9 +1362,7 @@ Subscribes to data changes of the ambient temperature sensor. If this API is cal
 
 **Substitutes:** on(type:
 
-<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_AMBIENT_TEMPERATURE, callback: Callback<AmbientTemperatureResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_AMBIENT_TEMPERATURE, callback: Callback<AmbientTemperatureResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_AMBIENT_TEMPERATURE, callback: Callback<AmbientTemperatureResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_AMBIENT_TEMPERATURE, callback: Callback<AmbientTemperatureResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -1457,7 +1388,6 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_AMBIENT_TEMPERATURE, (data: sensor.Am
 ```
 
 
-<a id="on-26"></a>
 ## on
 
 ```TypeScript
@@ -1473,9 +1403,7 @@ Subscribes to data changes of the barometer sensor. If this API is called multip
 
 **Substitutes:** on(type:
 
-<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_BAROMETER, callback: Callback<BarometerResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_BAROMETER, callback: Callback<BarometerResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_BAROMETER, callback: Callback<BarometerResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_BAROMETER, callback: Callback<BarometerResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -1501,7 +1429,6 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_BAROMETER, (data: sensor.BarometerRes
 ```
 
 
-<a id="on-27"></a>
 ## on
 
 ```TypeScript
@@ -1517,9 +1444,7 @@ Subscribes to data changes of the gravity sensor. If this API is called multiple
 
 **Substitutes:** on(type:
 
-<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_GRAVITY, callback: Callback<GravityResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_GRAVITY, callback: Callback<GravityResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_GRAVITY, callback: Callback<GravityResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_GRAVITY, callback: Callback<GravityResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -1547,7 +1472,6 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_GRAVITY, (data: sensor.GravityRespons
 ```
 
 
-<a id="on-28"></a>
 ## on
 
 ```TypeScript
@@ -1565,9 +1489,7 @@ Subscribes to data changes of the gyroscope sensor. If this API is called multip
 
 **Required permissions:** ohos.permission.GYROSCOPE
 
-<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_GYROSCOPE, callback: Callback<GyroscopeResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_GYROSCOPE, callback: Callback<GyroscopeResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_GYROSCOPE, callback: Callback<GyroscopeResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_GYROSCOPE, callback: Callback<GyroscopeResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -1595,7 +1517,6 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_GYROSCOPE, (data: sensor.GyroscopeRes
 ```
 
 
-<a id="on-29"></a>
 ## on
 
 ```TypeScript
@@ -1613,9 +1534,7 @@ Subscribes to data changes of the uncalibrated gyroscope sensor. If this API is 
 
 **Required permissions:** ohos.permission.GYROSCOPE
 
-<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_GYROSCOPE_UNCALIBRATED, callback: Callback<GyroscopeUncalibratedResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_GYROSCOPE_UNCALIBRATED, callback: Callback<GyroscopeUncalibratedResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_GYROSCOPE_UNCALIBRATED, callback: Callback<GyroscopeUncalibratedResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_GYROSCOPE_UNCALIBRATED, callback: Callback<GyroscopeUncalibratedResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -1646,7 +1565,6 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_GYROSCOPE_UNCALIBRATED, (data: sensor
 ```
 
 
-<a id="on-30"></a>
 ## on
 
 ```TypeScript
@@ -1662,9 +1580,7 @@ Subscribes to data changes of the Hall effect sensor. If this API is called mult
 
 **Substitutes:** on(type:
 
-<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_HALL, callback: Callback<HallResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_HALL, callback: Callback<HallResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_HALL, callback: Callback<HallResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_HALL, callback: Callback<HallResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -1690,7 +1606,6 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_HALL, (data: sensor.HallResponse) => 
 ```
 
 
-<a id="on-31"></a>
 ## on
 
 ```TypeScript
@@ -1708,9 +1623,7 @@ Subscribes to data changes of the heart rate sensor. If this API is called multi
 
 **Required permissions:** ohos.permission.HEALTH_DATA
 
-<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_HEART_RATE, callback: Callback<HeartRateResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_HEART_RATE, callback: Callback<HeartRateResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_HEART_RATE, callback: Callback<HeartRateResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_HEART_RATE, callback: Callback<HeartRateResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -1723,7 +1636,6 @@ Subscribes to data changes of the heart rate sensor. If this API is called multi
 | options | [Options](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-zlib-options-i.md) | No | List of optional parameters. This parameter is used to set the data reporting frequency. The default value is 200,000,000 ns. |
 
 
-<a id="on-32"></a>
 ## on
 
 ```TypeScript
@@ -1739,9 +1651,7 @@ Subscribes to data changes of the humidity sensor. If this API is called multipl
 
 **Substitutes:** on(type:
 
-<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_HUMIDITY, callback: Callback<HumidityResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_HUMIDITY, callback: Callback<HumidityResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_HUMIDITY, callback: Callback<HumidityResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_HUMIDITY, callback: Callback<HumidityResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -1767,7 +1677,6 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_HUMIDITY, (data: sensor.HumidityRespo
 ```
 
 
-<a id="on-33"></a>
 ## on
 
 ```TypeScript
@@ -1785,9 +1694,7 @@ Subscribes to data changes of the linear acceleration sensor. If this API is cal
 
 **Required permissions:** ohos.permission.ACCELEROMETER
 
-<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_LINEAR_ACCELERATION, callback: Callback<LinearAccelerometerResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_LINEAR_ACCELERATION, callback: Callback<LinearAccelerometerResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_LINEAR_ACCELERATION, callback: Callback<LinearAccelerometerResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_LINEAR_ACCELERATION, callback: Callback<LinearAccelerometerResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -1800,7 +1707,6 @@ Subscribes to data changes of the linear acceleration sensor. If this API is cal
 | options | [Options](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-zlib-options-i.md) | No | List of optional parameters. This parameter is used to set the data reporting frequency. The default value is 200,000,000 ns. |
 
 
-<a id="on-34"></a>
 ## on
 
 ```TypeScript
@@ -1816,9 +1722,7 @@ Subscribes to data changes of the magnetic field sensor. If this API is called m
 
 **Substitutes:** on(type:
 
-<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_MAGNETIC_FIELD, callback: Callback<MagneticFieldResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_MAGNETIC_FIELD, callback: Callback<MagneticFieldResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_MAGNETIC_FIELD, callback: Callback<MagneticFieldResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_MAGNETIC_FIELD, callback: Callback<MagneticFieldResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -1846,7 +1750,6 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_MAGNETIC_FIELD, (data: sensor.Magneti
 ```
 
 
-<a id="on-35"></a>
 ## on
 
 ```TypeScript
@@ -1862,9 +1765,7 @@ Subscribes to data changes of the uncalibrated magnetic field sensor. If this AP
 
 **Substitutes:** on(type:
 
-<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_MAGNETIC_FIELD_UNCALIBRATED, callback: Callback<MagneticFieldUncalibratedResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_MAGNETIC_FIELD_UNCALIBRATED, callback: Callback<MagneticFieldUncalibratedResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_MAGNETIC_FIELD_UNCALIBRATED, callback: Callback<MagneticFieldUncalibratedResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_MAGNETIC_FIELD_UNCALIBRATED, callback: Callback<MagneticFieldUncalibratedResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -1895,7 +1796,6 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_MAGNETIC_FIELD_UNCALIBRATED, (data: s
 ```
 
 
-<a id="on-36"></a>
 ## on
 
 ```TypeScript
@@ -1911,9 +1811,7 @@ Subscribes to data changes of the orientation sensor. If this API is called mult
 
 **Substitutes:** on(type:
 
-<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_ORIENTATION, callback: Callback<OrientationResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_ORIENTATION, callback: Callback<OrientationResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_ORIENTATION, callback: Callback<OrientationResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_ORIENTATION, callback: Callback<OrientationResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -1941,7 +1839,6 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_ORIENTATION, (data: sensor.Orientatio
 ```
 
 
-<a id="on-37"></a>
 ## on
 
 ```TypeScript
@@ -1959,9 +1856,7 @@ Subscribes to data changes of the pedometer sensor. If this API is called multip
 
 **Required permissions:** ohos.permission.ACTIVITY_MOTION
 
-<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_PEDOMETER, callback: Callback<PedometerResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_PEDOMETER, callback: Callback<PedometerResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_PEDOMETER, callback: Callback<PedometerResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_PEDOMETER, callback: Callback<PedometerResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -1987,7 +1882,6 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_PEDOMETER, (data: sensor.PedometerRes
 ```
 
 
-<a id="on-38"></a>
 ## on
 
 ```TypeScript
@@ -2005,9 +1899,7 @@ Subscribes to data changes of the pedometer detection sensor. If this API is cal
 
 **Required permissions:** ohos.permission.ACTIVITY_MOTION
 
-<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_PEDOMETER_DETECTION, callback: Callback<PedometerDetectionResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_PEDOMETER_DETECTION, callback: Callback<PedometerDetectionResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_PEDOMETER_DETECTION, callback: Callback<PedometerDetectionResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_PEDOMETER_DETECTION, callback: Callback<PedometerDetectionResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -2033,7 +1925,6 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_PEDOMETER_DETECTION, (data: sensor.Pe
 ```
 
 
-<a id="on-39"></a>
 ## on
 
 ```TypeScript
@@ -2049,9 +1940,7 @@ Subscribes to data changes of the proximity sensor. If this API is called multip
 
 **Substitutes:** on(type:
 
-<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_PROXIMITY, callback: Callback<ProximityResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_PROXIMITY, callback: Callback<ProximityResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_PROXIMITY, callback: Callback<ProximityResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_PROXIMITY, callback: Callback<ProximityResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -2077,7 +1966,6 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_PROXIMITY, (data: sensor.ProximityRes
 ```
 
 
-<a id="on-40"></a>
 ## on
 
 ```TypeScript
@@ -2093,9 +1981,7 @@ Subscribes to data changes of the rotation vector sensor. If this API is called 
 
 **Substitutes:** on(type:
 
-<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_ROTATION_VECTOR, callback: Callback<RotationVectorResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_ROTATION_VECTOR, callback: Callback<RotationVectorResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_ROTATION_VECTOR, callback: Callback<RotationVectorResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_ROTATION_VECTOR, callback: Callback<RotationVectorResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -2124,7 +2010,6 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_ROTATION_VECTOR, (data: sensor.Rotati
 ```
 
 
-<a id="on-41"></a>
 ## on
 
 ```TypeScript
@@ -2140,9 +2025,7 @@ Subscribes to data changes of the significant motion sensor. If this API is call
 
 **Substitutes:** on(type:
 
-<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_SIGNIFICANT_MOTION, callback: Callback<SignificantMotionResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_SIGNIFICANT_MOTION, callback: Callback<SignificantMotionResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_SIGNIFICANT_MOTION, callback: Callback<SignificantMotionResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_SIGNIFICANT_MOTION, callback: Callback<SignificantMotionResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -2168,7 +2051,6 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_SIGNIFICANT_MOTION, (data: sensor.Sig
 ```
 
 
-<a id="on-42"></a>
 ## on
 
 ```TypeScript
@@ -2184,9 +2066,7 @@ Subscribes to data changes of the wear detection sensor. If this API is called m
 
 **Substitutes:** on(type:
 
-<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_WEAR_DETECTION, callback: Callback<WearDetectionResponse>,
-    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_WEAR_DETECTION, callback: Callback<WearDetectionResponse>,
-    options?: Options): void-End-->
+<!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_WEAR_DETECTION, callback: Callback<WearDetectionResponse>,    options?: Options): void--><!--Device-sensor-function on(type: SensorType.SENSOR_TYPE_ID_WEAR_DETECTION, callback: Callback<WearDetectionResponse>,    options?: Options): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -2212,7 +2092,6 @@ sensor.on(sensor.SensorType.SENSOR_TYPE_ID_WEAR_DETECTION, (data: sensor.WearDet
 ```
 
 
-<a id="on-43"></a>
 ## on('sensorStatusChange')
 
 ```TypeScript

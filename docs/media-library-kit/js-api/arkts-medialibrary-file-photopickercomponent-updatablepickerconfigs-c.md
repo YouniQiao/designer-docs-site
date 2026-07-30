@@ -22,7 +22,7 @@ appAlbumFilters?: Array<string>
 
 Only display album contents corresponding to the specified applications.Use the bundle name to identify the application.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 23
 
@@ -42,7 +42,7 @@ autoPlayScenes?: Array<photoAccessHelper.AutoPlayScene>
 
 Moving photo playback mode. Supports up to two modes.
 
-**Type:** Array<photoAccessHelper.AutoPlayScene>
+**Type:** Array&lt;photoAccessHelper.AutoPlayScene&gt;
 
 **Since:** 23
 
@@ -342,7 +342,7 @@ preselectedUris?: Array<string>
 
 The uri for the preselected files.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 22
 

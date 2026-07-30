@@ -6,14 +6,13 @@
 import { launcherBundleManager } from '@kit.AbilityKit';
 ```
 
-<a id="startshortcut"></a>
 ## startShortcut
 
 ```TypeScript
 function startShortcut(shortcutInfo: ShortcutInfo, options?: StartOptions): Promise<void>
 ```
 
-Starts an ability based on the specified [shortcut information](arkts-ability-shortcutinfo-i-sys.md). This API uses a promise to return the result.
+Starts an ability based on the specified [shortcut information](arkts-ability-launcherbundlemanager-shortcutinfo-t-sys.md). This API uses a promise to return the result.
 
 **Since:** 12
 

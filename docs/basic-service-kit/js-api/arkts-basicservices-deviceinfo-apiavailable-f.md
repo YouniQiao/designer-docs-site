@@ -6,7 +6,6 @@
 import { deviceInfo } from '@kit.BasicServicesKit';
 ```
 
-<a id="apiavailable"></a>
 ## apiAvailable
 
 ```TypeScript

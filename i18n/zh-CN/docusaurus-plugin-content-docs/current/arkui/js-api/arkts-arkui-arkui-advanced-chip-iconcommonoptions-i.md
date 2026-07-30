@@ -23,7 +23,7 @@ import { SuffixIconOptions, CloseOptions, ChipSymbolGlyphOptions, Chip, Accessib
 activatedFillColor?: ResourceColor
 ```
 
-操作块激活时图标填充颜色。
+Chip激活时的图标填充颜色。仅在图片格式为SVG时生效。
 
 默认值：$r('sys.color.chip_active_icon_color')
 
@@ -47,7 +47,7 @@ activatedFillColor?: ResourceColor
 fillColor?: ResourceColor
 ```
 
-图标填充颜色。
+图标填充颜色。仅在图片格式为SVG时生效。
 
 默认值：$r('sys.color.chip_usually_icon_color')
 
@@ -71,7 +71,7 @@ fillColor?: ResourceColor
 size?: SizeOptions
 ```
 
-图标大小，不支持百分比。
+图标大小，不支持百分比，异常值按默认值处理。
 
 默认值：
 

@@ -49,7 +49,7 @@ bezierWarp(controlPoints: Array<common2D.Point>): Filter
 **示例：**
 
 ```TypeScript
-import { common2D, uiEffect } from '@kit.ArkGraphics2D'
+import { common2D, uiEffect } from '@kit.ArkGraphics2D';
 
 @Entry
 @Component
@@ -58,7 +58,7 @@ struct BezierWarpExample {
     { x: 0, y: 0 }, { x: 1 / 3, y: 0 }, { x: 2 / 3, y: 0 }, // top edge
     { x: 0.5, y: 0 }, { x: 0.5, y: 1 / 3 }, { x: 1, y: 2 / 3 }, // right edge
     { x: 1, y: 1 }, { x: 2 / 3, y: 1 }, { x: 1 / 3, y: 1 }, // bottom edge
-    { x: 0, y: 1 }, { x: 0, y: 2 / 3 }, { x: 0, y: 1 / 3 }] // left edge
+    { x: 0, y: 1 }, { x: 0, y: 2 / 3 }, { x: 0, y: 1 / 3 }]; // left edge
 
   build() {
     Column() {
@@ -126,12 +126,12 @@ struct BlurBubblesRiseExample {
     let resourceMgr = context.resourceManager;
     resourceMgr?.getMediaContent($r('app.media.drawBlurMask').id)
       .then((val: Uint8Array) => {
-        let buffer: ArrayBuffer = val.buffer.slice(0, val.buffer.byteLength)
+        let buffer: ArrayBuffer = val.buffer.slice(0, val.buffer.byteLength);
         let imageSource: image.ImageSource = image.createImageSource(buffer);
         imageSource.createPixelMap().then((pixelmap: image.PixelMap) => {
           this.maskImage = pixelmap as PixelMap;
-        })
-      })
+        });
+      });
   }
 
   build() {
@@ -195,7 +195,7 @@ colorGradient(colors: Array<Color>, positions: Array<common2D.Point>, strengths:
 **示例：**
 
 ```TypeScript
-import { common2D, uiEffect } from '@kit.ArkGraphics2D'
+import { common2D, uiEffect } from '@kit.ArkGraphics2D';
 
 @Entry
 @Component
@@ -203,19 +203,20 @@ struct ColorGradientExample {
   @State gradientColors: Array<uiEffect.Color> = [
     {red: 1.0, green: 0.8, blue: 0.5, alpha: 0.8},
     {red: 1.0, green: 1.5, blue: 0.5, alpha: 1.0}
-  ]
+  ];
 
   @State gradientPositions: Array<common2D.Point> = [
     {x: 0.2, y: 0.2},
-    {x: 0.8, y: 0.6}]
+    {x: 0.8, y: 0.6}
+  ];
 
-  @State gradientStrengths: Array<number> = [0.3, 0.3]
+  @State gradientStrengths: Array<number> = [0.3, 0.3];
 
   build() {
     Column() {
       Row()
-        .width("100%")
-        .height("100%")
+        .width('100%')
+        .height('100%')
         // 为组件内容添加颜色渐变效果
         .backgroundFilter(uiEffect.createFilter().colorGradient(this.gradientColors, this.gradientPositions, this.gradientStrengths))
     }
@@ -265,21 +266,21 @@ contentLight(lightPosition: common2D.Point3d, lightColor: common2D.Color, lightI
 **示例：**
 
 ```TypeScript
-import { common2D, uiEffect } from '@kit.ArkGraphics2D'
+import { common2D, uiEffect } from '@kit.ArkGraphics2D';
 
 @Entry
 @Component
 struct Index {
   @State contentLightPosition: common2D.Point3d = {
     x: 0, y: 0, z: 2
-  }
+  };
   @State contentLightColor: common2D.Color = {
     red: 1,
     green: 1,
     blue: 1,
     alpha: 1
-  }
-  @State lightIntensity: number = 1
+  };
+  @State lightIntensity: number = 1;
 
   build() {
     Column() {
@@ -344,23 +345,23 @@ directionLight(direction: common2D.Point3d, color: Color, intensity: number, mas
 **示例：**
 
 ```TypeScript
-import { uiEffect, common2D } from "@kit.ArkGraphics2D";
+import { uiEffect, common2D } from '@kit.ArkGraphics2D';
 
 @Entry
 @Component
 struct Index {
-  @State rippleMaskCenter: common2D.Point = {x:0.5, y:0.5}
-  @State rippleMaskRadius: number = 0.0
-  @State rippleMaskWidth: number = 0.0
-  @State color: Color = Color.Transparent
+  @State rippleMaskCenter: common2D.Point = {x:0.5, y:0.5};
+  @State rippleMaskRadius: number = 0.0;
+  @State rippleMaskWidth: number = 0.0;
+  @State color: Color = Color.Transparent;
 
   build() {
     Column() {
       RelativeContainer() {
-        Image($r("app.media.back")).width("100%").height("100%")
+        Image($r('app.media.back')).width('100%').height('100%')
         Stack()
-          .width("100%")
-          .height("100%")
+          .width('100%')
+          .height('100%')
           .backgroundColor(this.color)
           // 为组件内容提供基于Mask和平行光的光照效果
           .backgroundFilter(uiEffect.createFilter()
@@ -418,19 +419,19 @@ displacementDistort(displacementMap: Mask, factor?: [number, number]): Filter
 **示例：**
 
 ```TypeScript
-import { uiEffect } from '@kit.ArkGraphics2D'
+import { uiEffect } from '@kit.ArkGraphics2D';
 
 @Entry
 @Component
 struct DisplacementDistortExample {
-  @State distortMask: uiEffect.Mask = uiEffect.Mask.createRippleMask({x: 0.5, y: 0.5}, 0.2, 0.3, 0.0)
-  
+  @State distortMask: uiEffect.Mask = uiEffect.Mask.createRippleMask({x: 0.5, y: 0.5}, 0.2, 0.3, 0.0);
+
   build() {
     Stack() {
       Image($rawfile('test.png'))
-      Row()  
-        .width("100%")
-        .height("100%")
+      Row()
+        .width('100%')
+        .height('100%')
         // 为组件内容添加扭曲效果
         .backgroundFilter(uiEffect.createFilter().displacementDistort(this.distortMask, [5.0, 5.0]))
     }
@@ -477,8 +478,8 @@ distort(distortionK: number): Filter
 
 ```TypeScript
 // 将透镜畸变效果添加至组件上
-let filter = uiEffect.createFilter()
-filter.distort(-0.5)
+let filter = uiEffect.createFilter();
+filter.distort(-0.5);
 
 ```
 
@@ -522,21 +523,21 @@ edgeLight(alpha: number, color?: Color, mask?: Mask, bloom?: boolean): Filter
 **示例：**
 
 ```TypeScript
-import { uiEffect } from '@kit.ArkGraphics2D'
+import { uiEffect } from '@kit.ArkGraphics2D';
 
 @Entry
 @Component
 struct EdgeLightExample {
-  @State edgeLightColor: uiEffect.Color = {red: 0.0, green: 1.0, blue: 0.0, alpha: 1.0}
-  
-  @State edgeLightMask: uiEffect.Mask = uiEffect.Mask.createRippleMask({x: 0.5, y: 0.5}, 0.2, 0.5, 0.5)
-  
+  @State edgeLightColor: uiEffect.Color = {red: 0.0, green: 1.0, blue: 0.0, alpha: 1.0};
+
+  @State edgeLightMask: uiEffect.Mask = uiEffect.Mask.createRippleMask({x: 0.5, y: 0.5}, 0.2, 0.5, 0.5);
+
   build() {
     Stack() {
       Image($rawfile('test.png'))
-      Row()  
-        .width("100%")
-        .height("100%")
+      Row()
+        .width('100%')
+        .height('100%')
         // 为组件内容检测边缘，并添加边缘高亮效果
         .backgroundFilter(uiEffect.createFilter().edgeLight(1.0, this.edgeLightColor, this.edgeLightMask, false))
     }
@@ -584,8 +585,8 @@ flyInFlyOutEffect(degree: number, flyMode: FlyMode): Filter
 
 ```TypeScript
 // 将飞入飞出形变效果添加至组件上
-let filter = uiEffect.createFilter()
-filter.flyInFlyOutEffect(0.5, uiEffect.FlyMode.TOP)
+let filter = uiEffect.createFilter();
+filter.flyInFlyOutEffect(0.5, uiEffect.FlyMode.TOP);
 
 ```
 
@@ -778,23 +779,23 @@ maskTransition(alphaMask: Mask, factor?: number, inverse?: boolean): Filter
 **示例：**
 
 ```TypeScript
-import { uiEffect, common2D } from "@kit.ArkGraphics2D";
+import { uiEffect, common2D } from '@kit.ArkGraphics2D';
 
 @Entry
 @Component
 struct Index {
-  context = this.getUIContext()
-  @State alpha: number = 0
-  @State enterNewPage:boolean = false
-  @State rippleMaskCenter: common2D.Point = {x:0.5, y:0.5}
-  @State rippleMaskRadius: number = 0.1
+  context = this.getUIContext();
+  @State alpha: number = 0;
+  @State enterNewPage:boolean = false;
+  @State rippleMaskCenter: common2D.Point = {x:0.5, y:0.5};
+  @State rippleMaskRadius: number = 0.1;
   build() {
     Stack() {
       // 转场前页面
-      Image($r("app.media.before")).width("100%").height("100%")
+      Image($r('app.media.before')).width('100%').height('100%')
         if (this.enterNewPage) {
           // 转场后页面
-          Column().width("100%").height("100%").backgroundImage($r("app.media.after"))
+          Column().width('100%').height('100%').backgroundImage($r('app.media.after'))
             // 为组件内容提供基于Mask的转场效果
             .backgroundFilter(uiEffect.createFilter()
               .maskTransition(
@@ -802,19 +803,19 @@ struct Index {
                 this.alpha))
             .onAppear(() => {
               this.context.animateTo({ duration: 1000 }, () => {
-                this.rippleMaskRadius = 1.3
+                this.rippleMaskRadius = 1.3;
               })
               this.context.animateTo({ duration: 800 }, () => {
-                this.alpha = 1
+                this.alpha = 1;
               })
             })
         }
     }.borderWidth(2)
     .onClick(()=>{
-      this.enterNewPage=!this.enterNewPage;
+      this.enterNewPage = !this.enterNewPage;
       if (this.enterNewPage) {
-        this.alpha=0;
-        this.rippleMaskRadius=0.1;
+        this.alpha = 0;
+        this.rippleMaskRadius = 0.1;
       }
     })
   }
@@ -855,8 +856,8 @@ pixelStretch(stretchSizes: Array<number>, tileMode: TileMode): Filter
 
 ```TypeScript
 // 将边缘像素扩展效果添加至组件上
-let filter = uiEffect.createFilter()
-filter.pixelStretch([0.2, 0.2, 0.2, 0.2], uiEffect.TileMode.CLAMP)
+let filter = uiEffect.createFilter();
+filter.pixelStretch([0.2, 0.2, 0.2, 0.2], uiEffect.TileMode.CLAMP);
 
 ```
 
@@ -938,7 +939,7 @@ import { uiEffect } from '@kit.ArkGraphics2D';
 @Entry
 @Component
 struct VariableRadiusBlurExample {
-  @State blurMask: uiEffect.Mask = uiEffect.Mask.createRippleMask({x: 0.5, y: 0.5}, 0.2, 0.1)
+  @State blurMask: uiEffect.Mask = uiEffect.Mask.createRippleMask({x: 0.5, y: 0.5}, 0.2, 0.1);
 
   build() {
     Stack() {
@@ -996,8 +997,8 @@ waterRipple(progress: number, waveCount: number, x: number, y: number, rippleMod
 
 ```TypeScript
 // 将水波纹效果添加至组件上
-let filter = uiEffect.createFilter()
-filter.waterRipple(0.5, 2, 0.5, 0.5, uiEffect.WaterRippleMode.SMALL2SMALL)
+let filter = uiEffect.createFilter();
+filter.waterRipple(0.5, 2, 0.5, 0.5, uiEffect.WaterRippleMode.SMALL2SMALL);
 
 ```
 

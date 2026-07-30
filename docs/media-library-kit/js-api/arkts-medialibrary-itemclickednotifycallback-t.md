@@ -20,6 +20,6 @@ The callback of onItemClickedNotify event
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| itemInfo | ItemInfo | Yes |  |
-| clickType | ClickType | Yes |  |
+| itemInfo | [ItemInfo](arkts-medialibrary-file-photopickercomponent-iteminfo-c.md) | Yes |  |
+| clickType | [ClickType](arkts-medialibrary-file-photopickercomponent-clicktype-e.md) | Yes |  |
 

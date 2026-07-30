@@ -16,7 +16,6 @@ The class for PickerController
 import { MaxCountType, PreselectedInfo, BaseItemInfo, ItemInfo, AnimatorParams, SelectMode, PhotoBrowserUIElement, ItemType, PinchGridSwitchedCallback, SingleLineConfig, ClickResult, ClickType, UpdatablePickerConfigs, DataType, VideoPlayerState, ItemDisplayRatio, ScrollStopAtStartCallback, ScrollStopAtEndCallback, PickerOrientation, videoPlayStateChangedCallback, PhotoBrowserChangeStartCallback, MovingPhotoBadgeStateChangedCallback, ErrorCallback, PickerOptions, ItemsDeletedCallback, PhotoBrowserRange, SaveMode, MaxSelected, PickerController, PickerError, PhotoPickerComponent, ExceedMaxSelectedCallback, ReminderMode, ItemClickedNotifyCallback, PickerColorMode, BadgeConfig, BadgeType, PhotoBrowserInfo, CurrentAlbumDeletedCallback } from '@kit.MediaLibraryKit';
 ```
 
-<a id="adddata"></a>
 ## addData
 
 ```TypeScript
@@ -40,7 +39,6 @@ Add data to picker component
 | dataType | [DataType](arkts-medialibrary-file-photopickercomponent-datatype-e.md) | Yes | data type |
 | data | Object | Yes | data |
 
-<a id="completed"></a>
 ## completed
 
 ```TypeScript
@@ -65,7 +63,6 @@ Call this method to obtain the complete data after a selection operation has fin
 | --- | --- |
 | Promise&lt;CompletedResult&gt; | Promise<CompletedResult> |
 
-<a id="deletedata"></a>
 ## deleteData
 
 ```TypeScript
@@ -89,7 +86,6 @@ Delete data to picker component
 | dataType | [DataType](arkts-medialibrary-file-photopickercomponent-datatype-e.md) | Yes | data type |
 | data | Object | Yes | data |
 
-<a id="exitphotobrowser"></a>
 ## exitPhotoBrowser
 
 ```TypeScript
@@ -106,7 +102,6 @@ Exit photo browser.
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 
-<a id="replacephotopickerpreview"></a>
 ## replacePhotoPickerPreview
 
 ```TypeScript
@@ -131,7 +126,6 @@ Display the photo after edit.
 | newUri | string | Yes | New uri after replacement |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Returns void |
 
-<a id="savetrustedphotoassets"></a>
 ## saveTrustedPhotoAssets
 
 ```TypeScript
@@ -145,9 +139,7 @@ Save the photo assets of uris.
 
 **Atomic service API:** This API can be used in atomic services since API version 15.
 
-<!--Device-PickerController-saveTrustedPhotoAssets(trustedUris: Array<string>, callback: AsyncCallback<Array<string>>,
-    configs?: Array<photoAccessHelper.PhotoCreationConfig>, saveMode?: SaveMode): void--><!--Device-PickerController-saveTrustedPhotoAssets(trustedUris: Array<string>, callback: AsyncCallback<Array<string>>,
-    configs?: Array<photoAccessHelper.PhotoCreationConfig>, saveMode?: SaveMode): void-End-->
+<!--Device-PickerController-saveTrustedPhotoAssets(trustedUris: Array<string>, callback: AsyncCallback<Array<string>>,    configs?: Array<photoAccessHelper.PhotoCreationConfig>, saveMode?: SaveMode): void--><!--Device-PickerController-saveTrustedPhotoAssets(trustedUris: Array<string>, callback: AsyncCallback<Array<string>>,    configs?: Array<photoAccessHelper.PhotoCreationConfig>, saveMode?: SaveMode): void-End-->
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -160,7 +152,6 @@ Save the photo assets of uris.
 | configs | Array&lt;photoAccessHelper.PhotoCreationConfig&gt; | No | Photo asset creation configs |
 | saveMode | [SaveMode](arkts-medialibrary-file-photopickercomponent-savemode-e.md) | No | Mode of save |
 
-<a id="savetrustedphotoassetsex"></a>
 ## saveTrustedPhotoAssetsEx
 
 ```TypeScript
@@ -176,9 +167,7 @@ Save the photo assets of uris.
 
 **Atomic service API:** This API can be used in atomic services since API version 23.
 
-<!--Device-PickerController-saveTrustedPhotoAssetsEx(trustedUris: Array<string>,settings?: Array<photoAccessHelper.CreationSetting>,
-    saveMode?: SaveMode): Promise<Array<string>>--><!--Device-PickerController-saveTrustedPhotoAssetsEx(trustedUris: Array<string>,settings?: Array<photoAccessHelper.CreationSetting>,
-    saveMode?: SaveMode): Promise<Array<string>>-End-->
+<!--Device-PickerController-saveTrustedPhotoAssetsEx(trustedUris: Array<string>,settings?: Array<photoAccessHelper.CreationSetting>,    saveMode?: SaveMode): Promise<Array<string>>--><!--Device-PickerController-saveTrustedPhotoAssetsEx(trustedUris: Array<string>,settings?: Array<photoAccessHelper.CreationSetting>,    saveMode?: SaveMode): Promise<Array<string>>-End-->
 
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 
@@ -196,7 +185,6 @@ Save the photo assets of uris.
 | --- | --- |
 | Promise&lt;Array&lt;string&gt;&gt; | - Returns the media library file uri list to application which has been authorized |
 
-<a id="setdata"></a>
 ## setData
 
 ```TypeScript
@@ -220,7 +208,6 @@ Set data to picker component
 | dataType | [DataType](arkts-medialibrary-file-photopickercomponent-datatype-e.md) | Yes | data type |
 | data | Object | Yes | data |
 
-<a id="setmaxselected"></a>
 ## setMaxSelected
 
 ```TypeScript
@@ -243,7 +230,6 @@ Set max select count to picker component, include max_total_count, max_photo_cou
 | --- | --- | --- | --- |
 | maxSelected | [MaxSelected](arkts-medialibrary-file-photopickercomponent-maxselected-c.md) | Yes | max select count data |
 
-<a id="setmovingphotostate"></a>
 ## setMovingPhotoState
 
 ```TypeScript
@@ -281,7 +267,6 @@ Sets the moving photo effect in the photo browser view.This configuration only t
 | [23800151](../errorcode-medialibrary.md#23800151-failed-to-verify-scene-parameters) | Scene parameters validate failed, possible causes:1. An invalid enumeration value was passed. Only MOVING_PHOTO_ENABLE and MOVING_PHOTO_DISABLE are supported for configuration; |
 | [23800202](../errorcode-medialibrary.md#23800202-invalid-scenario-call) | Invalid call context. Possible causes:1. The API is called outside the photo browsing scenario.2. The API is called when isMovingPhotoBadgeShown is already set to true. |
 
-<a id="setphotobrowseritem"></a>
 ## setPhotoBrowserItem
 
 ```TypeScript
@@ -305,7 +290,6 @@ Set photo browser item to picker component.
 | uri | string | Yes | specify image uri for photo browsing |
 | photoBrowserRange | [PhotoBrowserRange](arkts-medialibrary-file-photopickercomponent-photobrowserrange-e.md) | No | photo browser slide range |
 
-<a id="setphotobrowseruielementvisibility"></a>
 ## setPhotoBrowserUIElementVisibility
 
 ```TypeScript
@@ -329,7 +313,6 @@ Sets whether other elements on the photo browser page are visible.
 | elements | Array&lt;PhotoBrowserUIElement&gt; | Yes | other elements on the photo browser page |
 | isVisible | boolean | Yes | visible or not |
 
-<a id="updatepickeroptions"></a>
 ## updatePickerOptions
 
 ```TypeScript

@@ -157,7 +157,7 @@ children: Array<AccessibilityElement>
 
 All child elements.
 
-**Type:** Array<AccessibilityElement>
+**Type:** Array&lt;AccessibilityElement&gt;
 
 **Since:** 9
 
@@ -225,7 +225,7 @@ contents: Array<string>
 
 List of contents. Set this parameter based on site requirements. No special restrictions.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 9
 
@@ -257,7 +257,7 @@ Default value: **0**.
 customComponentType?: string
 ```
 
-Custom component type. It corresponds to [AccessibilityRoleType Enumeration Description](../../apis-arkui/arkts-components/arkts-arkui-common-accessibilityroletype-e.md) of the element.
+Custom component type. It corresponds to [AccessibilityRoleType Enumeration Description](../../apis-arkui/arkts-components/arkts-arkui-accessibilityroletype-e.md) of the element.
 
 **Type:** string
 

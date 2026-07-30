@@ -59,6 +59,7 @@
   - [UserInfo](arkts-avsession-avmusictemplate-userinfo-i.md)
   - [ActionType](arkts-avsession-avmusictemplate-actiontype-t.md)
   - [ClearSearchHistoryEvent](arkts-avsession-avmusictemplate-clearsearchhistoryevent-t.md)
+  - [CustomCommandEvent](arkts-avsession-avmusictemplate-customcommandevent-t.md)
   - [CustomType](arkts-avsession-avmusictemplate-customtype-t.md)
   - [DialogActionType](arkts-avsession-avmusictemplate-dialogactiontype-t.md)
   - [DialogControlType](arkts-avsession-avmusictemplate-dialogcontroltype-t.md)

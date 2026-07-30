@@ -25,13 +25,13 @@ import { proxyChannelManager } from '@kit.DistributedServiceKit';
 
 | Name | Description |
 | --- | --- |
-| [closeProxyChannel](arkts-distributedservice-proxychannelmanager-closeproxychannel-f.md#closeproxychannel-1) | Closes a proxy channel that has been opened. |
-| [off](arkts-distributedservice-proxychannelmanager-off-f.md#off-1) | Unsubscribes from data receiving events. |
-| [off](arkts-distributedservice-proxychannelmanager-off-f.md#off-2) | Unsubscribes from channel state change events. |
-| [on](arkts-distributedservice-proxychannelmanager-on-f.md#on-1) | Subscribes to data receiving events. This API returns the result asynchronously through a callback. |
-| [on](arkts-distributedservice-proxychannelmanager-on-f.md#on-2) | Subscribes to channel state change events. This API returns the result asynchronously through a callback. |
-| [openProxyChannel](arkts-distributedservice-proxychannelmanager-openproxychannel-f.md#openproxychannel-1) | Opens a proxy channel. This API uses a promise to return the result. |
-| [sendData](arkts-distributedservice-proxychannelmanager-senddata-f.md#senddata-1) | Sends data to the peer end. This API uses a promise to return the result. |
+| [closeProxyChannel](arkts-distributedservice-proxychannelmanager-closeproxychannel-f.md#closeproxychannel) | Closes a proxy channel that has been opened. |
+| [off](arkts-distributedservice-proxychannelmanager-off-f.md#off) | Unsubscribes from data receiving events. |
+| [off](arkts-distributedservice-proxychannelmanager-off-f.md#off-1) | Unsubscribes from channel state change events. |
+| [on](arkts-distributedservice-proxychannelmanager-on-f.md#on) | Subscribes to data receiving events. This API returns the result asynchronously through a callback. |
+| [on](arkts-distributedservice-proxychannelmanager-on-f.md#on-1) | Subscribes to channel state change events. This API returns the result asynchronously through a callback. |
+| [openProxyChannel](arkts-distributedservice-proxychannelmanager-openproxychannel-f.md#openproxychannel) | Opens a proxy channel. This API uses a promise to return the result. |
+| [sendData](arkts-distributedservice-proxychannelmanager-senddata-f.md#senddata) | Sends data to the peer end. This API uses a promise to return the result. |
 
 ### Interfaces
 

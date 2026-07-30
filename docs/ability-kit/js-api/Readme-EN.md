@@ -578,8 +578,18 @@
 - [@ohos.app.ability.insightIntent](arkts-app-ability-insightintent.md)
   - [AppIntentEntity](arkts-ability-insightintent-appintententity-c.md)
   - [ExecuteResult](arkts-ability-insightintent-executeresult-i.md)
+  <!--Del-->
+  - [ExecuteResult(system api)](arkts-ability-insightintent-executeresult-i-sys.md)<!--DelEnd-->
   - [IntentEntity](arkts-ability-insightintent-intententity-i.md)
   - [IntentResult](arkts-ability-insightintent-intentresult-i.md)
+  <!--Del-->
+  - [IntentResult(system api)](arkts-ability-insightintent-intentresult-i-sys.md)<!--DelEnd-->
+  <!--Del-->
+  - [InteractionInfo(system api)](arkts-ability-insightintent-interactioninfo-i-sys.md)<!--DelEnd-->
+  <!--Del-->
+  - [InteractionModalUIExtension(system api)](arkts-ability-insightintent-interactionmodaluiextension-i-sys.md)<!--DelEnd-->
+  <!--Del-->
+  - [InteractionUI(system api)](arkts-ability-insightintent-interactionui-i-sys.md)<!--DelEnd-->
   - [QueryEntityParam](arkts-ability-insightintent-queryentityparam-i.md)
   - [ExecuteMode](arkts-ability-insightintent-executemode-e.md)
   <!--Del-->

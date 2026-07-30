@@ -16,7 +16,6 @@ Provides the aperture query capability.
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="getsupportedphysicalapertures"></a>
 ## getSupportedPhysicalApertures
 
 ```TypeScript
@@ -49,7 +48,6 @@ Gets the supported physical apertures.Move to ApertureQuery interface from Apert
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed, the inputDevice or the session is abnormal.<br>**Applicable version:** 24 and later |
 
-<a id="getsupportedvirtualapertures"></a>
 ## getSupportedVirtualApertures
 
 ```TypeScript

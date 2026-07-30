@@ -40,6 +40,6 @@ Adds the applications that are allowed to distribute ability connection.
 | [9200001](../errorcode-enterpriseDeviceManager.md#9200001-deviceadmin-not-enabled) | The application is not an administrator application of the device. |
 | [9200002](../errorcode-enterpriseDeviceManager.md#9200002-permission-denied) | The administrator application does not have permission to manage the device. |
 | [9200012](../errorcode-enterpriseDeviceManager.md#9200012-parameter-verification-failed) | Parameter verification failed. |
-| 9201043 | Prerequisites for the API call have not been satisfied. For example,distributed outgoing transmission is not disallowed before adding the distributed bidirectional collaboration trustlist. |
+| [9201043](../errorcode-enterpriseDeviceManager.md#9201043-prerequisites-for-calling-the-api-not-met) | Prerequisites for the API call have not been satisfied. For example,distributed outgoing transmission is not disallowed before adding the distributed bidirectional collaboration trustlist. |
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission verification failed.The application does not have the permission required to call the API. |
 

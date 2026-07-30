@@ -20,11 +20,11 @@ aboutToAppear方法
 
 aboutToAppear函数在创建自定义组件的新实例之后，在执行其构建（）函数之前执行。
 
-**起始版本：** 18
+**起始版本：** 7
 
-**原子化服务API：** 从API版本18开始，该接口支持在原子化服务API中使用。
+**原子化服务API：** 从API版本11开始，该接口支持在原子化服务API中使用。
 
-**卡片能力：** 从API版本18开始，该接口支持在ArkTS卡片中使用。
+**卡片能力：** 从API版本9开始，该接口支持在ArkTS卡片中使用。
 
 <!--Device-BaseCustomComponent-aboutToAppear?(): void--><!--Device-BaseCustomComponent-aboutToAppear?(): void-End-->
 
@@ -40,11 +40,11 @@ aboutToDisappear 方法
 
 在自定义组件被销毁之前，aboutToDisappear 函数会执行。
 
-**起始版本：** 18
+**起始版本：** 7
 
-**原子化服务API：** 从API版本18开始，该接口支持在原子化服务API中使用。
+**原子化服务API：** 从API版本11开始，该接口支持在原子化服务API中使用。
 
-**卡片能力：** 从API版本18开始，该接口支持在ArkTS卡片中使用。
+**卡片能力：** 从API版本9开始，该接口支持在ArkTS卡片中使用。
 
 <!--Device-BaseCustomComponent-aboutToDisappear?(): void--><!--Device-BaseCustomComponent-aboutToDisappear?(): void-End-->
 
@@ -56,13 +56,13 @@ aboutToDisappear 方法
 aboutToRecycle?(): void
 ```
 
-aboutToRecycle Method and it is migrated from class CustomComponent.
+aboutToRecycle Method
 
-**起始版本：** 18
+**起始版本：** 10
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
-**原子化服务API：** 从API版本18开始，该接口支持在原子化服务API中使用。
+**原子化服务API：** 从API版本11开始，该接口支持在原子化服务API中使用。
 
 <!--Device-BaseCustomComponent-aboutToRecycle?(): void--><!--Device-BaseCustomComponent-aboutToRecycle?(): void-End-->
 
@@ -74,13 +74,13 @@ aboutToRecycle Method and it is migrated from class CustomComponent.
 build(): void
 ```
 
-Customize the pop-up content constructor and it is migrated from class CustomComponent.
+自定义弹出内容构造函数。
 
-**起始版本：** 18
+**起始版本：** 7
 
-**原子化服务API：** 从API版本18开始，该接口支持在原子化服务API中使用。
+**原子化服务API：** 从API版本11开始，该接口支持在原子化服务API中使用。
 
-**卡片能力：** 从API版本18开始，该接口支持在ArkTS卡片中使用。
+**卡片能力：** 从API版本9开始，该接口支持在ArkTS卡片中使用。
 
 <!--Device-BaseCustomComponent-build(): void--><!--Device-BaseCustomComponent-build(): void-End-->
 
@@ -116,13 +116,13 @@ The dialog controller of the custom component.
 getUIContext(): UIContext
 ```
 
-Get current UIContext and it is migrated from class CustomComponent.
+Get current UIContext
 
-**起始版本：** 18
+**起始版本：** 11
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
-**原子化服务API：** 从API版本18开始，该接口支持在原子化服务API中使用。
+**原子化服务API：** 从API版本12开始，该接口支持在原子化服务API中使用。
 
 <!--Device-BaseCustomComponent-getUIContext(): UIContext--><!--Device-BaseCustomComponent-getUIContext(): UIContext-End-->
 
@@ -140,13 +140,13 @@ Get current UIContext and it is migrated from class CustomComponent.
 getUniqueId(): number
 ```
 
-Get uniqueId of the custom component and it is migrated from class CustomComponent.This unique ID is assigned by the system to each component.If this API is called before the component's corresponding node is created or after it has been destroyed, an invalid unique ID, which is -1, will be returned.
+Get uniqueId of the custom component.
 
-**起始版本：** 18
+**起始版本：** 12
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
-**原子化服务API：** 从API版本18开始，该接口支持在原子化服务API中使用。
+**原子化服务API：** 从API版本12开始，该接口支持在原子化服务API中使用。
 
 <!--Device-BaseCustomComponent-getUniqueId(): number--><!--Device-BaseCustomComponent-getUniqueId(): number-End-->
 
@@ -180,15 +180,15 @@ onBackPress?(): void | boolean
 onDidBuild?(): void
 ```
 
-The callback method after the custom component is built and it is migrated from class CustomComponent.
+The callback method after the custom component is built.
 
 Triggered when the custom component has been built.
 
-**起始版本：** 18
+**起始版本：** 12
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
-**原子化服务API：** 从API版本18开始，该接口支持在原子化服务API中使用。
+**原子化服务API：** 从API版本12开始，该接口支持在原子化服务API中使用。
 
 <!--Device-BaseCustomComponent-onDidBuild?(): void--><!--Device-BaseCustomComponent-onDidBuild?(): void-End-->
 
@@ -200,15 +200,15 @@ Triggered when the custom component has been built.
 onFormRecover?(statusData: string): void
 ```
 
-onFormRecover Method, this is only for ArkTS form, it is migrated from class CustomComponent.
+onFormRecover Method, this is only for ArkTS form
 
-**起始版本：** 18
+**起始版本：** 11
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
-**原子化服务API：** 从API版本18开始，该接口支持在原子化服务API中使用。
+**原子化服务API：** 从API版本12开始，该接口支持在原子化服务API中使用。
 
-**卡片能力：** 从API版本18开始，该接口支持在ArkTS卡片中使用。
+**卡片能力：** 从API版本11开始，该接口支持在ArkTS卡片中使用。
 
 <!--Device-BaseCustomComponent-onFormRecover?(statusData: string): void--><!--Device-BaseCustomComponent-onFormRecover?(statusData: string): void-End-->
 
@@ -226,15 +226,15 @@ onFormRecover Method, this is only for ArkTS form, it is migrated from class Cus
 onFormRecycle?(): string
 ```
 
-onFormRecycle Method, this is only for ArkTS form, if form was marked recyclable by form user, when system memory is low,it will be recycled after calling this method, you should return a string of params that you wish to be saved, it will be passed back as params in onFormRecover, in which you can recover the form, it is migrated from class CustomComponent.
+onFormRecycle Method, this is only for ArkTS form, if form was marked recyclable by form user, when system memory is low,it will be recycled after calling this method, you should return a string of params that you wish to be saved, it will be passed back as params in onFormRecover, in which you can recover the form
 
-**起始版本：** 18
+**起始版本：** 11
 
 **模型约束：** 此接口仅可在Stage模型下使用。
 
-**原子化服务API：** 从API版本18开始，该接口支持在原子化服务API中使用。
+**原子化服务API：** 从API版本12开始，该接口支持在原子化服务API中使用。
 
-**卡片能力：** 从API版本18开始，该接口支持在ArkTS卡片中使用。
+**卡片能力：** 从API版本11开始，该接口支持在ArkTS卡片中使用。
 
 <!--Device-BaseCustomComponent-onFormRecycle?(): string--><!--Device-BaseCustomComponent-onFormRecycle?(): string-End-->
 
@@ -395,11 +395,11 @@ onWillApplyTheme函数用于获取当前组件上下文的Theme对象，在创�
 pageTransition?(): void
 ```
 
-PageTransition Method and it is migrated from class CustomComponent.Implement Animation when enter this page or move to other pages.
+PageTransition Method.Implement Animation when enter this page or move to other pages.
 
-**起始版本：** 18
+**起始版本：** 9
 
-**原子化服务API：** 从API版本18开始，该接口支持在原子化服务API中使用。
+**原子化服务API：** 从API版本11开始，该接口支持在原子化服务API中使用。
 
 <!--Device-BaseCustomComponent-pageTransition?(): void--><!--Device-BaseCustomComponent-pageTransition?(): void-End-->
 

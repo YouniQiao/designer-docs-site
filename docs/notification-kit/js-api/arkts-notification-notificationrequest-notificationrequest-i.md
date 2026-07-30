@@ -1,6 +1,6 @@
 # NotificationRequest
 
-The **NotificationRequest** module provides APIs for defining the notification request.
+Defines the data structure of a notification request, which is used to describe all information about a notification, including the notification content, identifier, display style, and interaction behavior.
 
 **Since:** 7
 
@@ -46,13 +46,7 @@ Unique identifier field carried when an application sends a notification, used f
 autoDeletedTime?: number
 ```
 
-Scheduled time for clearing a notification. If this parameter is set, the notification will be automatically cleared after the specified time. The default value is **0**.
-
-Data format: timestamp,
-
-in milliseconds.
-
-For example, if a notification is to be cleared after being displayed for 3 seconds (3000 ms), you can set **new Date().getTime() + 3000** to meet this requirement.
+Scheduled auto-delete time for the notification. You can set this parameter to automatically delete the notification after the specified time. Default value: **0**. This parameter does not take effect if a value less than 0 or a past time is passed in.Data format: timestamp. Unit: millisecond. For example, to delete a notification after it has been retained for3 seconds (3000 ms), the corresponding deletion time is: **new Date().getTime()** + 3000.
 
 **Type:** number
 
@@ -270,7 +264,7 @@ The key value is assigned by the system. Manual modification does not take effec
 groupName?: string
 ```
 
-Group to which a notification belongs. If the group names of different notifications are the same, these notifications are displayed in a group. This parameter is left blank by default.
+Group to which the notification belongs. When different notifications have the same **groupName**, these notifications will be displayed as a group. The size does not exceed 202 bytes, and the excess part will be truncated. The value is empty by default.
 
 **Type:** string
 
@@ -433,7 +427,7 @@ Notification label. The **label** field functions similarly to an ID and can be 
 largeIcon?: image.PixelMap
 ```
 
-Large notification icon. This parameter is left empty by default. The total number of the icon pixel bytes cannot exceed 192 KB (which is obtained through [getPixelBytesNumber](../../apis-image-kit/arkts-apis/arkts-image-image-pixelmap-i.md#getpixelbytesnumber)). The recommended icon size is 128 × 128 pixels. The display effect depends on the device capability and notification center UI style.
+Large notification icon. This parameter is left empty by default. The total number of the icon pixel bytes cannot exceed 192 KB (which is obtained through [getPixelBytesNumber](../../apis-image-kit/arkts-apis/arkts-image-image-pixelmap-i.md#getpixelbytesnumber)). The setting does not take effect if the limit is exceeded. When **largeIcon** is not set, the notification does not display a large icon. The recommended icon size is 128 × 128 pixels. The display effect depends on the device capability and notification center UI style.
 
 **Type:** image.PixelMap
 
@@ -449,7 +443,7 @@ Large notification icon. This parameter is left empty by default. The total numb
 notificationFlags?: NotificationFlags
 ```
 
-Notification flags to be set or obtained. This parameter is left empty by default. This parameter is writable since API version 23. You can set this parameter to reduce the notification modes. When the notification channel type is LIVE_VIEW, this parameter does not take effect.
+Notification flags. The default value is empty. This parameter is writable since API version 23. You can set this parameter to reduce the notification modes. This parameter does not take effect when the notification slot type is LIVE_VIEW.
 
 **Type:** NotificationFlags
 
@@ -556,7 +550,7 @@ This attribute is supported since API version 7 and deprecated since API version
 smallIcon?: image.PixelMap
 ```
 
-Small notification icon. This parameter is left empty by default. The total number of the icon pixel bytes cannot exceed 192 KB (which is obtained through [getPixelBytesNumber](../../apis-image-kit/arkts-apis/arkts-image-image-pixelmap-i.md#getpixelbytesnumber)). The recommended icon size is 128 × 128 pixels. The display effect depends on the device capability and notification center UI style.
+Small notification icon. This parameter is left empty by default. The total number of the icon pixel bytes cannot exceed 192 KB (which is obtained through [getPixelBytesNumber](../../apis-image-kit/arkts-apis/arkts-image-image-pixelmap-i.md#getpixelbytesnumber)). The setting does not take effect if the limit is exceeded. When **smallIcon** is not set, the notification displays the default application icon. The recommended icon size is 128 × 128 pixels. The display effect depends on the device capability and notification center UI style.
 
 **Type:** image.PixelMap
 

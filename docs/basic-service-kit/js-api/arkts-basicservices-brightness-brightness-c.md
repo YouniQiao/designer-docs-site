@@ -16,7 +16,6 @@ The module provides APIs for querying and adjusting the screen brightness and mo
 import { BrightnessResponse, BrightnessModeResponse, SetBrightnessModeOptions, GetBrightnessModeOptions, SetBrightnessOptions, GetBrightnessOptions, SetKeepScreenOnOptions } from '@kit.BasicServicesKit';
 ```
 
-<a id="getmode"></a>
 ## getMode
 
 ```TypeScript
@@ -110,7 +109,6 @@ export default {
 
 ```
 
-<a id="getvalue"></a>
 ## getValue
 
 ```TypeScript
@@ -204,7 +202,6 @@ export default {
 
 ```
 
-<a id="setkeepscreenon"></a>
 ## setKeepScreenOn
 
 ```TypeScript
@@ -215,7 +212,7 @@ Sets whether to always keep the screen on. Call this API in **onShow()**.
 
 **NOTE**
 
-- This API is no longer maintained since API version 7 except for lite wearables. You are advised to use [window.setWindowKeepScreenOn()](docroot://reference/apis-arkui/arkts-apis-window-Window.md#setwindowkeepscreenon9)instead.
+- This API is no longer maintained since API version 7 except for lite wearables. You are advised to use [window.setWindowKeepScreenOn()](../../../reference/apis-arkui/arkts-apis-window-Window.md#setwindowkeepscreenon9)instead.
 
 - On Lite Wearables, this API can only prevent the system from turning off the screen due to inactivity timeout (automatic). It cannot prevent screen-off caused by user actions (such as covering the screen) or the end of the keep-screen-on period.
 
@@ -307,7 +304,6 @@ export default {
 
 ```
 
-<a id="setmode"></a>
 ## setMode
 
 ```TypeScript
@@ -402,7 +398,6 @@ export default {
 
 ```
 
-<a id="setvalue"></a>
 ## setValue
 
 ```TypeScript
@@ -415,7 +410,7 @@ Sets the screen brightness.
 
 **Deprecated since:** 7
 
-**Substitutes:** [setValue](arkts-basicservices-brightness-setvalue-f-sys.md#setvalue-1)
+**Substitutes:** [setValue](arkts-basicservices-brightness-setvalue-f-sys.md#setvalue)
 
 <!--Device-Brightness-static setValue(options?: SetBrightnessOptions): void--><!--Device-Brightness-static setValue(options?: SetBrightnessOptions): void-End-->
 

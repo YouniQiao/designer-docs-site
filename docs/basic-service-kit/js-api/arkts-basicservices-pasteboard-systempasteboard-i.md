@@ -1,6 +1,6 @@
 # SystemPasteboard
 
-Provides **SystemPasteboard** APIs.Before calling any **SystemPasteboard** API, you must obtain a **SystemPasteboard** object using [getSystemPasteboard](arkts-basicservices-pasteboard-getsystempasteboard-f.md#getsystempasteboard-1).
+Provides **SystemPasteboard** APIs.Before calling any **SystemPasteboard** API, you must obtain a **SystemPasteboard** object using [getSystemPasteboard](arkts-basicservices-pasteboard-getsystempasteboard-f.md#getsystempasteboard).
 
 **Since:** 6
 
@@ -14,7 +14,6 @@ Provides **SystemPasteboard** APIs.Before calling any **SystemPasteboard** API, 
 import { pasteboard } from '@kit.BasicServicesKit';
 ```
 
-<a id="clear"></a>
 ## clear
 
 ```TypeScript
@@ -27,7 +26,7 @@ Clears the system pasteboard. This API uses an asynchronous callback to return t
 
 **Deprecated since:** 9
 
-**Substitutes:** [clearData(callback:](arkts-basicservices-pasteboard-systempasteboard-i.md#cleardata-1)
+**Substitutes:** [clearData(callback:](arkts-basicservices-pasteboard-systempasteboard-i.md#cleardata)
 
 <!--Device-SystemPasteboard-clear(callback: AsyncCallback<void>): void--><!--Device-SystemPasteboard-clear(callback: AsyncCallback<void>): void-End-->
 
@@ -59,7 +58,6 @@ systemPasteboard.clear((err, data) => {
 
 ```
 
-<a id="clear-1"></a>
 ## clear
 
 ```TypeScript
@@ -72,7 +70,7 @@ Clears the system pasteboard. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [clearData()](arkts-basicservices-pasteboard-systempasteboard-i.md#cleardata-1)
+**Substitutes:** [clearData()](arkts-basicservices-pasteboard-systempasteboard-i.md#cleardata)
 
 <!--Device-SystemPasteboard-clear(): Promise<void>--><!--Device-SystemPasteboard-clear(): Promise<void>-End-->
 
@@ -98,7 +96,6 @@ systemPasteboard.clear().then((data) => {
 
 ```
 
-<a id="cleardata"></a>
 ## clearData
 
 ```TypeScript
@@ -143,7 +140,6 @@ systemPasteboard.clearData((err, data) => {
 
 ```
 
-<a id="cleardata-1"></a>
 ## clearData
 
 ```TypeScript
@@ -180,7 +176,6 @@ systemPasteboard.clearData().then((data: void) => {
 
 ```
 
-<a id="cleardatasync"></a>
 ## clearDataSync
 
 ```TypeScript
@@ -216,7 +211,6 @@ try {
 
 ```
 
-<a id="detectpatterns"></a>
 ## detectPatterns
 
 ```TypeScript
@@ -273,14 +267,13 @@ systemPasteboard.detectPatterns(patterns).then((data: Array<pasteboard.Pattern>)
 
 ```
 
-<a id="getchangecount"></a>
 ## getChangeCount
 
 ```TypeScript
 getChangeCount(): number
 ```
 
-Obtains the number of pasteboard content changes.Returns the number of pasteboard content changes if this API is called successfully; returns **0** otherwise.Even though the PasteData expires, or the data becomes empty because of the called [clearDataSync](arkts-basicservices-pasteboard-systempasteboard-i.md#cleardatasync-1) API, the number of data changes remains.When the system is restarted, or the pasteboard service is restarted due to an exception, the number of PasteData changes counts from 0. In addition, copying the same data repeatedly is considered to change the data for multiple times. Therefore, each time the data is copied, the number of data changes increases.
+Obtains the number of pasteboard content changes.Returns the number of pasteboard content changes if this API is called successfully; returns **0** otherwise.Even though the PasteData expires, or the data becomes empty because of the called [clearDataSync](arkts-basicservices-pasteboard-systempasteboard-i.md#cleardatasync) API, the number of data changes remains.When the system is restarted, or the pasteboard service is restarted due to an exception, the number of PasteData changes counts from 0. In addition, copying the same data repeatedly is considered to change the data for multiple times. Therefore, each time the data is copied, the number of data changes increases.
 
 **Since:** 18
 
@@ -311,7 +304,6 @@ try {
 
 ```
 
-<a id="getdata"></a>
 ## getData
 
 ```TypeScript
@@ -364,7 +356,6 @@ systemPasteboard.getData((err: BusinessError, pasteData: pasteboard.PasteData) =
 
 ```
 
-<a id="getdata-1"></a>
 ## getData
 
 ```TypeScript
@@ -414,7 +405,6 @@ systemPasteboard.getData().then((pasteData: pasteboard.PasteData) => {
 
 ```
 
-<a id="getdatasource"></a>
 ## getDataSource
 
 ```TypeScript
@@ -456,7 +446,6 @@ try {
 
 ```
 
-<a id="getdatasync"></a>
 ## getDataSync
 
 ```TypeScript
@@ -502,7 +491,6 @@ try {
 
 ```
 
-<a id="getdatawithprogress"></a>
 ## getDataWithProgress
 
 ```TypeScript
@@ -588,7 +576,6 @@ struct PasteboardTest {
 
 ```
 
-<a id="getmimetypes"></a>
 ## getMimeTypes
 
 ```TypeScript
@@ -625,7 +612,6 @@ systemPasteboard.getMimeTypes().then((data: Array<string>) => {
 
 ```
 
-<a id="getpastedata"></a>
 ## getPasteData
 
 ```TypeScript
@@ -638,7 +624,7 @@ Obtains a **PasteData** object from the pasteboard. This API uses an asynchronou
 
 **Deprecated since:** 9
 
-**Substitutes:** [getData(callback:](arkts-basicservices-pasteboard-systempasteboard-i.md#getdata-1)
+**Substitutes:** [getData(callback:](arkts-basicservices-pasteboard-systempasteboard-i.md#getdata)
 
 <!--Device-SystemPasteboard-getPasteData(callback: AsyncCallback<PasteData>): void--><!--Device-SystemPasteboard-getPasteData(callback: AsyncCallback<PasteData>): void-End-->
 
@@ -675,7 +661,6 @@ systemPasteboard.getPasteData((err: BusinessError, pasteData: pasteboard.PasteDa
 
 ```
 
-<a id="getpastedata-1"></a>
 ## getPasteData
 
 ```TypeScript
@@ -688,7 +673,7 @@ Obtains a **PasteData** object from the pasteboard. This API uses a promise to r
 
 **Deprecated since:** 9
 
-**Substitutes:** [getData()](arkts-basicservices-pasteboard-systempasteboard-i.md#getdata-1)
+**Substitutes:** [getData()](arkts-basicservices-pasteboard-systempasteboard-i.md#getdata)
 
 <!--Device-SystemPasteboard-getPasteData(): Promise<PasteData>--><!--Device-SystemPasteboard-getPasteData(): Promise<PasteData>-End-->
 
@@ -717,7 +702,6 @@ systemPasteboard.getPasteData().then((pasteData: pasteboard.PasteData) => {
 
 ```
 
-<a id="getunifieddata"></a>
 ## getUnifiedData
 
 ```TypeScript
@@ -770,7 +754,6 @@ systemPasteboard.getUnifiedData().then((data) => {
 
 ```
 
-<a id="getunifieddatasync"></a>
 ## getUnifiedDataSync
 
 ```TypeScript
@@ -817,7 +800,6 @@ try {
 
 ```
 
-<a id="hasdata"></a>
 ## hasData
 
 ```TypeScript
@@ -862,7 +844,6 @@ systemPasteboard.hasData((err: BusinessError, data: boolean) => {
 
 ```
 
-<a id="hasdata-1"></a>
 ## hasData
 
 ```TypeScript
@@ -899,7 +880,6 @@ systemPasteboard.hasData().then((data: boolean) => {
 
 ```
 
-<a id="hasdatasync"></a>
 ## hasDataSync
 
 ```TypeScript
@@ -941,7 +921,6 @@ try {
 
 ```
 
-<a id="hasdatatype"></a>
 ## hasDataType
 
 ```TypeScript
@@ -990,7 +969,6 @@ try {
 
 ```
 
-<a id="haspastedata"></a>
 ## hasPasteData
 
 ```TypeScript
@@ -1003,7 +981,7 @@ Checks whether the system pasteboard contains data. This API uses an asynchronou
 
 **Deprecated since:** 9
 
-**Substitutes:** [hasData(callback:](arkts-basicservices-pasteboard-systempasteboard-i.md#hasdata-1)
+**Substitutes:** [hasData(callback:](arkts-basicservices-pasteboard-systempasteboard-i.md#hasdata)
 
 <!--Device-SystemPasteboard-hasPasteData(callback: AsyncCallback<boolean>): void--><!--Device-SystemPasteboard-hasPasteData(callback: AsyncCallback<boolean>): void-End-->
 
@@ -1037,7 +1015,6 @@ systemPasteboard.hasPasteData((err: BusinessError, data: boolean) => {
 
 ```
 
-<a id="haspastedata-1"></a>
 ## hasPasteData
 
 ```TypeScript
@@ -1050,7 +1027,7 @@ Checks whether the system pasteboard contains data. This API uses a promise to r
 
 **Deprecated since:** 9
 
-**Substitutes:** [hasData()](arkts-basicservices-pasteboard-systempasteboard-i.md#hasdata-1)
+**Substitutes:** [hasData()](arkts-basicservices-pasteboard-systempasteboard-i.md#hasdata)
 
 <!--Device-SystemPasteboard-hasPasteData(): Promise<boolean>--><!--Device-SystemPasteboard-hasPasteData(): Promise<boolean>-End-->
 
@@ -1076,7 +1053,6 @@ systemPasteboard.hasPasteData().then((data: boolean) => {
 
 ```
 
-<a id="hasremotedata"></a>
 ## hasRemoteData
 
 ```TypeScript
@@ -1110,7 +1086,6 @@ console.info(`Succeeded in checking the remote data. Result: ${result}`);
 
 ```
 
-<a id="isremotedata"></a>
 ## isRemoteData
 
 ```TypeScript
@@ -1152,7 +1127,6 @@ try {
 
 ```
 
-<a id="off"></a>
 ## off('update')
 
 ```TypeScript
@@ -1194,7 +1168,6 @@ systemPasteboard.off('update', listener);
 
 ```
 
-<a id="offremoteupdate"></a>
 ## offRemoteUpdate
 
 ```TypeScript
@@ -1226,7 +1199,6 @@ systemPasteboard.offRemoteUpdate(listener);
 
 ```
 
-<a id="on"></a>
 ## on('update')
 
 ```TypeScript
@@ -1268,7 +1240,6 @@ systemPasteboard.on('update', listener);
 
 ```
 
-<a id="onremoteupdate"></a>
 ## onRemoteUpdate
 
 ```TypeScript
@@ -1300,7 +1271,6 @@ systemPasteboard.onRemoteUpdate(listener);
 
 ```
 
-<a id="setdata"></a>
 ## setData
 
 ```TypeScript
@@ -1350,7 +1320,6 @@ systemPasteboard.setData(pasteData, (err, data) => {
 
 ```
 
-<a id="setdata-1"></a>
 ## setData
 
 ```TypeScript
@@ -1405,7 +1374,6 @@ systemPasteboard.setData(pasteData).then((data: void) => {
 
 ```
 
-<a id="setdatasync"></a>
 ## setDataSync
 
 ```TypeScript
@@ -1449,7 +1417,6 @@ try {
 
 ```
 
-<a id="setpastedata"></a>
 ## setPasteData
 
 ```TypeScript
@@ -1462,7 +1429,7 @@ Writes a **PasteData** object to the system pasteboard. This API uses an asynchr
 
 **Deprecated since:** 9
 
-**Substitutes:** [setData(data:](arkts-basicservices-pasteboard-systempasteboard-i.md#setdata-1)
+**Substitutes:** [setData(data:](arkts-basicservices-pasteboard-systempasteboard-i.md#setdata)
 
 <!--Device-SystemPasteboard-setPasteData(data: PasteData, callback: AsyncCallback<void>): void--><!--Device-SystemPasteboard-setPasteData(data: PasteData, callback: AsyncCallback<void>): void-End-->
 
@@ -1496,7 +1463,6 @@ systemPasteboard.setPasteData(pasteData, (err, data) => {
 
 ```
 
-<a id="setpastedata-1"></a>
 ## setPasteData
 
 ```TypeScript
@@ -1509,7 +1475,7 @@ Writes a **PasteData** object to the system pasteboard. This API uses a promise 
 
 **Deprecated since:** 9
 
-**Substitutes:** [setData(data:](arkts-basicservices-pasteboard-systempasteboard-i.md#setdata-1)
+**Substitutes:** [setData(data:](arkts-basicservices-pasteboard-systempasteboard-i.md#setdata)
 
 <!--Device-SystemPasteboard-setPasteData(data: PasteData): Promise<void>--><!--Device-SystemPasteboard-setPasteData(data: PasteData): Promise<void>-End-->
 
@@ -1542,7 +1508,6 @@ systemPasteboard.setPasteData(pasteData).then((data: void) => {
 
 ```
 
-<a id="setunifieddata"></a>
 ## setUnifiedData
 
 ```TypeScript
@@ -1607,7 +1572,6 @@ systemPasteboard.setUnifiedData(data).then((data: void) => {
 
 ```
 
-<a id="setunifieddatasync"></a>
 ## setUnifiedDataSync
 
 ```TypeScript

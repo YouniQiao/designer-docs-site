@@ -1,6 +1,6 @@
 # CameraManager
 
-Implements camera management. Before calling any API in CameraManager, you must use [getCameraManager](arkts-camera-camera-getcameramanager-f.md#getcameramanager-1) to obtain a CameraManager instance.
+Implements camera management. Before calling any API in CameraManager, you must use [getCameraManager](arkts-camera-camera-getcameramanager-f.md#getcameramanager) to obtain a CameraManager instance.
 
 **Since:** 10
 
@@ -14,7 +14,6 @@ Implements camera management. Before calling any API in CameraManager, you must 
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="createcamerainputwithtokenid"></a>
 ## createCameraInputWithTokenId
 
 ```TypeScript
@@ -59,7 +58,6 @@ Before using this interface, first through the getSupportedCameras interface to 
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="createcontrolcentersession"></a>
 ## createControlCenterSession
 
 ```TypeScript
@@ -91,7 +89,6 @@ Create a ControlCenterSession instance.
 | [201](../../errorcode-universal.md#201-permission-denied) | Permission denied. |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 
-<a id="createdeferredpreviewoutput"></a>
 ## createDeferredPreviewOutput
 
 ```TypeScript
@@ -130,7 +127,6 @@ Creates a deferred PreviewOutput instance.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application.<br>**Applicable version:** 12 - 23 |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error.<br>**Applicable version:** 24 and later |
 
-<a id="createdepthdataoutput"></a>
 ## createDepthDataOutput
 
 ```TypeScript
@@ -151,7 +147,7 @@ Creates a DepthDataOutput instance. This API returns the result synchronously.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| profile | [DepthProfile](arkts-camera-camera-depthprofile-i-sys.md) | Yes | Supported preview profile, which is obtained through [getSupportedOutputCapability](arkts-camera-camera-cameramanager-i.md#getsupportedoutputcapability-1). |
+| profile | [DepthProfile](arkts-camera-camera-depthprofile-i-sys.md) | Yes | Supported preview profile, which is obtained through [getSupportedOutputCapability](arkts-camera-camera-cameramanager-i.md#getsupportedoutputcapability). |
 
 **Return value:**
 
@@ -186,7 +182,6 @@ function createDepthDataOutput(cameraOutputCapability: camera.CameraOutputCapabi
 
 ```
 
-<a id="iscameramutesupported"></a>
 ## isCameraMuteSupported
 
 ```TypeScript
@@ -225,7 +220,6 @@ function isCameraMuteSupported(cameraManager: camera.CameraManager): boolean {
 
 ```
 
-<a id="iscontrolcenteractive"></a>
 ## isControlCenterActive
 
 ```TypeScript
@@ -254,7 +248,6 @@ Check if the control center active.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 
-<a id="isprelaunchsupported"></a>
 ## isPrelaunchSupported
 
 ```TypeScript
@@ -309,7 +302,6 @@ function isPreLaunchSupported(context: common.BaseContext): boolean {
 
 ```
 
-<a id="istorchlevelcontrolsupported"></a>
 ## isTorchLevelControlSupported
 
 ```TypeScript
@@ -342,7 +334,6 @@ Checks whether the device supports flashlight brightness control.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application.<br>**Applicable version:** 23 - 24 |
 
-<a id="mutecamera"></a>
 ## muteCamera
 
 ```TypeScript
@@ -355,7 +346,7 @@ Mutes or unmutes the camera device.
 
 **Deprecated since:** 12
 
-**Substitutes:** [muteCameraPersistent](arkts-camera-camera-cameramanager-i-sys.md#mutecamerapersistent-1)
+**Substitutes:** [muteCameraPersistent](arkts-camera-camera-cameramanager-i-sys.md#mutecamerapersistent)
 
 <!--Device-CameraManager-muteCamera(mute: boolean): void--><!--Device-CameraManager-muteCamera(mute: boolean): void-End-->
 
@@ -379,7 +370,6 @@ function muteCamera(cameraManager: camera.CameraManager): void {
 
 ```
 
-<a id="mutecamerapersistent"></a>
 ## muteCameraPersistent
 
 ```TypeScript
@@ -423,7 +413,6 @@ function muteCameraPersistent(cameraManager: camera.CameraManager): void {
 
 ```
 
-<a id="off"></a>
 ## off('cameraMute')
 
 ```TypeScript
@@ -468,7 +457,6 @@ function unregisterCameraMute(cameraManager: camera.CameraManager): void {
 
 ```
 
-<a id="off-1"></a>
 ## off('controlCenterStatusChange')
 
 ```TypeScript
@@ -498,7 +486,6 @@ Unsubscribes control center status change event callback.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 
-<a id="on"></a>
 ## on('cameraMute')
 
 ```TypeScript
@@ -548,7 +535,6 @@ function registerCameraMute(cameraManager: camera.CameraManager): void {
 
 ```
 
-<a id="on-1"></a>
 ## on('controlCenterStatusChange')
 
 ```TypeScript
@@ -578,7 +564,6 @@ Subscribes control center status change event callback.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
 
-<a id="preswitchcamera"></a>
 ## preSwitchCamera
 
 ```TypeScript
@@ -627,7 +612,6 @@ function preSwitch(cameraDevice: camera.CameraDevice, context: common.BaseContex
 
 ```
 
-<a id="prelaunch"></a>
 ## prelaunch
 
 ```TypeScript
@@ -669,14 +653,13 @@ function preLaunch(context: common.BaseContext): void {
 
 ```
 
-<a id="setprelaunchconfig"></a>
 ## setPrelaunchConfig
 
 ```TypeScript
 setPrelaunchConfig(prelaunchConfig: PrelaunchConfig): void
 ```
 
-Sets prelaunch configuration.Before the setting, call [isPrelaunchSupported](arkts-camera-camera-cameramanager-i-sys.md#isprelaunchsupported-1) to check whether the camera device supports prelaunch.
+Sets prelaunch configuration.Before the setting, call [isPrelaunchSupported](arkts-camera-camera-cameramanager-i-sys.md#isprelaunchsupported) to check whether the camera device supports prelaunch.
 
 **Since:** 10
 
@@ -727,7 +710,6 @@ function setPrelaunchConfig(context: common.BaseContext): void {
 
 ```
 
-<a id="settorchmodeonwithlevel"></a>
 ## setTorchModeOnWithLevel
 
 ```TypeScript

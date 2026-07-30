@@ -148,6 +148,8 @@ import { camera } from '@kit.CameraKit';
 | [FocusQuery](arkts-camera-camera-focusquery-i-sys.md) | Provides the API to check whether the focus assist is supported. |
 | [FocusTrackingInfo](arkts-camera-camera-focustrackinginfo-i-sys.md) | Describes the focus tracking information, which is obtained by calling VideoSessionForSys.[on('focusTrackingInfoAvailable')](camera.VideoSession.on(type: 'focusTrackingInfoAvailable', callback: Callback<FocusTrackingInfo>)). |
 | [HighResolutionPhotoSession](arkts-camera-camera-highresolutionphotosession-i-sys.md) | HighResolutionPhotoSession extends Session, AutoExposure, Focus Implements a high-resolution photo session, which sets the parameters of the high-resolution photo mode and saves all [CameraInput](arkts-camera-camera-camerainput-i.md) and [CameraOutput](arkts-camera-camera-cameraoutput-i.md)instances required to run the camera. It inherits from [Session](arkts-camera-camera-session-i.md). |
+| [ImagingMode](arkts-camera-camera-imagingmode-i-sys.md) | Implements imaging mode. |
+| [ImagingModeQuery](arkts-camera-camera-imagingmodequery-i-sys.md) | Imaging mode query object. |
 | [IsoInfo](arkts-camera-camera-isoinfo-i-sys.md) | Describes the ISO information. |
 | [LcdFlashStatus](arkts-camera-camera-lcdflashstatus-i-sys.md) | Describes the LCD flash information. |
 | [LightPaintingPhotoSession](arkts-camera-camera-lightpaintingphotosession-i-sys.md) | LightPaintingPhotoSession extends Session, Flash, Focus, Zoom, ColorEffect Implements a light painting photo session, which sets the parameters of the light painting photo mode and saves all [CameraInput](arkts-camera-camera-camerainput-i.md) and [CameraOutput](arkts-camera-camera-cameraoutput-i.md)instances required to run the camera. It inherits from [Session](arkts-camera-camera-session-i.md). |
@@ -250,6 +252,7 @@ import { camera } from '@kit.CameraKit';
 | [BeautyType](arkts-camera-camera-beautytype-e-sys.md) | Enumerates the beauty types. |
 | [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e-sys.md) | Enumerates the camera error codes,which are returned when an API call is incorrect or the **on()** API is used to listen for the error status. |
 | [CameraFormat](arkts-camera-camera-cameraformat-e-sys.md) | Enumerates the camera output formats. |
+| [CameraImagingMode](arkts-camera-camera-cameraimagingmode-e-sys.md) | Enumerates the camera imaging modes. |
 | [ColorEffectType](arkts-camera-camera-coloreffecttype-e-sys.md) | Enumerates the color effect types. |
 | [ColorReservationType](arkts-camera-camera-colorreservationtype-e-sys.md) | Enumerates the color reservation types. |
 | [DeferredDeliveryImageType](arkts-camera-camera-deferreddeliveryimagetype-e-sys.md) | Enumerates the deferred delivery image types. In deferred delivery, photo and video capture are divided into two phases. In the first phase, an image or video is output to users at a relatively fast speed. In the second phase, a higher-resolution image or video is output again after optimization processing. |

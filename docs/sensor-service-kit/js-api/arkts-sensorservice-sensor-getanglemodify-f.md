@@ -6,7 +6,6 @@
 import { sensor } from '@kit.SensorServiceKit';
 ```
 
-<a id="getanglemodify"></a>
 ## getAngleModify
 
 ```TypeScript
@@ -20,11 +19,9 @@ Obtains the angle change between two rotation matrices. This API uses an asynchr
 
 **Deprecated since:** 9
 
-**Substitutes:** [getAngleVariation(currentRotationMatrix:](arkts-sensorservice-sensor-getanglevariation-f.md#getanglevariation-1)
+**Substitutes:** [getAngleVariation(currentRotationMatrix:](arkts-sensorservice-sensor-getanglevariation-f.md#getanglevariation)
 
-<!--Device-sensor-function getAngleModify(currentRotationMatrix: Array<number>, preRotationMatrix: Array<number>,
-    callback: AsyncCallback<Array<number>>): void--><!--Device-sensor-function getAngleModify(currentRotationMatrix: Array<number>, preRotationMatrix: Array<number>,
-    callback: AsyncCallback<Array<number>>): void-End-->
+<!--Device-sensor-function getAngleModify(currentRotationMatrix: Array<number>, preRotationMatrix: Array<number>,    callback: AsyncCallback<Array<number>>): void--><!--Device-sensor-function getAngleModify(currentRotationMatrix: Array<number>, preRotationMatrix: Array<number>,    callback: AsyncCallback<Array<number>>): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -56,7 +53,6 @@ sensor.getAngleModify([1, 0, 0, 0, 1, 0, 0, 0, 1], [1, 0, 0, 0, 0.87, -0.50, 0, 
 ```
 
 
-<a id="getanglemodify-1"></a>
 ## getAngleModify
 
 ```TypeScript
@@ -69,7 +65,7 @@ Obtains the angle change between two rotation matrices. This API uses a promise 
 
 **Deprecated since:** 9
 
-**Substitutes:** [getAngleVariation(currentRotationMatrix:](arkts-sensorservice-sensor-getanglevariation-f.md#getanglevariation-1)
+**Substitutes:** [getAngleVariation(currentRotationMatrix:](arkts-sensorservice-sensor-getanglevariation-f.md#getanglevariation)
 
 <!--Device-sensor-function getAngleModify(currentRotationMatrix: Array<number>, preRotationMatrix: Array<number>): Promise<Array<number>>--><!--Device-sensor-function getAngleModify(currentRotationMatrix: Array<number>, preRotationMatrix: Array<number>): Promise<Array<number>>-End-->
 

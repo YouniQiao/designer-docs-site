@@ -18,7 +18,6 @@ ManualExposure extends [ManualExposureQuery](arkts-camera-camera-manualexposureq
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="getexposure"></a>
 ## getExposure
 
 ```TypeScript
@@ -63,14 +62,13 @@ function getExposure(nightPhotoSession: camera.NightPhotoSession): number | unde
 
 ```
 
-<a id="setexposure"></a>
 ## setExposure
 
 ```TypeScript
 setExposure(exposure: number): void
 ```
 
-Sets the manual exposure duration. Before using this API, call [getSupportedExposureRange](arkts-camera-camera-manualexposurequery-i-sys.md#getsupportedexposurerange-1) to obtain the supported manual exposure durations, in ms.
+Sets the manual exposure duration. Before using this API, call [getSupportedExposureRange](arkts-camera-camera-manualexposurequery-i-sys.md#getsupportedexposurerange) to obtain the supported manual exposure durations, in ms.
 
 **Since:** 11
 
@@ -84,7 +82,7 @@ Sets the manual exposure duration. Before using this API, call [getSupportedExpo
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| exposure | number | Yes | Manual exposure duration, which must be one of the supported durations obtained by running [getSupportedExposureRange](arkts-camera-camera-manualexposurequery-i-sys.md#getsupportedexposurerange-1). |
+| exposure | number | Yes | Manual exposure duration, which must be one of the supported durations obtained by running [getSupportedExposureRange](arkts-camera-camera-manualexposurequery-i-sys.md#getsupportedexposurerange). |
 
 **Error codes:**
 

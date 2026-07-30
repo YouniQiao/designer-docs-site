@@ -882,7 +882,7 @@ getFrameNodeById(id: string): FrameNode | null
 getFrameNodeByUniqueId(id: number): FrameNode | null
 ```
 
-提供getFrameNodeByUniqueId接口通过组件的uniqueId获取组件树的实体节点。
+通过组件的uniqueId获取组件树的实体节点。
 
 1. 当uniqueId对应的是系统组件时，返回组件所对应的FrameNode；2. 当uniqueId对应的是自定义组件时：  
 - 若其有渲染内容，且没有被[@Reusable装饰器](../../../ui/state-management/arkts-reusable.md)修饰时，返回该自定义组件的根节点，类型为__Common__。  
@@ -902,7 +902,7 @@ getFrameNodeByUniqueId(id: number): FrameNode | null
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| id | number | 是 | 节点对应的UniqueId |
+| id | number | 是 | 节点对应的UniqueId。 |
 
 **返回值：**
 
@@ -1210,7 +1210,7 @@ Get object OverlayManagerOptions.
 getPageInfoByUniqueId(id: number): PageInfo
 ```
 
-Get page information of the frameNode with uniqueId.
+通过组件的uniqueId获取该节点对应的Router和NavDestination页面信息。
 
 **起始版本：** 12
 
@@ -1476,7 +1476,7 @@ getWindowHeightBreakpoint(): HeightBreakpoint
 
 | 类型 | 说明 |
 | --- | --- |
-| [HeightBreakpoint](arkts-arkui-heightbreakpoint-e.md) | 当前实例所在窗口的宽高比对应的高度断点枚举值。若窗口高宽比为0，则返回HEIGHT_SM。 |
+| [HeightBreakpoint](arkts-arkui-heightbreakpoint-e.md) | 当前实例所在窗口的高宽比对应的高度断点枚举值。若窗口高宽比为0，则返回HEIGHT_SM。 |
 
 ## getWindowId
 
@@ -2006,7 +2006,7 @@ static resolveUIContext(): ResolvedUIContext
 runScopedTask(callback: () => void): void
 ```
 
-在当前UI上下文执行传入的回调函数。
+在当前UIContext对应的UI实例作用域内执行传入的回调函数。
 
 **起始版本：** 10
 
@@ -2022,7 +2022,7 @@ runScopedTask(callback: () => void): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| callback | () =&gt; void | 是 | 回调函数 |
+| callback | () =&gt; void | 是 | 需要在当前UIContext对应的UI实例作用域内执行的回调函数。 |
 
 ## setCustomKeyboardContinueFeature
 

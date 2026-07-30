@@ -16,7 +16,6 @@ Represents the word selection panel.
 import { selectionManager } from '@kit.BasicServicesKit';
 ```
 
-<a id="hide"></a>
 ## hide
 
 ```TypeScript
@@ -59,7 +58,6 @@ selectionPanel.hide().then(() => {
 
 ```
 
-<a id="moveto"></a>
 ## moveTo
 
 ```TypeScript
@@ -72,7 +70,7 @@ Moves the word selection panel to the specified coordinates on the screen. This 
 
 **Deprecated since:** 24
 
-**Substitutes:** [moveToGlobalDisplay](arkts-basicservices-selectionmanager-panel-i.md#movetoglobaldisplay-1)
+**Substitutes:** [moveToGlobalDisplay](arkts-basicservices-selectionmanager-panel-i.md#movetoglobaldisplay)
 
 <!--Device-Panel-moveTo(x: int, y: int): Promise<void>--><!--Device-Panel-moveTo(x: int, y: int): Promise<void>-End-->
 
@@ -117,7 +115,6 @@ try {
 
 ```
 
-<a id="off"></a>
 ## off('destroyed')
 
 ```TypeScript
@@ -154,7 +151,6 @@ try {
 
 ```
 
-<a id="off-1"></a>
 ## off('hidden')
 
 ```TypeScript
@@ -191,7 +187,6 @@ try {
 
 ```
 
-<a id="on"></a>
 ## on('destroyed')
 
 ```TypeScript
@@ -230,7 +225,6 @@ try {
 
 ```
 
-<a id="on-1"></a>
 ## on('hidden')
 
 ```TypeScript
@@ -269,7 +263,6 @@ try {
 
 ```
 
-<a id="setuicontent"></a>
 ## setUiContent
 
 ```TypeScript
@@ -324,7 +317,6 @@ try {
 
 ```
 
-<a id="show"></a>
 ## show
 
 ```TypeScript
@@ -369,7 +361,6 @@ selectionPanel.show().then(() => {
 
 ```
 
-<a id="startmoving"></a>
 ## startMoving
 
 ```TypeScript

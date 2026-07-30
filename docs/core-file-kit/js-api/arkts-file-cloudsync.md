@@ -64,9 +64,9 @@ import { cloudSync } from '@kit.CoreFileKit';
 | [ChangeData](arkts-corefile-cloudsync-changedata-i.md) | Represents the data change information. |
 | [DownloadProgress](arkts-corefile-cloudsync-downloadprogress-i.md) | Represents information about the download progress of a cloud file. |
 | [FailedFileInfo](arkts-corefile-cloudsync-failedfileinfo-i.md) | Represents a list of files that fail to be downloaded from the Drive Kit and failure causes. |
-| [HistoryVersion](arkts-corefile-cloudsync-historyversion-i.md) | Represents the historical version information of the device-cloud file when the [gethistoryversionlist](arkts-corefile-cloudsync-fileversion-c.md#gethistoryversionlist-1) method of the [FileVersion](arkts-corefile-cloudsync-fileversion-c.md) class is called. |
+| [HistoryVersion](arkts-corefile-cloudsync-historyversion-i.md) | Represents the historical version information of the device-cloud file when the [gethistoryversionlist](arkts-corefile-cloudsync-fileversion-c.md#gethistoryversionlist) method of the [FileVersion](arkts-corefile-cloudsync-fileversion-c.md) class is called. |
 | [SyncProgress](arkts-corefile-cloudsync-syncprogress-i.md) | Represents information about the device-cloud sync progress. |
-| [VersionDownloadProgress](arkts-corefile-cloudsync-versiondownloadprogress-i.md) | Represents the download state and progress information of historical version files when the [downloadHistoryVersion](arkts-corefile-cloudsync-fileversion-c.md#downloadhistoryversion-1) method of the [FileVersion](arkts-corefile-cloudsync-fileversion-c.md) class is called. |
+| [VersionDownloadProgress](arkts-corefile-cloudsync-versiondownloadprogress-i.md) | Represents the download state and progress information of historical version files when the [downloadHistoryVersion](arkts-corefile-cloudsync-fileversion-c.md#downloadhistoryversion) method of the [FileVersion](arkts-corefile-cloudsync-fileversion-c.md) class is called. |
 
 <!--Del-->
 ### Interfaces（系统接口）

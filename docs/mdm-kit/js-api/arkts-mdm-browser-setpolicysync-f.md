@@ -6,7 +6,6 @@
 import { browser } from '@kit.MDMKit';
 ```
 
-<a id="setpolicysync"></a>
 ## setPolicySync
 
 ```TypeScript

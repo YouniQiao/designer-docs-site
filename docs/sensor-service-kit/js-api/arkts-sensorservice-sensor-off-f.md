@@ -6,7 +6,6 @@
 import { sensor } from '@kit.SensorServiceKit';
 ```
 
-<a id="off"></a>
 ## off
 
 ```TypeScript
@@ -69,7 +68,6 @@ try {
 ```
 
 
-<a id="off-1"></a>
 ## off
 
 ```TypeScript
@@ -165,7 +163,6 @@ function sensorUnsubscribe(): Ret {
 ```
 
 
-<a id="off-2"></a>
 ## off
 
 ```TypeScript
@@ -226,7 +223,6 @@ try {
 ```
 
 
-<a id="off-3"></a>
 ## off
 
 ```TypeScript
@@ -320,7 +316,6 @@ function sensorUnsubscribe(): Ret {
 ```
 
 
-<a id="off-4"></a>
 ## off
 
 ```TypeScript
@@ -378,7 +373,6 @@ try {
 ```
 
 
-<a id="off-5"></a>
 ## off
 
 ```TypeScript
@@ -469,7 +463,6 @@ function sensorUnsubscribe(): Ret {
 ```
 
 
-<a id="off-6"></a>
 ## off
 
 ```TypeScript
@@ -527,7 +520,6 @@ try {
 ```
 
 
-<a id="off-7"></a>
 ## off
 
 ```TypeScript
@@ -618,7 +610,6 @@ function sensorUnsubscribe(): Ret {
 ```
 
 
-<a id="off-8"></a>
 ## off
 
 ```TypeScript
@@ -676,7 +667,6 @@ try {
 ```
 
 
-<a id="off-9"></a>
 ## off
 
 ```TypeScript
@@ -767,7 +757,6 @@ function sensorUnsubscribe(): Ret {
 ```
 
 
-<a id="off-10"></a>
 ## off
 
 ```TypeScript
@@ -826,7 +815,6 @@ try {
 ```
 
 
-<a id="off-11"></a>
 ## off
 
 ```TypeScript
@@ -917,7 +905,6 @@ function sensorUnsubscribe(): Ret {
 ```
 
 
-<a id="off-12"></a>
 ## off
 
 ```TypeScript
@@ -980,7 +967,6 @@ try {
 ```
 
 
-<a id="off-13"></a>
 ## off
 
 ```TypeScript
@@ -1076,7 +1062,6 @@ function sensorUnsubscribe(): Ret {
 ```
 
 
-<a id="off-14"></a>
 ## off
 
 ```TypeScript
@@ -1137,7 +1122,6 @@ try {
 ```
 
 
-<a id="off-15"></a>
 ## off
 
 ```TypeScript
@@ -1231,7 +1215,6 @@ function sensorUnsubscribe(): Ret {
 ```
 
 
-<a id="off-16"></a>
 ## off
 
 ```TypeScript
@@ -1289,7 +1272,6 @@ try {
 ```
 
 
-<a id="off-17"></a>
 ## off
 
 ```TypeScript
@@ -1380,7 +1362,6 @@ function sensorUnsubscribe(): Ret {
 ```
 
 
-<a id="off-18"></a>
 ## off
 
 ```TypeScript
@@ -1441,7 +1422,6 @@ try {
 ```
 
 
-<a id="off-19"></a>
 ## off
 
 ```TypeScript
@@ -1535,7 +1515,6 @@ function sensorUnsubscribe(): Ret {
 ```
 
 
-<a id="off-20"></a>
 ## off
 
 ```TypeScript
@@ -1593,7 +1572,6 @@ try {
 ```
 
 
-<a id="off-21"></a>
 ## off
 
 ```TypeScript
@@ -1684,7 +1662,6 @@ function sensorUnsubscribe(): Ret {
 ```
 
 
-<a id="off-22"></a>
 ## off
 
 ```TypeScript
@@ -1745,7 +1722,6 @@ try {
 ```
 
 
-<a id="off-23"></a>
 ## off
 
 ```TypeScript
@@ -1839,7 +1815,6 @@ function sensorUnsubscribe(): Ret {
 ```
 
 
-<a id="off-24"></a>
 ## off
 
 ```TypeScript
@@ -1897,7 +1872,6 @@ try {
 ```
 
 
-<a id="off-25"></a>
 ## off
 
 ```TypeScript
@@ -1988,7 +1962,6 @@ function sensorUnsubscribe(): Ret {
 ```
 
 
-<a id="off-26"></a>
 ## off
 
 ```TypeScript
@@ -2046,7 +2019,6 @@ try {
 ```
 
 
-<a id="off-27"></a>
 ## off
 
 ```TypeScript
@@ -2137,7 +2109,6 @@ function sensorUnsubscribe(): Ret {
 ```
 
 
-<a id="off-28"></a>
 ## off
 
 ```TypeScript
@@ -2197,7 +2168,6 @@ try {
 ```
 
 
-<a id="off-29"></a>
 ## off
 
 ```TypeScript
@@ -2290,7 +2260,6 @@ function sensorUnsubscribe(): Ret {
 ```
 
 
-<a id="off-30"></a>
 ## off
 
 ```TypeScript
@@ -2351,7 +2320,6 @@ try {
 ```
 
 
-<a id="off-31"></a>
 ## off
 
 ```TypeScript
@@ -2445,7 +2413,6 @@ function sensorUnsubscribe(): Ret {
 ```
 
 
-<a id="off-32"></a>
 ## off
 
 ```TypeScript
@@ -2506,7 +2473,6 @@ try {
 ```
 
 
-<a id="off-33"></a>
 ## off
 
 ```TypeScript
@@ -2600,7 +2566,6 @@ function sensorUnsubscribe(): Ret {
 ```
 
 
-<a id="off-34"></a>
 ## off
 
 ```TypeScript
@@ -2658,7 +2623,6 @@ try {
 ```
 
 
-<a id="off-35"></a>
 ## off
 
 ```TypeScript
@@ -2749,7 +2713,6 @@ function sensorUnsubscribe(): Ret {
 ```
 
 
-<a id="off-36"></a>
 ## off
 
 ```TypeScript
@@ -2807,7 +2770,6 @@ try {
 ```
 
 
-<a id="off-37"></a>
 ## off
 
 ```TypeScript
@@ -2898,7 +2860,6 @@ function sensorUnsubscribe(): Ret {
 ```
 
 
-<a id="off-38"></a>
 ## off
 
 ```TypeScript
@@ -2956,7 +2917,6 @@ try {
 ```
 
 
-<a id="off-39"></a>
 ## off
 
 ```TypeScript
@@ -3047,7 +3007,6 @@ function sensorUnsubscribe(): Ret {
 ```
 
 
-<a id="off-40"></a>
 ## off
 
 ```TypeScript
@@ -3105,7 +3064,6 @@ try {
 ```
 
 
-<a id="off-41"></a>
 ## off
 
 ```TypeScript
@@ -3197,7 +3155,6 @@ function sensorUnsubscribe(): Ret {
 ```
 
 
-<a id="off-42"></a>
 ## off
 
 ```TypeScript
@@ -3288,7 +3245,6 @@ function sensorUnsubscribe(): Ret {
 ```
 
 
-<a id="off-43"></a>
 ## off
 
 ```TypeScript
@@ -3332,7 +3288,6 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_ACCELEROMETER, callback);
 ```
 
 
-<a id="off-44"></a>
 ## off
 
 ```TypeScript
@@ -3350,9 +3305,7 @@ Unsubscribes from sensor data changes.
 
 **Required permissions:** ohos.permission.ACCELEROMETER
 
-<!--Device-sensor-function off(type: SensorType.SENSOR_TYPE_ID_ACCELEROMETER_UNCALIBRATED,
-    callback?: Callback<AccelerometerUncalibratedResponse>): void--><!--Device-sensor-function off(type: SensorType.SENSOR_TYPE_ID_ACCELEROMETER_UNCALIBRATED,
-    callback?: Callback<AccelerometerUncalibratedResponse>): void-End-->
+<!--Device-sensor-function off(type: SensorType.SENSOR_TYPE_ID_ACCELEROMETER_UNCALIBRATED,    callback?: Callback<AccelerometerUncalibratedResponse>): void--><!--Device-sensor-function off(type: SensorType.SENSOR_TYPE_ID_ACCELEROMETER_UNCALIBRATED,    callback?: Callback<AccelerometerUncalibratedResponse>): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -3382,7 +3335,6 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_ACCELEROMETER_UNCALIBRATED, callback
 ```
 
 
-<a id="off-45"></a>
 ## off
 
 ```TypeScript
@@ -3422,7 +3374,6 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_AMBIENT_LIGHT, callback);
 ```
 
 
-<a id="off-46"></a>
 ## off
 
 ```TypeScript
@@ -3462,7 +3413,6 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_AMBIENT_TEMPERATURE, callback);
 ```
 
 
-<a id="off-47"></a>
 ## off
 
 ```TypeScript
@@ -3502,7 +3452,6 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_BAROMETER, callback);
 ```
 
 
-<a id="off-48"></a>
 ## off
 
 ```TypeScript
@@ -3544,7 +3493,6 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_GRAVITY, callback);
 ```
 
 
-<a id="off-49"></a>
 ## off
 
 ```TypeScript
@@ -3588,7 +3536,6 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_GYROSCOPE, callback);
 ```
 
 
-<a id="off-50"></a>
 ## off
 
 ```TypeScript
@@ -3632,7 +3579,6 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_GYROSCOPE_UNCALIBRATED, callback);
 ```
 
 
-<a id="off-51"></a>
 ## off
 
 ```TypeScript
@@ -3672,7 +3618,6 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_HALL, callback);
 ```
 
 
-<a id="off-52"></a>
 ## off
 
 ```TypeScript
@@ -3714,7 +3659,6 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_HEART_RATE, callback);
 ```
 
 
-<a id="off-53"></a>
 ## off
 
 ```TypeScript
@@ -3754,7 +3698,6 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_HUMIDITY, callback);
 ```
 
 
-<a id="off-54"></a>
 ## off
 
 ```TypeScript
@@ -3798,7 +3741,6 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_LINEAR_ACCELERATION, callback);
 ```
 
 
-<a id="off-55"></a>
 ## off
 
 ```TypeScript
@@ -3840,7 +3782,6 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_MAGNETIC_FIELD, callback);
 ```
 
 
-<a id="off-56"></a>
 ## off
 
 ```TypeScript
@@ -3885,7 +3826,6 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_MAGNETIC_FIELD_UNCALIBRATED, callbac
 ```
 
 
-<a id="off-57"></a>
 ## off
 
 ```TypeScript
@@ -3927,7 +3867,6 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_ORIENTATION, callback);
 ```
 
 
-<a id="off-58"></a>
 ## off
 
 ```TypeScript
@@ -3969,7 +3908,6 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_PEDOMETER, callback);
 ```
 
 
-<a id="off-59"></a>
 ## off
 
 ```TypeScript
@@ -4011,7 +3949,6 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_PEDOMETER_DETECTION, callback);
 ```
 
 
-<a id="off-60"></a>
 ## off
 
 ```TypeScript
@@ -4051,7 +3988,6 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_PROXIMITY, callback);
 ```
 
 
-<a id="off-61"></a>
 ## off
 
 ```TypeScript
@@ -4094,7 +4030,6 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_ROTATION_VECTOR, callback);
 ```
 
 
-<a id="off-62"></a>
 ## off
 
 ```TypeScript
@@ -4134,7 +4069,6 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_SIGNIFICANT_MOTION, callback);
 ```
 
 
-<a id="off-63"></a>
 ## off
 
 ```TypeScript
@@ -4174,7 +4108,6 @@ sensor.off(sensor.SensorType.SENSOR_TYPE_ID_WEAR_DETECTION, accCallback);
 ```
 
 
-<a id="off-64"></a>
 ## off('sensorStatusChange')
 
 ```TypeScript

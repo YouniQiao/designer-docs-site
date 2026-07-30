@@ -40,7 +40,7 @@ locationScenario: UserActivityScenario | PowerConsumptionScenario
 
 Location scenario. You can select a user activity scenario or power consumption scenario.
 
-**Type:** UserActivityScenario | PowerConsumptionScenario
+**Type:** UserActivityScenario \| PowerConsumptionScenario
 
 **Since:** 12
 

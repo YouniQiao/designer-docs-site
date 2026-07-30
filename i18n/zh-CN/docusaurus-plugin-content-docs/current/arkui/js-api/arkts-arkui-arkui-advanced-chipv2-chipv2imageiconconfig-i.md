@@ -1,6 +1,6 @@
 # ChipV2ImageIconConfig
 
-定义图标公共配置。
+ChipV2ImageIconConfig定义图标的通用属性配置。
 
 **起始版本：** 26.0.0
 
@@ -20,7 +20,13 @@ import { ChipV2SuffixSymbolIconConfig, ChipV2Label, ChipV2PrefixSymbolIconConfig
 activatedFillColor?: ColorMetrics
 ```
 
-激活时的图像填充颜色。
+ChipV2激活时图标填充颜色。
+
+默认值：$r('sys.color.chip_active_icon_color')，非SVG图片不应用默认值。
+
+值为undefined时，按默认值处理。
+
+仅在图片格式为SVG时，activatedFillColor属性才生效。
 
 **类型：** ColorMetrics
 
@@ -40,7 +46,13 @@ activatedFillColor?: ColorMetrics
 fillColor?: ColorMetrics
 ```
 
-图像填充颜色。
+图标填充颜色。
+
+默认值：$r('sys.color.chip_usually_icon_color')，非SVG图片不应用默认值。
+
+值为undefined时，按默认值处理。
+
+仅在图片格式为SVG时，fillColor属性才生效。
 
 **类型：** ColorMetrics
 
@@ -60,7 +72,9 @@ fillColor?: ColorMetrics
 modifier?: ImageModifier
 ```
 
-图标的modifier对象。
+图标修饰器，用于设置图标的通用属性。当需要通过modifier动态修改图标属性（如opacity、objectFit等）时传入此参数。不传入或传入undefined时，不应用修饰器，图标使用默认属性设置。
+
+默认值：undefined，不应用修饰器。
 
 **类型：** ImageModifier
 
@@ -80,7 +94,16 @@ modifier?: ImageModifier
 size?: SizeT<LengthMetrics>
 ```
 
-图片大小选项。
+图标大小，不支持百分比。传入百分比时按默认值处理。
+
+默认值：
+
+- 当ChipV2Options.size为ChipV2Size.SMALL时，默认值为：{width: $r('sys.float.chip_small_icon_size'), height: $r('sys.float.chip_small_icon_size')}。  
+- 当ChipV2Options.size为ChipV2Size.NORMAL时，默认值为：{width: $r('sys.float.chip_normal_icon_size'), height: $r('sys.float.chip_normal_icon_size')}。
+
+单位：vp
+
+值为undefined时，按默认值处理。
 
 **类型：** SizeT&lt;LengthMetrics&gt;
 
@@ -100,7 +123,7 @@ size?: SizeT<LengthMetrics>
 src: ResourceStr
 ```
 
-图片资源。
+图标图片或图片地址引用。
 
 **类型：** ResourceStr
 

@@ -36,7 +36,7 @@ function showActionMenu(options: ActionMenuOptions, callback: AsyncCallback<Acti
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
 | options | [ActionMenuOptions](arkts-arkui-prompt-actionmenuoptions-i.md) | 是 | 操作菜单选项。 |
-| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ActionMenuSuccessResponse&gt; | 是 | 回调函数。弹出操作菜单成功，err为undefined，data为获取到的操作菜单响应结果，否则为错误对象。 |
+| callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ActionMenuSuccessResponse&gt; | 是 | 回调函数。弹出操作菜单成功时，err为undefined，data为获取到的操作菜单响应结果；失败时，err为错误对象。 |
 
 **错误码：**
 
@@ -183,7 +183,7 @@ function showActionMenu(options: ActionMenuOptions): Promise<ActionMenuSuccessRe
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| options | [ActionMenuOptions](arkts-arkui-prompt-actionmenuoptions-i.md) | 是 | Promise对象，返回菜单的响应结果。 |
+| options | [ActionMenuOptions](arkts-arkui-prompt-actionmenuoptions-i.md) | 是 | 操作菜单选项。 |
 
 **返回值：**
 

@@ -1,6 +1,6 @@
 # Panel
 
-In the following API examples, you must first use [createPanel](arkts-ime-inputmethodengine-inputmethodability-i.md#createpanel-1)to obtain a **Panel** instance, and then call the APIs using the obtained instance.
+In the following API examples, you must first use [createPanel](arkts-ime-inputmethodengine-inputmethodability-i.md#createpanel)to obtain a **Panel** instance, and then call the APIs using the obtained instance.
 
 **Since:** 10
 
@@ -14,7 +14,6 @@ In the following API examples, you must first use [createPanel](arkts-ime-inputm
 import { inputMethodEngine } from '@kit.IMEKit';
 ```
 
-<a id="adjustpanelrect"></a>
 ## adjustPanelRect
 
 ```TypeScript
@@ -22,7 +21,6 @@ adjustPanelRect(flag: PanelFlag, rect: PanelRect): void
 ```
 
 Adjusts the panel rectangle. After the API is called, the adjust request is submitted to the input method framework, but the execution is not complete.
-
 > **NOTE**  
 >  
 > This API applies only to the panels of the **SOFT_KEYBOARD** type in the **FLG_FIXED** or **FLG_FLOATING**  
@@ -85,7 +83,6 @@ panel.adjustPanelRect(panelFlag, panelRect);
 
 ```
 
-<a id="adjustpanelrect-1"></a>
 ## adjustPanelRect
 
 ```TypeScript
@@ -93,14 +90,13 @@ adjustPanelRect(flag: PanelFlag, rect: EnhancedPanelRect): void
 ```
 
 Adjusts the panel rectangle, and customizes the avoid area and touch area.
-
 > **NOTE**  
 >  
 > This API applies only to the panels of the **SOFT_KEYBOARD** type in the **FLG_FIXED** or **FLG_FLOATING**  
 > state. This API is compatible with  
-> [adjustPanelRect](arkts-ime-inputmethodengine-panel-i.md#adjustpanelrect-1). If the  
+> [adjustPanelRect](arkts-ime-inputmethodengine-panel-i.md#adjustpanelrect). If the  
 > input parameter **rect** contains only the **landscapeRect** and **portraitRect** attributes,  
-> [adjustPanelRect](arkts-ime-inputmethodengine-panel-i.md#adjustpanelrect-1) is called by  
+> [adjustPanelRect](arkts-ime-inputmethodengine-panel-i.md#adjustpanelrect) is called by  
 > default.  
 >  
 > This API returns the result synchronously. The return only indicates that the system receives the setting  
@@ -165,7 +161,6 @@ panel.adjustPanelRect(panelFlag, panelRect);
 
 ```
 
-<a id="changeflag"></a>
 ## changeFlag
 
 ```TypeScript
@@ -200,7 +195,6 @@ panel.changeFlag(panelFlag);
 
 ```
 
-<a id="getdisplayid"></a>
 ## getDisplayId
 
 ```TypeScript
@@ -241,7 +235,6 @@ panel.getDisplayId().then((result: number) => {
 
 ```
 
-<a id="getimmersivemode"></a>
 ## getImmersiveMode
 
 ```TypeScript
@@ -269,7 +262,6 @@ let mode: inputMethodEngine.ImmersiveMode = panel.getImmersiveMode();
 
 ```
 
-<a id="getsystempanelcurrentinsets"></a>
 ## getSystemPanelCurrentInsets
 
 ```TypeScript
@@ -288,7 +280,7 @@ Obtains the offset area of the soft keyboard relative to the system panel under 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| displayId | number | Yes | Display ID of the screen where the input method keyboard is located. It can be obtained by calling [getDisplayId](arkts-ime-inputmethodengine-panel-i.md#getdisplayid-1). |
+| displayId | number | Yes | Display ID of the screen where the input method keyboard is located. It can be obtained by calling [getDisplayId](arkts-ime-inputmethodengine-panel-i.md#getdisplayid). |
 
 **Return value:**
 
@@ -328,7 +320,6 @@ inputMethodAbility.createPanel(this.context, panelConfig).then( (panel: inputMet
 
 ```
 
-<a id="hide"></a>
 ## hide
 
 ```TypeScript
@@ -364,7 +355,6 @@ panel.hide((err: BusinessError) => {
 
 ```
 
-<a id="hide-1"></a>
 ## hide
 
 ```TypeScript
@@ -398,7 +388,6 @@ panel.hide().then(() => {
 
 ```
 
-<a id="moveto"></a>
 ## moveTo
 
 ```TypeScript
@@ -442,7 +431,6 @@ panel.moveTo(300, 300, (err: BusinessError) => {
 
 ```
 
-<a id="moveto-1"></a>
 ## moveTo
 
 ```TypeScript
@@ -489,7 +477,6 @@ panel.moveTo(300, 300).then(() => {
 
 ```
 
-<a id="off"></a>
 ## off('show')
 
 ```TypeScript
@@ -524,7 +511,6 @@ panel.off('show');
 
 ```
 
-<a id="off-1"></a>
 ## off('hide')
 
 ```TypeScript
@@ -559,7 +545,6 @@ panel.off('hide');
 
 ```
 
-<a id="off-2"></a>
 ## off('sizeChange')
 
 ```TypeScript
@@ -567,7 +552,6 @@ off(type: 'sizeChange', callback?: SizeChangeCallback): void
 ```
 
 Disables listening for the panel size change. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > This API applies only to the panels of the **SOFT_KEYBOARD** type in the **FLG_FIXED** or **FLG_FLOATING**  
@@ -579,7 +563,7 @@ Disables listening for the panel size change. This API uses an asynchronous call
 > parameters of the [window.Size](../../apis-arkui/arkts-apis/arkts-arkui-window-size-i.md) type.  
 >  
 > - Since API version 15, after the  
-> [adjustPanelRect](arkts-ime-inputmethodengine-panel-i.md#adjustpanelrect-1) API  
+> [adjustPanelRect](arkts-ime-inputmethodengine-panel-i.md#adjustpanelrect) API  
 > is called, an optional parameter of the [KeyboardArea](arkts-ime-inputmethodengine-keyboardarea-i.md) type is added to  
 > the callback function of this API.
 
@@ -607,7 +591,6 @@ panel.off('sizeChange', (windowSize: window.Size) => {
 
 ```
 
-<a id="on"></a>
 ## on('show')
 
 ```TypeScript
@@ -638,7 +621,6 @@ panel.on('show', () => {
 
 ```
 
-<a id="on-1"></a>
 ## on('hide')
 
 ```TypeScript
@@ -669,7 +651,6 @@ panel.on('hide', () => {
 
 ```
 
-<a id="on-2"></a>
 ## on('sizeChange')
 
 ```TypeScript
@@ -677,7 +658,6 @@ on(type: 'sizeChange', callback: SizeChangeCallback): void
 ```
 
 Enables listening for the panel size change. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > This API applies only to the panels of the **SOFT_KEYBOARD** type in the **FLG_FIXED** or **FLG_FLOATING**  
@@ -689,7 +669,7 @@ Enables listening for the panel size change. This API uses an asynchronous callb
 > parameters of the [window.Size](../../apis-arkui/arkts-apis/arkts-arkui-window-size-i.md) type.  
 >  
 > - Since API version 15, after the  
-> [adjustPanelRect](arkts-ime-inputmethodengine-panel-i.md#adjustpanelrect-1) API  
+> [adjustPanelRect](arkts-ime-inputmethodengine-panel-i.md#adjustpanelrect) API  
 > is called, an optional parameter of the [KeyboardArea](arkts-ime-inputmethodengine-keyboardarea-i.md) type is added to  
 > the callback function of this API.
 
@@ -722,7 +702,6 @@ panel.on('sizeChange', (windowSize: window.Size, keyboardArea: inputMethodEngine
 
 ```
 
-<a id="resize"></a>
 ## resize
 
 ```TypeScript
@@ -730,7 +709,6 @@ resize(width: number, height: number, callback: AsyncCallback<void>): void
 ```
 
 Resizes this input method panel. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > The panel width cannot exceed the screen width, and the panel height cannot be 0.7 times higher than the screen  
@@ -775,7 +753,6 @@ panel.resize(500, 1000, (err: BusinessError) => {
 
 ```
 
-<a id="resize-1"></a>
 ## resize
 
 ```TypeScript
@@ -783,7 +760,6 @@ resize(width: number, height: number): Promise<void>
 ```
 
 Resizes this input method panel. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > The panel width cannot exceed the screen width, and the panel height cannot be 0.7 times higher than the screen  
@@ -831,7 +807,6 @@ panel.resize(500, 1000).then(() => {
 
 ```
 
-<a id="setimmersiveeffect"></a>
 ## setImmersiveEffect
 
 ```TypeScript
@@ -840,14 +815,14 @@ setImmersiveEffect(effect: ImmersiveEffect): void
 
 Sets the immersive effect of the input method application.
 
-- Gradient mode and fluid light mode can be used only when the [immersive mode](arkts-ime-inputmethodengine-panel-i.md#setimmersivemode-1) is enabled.  
+- Gradient mode and fluid light mode can be used only when the [immersive mode](arkts-ime-inputmethodengine-panel-i.md#setimmersivemode) is enabled.  
 - The fluid light mode can be used only when the gradient mode is enabled.  
 - If the gradient mode is disabled, the gradient height must be 0 px.  
 - Only system applications can set the fluid light mode.  
 - The current API can be called only after any of the following APIs is called:  
-- [adjustPanelRect](arkts-ime-inputmethodengine-panel-i.md#adjustpanelrect-1) (available since API version 12)  
-- [adjustPanelRect](arkts-ime-inputmethodengine-panel-i.md#adjustpanelrect-1) (available since API version 15)  
-- [resize](arkts-ime-inputmethodengine-panel-i.md#resize-1) (available since API version 10)
+- [adjustPanelRect](arkts-ime-inputmethodengine-panel-i.md#adjustpanelrect) (available since API version 12)  
+- [adjustPanelRect](arkts-ime-inputmethodengine-panel-i.md#adjustpanelrect) (available since API version 15)  
+- [resize](arkts-ime-inputmethodengine-panel-i.md#resize) (available since API version 10)
 
 **Since:** 20
 
@@ -882,7 +857,6 @@ panel.setImmersiveEffect(effect);
 
 ```
 
-<a id="setimmersivemode"></a>
 ## setImmersiveMode
 
 ```TypeScript
@@ -918,7 +892,6 @@ panel.setImmersiveMode(inputMethodEngine.ImmersiveMode.LIGHT_IMMERSIVE);
 
 ```
 
-<a id="setkeepscreenon"></a>
 ## setKeepScreenOn
 
 ```TypeScript
@@ -926,7 +899,6 @@ setKeepScreenOn(isKeepScreenOn: boolean): Promise<void>
 ```
 
 Sets to keep the screen always on. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > - When the keyboard is displayed, the screen stays on. When the keyboard is hidden, the screen turns off.  
@@ -972,7 +944,6 @@ panel.setKeepScreenOn(true).then(() => {
 
 ```
 
-<a id="setprivacymode"></a>
 ## setPrivacyMode
 
 ```TypeScript
@@ -1010,7 +981,6 @@ panel.setPrivacyMode(isPrivacyMode);
 
 ```
 
-<a id="setsystempanelbuttoncolor"></a>
 ## setSystemPanelButtonColor
 
 ```TypeScript
@@ -1058,7 +1028,6 @@ try {
 
 ```
 
-<a id="setuicontent"></a>
 ## setUiContent
 
 ```TypeScript
@@ -1101,7 +1070,6 @@ panel.setUiContent('pages/page2/page2', (err: BusinessError) => {
 
 ```
 
-<a id="setuicontent-1"></a>
 ## setUiContent
 
 ```TypeScript
@@ -1147,7 +1115,6 @@ panel.setUiContent('pages/page2/page2').then(() => {
 
 ```
 
-<a id="setuicontent-2"></a>
 ## setUiContent
 
 ```TypeScript
@@ -1193,7 +1160,6 @@ panel.setUiContent('pages/page2/page2', storage, (err: BusinessError) => {
 
 ```
 
-<a id="setuicontent-3"></a>
 ## setUiContent
 
 ```TypeScript
@@ -1242,7 +1208,6 @@ panel.setUiContent('pages/page2/page2', storage).then(() => {
 
 ```
 
-<a id="show"></a>
 ## show
 
 ```TypeScript
@@ -1278,7 +1243,6 @@ panel.show((err: BusinessError) => {
 
 ```
 
-<a id="show-1"></a>
 ## show
 
 ```TypeScript
@@ -1312,7 +1276,6 @@ panel.show().then(() => {
 
 ```
 
-<a id="startmoving"></a>
 ## startMoving
 
 ```TypeScript
@@ -1343,7 +1306,6 @@ panel.startMoving();
 
 ```
 
-<a id="updatepanelrect"></a>
 ## updatePanelRect
 
 ```TypeScript
@@ -1387,7 +1349,6 @@ Update the panel rectangle. This API uses a promise to return the result.
 | --- | --- |
 | [12800013](../errorcode-inputmethod-framework.md#12800013-window-manager-service-error) | window manager service error. |
 
-<a id="updatepanelrect-1"></a>
 ## updatePanelRect
 
 ```TypeScript
@@ -1399,9 +1360,9 @@ Update the panel rectangle, and customizes the avoid area and touch area. This A
 >  
 > This API applies only to the panels of the **SOFT_KEYBOARD** type in the **FLG_FIXED** or **FLG_FLOATING**  
 > state. This API is compatible with  
-> [updatePanelRect](arkts-ime-inputmethodengine-panel-i.md#updatepanelrect-1).  
+> [updatePanelRect](arkts-ime-inputmethodengine-panel-i.md#updatepanelrect).  
 > If the input parameter **rect** contains only the **landscapeRect** and **portraitRect** attributes,  
-> [updatePanelRect](arkts-ime-inputmethodengine-panel-i.md#updatepanelrect-1)  
+> [updatePanelRect](arkts-ime-inputmethodengine-panel-i.md#updatepanelrect)  
 > is called by default.  
 >  
 > When the **PanelFlag** of a smartphone is **FLG_FLOATING** and the panel width is between 0 and 288 vp, the  
@@ -1436,7 +1397,6 @@ Update the panel rectangle, and customizes the avoid area and touch area. This A
 | [12800013](../errorcode-inputmethod-framework.md#12800013-window-manager-service-error) | window manager service error. |
 | [12800017](../errorcode-inputmethod-framework.md#12800017-invalid-panel-type-or-panel-flag) | invalid panel type or panel flag. |
 
-<a id="updatepanelrectsync"></a>
 ## updatePanelRectSync
 
 ```TypeScript
@@ -1474,7 +1434,6 @@ Update the panel rectangle.
 | --- | --- |
 | [12800013](../errorcode-inputmethod-framework.md#12800013-window-manager-service-error) | window manager service error. |
 
-<a id="updatepanelrectsync-1"></a>
 ## updatePanelRectSync
 
 ```TypeScript
@@ -1486,9 +1445,9 @@ Update the panel rectangle, and customizes the avoid area and touch area.
 >  
 > This API applies only to the panels of the **SOFT_KEYBOARD** type in the **FLG_FIXED** or **FLG_FLOATING**  
 > state. This API is compatible with  
-> [updatePanelRectSync](arkts-ime-inputmethodengine-panel-i.md#updatepanelrectsync-1).  
+> [updatePanelRectSync](arkts-ime-inputmethodengine-panel-i.md#updatepanelrectsync).  
 > If the input parameter **rect** contains only the **landscapeRect** and **portraitRect** attributes,  
-> [updatePanelRectSync](arkts-ime-inputmethodengine-panel-i.md#updatepanelrectsync-1)  
+> [updatePanelRectSync](arkts-ime-inputmethodengine-panel-i.md#updatepanelrectsync)  
 > is called by default.  
 >  
 > When the **PanelFlag** of a smartphone is **FLG_FLOATING** and the panel width is between 0 and 288 vp, the  
@@ -1517,7 +1476,6 @@ Update the panel rectangle, and customizes the avoid area and touch area.
 | [12800013](../errorcode-inputmethod-framework.md#12800013-window-manager-service-error) | window manager service error. |
 | [12800017](../errorcode-inputmethod-framework.md#12800017-invalid-panel-type-or-panel-flag) | invalid panel type or panel flag. |
 
-<a id="updateregion"></a>
 ## updateRegion
 
 ```TypeScript
@@ -1525,7 +1483,6 @@ updateRegion(inputRegion: Array<window.Rect>): void
 ```
 
 Updates the hot zone on the input method panel in the current state.
-
 > **NOTE**  
 >  
 > This API applies only to the panels of the **SOFT_KEYBOARD** type in the **FLG_FIXED** or **FLG_FLOATING**  

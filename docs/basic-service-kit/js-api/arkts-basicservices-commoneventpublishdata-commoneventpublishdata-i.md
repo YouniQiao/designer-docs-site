@@ -1,11 +1,12 @@
 # CommonEventPublishData
 
-The **CommonEventPublishData** module provides APIs for defining common event content and attributes.
+This module encapsulates the data and attributes carried when a common event is published, including the event data (code/data), subscriber permissions, subscriber bundle name, whether the event is ordered or sticky, and additional parameters. It allows the publisher to precisely control the common event recipients, event delivery sequence, and sticky feature. This module is applicable to scenarios where the recipients need to be specified, custom event data needs to be transferred, and ordered/sticky common events need to be implemented.
 > **NOTE**  
 >  
-> If there is no restriction, any application can subscribe to common events and read related information. In this  
-> case, sensitive information should not be carried in common events. The **subscriberPermissions** and  
-> **bundleName** parameters of this module can be used to restrict the receiving scope of common events.
+> If there is no restriction, any app can subscribe to common events and read the  
+> information carried by the event. In this case, sensitive information should not be  
+> carried in common events. The **subscriberPermissions** and **bundleName** parameters  
+> of this module can be used to restrict the receiving scope of common events.
 
 **Since:** 7
 
@@ -19,7 +20,7 @@ The **CommonEventPublishData** module provides APIs for defining common event co
 bundleName?: string
 ```
 
-Bundle name of the subscriber that can receive the common event.
+Bundle name of the subscriber, which is used to specify the subscriber to whom the common event is published. This parameter is left empty by default. When this parameter is empty, the bundle name of the subscriber is not specified, and all subscribers can receive the common event.
 
 **Type:** string
 
@@ -57,7 +58,7 @@ Common event data transferred by the publisher. The default value is **0**.
 data?: string
 ```
 
-Common event data transferred by the publisher. The data size cannot exceed 64 KB.
+Common event data transferred by the publisher. The value is a string and cannot exceed 64 KB. If the value exceeds the limit, the event fails to be published. This parameter is left empty by default.
 
 **Type:** string
 
@@ -123,7 +124,7 @@ Only system applications and system services are allowed to send sticky events.
 parameters?: { [key: string]: any }
 ```
 
-Additional information about the common event transferred by the publisher.
+Additional information about the common event transferred by the publisher. Custom parameters are configured in a key-value pair format. This parameter is left empty by default.
 
 **Type:** { [key: string]: any }
 
@@ -141,7 +142,7 @@ Additional information about the common event transferred by the publisher.
 subscriberPermissions?: Array<string>
 ```
 
-Permissions required for subscribers to receive the common event.
+Subscriber permissions. Only subscribers with the specified permissions can receive the common event. This parameter is left empty by default. When this parameter is empty, the subscriber permissions are not specified, and all subscribers can receive the common event.
 
 **Type:** Array&lt;string&gt;
 

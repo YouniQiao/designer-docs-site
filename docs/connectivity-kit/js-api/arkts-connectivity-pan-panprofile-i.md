@@ -16,7 +16,6 @@ Manager pan host profile.
 import { pan } from '@kit.ConnectivityKit';
 ```
 
-<a id="ispansupported"></a>
 ## isPanSupported
 
 ```TypeScript

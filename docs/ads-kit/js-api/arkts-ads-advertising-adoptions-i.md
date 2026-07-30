@@ -46,7 +46,7 @@ Custom parameters.
 
 <!--RP1--><!--RP1End-->
 
-**Type:** number | boolean | string | undefined
+**Type:** number \| boolean \| string \| undefined
 
 **Since:** 11
 

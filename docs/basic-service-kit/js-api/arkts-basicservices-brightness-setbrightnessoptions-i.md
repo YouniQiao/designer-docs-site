@@ -24,7 +24,7 @@ complete?: () => void
 
 Called when an API call is complete.
 
-**Type:** () => void
+**Type:** () =&gt; void
 
 **Since:** 3
 
@@ -42,7 +42,7 @@ fail?: (data: string, code: number) => void
 
 Called when an API call has failed. **data** indicates the error information, and **code** indicates the error code.
 
-**Type:** (data: string, code: number) => void
+**Type:** (data: string, code: number) =&gt; void
 
 **Since:** 3
 
@@ -60,7 +60,7 @@ success?: () => void
 
 Called when an API call is successful.
 
-**Type:** () => void
+**Type:** () =&gt; void
 
 **Since:** 3
 

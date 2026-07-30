@@ -1,7 +1,6 @@
 # NotificationTemplate
 
 This module defines the notification template, which is used to specify the template type for a notification.
-
 > **NOTE**  
 >  
 > The initial APIs of this module are supported since API version 8. Newly added APIs will be marked with a  

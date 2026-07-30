@@ -8,7 +8,6 @@ Configures the expected total number of data items to be loaded in lazy loading 
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="onlazyloading"></a>
 ## onLazyLoading
 
 ```TypeScript
@@ -42,7 +41,6 @@ The **onLazyLoading** method must be used in lazy loading scenarios. You can imp
 | --- | --- | --- | --- |
 | index | number | Yes | Index of the data item to be loaded.<br>Value range: natural numbers |
 
-<a id="ontotalcount"></a>
 ## onTotalCount
 
 ```TypeScript
@@ -57,7 +55,7 @@ The data loading rules for different return values of **onTotalCount()** are the
 
 - If the return value of **onTotalCount()** is **0**, no data is loaded.  
 - If the return value of **onTotalCount()** is in the range (0, Data source length], only data in the index range [0, Return value – 1] is loaded.  
-- If the return value of **onTotalCount()** is greater than the data source length, the **Repeat** component expects to load data in the index range [0, Return value – 1]. The scrollbar style of the container component changes according to the value of **totalCount**. During the scrolling of the container component, the application must ensure that subsequent data is requested before the list is about to reach the end of the data source. You need to handle error scenarios (such as network delays) for data requests until all data sources are loaded;otherwise, scrolling exceptions may occur during list scrolling. You are advised to use [onLazyLoading](arkts-arkui-virtualscrolloptions-i.md#onlazyloading-1) to implement lazy loading.  
+- If the return value of **onTotalCount()** is greater than the data source length, the **Repeat** component expects to load data in the index range [0, Return value – 1]. The scrollbar style of the container component changes according to the value of **totalCount**. During the scrolling of the container component, the application must ensure that subsequent data is requested before the list is about to reach the end of the data source. You need to handle error scenarios (such as network delays) for data requests until all data sources are loaded;otherwise, scrolling exceptions may occur during list scrolling. You are advised to use [onLazyLoading](arkts-arkui-virtualscrolloptions-i.md#onlazyloading) to implement lazy loading.  
 - If the return value of **onTotalCount()** is not a natural number, the data source length will be used as the return value.
 
 **Since:** 19
@@ -138,9 +136,9 @@ If **totalCount** is set to **0**, no data is loaded.
 
 If the value of **totalCount** is in the range (0, Data source length], only data in the range [0, **totalCount** – 1] is rendered on the GUI.
 
-If the value of **totalCount** is greater than the data source length, the **Repeat** component renders data in the range [0, **totalCount** – 1], and the scrollbar style of the container component changes according to the value of **totalCount**. During the scrolling of the container component, the application must ensure that subsequent data is requested before the list is about to reach the end of the data source. You need to handle error scenarios (such as network delays) for data requests until all data sources are loaded; otherwise, scrolling exceptions may occur during list scrolling. You are advised to use [onLazyLoading](arkts-arkui-virtualscrolloptions-i.md#onlazyloading-1) to implement lazy loading.
+If the value of **totalCount** is greater than the data source length, the **Repeat** component renders data in the range [0, **totalCount** – 1], and the scrollbar style of the container component changes according to the value of **totalCount**. During the scrolling of the container component, the application must ensure that subsequent data is requested before the list is about to reach the end of the data source. You need to handle error scenarios (such as network delays) for data requests until all data sources are loaded; otherwise, scrolling exceptions may occur during list scrolling. You are advised to use [onLazyLoading](arkts-arkui-virtualscrolloptions-i.md#onlazyloading) to implement lazy loading.
 
-In addition to the **totalCount** attribute, you can also use the [onTotalCount](arkts-arkui-virtualscrolloptions-i.md#ontotalcount-1) method to set a custom method to calculate the expected total number of data items to be loaded.
+In addition to the **totalCount** attribute, you can also use the [onTotalCount](arkts-arkui-virtualscrolloptions-i.md#ontotalcount) method to set a custom method to calculate the expected total number of data items to be loaded.
 
 **Type:** number
 

@@ -6,7 +6,6 @@
 import { wifiManager } from '@kit.ConnectivityKit';
 ```
 
-<a id="connecttocandidateconfig"></a>
 ## connectToCandidateConfig
 
 ```TypeScript
@@ -57,7 +56,6 @@ Connect to a specified candidate hotspot by networkId, only the configuration wh
 ```
 
 
-<a id="connecttocandidateconfig-1"></a>
 ## connectToCandidateConfig
 
 ```TypeScript

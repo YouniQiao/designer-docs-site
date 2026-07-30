@@ -16,7 +16,6 @@ VideoSession extends Session, Flash, AutoExposure, Focus, Zoom, Stabilization, C
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="canpreconfig"></a>
 ## canPreconfig
 
 ```TypeScript
@@ -52,7 +51,6 @@ Checks whether this session supports a preconfigured resolution.
 | --- | --- |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="off"></a>
 ## off('error')
 
 ```TypeScript
@@ -76,7 +74,6 @@ Unsubscribes from **PhotoSession** error events. This API uses a callback to ret
 | type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when a session is created. |
 | callback | [ErrorCallback](../../apis-arkui/arkts-components/arkts-arkui-errorcallback-t-sys.md) | No | Callback used to return the result. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
 
-<a id="off-1"></a>
 ## off('focusStateChange')
 
 ```TypeScript
@@ -100,7 +97,6 @@ Unsubscribes from focus state change events.
 | type | 'focusStateChange' | Yes | Event type. The value is fixed at **'focusStateChange'**. The event can be listened for when a session is created. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FocusState&gt; | No | Callback used to return the result. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
 
-<a id="off-2"></a>
 ## off('smoothZoomInfoAvailable')
 
 ```TypeScript
@@ -124,7 +120,6 @@ Unsubscribes from smooth zoom state change events.
 | type | 'smoothZoomInfoAvailable' | Yes | Event type. The value is fixed at **'smoothZoomInfoAvailable'**. The event can be listened for when a session is created. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;SmoothZoomInfo&gt; | No | Callback used to return the result. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
 
-<a id="off-3"></a>
 ## off('controlCenterEffectStatusChange')
 
 ```TypeScript
@@ -148,7 +143,6 @@ Unsubscribes from events indicating that the camera controller effect status cha
 | type | 'controlCenterEffectStatusChange' | Yes | Event type. The value is fixed at **'controlCenterEffectStatusChange'**. The event can be listened for when a session is created. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ControlCenterStatusInfo&gt; | No | Callback used to return the result. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
 
-<a id="off-4"></a>
 ## off('autoDeviceSwitchStatusChange')
 
 ```TypeScript
@@ -172,7 +166,6 @@ Unsubscribes from automatic camera switch status change events.
 | type | 'autoDeviceSwitchStatusChange' | Yes | Event type. The value is fixed at **'autoDeviceSwitchStatusChange'**. The event can be listened for when a session is created. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AutoDeviceSwitchStatus&gt; | No | Callback used to return the result. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
 
-<a id="off-5"></a>
 ## off('systemPressureLevelChange')
 
 ```TypeScript
@@ -196,7 +189,6 @@ Unsubscribes from system pressure level change events.
 | type | 'systemPressureLevelChange' | Yes | Event type. The value is fixed at **'systemPressureLevelChange'**.The event can be listened for when a session is created. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;SystemPressureLevel&gt; | No | Callback used to return the result. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
 
-<a id="offexposureinfochange"></a>
 ## offExposureInfoChange
 
 ```TypeScript
@@ -221,7 +213,6 @@ Unsubscribes exposure info change event callback. Invoke this method after finis
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ExposureInfo&gt; | No | Callback used to get the exposure value change.Callback listening for canceling exposure information. |
 
-<a id="offisoinfochange"></a>
 ## offIsoInfoChange
 
 ```TypeScript
@@ -246,7 +237,6 @@ Unsubscribes from ISO info change event callback.
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;IsoInfo&gt; | No | Callback used to get the ISO info change. |
 
-<a id="on"></a>
 ## on('error')
 
 ```TypeScript
@@ -254,7 +244,6 @@ on(type: 'error', callback: ErrorCallback): void
 ```
 
 Subscribes to **PhotoSession** error events. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
@@ -271,10 +260,9 @@ Subscribes to **PhotoSession** error events. This API uses an asynchronous callb
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when a session is created. This event is triggered and the error message is returned when an error occurs during the calling of a session-related API such as [beginConfig](arkts-camera-camera-session-i.md#beginconfig-1),[commitConfig](arkts-camera-camera-session-i.md#commitconfig-1), and [addInput](arkts-camera-camera-session-i.md#addinput-1). |
+| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when a session is created. This event is triggered and the error message is returned when an error occurs during the calling of a session-related API such as [beginConfig](arkts-camera-camera-session-i.md#beginconfig),[commitConfig](arkts-camera-camera-session-i.md#commitconfig), and [addInput](arkts-camera-camera-session-i.md#addinput). |
 | callback | [ErrorCallback](../../apis-arkui/arkts-components/arkts-arkui-errorcallback-t-sys.md) | Yes | Callback used to return an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md). |
 
-<a id="on-1"></a>
 ## on('focusStateChange')
 
 ```TypeScript
@@ -282,7 +270,6 @@ on(type: 'focusStateChange', callback: AsyncCallback<FocusState>): void
 ```
 
 Subscribes to focus state change events. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
@@ -302,7 +289,6 @@ Subscribes to focus state change events. This API uses an asynchronous callback 
 | type | 'focusStateChange' | Yes | Event type. The value is fixed at **'focusStateChange'**. The event can be listened for when a session is created. This event is triggered only when the camera focus state changes in autofocus mode. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FocusState&gt; | Yes | Callback used to return the focus state change. |
 
-<a id="on-2"></a>
 ## on('smoothZoomInfoAvailable')
 
 ```TypeScript
@@ -310,7 +296,6 @@ on(type: 'smoothZoomInfoAvailable', callback: AsyncCallback<SmoothZoomInfo>): vo
 ```
 
 Subscribes to smooth zoom state change events. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
@@ -330,7 +315,6 @@ Subscribes to smooth zoom state change events. This API uses an asynchronous cal
 | type | 'smoothZoomInfoAvailable' | Yes | Event type. The value is fixed at **'smoothZoomInfoAvailable'**. The event can be listened for when a session is created. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;SmoothZoomInfo&gt; | Yes | Callback used to return the smooth zoom state change. |
 
-<a id="on-3"></a>
 ## on('controlCenterEffectStatusChange')
 
 ```TypeScript
@@ -338,7 +322,6 @@ on(type: 'controlCenterEffectStatusChange', callback: AsyncCallback<ControlCente
 ```
 
 Subscribes to events indicating that the camera controller effect status changes. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
@@ -358,7 +341,6 @@ Subscribes to events indicating that the camera controller effect status changes
 | type | 'controlCenterEffectStatusChange' | Yes | Event type. The value is fixed at **'controlCenterEffectStatusChange'**. The event can be listened for when a session is created. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;ControlCenterStatusInfo&gt; | Yes | Callback used to return the effect status of the current controller. |
 
-<a id="on-4"></a>
 ## on('autoDeviceSwitchStatusChange')
 
 ```TypeScript
@@ -366,7 +348,6 @@ on(type: 'autoDeviceSwitchStatusChange', callback: AsyncCallback<AutoDeviceSwitc
 ```
 
 Subscribes to automatic camera switch status change events. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
@@ -386,7 +367,6 @@ Subscribes to automatic camera switch status change events. This API uses an asy
 | type | 'autoDeviceSwitchStatusChange' | Yes | Event type. The value is fixed at **'autoDeviceSwitchStatusChange'**. The event can be listened for when a session is created. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;AutoDeviceSwitchStatus&gt; | Yes | Callback function, which is used to obtain the status of automatic camera switch. |
 
-<a id="on-5"></a>
 ## on('systemPressureLevelChange')
 
 ```TypeScript
@@ -394,7 +374,6 @@ on(type: 'systemPressureLevelChange', callback: AsyncCallback<SystemPressureLeve
 ```
 
 Subscribes to system pressure level change events. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
@@ -414,7 +393,6 @@ Subscribes to system pressure level change events. This API uses an asynchronous
 | type | 'systemPressureLevelChange' | Yes | Event type. The value is fixed at **'systemPressureLevelChange'**.The event can be listened for when a session is created. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;SystemPressureLevel&gt; | Yes | Callback used to return the current system pressure level. |
 
-<a id="onexposureinfochange"></a>
 ## onExposureInfoChange
 
 ```TypeScript
@@ -439,7 +417,6 @@ Subscribes exposure info change event callback.After exposure parameters are cha
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;ExposureInfo&gt; | Yes | Callback used to get the exposure value change Exposure information callback listening. |
 
-<a id="onisoinfochange"></a>
 ## onIsoInfoChange
 
 ```TypeScript
@@ -464,7 +441,6 @@ Subscribes ISO info change event callback.
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;IsoInfo&gt; | Yes | Callback used to get the ISO info change. |
 
-<a id="preconfig"></a>
 ## preconfig
 
 ```TypeScript
@@ -494,7 +470,6 @@ Preconfigures this session.
 | --- | --- |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="setqualityprioritization"></a>
 ## setQualityPrioritization
 
 ```TypeScript
@@ -502,15 +477,14 @@ setQualityPrioritization(quality: QualityPrioritization): void
 ```
 
 Sets the priority level for video recording quality.
-
 > **NOTE**  
 >  
 > - The default value is **HIGH_QUALITY**. Switching to **POWER_BALANCE** will compromise video recording quality  
 > to achieve lower power usage. The extent of power conservation achieved varies depending on the platform.  
 >  
 > - It is recommended that this API be called between  
-> [commitConfig](arkts-camera-camera-session-i.md#commitconfig-1) and  
-> [start](arkts-camera-camera-session-i.md#start-1).
+> [commitConfig](arkts-camera-camera-session-i.md#commitconfig) and  
+> [start](arkts-camera-camera-session-i.md#start).
 
 **Since:** 14
 

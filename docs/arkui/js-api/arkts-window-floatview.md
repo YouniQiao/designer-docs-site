@@ -13,7 +13,7 @@ A float view is applicable to scenarios where application content needs to be co
 
 **Linkage with the floating ball**:
 
-This module can be used together with [@ohos.window.floatingBall](arkts-window-floatingball.md).After the float view controller is bound to the floating ball controller using the [floatView.bind](arkts-arkui-floatview-bind-f.md#bind-1) API, users can tap the floating ball to expand it as a float view, and click the minimize button in the upper left corner of the float view to collapse it back as a floating ball. This allows for seamless switching between the two window forms.
+This module can be used together with [@ohos.window.floatingBall](arkts-window-floatingball.md).After the float view controller is bound to the floating ball controller using the [floatView.bind](arkts-arkui-floatview-bind-f.md#bind) API, users can tap the floating ball to expand it as a float view, and click the minimize button in the upper left corner of the float view to collapse it back as a floating ball. This allows for seamless switching between the two window forms.
 
 **Comparison between the global floating window and float view**:
 
@@ -24,10 +24,9 @@ This module can be used together with [@ohos.window.floatingBall](arkts-window-f
 - The float view can be bound to the [floating ball](arkts-window-floatingball.md) for joint use,enabling more complex scenarios.
 
 **Start version**: 26.0.0
-
 > **NOTE**  
 >  
-> - Use [canIUse()](docroot://reference/common/js-apis-syscap.md#caniuse) to check whether the device supports the  
+> - Use [canIUse()](../../../reference/common/js-apis-syscap.md#caniuse) to check whether the device supports the  
 > system capability SystemCapability.Window.SessionManager and the corresponding APIs.  
 >  
 > - The APIs of this module can be used only in the stage model.
@@ -61,7 +60,7 @@ import { floatView } from '@kit.ArkUI';
 | Name | Description |
 | --- | --- |
 | [FloatViewConfiguration](arkts-arkui-floatview-floatviewconfiguration-i.md) | Provides parameter configuration required for creating a float view controller. |
-| [FloatViewController](arkts-arkui-floatview-floatviewcontroller-i.md) | Defines a float view controller instance, which is used to start and stop the float view and register callbacks.  Before calling the following APIs, you must use [floatView.create()](arkts-arkui-floatview-create-f.md#create-1) to create a float view controller instance (that is, **floatViewController**). |
+| [FloatViewController](arkts-arkui-floatview-floatviewcontroller-i.md) | Defines a float view controller instance, which is used to start and stop the float view and register callbacks.  Before calling the following APIs, you must use [floatView.create()](arkts-arkui-floatview-create-f.md#create) to create a float view controller instance (that is, **floatViewController**). |
 | [FloatViewLimits](arkts-arkui-floatview-floatviewlimits-i.md) | Provides the limits of the float view. |
 | [FloatViewProperties](arkts-arkui-floatview-floatviewproperties-i.md) | Provides the properties of the float view. |
 | [FloatViewRectChangeInfo](arkts-arkui-floatview-floatviewrectchangeinfo-i.md) | Provides the rectangle area change information of the float view. |

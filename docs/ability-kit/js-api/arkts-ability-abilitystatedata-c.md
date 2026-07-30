@@ -30,7 +30,7 @@ Ability name.
 abilityType: number
 ```
 
-[Ability type](docroot://reference/apis-ability-kit/js-apis-inner-application-abilityStateData.md#ability-types),which can be [UIAbility](arkts-app-ability-uiability.md) or [ExtensionAbility](arkts-ability-app-ability-extensionability-extensionability-c.md).
+[Ability type](../../../reference/apis-ability-kit/js-apis-inner-application-abilityStateData.md#ability-types),which can be [UIAbility](arkts-app-ability-uiability.md) or [ExtensionAbility](arkts-ability-app-ability-extensionability-extensionability-c.md).
 
 **Type:** number
 
@@ -46,7 +46,7 @@ abilityType: number
 appCloneIndex?: number
 ```
 
-Index of an [application clone](docroot://quick-start/app-clone.md).
+Index of an [application clone](../../../quick-start/app-clone.md).
 
 **Type:** number
 
@@ -148,8 +148,8 @@ state: number
 
 Ability state.
 
-- [Stage model](docroot://application-models/ability-terminology.md#stage-model): For the [UIAbility](arkts-app-ability-uiability.md), see [UIAbility States](docroot://reference/apis-ability-kit/js-apis-inner-application-abilityStateData.md#uiability-states). For the [ExtensionAbility](arkts-ability-app-ability-extensionability-extensionability-c.md), see [ExtensionAbility States](docroot://reference/apis-ability-kit/js-apis-inner-application-abilityStateData.md#extensionability-states). For the [UIExtensionAbility](arkts-ability-app-ability-uiextensionability-uiextensionability-c.md), see [UIExtensionAbility States](docroot://reference/apis-ability-kit/js-apis-inner-application-abilityStateData.md#uiextensionability-states).  
-- [FA model](docroot://application-models/ability-terminology.md#fa-model): For the ability, see [Ability States](docroot://reference/apis-ability-kit/js-apis-inner-application-abilityStateData.md#ability-states).
+- [Stage model](../../../application-models/ability-terminology.md#stage-model): For the [UIAbility](arkts-app-ability-uiability.md), see [UIAbility States](../../../reference/apis-ability-kit/js-apis-inner-application-abilityStateData.md#uiability-states). For the [ExtensionAbility](arkts-ability-app-ability-extensionability-extensionability-c.md), see [ExtensionAbility States](../../../reference/apis-ability-kit/js-apis-inner-application-abilityStateData.md#extensionability-states). For the [UIExtensionAbility](arkts-ability-app-ability-uiextensionability-uiextensionability-c.md), see [UIExtensionAbility States](../../../reference/apis-ability-kit/js-apis-inner-application-abilityStateData.md#uiextensionability-states).  
+- [FA model](../../../application-models/ability-terminology.md#fa-model): For the ability, see [Ability States](../../../reference/apis-ability-kit/js-apis-inner-application-abilityStateData.md#ability-states).
 
 **Type:** number
 

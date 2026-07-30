@@ -123,6 +123,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 | [AlbumOrder](arkts-medialibrary-photoaccesshelper-albumorder-i-sys.md) | Describes the album sorting order. |
 | [AnalysisConfig](arkts-medialibrary-photoaccesshelper-analysisconfig-i-sys.md) | Defines the asset analysis configuration. |
 | [AnalysisResult](arkts-medialibrary-photoaccesshelper-analysisresult-i-sys.md) | Defines the asset analysis result. |
+| [AnalysisToolResult](arkts-medialibrary-photoaccesshelper-analysistoolresult-i-sys.md) | Result of an analysis tool execution. |
 | [BatchOperationOptions](arkts-medialibrary-photoaccesshelper-batchoperationoptions-i-sys.md) | Batch operation options |
 | [ChangeData](arkts-medialibrary-photoaccesshelper-changedata-i-sys.md) | Defines the return value of the listener callback. |
 | [CloudAssetDownloadProgressInfo](arkts-medialibrary-photoaccesshelper-cloudassetdownloadprogressinfo-i-sys.md) | Describes the progress information about a batch download. |
@@ -152,6 +153,8 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 | [SearchSuggestionResult](arkts-medialibrary-photoaccesshelper-searchsuggestionresult-i-sys.md) | Search suggestion result. |
 | [SharedAlbumAsset](arkts-medialibrary-photoaccesshelper-sharedalbumasset-i-sys.md) | Defines the shared album asset |
 | [SharedPhotoAsset](arkts-medialibrary-photoaccesshelper-sharedphotoasset-i-sys.md) | Describes the information about a shared media asset. |
+| [ToolCancelConfig](arkts-medialibrary-photoaccesshelper-toolcancelconfig-i-sys.md) | Configuration for canceling an analysis tool. |
+| [ToolInvokeConfig](arkts-medialibrary-photoaccesshelper-toolinvokeconfig-i-sys.md) | Configuration for invoking an analysis tool. |
 <!--DelEnd-->
 
 ### Enums
@@ -200,6 +203,7 @@ import { photoAccessHelper } from '@kit.MediaLibraryKit';
 | [AlbumOperationType](arkts-medialibrary-photoaccesshelper-albumoperationtype-e-sys.md) | Album operation type. |
 | [AlbumSubtype](arkts-medialibrary-photoaccesshelper-albumsubtype-e-sys.md) | Enumerate the album subtypes. |
 | [AlbumType](arkts-medialibrary-photoaccesshelper-albumtype-e-sys.md) | Enumerates the album types, |
+| [AnalysisToolType](arkts-medialibrary-photoaccesshelper-analysistooltype-e-sys.md) | Enumerates the smart analysis tool types. |
 | [AnalysisType](arkts-medialibrary-photoaccesshelper-analysistype-e-sys.md) | Enumerates the smart analysis types. |
 | [AppLinkState](arkts-medialibrary-photoaccesshelper-applinkstate-e-sys.md) | Enumerates the states of a file memory link. |
 | [AssetSourceType](arkts-medialibrary-photoaccesshelper-assetsourcetype-e-sys.md) | Enumerates the flags of asset source. |

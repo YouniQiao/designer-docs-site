@@ -18,7 +18,6 @@ In **UiTest**, the **UiComponent** class represents a component on the UI and pr
 import { ResizeDirection, WindowMode, PenMode, PenKeyOperation, Driver, MatchPattern, UiDirection, TouchOptions, ComponentEventType, PointerMatrix, WindowChangeType, Component, ON, PenKey, Rect, InputTextMode, UIEventObserver, WindowFilter, WindowChangeOptions, UiWindow, TouchPadSwipeOptions, Point, KeyOptions, DisplayRotation, UIElementInfo, PenKeyOperationOptions, ComponentEventOptions, MouseButton, On } from '@kit.TestKit';
 ```
 
-<a id="click"></a>
 ## click
 
 ```TypeScript
@@ -31,7 +30,7 @@ Clicks this component. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [click](arkts-test-uitest-component-c.md#click-1)
+**Substitutes:** [click](arkts-test-uitest-component-c.md#click)
 
 <!--Device-UiComponent-click(): Promise<void>--><!--Device-UiComponent-click(): Promise<void>-End-->
 
@@ -57,7 +56,6 @@ async function demo() {
 
 ```
 
-<a id="doubleclick"></a>
 ## doubleClick
 
 ```TypeScript
@@ -70,7 +68,7 @@ Double-clicks this component. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [doubleClick](arkts-test-uitest-component-c.md#doubleclick-1)
+**Substitutes:** [doubleClick](arkts-test-uitest-component-c.md#doubleclick)
 
 <!--Device-UiComponent-doubleClick(): Promise<void>--><!--Device-UiComponent-doubleClick(): Promise<void>-End-->
 
@@ -96,7 +94,6 @@ async function demo() {
 
 ```
 
-<a id="getid"></a>
 ## getId
 
 ```TypeScript
@@ -109,7 +106,7 @@ Obtains the ID of this component. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [getId](arkts-test-uitest-component-c.md#getid-1)
+**Substitutes:** [getId](arkts-test-uitest-component-c.md#getid)
 
 <!--Device-UiComponent-getId(): Promise<number>--><!--Device-UiComponent-getId(): Promise<number>-End-->
 
@@ -135,7 +132,6 @@ async function demo() {
 
 ```
 
-<a id="getkey"></a>
 ## getKey
 
 ```TypeScript
@@ -148,7 +144,7 @@ Obtains the key of this component. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [getId](arkts-test-uitest-component-c.md#getid-1)
+**Substitutes:** [getId](arkts-test-uitest-component-c.md#getid)
 
 <!--Device-UiComponent-getKey(): Promise<string>--><!--Device-UiComponent-getKey(): Promise<string>-End-->
 
@@ -174,7 +170,6 @@ async function demo() {
 
 ```
 
-<a id="gettext"></a>
 ## getText
 
 ```TypeScript
@@ -187,7 +182,7 @@ Obtains the text information of this component. This API uses a promise to retur
 
 **Deprecated since:** 9
 
-**Substitutes:** [getText](arkts-test-uitest-component-c.md#gettext-1)
+**Substitutes:** [getText](arkts-test-uitest-component-c.md#gettext)
 
 <!--Device-UiComponent-getText(): Promise<string>--><!--Device-UiComponent-getText(): Promise<string>-End-->
 
@@ -213,7 +208,6 @@ async function demo() {
 
 ```
 
-<a id="gettype"></a>
 ## getType
 
 ```TypeScript
@@ -226,7 +220,7 @@ Obtains the type of this component. This API uses a promise to return the result
 
 **Deprecated since:** 9
 
-**Substitutes:** [getType](arkts-test-uitest-component-c.md#gettype-1)
+**Substitutes:** [getType](arkts-test-uitest-component-c.md#gettype)
 
 <!--Device-UiComponent-getType(): Promise<string>--><!--Device-UiComponent-getType(): Promise<string>-End-->
 
@@ -252,7 +246,6 @@ async function demo() {
 
 ```
 
-<a id="inputtext"></a>
 ## inputText
 
 ```TypeScript
@@ -265,7 +258,7 @@ Inputs text to a component. This API takes effect only for editable text compone
 
 **Deprecated since:** 9
 
-**Substitutes:** [inputText(text:](arkts-test-uitest-component-c.md#inputtext-1)
+**Substitutes:** [inputText(text:](arkts-test-uitest-component-c.md#inputtext)
 
 <!--Device-UiComponent-inputText(text: string): Promise<void>--><!--Device-UiComponent-inputText(text: string): Promise<void>-End-->
 
@@ -297,7 +290,6 @@ async function demo() {
 
 ```
 
-<a id="isclickable"></a>
 ## isClickable
 
 ```TypeScript
@@ -310,7 +302,7 @@ Obtains the clickable status of this component. This API uses a promise to retur
 
 **Deprecated since:** 9
 
-**Substitutes:** [isClickable](arkts-test-uitest-component-c.md#isclickable-1)
+**Substitutes:** [isClickable](arkts-test-uitest-component-c.md#isclickable)
 
 <!--Device-UiComponent-isClickable(): Promise<boolean>--><!--Device-UiComponent-isClickable(): Promise<boolean>-End-->
 
@@ -340,7 +332,6 @@ async function demo() {
 
 ```
 
-<a id="isenabled"></a>
 ## isEnabled
 
 ```TypeScript
@@ -353,7 +344,7 @@ Obtains the enabled status of this component. This API uses a promise to return 
 
 **Deprecated since:** 9
 
-**Substitutes:** [isEnabled](arkts-test-uitest-component-c.md#isenabled-1)
+**Substitutes:** [isEnabled](arkts-test-uitest-component-c.md#isenabled)
 
 <!--Device-UiComponent-isEnabled(): Promise<boolean>--><!--Device-UiComponent-isEnabled(): Promise<boolean>-End-->
 
@@ -384,7 +375,6 @@ async function demo() {
 
 ```
 
-<a id="isfocused"></a>
 ## isFocused
 
 ```TypeScript
@@ -397,7 +387,7 @@ Obtains the focused status of this component. This API uses a promise to return 
 
 **Deprecated since:** 9
 
-**Substitutes:** [isFocused](arkts-test-uitest-component-c.md#isfocused-1)
+**Substitutes:** [isFocused](arkts-test-uitest-component-c.md#isfocused)
 
 <!--Device-UiComponent-isFocused(): Promise<boolean>--><!--Device-UiComponent-isFocused(): Promise<boolean>-End-->
 
@@ -427,7 +417,6 @@ async function demo() {
 
 ```
 
-<a id="isscrollable"></a>
 ## isScrollable
 
 ```TypeScript
@@ -440,7 +429,7 @@ Obtains the scrollable status of this component. This API uses a promise to retu
 
 **Deprecated since:** 9
 
-**Substitutes:** [isScrollable](arkts-test-uitest-component-c.md#isscrollable-1)
+**Substitutes:** [isScrollable](arkts-test-uitest-component-c.md#isscrollable)
 
 <!--Device-UiComponent-isScrollable(): Promise<boolean>--><!--Device-UiComponent-isScrollable(): Promise<boolean>-End-->
 
@@ -470,7 +459,6 @@ async function demo() {
 
 ```
 
-<a id="isselected"></a>
 ## isSelected
 
 ```TypeScript
@@ -483,7 +471,7 @@ Obtains the selected status of this component. This API uses a promise to return
 
 **Deprecated since:** 9
 
-**Substitutes:** [isSelected](arkts-test-uitest-component-c.md#isselected-1)
+**Substitutes:** [isSelected](arkts-test-uitest-component-c.md#isselected)
 
 <!--Device-UiComponent-isSelected(): Promise<boolean>--><!--Device-UiComponent-isSelected(): Promise<boolean>-End-->
 
@@ -513,7 +501,6 @@ async function demo() {
 
 ```
 
-<a id="longclick"></a>
 ## longClick
 
 ```TypeScript
@@ -526,7 +513,7 @@ Long-clicks this component. This API uses a promise to return the result.
 
 **Deprecated since:** 9
 
-**Substitutes:** [longClick](arkts-test-uitest-component-c.md#longclick-1)
+**Substitutes:** [longClick](arkts-test-uitest-component-c.md#longclick)
 
 <!--Device-UiComponent-longClick(): Promise<void>--><!--Device-UiComponent-longClick(): Promise<void>-End-->
 
@@ -552,7 +539,6 @@ async function demo() {
 
 ```
 
-<a id="scrollsearch"></a>
 ## scrollSearch
 
 ```TypeScript
@@ -565,7 +551,7 @@ Scrolls on this component to search for the target component (applicable to comp
 
 **Deprecated since:** 9
 
-**Substitutes:** [scrollSearch(on:](arkts-test-uitest-component-c.md#scrollsearch-1)
+**Substitutes:** [scrollSearch(on:](arkts-test-uitest-component-c.md#scrollsearch)
 
 <!--Device-UiComponent-scrollSearch(by: By): Promise<UiComponent>--><!--Device-UiComponent-scrollSearch(by: By): Promise<UiComponent>-End-->
 

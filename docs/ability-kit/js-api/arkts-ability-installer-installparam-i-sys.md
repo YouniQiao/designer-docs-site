@@ -118,7 +118,7 @@ Extended parameters, represented as an array of the Parameters type. The default
 - **ohos.bms.param.enterpriseForAllUser**: If the value is **true**, the enterprise app is installed for all users. This parameter takes effect only for applications whose [distribution type of the application signing certificate](arkts-ability-applicationinfo-i.md)is **enterprise_mdm** or **enterprise_normal**.  
 - **ohos.bms.param.verifyUninstallRule**: If the value is **true**, an uninstallation handling rule is set to block application uninstallation.  
 - **ohos.bms.param.enterpriseManifest**: The value is the sandbox path of the JSON file used to store the application's manifest, including the bundle name. It is used in the scenario of cloning enterprise applications.If this JSON file exists during cloning, the application package from the old device is copied to the new device for installation.  
-- **ohos.bms.param.installBundleName**: The value is the bundle name of the application. It is used in application installation scenarios and supported since API version 23. If this field is passed during installation, the [getBundleInstallStatus](arkts-ability-bundlemanager-getbundleinstallstatus-f-sys.md#getbundleinstallstatus-1)API can be called to obtain the installation status of the application.  
+- **ohos.bms.param.installBundleName**: The value is the bundle name of the application. It is used in application installation scenarios and supported since API version 23. If this field is passed during installation, the [getBundleInstallStatus](arkts-ability-bundlemanager-getbundleinstallstatus-f-sys.md#getbundleinstallstatus)API can be called to obtain the installation status of the application.  
 - **ohos.bms.param.installAllowDowngrade**: If the value is **true**, the application can be installed in downgrade mode (supported since API version 23). That is, if a higher version of the application is already installed on the device, a lower version can be installed over it. Only third-party applications with the signing certificate distribution type set to **app_gallery** or the signing certificate type set to **debug** support downgrade installation. To use downgrade installation, you must request the ohos.permission.INSTALL_BUNDLE and ohos.permission.INSTALL_ALLOW_DOWNGRADE permissions.
 
 **Type:** Array&lt;Parameters&gt;
@@ -173,7 +173,7 @@ Paths of the shared bundle files. By default, no value is passed.
 specifiedDistributionType?: string
 ```
 
-[Distribution type](docroot://security/app-provision-structure.md) specified during application installation. By default, no value is passed. The maximum length is 128 bytes. This field is usually specified by the application market of the operating system operator.
+[Distribution type](../../../security/app-provision-structure.md) specified during application installation. By default, no value is passed. The maximum length is 128 bytes. This field is usually specified by the application market of the operating system operator.
 
 **Type:** string
 
@@ -191,7 +191,7 @@ specifiedDistributionType?: string
 userId?: number
 ```
 
-User ID. The default value is the user ID of the caller. The value must be greater than or equal to 0. You can call [queryOsAccountLocalIdFromProcess](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid-1)to obtain the user ID of the current process. When a driver application is installed, uninstalled, or restored,this parameter is ignored and the operation is executed for all users.
+User ID. The default value is the user ID of the caller. The value must be greater than or equal to 0. You can call [queryOsAccountLocalIdFromProcess](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-osaccount-accountmanager-i.md#getosaccountlocalid)to obtain the user ID of the current process. When a driver application is installed, uninstalled, or restored,this parameter is ignored and the operation is executed for all users.
 
 **Type:** number
 

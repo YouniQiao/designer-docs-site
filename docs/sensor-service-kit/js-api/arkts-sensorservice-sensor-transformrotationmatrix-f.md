@@ -6,7 +6,6 @@
 import { sensor } from '@kit.SensorServiceKit';
 ```
 
-<a id="transformrotationmatrix"></a>
 ## transformRotationMatrix
 
 ```TypeScript
@@ -18,9 +17,7 @@ Transforms a rotation vector based on the coordinate system. This API uses an as
 
 **Since:** 9
 
-<!--Device-sensor-function transformRotationMatrix(inRotationVector: Array<double>, coordinates: CoordinatesOptions,
-    callback: AsyncCallback<Array<double>>): void--><!--Device-sensor-function transformRotationMatrix(inRotationVector: Array<double>, coordinates: CoordinatesOptions,
-    callback: AsyncCallback<Array<double>>): void-End-->
+<!--Device-sensor-function transformRotationMatrix(inRotationVector: Array<double>, coordinates: CoordinatesOptions,    callback: AsyncCallback<Array<double>>): void--><!--Device-sensor-function transformRotationMatrix(inRotationVector: Array<double>, coordinates: CoordinatesOptions,    callback: AsyncCallback<Array<double>>): void-End-->
 
 **System capability:** SystemCapability.Sensors.Sensor
 
@@ -69,7 +66,6 @@ try {
 ```
 
 
-<a id="transformrotationmatrix-1"></a>
 ## transformRotationMatrix
 
 ```TypeScript

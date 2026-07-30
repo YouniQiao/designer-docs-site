@@ -67,7 +67,7 @@ After this API is used to unsubscribe from an event, the event that has been pub
 
 ```TypeScript
 // Unregister all callbacks for events whose **eventId** is **eventId1**.
-emitter.off("eventId1");
+emitter.off('eventId1');
 
 ```
 
@@ -147,7 +147,7 @@ let callback: Callback<emitter.EventData> = (eventData: emitter.EventData) => {
 };
 // Unregister all callbacks for events whose **eventId** is **eventId1**. The callback object must be the object used during registration.
 // If the callback has not been registered, no processing is performed.
-emitter.off("eventId1", callback);
+emitter.off('eventId1', callback);
 
 ```
 
@@ -201,7 +201,7 @@ let callback: Callback<emitter.GenericEventData<Sample>> = (eventData: emitter.G
 };
 // Unregister all callbacks for events whose **eventId** is **eventId1**. The callback object must be the object used during registration.
 // If the callback has not been registered, no processing is performed.
-emitter.off("eventId1", callback);
+emitter.off('eventId1', callback);
 
 ```
 

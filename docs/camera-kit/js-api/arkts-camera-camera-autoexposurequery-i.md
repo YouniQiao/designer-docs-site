@@ -18,7 +18,6 @@ AutoExposureQuery provides APIs to query the automatic exposure feature of a cam
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="getexposurebiasrange"></a>
 ## getExposureBiasRange
 
 ```TypeScript
@@ -47,7 +46,6 @@ Obtains the exposure compensation values of the camera device.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config, only throw in session usage. |
 
-<a id="isexposuremodesupported"></a>
 ## isExposureModeSupported
 
 ```TypeScript

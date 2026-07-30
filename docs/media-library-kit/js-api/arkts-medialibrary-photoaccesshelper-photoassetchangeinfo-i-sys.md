@@ -22,7 +22,7 @@ albumChangeInfos?: AlbumChangeInfo[] | null
 
 Smart album change information.
 
-**Type:** AlbumChangeInfo[] | null
+**Type:** AlbumChangeInfo[] \| null
 
 **Since:** 23
 

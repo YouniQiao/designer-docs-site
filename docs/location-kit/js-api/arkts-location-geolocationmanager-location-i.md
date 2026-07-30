@@ -58,7 +58,7 @@ additions?: Array<string>
 
 Indicates additional information.
 
-**Type:** Array<string>
+**Type:** Array&lt;string&gt;
 
 **Since:** 9
 
@@ -76,7 +76,7 @@ additionsMap?: Map<string, string>
 
 Indicates additional information map.
 
-**Type:** Map<string, string>
+**Type:** Map&lt;string, string&gt;
 
 **Since:** 12
 

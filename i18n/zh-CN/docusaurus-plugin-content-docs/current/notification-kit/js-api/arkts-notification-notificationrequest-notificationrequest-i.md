@@ -46,7 +46,7 @@ appMessageId?: string
 autoDeletedTime?: number
 ```
 
-通知定时清除时间。设置该参数可使通知在指定时间后自动清除。默认值为0。
+通知定时清除时间。设置该参数可使通知在指定时间后自动清除。默认值为0。传入小于0的值或过去的时间值，该参数不生效。
 
 数据格式：时间戳。
 
@@ -84,7 +84,7 @@ badgeIconStyle?: number
 badgeNumber?: number
 ```
 
-应用程序图标上显示的通知数，该数量累计展示，默认值为0。
+应用图标上显示的通知数，该数量累计展示，默认值为0。
 
 当`badgeNumber`取值小于或等于0时，将忽略本次角标设定。
 
@@ -441,7 +441,7 @@ label字段的功能类似于id，可以单独使用，也可与id结合共同�
 largeIcon?: image.PixelMap
 ```
 
-通知大图标，默认为空。图标像素的总字节数不超过192KB（图标像素的总字节数通过[getPixelBytesNumber](../../apis-image-kit/arkts-apis/arkts-image-image-pixelmap-i.md#getpixelbytesnumber)获取），建议图标像素长宽为128*128。实际显示效果依赖于设备能力和通知中心UI样式。
+通知大图标，默认为空。图标像素的总字节数不超过192KB（图标像素的总字节数通过[getPixelBytesNumber](../../apis-image-kit/arkts-apis/arkts-image-image-pixelmap-i.md#getpixelbytesnumber)获取），超出后设置不生效。未设置`largeIcon`时，通知将不展示大图标。建议图标像素长宽为128*128。实际显示效果依赖于设备能力和通知中心UI样式。
 
 **类型：** image.PixelMap
 
@@ -457,7 +457,7 @@ largeIcon?: image.PixelMap
 notificationFlags?: NotificationFlags
 ```
 
-设置或获取NotificationFlags，默认为空。从API version 23开始成为可写参数，设置该参数可削减通知的提醒方式，当通知渠道类型为[LIVE_VIEW](arkts-notification-notificationmanager-slottype-e.md)时，该参数设置不生效。
+通知标志位设置，默认为空。从API version 23开始成为可写参数，设置该参数可削减通知的提醒方式，当通知渠道类型为[LIVE_VIEW](arkts-notification-notificationmanager-slottype-e.md)时，该参数设置不生效。
 
 **类型：** NotificationFlags
 
@@ -563,7 +563,7 @@ slotType?: notification.SlotType
 smallIcon?: image.PixelMap
 ```
 
-通知小图标，默认为空。图标像素的总字节数不超过192KB（图标像素的总字节数通过[getPixelBytesNumber](../../apis-image-kit/arkts-apis/arkts-image-image-pixelmap-i.md#getpixelbytesnumber)获取），建议图标像素长宽为128*128。实际显示效果依赖于设备能力和通知中心UI样式。
+通知小图标，默认为空。图标像素的总字节数不超过192KB（图标像素的总字节数通过[getPixelBytesNumber](../../apis-image-kit/arkts-apis/arkts-image-image-pixelmap-i.md#getpixelbytesnumber)获取），超出后设置不生效。未设置`smallIcon`时，通知将展示应用默认图标。建议图标像素长宽为128*128。实际显示效果依赖于设备能力和通知中心UI样式。
 
 **类型：** image.PixelMap
 
@@ -581,7 +581,7 @@ sound?: string
 
 应用通知自定义铃声资源路径，默认为空。支持两种音频资源来源：
 
-- 资源文件：应用预置的音频文件，资源文件必须放在放在resources/rawfile目录下，使用时直接传入文件名。  
+- 资源文件：应用预置的音频文件，资源文件必须放在resources/rawfile目录下，使用时直接传入文件名。  
 - 沙箱文件：网络下载或者用户生成的音频文件，必须放在沙箱文件目录EL1区域的files目录或者其子目录下，传入格式为uri::{fileUri}，其中fileUri是通过[getUriFromPath](../../apis-core-file-kit/arkts-apis/arkts-corefile-fileuri-geturifrompath-f.md#geturifrompath)获取的路径。例如，应用将下载的音频资源demo.mp3传入沙箱文件目录/data/storage/el1/base/files/，通过getUriFromPath获取的路径为file://{bundleName}/data/storage/el1/base/files/demo.mp3，使用该路径发布通知即可播放应用下载的音频资源。
 
 支持m4a、aac、mp3、ogg、wav、flac、amr等格式。

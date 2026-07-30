@@ -6,7 +6,6 @@
 import { launcherBundleManager } from '@kit.AbilityKit';
 ```
 
-<a id="startshortcutwithreason"></a>
 ## startShortcutWithReason
 
 ```TypeScript
@@ -32,7 +31,7 @@ The launched ability can obtain the launch reason through the **launchReasonMess
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | shortcutInfo | [ShortcutInfo](arkts-ability-shortcutinfo-i-sys.md) | Yes | Shortcut information of the application. |
-| startReason | string | Yes | Reason for launching the shortcut. The value can be [AbilityConstant.REASON_MESSAGE_DESKTOP_SHORTCUT](docroot://reference/apis-ability-kit/js-apis-app-ability-abilityConstant.md#constants), indicating a home screen shortcut launch. |
+| startReason | string | Yes | Reason for launching the shortcut. The value can be [AbilityConstant.REASON_MESSAGE_DESKTOP_SHORTCUT](../../../reference/apis-ability-kit/js-apis-app-ability-abilityConstant.md#constants), indicating a home screen shortcut launch. |
 | options | [StartOptions](arkts-ability-app-ability-startoptions-startoptions-c-sys.md) | No | Parameters used to specify the window mode of the target ability. |
 
 **Return value:**

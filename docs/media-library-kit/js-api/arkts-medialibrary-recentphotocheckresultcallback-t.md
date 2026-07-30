@@ -18,5 +18,5 @@ The callback of onRecentPhotoCheckResult event
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| recentPhotoExists | boolean | Yes | Does the recent photo exist? |
+| recentPhotoExists | boolean | Yes | Does the recent photo exist?  |
 

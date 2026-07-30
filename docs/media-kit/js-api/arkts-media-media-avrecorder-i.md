@@ -1,9 +1,8 @@
 # AVRecorder
 
-AVRecorder is a class for audio and video recording management. It provides APIs to record media assets. Before calling any API in AVRecorder, you must use [createAVRecorder()](arkts-media-media-createavrecorder-f.md#createavrecorder-1) to create an AVRecorder instance.
+AVRecorder is a class for audio and video recording management. It provides APIs to record media assets. Before calling any API in AVRecorder, you must use [createAVRecorder()](arkts-media-media-createavrecorder-f.md#createavrecorder) to create an AVRecorder instance.
 
-For details about the audio and video recording demo, see [Audio Recording](docroot://media/media/using-avrecorder-for-recording.md) and [Video Recording](docroot://media/media/video-recording.md).
-
+For details about the audio and video recording demo, see [Audio Recording](../../../media/media/using-avrecorder-for-recording.md) and [Video Recording](../../../media/media/video-recording.md).
 > **NOTE**  
 >  
 > > To use the camera to record videos, the camera module is required. For details about how to use the APIs  
@@ -21,7 +20,6 @@ For details about the audio and video recording demo, see [Audio Recording](docr
 import { media } from '@kit.MediaKit';
 ```
 
-<a id="addwatermark"></a>
 ## addWatermark
 
 ```TypeScript
@@ -60,7 +58,6 @@ add a watermark for the AVRecorder. This API uses a promise to return the result
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 | [5400108](../errorcode-media.md#5400108-parameter-value-out-of-range) | The parameter check failed, parameter value out of range. |
 
-<a id="getavrecorderconfig"></a>
 ## getAVRecorderConfig
 
 ```TypeScript
@@ -69,7 +66,7 @@ getAVRecorderConfig(callback: AsyncCallback<AVRecorderConfig>): void
 
 Obtains the real-time configuration of this AVRecorder. This API uses an asynchronous callback to return the result.
 
-This API can be called only after [prepare()](arkts-media-media-avrecorder-i.md#prepare-1) is called.
+This API can be called only after [prepare()](arkts-media-media-avrecorder-i.md#prepare) is called.
 
 **Since:** 11
 
@@ -91,7 +88,6 @@ This API can be called only after [prepare()](arkts-media-media-avrecorder-i.md#
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by callback. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by callback. |
 
-<a id="getavrecorderconfig-1"></a>
 ## getAVRecorderConfig
 
 ```TypeScript
@@ -100,7 +96,7 @@ getAVRecorderConfig(): Promise<AVRecorderConfig>
 
 Obtains the real-time configuration of this AVRecorder. This API uses a promise to return the result.
 
-This API can be called only after [prepare()](arkts-media-media-avrecorder-i.md#prepare-1) is called.
+This API can be called only after [prepare()](arkts-media-media-avrecorder-i.md#prepare) is called.
 
 **Since:** 11
 
@@ -122,7 +118,6 @@ This API can be called only after [prepare()](arkts-media-media-avrecorder-i.md#
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 
-<a id="getaudiocapturermaxamplitude"></a>
 ## getAudioCapturerMaxAmplitude
 
 ```TypeScript
@@ -131,7 +126,7 @@ getAudioCapturerMaxAmplitude(callback: AsyncCallback<number>): void
 
 Obtains the maximum amplitude of the current audio capturer. This API uses an asynchronous callback to return the result.
 
-This API can be called only after the [prepare()](arkts-media-media-avrecorder-i.md#prepare-1) API is called. If this API is called after [stop()](arkts-media-media-avrecorder-i.md#stop-1) is successfully called, an error is reported.
+This API can be called only after the [prepare()](arkts-media-media-avrecorder-i.md#prepare) API is called. If this API is called after [stop()](arkts-media-media-avrecorder-i.md#stop) is successfully called, an error is reported.
 
 The return value is the maximum amplitude within the duration from the time the maximum amplitude is obtained last time to the current time. For example, if you have obtained the maximum amplitude at 1s and you call this API again at 2s, then the return value is the maximum amplitude within the duration from 1s to 2s.
 
@@ -154,7 +149,6 @@ The return value is the maximum amplitude within the duration from the time the 
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by callback. |
 
-<a id="getaudiocapturermaxamplitude-1"></a>
 ## getAudioCapturerMaxAmplitude
 
 ```TypeScript
@@ -163,7 +157,7 @@ getAudioCapturerMaxAmplitude(): Promise<number>
 
 Obtains the maximum amplitude of the current audio capturer. This API uses a promise to return the result.
 
-This API can be called only after the [prepare()](arkts-media-media-avrecorder-i.md#prepare-1) API is called. If this API is called after [stop()](arkts-media-media-avrecorder-i.md#stop-1) is successfully called, an error is reported.
+This API can be called only after the [prepare()](arkts-media-media-avrecorder-i.md#prepare) API is called. If this API is called after [stop()](arkts-media-media-avrecorder-i.md#stop) is successfully called, an error is reported.
 
 The return value is the maximum amplitude within the duration from the time the maximum amplitude is obtained last time to the current time. For example, if you have obtained the maximum amplitude at 1s and you call this API again at 2s, then the return value is the maximum amplitude within the duration from 1s to 2s.
 
@@ -186,7 +180,6 @@ The return value is the maximum amplitude within the duration from the time the 
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 
-<a id="getavailableencoder"></a>
 ## getAvailableEncoder
 
 ```TypeScript
@@ -214,7 +207,6 @@ Obtains available encoders. This API uses an asynchronous callback to return the
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by callback. |
 
-<a id="getavailableencoder-1"></a>
 ## getAvailableEncoder
 
 ```TypeScript
@@ -242,7 +234,6 @@ Obtains available encoders. This API uses a promise to return the result.
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 
-<a id="getcurrentaudiocapturerinfo"></a>
 ## getCurrentAudioCapturerInfo
 
 ```TypeScript
@@ -251,7 +242,7 @@ getCurrentAudioCapturerInfo(callback: AsyncCallback<audio.AudioCapturerChangeInf
 
 Obtains the information about the current audio capturer. This API uses an asynchronous callback to return the result.
 
-This API can be called only after the [prepare()](arkts-media-media-avrecorder-i.md#prepare-1) API is called. If this API is called after [stop()](arkts-media-media-avrecorder-i.md#stop-1) is successfully called, an error is reported.
+This API can be called only after the [prepare()](arkts-media-media-avrecorder-i.md#prepare) API is called. If this API is called after [stop()](arkts-media-media-avrecorder-i.md#stop) is successfully called, an error is reported.
 
 **Since:** 11
 
@@ -273,7 +264,6 @@ This API can be called only after the [prepare()](arkts-media-media-avrecorder-i
 | [5400103](../errorcode-media.md#5400103-io-error) | I/O error. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by callback. |
 
-<a id="getcurrentaudiocapturerinfo-1"></a>
 ## getCurrentAudioCapturerInfo
 
 ```TypeScript
@@ -282,7 +272,7 @@ getCurrentAudioCapturerInfo(): Promise<audio.AudioCapturerChangeInfo>
 
 Obtains the information about the current audio capturer. This API uses a promise to return the result.
 
-This API can be called only after the [prepare()](arkts-media-media-avrecorder-i.md#prepare-1) API is called. If this API is called after [stop()](arkts-media-media-avrecorder-i.md#stop-1) is successfully called, an error is reported.
+This API can be called only after the [prepare()](arkts-media-media-avrecorder-i.md#prepare) API is called. If this API is called after [stop()](arkts-media-media-avrecorder-i.md#stop) is successfully called, an error is reported.
 
 **Since:** 11
 
@@ -304,7 +294,6 @@ This API can be called only after the [prepare()](arkts-media-media-avrecorder-i
 | [5400103](../errorcode-media.md#5400103-io-error) | I/O error. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 
-<a id="getinputsurface"></a>
 ## getInputSurface
 
 ```TypeScript
@@ -317,7 +306,7 @@ The caller obtains the surface buffer from this surface and fills in the corresp
 
 Note that the video data must carry the timestamp (in ns) and buffer size, and the start time of the timestamp must be based on the system startup time.
 
-This API can be called only after the [prepare()](arkts-media-media-avrecorder-i.md#prepare-1) API is called.
+This API can be called only after the [prepare()](arkts-media-media-avrecorder-i.md#prepare) API is called.
 
 **Since:** 9
 
@@ -339,7 +328,6 @@ This API can be called only after the [prepare()](arkts-media-media-avrecorder-i
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by callback. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by callback. |
 
-<a id="getinputsurface-1"></a>
 ## getInputSurface
 
 ```TypeScript
@@ -352,7 +340,7 @@ The caller obtains the surface buffer from this surface and fills in the corresp
 
 Note that the video data must carry the timestamp (in ns) and buffer size, and the start time of the timestamp must be based on the system startup time.
 
-This API can be called only after the [prepare()](arkts-media-media-avrecorder-i.md#prepare-1) API is called.
+This API can be called only after the [prepare()](arkts-media-media-avrecorder-i.md#prepare) API is called.
 
 **Since:** 9
 
@@ -374,7 +362,6 @@ This API can be called only after the [prepare()](arkts-media-media-avrecorder-i
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 
-<a id="off"></a>
 ## off('stateChange')
 
 ```TypeScript
@@ -398,7 +385,6 @@ Unsubscribes from AVRecorder state changes. This API uses an asynchronous callba
 | type | 'stateChange' | Yes | Event type, which is **'stateChange'** in this case. This event can be triggered by both user operations and the system. |
 | callback | [OnAVRecorderStateChangeHandler](arkts-media-media-onavrecorderstatechangehandler-t.md) | No | Callback used to return the state change event. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled.<br>This parameter is supported since API version 12.<br>**Since:** 12 |
 
-<a id="off-1"></a>
 ## off('error')
 
 ```TypeScript
@@ -422,7 +408,6 @@ Unsubscribes from AVRecorder errors. After the unsubscription, your application 
 | type | 'error' | Yes | Event type, which is **'error'** in this case.<br>This event is triggered when an error occurs during recording. |
 | callback | [ErrorCallback](../../apis-arkui/arkts-components/arkts-arkui-errorcallback-t-sys.md) | No | Callback used to return the recording error event. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled.<br>This parameter is supported since API version 12.<br>**Since:** 12 |
 
-<a id="off-2"></a>
 ## off('audioCapturerChange')
 
 ```TypeScript
@@ -444,7 +429,6 @@ Subscribes to audio capturer configuration changes. This API uses an asynchronou
 | type | 'audioCapturerChange' | Yes | Event type, which is **'audioCapturerChange'** in this case. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;audio.AudioCapturerChangeInfo&gt; | No | Callback used to return the changed audio capturer configuration. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled.<br>This parameter is supported since API version 12.<br>**Since:** 12 |
 
-<a id="off-3"></a>
 ## off('photoAssetAvailable')
 
 ```TypeScript
@@ -466,7 +450,6 @@ Unsubscribes from media asset callback events. This API uses an asynchronous cal
 | type | 'photoAssetAvailable' | Yes | Event type, which is **'photoAssetAvailable'** in this case. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;photoAccessHelper.PhotoAsset&gt; | No | Callback used to return the PhotoAsset object corresponding to the resource file created by the system. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
 
-<a id="on"></a>
 ## on('audioCapturerChange')
 
 ```TypeScript
@@ -496,14 +479,13 @@ When the application initiates multiple subscriptions to this event, the last su
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.2. Incorrect parameter types. 3.Parameter verification failed. |
 
-<a id="on-1"></a>
 ## on('photoAssetAvailable')
 
 ```TypeScript
 on(type: 'photoAssetAvailable', callback: Callback<photoAccessHelper.PhotoAsset>): void
 ```
 
-Subscribes to media asset callback events. When [FileGenerationMode](arkts-media-media-filegenerationmode-e.md) is used during media file creation,the [PhotoAsset](../../apis-media-library-kit/arkts-apis/arkts-file-photoaccesshelper.md) object is called back to the application after the [stop](arkts-media-media-avrecorder-i.md#stop-1) operation is complete. This API uses an asynchronous callback to return the result.
+Subscribes to media asset callback events. When [FileGenerationMode](arkts-media-media-filegenerationmode-e.md) is used during media file creation,the [PhotoAsset](../../apis-media-library-kit/arkts-apis/arkts-file-photoaccesshelper.md) object is called back to the application after the [stop](arkts-media-media-avrecorder-i.md#stop) operation is complete. This API uses an asynchronous callback to return the result.
 
 When the application initiates multiple subscriptions to this event, the last subscription is applied.
 
@@ -527,7 +509,6 @@ When the application initiates multiple subscriptions to this event, the last su
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by callback. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by callback. |
 
-<a id="on-2"></a>
 ## on('stateChange')
 
 ```TypeScript
@@ -558,14 +539,13 @@ Subscribes to AVRecorder state changes. An application can subscribe to only one
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by callback. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by callback. |
 
-<a id="on-3"></a>
 ## on('error')
 
 ```TypeScript
 on(type: 'error', callback: ErrorCallback): void
 ```
 
-Subscribes to AVRecorder errors. This event is used only for error prompt and does not require the user to stop recording control. If the [AVRecorderState](arkts-media-media-avrecorderstate-t.md) is also switched to error, call [reset()](arkts-media-media-avrecorder-i.md#reset-1) or [release()][release()](arkts-media-media-avrecorder-i.md#release-1) to exit the recording. This API uses an asynchronous callback to return the result.
+Subscribes to AVRecorder errors. This event is used only for error prompt and does not require the user to stop recording control. If the [AVRecorderState](arkts-media-media-avrecorderstate-t.md) is also switched to error, call [reset()](arkts-media-media-avrecorder-i.md#reset) or [release()][release()](arkts-media-media-avrecorder-i.md#release) to exit the recording. This API uses an asynchronous callback to return the result.
 
 An application can subscribe to only one AVRecorder error event. When the application initiates multiple subscriptions to this event, the last subscription is applied.
 
@@ -599,7 +579,6 @@ An application can subscribe to only one AVRecorder error event. When the applic
 | [5400106](../errorcode-media.md#5400106-format-not-supported) | Unsupported format. |
 | [5400107](../errorcode-media.md#5400107-audio-focus-conflict) | Audio interrupted.<br>**Applicable version:** 11 and later |
 
-<a id="pause"></a>
 ## pause
 
 ```TypeScript
@@ -608,7 +587,7 @@ pause(callback: AsyncCallback<void>): void
 
 Pauses video recording. This API uses an asynchronous callback to return the result.
 
-This API can be called only after the [start()](arkts-media-media-avrecorder-i.md#start-1) API is called. You can call [resume()](arkts-media-media-avrecorder-i.md#resume-1) to resume recording.
+This API can be called only after the [start()](arkts-media-media-avrecorder-i.md#start) API is called. You can call [resume()](arkts-media-media-avrecorder-i.md#resume) to resume recording.
 
 **Since:** 9
 
@@ -630,7 +609,6 @@ This API can be called only after the [start()](arkts-media-media-avrecorder-i.m
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by callback. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by callback. |
 
-<a id="pause-1"></a>
 ## pause
 
 ```TypeScript
@@ -639,7 +617,7 @@ pause(): Promise<void>
 
 Pauses video recording. This API uses a promise to return the result.
 
-This API can be called only after the [start()](arkts-media-media-avrecorder-i.md#start-1) API is called. You can call [resume()](arkts-media-media-avrecorder-i.md#resume-1) to resume recording.
+This API can be called only after the [start()](arkts-media-media-avrecorder-i.md#start) API is called. You can call [resume()](arkts-media-media-avrecorder-i.md#resume) to resume recording.
 
 **Since:** 9
 
@@ -663,7 +641,6 @@ This API can be called only after the [start()](arkts-media-media-avrecorder-i.m
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 
-<a id="prepare"></a>
 ## prepare
 
 ```TypeScript
@@ -696,7 +673,6 @@ Sets audio and video recording parameters. This API uses an asynchronous callbac
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operate not permit. Return by callback. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by callback. |
 
-<a id="prepare-1"></a>
 ## prepare
 
 ```TypeScript
@@ -736,7 +712,6 @@ Sets audio and video recording parameters. This API uses a promise to return the
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operate not permit. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 
-<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -765,7 +740,6 @@ After the resources are released, you can no longer perform any operation on the
 | --- | --- |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by callback. |
 
-<a id="release-1"></a>
 ## release
 
 ```TypeScript
@@ -796,7 +770,6 @@ After the resources are released, you can no longer perform any operation on the
 | --- | --- |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by callback. |
 
-<a id="reset"></a>
 ## reset
 
 ```TypeScript
@@ -805,8 +778,8 @@ reset(callback: AsyncCallback<void>): void
 
 Resets audio and video recording. This API uses an asynchronous callback to return the result.
 
-For audio-only recording, you can call [prepare()](arkts-media-media-avrecorder-i.md#prepare-1) again for re  
--recording. For video-only recording or audio and video recording, you can call [prepare()](arkts-media-media-avrecorder-i.md#prepare-1) and [getInputSurface()](arkts-media-media-avrecorder-i.md#getinputsurface-1) again for re-recording.
+For audio-only recording, you can call [prepare()](arkts-media-media-avrecorder-i.md#prepare) again for re  
+-recording. For video-only recording or audio and video recording, you can call [prepare()](arkts-media-media-avrecorder-i.md#prepare) and [getInputSurface()](arkts-media-media-avrecorder-i.md#getinputsurface) again for re-recording.
 
 **Since:** 9
 
@@ -827,7 +800,6 @@ For audio-only recording, you can call [prepare()](arkts-media-media-avrecorder-
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by callback. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by callback. |
 
-<a id="reset-1"></a>
 ## reset
 
 ```TypeScript
@@ -836,7 +808,7 @@ reset(): Promise<void>
 
 Resets audio and video recording. This API uses a promise to return the result.
 
-For audio-only recording, you can call [prepare()](arkts-media-media-avrecorder-i.md#prepare-1)again for re-recording. For video-only recording or audio and video recording, you can call [prepare()](arkts-media-media-avrecorder-i.md#prepare-1) and [getInputSurface()](arkts-media-media-avrecorder-i.md#getinputsurface-1) again for re-recording.
+For audio-only recording, you can call [prepare()](arkts-media-media-avrecorder-i.md#prepare)again for re-recording. For video-only recording or audio and video recording, you can call [prepare()](arkts-media-media-avrecorder-i.md#prepare) and [getInputSurface()](arkts-media-media-avrecorder-i.md#getinputsurface) again for re-recording.
 
 **Since:** 9
 
@@ -857,7 +829,6 @@ For audio-only recording, you can call [prepare()](arkts-media-media-avrecorder-
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 
-<a id="resume"></a>
 ## resume
 
 ```TypeScript
@@ -866,7 +837,7 @@ resume(callback: AsyncCallback<void>): void
 
 Resumes video recording. This API uses an asynchronous callback to return the result.
 
-This API can be called only after the [pause()](arkts-media-media-avrecorder-i.md#pause-1) API is called.
+This API can be called only after the [pause()](arkts-media-media-avrecorder-i.md#pause) API is called.
 
 **Since:** 9
 
@@ -888,7 +859,6 @@ This API can be called only after the [pause()](arkts-media-media-avrecorder-i.m
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by callback. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by callback. |
 
-<a id="resume-1"></a>
 ## resume
 
 ```TypeScript
@@ -897,7 +867,7 @@ resume(): Promise<void>
 
 Resumes video recording. This API uses a promise to return the result.
 
-This API can be called only after the [pause()](arkts-media-media-avrecorder-i.md#pause-1) API is called.
+This API can be called only after the [pause()](arkts-media-media-avrecorder-i.md#pause) API is called.
 
 **Since:** 9
 
@@ -921,7 +891,6 @@ This API can be called only after the [pause()](arkts-media-media-avrecorder-i.m
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 
-<a id="setwillmutewheninterrupted"></a>
 ## setWillMuteWhenInterrupted
 
 ```TypeScript
@@ -955,7 +924,6 @@ Sets whether to mute the current audio recording stream when an audio interrupti
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 
-<a id="start"></a>
 ## start
 
 ```TypeScript
@@ -964,7 +932,7 @@ start(callback: AsyncCallback<void>): void
 
 Starts video recording. This API uses an asynchronous callback to return the result.
 
-For audio-only recording, this API can be called only after the [prepare()](arkts-media-media-avrecorder-i.md#prepare-1) API is called. For video-only recording, this API can be called only after the [getInputSurface()](arkts-media-media-avrecorder-i.md#getinputsurface-1) API is called.
+For audio-only recording, this API can be called only after the [prepare()](arkts-media-media-avrecorder-i.md#prepare) API is called. For video-only recording, this API can be called only after the [getInputSurface()](arkts-media-media-avrecorder-i.md#getinputsurface) API is called.
 
 **Since:** 9
 
@@ -986,7 +954,6 @@ For audio-only recording, this API can be called only after the [prepare()](arkt
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by callback. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by callback. |
 
-<a id="start-1"></a>
 ## start
 
 ```TypeScript
@@ -995,7 +962,7 @@ start(): Promise<void>
 
 Starts video recording. This API uses a promise to return the result.
 
-For audio-only recording, this API can be called only after the [prepare()](arkts-media-media-avrecorder-i.md#prepare-1) API is called. For video-only recording,this API can be called only after the [getInputSurface()](arkts-media-media-avrecorder-i.md#getinputsurface-1) API is called.
+For audio-only recording, this API can be called only after the [prepare()](arkts-media-media-avrecorder-i.md#prepare) API is called. For video-only recording,this API can be called only after the [getInputSurface()](arkts-media-media-avrecorder-i.md#getinputsurface) API is called.
 
 **Since:** 9
 
@@ -1019,7 +986,6 @@ For audio-only recording, this API can be called only after the [prepare()](arkt
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 
-<a id="stop"></a>
 ## stop
 
 ```TypeScript
@@ -1028,10 +994,10 @@ stop(callback: AsyncCallback<void>): void
 
 Stops video recording. This API uses an asynchronous callback to return the result.
 
-This API can be called only after the [start()](arkts-media-media-avrecorder-i.md#start-1) or [pause()](arkts-media-media-avrecorder-i.md#pause-1) API is called.
+This API can be called only after the [start()](arkts-media-media-avrecorder-i.md#start) or [pause()](arkts-media-media-avrecorder-i.md#pause) API is called.
 
-For audio-only recording, you can call [prepare()](arkts-media-media-avrecorder-i.md#prepare-1) again for re  
--recording. For video-only recording or audio and video recording, you can call [prepare()](arkts-media-media-avrecorder-i.md#prepare-1) and [getInputSurface()](arkts-media-media-avrecorder-i.md#getinputsurface-1) again for re-recording.
+For audio-only recording, you can call [prepare()](arkts-media-media-avrecorder-i.md#prepare) again for re  
+-recording. For video-only recording or audio and video recording, you can call [prepare()](arkts-media-media-avrecorder-i.md#prepare) and [getInputSurface()](arkts-media-media-avrecorder-i.md#getinputsurface) again for re-recording.
 
 **Since:** 9
 
@@ -1053,7 +1019,6 @@ For audio-only recording, you can call [prepare()](arkts-media-media-avrecorder-
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by callback. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by callback. |
 
-<a id="stop-1"></a>
 ## stop
 
 ```TypeScript
@@ -1062,9 +1027,9 @@ stop(): Promise<void>
 
 Stops video recording. This API uses a promise to return the result.
 
-This API can be called only after the [start()](arkts-media-media-avrecorder-i.md#start-1) or [pause()](arkts-media-media-avrecorder-i.md#pause-1) API is called.
+This API can be called only after the [start()](arkts-media-media-avrecorder-i.md#start) or [pause()](arkts-media-media-avrecorder-i.md#pause) API is called.
 
-For audio-only recording, you can call [prepare()](arkts-media-media-avrecorder-i.md#prepare-1)again for re-recording. For video-only recording or audio and video recording, you can call [prepare()](arkts-media-media-avrecorder-i.md#prepare-1) and [getInputSurface()](arkts-media-media-avrecorder-i.md#getinputsurface-1) again for re-recording.
+For audio-only recording, you can call [prepare()](arkts-media-media-avrecorder-i.md#prepare)again for re-recording. For video-only recording or audio and video recording, you can call [prepare()](arkts-media-media-avrecorder-i.md#prepare) and [getInputSurface()](arkts-media-media-avrecorder-i.md#getinputsurface) again for re-recording.
 
 **Since:** 9
 
@@ -1088,7 +1053,6 @@ For audio-only recording, you can call [prepare()](arkts-media-media-avrecorder-
 | [5400103](../errorcode-media.md#5400103-io-error) | IO error. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 
-<a id="updaterotation"></a>
 ## updateRotation
 
 ```TypeScript
@@ -1097,7 +1061,7 @@ updateRotation(rotation: number): Promise<void>
 
 Updates the video rotation angle, in degrees. This API uses a promise to return the result.
 
-This API can be called only after the [prepare()](arkts-media-media-avrecorder-i.md#prepare-1) event is triggered and before the [start()](arkts-media-media-avrecorder-i.md#start-1) API is called.
+This API can be called only after the [prepare()](arkts-media-media-avrecorder-i.md#prepare) event is triggered and before the [start()](arkts-media-media-avrecorder-i.md#start) API is called.
 
 **Since:** 12
 

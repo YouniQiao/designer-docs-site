@@ -6,7 +6,6 @@
 import { securityManager } from '@kit.MDMKit';
 ```
 
-<a id="setpermissionmanagedstate"></a>
 ## setPermissionManagedState
 
 ```TypeScript
@@ -26,17 +25,7 @@ Sets the management policy for the [user_grant permission](../../apis-ability-ki
 
 **Model restriction:** This API can be used only in the stage model.
 
-<!--Device-securityManager-function setPermissionManagedState(
-    admin: Want,
-    applicationInstance: ApplicationInstance,
-    permissions: Array<string>,
-    managedState: PermissionManagedState
-  ): void--><!--Device-securityManager-function setPermissionManagedState(
-    admin: Want,
-    applicationInstance: ApplicationInstance,
-    permissions: Array<string>,
-    managedState: PermissionManagedState
-  ): void-End-->
+<!--Device-securityManager-function setPermissionManagedState(    admin: Want,    applicationInstance: ApplicationInstance,    permissions: Array<string>,    managedState: PermissionManagedState  ): void--><!--Device-securityManager-function setPermissionManagedState(    admin: Want,    applicationInstance: ApplicationInstance,    permissions: Array<string>,    managedState: PermissionManagedState  ): void-End-->
 
 **System capability:** SystemCapability.Customization.EnterpriseDeviceManager
 
@@ -46,7 +35,7 @@ Sets the management policy for the [user_grant permission](../../apis-ability-ki
 | --- | --- | --- | --- |
 | admin | [Want](../../apis-arkui/arkts-apis/arkts-arkui-want-t-sys.md) | Yes | EnterpriseAdminExtensionAbility. **Want** must contain the ability name of the EnterpriseAdminExtensionAbility and the bundle name of the application. |
 | applicationInstance | [ApplicationInstance](arkts-mdm-securitymanager-applicationinstance-i.md) | Yes | Application instance. |
-| permissions | Array&lt;string&gt; | Yes | List of permissions to be managed. Only [user_grant permission](../../apis-ability-kit/arkts-apis/arkts-ability-permissions-t.md) is supported. The list is grouped by [application permission groups](docroot://security/AccessToken/app-permission-group-list.md) and must include all permissions in the same permission group declared by the application in [module.json5](docroot://quick-start/module-configuration-file.md). For example, if an application declares ohos.permission.READ_CALENDAR and ohos.permission.WRITE_CALENDAR in **module.json5**, the input permission list must contain both ohos.permission.READ_CALENDAR and ohos.permission.WRITE_CALENDAR. |
+| permissions | Array&lt;string&gt; | Yes | List of permissions to be managed. Only [user_grant permission](../../apis-ability-kit/arkts-apis/arkts-ability-permissions-t.md) is supported. The list is grouped by [application permission groups](../../../security/AccessToken/app-permission-group-list.md) and must include all permissions in the same permission group declared by the application in [module.json5](../../../quick-start/module-configuration-file.md). For example, if an application declares ohos.permission.READ_CALENDAR and ohos.permission.WRITE_CALENDAR in **module.json5**, the input permission list must contain both ohos.permission.READ_CALENDAR and ohos.permission.WRITE_CALENDAR. |
 | managedState | [PermissionManagedState](arkts-mdm-securitymanager-permissionmanagedstate-e.md) | Yes | Management policy for application permissions. |
 
 **Error codes:**

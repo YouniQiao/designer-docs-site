@@ -1,6 +1,6 @@
 # InputMethodAbility
 
-In the following API examples, you must first use [getInputMethodAbility](arkts-ime-inputmethodengine-getinputmethodability-f.md#getinputmethodability-1) to obtain an **InputMethodAbility** instance, and then call the APIs using the obtained instance.
+In the following API examples, you must first use [getInputMethodAbility](arkts-ime-inputmethodengine-getinputmethodability-f.md#getinputmethodability) to obtain an **InputMethodAbility** instance, and then call the APIs using the obtained instance.
 
 **Since:** 9
 
@@ -14,7 +14,6 @@ In the following API examples, you must first use [getInputMethodAbility](arkts-
 import { inputMethodEngine } from '@kit.IMEKit';
 ```
 
-<a id="createpanel"></a>
 ## createPanel
 
 ```TypeScript
@@ -22,15 +21,13 @@ createPanel(ctx: BaseContext, info: PanelInfo, callback: AsyncCallback<Panel>): 
 ```
 
 Creates an input method panel. This API can be called only by the input method application in the [InputMethodExtensionAbility](arkts-ime-inputmethodextensionability-c.md) class. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > Only one [SOFT_KEYBOARD](arkts-ime-inputmethodengine-paneltype-e.md) panel and one  
 > [STATUS_BAR](arkts-ime-inputmethodengine-paneltype-e.md) panel can be created for a single input method.
-
 > The input method panel does not support subwindows. For example, subwindows cannot be created using APIs such  
 > as  
-> [window.createWindow](../../apis-arkui/arkts-apis/arkts-arkui-window-createwindow-f.md#createwindow-1)  
+> [window.createWindow](../../apis-arkui/arkts-apis/arkts-arkui-window-createwindow-f.md#createwindow)  
 > , [bindContextMenu](CommonMethod<T>.bindContextMenu),  
 > and [CustomDialog](../../apis-arkui/arkts-components/arkts-arkui-custom_dialog_controller-i). You are advised to adopt  
 > alternative solutions to sub-windows, such as using a [dialog box](../../apis-arkui/arkts-apis/arkts-arkui-advanced-dialog.md) or  
@@ -88,7 +85,6 @@ class InputMethodExt extends InputMethodExtensionAbility {
 
 ```
 
-<a id="createpanel-1"></a>
 ## createPanel
 
 ```TypeScript
@@ -96,15 +92,13 @@ createPanel(ctx: BaseContext, info: PanelInfo): Promise<Panel>
 ```
 
 Creates an input method panel. This API can be called only by the input method application in the [InputMethodExtensionAbility](arkts-ime-inputmethodextensionability-c.md) class. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > Only one [SOFT_KEYBOARD](arkts-ime-inputmethodengine-paneltype-e.md) panel and one  
 > [STATUS_BAR](arkts-ime-inputmethodengine-paneltype-e.md) panel can be created for a single input method.
-
 > The input method panel does not support subwindows. For example, subwindows cannot be created using APIs such  
 > as  
-> [window.createWindow](docroot://windowmanager/application-window-fa.md#setting-the-child-window-of-an-application)  
+> [window.createWindow](../../../windowmanager/application-window-fa.md#setting-the-child-window-of-an-application)  
 > , [bindContextMenu](CommonMethod<T>.bindContextMenu),  
 > and [CustomDialog](../../apis-arkui/arkts-components/arkts-arkui-custom_dialog_controller-i). You are advised to adopt  
 > alternative solutions to sub-windows, such as using a [dialog box](../../apis-arkui/arkts-apis/arkts-arkui-advanced-dialog.md) or  
@@ -165,7 +159,6 @@ class InputMethodExt extends InputMethodExtensionAbility {
 
 ```
 
-<a id="destroypanel"></a>
 ## destroyPanel
 
 ```TypeScript
@@ -228,7 +221,6 @@ if (inputPanel) {
 
 ```
 
-<a id="destroypanel-1"></a>
 ## destroyPanel
 
 ```TypeScript
@@ -294,7 +286,6 @@ if (inputPanel) {
 
 ```
 
-<a id="getsecuritymode"></a>
 ## getSecurityMode
 
 ```TypeScript
@@ -329,7 +320,6 @@ console.error(`getSecurityMode, securityMode is : ${security}`);
 
 ```
 
-<a id="off"></a>
 ## off('inputStart')
 
 ```TypeScript
@@ -358,7 +348,6 @@ inputMethodEngine.getInputMethodAbility().off('inputStart');
 
 ```
 
-<a id="off-1"></a>
 ## off('inputStop')
 
 ```TypeScript
@@ -389,7 +378,6 @@ inputMethodEngine.getInputMethodAbility().off('inputStop', () => {
 
 ```
 
-<a id="off-2"></a>
 ## off('setCallingWindow')
 
 ```TypeScript
@@ -420,7 +408,6 @@ inputMethodEngine.getInputMethodAbility().off('setCallingWindow', (wid: number) 
 
 ```
 
-<a id="off-3"></a>
 ## off('keyboardShow' | 'keyboardHide')
 
 ```TypeScript
@@ -454,7 +441,6 @@ inputMethodEngine.getInputMethodAbility().off('keyboardHide', () => {
 
 ```
 
-<a id="off-4"></a>
 ## off('keyboardShow' | 'keyboardHide')
 
 ```TypeScript
@@ -488,7 +474,6 @@ inputMethodEngine.getInputMethodAbility().off('keyboardHide', () => {
 
 ```
 
-<a id="off-5"></a>
 ## off('setSubtype')
 
 ```TypeScript
@@ -519,7 +504,6 @@ inputMethodEngine.getInputMethodAbility().off('setSubtype', () => {
 
 ```
 
-<a id="off-6"></a>
 ## off('securityModeChange')
 
 ```TypeScript
@@ -554,7 +538,6 @@ inputMethodAbility.off('securityModeChange', securityChangeCallback);
 
 ```
 
-<a id="off-7"></a>
 ## off('privateCommand')
 
 ```TypeScript
@@ -596,7 +579,6 @@ inputMethodEngine.getInputMethodAbility().off('privateCommand', privateCommandCa
 
 ```
 
-<a id="off-8"></a>
 ## off('callingDisplayDidChange')
 
 ```TypeScript
@@ -627,7 +609,6 @@ inputMethodEngine.getInputMethodAbility().off('callingDisplayDidChange', (num: n
 
 ```
 
-<a id="off-9"></a>
 ## off('discardTypingText')
 
 ```TypeScript
@@ -658,7 +639,6 @@ inputMethodEngine.getInputMethodAbility().off('discardTypingText', () => {
 
 ```
 
-<a id="on"></a>
 ## on('inputStart')
 
 ```TypeScript
@@ -692,7 +672,6 @@ inputMethodEngine.getInputMethodAbility()
 
 ```
 
-<a id="on-1"></a>
 ## on('inputStop')
 
 ```TypeScript
@@ -723,7 +702,6 @@ inputMethodEngine.getInputMethodAbility().on('inputStop', () => {
 
 ```
 
-<a id="on-2"></a>
 ## on('setCallingWindow')
 
 ```TypeScript
@@ -754,7 +732,6 @@ inputMethodEngine.getInputMethodAbility().on('setCallingWindow', (wid: number) =
 
 ```
 
-<a id="on-3"></a>
 ## on('keyboardShow' | 'keyboardHide')
 
 ```TypeScript
@@ -788,7 +765,6 @@ inputMethodEngine.getInputMethodAbility().on('keyboardHide', () => {
 
 ```
 
-<a id="on-4"></a>
 ## on('keyboardShow' | 'keyboardHide')
 
 ```TypeScript
@@ -822,7 +798,6 @@ inputMethodEngine.getInputMethodAbility().on('keyboardHide', () => {
 
 ```
 
-<a id="on-5"></a>
 ## on('setSubtype')
 
 ```TypeScript
@@ -855,7 +830,6 @@ inputMethodEngine.getInputMethodAbility().on('setSubtype', (inputMethodSubtype: 
 
 ```
 
-<a id="on-6"></a>
 ## on('securityModeChange')
 
 ```TypeScript
@@ -887,7 +861,6 @@ inputMethodEngine.getInputMethodAbility()
 
 ```
 
-<a id="on-7"></a>
 ## on('privateCommand')
 
 ```TypeScript
@@ -928,7 +901,6 @@ inputMethodEngine.getInputMethodAbility().on('privateCommand', privateCommandCal
 
 ```
 
-<a id="on-8"></a>
 ## on('callingDisplayDidChange')
 
 ```TypeScript
@@ -966,7 +938,6 @@ inputMethodEngine.getInputMethodAbility().on('callingDisplayDidChange', callingD
 
 ```
 
-<a id="on-9"></a>
 ## on('discardTypingText')
 
 ```TypeScript

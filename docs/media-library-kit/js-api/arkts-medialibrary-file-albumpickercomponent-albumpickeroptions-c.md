@@ -40,7 +40,7 @@ fontSize?: number | string
 
 The size of the font displayed in the album. When `fontSize` is a number type, must use 'fp' unit
 
-**Type:** number | string
+**Type:** number \| string
 
 **Since:** 20
 

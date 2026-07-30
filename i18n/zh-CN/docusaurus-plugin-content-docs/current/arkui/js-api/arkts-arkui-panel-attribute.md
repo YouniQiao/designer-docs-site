@@ -10,7 +10,6 @@
 
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="backgroundmask"></a>
 ## backgroundMask
 
 ```TypeScript
@@ -35,7 +34,6 @@ backgroundMask(color: ResourceColor)
 | --- | --- | --- | --- |
 | color | [ResourceColor](../arkts-apis/arkts-arkui-resourcecolor-t.md) | 是 | 指定Panel的背景蒙层。 |
 
-<a id="customheight"></a>
 ## customHeight
 
 ```TypeScript
@@ -60,7 +58,6 @@ customHeight(value: Dimension | PanelHeight)
 | --- | --- | --- | --- |
 | value | [Dimension](../arkts-apis/arkts-arkui-dimension-t.md) \| PanelHeight | 是 | 指定PanelType.CUSTOM状态下的高度。 |
 
-<a id="dragbar"></a>
 ## dragBar
 
 ```TypeScript
@@ -85,7 +82,6 @@ dragBar(value: boolean)
 | --- | --- | --- | --- |
 | value | boolean | 是 | 设置是否存在控制条，true表示存在，false表示不存在。 |
 
-<a id="fullheight"></a>
 ## fullHeight
 
 ```TypeScript
@@ -110,7 +106,6 @@ fullHeight(value: number | string)
 | --- | --- | --- | --- |
 | value | number \| string | 是 | 指定PanelMode.Full状态下的高度。 |
 
-<a id="halfheight"></a>
 ## halfHeight
 
 ```TypeScript
@@ -135,7 +130,6 @@ halfHeight(value: number | string)
 | --- | --- | --- | --- |
 | value | number \| string | 是 | 指定PanelMode.Half状态下的高度。 |
 
-<a id="miniheight"></a>
 ## miniHeight
 
 ```TypeScript
@@ -160,7 +154,6 @@ miniHeight(value: number | string)
 | --- | --- | --- | --- |
 | value | number \| string | 是 | 指定PanelMode.Mini状态下的高度。 |
 
-<a id="mode"></a>
 ## mode
 
 ```TypeScript
@@ -185,7 +178,6 @@ mode(value: PanelMode)
 | --- | --- | --- | --- |
 | value | [PanelMode](arkts-arkui-panelmode-e.md) | 是 | 设置可滑动面板的初始状态。 |
 
-<a id="onchange"></a>
 ## onChange
 
 ```TypeScript
@@ -232,71 +224,7 @@ onChange(
 
 **原子化服务API：** 从API版本11开始，该接口支持在原子化服务API中使用。
 
-<!--Device-PanelAttribute-onChange(
-    event: (
-    /**
-     * Width of content area.
-     *
-     ***/
-    /**
-     * Width of content area.
-     *
-     ******/
-      width: number,
-
-    /**
-     * Height of content area.
-     *
-     ***/
-    /**
-     * Height of content area.
-     *
-     ******/
-      height: number,
-
-    /**
-     * Initial state.
-     *
-     ***/
-    /**
-     * Initial state.
-     *
-     ******/
-      mode: PanelMode,
-    ) => void,
-  ): PanelAttribute--><!--Device-PanelAttribute-onChange(
-    event: (
-    /**
-     * Width of content area.
-     *
-     ***/
-    /**
-     * Width of content area.
-     *
-     ******/
-      width: number,
-
-    /**
-     * Height of content area.
-     *
-     ***/
-    /**
-     * Height of content area.
-     *
-     ******/
-      height: number,
-
-    /**
-     * Initial state.
-     *
-     ***/
-    /**
-     * Initial state.
-     *
-     ******/
-      mode: PanelMode,
-    ) => void,
-  ): PanelAttribute-End-->
+<!--Device-PanelAttribute-onChange(    event: (    /**     * Width of content area.     *     ***/    /**     * Width of content area.     *     ******/      width: number,    /**     * Height of content area.     *     ***/    /**     * Height of content area.     *     ******/      height: number,    /**     * Initial state.     *     ***/    /**     * Initial state.     *     ******/      mode: PanelMode,    ) => void,  ): PanelAttribute--><!--Device-PanelAttribute-onChange(    event: (    /**     * Width of content area.     *     ***/    /**     * Width of content area.     *     ******/      width: number,    /**     * Height of content area.     *     ***/    /**     * Height of content area.     *     ******/      height: number,    /**     * Initial state.     *     ***/    /**     * Initial state.     *     ******/      mode: PanelMode,    ) => void,  ): PanelAttribute-End-->
 
 **系统能力：** SystemCapability.ArkUI.ArkUI.Full
 
@@ -306,7 +234,6 @@ onChange(
 | --- | --- | --- | --- |
 | event | (     /**      * Width of content area.      *      * @syscap SystemCapability.ArkUI.ArkUI.Full      * @since 7      */     /**      * Width of content area.      *      * @syscap SystemCapability.ArkUI.ArkUI.Full      * @FaAndStageModel      * @atomicservice      * @since 11 dynamiconly      * @deprecated since 12      */       width: number,      /**      * Height of content area.      *      * @syscap SystemCapability.ArkUI.ArkUI.Full      * @since 7      */     /**      * Height of content area.      *      * @syscap SystemCapability.ArkUI.ArkUI.Full      * @FaAndStageModel      * @atomicservice      * @since 11 dynamiconly      * @deprecated since 12      */       height: number,      /**      * Initial state.      *      * @syscap SystemCapability.ArkUI.ArkUI.Full      * @since 7      */     /**      * Initial state.      *      * @syscap SystemCapability.ArkUI.ArkUI.Full      * @FaAndStageModel      * @atomicservice      * @since 11 dynamiconly      * @deprecated since 12      */       mode: PanelMode,     ) =&gt; void | 是 |  |
 
-<a id="onheightchange"></a>
 ## onHeightChange
 
 ```TypeScript
@@ -331,7 +258,6 @@ onHeightChange(callback: (value: number) => void)
 | --- | --- | --- | --- |
 | callback | (value: number) =&gt; void | 是 |  |
 
-<a id="show"></a>
 ## show
 
 ```TypeScript
@@ -356,7 +282,6 @@ show(value: boolean)
 | --- | --- | --- | --- |
 | value | boolean | 是 | 当滑动面板弹出时调用，true显示面板，false不显示面板。 |
 
-<a id="showcloseicon"></a>
 ## showCloseIcon
 
 ```TypeScript
@@ -381,7 +306,6 @@ showCloseIcon(value: boolean)
 | --- | --- | --- | --- |
 | value | boolean | 是 | 设置是否显示关闭图标，true表示显示，false表示不显示。 |
 
-<a id="type"></a>
 ## type
 
 ```TypeScript

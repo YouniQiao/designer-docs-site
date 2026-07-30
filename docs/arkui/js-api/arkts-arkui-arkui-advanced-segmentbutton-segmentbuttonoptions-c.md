@@ -20,7 +20,6 @@ Provides initial data and custom properties for the **SegmentButton** component.
 import { CommonSegmentButtonOptions, SegmentButtonItemOptionsConstructorOptions, SegmentButtonIconTextItem, SegmentButtonItemOptions, SegmentButtonTextItem, CapsuleSegmentButtonOptions, SegmentButtonOptions, CapsuleSegmentButtonConstructionOptions, SegmentButtonItemTuple, SegmentButton, SegmentButtonItemArray, SegmentButtonItemOptionsArray, SegmentButtonIconItem, BorderRadiusMode, TabSegmentButtonConstructionOptions, TabSegmentButtonOptions, ItemRestriction, DimensionNoPercentage } from '@kit.ArkUI';
 ```
 
-<a id="capsule"></a>
 ## capsule
 
 ```TypeScript
@@ -51,7 +50,6 @@ Creates a **SegmentButtonOptions** object specifically for capsule-style segment
 | --- | --- |
 | [SegmentButtonOptions](arkts-arkui-arkui-advanced-segmentbutton-segmentbuttonoptions-c.md) | Options of the **SegmentButton** component. |
 
-<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -76,7 +74,6 @@ Constructor.
 | --- | --- | --- | --- |
 | options | [TabSegmentButtonOptions](arkts-arkui-arkui-advanced-segmentbutton-tabsegmentbuttonoptions-i.md) \| CapsuleSegmentButtonOptions | Yes | Configuration options for tab-style or capsule-style segmented buttons. |
 
-<a id="tab"></a>
 ## tab
 
 ```TypeScript

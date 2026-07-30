@@ -6,7 +6,6 @@
 import { autoFillManager } from '@kit.AbilityKit';
 ```
 
-<a id="requestautofill"></a>
 ## requestAutoFill
 
 ```TypeScript

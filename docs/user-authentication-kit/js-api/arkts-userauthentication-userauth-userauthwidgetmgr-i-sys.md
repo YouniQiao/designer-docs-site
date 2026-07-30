@@ -1,6 +1,6 @@
 # UserAuthWidgetMgr (System API)
 
-Defines the authentication widget manager. It is used to register the custom authentication widget with the **UserAuthWidgetMgr** for unified management and scheduling. Through this API, the custom authentication widget can receive commands from the user authentication framework and perform corresponding operations.
+Defines the identity authentication widget manager. It is used to register custom identity authentication widgets with the **UserAuthWidgetMgr** for unified management and scheduling. Custom authentication widgets can receive commands from the user authentication framework and execute corresponding operations.
 
 **Since:** 10
 
@@ -37,7 +37,7 @@ Unsubscribes from command events from the user authentication framework. The aut
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
 | type | 'command' | Yes | Event type to subscribe to. The value **'command'** indicates that the event that the user authentication framework sends commands to the identity authentication widget is unsubscribed. |
-| callback | [IAuthWidgetCallback](arkts-userauthentication-userauth-iauthwidgetcallback-i-sys.md) | No | Callback function. It specifies the callback function to be unregistered. If this parameter is not passed, all registered callback functions are unregistered. |
+| callback | [IAuthWidgetCallback](arkts-userauthentication-userauth-iauthwidgetcallback-i-sys.md) | No | Callback to unregister, which must be the same as the callback passed in the **on** method. If this parameter is not passed, all registered callbacks are unregistered. Before using the **off** API, ensure that the corresponding callback has been registered through the [on](userAuth.UserAuthWidgetMgr.on(type: 'command', callback: IAuthWidgetCallback)) method. |
 
 **Error codes:**
 

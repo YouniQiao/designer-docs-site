@@ -2,9 +2,9 @@
 
 Provides APIs for managing data in an RDB store.
 
-Before using the following APIs, you should obtain an **RdbStore** instance by calling the [getRdbStore](arkts-arkdata-relationalstore-getrdbstore-f.md#getrdbstore-1)method and then call the corresponding method through the instance.
+Before using the following APIs, you should obtain an **RdbStore** instance by calling the [getRdbStore](arkts-arkdata-relationalstore-getrdbstore-f.md#getrdbstore)method and then call the corresponding method through the instance.
 
-In addition, use [execute](arkts-arkdata-relationalstore-rdbstore-i.md#execute-1)to initialize the database table structure and related data first, ensuring that the prerequisites for related API calls are met.
+In addition, use [execute](arkts-arkdata-relationalstore-rdbstore-i.md#execute)to initialize the database table structure and related data first, ensuring that the prerequisites for related API calls are met.
 
 **Since:** 9
 
@@ -18,7 +18,6 @@ In addition, use [execute](arkts-arkdata-relationalstore-rdbstore-i.md#execute-1
 import { relationalStore } from '@kit.ArkData';
 ```
 
-<a id="cleandevicedirtydata"></a>
 ## cleanDeviceDirtyData
 
 ```TypeScript
@@ -63,7 +62,6 @@ Cleans dirty data deleted in the cross-device sync.If a cursor is specified, dat
 | [14800024](../errorcode-data-rdb.md#14800024-sqlite-database-file-locked) | SQLite: The database file is locked. |
 | 14800043 | The database does not support this scenario.Possible causes: 1. The database type is not support;2. The table type is not supported;3. This is a read-only database. |
 
-<a id="cloudsync"></a>
 ## cloudSync
 
 ```TypeScript
@@ -79,17 +77,7 @@ Sync data to cloud.
 
 **Since:** 11
 
-<!--Device-RdbStore-cloudSync(
-      mode: SyncMode,
-      predicates: RdbPredicates,
-      progress: Callback<ProgressDetails>,
-      callback: AsyncCallback<void>
-    ): void--><!--Device-RdbStore-cloudSync(
-      mode: SyncMode,
-      predicates: RdbPredicates,
-      progress: Callback<ProgressDetails>,
-      callback: AsyncCallback<void>
-    ): void-End-->
+<!--Device-RdbStore-cloudSync(      mode: SyncMode,      predicates: RdbPredicates,      progress: Callback<ProgressDetails>,      callback: AsyncCallback<void>    ): void--><!--Device-RdbStore-cloudSync(      mode: SyncMode,      predicates: RdbPredicates,      progress: Callback<ProgressDetails>,      callback: AsyncCallback<void>    ): void-End-->
 
 **System capability:** SystemCapability.DistributedDataManager.CloudSync.Client
 
@@ -113,7 +101,6 @@ Sync data to cloud.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
-<a id="cloudsync-1"></a>
 ## cloudSync
 
 ```TypeScript
@@ -153,7 +140,6 @@ Sync data to cloud.
 | [801](../../apis-ads-kit/errorcode-ads.md#801-ad-request-failure) | Capability not supported. |
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 
-<a id="delete"></a>
 ## delete
 
 ```TypeScript
@@ -206,7 +192,6 @@ Deletes data from the database based on a specified instance object of RdbPredic
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="delete-1"></a>
 ## delete
 
 ```TypeScript
@@ -264,7 +249,6 @@ Deletes data from the database based on a specified instance object of RdbPredic
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="lockcloudcontainer"></a>
 ## lockCloudContainer
 
 ```TypeScript
@@ -293,7 +277,6 @@ Lock cloud container before non-auto cloud sync.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed,application which is not a system application uses system API. |
 
-<a id="query"></a>
 ## query
 
 ```TypeScript
@@ -330,7 +313,6 @@ Queries data in the database based on specified conditions.
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 | [14800015](../errorcode-data-rdb.md#14800015-rdb-store-not-respond) | The database does not respond.<br>**Applicable version:** 12 and later |
 
-<a id="query-1"></a>
 ## query
 
 ```TypeScript
@@ -348,17 +330,7 @@ Queries data in the database based on specified conditions.
 
 **Model restriction:** This API can be used only in the stage model.
 
-<!--Device-RdbStore-query(
-      table: string,
-      predicates: dataSharePredicates.DataSharePredicates,
-      columns: Array<string>,
-      callback: AsyncCallback<ResultSet>
-    ): void--><!--Device-RdbStore-query(
-      table: string,
-      predicates: dataSharePredicates.DataSharePredicates,
-      columns: Array<string>,
-      callback: AsyncCallback<ResultSet>
-    ): void-End-->
+<!--Device-RdbStore-query(      table: string,      predicates: dataSharePredicates.DataSharePredicates,      columns: Array<string>,      callback: AsyncCallback<ResultSet>    ): void--><!--Device-RdbStore-query(      table: string,      predicates: dataSharePredicates.DataSharePredicates,      columns: Array<string>,      callback: AsyncCallback<ResultSet>    ): void-End-->
 
 **System capability:** SystemCapability.DistributedDataManager.RelationalStore.Core
 
@@ -383,7 +355,6 @@ Queries data in the database based on specified conditions.
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 | [14800015](../errorcode-data-rdb.md#14800015-rdb-store-not-respond) | The database does not respond.<br>**Applicable version:** 12 and later |
 
-<a id="query-2"></a>
 ## query
 
 ```TypeScript
@@ -400,15 +371,7 @@ Queries data in the database based on specified conditions.
 
 **Model restriction:** This API can be used only in the stage model.
 
-<!--Device-RdbStore-query(
-      table: string,
-      predicates: dataSharePredicates.DataSharePredicates,
-      columns?: Array<string>
-    ): Promise<ResultSet>--><!--Device-RdbStore-query(
-      table: string,
-      predicates: dataSharePredicates.DataSharePredicates,
-      columns?: Array<string>
-    ): Promise<ResultSet>-End-->
+<!--Device-RdbStore-query(      table: string,      predicates: dataSharePredicates.DataSharePredicates,      columns?: Array<string>    ): Promise<ResultSet>--><!--Device-RdbStore-query(      table: string,      predicates: dataSharePredicates.DataSharePredicates,      columns?: Array<string>    ): Promise<ResultSet>-End-->
 
 **System capability:** SystemCapability.DistributedDataManager.RelationalStore.Core
 
@@ -438,7 +401,6 @@ Queries data in the database based on specified conditions.
 | [14800014](../errorcode-data-rdb.md#14800014-target-instance-closed) | The target instance is already closed.<br>**Applicable version:** 12 and later |
 | [14800015](../errorcode-data-rdb.md#14800015-rdb-store-not-respond) | The database does not respond.<br>**Applicable version:** 12 and later |
 
-<a id="querysharingresource"></a>
 ## querySharingResource
 
 ```TypeScript
@@ -493,7 +455,6 @@ Obtains sharing resource of rows corresponding to the predicates.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="querysharingresource-1"></a>
 ## querySharingResource
 
 ```TypeScript
@@ -542,7 +503,6 @@ Obtains sharing resource of rows corresponding to the predicates.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="querysharingresource-2"></a>
 ## querySharingResource
 
 ```TypeScript
@@ -592,7 +552,6 @@ Obtains sharing resource of rows corresponding to the predicates.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="restore"></a>
 ## restore
 
 ```TypeScript
@@ -640,7 +599,6 @@ Restores a database from a specified database file.
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch. |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly. |
 
-<a id="retaindevicedata"></a>
 ## retainDeviceData
 
 ```TypeScript
@@ -684,7 +642,6 @@ Remove distributed table remote data.
 | 14800042 | The database does not exist. Possible causes: 1. The database is deleted;<br>2. The database is not created. |
 | 14800043 | The database does not support this scenario.Possible causes: 1. The database type is not supported;2. The table type is not supported;3. This is a read-only database. |
 
-<a id="unlockcloudcontainer"></a>
 ## unlockCloudContainer
 
 ```TypeScript
@@ -713,7 +670,6 @@ Unlock cloud container.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed,application which is not a system application uses system API. |
 
-<a id="update"></a>
 ## update
 
 ```TypeScript
@@ -731,17 +687,7 @@ Updates data in the database based on a specified instance object of RdbPredicat
 
 **Model restriction:** This API can be used only in the stage model.
 
-<!--Device-RdbStore-update(
-      table: string,
-      values: ValuesBucket,
-      predicates: dataSharePredicates.DataSharePredicates,
-      callback: AsyncCallback<long>
-    ): void--><!--Device-RdbStore-update(
-      table: string,
-      values: ValuesBucket,
-      predicates: dataSharePredicates.DataSharePredicates,
-      callback: AsyncCallback<long>
-    ): void-End-->
+<!--Device-RdbStore-update(      table: string,      values: ValuesBucket,      predicates: dataSharePredicates.DataSharePredicates,      callback: AsyncCallback<long>    ): void--><!--Device-RdbStore-update(      table: string,      values: ValuesBucket,      predicates: dataSharePredicates.DataSharePredicates,      callback: AsyncCallback<long>    ): void-End-->
 
 **System capability:** SystemCapability.DistributedDataManager.RelationalStore.Core
 
@@ -782,7 +728,6 @@ Updates data in the database based on a specified instance object of RdbPredicat
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="update-1"></a>
 ## update
 
 ```TypeScript
@@ -841,7 +786,6 @@ Updates data in the database based on a specified instance object of RdbPredicat
 | [14800033](../errorcode-data-rdb.md#14800033-sqlite-data-types-mismatch) | SQLite: Data type mismatch.<br>**Applicable version:** 12 and later |
 | [14800034](../errorcode-data-rdb.md#14800034-incorrect-use-of-sqlite-library) | SQLite: Library used incorrectly.<br>**Applicable version:** 12 and later |
 
-<a id="updatedistributedinfo"></a>
 ## updateDistributedInfo
 
 ```TypeScript

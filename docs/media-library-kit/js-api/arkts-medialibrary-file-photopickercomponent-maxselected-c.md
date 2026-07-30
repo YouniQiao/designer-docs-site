@@ -22,7 +22,7 @@ data?: Map<MaxCountType, number>
 
 data. support to set max_total_count, max_photo_count and max_video_count.
 
-**Type:** Map<MaxCountType, number>
+**Type:** Map&lt;MaxCountType, number&gt;
 
 **Since:** 12
 

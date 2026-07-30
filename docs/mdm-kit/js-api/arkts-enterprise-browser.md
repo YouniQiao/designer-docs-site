@@ -10,11 +10,13 @@ Browser policies are a collection of rules and settings that govern how a browse
 > The APIs of this module can be called only by a device administrator application that is enabled. For details, see  
 > [MDM Kit Development](../../../mdm/mdm-kit-guide.md).
 
-**Since:** 10
+**Since:** 12
 
 <!--Device-unnamed-declare namespace browser--><!--Device-unnamed-declare namespace browser-End-->
 
 **System capability:** SystemCapability.Customization.EnterpriseDeviceManager
+
+**System API:** This is a system API.
 
 ## Modules to Import
 
@@ -30,6 +32,7 @@ import { browser } from '@kit.MDMKit';
 | --- | --- |
 | [getManagedBrowserPolicy](arkts-mdm-browser-getmanagedbrowserpolicy-f.md#getmanagedbrowserpolicy) | Obtains the browser policy by application bundle name. |
 | [getPoliciesSync](arkts-mdm-browser-getpoliciessync-f.md#getpoliciessync) | Obtains the browser policy by app ID. |
+| [getPoliciesSync](arkts-mdm-browser-getpoliciessync-f.md#getpoliciessync-1) | Obtains the browser policy by app ID. |
 | [getSelfManagedBrowserPolicy](arkts-mdm-browser-getselfmanagedbrowserpolicy-f.md#getselfmanagedbrowserpolicy) | Obtains the browser policy of the current device. |
 | [getSelfManagedBrowserPolicyVersion](arkts-mdm-browser-getselfmanagedbrowserpolicyversion-f.md#getselfmanagedbrowserpolicyversion) | Obtains the policy version of a specified browser. |
 | [setManagedBrowserPolicy](arkts-mdm-browser-setmanagedbrowserpolicy-f.md#setmanagedbrowserpolicy) | Sets the browser policy. After the setting is successful, the system common event [COMMON_EVENT_MANAGED_BROWSER_POLICY_CHANGED](../../../reference/apis-basic-services-kit/common_event/commonEventManager-definitions.md#common_event_managed_browser_policy_changed)is released. |

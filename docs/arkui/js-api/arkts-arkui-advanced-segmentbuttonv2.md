@@ -13,7 +13,7 @@ import { OnSelectedIndexesChange, TabSegmentButtonV2, SegmentButtonV2Items, Mult
 | Name | Description |
 | --- | --- |
 | [SegmentButtonV2Item](arkts-arkui-arkui-advanced-segmentbuttonv2-segmentbuttonv2item-c.md) | Defines segmented button item. |
-| [SegmentButtonV2Items](arkts-arkui-arkui-advanced-segmentbuttonv2-segmentbuttonv2items-c.md) | Represents items of the **SegmentButtonV2** component.  This parameter is inherited from Array\<[SegmentButtonV2Item](arkts-arkui-arkui-advanced-segmentbuttonv2-segmentbuttonv2items-c.md)>. |
+| [SegmentButtonV2Items](arkts-arkui-arkui-advanced-segmentbuttonv2-segmentbuttonv2items-c.md) | Represents items of the **SegmentButtonV2** component.  This parameter is inherited from Array\&lt;[SegmentButtonV2Item](arkts-arkui-arkui-advanced-segmentbuttonv2-segmentbuttonv2items-c.md)&gt;. |
 
 ### Structs
 
@@ -36,7 +36,7 @@ import { OnSelectedIndexesChange, TabSegmentButtonV2, SegmentButtonV2Items, Mult
 
 | Name | Description |
 | --- | --- |
-| [SegmentButtonV2ItemOptions](arkts-arkui-arkui-advanced-segmentbuttonv2-segmentbuttonv2itemoptions-i.md) | Defines segmented button item options.  > **Description**  >  > 1. If both **symbol** and **icon** are configured, **symbol** takes precedence.  >  > 2. If both **symbol** and **symbolModifier** are configured with HM Symbol resources, the resources specified by  > **symbolModifier** take precedence. |
+| [SegmentButtonV2ItemOptions](arkts-arkui-arkui-advanced-segmentbuttonv2-segmentbuttonv2itemoptions-i.md) | Defines segmented button item options. > **Description**  >  > 1. If both **symbol** and **icon** are configured, **symbol** takes precedence.  >  > 2. If both **symbol** and **symbolModifier** are configured with HM Symbol resources, the resources specified by  > **symbolModifier** take precedence. |
 
 ### Types
 

@@ -33,7 +33,7 @@ function closeToast(toastId: number): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| toastId | number | 是 | openToast返回的id。 |
+| toastId | number | 是 | openToast返回的id，用于标识要关闭的Toast实例。 |
 
 **错误码：**
 

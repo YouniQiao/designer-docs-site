@@ -18,7 +18,6 @@ TimeLapsePhotoSession extends Session, Focus, ManualFocus, AutoExposure, ManualE
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="getsupportedtimelapseintervalrange"></a>
 ## getSupportedTimeLapseIntervalRange
 
 ```TypeScript
@@ -67,7 +66,6 @@ function getSupportedTimeLapseIntervalRange(timeLapsePhotoSession: camera.TimeLa
 
 ```
 
-<a id="gettimelapseinterval"></a>
 ## getTimeLapseInterval
 
 ```TypeScript
@@ -116,7 +114,6 @@ function getTimeLapseInterval(timeLapsePhotoSession: camera.TimeLapsePhotoSessio
 
 ```
 
-<a id="gettimelapsepreviewtype"></a>
 ## getTimeLapsePreviewType
 
 ```TypeScript
@@ -165,7 +162,6 @@ function getTimeLapsePreviewType(timeLapsePhotoSession: camera.TimeLapsePhotoSes
 
 ```
 
-<a id="gettimelapserecordstate"></a>
 ## getTimeLapseRecordState
 
 ```TypeScript
@@ -214,7 +210,6 @@ function getTimeLapseRecordState(timeLapsePhotoSession: camera.TimeLapsePhotoSes
 
 ```
 
-<a id="istryaeneeded"></a>
 ## isTryAENeeded
 
 ```TypeScript
@@ -263,7 +258,6 @@ function isTryAENeeded(timeLapsePhotoSession: camera.TimeLapsePhotoSession): boo
 
 ```
 
-<a id="off"></a>
 ## off('error')
 
 ```TypeScript
@@ -302,7 +296,6 @@ function unregisterSessionError(timeLapsePhotoSession: camera.TimeLapsePhotoSess
 
 ```
 
-<a id="off-1"></a>
 ## off('focusStateChange')
 
 ```TypeScript
@@ -341,7 +334,6 @@ function unregisterFocusStateChange(timeLapsePhotoSession: camera.TimeLapsePhoto
 
 ```
 
-<a id="off-2"></a>
 ## off('isoInfoChange')
 
 ```TypeScript
@@ -380,7 +372,6 @@ function unregisterIsoInfoEvent(timeLapsePhotoSession: camera.TimeLapsePhotoSess
 
 ```
 
-<a id="off-3"></a>
 ## off('exposureInfoChange')
 
 ```TypeScript
@@ -419,7 +410,6 @@ function unregisterExposureInfoEvent(timeLapsePhotoSession: camera.TimeLapsePhot
 
 ```
 
-<a id="off-4"></a>
 ## off('luminationInfoChange')
 
 ```TypeScript
@@ -458,7 +448,6 @@ function unregisterLuminationInfoEvent(timeLapsePhotoSession: camera.TimeLapsePh
 
 ```
 
-<a id="off-5"></a>
 ## off('tryAEInfoChange')
 
 ```TypeScript
@@ -497,7 +486,6 @@ function unregisterTryAEInfoEvent(timeLapsePhotoSession: camera.TimeLapsePhotoSe
 
 ```
 
-<a id="on"></a>
 ## on('error')
 
 ```TypeScript
@@ -518,7 +506,7 @@ Subscribes to HighResolutionPhotoSession error events. This API uses an asynchro
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when a session is created. This event is triggered and the error message is returned when an error occurs during the calling of a session-related API such as [beginConfig](arkts-camera-camera-session-i.md#beginconfig-1),[commitConfig](arkts-camera-camera-session-i.md#commitconfig-1), and [addInput](arkts-camera-camera-session-i.md#addinput-1). |
+| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when a session is created. This event is triggered and the error message is returned when an error occurs during the calling of a session-related API such as [beginConfig](arkts-camera-camera-session-i.md#beginconfig),[commitConfig](arkts-camera-camera-session-i.md#commitconfig), and [addInput](arkts-camera-camera-session-i.md#addinput). |
 | callback | [ErrorCallback](../../apis-arkui/arkts-components/arkts-arkui-errorcallback-t-sys.md) | Yes | Callback used to return an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md). |
 
 **Error codes:**
@@ -542,7 +530,6 @@ function registerSessionError(timeLapsePhotoSession: camera.TimeLapsePhotoSessio
 
 ```
 
-<a id="on-1"></a>
 ## on('focusStateChange')
 
 ```TypeScript
@@ -591,7 +578,6 @@ function registerFocusStateChange(timeLapsePhotoSession: camera.TimeLapsePhotoSe
 
 ```
 
-<a id="on-2"></a>
 ## on('isoInfoChange')
 
 ```TypeScript
@@ -640,7 +626,6 @@ function registerIsoInfoEvent(timeLapsePhotoSession: camera.TimeLapsePhotoSessio
 
 ```
 
-<a id="on-3"></a>
 ## on('exposureInfoChange')
 
 ```TypeScript
@@ -689,7 +674,6 @@ function registerExposureInfoEvent(timeLapsePhotoSession: camera.TimeLapsePhotoS
 
 ```
 
-<a id="on-4"></a>
 ## on('luminationInfoChange')
 
 ```TypeScript
@@ -738,7 +722,6 @@ function registerLuminationInfoEvent(timeLapsePhotoSession: camera.TimeLapsePhot
 
 ```
 
-<a id="on-5"></a>
 ## on('tryAEInfoChange')
 
 ```TypeScript
@@ -787,7 +770,6 @@ function registerTryAEInfoEvent(timeLapsePhotoSession: camera.TimeLapsePhotoSess
 
 ```
 
-<a id="settimelapseinterval"></a>
 ## setTimeLapseInterval
 
 ```TypeScript
@@ -808,7 +790,7 @@ Sets a time-lapse shooting interval.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| interval | number | Yes | Shooting interval, in units of ms, the supported range can be obtained by calling [getSupportedTimeLapseIntervalRange](arkts-camera-camera-timelapsephotosession-i-sys.md#getsupportedtimelapseintervalrange-1) |
+| interval | number | Yes | Shooting interval, in units of ms, the supported range can be obtained by calling [getSupportedTimeLapseIntervalRange](arkts-camera-camera-timelapsephotosession-i-sys.md#getsupportedtimelapseintervalrange) |
 
 **Error codes:**
 
@@ -836,7 +818,6 @@ function setTimeLapseInterval(timeLapsePhotoSession: camera.TimeLapsePhotoSessio
 
 ```
 
-<a id="settimelapsepreviewtype"></a>
 ## setTimeLapsePreviewType
 
 ```TypeScript
@@ -884,7 +865,6 @@ function setTimeLapsePreviewType(timeLapsePhotoSession: camera.TimeLapsePhotoSes
 
 ```
 
-<a id="settimelapserecordstate"></a>
 ## setTimeLapseRecordState
 
 ```TypeScript
@@ -932,7 +912,6 @@ function setTimeLapseRecordState(timeLapsePhotoSession: camera.TimeLapsePhotoSes
 
 ```
 
-<a id="starttryae"></a>
 ## startTryAE
 
 ```TypeScript
@@ -974,7 +953,6 @@ function startTryAE(timeLapsePhotoSession: camera.TimeLapsePhotoSession): void {
 
 ```
 
-<a id="stoptryae"></a>
 ## stopTryAE
 
 ```TypeScript

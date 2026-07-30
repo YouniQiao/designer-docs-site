@@ -16,7 +16,6 @@ Represents the word selection panel.
 import { selectionManager } from '@kit.BasicServicesKit';
 ```
 
-<a id="movetoglobaldisplay"></a>
 ## moveToGlobalDisplay
 
 ```TypeScript

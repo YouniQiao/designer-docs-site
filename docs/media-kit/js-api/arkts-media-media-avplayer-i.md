@@ -1,12 +1,12 @@
 # AVPlayer
 
-AVPlayer is a playback management class. It provides APIs to manage and play media assets. Before calling any API in AVPlayer, you must use [createAVPlayer()](arkts-media-media-createavplayer-f.md#createavplayer-1) to create an AVPlayer instance.
+AVPlayer is a playback management class. It provides APIs to manage and play media assets. Before calling any API in AVPlayer, you must use [createAVPlayer()](arkts-media-media-createavplayer-f.md#createavplayer) to create an AVPlayer instance.
 
 When using the AVPlayer instance, you are advised to register the following callbacks to proactively obtain status changes: [on('stateChange')](media.AVPlayer.on(type: 'stateChange', callback: OnAVPlayerStateChangeHandle)):listens for AVPlayer state changes. [on('error')](media.AVPlayer.on(type: 'error', callback: ErrorCallback)):listens for error events.
 
 Applications must properly manage AVPlayer instances according to their specific needs, creating and freeing them when necessary. Holding too many AVPlayer instances can lead to high memory usage, and in some cases, the system might terminate applications to free up resources.
 
-For details about the audio and video playback demo, see [Audio Playback](docroot://media/media/using-avplayer-for-playback.md) and [Video Playback](docroot://media/media/video-playback.md).
+For details about the audio and video playback demo, see [Audio Playback](../../../media/media/using-avplayer-for-playback.md) and [Video Playback](../../../media/media/video-playback.md).
 
 **Since:** 9
 
@@ -20,7 +20,6 @@ For details about the audio and video playback demo, see [Audio Playback](docroo
 import { media } from '@kit.MediaKit';
 ```
 
-<a id="addplaybackmediasource"></a>
 ## addPlaybackMediaSource
 
 ```TypeScript
@@ -59,7 +58,6 @@ Add a new playback source to the player's playlist.
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
 | [5400108](../errorcode-media.md#5400108-parameter-value-out-of-range) | The media source ID does not exist in the playlist. Returned by promise. |
 
-<a id="addsubtitlefromfd"></a>
 ## addSubtitleFromFd
 
 ```TypeScript
@@ -80,7 +78,7 @@ Adds an external subtitle to a video based on the FD. Currently, the external su
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| fd | number | Yes | Resource handle, which is obtained by calling [resourceManager.getRawFd](../../apis-localization-kit/arkts-apis/arkts-localization-resourcemanager-resourcemanager-i.md#getrawfd-1). |
+| fd | number | Yes | Resource handle, which is obtained by calling [resourceManager.getRawFd](../../apis-localization-kit/arkts-apis/arkts-localization-resourcemanager-resourcemanager-i.md#getrawfd). |
 | offset | number | No | Resource offset, which needs to be entered based on the preset asset information. An invalid value causes a failure to parse subtitle assets. The default value is **0**.unit:Byte. |
 | length | number | No | Resource length, which needs to be entered based on the preset asset information. The default value is the remaining bytes from the offset in the file. An invalid value causes a failure to parse subtitle assets. The default value is **0**. |
 
@@ -97,7 +95,6 @@ Adds an external subtitle to a video based on the FD. Currently, the external su
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Return by promise. |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
 
-<a id="addsubtitlefromurl"></a>
 ## addSubtitleFromUrl
 
 ```TypeScript
@@ -133,7 +130,6 @@ Adds an external subtitle to a video based on the URL. Currently, the external s
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Return by promise. |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
 
-<a id="advancetomediasource"></a>
 ## advanceToMediaSource
 
 ```TypeScript
@@ -171,7 +167,6 @@ Ends playback of the current mediasource and starts playback of the specified me
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
 | [5400108](../errorcode-media.md#5400108-parameter-value-out-of-range) | The mediasource does not exist in the playlist. Returned via promise. |
 
-<a id="advancetonextmediasource"></a>
 ## advanceToNextMediaSource
 
 ```TypeScript
@@ -203,7 +198,6 @@ Ends playback of the current mediasource and starts playback of the next mediaso
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed . Return by promise. |
 | [5400108](../errorcode-media.md#5400108-parameter-value-out-of-range) | The previous mediasource does not exist in the playlist. Returned via promise. |
 
-<a id="advancetoprevmediasource"></a>
 ## advanceToPrevMediaSource
 
 ```TypeScript
@@ -235,7 +229,6 @@ Ends playback of the current mediasource and starts playback of the previous med
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
 | [5400108](../errorcode-media.md#5400108-parameter-value-out-of-range) | The next mediasource does not exist in the playlist. Returned via promise. |
 
-<a id="clearplaybacklist"></a>
 ## clearPlaybackList
 
 ```TypeScript
@@ -266,7 +259,6 @@ Clears all the items in the player's playlist. Currently playing media will be t
 | --- | --- |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | operation not allowed . Returned via promise. |
 
-<a id="deselecttrack"></a>
 ## deselectTrack
 
 ```TypeScript
@@ -287,7 +279,7 @@ Deselects the specified track when the AVPlayer plays multimedia resources with 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| index | number | Yes | Track index, which is obtained from [MediaDescription](arkts-media-media-mediadescription-i.md) by calling [getTrackDescription](arkts-media-media-avplayer-i.md#gettrackdescription-1). |
+| index | number | Yes | Track index, which is obtained from [MediaDescription](arkts-media-media-mediadescription-i.md) by calling [getTrackDescription](arkts-media-media-avplayer-i.md#gettrackdescription). |
 
 **Return value:**
 
@@ -302,7 +294,6 @@ Deselects the specified track when the AVPlayer plays multimedia resources with 
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Return by promise. |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
 
-<a id="getcurrentmediasource"></a>
 ## getCurrentMediaSource
 
 ```TypeScript
@@ -333,7 +324,6 @@ Return the current mediasource.
 | --- | --- |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
 
-<a id="getcurrentpresentationtimestamp"></a>
 ## getCurrentPresentationTimestamp
 
 ```TypeScript
@@ -364,7 +354,6 @@ Obtains the current playback time. This API can be called only when the AVPlayer
 | --- | --- |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. |
 
-<a id="getcurrenttrack"></a>
 ## getCurrentTrack
 
 ```TypeScript
@@ -402,7 +391,6 @@ Obtains the selected track by the specified media type. This API can be called o
 | [5400103](../errorcode-media.md#5400103-io-error) | I/O error. Return by promise. |
 | [5400105](../errorcode-media.md#5400105-play-service-dead) | Service died. Return by promise. |
 
-<a id="getloadedtimeranges"></a>
 ## getLoadedTimeRanges
 
 ```TypeScript
@@ -410,7 +398,6 @@ getLoadedTimeRanges(): Promise<Array<Range>>
 ```
 
 Obtains the list of loaded time ranges. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > - For local media resources, the time range is from 0 to the entire media duration.  
@@ -431,14 +418,13 @@ Obtains the list of loaded time ranges. This API uses a promise to return the re
 | --- | --- |
 | Promise&lt;Array&lt;Range&gt;&gt; | Promise used to return the list of loaded time ranges on the player.<br>The time range is represented by the **[start, end]** position on the playback timeline, in milliseconds. |
 
-<a id="getmediakeysysteminfos"></a>
 ## getMediaKeySystemInfos
 
 ```TypeScript
 getMediaKeySystemInfos(): Array<drm.MediaKeySystemInfo>
 ```
 
-Obtains the media key system information of the media asset that is being played. This API can be called only after the [on('mediaKeySystemInfoUpdate')](media.AVPlayer.on(type: 'mediaKeySystemInfoUpdate', callback: Callback<Array<drm.MediaKeySystemInfo>>))event is successfully triggered.
+Obtains the media key system information of the media asset that is being played. This API can be called only after the [on('mediaKeySystemInfoUpdate')](media.AVPlayer.on(type: 'mediaKeySystemInfoUpdate', callback: Callback&lt;Array<drm.MediaKeySystemInfo>&gt;&lt;drm.MediaKeySystemInfo&gt;>))event is successfully triggered.
 
 **Since:** 11
 
@@ -454,7 +440,6 @@ Obtains the media key system information of the media asset that is being played
 | --- | --- |
 | Array&lt;drm.MediaKeySystemInfo&gt; | Array of MediaKeySystemInfo objects, each of which contains the **uuid** and **pssh** properties. If the return value is undefined, the mediaKeySystemInfoUpdate event is not triggered. |
 
-<a id="getmediasources"></a>
 ## getMediaSources
 
 ```TypeScript
@@ -485,7 +470,6 @@ Return the array of mediasources in the playlist.
 | --- | --- |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
 
-<a id="getplaybackinfo"></a>
 ## getPlaybackInfo
 
 ```TypeScript
@@ -506,7 +490,6 @@ Obtains the playback information. This API can be called only when the AVPlayer 
 | --- | --- |
 | Promise&lt;PlaybackInfo&gt; | Promise used to return **PlaybackInfo**. |
 
-<a id="getplaybackposition"></a>
 ## getPlaybackPosition
 
 ```TypeScript
@@ -535,7 +518,6 @@ Obtains the current playback position. This API can be called only when the AVPl
 | --- | --- |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. |
 
-<a id="getplaybackrate"></a>
 ## getPlaybackRate
 
 ```TypeScript
@@ -556,7 +538,6 @@ Obtains the playback speed of an AVPlayer. This API uses a promise to return the
 | --- | --- |
 | Promise&lt;number&gt; | Promise object, which returns the playback speed. |
 
-<a id="getplaybackstatisticmetrics"></a>
 ## getPlaybackStatisticMetrics
 
 ```TypeScript
@@ -577,7 +558,6 @@ Obtains the statistic metrics of the current player. This API can be called when
 | --- | --- |
 | Promise&lt;PlaybackMetrics&gt; | Promise used to return the playback metrics of the current AVPlayer. |
 
-<a id="getseekabletimeranges"></a>
 ## getSeekableTimeRanges
 
 ```TypeScript
@@ -585,7 +565,6 @@ getSeekableTimeRanges(): Promise<Array<Range>>
 ```
 
 Obtains the list of seekable time ranges. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > - For local media resources and media resources that support segment-based requests, the time range is from 0  
@@ -607,7 +586,6 @@ Obtains the list of seekable time ranges. This API uses a promise to return the 
 | --- | --- |
 | Promise&lt;Array&lt;Range&gt;&gt; | Promise used to return the list of seekable time ranges on the player.<br>The time range is represented by the **[start, end]** position on the playback timeline, in milliseconds. |
 
-<a id="getselectedtracks"></a>
 ## getSelectedTracks
 
 ```TypeScript
@@ -636,7 +614,6 @@ Obtains the indexes of the selected audio or video tracks. This API can be calle
 | --- | --- |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. |
 
-<a id="gettrackdescription"></a>
 ## getTrackDescription
 
 ```TypeScript
@@ -665,7 +642,6 @@ Obtains the audio and video track information. This API can be called only when 
 | --- | --- |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by callback. |
 
-<a id="gettrackdescription-1"></a>
 ## getTrackDescription
 
 ```TypeScript
@@ -694,7 +670,6 @@ Obtains the audio and video track information. This API can be called only when 
 | --- | --- |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
 
-<a id="gettrackselectionfilter"></a>
 ## getTrackSelectionFilter
 
 ```TypeScript
@@ -723,14 +698,13 @@ Obtains the track selection filter configured for the player. This API uses a pr
 | --- | --- |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. |
 
-<a id="isseekcontinuoussupported"></a>
 ## isSeekContinuousSupported
 
 ```TypeScript
 isSeekContinuousSupported() : boolean
 ```
 
-Checks whether the media source supports [seek](arkts-media-media-avplayer-i.md#seek-1) in SEEK_CONTINUOUS mode (specified by [SeekMode](arkts-media-media-seekmode-e.md)). The actual value is returned when this API is called in the prepared, playing, paused, or completed state. The value **false** is returned if it is called in other states. For devices that do not support the seek operation in SEEK_CONTINUOUS mode, **false** is returned.
+Checks whether the media source supports [seek](arkts-media-media-avplayer-i.md#seek) in SEEK_CONTINUOUS mode (specified by [SeekMode](arkts-media-media-seekmode-e.md)). The actual value is returned when this API is called in the prepared, playing, paused, or completed state. The value **false** is returned if it is called in other states. For devices that do not support the seek operation in SEEK_CONTINUOUS mode, **false** is returned.
 
 **Since:** 18
 
@@ -746,7 +720,6 @@ Checks whether the media source supports [seek](arkts-media-media-avplayer-i.md#
 | --- | --- |
 | boolean | Check result for the support of the seek operation in **SEEK_CONTINUOUS** mode. **true** to support, **false** otherwise. |
 
-<a id="off"></a>
 ## off('mediaKeySystemInfoUpdate')
 
 ```TypeScript
@@ -770,7 +743,6 @@ Unsubscribes from media key system information changes.
 | type | 'mediaKeySystemInfoUpdate' | Yes | Event type, which is **'mediaKeySystemInfoUpdate'** in this case. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;drm.MediaKeySystemInfo&gt;&gt; | No | Callback invoked when the event is triggered. It reports a **MediaKeySystemInfo** array. If this parameter is specified, only the specified callback is unregistered. Otherwise, all callbacks associated with the **mediaKeySystemInfoUpdate** event will be unregistered.<br>**Since:** 12 |
 
-<a id="off-1"></a>
 ## off('stateChange')
 
 ```TypeScript
@@ -794,7 +766,6 @@ Unsubscribes from [AVPlayerState](arkts-media-media-avplayerstate-t.md) state ch
 | type | 'stateChange' | Yes | Event type, which is **'stateChange'** in this case. |
 | callback | [OnAVPlayerStateChangeHandle](arkts-media-media-onavplayerstatechangehandle-t.md) | No | Callback invoked when the event is triggered. If this parameter is specified, only the specified callback is unregistered. Otherwise, all callbacks associated with the **stateChange** event will be unregistered.<br>**Since:** 12 |
 
-<a id="off-2"></a>
 ## off('volumeChange')
 
 ```TypeScript
@@ -818,7 +789,6 @@ Unsubscribes from the event that checks whether the volume is successfully set.
 | type | 'volumeChange' | Yes | Event type, which is **'volumeChange'** in this case. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | No | Callback invoked when the event is triggered. It reports the effective volume. If this parameter is specified, only the specified callback is unregistered. Otherwise, all callbacks associated with the **volumeChange** event will be unregistered.<br>**Since:** 12 |
 
-<a id="off-3"></a>
 ## off('endOfStream')
 
 ```TypeScript
@@ -842,7 +812,6 @@ Unsubscribes from the event that indicates the end of the stream being played.
 | type | 'endOfStream' | Yes | Event type, which is **'endOfStream'** in this case. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | Callback invoked when the event is triggered. If this parameter is specified, only the specified callback is unregistered. Otherwise, all callbacks associated with the **endOfStream** event will be unregistered.<br>**Since:** 19 |
 
-<a id="off-4"></a>
 ## off('seekDone')
 
 ```TypeScript
@@ -866,7 +835,6 @@ Unsubscribes from the event that checks whether the seek operation takes effect.
 | type | 'seekDone' | Yes | Event type, which is **'seekDone'** in this case. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | No | Callback invoked when the event is triggered. It reports the time position requested by the user.<br>For video playback, [SeekMode](arkts-media-media-seekmode-e.md) may cause the actual position to be different from that requested by the user. The exact position can be obtained from the **currentTime** property. The time in this callback only means that the requested seek operation is complete. If this parameter is specified, only the specified callback is unregistered. Otherwise, all callbacks associated with the **seekDone** event will be unregistered.<br>**Since:** 12 |
 
-<a id="off-5"></a>
 ## off('speedDone')
 
 ```TypeScript
@@ -890,14 +858,13 @@ Unsubscribes from the event that checks whether the playback speed is successful
 | type | 'speedDone' | Yes | Event type, which is **'speedDone'** in this case. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | No | Callback used to return the result. When the call of **setSpeed** is successful, the effective speed mode is reported. For details, see [PlaybackSpeed](arkts-media-media-playbackspeed-e.md). If this parameter is specified, only the specified callback is unregistered. Otherwise, all callbacks associated with the **speedDone** event will be unregistered.<br>**Since:** 12 |
 
-<a id="off-6"></a>
 ## off('playbackRateDone')
 
 ```TypeScript
 off(type: 'playbackRateDone', callback?: OnPlaybackRateDone): void
 ```
 
-Unsubscribes from the event indicating that the playback rate set by calling [setPlaybackRate](arkts-media-media-avplayer-i.md#setplaybackrate-1) is applied.
+Unsubscribes from the event indicating that the playback rate set by calling [setPlaybackRate](arkts-media-media-avplayer-i.md#setplaybackrate) is applied.
 
 **Since:** 20
 
@@ -914,7 +881,6 @@ Unsubscribes from the event indicating that the playback rate set by calling [se
 | type | 'playbackRateDone' | Yes | Event type, which is **'playbackRateDone'** in this case. |
 | callback | [OnPlaybackRateDone](arkts-media-media-onplaybackratedone-t.md) | No | Callback invoked when the event is triggered. It reports the new playback rate. If this parameter is specified, only the specified callback is unregistered. Otherwise, all callbacks associated with the **playbackRateDone** event will be unregistered. |
 
-<a id="off-7"></a>
 ## off('bitrateDone')
 
 ```TypeScript
@@ -938,7 +904,6 @@ Unsubscribes from the event that checks whether the bitrate is successfully set.
 | type | 'bitrateDone' | Yes | Event type, which is **'bitrateDone'** in this case. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | No | Callback invoked when the event is triggered. It reports the effective bitrate, in bit/s. If this parameter is specified, only the specified callback is unregistered. Otherwise, all callbacks associated with the **bitrateDone** event will be unregistered.<br>**Since:** 19 |
 
-<a id="off-8"></a>
 ## off('timeUpdate')
 
 ```TypeScript
@@ -962,7 +927,6 @@ Unsubscribes from playback position changes.
 | type | 'timeUpdate' | Yes | Event type, which is **'timeUpdate'** in this case. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | No | Callback used to return the current time. If this parameter is specified,only the specified callback is unregistered. Otherwise, all callbacks associated with the **timeUpdate** event will be unregistered.<br>**Since:** 12 |
 
-<a id="off-9"></a>
 ## off('durationUpdate')
 
 ```TypeScript
@@ -986,7 +950,6 @@ Unsubscribes from media asset duration changes.
 | type | 'durationUpdate' | Yes | Event type, which is **'durationUpdate'** in this case. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | No | Callback used to return the resource duration. If this parameter is specified, only the specified callback is unregistered. Otherwise, all callbacks associated with the **durationUpdate** event will be unregistered.<br>**Since:** 19 |
 
-<a id="off-10"></a>
 ## off('bufferingUpdate')
 
 ```TypeScript
@@ -1010,7 +973,6 @@ Unsubscribes from audio and video buffer changes.
 | type | 'bufferingUpdate' | Yes | Event type, which is **'bufferingUpdate'** in this case. |
 | callback | [OnBufferingUpdateHandler](arkts-media-media-onbufferingupdatehandler-t.md) | No | Callback invoked when the event is triggered. If this parameter is specified, only the specified callback is unregistered. Otherwise, all callbacks associated with the **bufferingUpdate** event will be unregistered.<br>**Since:** 12 |
 
-<a id="off-11"></a>
 ## off('startRenderFrame')
 
 ```TypeScript
@@ -1034,7 +996,6 @@ Unsubscribes from the event that indicates rendering starts for the first frame.
 | type | 'startRenderFrame' | Yes | Event type, which is **'startRenderFrame'** in this case. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | No | Callback invoked when the event is triggered. If this parameter is specified, only the specified callback is unregistered. Otherwise, all callbacks associated with the **startRenderFrame** event will be unregistered.<br>**Since:** 19 |
 
-<a id="off-12"></a>
 ## off('videoSizeChange')
 
 ```TypeScript
@@ -1058,7 +1019,6 @@ Unsubscribes from video size changes.
 | type | 'videoSizeChange' | Yes | Event type, which is **'videoSizeChange'** in this case. |
 | callback | [OnVideoSizeChangeHandler](arkts-media-media-onvideosizechangehandler-t.md) | No | Callback invoked when the event is triggered. If this parameter is specified, only the specified callback is unregistered. Otherwise, all callbacks associated with the **videoSizeChange** event will be unregistered.<br>**Since:** 12 |
 
-<a id="off-13"></a>
 ## off('audioInterrupt')
 
 ```TypeScript
@@ -1082,14 +1042,13 @@ Unsubscribes from the audio interruption event.
 | type | 'audioInterrupt' | Yes | Event type, which is **'audioInterrupt'** in this case. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;audio.InterruptEvent&gt; | No | Callback invoked when the event is triggered. If this parameter is specified, only the specified callback is unregistered. Otherwise, all callbacks associated with the **audioInterrupt** event will be unregistered.<br>**Since:** 12 |
 
-<a id="off-14"></a>
 ## off('availableBitrates')
 
 ```TypeScript
 off(type: 'availableBitrates', callback?: Callback<Array<number>>): void
 ```
 
-Unsubscribes from available bitrates of HLS/DASH streams. This event is reported after [prepare](arkts-media-media-avplayer-i.md#prepare-1) is called.
+Unsubscribes from available bitrates of HLS/DASH streams. This event is reported after [prepare](arkts-media-media-avplayer-i.md#prepare) is called.
 
 **Since:** 9
 
@@ -1106,7 +1065,6 @@ Unsubscribes from available bitrates of HLS/DASH streams. This event is reported
 | type | 'availableBitrates' | Yes | Event type, which is **'availableBitrates'** in this case. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;number&gt;&gt; | No | Callback invoked when the event is triggered. It returns an array that holds the available bitrates, in bit/s. If the array length is 0, no bitrate can be set. If this parameter is specified, only the specified callback is unregistered. Otherwise, all callbacks associated with the **availableBitrates** event will be unregistered.<br>**Since:** 12 |
 
-<a id="off-15"></a>
 ## off('error')
 
 ```TypeScript
@@ -1130,7 +1088,6 @@ Unsubscribes from AVPlayer errors.
 | type | 'error' | Yes | Event type, which is **'error'** in this case. |
 | callback | [ErrorCallback](../../apis-arkui/arkts-components/arkts-arkui-errorcallback-t-sys.md) | No | Callback used to return the error code ID and error message. If this parameter is specified, only the specified callback is unregistered. Otherwise, all callbacks associated with the **error** event will be unregistered.<br>**Since:** 12 |
 
-<a id="off-16"></a>
 ## off('audioOutputDeviceChangeWithInfo')
 
 ```TypeScript
@@ -1160,7 +1117,6 @@ Unsubscribes from audio stream output device changes and reasons. This API uses 
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 
-<a id="off-17"></a>
 ## off('subtitleUpdate')
 
 ```TypeScript
@@ -1184,7 +1140,6 @@ Unsubscribes from subtitle update events.
 | type | 'subtitleUpdate' | Yes | Event type, which is **'subtitleUpdate'** in this case. The event is triggered when the external subtitle is updated. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SubtitleInfo&gt; | No | Callback that has been registered to listen for subtitle update events. If this parameter is specified, only the specified callback is unregistered. Otherwise, all callbacks associated with the **subtitleUpdate** event will be unregistered. |
 
-<a id="off-18"></a>
 ## off('trackChange')
 
 ```TypeScript
@@ -1208,7 +1163,6 @@ Unsubscribes from track change events.
 | type | 'trackChange' | Yes | Event type, which is **'trackChange'** in this case. The event is triggered when the track changes. |
 | callback | [OnTrackChangeHandler](arkts-media-media-ontrackchangehandler-t.md) | No | Callback that has been registered to listen for track changes. If this parameter is specified, only the specified callback is unregistered. Otherwise, all callbacks associated with the **trackChange** event will be unregistered. |
 
-<a id="off-19"></a>
 ## off('trackInfoUpdate')
 
 ```TypeScript
@@ -1232,7 +1186,6 @@ Unsubscribes from track information update events.
 | type | 'trackInfoUpdate' | Yes | Event type, which is **'trackInfoUpdate'** in this case. The event is triggered when the track information is updated. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;MediaDescription&gt;&gt; | No | Callback that has been registered to listen for track information updates. If this parameter is specified, only the specified callback is unregistered. Otherwise,all callbacks associated with the **trackInfoUpdate** event will be unregistered. |
 
-<a id="off-20"></a>
 ## off('amplitudeUpdate')
 
 ```TypeScript
@@ -1254,7 +1207,6 @@ Unsubscribes from update events of the maximum amplitude.
 | type | 'amplitudeUpdate' | Yes | Event type, which is **'amplitudeUpdate'** in this case. The event is triggered when the amplitude changes. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;number&gt;&gt; | No | Callback that has been registered to listen for amplitude updates.If this parameter is specified, only the specified callback is unregistered. Otherwise, all callbacks associated with the **amplitudeUpdate** event will be unregistered. |
 
-<a id="off-21"></a>
 ## off('seiMessageReceived')
 
 ```TypeScript
@@ -1279,7 +1231,6 @@ Unsubscribes from the events indicating that an SEI message is received.
 | payloadTypes | Array&lt;number&gt; | No | Array of subscribed-to payload types of SEI messages. |
 | callback | [OnSeiMessageHandle](arkts-media-media-onseimessagehandle-t.md) | No | Callback used to listen for SEI message events and receive the subscribed-to payload types. If this parameter is specified, only the specified callback is unregistered.Otherwise, all callbacks associated with the **seiMessageReceived** event will be unregistered. |
 
-<a id="off-22"></a>
 ## off('superResolutionChanged')
 
 ```TypeScript
@@ -1303,7 +1254,6 @@ Unsubscribes from the event indicating that super resolution is enabled or disab
 | type | 'superResolutionChanged' | Yes | Event type, which is **'superResolutionChanged'** in this case. The event is triggered when super resolution is enabled or disabled. |
 | callback | [OnSuperResolutionChanged](arkts-media-media-onsuperresolutionchanged-t.md) | No | Callback used to listen for super resolution status changes. If this parameter is specified, only the specified callback is unregistered. Otherwise, all callbacks associated with the **superResolutionChanged** event will be unregistered. |
 
-<a id="offmetricsevent"></a>
 ## offMetricsEvent
 
 ```TypeScript
@@ -1324,7 +1274,6 @@ Unsubscribes from metric events during playback.
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;AVMetricsEvent&gt;&gt; | No | Callback invoked for metric events. This API uses an asynchronous callback to return the result. |
 
-<a id="offplaybackcontentchanged"></a>
 ## offPlaybackContentChanged
 
 ```TypeScript
@@ -1349,7 +1298,6 @@ Unregisters listener to detect when changes occur in the playback content.
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;string&gt; | No | Callback invoked when the event is triggered.<br>Default value:If this parameter is not specified, all callback functions for the event are unsubscribed. |
 
-<a id="offtimedmetadata"></a>
 ## offTimedMetaData
 
 ```TypeScript
@@ -1374,7 +1322,6 @@ Unregister listener to detect time-based metadata,Currently, only the #EXT-X-DAT
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AVTimedMetaData&gt; | No | Callback invoked when the event is triggered.<br>Default value:If this parameter is not specified, all callback functions for the event are unsubscribed. |
 
-<a id="on"></a>
 ## on('mediaKeySystemInfoUpdate')
 
 ```TypeScript
@@ -1398,7 +1345,6 @@ Subscribes to media key system information changes.
 | type | 'mediaKeySystemInfoUpdate' | Yes | Event type, which is **'mediaKeySystemInfoUpdate'** in this case.This event is triggered when the copyright protection information of the media asset being played changes. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;drm.MediaKeySystemInfo&gt;&gt; | Yes | Callback invoked when the event is triggered. It reports a **MediaKeySystemInfo** array.<br>**Since:** 12 |
 
-<a id="on-1"></a>
 ## on('stateChange')
 
 ```TypeScript
@@ -1422,7 +1368,6 @@ Subscribes to AVPlayer state changes.
 | type | 'stateChange' | Yes | Event type, which is **'stateChange'** in this case. This event can be triggered by both user operations and the system. |
 | callback | [OnAVPlayerStateChangeHandle](arkts-media-media-onavplayerstatechangehandle-t.md) | Yes | Callback invoked when the event is triggered.<br>**Since:** 12 |
 
-<a id="on-2"></a>
 ## on('volumeChange')
 
 ```TypeScript
@@ -1446,14 +1391,13 @@ Subscribes to the event to check whether the volume is successfully set.
 | type | 'volumeChange' | Yes | Event type, which is **'volumeChange'** in this case. This event is triggered each time **setVolume()** is called. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | Yes | Callback invoked when the event is triggered. It reports the effective volume. |
 
-<a id="on-3"></a>
 ## on('endOfStream')
 
 ```TypeScript
 on(type: 'endOfStream', callback: Callback<void>): void
 ```
 
-Subscribes to the event that indicates the end of the stream being played. If **[loop](docroot://reference/apis-media-kit/arkts-apis-media-AVPlayer.md#properties) = true** is set, the AVPlayer seeks to the beginning of the stream and plays the stream again. If **loop** is not set, the completed state is reported through the [stateChange](media.AVPlayer.on(type: 'stateChange', callback: OnAVPlayerStateChangeHandle)) event.
+Subscribes to the event that indicates the end of the stream being played. If **[loop](../../../reference/apis-media-kit/arkts-apis-media-AVPlayer.md#properties) = true** is set, the AVPlayer seeks to the beginning of the stream and plays the stream again. If **loop** is not set, the completed state is reported through the [stateChange](media.AVPlayer.on(type: 'stateChange', callback: OnAVPlayerStateChangeHandle)) event.
 
 **Since:** 9
 
@@ -1470,7 +1414,6 @@ Subscribes to the event that indicates the end of the stream being played. If **
 | type | 'endOfStream' | Yes | Event type, which is **'endOfStream'** in this case. This event is triggered when the AVPlayer finishes playing the media asset. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | Callback invoked when the event is triggered. |
 
-<a id="on-4"></a>
 ## on('seekDone')
 
 ```TypeScript
@@ -1494,7 +1437,6 @@ Subscribes to the event to check whether the seek operation takes effect.
 | type | 'seekDone' | Yes | Event type, which is **'seekDone'** in this case. This event is triggered each time **seek()** is called, except in SEEK_CONTINUOUS mode. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | Yes | Callback invoked when the event is triggered. It reports the time position requested by the user.<br>For video playback, [SeekMode](arkts-media-media-seekmode-e.md) may cause the actual position to be different from that requested by the user. The exact position can be obtained from the **currentTime** property. The time in this callback only means that the requested seek operation is complete. |
 
-<a id="on-5"></a>
 ## on('speedDone')
 
 ```TypeScript
@@ -1518,14 +1460,13 @@ Subscribes to the event to check whether the playback speed is successfully set.
 | type | 'speedDone' | Yes | Event type, which is **'speedDone'** in this case. This event is triggered each time **setSpeed()** is called. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | Yes | Callback used to return the result. When the call of **setSpeed** is successful, the effective speed mode is reported. For details, see [PlaybackSpeed](arkts-media-media-playbackspeed-e.md). |
 
-<a id="on-6"></a>
 ## on('playbackRateDone')
 
 ```TypeScript
 on(type: 'playbackRateDone', callback: OnPlaybackRateDone): void
 ```
 
-Subscribes to the event indicating that the playback rate set by calling [setPlaybackRate](arkts-media-media-avplayer-i.md#setplaybackrate-1) is applied.
+Subscribes to the event indicating that the playback rate set by calling [setPlaybackRate](arkts-media-media-avplayer-i.md#setplaybackrate) is applied.
 
 **Since:** 20
 
@@ -1542,7 +1483,6 @@ Subscribes to the event indicating that the playback rate set by calling [setPla
 | type | 'playbackRateDone' | Yes | Event type, which is **'playbackRateDone'** in this case. This event is triggered each time **setPlaybackRate** is called. |
 | callback | [OnPlaybackRateDone](arkts-media-media-onplaybackratedone-t.md) | Yes | Callback invoked when the event is triggered. It reports the new playback rate. |
 
-<a id="on-7"></a>
 ## on('bitrateDone')
 
 ```TypeScript
@@ -1566,7 +1506,6 @@ Subscribes to the event to check whether the bitrate is successfully set.
 | type | 'bitrateDone' | Yes | Event type, which is **'bitrateDone'** in this case. This event is triggered each time **setBitrate()** is called. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | Yes | Callback invoked when the event is triggered. It reports the effective bitrate, in bit/s. |
 
-<a id="on-8"></a>
 ## on('timeUpdate')
 
 ```TypeScript
@@ -1574,7 +1513,6 @@ on(type: 'timeUpdate', callback: Callback<number>): void
 ```
 
 Subscribes to playback position changes. It is used to refresh the current position of the progress bar. By default, this event is reported every 100 ms. However, it is reported immediately upon a successful seek operation.
-
 > **NOTE**  
 >  
 > - The **'timeUpdate'** event is not supported in live streaming scenarios.  
@@ -1599,7 +1537,6 @@ Subscribes to playback position changes. It is used to refresh the current posit
 | type | 'timeUpdate' | Yes | Event type, which is **'timeUpdate'** in this case. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | Yes | Callback used to return the current time. |
 
-<a id="on-9"></a>
 ## on('durationUpdate')
 
 ```TypeScript
@@ -1607,7 +1544,6 @@ on(type: 'durationUpdate', callback: Callback<number>): void
 ```
 
 Subscribes to media asset duration changes. It is used to refresh the length of the progress bar. By default,this event is reported once in the prepared state. However, it can be repeatedly reported for special streams that trigger duration changes.
-
 > **NOTE**  
 >  
 > The **durationUpdate** event is not supported in live streaming scenarios.
@@ -1627,7 +1563,6 @@ Subscribes to media asset duration changes. It is used to refresh the length of 
 | type | 'durationUpdate' | Yes | Event type, which is **'durationUpdate'** in this case. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;number&gt; | Yes | Callback used to return the resource duration. |
 
-<a id="on-10"></a>
 ## on('bufferingUpdate')
 
 ```TypeScript
@@ -1651,7 +1586,6 @@ Subscribes to audio and video buffer changes. This subscription is supported onl
 | type | 'bufferingUpdate' | Yes | Event type, which is **'bufferingUpdate'** in this case. |
 | callback | [OnBufferingUpdateHandler](arkts-media-media-onbufferingupdatehandler-t.md) | Yes | Callback invoked when the event is triggered.<br>**Since:** 12 |
 
-<a id="on-11"></a>
 ## on('startRenderFrame')
 
 ```TypeScript
@@ -1675,7 +1609,6 @@ Subscribes to the event that indicates rendering starts for the first frame. Thi
 | type | 'startRenderFrame' | Yes | Event type, which is **'startRenderFrame'** in this case. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;void&gt; | Yes | Callback invoked when the event is triggered. |
 
-<a id="on-12"></a>
 ## on('videoSizeChange')
 
 ```TypeScript
@@ -1699,14 +1632,13 @@ Subscribes to video size (width and height) changes. This subscription is suppor
 | type | 'videoSizeChange' | Yes | Event type, which is **'videoSizeChange'** in this case. |
 | callback | [OnVideoSizeChangeHandler](arkts-media-media-onvideosizechangehandler-t.md) | Yes | Callback invoked when the event is triggered.<br>**Since:** 12 |
 
-<a id="on-13"></a>
 ## on('audioInterrupt')
 
 ```TypeScript
 on(type: 'audioInterrupt', callback: Callback<audio.InterruptEvent>): void
 ```
 
-Subscribes to the audio interruption event. When multiple audio and video assets are played at the same time,this event is triggered based on the audio interruption mode [audio.InterruptMode](../../apis-audio-kit/arkts-apis/arkts-audio-audio-interruptmode-e.md). The application needs to perform corresponding processing based on different audio interruption events. For details, see [Handling Audio Interruption Events](docroot://media/audio/audio-playback-concurrency.md).
+Subscribes to the audio interruption event. When multiple audio and video assets are played at the same time,this event is triggered based on the audio interruption mode [audio.InterruptMode](../../apis-audio-kit/arkts-apis/arkts-audio-audio-interruptmode-e.md). The application needs to perform corresponding processing based on different audio interruption events. For details, see [Handling Audio Interruption Events](../../../media/audio/audio-playback-concurrency.md).
 
 **Since:** 9
 
@@ -1723,7 +1655,6 @@ Subscribes to the audio interruption event. When multiple audio and video assets
 | type | 'audioInterrupt' | Yes | Event type, which is **'audioInterrupt'** in this case. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;audio.InterruptEvent&gt; | Yes | Callback invoked when the event is triggered.<br>**Since:** 12 |
 
-<a id="on-14"></a>
 ## on('availableBitrates')
 
 ```TypeScript
@@ -1747,14 +1678,13 @@ Subscribes to available bitrates of HLS/DASH streams. This event is reported onl
 | type | 'availableBitrates' | Yes | Event type, which is **'availableBitrates'** in this case. This event is triggered once after the AVPlayer switches to the prepared state. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;number&gt;&gt; | Yes | Callback invoked when the event is triggered. It returns an array that holds the available bitrates, in bit/s. If the array length is 0, no bitrate can be set.<br>**Since:** 12 |
 
-<a id="on-15"></a>
 ## on('error')
 
 ```TypeScript
 on(type: 'error', callback: ErrorCallback): void
 ```
 
-Subscribes to [AVPlayer](arkts-multimedia-media.md) errors. This event is used only for error prompt and does not require the user to stop playback control. If the [AVPlayerState](arkts-media-media-avplayerstate-t.md) is also switched to error, call [reset()](arkts-media-media-avplayer-i.md#reset-1) or [release()](arkts-media-media-avplayer-i.md#release-1) to exit the playback. If the playback remains in the error state after the [reset()](arkts-media-media-avplayer-i.md#reset-1) method is called, you are advised to directly invoke the [release()](arkts-media-media-avplayer-i.md#release-1) method to exit the playback operation.
+Subscribes to [AVPlayer](arkts-multimedia-media.md) errors. This event is used only for error prompt and does not require the user to stop playback control. If the [AVPlayerState](arkts-media-media-avplayerstate-t.md) is also switched to error, call [reset()](arkts-media-media-avplayer-i.md#reset) or [release()](arkts-media-media-avplayer-i.md#release) to exit the playback. If the playback remains in the error state after the [reset()](arkts-media-media-avplayer-i.md#reset) method is called, you are advised to directly invoke the [release()](arkts-media-media-avplayer-i.md#release) method to exit the playback operation.
 
 **Since:** 9
 
@@ -1798,7 +1728,6 @@ Subscribes to [AVPlayer](arkts-multimedia-media.md) errors. This event is used o
 | [5410002](../errorcode-media.md#5410002-seek-in-seekcontinuous-mode-is-not-supported) | Seek continuous unsupported.<br>**Applicable version:** 18 and later |
 | [5411012](../errorcode-media.md#5411012-request-not-supported-due-to-http-plaintext-interception) | Http cleartext traffic is not permitted.<br>**Applicable version:** 23 and later |
 
-<a id="on-16"></a>
 ## on('audioOutputDeviceChangeWithInfo')
 
 ```TypeScript
@@ -1807,7 +1736,7 @@ on(type: 'audioOutputDeviceChangeWithInfo', callback: Callback<audio.AudioStream
 
 Subscribes to audio stream output device changes and reasons. This API uses an asynchronous callback to return the result.
 
-When subscribing to this event, you are advised to implement the player behavior when the device is connected or disconnected by referring to [Handling Output Device Changes Gracefully](docroot://media/audio/audio-output-device-change.md).
+When subscribing to this event, you are advised to implement the player behavior when the device is connected or disconnected by referring to [Handling Output Device Changes Gracefully](../../../media/audio/audio-output-device-change.md).
 
 **Since:** 11
 
@@ -1830,7 +1759,6 @@ When subscribing to this event, you are advised to implement the player behavior
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 
-<a id="on-17"></a>
 ## on('subtitleUpdate')
 
 ```TypeScript
@@ -1854,7 +1782,6 @@ Subscribes to subtitle update events. When external subtitles exist, the system 
 | type | 'subtitleUpdate' | Yes | Event type, which is **'subtitleUpdate'** in this case. The event is triggered when the external subtitle is updated. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;SubtitleInfo&gt; | Yes | Callback invoked when the subtitle is updated. |
 
-<a id="on-18"></a>
 ## on('trackChange')
 
 ```TypeScript
@@ -1878,7 +1805,6 @@ Subscribes to track change events. When the track changes, the system notifies t
 | type | 'trackChange' | Yes | Event type, which is **'trackChange'** in this case. The event is triggered when the track changes. |
 | callback | [OnTrackChangeHandler](arkts-media-media-ontrackchangehandler-t.md) | Yes | Callback invoked when the event is triggered. |
 
-<a id="on-19"></a>
 ## on('trackInfoUpdate')
 
 ```TypeScript
@@ -1902,7 +1828,6 @@ Subscribes to track information update events. When the track information is upd
 | type | 'trackInfoUpdate' | Yes | Event type, which is **'trackInfoUpdate'** in this case. The event is triggered when the track information is updated. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;MediaDescription&gt;&gt; | Yes | Callback invoked when the event is triggered. |
 
-<a id="on-20"></a>
 ## on('amplitudeUpdate')
 
 ```TypeScript
@@ -1924,7 +1849,6 @@ Subscribes to update events of the maximum audio level value, which is periodica
 | type | 'amplitudeUpdate' | Yes | Event type, which is **'amplitudeUpdate'** in this case. The event is triggered when the amplitude changes. |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;number&gt;&gt; | Yes | Callback invoked when the event is triggered. |
 
-<a id="on-21"></a>
 ## on('seiMessageReceived')
 
 ```TypeScript
@@ -1949,7 +1873,6 @@ Subscribes to events indicating that a Supplemental Enhancement Information (SEI
 | payloadTypes | Array&lt;number&gt; | Yes | Array of subscribed-to payload types of SEI messages. Currently, only payloadType = 5 is supported. |
 | callback | [OnSeiMessageHandle](arkts-media-media-onseimessagehandle-t.md) | Yes | Callback used to listen for SEI message events and receive the subscribed-to payload types. |
 
-<a id="on-22"></a>
 ## on('superResolutionChanged')
 
 ```TypeScript
@@ -1973,7 +1896,6 @@ Subscribes to the event indicating that super resolution is enabled or disabled.
 | type | 'superResolutionChanged' | Yes | Event type, which is **'superResolutionChanged'** in this case. The event is triggered when super resolution is enabled or disabled. |
 | callback | [OnSuperResolutionChanged](arkts-media-media-onsuperresolutionchanged-t.md) | Yes | Callback used to listen for super resolution status changes. |
 
-<a id="onmetricsevent"></a>
 ## onMetricsEvent
 
 ```TypeScript
@@ -1994,7 +1916,6 @@ Subscribes to metric events during playback.
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;Array&lt;AVMetricsEvent&gt;&gt; | Yes | Callback invoked for metric events. This API uses an asynchronous callback to return the result. |
 
-<a id="onplaybackcontentchanged"></a>
 ## onPlaybackContentChanged
 
 ```TypeScript
@@ -2019,7 +1940,6 @@ Registers a listener to detect when the playback content has changed.The value c
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;string&gt; | Yes | Callback invoked when the event is triggered. |
 
-<a id="ontimedmetadata"></a>
 ## onTimedMetaData
 
 ```TypeScript
@@ -2044,7 +1964,6 @@ Register listener to detect time-based metadata,Currently, only the #EXT-X-DATER
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;AVTimedMetaData&gt; | Yes | Callback invoked when the event is triggered. |
 
-<a id="pause"></a>
 ## pause
 
 ```TypeScript
@@ -2073,7 +1992,6 @@ Pauses audio and video playback. This API can be called only when the AVPlayer i
 | --- | --- |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by callback. |
 
-<a id="pause-1"></a>
 ## pause
 
 ```TypeScript
@@ -2102,7 +2020,6 @@ Pauses audio and video playback. This API can be called only when the AVPlayer i
 | --- | --- |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
 
-<a id="play"></a>
 ## play
 
 ```TypeScript
@@ -2131,7 +2048,6 @@ Starts to play an audio and video asset. This API can be called only when the AV
 | --- | --- |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by callback. |
 
-<a id="play-1"></a>
 ## play
 
 ```TypeScript
@@ -2160,7 +2076,6 @@ Starts to play an audio and video asset. This API can be called only when the AV
 | --- | --- |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
 
-<a id="prepare"></a>
 ## prepare
 
 ```TypeScript
@@ -2190,7 +2105,6 @@ Prepares for audio and video playback. This API can be called only when the AVPl
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by callback. |
 | [5400106](../errorcode-media.md#5400106-format-not-supported) | Unsupported format. Return by callback. |
 
-<a id="prepare-1"></a>
 ## prepare
 
 ```TypeScript
@@ -2222,7 +2136,6 @@ If your application frequently switches between short videos, you can create mul
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
 | [5400106](../errorcode-media.md#5400106-format-not-supported) | Unsupported format. Return by promise. |
 
-<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -2251,7 +2164,6 @@ Releases the playback resources. This API can be called when the AVPlayer is in 
 | --- | --- |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by callback. |
 
-<a id="release-1"></a>
 ## release
 
 ```TypeScript
@@ -2280,7 +2192,6 @@ Releases the playback resources. This API can be called when the AVPlayer is in 
 | --- | --- |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
 
-<a id="removeplaybackmediasource"></a>
 ## removePlaybackMediaSource
 
 ```TypeScript
@@ -2318,7 +2229,6 @@ Removes the specified playback media source from the player's playlist.If the id
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
 | [5400108](../errorcode-media.md#5400108-parameter-value-out-of-range) | The media source ID does not exist in the playlist. Returned via promise. |
 
-<a id="reset"></a>
 ## reset
 
 ```TypeScript
@@ -2347,7 +2257,6 @@ Resets audio and video playback. This API can be called only when the AVPlayer i
 | --- | --- |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by callback. |
 
-<a id="reset-1"></a>
 ## reset
 
 ```TypeScript
@@ -2376,7 +2285,6 @@ Resets audio and video playback. This API can be called only when the AVPlayer i
 | --- | --- |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
 
-<a id="seek"></a>
 ## seek
 
 ```TypeScript
@@ -2384,7 +2292,6 @@ seek(timeMs: number, mode?: SeekMode): void
 ```
 
 Seeks to the specified playback position. This API can be called only when the AVPlayer is in the prepared,playing, paused, or completed state. You can check whether the seek operation takes effect by subscribing to the [on('seekDone')](media.AVPlayer.on(type: 'seekDone', callback: Callback<int>)) event.
-
 > **NOTE**  
 >  
 > Since API version 24, **seek** is supported in live streaming scenarios.
@@ -2403,10 +2310,9 @@ Seeks to the specified playback position. This API can be called only when the A
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| timeMs | number | Yes | Position to seek to, in ms. The value range is [0, [duration](docroot://reference/apis-media-kit/arkts-apis-media-AVPlayer.md#properties)].<br>When the seek mode is [SEEK_CONTINUOUS](arkts-media-media-seekmode-e.md), you can set this parameter to **-1** to end the **SEEK_CONTINUOUS** mode. |
+| timeMs | number | Yes | Position to seek to, in ms. The value range is [0, [duration](../../../reference/apis-media-kit/arkts-apis-media-AVPlayer.md#properties)].<br>When the seek mode is [SEEK_CONTINUOUS](arkts-media-media-seekmode-e.md), you can set this parameter to **-1** to end the **SEEK_CONTINUOUS** mode. |
 | mode | [SeekMode](arkts-media-media-seekmode-e.md) | No | Seek mode based on the video I frame. The default value is **SEEK_PREV_SYNC**.**Set this parameter only for video playback.** |
 
-<a id="seektodefaultposition"></a>
 ## seekToDefaultPosition
 
 ```TypeScript
@@ -2429,7 +2335,6 @@ Seeks to the default access point of the playback source. For live streams, the 
 | --- | --- |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by callback. |
 
-<a id="selecttrack"></a>
 ## selectTrack
 
 ```TypeScript
@@ -2452,7 +2357,7 @@ Selects a track when the AVPlayer plays multimedia resources with multiple audio
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| index | number | Yes | Index of the track. You can call [getTrackDescription](arkts-media-media-avplayer-i.md#gettrackdescription-1) to obtain all track information [MediaDescription](arkts-media-media-mediadescription-i.md) of the current resource. |
+| index | number | Yes | Index of the track. You can call [getTrackDescription](arkts-media-media-avplayer-i.md#gettrackdescription) to obtain all track information [MediaDescription](arkts-media-media-mediadescription-i.md) of the current resource. |
 | mode | [SwitchMode](arkts-media-media-switchmode-e.md) | No | Video track mode. The default mode is **SMOOTH**. This parameter takes effect only for DASH/HLS network stream video track switching.<br>HLS network stream video is supported since API version24.<br>**Since:** 26.0.0 |
 
 **Return value:**
@@ -2468,7 +2373,6 @@ Selects a track when the AVPlayer plays multimedia resources with multiple audio
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Return by promise. |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
 
-<a id="setbitrate"></a>
 ## setBitrate
 
 ```TypeScript
@@ -2489,16 +2393,15 @@ Sets the bitrate for the streaming media. This API is valid only for HLS/DASH st
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| bitrate | number | Yes | Bitrate to set. You can obtain the available bitrates of the current HLS/DASH stream by subscribing to the [availableBitrates](media.AVPlayer.on(type: 'availableBitrates', callback: Callback<Array<int>>))event. If the bitrate to set is not in the list of the available bitrates, the AVPlayer selects from the list the bitrate that is closed to the bitrate to set. If the length of the available bitrate list obtained through the event is 0, no bitrate can be set and the **bitrateDone** callback will not be triggered, in bit/s. |
+| bitrate | number | Yes | Bitrate to set. You can obtain the available bitrates of the current HLS/DASH stream by subscribing to the [availableBitrates](media.AVPlayer.on(type: 'availableBitrates', callback: Callback&lt;Array<int>&gt;))event. If the bitrate to set is not in the list of the available bitrates, the AVPlayer selects from the list the bitrate that is closed to the bitrate to set. If the length of the available bitrate list obtained through the event is 0, no bitrate can be set and the **bitrateDone** callback will not be triggered, in bit/s. |
 
-<a id="setdecryptionconfig"></a>
 ## setDecryptionConfig
 
 ```TypeScript
 setDecryptionConfig(mediaKeySession: drm.MediaKeySession, secureVideoPath: boolean): void
 ```
 
-Sets the decryption configuration. When receiving an [on('mediaKeySystemInfoUpdate')](media.AVPlayer.on(type: 'mediaKeySystemInfoUpdate', callback: Callback<Array<drm.MediaKeySystemInfo>>))event, create the related configuration and set the decryption configuration based on the information in the reported event. Otherwise, the playback fails.
+Sets the decryption configuration. When receiving an [on('mediaKeySystemInfoUpdate')](media.AVPlayer.on(type: 'mediaKeySystemInfoUpdate', callback: Callback&lt;Array<drm.MediaKeySystemInfo>&gt;&lt;drm.MediaKeySystemInfo&gt;>))event, create the related configuration and set the decryption configuration based on the information in the reported event. Otherwise, the playback fails.
 
 **Since:** 11
 
@@ -2521,7 +2424,6 @@ Sets the decryption configuration. When receiving an [on('mediaKeySystemInfoUpda
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 
-<a id="setloudnessgain"></a>
 ## setLoudnessGain
 
 ```TypeScript
@@ -2529,7 +2431,6 @@ setLoudnessGain(loudnessGain: number): Promise<void>
 ```
 
 Sets the loudness gain of the AVPlayer. After this API is called, the loudness gain takes effect immediately. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > - This API can be called when the AVPlayer is in the prepared, playing, paused, completed, or stopped state.  
@@ -2558,7 +2459,6 @@ Sets the loudness gain of the AVPlayer. After this API is called, the loudness g
 | --- | --- |
 | Promise&lt;void&gt; | Promise that returns no value. |
 
-<a id="setmediamuted"></a>
 ## setMediaMuted
 
 ```TypeScript
@@ -2597,7 +2497,6 @@ This API can be called only when the AVPlayer is in the prepared, playing, pause
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Return by promise. |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
 
-<a id="setmediasource"></a>
 ## setMediaSource
 
 ```TypeScript
@@ -2634,7 +2533,6 @@ Sets a source of streaming media that can be pre-downloaded, downloads the media
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified.<br>2. Incorrect parameter types. 3.Parameter verification failed. |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
 
-<a id="setplaybackrange"></a>
 ## setPlaybackRange
 
 ```TypeScript
@@ -2672,7 +2570,6 @@ Sets the playback range and seeks to the start position of the range based on th
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | The parameter check failed. Return by promise. |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
 
-<a id="setplaybackrate"></a>
 ## setPlaybackRate
 
 ```TypeScript
@@ -2680,7 +2577,6 @@ setPlaybackRate(rate: number): void
 ```
 
 Sets the playback rate. This API can be called only when the AVPlayer is in the prepared, playing, paused, or completed state. The value range is [0.125, 4.0]. You can check whether the setting takes effect through the [playbackRateDone](media.AVPlayer.on(type: 'playbackRateDone', callback: OnPlaybackRateDone)) event.
-
 > **NOTE**  
 >  
 > This API is not supported in live mode.
@@ -2706,7 +2602,6 @@ Sets the playback rate. This API can be called only when the AVPlayer is in the 
 | [5400108](../errorcode-media.md#5400108-parameter-value-out-of-range) | The parameter check failed, parameter value out of range. |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed, if invalid state or live stream. |
 
-<a id="setplaybackstrategy"></a>
 ## setPlaybackStrategy
 
 ```TypeScript
@@ -2742,7 +2637,6 @@ Sets a playback strategy. This API can be called only when the AVPlayer is in th
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Incorrect parameter types. 2. Parameter verification failed. |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by promise. |
 
-<a id="setspeed"></a>
 ## setSpeed
 
 ```TypeScript
@@ -2750,7 +2644,6 @@ setSpeed(speed: PlaybackSpeed): void
 ```
 
 Sets the playback speed. This API can be called only when the AVPlayer is in the prepared, playing, paused, or completed state. You can check whether the speed setting takes effect by subscribing to the [on('speedDone')](media.AVPlayer.on(type: 'speedDone', callback: Callback<int>)) event.
-
 > **NOTE**  
 >  
 > This method is not supported in live streaming scenarios.
@@ -2769,7 +2662,6 @@ Sets the playback speed. This API can be called only when the AVPlayer is in the
 | --- | --- | --- | --- |
 | speed | [PlaybackSpeed](../../apis-arkui/arkts-components/arkts-arkui-playbackspeed-e.md) | Yes | Playback speed to set. |
 
-<a id="setsuperresolution"></a>
 ## setSuperResolution
 
 ```TypeScript
@@ -2778,7 +2670,7 @@ setSuperResolution(enabled: boolean) : Promise<void>
 
 Enables or disables super resolution. This API can be called when the AVPlayer is in the initialized, prepared,playing, paused, completed, or stopped state. This API uses a promise to return the result.
 
-Before calling [prepare()](arkts-media-media-avplayer-i.md#prepare-1), enable super resolution by using [PlaybackStrategy](arkts-media-media-playbackstrategy-i.md).
+Before calling [prepare()](arkts-media-media-avplayer-i.md#prepare), enable super resolution by using [PlaybackStrategy](arkts-media-media-playbackstrategy-i.md).
 
 **Since:** 18
 
@@ -2808,7 +2700,6 @@ Before calling [prepare()](arkts-media-media-avplayer-i.md#prepare-1), enable su
 | [5410003](../errorcode-media.md#5410003-super-resolution-is-not-supported) | Super-resolution not supported. Return by promise. |
 | [5410004](../errorcode-media.md#5410004-super-resolution-is-not-enabled) | Missing enable super-resolution feature in {@link PlaybackStrategy}.Return by promise. |
 
-<a id="settrackselectionfilter"></a>
 ## setTrackSelectionFilter
 
 ```TypeScript
@@ -2843,7 +2734,6 @@ Sets a track selection filter for the player. The player will use this filter to
 | --- | --- |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. |
 
-<a id="setvideowindowsize"></a>
 ## setVideoWindowSize
 
 ```TypeScript
@@ -2854,7 +2744,7 @@ Sets the resolution of the output video after super resolution. This API can be 
 
 The input parameter values must be in the range of 320 × 320 to 1920 × 1080 (in px).
 
-Before calling [prepare()](arkts-media-media-avplayer-i.md#prepare-1), enable super resolution by using [PlaybackStrategy](arkts-media-media-playbackstrategy-i.md).
+Before calling [prepare()](arkts-media-media-avplayer-i.md#prepare), enable super resolution by using [PlaybackStrategy](arkts-media-media-playbackstrategy-i.md).
 
 **Since:** 18
 
@@ -2886,7 +2776,6 @@ Before calling [prepare()](arkts-media-media-avplayer-i.md#prepare-1), enable su
 | [5410003](../errorcode-media.md#5410003-super-resolution-is-not-supported) | Super-resolution not supported. Return by promise. |
 | [5410004](../errorcode-media.md#5410004-super-resolution-is-not-enabled) | Missing enable super-resolution feature in {@link PlaybackStrategy}.Return by promise. |
 
-<a id="setvolume"></a>
 ## setVolume
 
 ```TypeScript
@@ -2909,7 +2798,6 @@ Sets the playback volume. This API can be called only when the AVPlayer is in th
 | --- | --- | --- | --- |
 | volume | number | Yes | Relative volume. The value ranges from 0.00 to 1.00. The value **1.00** indicates the maximum volume (100%). |
 
-<a id="stop"></a>
 ## stop
 
 ```TypeScript
@@ -2938,7 +2826,6 @@ Stops audio and video playback. This API can be called only when the AVPlayer is
 | --- | --- |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. Return by callback. |
 
-<a id="stop-1"></a>
 ## stop
 
 ```TypeScript
@@ -2995,7 +2882,7 @@ Audio interruption mode. The default value is **SHARE_MODE**. It is a dynamic pr
 
 and can be set only when the AVPlayer is in the prepared, playing, paused, or completed state.
 
-To take effect, this property must be set before [play()](arkts-media-media-avplayer-i.md#play-1) is called for the first time.
+To take effect, this property must be set before [play()](arkts-media-media-avplayer-i.md#play) is called for the first time.
 
 **Type:** audio.InterruptMode
 
@@ -3017,7 +2904,7 @@ Audio renderer information. If the media source contains videos, the default val
 
 This parameter can be set only when the AVPlayer is in the initialized state.
 
-To take effect, this property must be set before [prepare()](arkts-media-media-avplayer-i.md#prepare-1) is called for the first time.
+To take effect, this property must be set before [prepare()](arkts-media-media-avplayer-i.md#prepare) is called for the first time.
 
 **Type:** audio.AudioRendererInfo
 
@@ -3261,7 +3148,7 @@ It can be updated when the AVPlayer is in the prepared, playing, paused, complet
 
 **Use scenario**: It is used to render the window for video playback (not involved in audio-only playback scenarios).
 
-[Create a surface ID through XComponent](../../apis-arkui/arkts-components/arkts-arkui-xcomponentcontroller-c.md).
+[Create a surface ID through XComponent](../../apis-arkui/arkts-components/arkts-arkui-xcomponentcontroller-c.md#getxcomponentsurfaceid).
 
 **Type:** string
 
@@ -3289,13 +3176,13 @@ Supported audio formats: M4A, AAC, MP3, OGG, WAV, FLAC, AMR, and APE.
 
 1. FD: fd://xx
 
-![](docroot://reference/apis-media-kit/figures/en-us_image_url.png)
+![](../../../reference/apis-media-kit/figures/en-us_image_url.png)
 
 2. HTTP: http://xx3. HTTPS: https://xx4. HLS: http://xx or https://xx
 
 **NOTE**
 
-- To set the playback URL, you need to declare the [ohos.permission.INTERNET](docroot://security/AccessToken/permissions-for-all.md#ohospermissioninternet)permission. The related error code is [201 Permission Denied](docroot://reference/errorcode-universal.md#201-permission-denied).  
+- To set the playback URL, you need to declare the [ohos.permission.INTERNET](../../../security/AccessToken/permissions-for-all.md#ohospermissioninternet)permission. The related error code is [201 Permission Denied](../../../reference/errorcode-universal.md#201-permission-denied).  
 - WebM is no longer supported since API version 11.  
 - After the resource handle (FD) is transferred to an AVPlayer instance, do not use the resource handle to perform other read and write operations, including but not limited to transferring this handle to other AVPlayer,AVMetadataExtractor, AVImageGenerator, or AVTranscoder instance. Competition occurs when multiple AVPlayers use the same resource handle to read and write files at the same time, resulting in errors in obtaining data.
 

@@ -20,7 +20,6 @@ Provides APIs for encapsulating file asset attributes.
 import { userFileManager } from '@kit.CoreFileKit';
 ```
 
-<a id="close"></a>
 ## close
 
 ```TypeScript
@@ -81,7 +80,6 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
-<a id="close-1"></a>
 ## close
 
 ```TypeScript
@@ -142,7 +140,6 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
-<a id="commitmodify"></a>
 ## commitModify
 
 ```TypeScript
@@ -155,7 +152,7 @@ Commits the modification on the file metadata to the database. This API uses an 
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [commitModify](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-photoasset-i.md#commitmodify-1)
+**Substitutes:** [commitModify](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-photoasset-i.md#commitmodify)
 
 **Required permissions:** ohos.permission.WRITE_IMAGEVIDEO or ohos.permission.WRITE_AUDIO
 
@@ -205,7 +202,6 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
-<a id="commitmodify-1"></a>
 ## commitModify
 
 ```TypeScript
@@ -218,7 +214,7 @@ Commits the modification on the file metadata to the database. This API uses a p
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [commitModify](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-photoasset-i.md#commitmodify-1)
+**Substitutes:** [commitModify](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-photoasset-i.md#commitmodify)
 
 **Required permissions:** ohos.permission.WRITE_IMAGEVIDEO or ohos.permission.WRITE_AUDIO
 
@@ -267,7 +263,6 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
-<a id="favorite"></a>
 ## favorite
 
 ```TypeScript
@@ -280,7 +275,7 @@ Favorites or unfavorites a file. This API uses an asynchronous callback to retur
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [setFavorite](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-mediaassetchangerequest-c-sys.md#setfavorite-1)
+**Substitutes:** [setFavorite](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-mediaassetchangerequest-c-sys.md#setfavorite)
 
 **Required permissions:** ohos.permission.WRITE_IMAGEVIDEO or ohos.permission.WRITE_AUDIO
 
@@ -324,7 +319,6 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
-<a id="favorite-1"></a>
 ## favorite
 
 ```TypeScript
@@ -337,7 +331,7 @@ Favorites or unfavorites this file asset. This API uses a promise to return the 
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [setFavorite](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-mediaassetchangerequest-c-sys.md#setfavorite-1)
+**Substitutes:** [setFavorite](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-mediaassetchangerequest-c-sys.md#setfavorite)
 
 **Required permissions:** ohos.permission.WRITE_IMAGEVIDEO or ohos.permission.WRITE_AUDIO
 
@@ -385,7 +379,6 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
-<a id="get"></a>
 ## get
 
 ```TypeScript
@@ -398,7 +391,7 @@ Obtains the value of a **FileAsset** parameter.
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [get](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-photoasset-i.md#get-1)
+**Substitutes:** [get](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-photoasset-i.md#get)
 
 <!--Device-FileAsset-get(member: string): MemberType--><!--Device-FileAsset-get(member: string): MemberType-End-->
 
@@ -445,7 +438,6 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
-<a id="getexif"></a>
 ## getExif
 
 ```TypeScript
@@ -493,7 +485,6 @@ For details about the EXIF tags, see [image.PropertyKey](../../apis-image-kit/ar
 | WhiteBalance | White balance.|  
 | FocalLengthIn35mmFilm | Focal length in 35 mm film.|  
 | ExposureBiasValue | Exposure compensation.|
-
 > **NOTE**  
 >  
 > This API returns a JSON string that contains EXIF tags. The complete Exif information consists of all_exif and  
@@ -504,7 +495,7 @@ For details about the EXIF tags, see [image.PropertyKey](../../apis-image-kit/ar
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [getExif](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-photoasset-i-sys.md#getexif-1)
+**Substitutes:** [getExif](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-photoasset-i-sys.md#getexif)
 
 **Required permissions:** ohos.permission.READ_IMAGEVIDEO
 
@@ -567,7 +558,6 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
-<a id="getexif-1"></a>
 ## getExif
 
 ```TypeScript
@@ -615,7 +605,6 @@ For details about the EXIF tags, see [image.PropertyKey](../../apis-image-kit/ar
 | WhiteBalance | White balance.|  
 | FocalLengthIn35mmFilm | Focal length in 35 mm film.|  
 | ExposureBiasValue | Exposure compensation.|
-
 > **NOTE**  
 >  
 > This API returns a JSON string that contains EXIF tags. The complete Exif information consists of all_exif and  
@@ -626,7 +615,7 @@ For details about the EXIF tags, see [image.PropertyKey](../../apis-image-kit/ar
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [getExif](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-photoasset-i-sys.md#getexif-1)
+**Substitutes:** [getExif](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-photoasset-i-sys.md#getexif)
 
 **Required permissions:** ohos.permission.READ_IMAGEVIDEO
 
@@ -679,7 +668,6 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
-<a id="getthumbnail"></a>
 ## getThumbnail
 
 ```TypeScript
@@ -692,7 +680,7 @@ Obtains the thumbnail of a file. This API uses an asynchronous callback to retur
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [getThumbnail](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-photoasset-i.md#getthumbnail-1)
+**Substitutes:** [getThumbnail](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-photoasset-i.md#getthumbnail)
 
 **Required permissions:** ohos.permission.READ_IMAGEVIDEO or ohos.permission.READ_AUDIO
 
@@ -736,7 +724,6 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
-<a id="getthumbnail-1"></a>
 ## getThumbnail
 
 ```TypeScript
@@ -749,7 +736,7 @@ Obtains the file thumbnail of the given size. This API uses an asynchronous call
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [getThumbnail](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-photoasset-i.md#getthumbnail-1)
+**Substitutes:** [getThumbnail](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-photoasset-i.md#getthumbnail)
 
 **Required permissions:** ohos.permission.READ_IMAGEVIDEO or ohos.permission.READ_AUDIO
 
@@ -796,7 +783,6 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
-<a id="getthumbnail-2"></a>
 ## getThumbnail
 
 ```TypeScript
@@ -809,7 +795,7 @@ Obtains the file thumbnail of the given size. This API uses a promise to return 
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [getThumbnail](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-photoasset-i.md#getthumbnail-1)
+**Substitutes:** [getThumbnail](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-photoasset-i.md#getthumbnail)
 
 **Required permissions:** ohos.permission.READ_IMAGEVIDEO or ohos.permission.READ_AUDIO
 
@@ -860,7 +846,6 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
-<a id="open"></a>
 ## open
 
 ```TypeScript
@@ -868,7 +853,6 @@ open(mode: string, callback: AsyncCallback<number>): void
 ```
 
 Opens this file asset. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > The write operations are mutually exclusive. After a write operation is complete, you must call **close** to  
@@ -916,7 +900,6 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
-<a id="open-1"></a>
 ## open
 
 ```TypeScript
@@ -924,7 +907,6 @@ open(mode: string): Promise<number>
 ```
 
 Opens this file asset. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > The write operations are mutually exclusive. After a write operation is complete, you must call **close** to  
@@ -980,7 +962,6 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
-<a id="set"></a>
 ## set
 
 ```TypeScript
@@ -993,7 +974,7 @@ Sets a **FileAsset** parameter.
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [set](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-photoasset-i.md#set-1)
+**Substitutes:** [set](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-photoasset-i.md#set)
 
 <!--Device-FileAsset-set(member: string, value: string): void--><!--Device-FileAsset-set(member: string, value: string): void-End-->
 
@@ -1034,7 +1015,6 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
-<a id="sethidden"></a>
 ## setHidden
 
 ```TypeScript
@@ -1049,7 +1029,7 @@ The private files set to hidden state are located in the private album (in hidde
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [setHidden](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-mediaassetchangerequest-c-sys.md#sethidden-1)
+**Substitutes:** [setHidden](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-mediaassetchangerequest-c-sys.md#sethidden)
 
 **Required permissions:** ohos.permission.WRITE_IMAGEVIDEO
 
@@ -1100,7 +1080,6 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
-<a id="sethidden-1"></a>
 ## setHidden
 
 ```TypeScript
@@ -1115,7 +1094,7 @@ The private files set to hidden state are located in the private album (in hidde
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [setHidden](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-mediaassetchangerequest-c-sys.md#sethidden-1)
+**Substitutes:** [setHidden](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-mediaassetchangerequest-c-sys.md#sethidden)
 
 **Required permissions:** ohos.permission.WRITE_IMAGEVIDEO
 
@@ -1173,7 +1152,6 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
-<a id="setusercomment"></a>
 ## setUserComment
 
 ```TypeScript
@@ -1181,7 +1159,6 @@ setUserComment(userComment: string, callback: AsyncCallback<void>): void
 ```
 
 Sets user comment information of an image or video. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > This API can only be used to set user comment information of an image or video.
@@ -1190,7 +1167,7 @@ Sets user comment information of an image or video. This API uses an asynchronou
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [setUserComment](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-mediaassetchangerequest-c-sys.md#setusercomment-1)
+**Substitutes:** [setUserComment](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-mediaassetchangerequest-c-sys.md#setusercomment)
 
 **Required permissions:** ohos.permission.WRITE_IMAGEVIDEO
 
@@ -1246,7 +1223,6 @@ async function example(mgr: userFileManager.UserFileManager) {
 
 ```
 
-<a id="setusercomment-1"></a>
 ## setUserComment
 
 ```TypeScript
@@ -1254,7 +1230,6 @@ setUserComment(userComment: string): Promise<void>
 ```
 
 Sets user comment information of an image or video. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > This API can only be used to set user comment information of an image or video.
@@ -1263,7 +1238,7 @@ Sets user comment information of an image or video. This API uses a promise to r
 
 **Deprecated since:** 26.0.0
 
-**Substitutes:** [setUserComment](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-mediaassetchangerequest-c-sys.md#setusercomment-1)
+**Substitutes:** [setUserComment](../../apis-media-library-kit/arkts-apis/arkts-medialibrary-photoaccesshelper-mediaassetchangerequest-c-sys.md#setusercomment)
 
 **Required permissions:** ohos.permission.WRITE_IMAGEVIDEO
 
@@ -1368,7 +1343,7 @@ Type of the file.
 readonly uri: string
 ```
 
-Media asset URI, for example, **file://media/Photo/1/IMG_datetime_0001/displayName.jpg**. For details, see [Media File URI](docroot://file-management/user-file-uri-intro.md#media-file-uri).
+Media asset URI, for example, **file://media/Photo/1/IMG_datetime_0001/displayName.jpg**. For details, see [Media File URI](../../../file-management/user-file-uri-intro.md#media-file-uri).
 
 **Type:** string
 

@@ -18,5 +18,5 @@ The callback of onExceedMaxSelected event
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| exceedMaxCountType | MaxCountType | Yes |  |
+| exceedMaxCountType | [MaxCountType](arkts-medialibrary-file-photopickercomponent-maxcounttype-e.md) | Yes |  |
 

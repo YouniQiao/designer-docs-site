@@ -16,7 +16,6 @@ Provides APIs for setting different **DataSharePredicates** objects. This type i
 import { dataSharePredicates } from '@kit.ArkData';
 ```
 
-<a id="and"></a>
 ## and
 
 ```TypeScript
@@ -53,7 +52,6 @@ predicates.equalTo("NAME", "lisi")
 
 ```
 
-<a id="equalto"></a>
 ## equalTo
 
 ```TypeScript
@@ -95,7 +93,6 @@ predicates.equalTo("NAME", "Rose");
 
 ```
 
-<a id="in"></a>
 ## in
 
 ```TypeScript
@@ -137,7 +134,6 @@ predicates.in("AGE", [18, 20]);
 
 ```
 
-<a id="limit"></a>
 ## limit
 
 ```TypeScript
@@ -162,8 +158,8 @@ Currently, both the RDB store and KV store support this predicate.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| total | number | Yes | Maximum number of records.If the KV store is used and **total** is **undefined** or **null**, the maximum number of records is 0. For details about the value range, see the description of this parameter in [limit](arkts-arkdata-distributedkvstore-query-c.md#limit-1).If the RDB store is used and **total** is **undefined** or **null**, the maximum number of records is not limited. For details about the value range, see the description of this parameter in [limitAs](arkts-arkdata-distributedkvstore-query-c.md#limit-1). |
-| offset | number | Yes | Start position of the query result.If this parameter is set to **undefined** or **null**, the start position is the beginning of the result set.For details about the value range in a KV store, see the description of this parameter in [limit](arkts-arkdata-distributedkvstore-query-c.md#limit-1).For details about the value range in an RDB store, see the description of the **rowOffset** parameter in [offsetAs](arkts-arkdata-relationalstore-rdbpredicates-c.md#offsetas-1). |
+| total | number | Yes | Maximum number of records.If the KV store is used and **total** is **undefined** or **null**, the maximum number of records is 0. For details about the value range, see the description of this parameter in [limit](arkts-arkdata-distributedkvstore-query-c.md#limit).If the RDB store is used and **total** is **undefined** or **null**, the maximum number of records is not limited. For details about the value range, see the description of this parameter in [limitAs](arkts-arkdata-distributedkvstore-query-c.md#limit). |
+| offset | number | Yes | Start position of the query result.If this parameter is set to **undefined** or **null**, the start position is the beginning of the result set.For details about the value range in a KV store, see the description of this parameter in [limit](arkts-arkdata-distributedkvstore-query-c.md#limit).For details about the value range in an RDB store, see the description of the **rowOffset** parameter in [offsetAs](arkts-arkdata-relationalstore-rdbpredicates-c.md#offsetas). |
 
 **Return value:**
 
@@ -179,7 +175,6 @@ predicates.equalTo("NAME", "Rose").limit(10, 3);
 
 ```
 
-<a id="orderbyasc"></a>
 ## orderByAsc
 
 ```TypeScript
@@ -220,7 +215,6 @@ predicates.orderByAsc("AGE");
 
 ```
 
-<a id="orderbydesc"></a>
 ## orderByDesc
 
 ```TypeScript

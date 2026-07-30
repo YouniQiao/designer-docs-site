@@ -38,7 +38,7 @@ Number of allowed opening times. The default value is **0**. No value range rest
 countdown?: number
 ```
 
-Validity period for file viewing, in seconds. The default value is 0. After the validity period expires,the file is automatically closed. The value must be greater than or equal to 0. No value range restriction is specified.
+Validity period for file viewing, in seconds. The default value is 0. After the validity period expires,the file is automatically closed. The value range is [-2<sup>31</sup>, 2<sup>31</sup>-1].
 
 **Type:** number
 

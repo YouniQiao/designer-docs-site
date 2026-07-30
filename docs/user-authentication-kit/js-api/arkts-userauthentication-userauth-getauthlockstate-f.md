@@ -28,7 +28,7 @@ Queries the lockout state of the specified authentication type. This API uses a 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| authType | [UserAuthType](arkts-userauthentication-userauth-userauthtype-e.md) | Yes | Authentication type. |
+| authType | [UserAuthType](arkts-userauthentication-userauth-userauthtype-e.md) | Yes | Authentication type, which is used to specify the credential type to query.Supported values: **FACE**, **FINGERPRINT**, and **PIN**. Select an appropriate authentication type based on the security requirements of the service scenario. |
 
 **Return value:**
 

@@ -12,5 +12,7 @@ The callback of onScrollStopAtStart event
 
 **Atomic service API:** This API can be used in atomic services since API version 23.
 
+<!--Device-unnamed-export type ScrollStopAtStartCallback = () => void--><!--Device-unnamed-export type ScrollStopAtStartCallback = () => void-End-->
+
 **System capability:** SystemCapability.FileManagement.PhotoAccessHelper.Core
 

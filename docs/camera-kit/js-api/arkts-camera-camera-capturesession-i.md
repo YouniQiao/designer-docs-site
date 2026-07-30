@@ -18,7 +18,6 @@ Implements a capture session, which saves all [CameraInput](arkts-camera-camera-
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="addinput"></a>
 ## addInput
 
 ```TypeScript
@@ -31,7 +30,7 @@ Adds a [CameraInput](arkts-camera-camera-camerainput-i.md) instance to this sess
 
 **Deprecated since:** 11
 
-**Substitutes:** [addInput](arkts-camera-camera-session-i.md#addinput-1)
+**Substitutes:** [addInput](arkts-camera-camera-session-i.md#addinput)
 
 <!--Device-CaptureSession-addInput(cameraInput: CameraInput): void--><!--Device-CaptureSession-addInput(cameraInput: CameraInput): void-End-->
 
@@ -50,7 +49,6 @@ Adds a [CameraInput](arkts-camera-camera-camerainput-i.md) instance to this sess
 | [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed. |
 
-<a id="addoutput"></a>
 ## addOutput
 
 ```TypeScript
@@ -63,7 +61,7 @@ Adds a [CameraOutput](arkts-camera-camera-cameraoutput-i.md) instance to this se
 
 **Deprecated since:** 11
 
-**Substitutes:** [addOutput](arkts-camera-camera-session-i.md#addoutput-1)
+**Substitutes:** [addOutput](arkts-camera-camera-session-i.md#addoutput)
 
 <!--Device-CaptureSession-addOutput(cameraOutput: CameraOutput): void--><!--Device-CaptureSession-addOutput(cameraOutput: CameraOutput): void-End-->
 
@@ -82,7 +80,6 @@ Adds a [CameraOutput](arkts-camera-camera-cameraoutput-i.md) instance to this se
 | [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed. |
 
-<a id="beginconfig"></a>
 ## beginConfig
 
 ```TypeScript
@@ -95,7 +92,7 @@ Starts configuration for the session.
 
 **Deprecated since:** 11
 
-**Substitutes:** [beginConfig](arkts-camera-camera-session-i.md#beginconfig-1)
+**Substitutes:** [beginConfig](arkts-camera-camera-session-i.md#beginconfig)
 
 <!--Device-CaptureSession-beginConfig(): void--><!--Device-CaptureSession-beginConfig(): void-End-->
 
@@ -107,7 +104,6 @@ Starts configuration for the session.
 | --- | --- |
 | [7400105](../errorcode-camera.md#7400105-session-configuration-locked) | Session config locked. |
 
-<a id="commitconfig"></a>
 ## commitConfig
 
 ```TypeScript
@@ -120,7 +116,7 @@ Commits the configuration for this session. This API uses an asynchronous callba
 
 **Deprecated since:** 11
 
-**Substitutes:** [commitConfig(callback:](arkts-camera-camera-session-i.md#commitconfig-1)
+**Substitutes:** [commitConfig(callback:](arkts-camera-camera-session-i.md#commitconfig)
 
 <!--Device-CaptureSession-commitConfig(callback: AsyncCallback<void>): void--><!--Device-CaptureSession-commitConfig(callback: AsyncCallback<void>): void-End-->
 
@@ -139,7 +135,6 @@ Commits the configuration for this session. This API uses an asynchronous callba
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="commitconfig-1"></a>
 ## commitConfig
 
 ```TypeScript
@@ -152,7 +147,7 @@ Commits the configuration for this session. This API uses a promise to return th
 
 **Deprecated since:** 11
 
-**Substitutes:** [commitConfig()](arkts-camera-camera-session-i.md#commitconfig-1)
+**Substitutes:** [commitConfig()](arkts-camera-camera-session-i.md#commitconfig)
 
 <!--Device-CaptureSession-commitConfig(): Promise<void>--><!--Device-CaptureSession-commitConfig(): Promise<void>-End-->
 
@@ -171,7 +166,6 @@ Commits the configuration for this session. This API uses a promise to return th
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="getactivevideostabilizationmode"></a>
 ## getActiveVideoStabilizationMode
 
 ```TypeScript
@@ -184,7 +178,7 @@ Obtains the video stabilization mode in use.
 
 **Deprecated since:** 11
 
-**Substitutes:** [getActiveVideoStabilizationMode](arkts-camera-camera-stabilization-i.md#getactivevideostabilizationmode-1)
+**Substitutes:** [getActiveVideoStabilizationMode](arkts-camera-camera-stabilization-i.md#getactivevideostabilizationmode)
 
 <!--Device-CaptureSession-getActiveVideoStabilizationMode(): VideoStabilizationMode--><!--Device-CaptureSession-getActiveVideoStabilizationMode(): VideoStabilizationMode-End-->
 
@@ -202,7 +196,6 @@ Obtains the video stabilization mode in use.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="getexposurebiasrange"></a>
 ## getExposureBiasRange
 
 ```TypeScript
@@ -215,7 +208,7 @@ Obtains the exposure compensation values of the camera device.
 
 **Deprecated since:** 11
 
-**Substitutes:** [getExposureBiasRange](arkts-camera-camera-autoexposurequery-i.md#getexposurebiasrange-1)
+**Substitutes:** [getExposureBiasRange](arkts-camera-camera-autoexposurequery-i.md#getexposurebiasrange)
 
 <!--Device-CaptureSession-getExposureBiasRange(): Array<number>--><!--Device-CaptureSession-getExposureBiasRange(): Array<number>-End-->
 
@@ -233,7 +226,6 @@ Obtains the exposure compensation values of the camera device.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="getexposuremode"></a>
 ## getExposureMode
 
 ```TypeScript
@@ -246,7 +238,7 @@ Obtains the exposure mode in use.
 
 **Deprecated since:** 11
 
-**Substitutes:** [getExposureMode](arkts-camera-camera-autoexposure-i.md#getexposuremode-1)
+**Substitutes:** [getExposureMode](arkts-camera-camera-autoexposure-i.md#getexposuremode)
 
 <!--Device-CaptureSession-getExposureMode(): ExposureMode--><!--Device-CaptureSession-getExposureMode(): ExposureMode-End-->
 
@@ -264,7 +256,6 @@ Obtains the exposure mode in use.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="getexposurevalue"></a>
 ## getExposureValue
 
 ```TypeScript
@@ -277,7 +268,7 @@ Obtains the exposure value in use.
 
 **Deprecated since:** 11
 
-**Substitutes:** [getExposureValue](arkts-camera-camera-autoexposure-i.md#getexposurevalue-1)
+**Substitutes:** [getExposureValue](arkts-camera-camera-autoexposure-i.md#getexposurevalue)
 
 <!--Device-CaptureSession-getExposureValue(): number--><!--Device-CaptureSession-getExposureValue(): number-End-->
 
@@ -295,7 +286,6 @@ Obtains the exposure value in use.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="getflashmode"></a>
 ## getFlashMode
 
 ```TypeScript
@@ -308,7 +298,7 @@ Obtains the flash mode in use.
 
 **Deprecated since:** 11
 
-**Substitutes:** [getFlashMode](arkts-camera-camera-flash-i.md#getflashmode-1)
+**Substitutes:** [getFlashMode](arkts-camera-camera-flash-i.md#getflashmode)
 
 <!--Device-CaptureSession-getFlashMode(): FlashMode--><!--Device-CaptureSession-getFlashMode(): FlashMode-End-->
 
@@ -326,7 +316,6 @@ Obtains the flash mode in use.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="getfocallength"></a>
 ## getFocalLength
 
 ```TypeScript
@@ -339,7 +328,7 @@ Obtains the focal length of the camera device.
 
 **Deprecated since:** 11
 
-**Substitutes:** [getFocalLength](arkts-camera-camera-focus-i.md#getfocallength-1)
+**Substitutes:** [getFocalLength](arkts-camera-camera-focus-i.md#getfocallength)
 
 <!--Device-CaptureSession-getFocalLength(): number--><!--Device-CaptureSession-getFocalLength(): number-End-->
 
@@ -357,7 +346,6 @@ Obtains the focal length of the camera device.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="getfocusmode"></a>
 ## getFocusMode
 
 ```TypeScript
@@ -370,7 +358,7 @@ Obtains the focus mode in use.
 
 **Deprecated since:** 11
 
-**Substitutes:** [getFocusMode](arkts-camera-camera-focus-i.md#getfocusmode-1)
+**Substitutes:** [getFocusMode](arkts-camera-camera-focus-i.md#getfocusmode)
 
 <!--Device-CaptureSession-getFocusMode(): FocusMode--><!--Device-CaptureSession-getFocusMode(): FocusMode-End-->
 
@@ -388,7 +376,6 @@ Obtains the focus mode in use.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="getfocuspoint"></a>
 ## getFocusPoint
 
 ```TypeScript
@@ -401,7 +388,7 @@ Obtains the focal point of the camera device.
 
 **Deprecated since:** 11
 
-**Substitutes:** [getFocusPoint](arkts-camera-camera-focus-i.md#getfocuspoint-1)
+**Substitutes:** [getFocusPoint](arkts-camera-camera-focus-i.md#getfocuspoint)
 
 <!--Device-CaptureSession-getFocusPoint(): Point--><!--Device-CaptureSession-getFocusPoint(): Point-End-->
 
@@ -419,7 +406,6 @@ Obtains the focal point of the camera device.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="getmeteringpoint"></a>
 ## getMeteringPoint
 
 ```TypeScript
@@ -432,7 +418,7 @@ Obtains the metering point of the camera device.
 
 **Deprecated since:** 11
 
-**Substitutes:** [getMeteringPoint](arkts-camera-camera-autoexposure-i.md#getmeteringpoint-1)
+**Substitutes:** [getMeteringPoint](arkts-camera-camera-autoexposure-i.md#getmeteringpoint)
 
 <!--Device-CaptureSession-getMeteringPoint(): Point--><!--Device-CaptureSession-getMeteringPoint(): Point-End-->
 
@@ -450,7 +436,6 @@ Obtains the metering point of the camera device.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="getzoomratio"></a>
 ## getZoomRatio
 
 ```TypeScript
@@ -463,7 +448,7 @@ Obtains the zoom ratio in use.
 
 **Deprecated since:** 11
 
-**Substitutes:** [getZoomRatio](arkts-camera-camera-zoom-i.md#getzoomratio-1)
+**Substitutes:** [getZoomRatio](arkts-camera-camera-zoom-i.md#getzoomratio)
 
 <!--Device-CaptureSession-getZoomRatio(): number--><!--Device-CaptureSession-getZoomRatio(): number-End-->
 
@@ -481,7 +466,6 @@ Obtains the zoom ratio in use.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="getzoomratiorange"></a>
 ## getZoomRatioRange
 
 ```TypeScript
@@ -494,7 +478,7 @@ Obtains the supported zoom ratio range.
 
 **Deprecated since:** 11
 
-**Substitutes:** [getZoomRatioRange](arkts-camera-camera-zoomquery-i.md#getzoomratiorange-1)
+**Substitutes:** [getZoomRatioRange](arkts-camera-camera-zoomquery-i.md#getzoomratiorange)
 
 <!--Device-CaptureSession-getZoomRatioRange(): Array<number>--><!--Device-CaptureSession-getZoomRatioRange(): Array<number>-End-->
 
@@ -512,7 +496,6 @@ Obtains the supported zoom ratio range.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="hasflash"></a>
 ## hasFlash
 
 ```TypeScript
@@ -525,7 +508,7 @@ Checks whether the camera device has flash.
 
 **Deprecated since:** 11
 
-**Substitutes:** [hasFlash](arkts-camera-camera-flashquery-i.md#hasflash-1)
+**Substitutes:** [hasFlash](arkts-camera-camera-flashquery-i.md#hasflash)
 
 <!--Device-CaptureSession-hasFlash(): boolean--><!--Device-CaptureSession-hasFlash(): boolean-End-->
 
@@ -543,7 +526,6 @@ Checks whether the camera device has flash.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="isexposuremodesupported"></a>
 ## isExposureModeSupported
 
 ```TypeScript
@@ -556,7 +538,7 @@ Checks whether an exposure mode is supported.
 
 **Deprecated since:** 11
 
-**Substitutes:** [isExposureModeSupported](arkts-camera-camera-autoexposurequery-i.md#isexposuremodesupported-1)
+**Substitutes:** [isExposureModeSupported](arkts-camera-camera-autoexposurequery-i.md#isexposuremodesupported)
 
 <!--Device-CaptureSession-isExposureModeSupported(aeMode: ExposureMode): boolean--><!--Device-CaptureSession-isExposureModeSupported(aeMode: ExposureMode): boolean-End-->
 
@@ -580,7 +562,6 @@ Checks whether an exposure mode is supported.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="isflashmodesupported"></a>
 ## isFlashModeSupported
 
 ```TypeScript
@@ -593,7 +574,7 @@ Checks whether the flash mode is supported.
 
 **Deprecated since:** 11
 
-**Substitutes:** [isFlashModeSupported](arkts-camera-camera-flashquery-i.md#isflashmodesupported-1)
+**Substitutes:** [isFlashModeSupported](arkts-camera-camera-flashquery-i.md#isflashmodesupported)
 
 <!--Device-CaptureSession-isFlashModeSupported(flashMode: FlashMode): boolean--><!--Device-CaptureSession-isFlashModeSupported(flashMode: FlashMode): boolean-End-->
 
@@ -617,7 +598,6 @@ Checks whether the flash mode is supported.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="isfocusmodesupported"></a>
 ## isFocusModeSupported
 
 ```TypeScript
@@ -630,7 +610,7 @@ Checks whether a focus mode is supported.
 
 **Deprecated since:** 11
 
-**Substitutes:** [isFocusModeSupported](arkts-camera-camera-focusquery-i.md#isfocusmodesupported-1)
+**Substitutes:** [isFocusModeSupported](arkts-camera-camera-focusquery-i.md#isfocusmodesupported)
 
 <!--Device-CaptureSession-isFocusModeSupported(afMode: FocusMode): boolean--><!--Device-CaptureSession-isFocusModeSupported(afMode: FocusMode): boolean-End-->
 
@@ -654,7 +634,6 @@ Checks whether a focus mode is supported.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="isvideostabilizationmodesupported"></a>
 ## isVideoStabilizationModeSupported
 
 ```TypeScript
@@ -667,7 +646,7 @@ Checks whether a video stabilization mode is supported.
 
 **Deprecated since:** 11
 
-**Substitutes:** [isVideoStabilizationModeSupported](arkts-camera-camera-stabilizationquery-i.md#isvideostabilizationmodesupported-1)
+**Substitutes:** [isVideoStabilizationModeSupported](arkts-camera-camera-stabilizationquery-i.md#isvideostabilizationmodesupported)
 
 <!--Device-CaptureSession-isVideoStabilizationModeSupported(vsMode: VideoStabilizationMode): boolean--><!--Device-CaptureSession-isVideoStabilizationModeSupported(vsMode: VideoStabilizationMode): boolean-End-->
 
@@ -691,7 +670,6 @@ Checks whether a video stabilization mode is supported.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="off"></a>
 ## off('focusStateChange')
 
 ```TypeScript
@@ -717,7 +695,6 @@ Unsubscribes from focus state change events.
 | type | 'focusStateChange' | Yes | Event type. The value is fixed at **'focusStateChange'**. The event can be listened for when a session is created. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FocusState&gt; | No | Callback used to return the result. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
 
-<a id="off-1"></a>
 ## off('error')
 
 ```TypeScript
@@ -743,7 +720,6 @@ Unsubscribes from CaptureSession error events. This API uses a callback to retur
 | type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when a session is created. |
 | callback | [ErrorCallback](../../apis-arkui/arkts-components/arkts-arkui-errorcallback-t-sys.md) | No | Callback used to return the result. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
 
-<a id="on"></a>
 ## on('focusStateChange')
 
 ```TypeScript
@@ -751,7 +727,6 @@ on(type: 'focusStateChange', callback: AsyncCallback<FocusState>): void
 ```
 
 Subscribes to focus state change events. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
@@ -773,7 +748,6 @@ Subscribes to focus state change events. This API uses an asynchronous callback 
 | type | 'focusStateChange' | Yes | Event type. The value is fixed at **'focusStateChange'**. The event can be listened for when a session is created. This event is triggered only when the camera focus state changes in auto focus mode. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FocusState&gt; | Yes | Callback used to return the focus state change. |
 
-<a id="on-1"></a>
 ## on('error')
 
 ```TypeScript
@@ -781,7 +755,6 @@ on(type: 'error', callback: ErrorCallback): void
 ```
 
 Subscribes to CaptureSession error events. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
@@ -800,10 +773,9 @@ Subscribes to CaptureSession error events. This API uses an asynchronous callbac
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when a session is created. This event is triggered and the error message is returned when an error occurs during the calling of a session-related API such as [beginConfig](arkts-camera-camera-capturesession-i.md#beginconfig-1),[commitConfig](arkts-camera-camera-capturesession-i.md#commitconfig-1), and [addInput](arkts-camera-camera-capturesession-i.md#addinput-1). |
+| type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when a session is created. This event is triggered and the error message is returned when an error occurs during the calling of a session-related API such as [beginConfig](arkts-camera-camera-capturesession-i.md#beginconfig),[commitConfig](arkts-camera-camera-capturesession-i.md#commitconfig), and [addInput](arkts-camera-camera-capturesession-i.md#addinput). |
 | callback | [ErrorCallback](../../apis-arkui/arkts-components/arkts-arkui-errorcallback-t-sys.md) | Yes | Callback used to return an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md). |
 
-<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -816,7 +788,7 @@ Releases this session. This API uses an asynchronous callback to return the resu
 
 **Deprecated since:** 11
 
-**Substitutes:** [release(callback:](arkts-camera-camera-session-i.md#release-1)
+**Substitutes:** [release(callback:](arkts-camera-camera-session-i.md#release)
 
 <!--Device-CaptureSession-release(callback: AsyncCallback<void>): void--><!--Device-CaptureSession-release(callback: AsyncCallback<void>): void-End-->
 
@@ -834,7 +806,6 @@ Releases this session. This API uses an asynchronous callback to return the resu
 | --- | --- |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="release-1"></a>
 ## release
 
 ```TypeScript
@@ -847,7 +818,7 @@ Releases this session. This API uses a promise to return the result.
 
 **Deprecated since:** 11
 
-**Substitutes:** [release()](arkts-camera-camera-session-i.md#release-1)
+**Substitutes:** [release()](arkts-camera-camera-session-i.md#release)
 
 <!--Device-CaptureSession-release(): Promise<void>--><!--Device-CaptureSession-release(): Promise<void>-End-->
 
@@ -865,7 +836,6 @@ Releases this session. This API uses a promise to return the result.
 | --- | --- |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="removeinput"></a>
 ## removeInput
 
 ```TypeScript
@@ -878,7 +848,7 @@ Removes a [CameraInput](arkts-camera-camera-camerainput-i.md) instance from this
 
 **Deprecated since:** 11
 
-**Substitutes:** [removeInput](arkts-camera-camera-session-i.md#removeinput-1)
+**Substitutes:** [removeInput](arkts-camera-camera-session-i.md#removeinput)
 
 <!--Device-CaptureSession-removeInput(cameraInput: CameraInput): void--><!--Device-CaptureSession-removeInput(cameraInput: CameraInput): void-End-->
 
@@ -897,7 +867,6 @@ Removes a [CameraInput](arkts-camera-camera-camerainput-i.md) instance from this
 | [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed. |
 
-<a id="removeoutput"></a>
 ## removeOutput
 
 ```TypeScript
@@ -910,7 +879,7 @@ Removes a [CameraOutput](arkts-camera-camera-cameraoutput-i.md) instance from th
 
 **Deprecated since:** 11
 
-**Substitutes:** [removeOutput](arkts-camera-camera-session-i.md#removeoutput-1)
+**Substitutes:** [removeOutput](arkts-camera-camera-session-i.md#removeoutput)
 
 <!--Device-CaptureSession-removeOutput(cameraOutput: CameraOutput): void--><!--Device-CaptureSession-removeOutput(cameraOutput: CameraOutput): void-End-->
 
@@ -929,20 +898,19 @@ Removes a [CameraOutput](arkts-camera-camera-cameraoutput-i.md) instance from th
 | [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed. |
 
-<a id="setexposurebias"></a>
 ## setExposureBias
 
 ```TypeScript
 setExposureBias(exposureBias: number): void
 ```
 
-Sets an exposure compensation value (EV).Before the setting, you are advised to use [getExposureBiasRange](arkts-camera-camera-capturesession-i.md#getexposurebiasrange-1) to obtain the supported values.
+Sets an exposure compensation value (EV).Before the setting, you are advised to use [getExposureBiasRange](arkts-camera-camera-capturesession-i.md#getexposurebiasrange) to obtain the supported values.
 
 **Since:** 10
 
 **Deprecated since:** 11
 
-**Substitutes:** [setExposureBias](arkts-camera-camera-autoexposure-i.md#setexposurebias-1)
+**Substitutes:** [setExposureBias](arkts-camera-camera-autoexposure-i.md#setexposurebias)
 
 <!--Device-CaptureSession-setExposureBias(exposureBias: number): void--><!--Device-CaptureSession-setExposureBias(exposureBias: number): void-End-->
 
@@ -952,7 +920,7 @@ Sets an exposure compensation value (EV).Before the setting, you are advised to 
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| exposureBias | number | Yes | EV. The supported EV range can be obtained by calling [getExposureBiasRange](arkts-camera-camera-autoexposurequery-i.md#getexposurebiasrange-1). If the value passed is not within the supported range, the nearest critical point is used. There is a step for EV.For example, if the step is 0.5 and this parameter is set to 1.2, the EV that takes effect is 1.0. If the operation fails, an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md) is returned. If the input parameter is null or undefined, the EV is set to 0. |
+| exposureBias | number | Yes | EV. The supported EV range can be obtained by calling [getExposureBiasRange](arkts-camera-camera-autoexposurequery-i.md#getexposurebiasrange). If the value passed is not within the supported range, the nearest critical point is used. There is a step for EV.For example, if the step is 0.5 and this parameter is set to 1.2, the EV that takes effect is 1.0. If the operation fails, an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md) is returned. If the input parameter is null or undefined, the EV is set to 0. |
 
 **Error codes:**
 
@@ -960,20 +928,19 @@ Sets an exposure compensation value (EV).Before the setting, you are advised to 
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="setexposuremode"></a>
 ## setExposureMode
 
 ```TypeScript
 setExposureMode(aeMode: ExposureMode): void
 ```
 
-Sets an exposure mode. Before the setting, call [isExposureModeSupported](arkts-camera-camera-capturesession-i.md#isexposuremodesupported-1) to check whether the target exposure mode is supported.
+Sets an exposure mode. Before the setting, call [isExposureModeSupported](arkts-camera-camera-capturesession-i.md#isexposuremodesupported) to check whether the target exposure mode is supported.
 
 **Since:** 10
 
 **Deprecated since:** 11
 
-**Substitutes:** [setExposureMode](arkts-camera-camera-autoexposure-i.md#setexposuremode-1)
+**Substitutes:** [setExposureMode](arkts-camera-camera-autoexposure-i.md#setexposuremode)
 
 <!--Device-CaptureSession-setExposureMode(aeMode: ExposureMode): void--><!--Device-CaptureSession-setExposureMode(aeMode: ExposureMode): void-End-->
 
@@ -991,7 +958,6 @@ Sets an exposure mode. Before the setting, call [isExposureModeSupported](arkts-
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="setflashmode"></a>
 ## setFlashMode
 
 ```TypeScript
@@ -1000,13 +966,13 @@ setFlashMode(flashMode: FlashMode): void
 
 Sets a flash mode.Before the setting, do the following checks:
 
-1. Use [hasFlash](arkts-camera-camera-capturesession-i.md#hasflash-1) to check whether the camera device has flash.2. Use [isFlashModeSupported](arkts-camera-camera-capturesession-i.md#isflashmodesupported-1) to check whether the camera device supports the flash mode.
+1. Use [hasFlash](arkts-camera-camera-capturesession-i.md#hasflash) to check whether the camera device has flash.2. Use [isFlashModeSupported](arkts-camera-camera-capturesession-i.md#isflashmodesupported) to check whether the camera device supports the flash mode.
 
 **Since:** 10
 
 **Deprecated since:** 11
 
-**Substitutes:** [setFlashMode](arkts-camera-camera-flash-i.md#setflashmode-1)
+**Substitutes:** [setFlashMode](arkts-camera-camera-flash-i.md#setflashmode)
 
 <!--Device-CaptureSession-setFlashMode(flashMode: FlashMode): void--><!--Device-CaptureSession-setFlashMode(flashMode: FlashMode): void-End-->
 
@@ -1024,20 +990,19 @@ Sets a flash mode.Before the setting, do the following checks:
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="setfocusmode"></a>
 ## setFocusMode
 
 ```TypeScript
 setFocusMode(afMode: FocusMode): void
 ```
 
-Sets a focus mode.Before the setting, call [isFocusModeSupported](arkts-camera-camera-capturesession-i.md#isfocusmodesupported-1) to check whether the focus mode is supported.
+Sets a focus mode.Before the setting, call [isFocusModeSupported](arkts-camera-camera-capturesession-i.md#isfocusmodesupported) to check whether the focus mode is supported.
 
 **Since:** 10
 
 **Deprecated since:** 11
 
-**Substitutes:** [setFocusMode](arkts-camera-camera-focus-i.md#setfocusmode-1)
+**Substitutes:** [setFocusMode](arkts-camera-camera-focus-i.md#setfocusmode)
 
 <!--Device-CaptureSession-setFocusMode(afMode: FocusMode): void--><!--Device-CaptureSession-setFocusMode(afMode: FocusMode): void-End-->
 
@@ -1055,7 +1020,6 @@ Sets a focus mode.Before the setting, call [isFocusModeSupported](arkts-camera-c
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="setfocuspoint"></a>
 ## setFocusPoint
 
 ```TypeScript
@@ -1070,7 +1034,7 @@ The coordinate system is based on the horizontal device direction with the devic
 
 **Deprecated since:** 11
 
-**Substitutes:** [setFocusPoint](arkts-camera-camera-focus-i.md#setfocuspoint-1)
+**Substitutes:** [setFocusPoint](arkts-camera-camera-focus-i.md#setfocuspoint)
 
 <!--Device-CaptureSession-setFocusPoint(point: Point): void--><!--Device-CaptureSession-setFocusPoint(point: Point): void-End-->
 
@@ -1088,7 +1052,6 @@ The coordinate system is based on the horizontal device direction with the devic
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="setmeteringpoint"></a>
 ## setMeteringPoint
 
 ```TypeScript
@@ -1103,7 +1066,7 @@ The coordinate system is based on the horizontal device direction with the devic
 
 **Deprecated since:** 11
 
-**Substitutes:** [setMeteringPoint](arkts-camera-camera-autoexposure-i.md#setmeteringpoint-1)
+**Substitutes:** [setMeteringPoint](arkts-camera-camera-autoexposure-i.md#setmeteringpoint)
 
 <!--Device-CaptureSession-setMeteringPoint(point: Point): void--><!--Device-CaptureSession-setMeteringPoint(point: Point): void-End-->
 
@@ -1121,20 +1084,19 @@ The coordinate system is based on the horizontal device direction with the devic
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="setvideostabilizationmode"></a>
 ## setVideoStabilizationMode
 
 ```TypeScript
 setVideoStabilizationMode(mode: VideoStabilizationMode): void
 ```
 
-Sets a video stabilization mode. Before the setting, call [isVideoStabilizationModeSupported](arkts-camera-camera-capturesession-i.md#isvideostabilizationmodesupported-1) to check whether the target video stabilization mode is supported.
+Sets a video stabilization mode. Before the setting, call [isVideoStabilizationModeSupported](arkts-camera-camera-capturesession-i.md#isvideostabilizationmodesupported) to check whether the target video stabilization mode is supported.
 
 **Since:** 10
 
 **Deprecated since:** 11
 
-**Substitutes:** [setVideoStabilizationMode](arkts-camera-camera-stabilization-i.md#setvideostabilizationmode-1)
+**Substitutes:** [setVideoStabilizationMode](arkts-camera-camera-stabilization-i.md#setvideostabilizationmode)
 
 <!--Device-CaptureSession-setVideoStabilizationMode(mode: VideoStabilizationMode): void--><!--Device-CaptureSession-setVideoStabilizationMode(mode: VideoStabilizationMode): void-End-->
 
@@ -1152,7 +1114,6 @@ Sets a video stabilization mode. Before the setting, call [isVideoStabilizationM
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="setzoomratio"></a>
 ## setZoomRatio
 
 ```TypeScript
@@ -1165,7 +1126,7 @@ Sets a zoom ratio, with a maximum precision of two decimal places.
 
 **Deprecated since:** 11
 
-**Substitutes:** [setZoomRatio](arkts-camera-camera-zoom-i.md#setzoomratio-1)
+**Substitutes:** [setZoomRatio](arkts-camera-camera-zoom-i.md#setzoomratio)
 
 <!--Device-CaptureSession-setZoomRatio(zoomRatio: number): void--><!--Device-CaptureSession-setZoomRatio(zoomRatio: number): void-End-->
 
@@ -1175,7 +1136,7 @@ Sets a zoom ratio, with a maximum precision of two decimal places.
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| zoomRatio | number | Yes | Zoom ratio. The supported zoom ratio range can be obtained by calling [getZoomRatioRange](arkts-camera-camera-zoomquery-i.md#getzoomratiorange-1). If the value passed in is not within the supported range, the value within the precision range is retained. If the input parameter is null or undefined, it is treated as 0 and the minimum zoom ratio is used. |
+| zoomRatio | number | Yes | Zoom ratio. The supported zoom ratio range can be obtained by calling [getZoomRatioRange](arkts-camera-camera-zoomquery-i.md#getzoomratiorange). If the value passed in is not within the supported range, the value within the precision range is retained. If the input parameter is null or undefined, it is treated as 0 and the minimum zoom ratio is used. |
 
 **Error codes:**
 
@@ -1183,7 +1144,6 @@ Sets a zoom ratio, with a maximum precision of two decimal places.
 | --- | --- |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="start"></a>
 ## start
 
 ```TypeScript
@@ -1196,7 +1156,7 @@ Starts this session. This API uses an asynchronous callback to return the result
 
 **Deprecated since:** 11
 
-**Substitutes:** [start(callback:](arkts-camera-camera-session-i.md#start-1)
+**Substitutes:** [start(callback:](arkts-camera-camera-session-i.md#start)
 
 <!--Device-CaptureSession-start(callback: AsyncCallback<void>): void--><!--Device-CaptureSession-start(callback: AsyncCallback<void>): void-End-->
 
@@ -1215,7 +1175,6 @@ Starts this session. This API uses an asynchronous callback to return the result
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="start-1"></a>
 ## start
 
 ```TypeScript
@@ -1228,7 +1187,7 @@ Starts this session. This API uses a promise to return the result.
 
 **Deprecated since:** 11
 
-**Substitutes:** [start()](arkts-camera-camera-session-i.md#start-1)
+**Substitutes:** [start()](arkts-camera-camera-session-i.md#start)
 
 <!--Device-CaptureSession-start(): Promise<void>--><!--Device-CaptureSession-start(): Promise<void>-End-->
 
@@ -1247,7 +1206,6 @@ Starts this session. This API uses a promise to return the result.
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="stop"></a>
 ## stop
 
 ```TypeScript
@@ -1260,7 +1218,7 @@ Stops this session. This API uses an asynchronous callback to return the result.
 
 **Deprecated since:** 11
 
-**Substitutes:** [stop(callback:](arkts-camera-camera-session-i.md#stop-1)
+**Substitutes:** [stop(callback:](arkts-camera-camera-session-i.md#stop)
 
 <!--Device-CaptureSession-stop(callback: AsyncCallback<void>): void--><!--Device-CaptureSession-stop(callback: AsyncCallback<void>): void-End-->
 
@@ -1278,7 +1236,6 @@ Stops this session. This API uses an asynchronous callback to return the result.
 | --- | --- |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="stop-1"></a>
 ## stop
 
 ```TypeScript
@@ -1291,7 +1248,7 @@ Stops this session. This API uses a promise to return the result.
 
 **Deprecated since:** 11
 
-**Substitutes:** [stop()](arkts-camera-camera-session-i.md#stop-1)
+**Substitutes:** [stop()](arkts-camera-camera-session-i.md#stop)
 
 <!--Device-CaptureSession-stop(): Promise<void>--><!--Device-CaptureSession-stop(): Promise<void>-End-->
 

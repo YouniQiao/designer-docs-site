@@ -30,10 +30,12 @@ import { systemManager } from '@kit.MDMKit';
 | [addKeyEventPolicies](arkts-mdm-systemmanager-addkeyeventpolicies-f.md#addkeyeventpolicies) | Adds a key event handling policy. When the system triggers a key event, if the event matches the delivered key event policy, the MDM app will be notified via the [EnterpriseAdminExtensionAbility.onKeyEvent](arkts-mdm-enterprise-enterpriseadminextensionability-enterpriseadminextensionability-c.md#onkeyevent)callback, with the key event information of the matched policy carried in the callback. |
 | [finishLogCollected](arkts-mdm-systemmanager-finishlogcollected-f.md#finishlogcollected) | Deletes the device logs collected by the current MDM app under the current user. |
 | [getAutoUnlockAfterReboot](arkts-mdm-systemmanager-getautounlockafterreboot-f.md#getautounlockafterreboot) | Checks whether the device is automatically unlocked upon reboot. |
+| [getAutoUnlockAfterReboot](arkts-mdm-systemmanager-getautounlockafterreboot-f.md#getautounlockafterreboot-1) | Checks whether the device is automatically unlocked upon reboot. |
 | [getDisallowedNearLinkProtocols](arkts-mdm-systemmanager-getdisallowednearlinkprotocols-f.md#getdisallowednearlinkprotocols) | Obtains the list of disallowed NearLink protocols for a specified user. |
 | [getInstallLocalEnterpriseAppEnabled](arkts-mdm-systemmanager-getinstalllocalenterpriseappenabled-f.md#getinstalllocalenterpriseappenabled) | Checks whether local installation of enterprise applications is supported. |
 | [getInstallLocalEnterpriseAppEnabledForAccount](arkts-mdm-systemmanager-getinstalllocalenterpriseappenabledforaccount-f.md#getinstalllocalenterpriseappenabledforaccount) | Checks whether local installation of enterprise applications is supported for a specified user. |
 | [getKeyEventPolicies](arkts-mdm-systemmanager-getkeyeventpolicies-f.md#getkeyeventpolicies) | Obtains the key event handling policy. |
+| [getKeyEventPolicies](arkts-mdm-systemmanager-getkeyeventpolicies-f.md#getkeyeventpolicies-1) | Obtains the key event handling policy. |
 | [getNTPServer](arkts-mdm-systemmanager-getntpserver-f.md#getntpserver) | Obtains the NTP server information. |
 | [getOtaUpdatePolicy](arkts-mdm-systemmanager-getotaupdatepolicy-f.md#getotaupdatepolicy) | Checks the update policy. |
 | [getUpdateAuthData](arkts-mdm-systemmanager-getupdateauthdata-f.md#getupdateauthdata) | Obtains the authentication data for system update verification. This API uses a promise to return the result. |

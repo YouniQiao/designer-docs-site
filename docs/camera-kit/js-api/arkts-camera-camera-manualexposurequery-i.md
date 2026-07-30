@@ -16,7 +16,6 @@ Provides APIs to obtain the manual exposure range supported.
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="getexposurebiasstep"></a>
 ## getExposureBiasStep
 
 ```TypeScript
@@ -48,7 +47,6 @@ Get exposure bias step.
 | [7400102](../errorcode-camera.md#7400102-invalid-operation) | Operation not allowed, session or inputdevice maybe abnormal. |
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 
-<a id="getsupportedexposuredurationrange"></a>
 ## getSupportedExposureDurationRange
 
 ```TypeScript

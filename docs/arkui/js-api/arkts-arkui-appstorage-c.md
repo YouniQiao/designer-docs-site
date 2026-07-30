@@ -1,6 +1,6 @@
 # AppStorage
 
-For details about how to use AppStorage, see [AppStorage: Storing Application-wide UI State](docroot://ui/state-management/arkts-appstorage.md).
+For details about how to use AppStorage, see [AppStorage: Storing Application-wide UI State](../../../ui/state-management/arkts-appstorage.md).
 
 **Since:** 7
 
@@ -8,22 +8,21 @@ For details about how to use AppStorage, see [AppStorage: Storing Application-wi
 
 **System capability:** SystemCapability.ArkUI.ArkUI.Full
 
-<a id="clear"></a>
 ## Clear
 
 ```TypeScript
 static Clear(): boolean
 ```
 
-Deletes all properties from [AppStorage](docroot://ui/state-management/arkts-appstorage.md). The deletion is only successful if none of the properties in AppStorage have any subscribers. If there are subscribers, this API does not take effect and **false** is returned. If there are no subscribers, the deletion is successful and **true** is returned.
+Deletes all properties from [AppStorage](../../../ui/state-management/arkts-appstorage.md). The deletion is only successful if none of the properties in AppStorage have any subscribers. If there are subscribers, this API does not take effect and **false** is returned. If there are no subscribers, the deletion is successful and **true** is returned.
 
-For details about the subscriber, see [delete](arkts-arkui-appstorage-c.md#delete-1).
+For details about the subscriber, see [delete](arkts-arkui-appstorage-c.md#delete).
 
 **Since:** 9
 
 **Deprecated since:** 10
 
-**Substitutes:** [clear](arkts-arkui-appstorage-c.md#clear-1)
+**Substitutes:** [clear](arkts-arkui-appstorage-c.md#clear)
 
 <!--Device-AppStorage-static Clear(): boolean--><!--Device-AppStorage-static Clear(): boolean-End-->
 
@@ -35,24 +34,23 @@ For details about the subscriber, see [delete](arkts-arkui-appstorage-c.md#delet
 | --- | --- |
 | boolean | Returns **true** if the operation is successful; returns **false** otherwise. |
 
-<a id="delete"></a>
 ## Delete
 
 ```TypeScript
 static Delete(propName: string): boolean
 ```
 
-Deletes the property corresponding to **propName** from [AppStorage](docroot://ui/state-management/arkts-appstorage.md).
+Deletes the property corresponding to **propName** from [AppStorage](../../../ui/state-management/arkts-appstorage.md).
 
 The deletion is only successful if the property has no subscribers. If there is a subscriber, the deletion fails and **false** is returned. If there are no subscribers, the deletion is successful and **true** is returned.
 
-Subscribers include properties bound using [Link](arkts-arkui-appstorage-c.md#link-1) and [Prop](arkts-arkui-appstorage-c.md#prop-1) APIs, as well as those decorated with [\@StorageLink('propName')](docroot://ui/state-management/arkts-appstorage.md#storagelink) and [\@StorageProp('propName')](docroot://ui/state-management/arkts-appstorage.md#storageprop). This means that if\@StorageLink('propName') and \@StorageProp('propName') are used in a custom component or if there is still a **SubscribedAbstractProperty** instance in a synchronization relationship with the property, the property cannot be deleted from AppStorage.
+Subscribers include properties bound using [Link](arkts-arkui-appstorage-c.md#link) and [Prop](arkts-arkui-appstorage-c.md#prop) APIs, as well as those decorated with [\@StorageLink('propName')](../../../ui/state-management/arkts-appstorage.md#storagelink) and [\@StorageProp('propName')](../../../ui/state-management/arkts-appstorage.md#storageprop). This means that if\@StorageLink('propName') and \@StorageProp('propName') are used in a custom component or if there is still a **SubscribedAbstractProperty** instance in a synchronization relationship with the property, the property cannot be deleted from AppStorage.
 
 **Since:** 7
 
 **Deprecated since:** 10
 
-**Substitutes:** [delete](arkts-arkui-appstorage-c.md#delete-1)
+**Substitutes:** [delete](arkts-arkui-appstorage-c.md#delete)
 
 <!--Device-AppStorage-static Delete(propName: string): boolean--><!--Device-AppStorage-static Delete(propName: string): boolean-End-->
 
@@ -70,20 +68,19 @@ Subscribers include properties bound using [Link](arkts-arkui-appstorage-c.md#li
 | --- | --- |
 | boolean | Returns **true** if the operation is successful; returns **false** if the operation fails. |
 
-<a id="get"></a>
 ## Get
 
 ```TypeScript
 static Get<T>(propName: string): T | undefined
 ```
 
-Obtains the value of the property corresponding to **propName** from [AppStorage](docroot://ui/state-management/arkts-appstorage.md). If the property does not exist, this API returns **undefined**.
+Obtains the value of the property corresponding to **propName** from [AppStorage](../../../ui/state-management/arkts-appstorage.md). If the property does not exist, this API returns **undefined**.
 
 **Since:** 7
 
 **Deprecated since:** 10
 
-**Substitutes:** [get](arkts-arkui-appstorage-c.md#get-1)
+**Substitutes:** [get](arkts-arkui-appstorage-c.md#get)
 
 <!--Device-AppStorage-static Get<T>(propName: string): T | undefined--><!--Device-AppStorage-static Get<T>(propName: string): T | undefined-End-->
 
@@ -101,20 +98,19 @@ Obtains the value of the property corresponding to **propName** from [AppStorage
 | --- | --- |
 | T | Value of the property corresponding to **propName** in AppStorage, or **undefined** if it does not exist. |
 
-<a id="has"></a>
 ## Has
 
 ```TypeScript
 static Has(propName: string): boolean
 ```
 
-Checks whether the property corresponding to **propName** exists in [AppStorage](docroot://ui/state-management/arkts-appstorage.md).
+Checks whether the property corresponding to **propName** exists in [AppStorage](../../../ui/state-management/arkts-appstorage.md).
 
 **Since:** 7
 
 **Deprecated since:** 10
 
-**Substitutes:** [has](arkts-arkui-appstorage-c.md#has-1)
+**Substitutes:** [has](arkts-arkui-appstorage-c.md#has)
 
 <!--Device-AppStorage-static Has(propName: string): boolean--><!--Device-AppStorage-static Has(propName: string): boolean-End-->
 
@@ -132,14 +128,13 @@ Checks whether the property corresponding to **propName** exists in [AppStorage]
 | --- | --- |
 | boolean | Returns **true** if the property exists in AppStorage; returns **false** otherwise. |
 
-<a id="ismutable"></a>
 ## IsMutable
 
 ```TypeScript
 static IsMutable(propName: string): boolean
 ```
 
-Checks whether the property corresponding to **propName** in [AppStorage](docroot://ui/state-management/arkts-appstorage.md) is mutable.
+Checks whether the property corresponding to **propName** in [AppStorage](../../../ui/state-management/arkts-appstorage.md) is mutable.
 
 **Since:** 7
 
@@ -161,20 +156,19 @@ Checks whether the property corresponding to **propName** in [AppStorage](docroo
 | --- | --- |
 | boolean | Whether the property corresponding to **propName** is mutable. Currently, this return value is always **true**. |
 
-<a id="keys"></a>
 ## Keys
 
 ```TypeScript
 static Keys(): IterableIterator<string>
 ```
 
-Obtains all property names in [AppStorage](docroot://ui/state-management/arkts-appstorage.md).
+Obtains all property names in [AppStorage](../../../ui/state-management/arkts-appstorage.md).
 
 **Since:** 7
 
 **Deprecated since:** 10
 
-**Substitutes:** [keys](arkts-arkui-appstorage-c.md#keys-1)
+**Substitutes:** [keys](arkts-arkui-appstorage-c.md#keys)
 
 <!--Device-AppStorage-static Keys(): IterableIterator<string>--><!--Device-AppStorage-static Keys(): IterableIterator<string>-End-->
 
@@ -186,14 +180,13 @@ Obtains all property names in [AppStorage](docroot://ui/state-management/arkts-a
 | --- | --- |
 | [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;string&gt; | All property names in AppStorage. |
 
-<a id="link"></a>
 ## Link
 
 ```TypeScript
 static Link(propName: string): any
 ```
 
-Establishes a two-way data binding with the property corresponding to **propName** in [AppStorage](docroot://ui/state-management/arkts-appstorage.md). If the given property exists in AppStorage, the two-way bound data of the property in AppStorage is returned.
+Establishes a two-way data binding with the property corresponding to **propName** in [AppStorage](../../../ui/state-management/arkts-appstorage.md). If the given property exists in AppStorage, the two-way bound data of the property in AppStorage is returned.
 
 Any update of the data is synchronized back to AppStorage, which then synchronizes the update to all data and custom components bound to the property.
 
@@ -203,7 +196,7 @@ If the given property does not exist in AppStorage, **undefined** is returned.
 
 **Deprecated since:** 10
 
-**Substitutes:** [link](arkts-arkui-appstorage-c.md#link-1)
+**Substitutes:** [link](arkts-arkui-appstorage-c.md#link)
 
 <!--Device-AppStorage-static Link(propName: string): any--><!--Device-AppStorage-static Link(propName: string): any-End-->
 
@@ -221,24 +214,21 @@ If the given property does not exist in AppStorage, **undefined** is returned.
 | --- | --- |
 | any | Two-way bound data of the specified property in AppStorage, or **undefined** if the property does not exist. |
 
-<a id="prop"></a>
 ## Prop
 
 ```TypeScript
 static Prop(propName: string): any
 ```
 
-Establishes a one-way data binding with the property corresponding to **propName** in [AppStorage](docroot://ui/state-management/arkts-appstorage.md). If the given property exists in AppStorage, the one-way bound data of the property in AppStorage is returned. If the given property does not exist in AppStorage,**undefined** is returned. Updates of the one-way bound data are not synchronized back to AppStorage.
-
+Establishes a one-way data binding with the property corresponding to **propName** in [AppStorage](../../../ui/state-management/arkts-appstorage.md). If the given property exists in AppStorage, the one-way bound data of the property in AppStorage is returned. If the given property does not exist in AppStorage,**undefined** is returned. Updates of the one-way bound data are not synchronized back to AppStorage.
 > **NOTE**
-
 > Prop supports only simple types.
 
 **Since:** 7
 
 **Deprecated since:** 10
 
-**Substitutes:** [prop](arkts-arkui-appstorage-c.md#prop-1)
+**Substitutes:** [prop](arkts-arkui-appstorage-c.md#prop)
 
 <!--Device-AppStorage-static Prop(propName: string): any--><!--Device-AppStorage-static Prop(propName: string): any-End-->
 
@@ -256,20 +246,19 @@ Establishes a one-way data binding with the property corresponding to **propName
 | --- | --- |
 | any | One-way bound data of the specified property in AppStorage, or **undefined** if the property does not exist. |
 
-<a id="set"></a>
 ## Set
 
 ```TypeScript
 static Set<T>(propName: string, newValue: T): boolean
 ```
 
-Sets the value of the property corresponding to **propName** in [AppStorage](docroot://ui/state-management/arkts-appstorage.md). If the value of **newValue** is the same as the current value of the property, no assignment is performed, and the state variable does not instruct the UI to update the value of the property. Starting from API version 12, **newValue** can be **null** or **undefined**.
+Sets the value of the property corresponding to **propName** in [AppStorage](../../../ui/state-management/arkts-appstorage.md). If the value of **newValue** is the same as the current value of the property, no assignment is performed, and the state variable does not instruct the UI to update the value of the property. Starting from API version 12, **newValue** can be **null** or **undefined**.
 
 **Since:** 7
 
 **Deprecated since:** 10
 
-**Substitutes:** [set](arkts-arkui-appstorage-c.md#set-1)
+**Substitutes:** [set](arkts-arkui-appstorage-c.md#set)
 
 <!--Device-AppStorage-static Set<T>(propName: string, newValue: T): boolean--><!--Device-AppStorage-static Set<T>(propName: string, newValue: T): boolean-End-->
 
@@ -288,20 +277,19 @@ Sets the value of the property corresponding to **propName** in [AppStorage](doc
 | --- | --- |
 | boolean | Returns **false** if the property corresponding to **propName** does not exist in AppStorage.Returns **true** if the operation is successful. |
 
-<a id="setandlink"></a>
 ## SetAndLink
 
 ```TypeScript
 static SetAndLink<T>(propName: string, defaultValue: T): SubscribedAbstractProperty<T>
 ```
 
-Similar to the [Link](arkts-arkui-appstorage-c.md#link-1) API, establishes a two-way data binding with the property corresponding to **propName** in [AppStorage](docroot://ui/state-management/arkts-appstorage.md). If the given property exists in AppStorage, this API returns the two-way bound data for the property. If the given property does not exist, this API creates and initializes the property in AppStorage using **defaultValue** and returns its two-way bound data. The value of **defaultValue** must be of the **T** type and cannot be **null** or **undefined**.
+Similar to the [Link](arkts-arkui-appstorage-c.md#link) API, establishes a two-way data binding with the property corresponding to **propName** in [AppStorage](../../../ui/state-management/arkts-appstorage.md). If the given property exists in AppStorage, this API returns the two-way bound data for the property. If the given property does not exist, this API creates and initializes the property in AppStorage using **defaultValue** and returns its two-way bound data. The value of **defaultValue** must be of the **T** type and cannot be **null** or **undefined**.
 
 **Since:** 7
 
 **Deprecated since:** 10
 
-**Substitutes:** [setAndLink](arkts-arkui-appstorage-c.md#setandlink-1)
+**Substitutes:** [setAndLink](arkts-arkui-appstorage-c.md#setandlink)
 
 <!--Device-AppStorage-static SetAndLink<T>(propName: string, defaultValue: T): SubscribedAbstractProperty<T>--><!--Device-AppStorage-static SetAndLink<T>(propName: string, defaultValue: T): SubscribedAbstractProperty<T>-End-->
 
@@ -320,20 +308,19 @@ Similar to the [Link](arkts-arkui-appstorage-c.md#link-1) API, establishes a two
 | --- | --- |
 | [SubscribedAbstractProperty](arkts-arkui-subscribedabstractproperty-c.md)&lt;T&gt; | Instance of **SubscribedAbstractProperty<T>** and two-way bound data of the given property in AppStorage. |
 
-<a id="setandprop"></a>
 ## SetAndProp
 
 ```TypeScript
 static SetAndProp<S>(propName: string, defaultValue: S): SubscribedAbstractProperty<S>
 ```
 
-Similar to the [Prop](arkts-arkui-appstorage-c.md#prop-1) API, establishes a one-way data binding with the property corresponding to **propName** in [AppStorage](docroot://ui/state-management/arkts-appstorage.md). If the given property exists in AppStorage, this API returns the one-way bound data for the property. If the given property does not exist, this API creates and initializes the property in AppStorage using **defaultValue** and returns its one-way bound data. The value of **defaultValue** must be of the **S** type and cannot be **null** or **undefined**.
+Similar to the [Prop](arkts-arkui-appstorage-c.md#prop) API, establishes a one-way data binding with the property corresponding to **propName** in [AppStorage](../../../ui/state-management/arkts-appstorage.md). If the given property exists in AppStorage, this API returns the one-way bound data for the property. If the given property does not exist, this API creates and initializes the property in AppStorage using **defaultValue** and returns its one-way bound data. The value of **defaultValue** must be of the **S** type and cannot be **null** or **undefined**.
 
 **Since:** 7
 
 **Deprecated since:** 10
 
-**Substitutes:** [setAndProp](arkts-arkui-appstorage-c.md#setandprop-1)
+**Substitutes:** [setAndProp](arkts-arkui-appstorage-c.md#setandprop)
 
 <!--Device-AppStorage-static SetAndProp<S>(propName: string, defaultValue: S): SubscribedAbstractProperty<S>--><!--Device-AppStorage-static SetAndProp<S>(propName: string, defaultValue: S): SubscribedAbstractProperty<S>-End-->
 
@@ -352,14 +339,13 @@ Similar to the [Prop](arkts-arkui-appstorage-c.md#prop-1) API, establishes a one
 | --- | --- |
 | [SubscribedAbstractProperty](arkts-arkui-subscribedabstractproperty-c.md)&lt;S&gt; | Instance of **SubscribedAbstractProperty<S>**. |
 
-<a id="setorcreate"></a>
 ## SetOrCreate
 
 ```TypeScript
 static SetOrCreate<T>(propName: string, newValue: T): void
 ```
 
-Sets the value of the property corresponding to **propName** in [AppStorage](docroot://ui/state-management/arkts-appstorage.md) to a new value, if the property exists. If the property does not exist, this API creates it with the value of **newValue**.
+Sets the value of the property corresponding to **propName** in [AppStorage](../../../ui/state-management/arkts-appstorage.md) to a new value, if the property exists. If the property does not exist, this API creates it with the value of **newValue**.
 
 The value of **newValue** cannot be **null** or **undefined**.
 
@@ -367,7 +353,7 @@ The value of **newValue** cannot be **null** or **undefined**.
 
 **Deprecated since:** 10
 
-**Substitutes:** [setOrCreate](arkts-arkui-appstorage-c.md#setorcreate-1)
+**Substitutes:** [setOrCreate](arkts-arkui-appstorage-c.md#setorcreate)
 
 <!--Device-AppStorage-static SetOrCreate<T>(propName: string, newValue: T): void--><!--Device-AppStorage-static SetOrCreate<T>(propName: string, newValue: T): void-End-->
 
@@ -380,20 +366,19 @@ The value of **newValue** cannot be **null** or **undefined**.
 | propName | string | Yes | Property name in AppStorage. |
 | newValue | T | Yes | Property value, which cannot be **null** or **undefined**. |
 
-<a id="size"></a>
 ## Size
 
 ```TypeScript
 static Size(): number
 ```
 
-Obtains the number of properties in [AppStorage](docroot://ui/state-management/arkts-appstorage.md).
+Obtains the number of properties in [AppStorage](../../../ui/state-management/arkts-appstorage.md).
 
 **Since:** 7
 
 **Deprecated since:** 10
 
-**Substitutes:** [size](arkts-arkui-appstorage-c.md#size-1)
+**Substitutes:** [size](arkts-arkui-appstorage-c.md#size)
 
 <!--Device-AppStorage-static Size(): number--><!--Device-AppStorage-static Size(): number-End-->
 
@@ -405,16 +390,15 @@ Obtains the number of properties in [AppStorage](docroot://ui/state-management/a
 | --- | --- |
 | number | Number of properties in AppStorage. |
 
-<a id="clear"></a>
 ## clear
 
 ```TypeScript
 static clear(): boolean
 ```
 
-Deletes all properties from [AppStorage](docroot://ui/state-management/arkts-appstorage.md). The deletion is only successful if none of the properties in AppStorage have any subscribers. If there are subscribers, this API does not take effect and **false** is returned. If there are no subscribers, the deletion is successful and **true** is returned.
+Deletes all properties from [AppStorage](../../../ui/state-management/arkts-appstorage.md). The deletion is only successful if none of the properties in AppStorage have any subscribers. If there are subscribers, this API does not take effect and **false** is returned. If there are no subscribers, the deletion is successful and **true** is returned.
 
-For details about the subscriber, see [delete](arkts-arkui-appstorage-c.md#delete-1).
+For details about the subscriber, see [delete](arkts-arkui-appstorage-c.md#delete).
 
 **Since:** 10
 
@@ -430,28 +414,27 @@ For details about the subscriber, see [delete](arkts-arkui-appstorage-c.md#delet
 | --- | --- |
 | boolean | Returns **true** if the properties in AppStorage have no subscribers and the deletion is successful; returns **false** if there are still subscribers. |
 
-<a id="delete"></a>
 ## delete
 
 ```TypeScript
 static delete(propName: string): boolean
 ```
 
-Deletes the property corresponding to **propName** from [AppStorage](docroot://ui/state-management/arkts-appstorage.md).
+Deletes the property corresponding to **propName** from [AppStorage](../../../ui/state-management/arkts-appstorage.md).
 
 The deletion is only successful if the property has no subscribers. If there is a subscriber, the deletion fails and **false** is returned. If there are no subscribers, the deletion is successful and **true** is returned.
 
 The property subscribers include the following:
 
-1. Variables decorated by [\@StorageLink](docroot://ui/state-management/arkts-appstorage.md#storagelink) or [\@StorageProp](docroot://ui/state-management/arkts-appstorage.md#storageprop)
+1. Variables decorated by [\@StorageLink](../../../ui/state-management/arkts-appstorage.md#storagelink) or [\@StorageProp](../../../ui/state-management/arkts-appstorage.md#storageprop)
 
-2. Instances of [SubscribedAbstractProperty](arkts-arkui-subscribedabstractproperty-c-sys.md) returned by [link](arkts-arkui-appstorage-c.md#link-1), [prop](arkts-arkui-appstorage-c.md#prop-1), [setAndLink](arkts-arkui-appstorage-c.md#setandlink-1),or [setAndProp](arkts-arkui-appstorage-c.md#setandprop-1)
+2. Instances of [SubscribedAbstractProperty](arkts-arkui-subscribedabstractproperty-c-sys.md) returned by [link](arkts-arkui-appstorage-c.md#link), [prop](arkts-arkui-appstorage-c.md#prop), [setAndLink](arkts-arkui-appstorage-c.md#setandlink),or [setAndProp](arkts-arkui-appstorage-c.md#setandprop)
 
 To delete these subscribers:
 
-1. Remove the custom component containing \@StorageLink or \@StorageProp. For details, see [Custom Component Deletion](docroot://ui/state-management/arkts-page-custom-components-lifecycle.md#custom-component-deletion).
+1. Remove the custom component containing \@StorageLink or \@StorageProp. For details, see [Custom Component Deletion](../../../ui/state-management/arkts-page-custom-components-lifecycle.md#custom-component-deletion).
 
-2. Call the [aboutToBeDeleted](arkts-arkui-subscribedabstractproperty-c.md#abouttobedeleted-1) API on instances of **SubscribedAbstractProperty** returned by **link**, **prop**, **setAndLink**, or **setAndProp**.
+2. Call the [aboutToBeDeleted](arkts-arkui-subscribedabstractproperty-c.md#abouttobedeleted) API on instances of **SubscribedAbstractProperty** returned by **link**, **prop**, **setAndLink**, or **setAndProp**.
 
 **Since:** 10
 
@@ -473,14 +456,13 @@ To delete these subscribers:
 | --- | --- |
 | boolean | Returns **true** if the operation is successful; returns **false** if the operation fails. |
 
-<a id="get"></a>
 ## get
 
 ```TypeScript
 static get<T>(propName: string): T | undefined
 ```
 
-Obtains the value of the property corresponding to **propName** from [AppStorage](docroot://ui/state-management/arkts-appstorage.md). If the property does not exist, this API returns **undefined**.
+Obtains the value of the property corresponding to **propName** from [AppStorage](../../../ui/state-management/arkts-appstorage.md). If the property does not exist, this API returns **undefined**.
 
 **Since:** 10
 
@@ -502,14 +484,13 @@ Obtains the value of the property corresponding to **propName** from [AppStorage
 | --- | --- |
 | T | Value of the property corresponding to **propName** in AppStorage, or **undefined** if it does not exist. |
 
-<a id="has"></a>
 ## has
 
 ```TypeScript
 static has(propName: string): boolean
 ```
 
-Checks whether the property corresponding to **propName** exists in [AppStorage](docroot://ui/state-management/arkts-appstorage.md).
+Checks whether the property corresponding to **propName** exists in [AppStorage](../../../ui/state-management/arkts-appstorage.md).
 
 **Since:** 10
 
@@ -531,14 +512,13 @@ Checks whether the property corresponding to **propName** exists in [AppStorage]
 | --- | --- |
 | boolean | Returns **true** if the property exists in AppStorage; returns **false** otherwise. |
 
-<a id="keys"></a>
 ## keys
 
 ```TypeScript
 static keys(): IterableIterator<string>
 ```
 
-Obtains all property names in [AppStorage](docroot://ui/state-management/arkts-appstorage.md).
+Obtains all property names in [AppStorage](../../../ui/state-management/arkts-appstorage.md).
 
 **Since:** 10
 
@@ -554,14 +534,13 @@ Obtains all property names in [AppStorage](docroot://ui/state-management/arkts-a
 | --- | --- |
 | [IterableIterator](../../apis-na/arkts-apis/arkts-na-lib-es2015-iterable-iterableiterator-i.md)&lt;string&gt; | All property names in AppStorage. |
 
-<a id="link"></a>
 ## link
 
 ```TypeScript
 static link<T>(propName: string): SubscribedAbstractProperty<T>
 ```
 
-Establishes a two-way data binding with the property corresponding to **propName** in [AppStorage](docroot://ui/state-management/arkts-appstorage.md). If the given property exists in AppStorage, the two-way bound data of the property in AppStorage is returned.
+Establishes a two-way data binding with the property corresponding to **propName** in [AppStorage](../../../ui/state-management/arkts-appstorage.md). If the given property exists in AppStorage, the two-way bound data of the property in AppStorage is returned.
 
 Any update of the data is synchronized back to AppStorage, which then synchronizes the update to all data and custom components bound to the property.
 
@@ -587,14 +566,13 @@ If the given property does not exist in AppStorage, **undefined** is returned.
 | --- | --- |
 | [SubscribedAbstractProperty](arkts-arkui-subscribedabstractproperty-c.md)&lt;T&gt; | Two-way bound data of the specified property in AppStorage, or **undefined** if the property does not exist. |
 
-<a id="prop"></a>
 ## prop
 
 ```TypeScript
 static prop<T>(propName: string): SubscribedAbstractProperty<T>
 ```
 
-Establishes a one-way data binding with the property corresponding to **propName** in [AppStorage](docroot://ui/state-management/arkts-appstorage.md). If the given property exists in AppStorage, the one-way bound data of the property in AppStorage is returned. If the given property does not exist in AppStorage,**undefined** is returned. Updates of the one-way bound data are not synchronized back to AppStorage.
+Establishes a one-way data binding with the property corresponding to **propName** in [AppStorage](../../../ui/state-management/arkts-appstorage.md). If the given property exists in AppStorage, the one-way bound data of the property in AppStorage is returned. If the given property does not exist in AppStorage,**undefined** is returned. Updates of the one-way bound data are not synchronized back to AppStorage.
 
 **Since:** 10
 
@@ -616,16 +594,15 @@ Establishes a one-way data binding with the property corresponding to **propName
 | --- | --- |
 | [SubscribedAbstractProperty](arkts-arkui-subscribedabstractproperty-c.md)&lt;T&gt; | One-way bound data of the specified property in AppStorage, or **undefined** if the property does not exist. |
 
-<a id="ref"></a>
 ## ref
 
 ```TypeScript
 static ref<T>(propName: string): AbstractProperty<T> | undefined
 ```
 
-Returns a reference to the property corresponding to **propName** in [AppStorage](docroot://ui/state-management/arkts-appstorage.md). If the provided **propName** does not exist, this API returns **undefined**.
+Returns a reference to the property corresponding to **propName** in [AppStorage](../../../ui/state-management/arkts-appstorage.md). If the provided **propName** does not exist, this API returns **undefined**.
 
-This API is similar to [link](arkts-arkui-appstorage-c.md#link-1) but does not require manually releasing the returned variable of the [AbstractProperty](arkts-arkui-abstractproperty-i.md) type.
+This API is similar to [link](arkts-arkui-appstorage-c.md#link) but does not require manually releasing the returned variable of the [AbstractProperty](arkts-arkui-abstractproperty-i.md) type.
 
 **Since:** 12
 
@@ -647,22 +624,19 @@ This API is similar to [link](arkts-arkui-appstorage-c.md#link-1) but does not r
 | --- | --- |
 | [AbstractProperty](arkts-arkui-abstractproperty-i.md)&lt;T&gt; | A reference to the property in AppStorage, or **undefined** if the property does not exist. |
 
-<a id="set"></a>
 ## set
 
 ```TypeScript
 static set<T>(propName: string, newValue: T): boolean
 ```
 
-Sets the value of the property corresponding to **propName** in [AppStorage](docroot://ui/state-management/arkts-appstorage.md). If the value of **newValue** is the same as the current value of the property, no assignment is performed, and the state variable does not instruct the UI to update the value of the property.
-
+Sets the value of the property corresponding to **propName** in [AppStorage](../../../ui/state-management/arkts-appstorage.md). If the value of **newValue** is the same as the current value of the property, no assignment is performed, and the state variable does not instruct the UI to update the value of the property.
 > **NOTE**
-
 > Since API version 12, AppStorage supports  
-> [Map](docroot://ui/state-management/arkts-appstorage.md#decorating-variables-of-the-map-type),  
-> [Set](docroot://ui/state-management/arkts-appstorage.md#decorating-variables-of-the-set-type),  
-> [Date](docroot://ui/state-management/arkts-appstorage.md#decorating-variables-of-the-date-type), **null**,  
-> **undefined**, and [union](docroot://ui/state-management/arkts-appstorage.md#using-union-types-in-appstorage)  
+> [Map](../../../ui/state-management/arkts-appstorage.md#decorating-variables-of-the-map-type),  
+> [Set](../../../ui/state-management/arkts-appstorage.md#decorating-variables-of-the-set-type),  
+> [Date](../../../ui/state-management/arkts-appstorage.md#decorating-variables-of-the-date-type), **null**,  
+> **undefined**, and [union](../../../ui/state-management/arkts-appstorage.md#using-union-types-in-appstorage)  
 > types.
 
 **Since:** 10
@@ -686,22 +660,19 @@ Sets the value of the property corresponding to **propName** in [AppStorage](doc
 | --- | --- |
 | boolean | Returns **false** if the property corresponding to **propName** does not exist in AppStorage or if the assignment fails. Returns **true** if the assignment is successful. |
 
-<a id="setandlink"></a>
 ## setAndLink
 
 ```TypeScript
 static setAndLink<T>(propName: string, defaultValue: T): SubscribedAbstractProperty<T>
 ```
 
-Similar to the [link](arkts-arkui-appstorage-c.md#link-1) API, establishes a two-way data binding with the property corresponding to **propName** in [AppStorage](docroot://ui/state-management/arkts-appstorage.md). If the given property exists in AppStorage, this API returns the two-way bound data for the property. If the given property does not exist, this API creates and initializes the property in AppStorage using **defaultValue** and returns its two-way bound data.
-
+Similar to the [link](arkts-arkui-appstorage-c.md#link) API, establishes a two-way data binding with the property corresponding to **propName** in [AppStorage](../../../ui/state-management/arkts-appstorage.md). If the given property exists in AppStorage, this API returns the two-way bound data for the property. If the given property does not exist, this API creates and initializes the property in AppStorage using **defaultValue** and returns its two-way bound data.
 > **NOTE**
-
 > Since API version 12, AppStorage supports  
-> [Map](docroot://ui/state-management/arkts-appstorage.md#decorating-variables-of-the-map-type),  
-> [Set](docroot://ui/state-management/arkts-appstorage.md#decorating-variables-of-the-set-type),  
-> [Date](docroot://ui/state-management/arkts-appstorage.md#decorating-variables-of-the-date-type), **null**,  
-> **undefined**, and [union](docroot://ui/state-management/arkts-appstorage.md#using-union-types-in-appstorage)  
+> [Map](../../../ui/state-management/arkts-appstorage.md#decorating-variables-of-the-map-type),  
+> [Set](../../../ui/state-management/arkts-appstorage.md#decorating-variables-of-the-set-type),  
+> [Date](../../../ui/state-management/arkts-appstorage.md#decorating-variables-of-the-date-type), **null**,  
+> **undefined**, and [union](../../../ui/state-management/arkts-appstorage.md#using-union-types-in-appstorage)  
 > types.
 
 **Since:** 10
@@ -725,22 +696,19 @@ Similar to the [link](arkts-arkui-appstorage-c.md#link-1) API, establishes a two
 | --- | --- |
 | [SubscribedAbstractProperty](arkts-arkui-subscribedabstractproperty-c.md)&lt;T&gt; | Instance of **SubscribedAbstractProperty<T>**, which is two-way bound data of the given property in AppStorage. |
 
-<a id="setandprop"></a>
 ## setAndProp
 
 ```TypeScript
 static setAndProp<T>(propName: string, defaultValue: T): SubscribedAbstractProperty<T>
 ```
 
-Similar to the [prop](arkts-arkui-appstorage-c.md#prop-1) API, establishes a one-way data binding with the property corresponding to **propName** in [AppStorage](docroot://ui/state-management/arkts-appstorage.md). If the given property exists in AppStorage, this API returns the one-way bound data for the property. If the given property does not exist, this API creates and initializes the property in AppStorage using **defaultValue** and returns its one-way bound data.
-
+Similar to the [prop](arkts-arkui-appstorage-c.md#prop) API, establishes a one-way data binding with the property corresponding to **propName** in [AppStorage](../../../ui/state-management/arkts-appstorage.md). If the given property exists in AppStorage, this API returns the one-way bound data for the property. If the given property does not exist, this API creates and initializes the property in AppStorage using **defaultValue** and returns its one-way bound data.
 > **NOTE**
-
 > Since API version 12, AppStorage supports  
-> [Map](docroot://ui/state-management/arkts-appstorage.md#decorating-variables-of-the-map-type),  
-> [Set](docroot://ui/state-management/arkts-appstorage.md#decorating-variables-of-the-set-type),  
-> [Date](docroot://ui/state-management/arkts-appstorage.md#decorating-variables-of-the-date-type), **null**,  
-> **undefined**, and [union](docroot://ui/state-management/arkts-appstorage.md#using-union-types-in-appstorage)  
+> [Map](../../../ui/state-management/arkts-appstorage.md#decorating-variables-of-the-map-type),  
+> [Set](../../../ui/state-management/arkts-appstorage.md#decorating-variables-of-the-set-type),  
+> [Date](../../../ui/state-management/arkts-appstorage.md#decorating-variables-of-the-date-type), **null**,  
+> **undefined**, and [union](../../../ui/state-management/arkts-appstorage.md#using-union-types-in-appstorage)  
 > types.
 
 **Since:** 10
@@ -764,24 +732,21 @@ Similar to the [prop](arkts-arkui-appstorage-c.md#prop-1) API, establishes a one
 | --- | --- |
 | [SubscribedAbstractProperty](arkts-arkui-subscribedabstractproperty-c.md)&lt;T&gt; | Instance of **SubscribedAbstractProperty<T>**. |
 
-<a id="setandref"></a>
 ## setAndRef
 
 ```TypeScript
 static setAndRef<T>(propName: string, defaultValue: T): AbstractProperty<T>
 ```
 
-Similar to the [ref](arkts-arkui-appstorage-c.md#ref-1) API, returns a reference to the property corresponding to **propName** in [AppStorage](docroot://ui/state-management/arkts-appstorage.md). If the given property does not exist, this API creates and initializes the property in AppStorage using **defaultValue** and returns its reference.
+Similar to the [ref](arkts-arkui-appstorage-c.md#ref) API, returns a reference to the property corresponding to **propName** in [AppStorage](../../../ui/state-management/arkts-appstorage.md). If the given property does not exist, this API creates and initializes the property in AppStorage using **defaultValue** and returns its reference.
 
-This API is similar to [setAndLink](arkts-arkui-appstorage-c.md#setandlink-1) but does not require manually releasing the returned variable of the [AbstractProperty](arkts-arkui-abstractproperty-i.md) type.
-
+This API is similar to [setAndLink](arkts-arkui-appstorage-c.md#setandlink) but does not require manually releasing the returned variable of the [AbstractProperty](arkts-arkui-abstractproperty-i.md) type.
 > **NOTE**
-
 > Since API version 12, AppStorage supports  
-> [Map](docroot://ui/state-management/arkts-appstorage.md#decorating-variables-of-the-map-type),  
-> [Set](docroot://ui/state-management/arkts-appstorage.md#decorating-variables-of-the-set-type),  
-> [Date](docroot://ui/state-management/arkts-appstorage.md#decorating-variables-of-the-date-type), **null**,  
-> **undefined**, and [union](docroot://ui/state-management/arkts-appstorage.md#using-union-types-in-appstorage)  
+> [Map](../../../ui/state-management/arkts-appstorage.md#decorating-variables-of-the-map-type),  
+> [Set](../../../ui/state-management/arkts-appstorage.md#decorating-variables-of-the-set-type),  
+> [Date](../../../ui/state-management/arkts-appstorage.md#decorating-variables-of-the-date-type), **null**,  
+> **undefined**, and [union](../../../ui/state-management/arkts-appstorage.md#using-union-types-in-appstorage)  
 > types.
 
 **Since:** 12
@@ -805,24 +770,21 @@ This API is similar to [setAndLink](arkts-arkui-appstorage-c.md#setandlink-1) bu
 | --- | --- |
 | [AbstractProperty](arkts-arkui-abstractproperty-i.md)&lt;T&gt; | Instance of **AbstractProperty<T>**, which is a reference to the property in AppStorage corresponding to **propName**. |
 
-<a id="setorcreate"></a>
 ## setOrCreate
 
 ```TypeScript
 static setOrCreate<T>(propName: string, newValue: T): void
 ```
 
-Sets the value of the property corresponding to **propName** in [AppStorage](docroot://ui/state-management/arkts-appstorage.md) to a new value, if the property exists and the new value is different from the current value. If the new value is the same as the current value of the property, no assignment is performed, and the state variable does not instruct the UI to update the value of the property.
+Sets the value of the property corresponding to **propName** in [AppStorage](../../../ui/state-management/arkts-appstorage.md) to a new value, if the property exists and the new value is different from the current value. If the new value is the same as the current value of the property, no assignment is performed, and the state variable does not instruct the UI to update the value of the property.
 
 If the property does not exist, this API creates it with the value of **newValue**. This **setOrCreate** API can create only one AppStorage key-value pair each time. To create multiple key-value pairs, call this API multiple times.
-
 > **NOTE**
-
 > Since API version 12, AppStorage supports  
-> [Map](docroot://ui/state-management/arkts-appstorage.md#decorating-variables-of-the-map-type),  
-> [Set](docroot://ui/state-management/arkts-appstorage.md#decorating-variables-of-the-set-type),  
-> [Date](docroot://ui/state-management/arkts-appstorage.md#decorating-variables-of-the-date-type), **null**,  
-> **undefined**, and [union](docroot://ui/state-management/arkts-appstorage.md#using-union-types-in-appstorage)  
+> [Map](../../../ui/state-management/arkts-appstorage.md#decorating-variables-of-the-map-type),  
+> [Set](../../../ui/state-management/arkts-appstorage.md#decorating-variables-of-the-set-type),  
+> [Date](../../../ui/state-management/arkts-appstorage.md#decorating-variables-of-the-date-type), **null**,  
+> **undefined**, and [union](../../../ui/state-management/arkts-appstorage.md#using-union-types-in-appstorage)  
 > types.
 
 **Since:** 10
@@ -840,14 +802,13 @@ If the property does not exist, this API creates it with the value of **newValue
 | propName | string | Yes | Property name in AppStorage. |
 | newValue | T | Yes | Property value. Since API version 12, the value can be **null** or **undefined**. |
 
-<a id="size"></a>
 ## size
 
 ```TypeScript
 static size(): number
 ```
 
-Obtains the number of properties in [AppStorage](docroot://ui/state-management/arkts-appstorage.md).
+Obtains the number of properties in [AppStorage](../../../ui/state-management/arkts-appstorage.md).
 
 **Since:** 10
 
@@ -863,7 +824,6 @@ Obtains the number of properties in [AppStorage](docroot://ui/state-management/a
 | --- | --- |
 | number | Number of properties in AppStorage. |
 
-<a id="staticclear"></a>
 ## staticClear
 
 ```TypeScript
@@ -876,7 +836,7 @@ Deletes all properties.
 
 **Deprecated since:** 9
 
-**Substitutes:** [Clear](arkts-arkui-appstorage-c.md#clear-1)
+**Substitutes:** [Clear](arkts-arkui-appstorage-c.md#clear)
 
 <!--Device-AppStorage-static staticClear(): boolean--><!--Device-AppStorage-static staticClear(): boolean-End-->
 

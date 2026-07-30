@@ -16,7 +16,6 @@ Provides methods to implement **RemoteObject**. The service provider must inheri
 import { rpc } from '@kit.IPCKit';
 ```
 
-<a id="attachlocalinterface"></a>
 ## attachLocalInterface
 
 ```TypeScript
@@ -29,7 +28,7 @@ Binds an interface descriptor to an **IRemoteBroker** object.
 
 **Deprecated since:** 9
 
-**Substitutes:** [modifyLocalInterface(localInterface:](arkts-ipc-rpc-remoteobject-c.md#modifylocalinterface-1)
+**Substitutes:** [modifyLocalInterface(localInterface:](arkts-ipc-rpc-remoteobject-c.md#modifylocalinterface)
 
 <!--Device-RemoteObject-attachLocalInterface(localInterface: IRemoteBroker, descriptor: string): void--><!--Device-RemoteObject-attachLocalInterface(localInterface: IRemoteBroker, descriptor: string): void-End-->
 
@@ -71,7 +70,6 @@ let testRemoteObject = new TestRemoteObject("testObject");
 
 ```
 
-<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -105,7 +103,6 @@ class TestRemoteObject extends rpc.RemoteObject {
 
 ```
 
-<a id="getcallingpid"></a>
 ## getCallingPid
 
 ```TypeScript
@@ -151,7 +148,6 @@ try {
 
 ```
 
-<a id="getcallinguid"></a>
 ## getCallingUid
 
 ```TypeScript
@@ -197,7 +193,6 @@ try {
 
 ```
 
-<a id="getdescriptor"></a>
 ## getDescriptor
 
 ```TypeScript
@@ -253,7 +248,6 @@ try {
 
 ```
 
-<a id="getinterfacedescriptor"></a>
 ## getInterfaceDescriptor
 
 ```TypeScript
@@ -266,7 +260,7 @@ Obtains the interface descriptor.
 
 **Deprecated since:** 9
 
-**Substitutes:** [getDescriptor()](arkts-ipc-rpc-iremoteobject-c.md#getdescriptor-1)
+**Substitutes:** [getDescriptor()](arkts-ipc-rpc-iremoteobject-c.md#getdescriptor)
 
 <!--Device-RemoteObject-getInterfaceDescriptor(): string--><!--Device-RemoteObject-getInterfaceDescriptor(): string-End-->
 
@@ -305,7 +299,6 @@ try {
 
 ```
 
-<a id="getlocalinterface"></a>
 ## getLocalInterface
 
 ```TypeScript
@@ -366,7 +359,6 @@ try {
 
 ```
 
-<a id="modifylocalinterface"></a>
 ## modifyLocalInterface
 
 ```TypeScript
@@ -428,7 +420,6 @@ let testRemoteObject = new TestRemoteObject("testObject");
 
 ```
 
-<a id="onremotemessagerequest"></a>
 ## onRemoteMessageRequest
 
 ```TypeScript
@@ -441,7 +432,6 @@ onRemoteMessageRequest(
 ```
 
 Called to return a response to **sendMessageRequest()**. The server processes the request synchronously or asynchronously and returns the result in this API.
-
 > **NOTE**  
 >  
 > - You are advised to overload **onRemoteMessageRequest** preferentially, which implements synchronous and  
@@ -454,17 +444,7 @@ Called to return a response to **sendMessageRequest()**. The server processes th
 
 **Atomic service API:** This API can be used in atomic services since API version 26.0.0.
 
-<!--Device-RemoteObject-onRemoteMessageRequest(
-      code: int,
-      data: MessageSequence,
-      reply: MessageSequence,
-      options: MessageOption
-    ): boolean | Promise<boolean>--><!--Device-RemoteObject-onRemoteMessageRequest(
-      code: int,
-      data: MessageSequence,
-      reply: MessageSequence,
-      options: MessageOption
-    ): boolean | Promise<boolean>-End-->
+<!--Device-RemoteObject-onRemoteMessageRequest(      code: int,      data: MessageSequence,      reply: MessageSequence,      options: MessageOption    ): boolean | Promise<boolean>--><!--Device-RemoteObject-onRemoteMessageRequest(      code: int,      data: MessageSequence,      reply: MessageSequence,      options: MessageOption    ): boolean | Promise<boolean>-End-->
 
 **System capability:** SystemCapability.Communication.IPC.Core
 
@@ -570,7 +550,6 @@ class TestRemoteObject extends rpc.RemoteObject {
 
 ```
 
-<a id="onremotemessagerequest-1"></a>
 ## onRemoteMessageRequest
 
 ```TypeScript
@@ -584,7 +563,6 @@ onRemoteMessageRequest(
 ```
 
 Provides a response to **sendMessageRequest()**. The server processes the request and returns a response in this API. The IPC context can be obtained from the input parameter **callingInfo**.
-
 > **NOTE**  
 >  
 > You are advised to overload the **onRemoteMessageRequest** method with the **CallingInfo** parameter to  
@@ -594,19 +572,7 @@ Provides a response to **sendMessageRequest()**. The server processes the reques
 
 **Since:** 23
 
-<!--Device-RemoteObject-onRemoteMessageRequest(
-      code: int,
-      data: MessageSequence,
-      reply: MessageSequence,
-      options: MessageOption,
-      callingInfo?: CallingInfo
-    ): boolean | Promise<boolean>--><!--Device-RemoteObject-onRemoteMessageRequest(
-      code: int,
-      data: MessageSequence,
-      reply: MessageSequence,
-      options: MessageOption,
-      callingInfo?: CallingInfo
-    ): boolean | Promise<boolean>-End-->
+<!--Device-RemoteObject-onRemoteMessageRequest(      code: int,      data: MessageSequence,      reply: MessageSequence,      options: MessageOption,      callingInfo?: CallingInfo    ): boolean | Promise<boolean>--><!--Device-RemoteObject-onRemoteMessageRequest(      code: int,      data: MessageSequence,      reply: MessageSequence,      options: MessageOption,      callingInfo?: CallingInfo    ): boolean | Promise<boolean>-End-->
 
 **System capability:** SystemCapability.Communication.IPC.Core
 
@@ -716,7 +682,6 @@ class TestRemoteObject extends rpc.RemoteObject {
 
 ```
 
-<a id="onremoterequest"></a>
 ## onRemoteRequest
 
 ```TypeScript
@@ -729,7 +694,7 @@ Called to return a response to **sendRequest()**. The server processes the reque
 
 **Deprecated since:** 9
 
-**Substitutes:** [onRemoteMessageRequest(code:](arkts-ipc-rpc-remoteobject-c.md#onremotemessagerequest-1)
+**Substitutes:** [onRemoteMessageRequest(code:](arkts-ipc-rpc-remoteobject-c.md#onremotemessagerequest)
 
 <!--Device-RemoteObject-onRemoteRequest(code: number, data: MessageParcel, reply: MessageParcel, options: MessageOption): boolean--><!--Device-RemoteObject-onRemoteRequest(code: number, data: MessageParcel, reply: MessageParcel, options: MessageOption): boolean-End-->
 
@@ -773,7 +738,6 @@ class TestRemoteObject extends rpc.RemoteObject {
 
 ```
 
-<a id="querylocalinterface"></a>
 ## queryLocalInterface
 
 ```TypeScript
@@ -786,7 +750,7 @@ Checks whether the remote object corresponding to the specified interface token 
 
 **Deprecated since:** 9
 
-**Substitutes:** [getLocalInterface(descriptor:](arkts-ipc-rpc-iremoteobject-c.md#getlocalinterface-1)
+**Substitutes:** [getLocalInterface(descriptor:](arkts-ipc-rpc-iremoteobject-c.md#getlocalinterface)
 
 <!--Device-RemoteObject-queryLocalInterface(descriptor: string): IRemoteBroker--><!--Device-RemoteObject-queryLocalInterface(descriptor: string): IRemoteBroker-End-->
 
@@ -829,7 +793,6 @@ try {
 
 ```
 
-<a id="sendmessagerequest"></a>
 ## sendMessageRequest
 
 ```TypeScript
@@ -845,17 +808,7 @@ Sends a **MessageSequence** message to the remote process in synchronous or asyn
 
 **Since:** 9
 
-<!--Device-RemoteObject-sendMessageRequest(
-      code: int,
-      data: MessageSequence,
-      reply: MessageSequence,
-      options: MessageOption
-    ): Promise<RequestResult>--><!--Device-RemoteObject-sendMessageRequest(
-      code: int,
-      data: MessageSequence,
-      reply: MessageSequence,
-      options: MessageOption
-    ): Promise<RequestResult>-End-->
+<!--Device-RemoteObject-sendMessageRequest(      code: int,      data: MessageSequence,      reply: MessageSequence,      options: MessageOption    ): Promise<RequestResult>--><!--Device-RemoteObject-sendMessageRequest(      code: int,      data: MessageSequence,      reply: MessageSequence,      options: MessageOption    ): Promise<RequestResult>-End-->
 
 **System capability:** SystemCapability.Communication.IPC.Core
 
@@ -927,7 +880,6 @@ try {
 
 ```
 
-<a id="sendmessagerequest-1"></a>
 ## sendMessageRequest
 
 ```TypeScript
@@ -944,19 +896,7 @@ Sends a **MessageSequence** message to the remote process in synchronous or asyn
 
 **Since:** 9
 
-<!--Device-RemoteObject-sendMessageRequest(
-      code: int,
-      data: MessageSequence,
-      reply: MessageSequence,
-      options: MessageOption,
-      callback: AsyncCallback<RequestResult>
-    ): void--><!--Device-RemoteObject-sendMessageRequest(
-      code: int,
-      data: MessageSequence,
-      reply: MessageSequence,
-      options: MessageOption,
-      callback: AsyncCallback<RequestResult>
-    ): void-End-->
+<!--Device-RemoteObject-sendMessageRequest(      code: int,      data: MessageSequence,      reply: MessageSequence,      options: MessageOption,      callback: AsyncCallback<RequestResult>    ): void--><!--Device-RemoteObject-sendMessageRequest(      code: int,      data: MessageSequence,      reply: MessageSequence,      options: MessageOption,      callback: AsyncCallback<RequestResult>    ): void-End-->
 
 **System capability:** SystemCapability.Communication.IPC.Core
 
@@ -976,7 +916,6 @@ Sends a **MessageSequence** message to the remote process in synchronous or asyn
 | --- | --- |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes:1.The number of parameters is incorrect;2.The parameter type does not match;3.Failed to obtain the passed object instance. |
 
-<a id="sendrequest"></a>
 ## sendRequest
 
 ```TypeScript
@@ -989,7 +928,7 @@ Sends a **MessageParcel** message to the remote process in synchronous or asynch
 
 **Deprecated since:** 8
 
-**Substitutes:** [sendMessageRequest(code:](arkts-ipc-rpc-iremoteobject-c.md#sendmessagerequest-1)
+**Substitutes:** [sendMessageRequest(code:](arkts-ipc-rpc-iremoteobject-c.md#sendmessagerequest)
 
 <!--Device-RemoteObject-sendRequest(code: number, data: MessageParcel, reply: MessageParcel, options: MessageOption): boolean--><!--Device-RemoteObject-sendRequest(code: number, data: MessageParcel, reply: MessageParcel, options: MessageOption): boolean-End-->
 
@@ -1047,7 +986,6 @@ try {
 
 ```
 
-<a id="sendrequest-1"></a>
 ## sendRequest
 
 ```TypeScript
@@ -1065,19 +1003,9 @@ Sends a **MessageParcel** message to the remote process in synchronous or asynch
 
 **Deprecated since:** 9
 
-**Substitutes:** [sendMessageRequest(code:](arkts-ipc-rpc-iremoteobject-c.md#sendmessagerequest-1)
+**Substitutes:** [sendMessageRequest(code:](arkts-ipc-rpc-iremoteobject-c.md#sendmessagerequest)
 
-<!--Device-RemoteObject-sendRequest(
-      code: number,
-      data: MessageParcel,
-      reply: MessageParcel,
-      options: MessageOption
-    ): Promise<SendRequestResult>--><!--Device-RemoteObject-sendRequest(
-      code: number,
-      data: MessageParcel,
-      reply: MessageParcel,
-      options: MessageOption
-    ): Promise<SendRequestResult>-End-->
+<!--Device-RemoteObject-sendRequest(      code: number,      data: MessageParcel,      reply: MessageParcel,      options: MessageOption    ): Promise<SendRequestResult>--><!--Device-RemoteObject-sendRequest(      code: number,      data: MessageParcel,      reply: MessageParcel,      options: MessageOption    ): Promise<SendRequestResult>-End-->
 
 **System capability:** SystemCapability.Communication.IPC.Core
 
@@ -1143,7 +1071,6 @@ try {
 
 ```
 
-<a id="sendrequest-2"></a>
 ## sendRequest
 
 ```TypeScript
@@ -1162,21 +1089,9 @@ Sends a **MessageParcel** message to the remote process in synchronous or asynch
 
 **Deprecated since:** 9
 
-**Substitutes:** [sendMessageRequest(code:](arkts-ipc-rpc-iremoteobject-c.md#sendmessagerequest-1)
+**Substitutes:** [sendMessageRequest(code:](arkts-ipc-rpc-iremoteobject-c.md#sendmessagerequest)
 
-<!--Device-RemoteObject-sendRequest(
-      code: number,
-      data: MessageParcel,
-      reply: MessageParcel,
-      options: MessageOption,
-      callback: AsyncCallback<SendRequestResult>
-    ): void--><!--Device-RemoteObject-sendRequest(
-      code: number,
-      data: MessageParcel,
-      reply: MessageParcel,
-      options: MessageOption,
-      callback: AsyncCallback<SendRequestResult>
-    ): void-End-->
+<!--Device-RemoteObject-sendRequest(      code: number,      data: MessageParcel,      reply: MessageParcel,      options: MessageOption,      callback: AsyncCallback<SendRequestResult>    ): void--><!--Device-RemoteObject-sendRequest(      code: number,      data: MessageParcel,      reply: MessageParcel,      options: MessageOption,      callback: AsyncCallback<SendRequestResult>    ): void-End-->
 
 **System capability:** SystemCapability.Communication.IPC.Core
 

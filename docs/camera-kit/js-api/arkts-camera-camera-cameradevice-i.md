@@ -132,7 +132,7 @@ readonly constituentCameraDevices?: Array<CameraDevice>
 
 List of physical cameras that form the logical camera.
 
-**Type:** Array<CameraDevice>
+**Type:** Array&lt;CameraDevice&gt;
 
 **Since:** 24
 
@@ -172,7 +172,7 @@ readonly lensDistortion?: Array<number>
 
 Array of lens distortion parameters.
 
-**Type:** Array<number>
+**Type:** Array&lt;number&gt;
 
 **Since:** 24
 
@@ -212,7 +212,7 @@ readonly lensIntrinsicCalibration?: Array<number>
 
 Array of lens internal parameter calibration parameters.
 
-**Type:** Array<number>
+**Type:** Array&lt;number&gt;
 
 **Since:** 24
 
@@ -272,7 +272,7 @@ readonly sensorPhysicalSize?: Array<number>
 
 Physical dimensions (width and height) of the sensor.
 
-**Type:** Array<number>
+**Type:** Array&lt;number&gt;
 
 **Since:** 24
 
@@ -292,7 +292,7 @@ readonly sensorPixelArraySize?: Array<number>
 
 Pixel array dimensions (width and height, in pixels) of the sensor.
 
-**Type:** Array<number>
+**Type:** Array&lt;number&gt;
 
 **Since:** 24
 

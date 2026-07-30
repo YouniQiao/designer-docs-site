@@ -24,11 +24,11 @@ Configures menu item information.
 **Table 3 Default menu position when enableArrow is set to true and placement is not set or set to an invalid value**  
 | API| Default Menu Position|  
 |------|-------------|  
-| [bindMenu](arkts-arkui-commonmethod-c.md#bindmenu-1) | Placement.BottomLeft |  
-| [bindMenu<sup>11+</sup>](arkts-arkui-commonmethod-c.md#bindmenu-1) | Placement.BottomLeft |  
-| [bindContextMenu<sup>8+</sup>](arkts-arkui-commonmethod-c.md#bindcontextmenu-1) | Placement.Top |  
-| [bindContextMenu<sup>12+</sup>](arkts-arkui-commonmethod-c.md#bindcontextmenu-1) | Placement.BottomLeft |  
-| [bindContextMenuWithResponse<sup>23+</sup>](arkts-arkui-commonmethod-c.md#bindcontextmenuwithresponse-1) | Placement.Top |
+| [bindMenu](arkts-arkui-commonmethod-c.md#bindmenu) | Placement.BottomLeft |  
+| [bindMenu<sup>11+</sup>](arkts-arkui-commonmethod-c.md#bindmenu) | Placement.BottomLeft |  
+| [bindContextMenu<sup>8+</sup>](arkts-arkui-commonmethod-c.md#bindcontextmenu) | Placement.Top |  
+| [bindContextMenu<sup>12+</sup>](arkts-arkui-commonmethod-c.md#bindcontextmenu) | Placement.BottomLeft |  
+| [bindContextMenuWithResponse<sup>23+</sup>](arkts-arkui-commonmethod-c.md#bindcontextmenuwithresponse) | Placement.Top |
 
 **Since:** 10
 

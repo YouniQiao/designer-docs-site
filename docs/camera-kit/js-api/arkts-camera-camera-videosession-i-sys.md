@@ -16,7 +16,6 @@ VideoSession extends Session, Flash, AutoExposure, Focus, Zoom, Stabilization, C
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="getsessionconflictfunctions"></a>
 ## getSessionConflictFunctions
 
 ```TypeScript
@@ -45,7 +44,6 @@ Gets session conflict functions.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 
-<a id="getsessionfunctions"></a>
 ## getSessionFunctions
 
 ```TypeScript
@@ -81,7 +79,6 @@ Gets session functions.
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1.Mandatory parameters are left unspecified.2.Incorrect parameter types. |
 
-<a id="off"></a>
 ## off('macroStatusChanged')
 
 ```TypeScript
@@ -113,7 +110,6 @@ Unsubscribes from macro state change events.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application.<br>**Applicable version:** 11 - 19 |
 
-<a id="off-1"></a>
 ## off('lcdFlashStatus')
 
 ```TypeScript
@@ -152,7 +148,6 @@ function unregisterLcdFlashStatus(videoSession: camera.VideoSession): void {
 
 ```
 
-<a id="off-2"></a>
 ## off('focusTrackingInfoAvailable')
 
 ```TypeScript
@@ -191,7 +186,6 @@ function unregisterFocusTrackingInfoChanged(session: camera.VideoSessionForSys):
 
 ```
 
-<a id="off-3"></a>
 ## off('effectSuggestionChange')
 
 ```TypeScript
@@ -221,7 +215,6 @@ Unsubscribes from effect suggestion change events.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 
-<a id="off-4"></a>
 ## off('lightStatusChange')
 
 ```TypeScript
@@ -276,7 +269,6 @@ function handleLightStatusOff(mSession: camera.VideoSessionForSys): void {
 
 ```
 
-<a id="offapertureinfochange"></a>
 ## offApertureInfoChange
 
 ```TypeScript
@@ -307,7 +299,6 @@ Unsubscribes from aperture info event callback.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 
-<a id="on"></a>
 ## on('macroStatusChanged')
 
 ```TypeScript
@@ -339,7 +330,6 @@ Subscribes to macro state change events. This API uses an asynchronous callback 
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application.<br>**Applicable version:** 11 - 19 |
 
-<a id="on-1"></a>
 ## on('lcdFlashStatus')
 
 ```TypeScript
@@ -389,7 +379,6 @@ function registerLcdFlashStatus(videoSession: camera.VideoSession): void {
 
 ```
 
-<a id="on-2"></a>
 ## on('focusTrackingInfoAvailable')
 
 ```TypeScript
@@ -436,7 +425,6 @@ function registerFocusTrackingInfoChanged(session: camera.VideoSessionForSys): v
 
 ```
 
-<a id="on-3"></a>
 ## on('effectSuggestionChange')
 
 ```TypeScript
@@ -466,7 +454,6 @@ Subscribes to effect suggestion change events.
 | --- | --- |
 | [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Not System Application. |
 
-<a id="on-4"></a>
 ## on('lightStatusChange')
 
 ```TypeScript
@@ -521,7 +508,6 @@ function handleLightStatusOn(mSession: camera.VideoSessionForSys): void {
 
 ```
 
-<a id="onapertureinfochange"></a>
 ## onApertureInfoChange
 
 ```TypeScript

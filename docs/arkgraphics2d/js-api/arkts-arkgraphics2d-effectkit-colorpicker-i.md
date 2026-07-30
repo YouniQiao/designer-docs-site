@@ -41,10 +41,12 @@ Obtains the average color from the image and writes the result to a Color instan
 **Example**
 
 ```TypeScript
-import { image } from "@kit.ImageKit";
-import { effectKit } from "@kit.ArkGraphics2D";
+import { image } from '@kit.ImageKit';
+import { effectKit } from '@kit.ArkGraphics2D';
 
-const color = new ArrayBuffer(96);
+// Create a buffer for image effects.
+const colorBuffer = new ArrayBuffer(96);
+// Set image initialization options.
 let opts: image.InitializationOptions = {
   editable: true,
   pixelFormat: 3,
@@ -52,18 +54,21 @@ let opts: image.InitializationOptions = {
     height: 4,
     width: 6
   }
-}
-image.createPixelMap(color, opts).then((pixelMap) => {
+};
+// Create a PixelMap instance.
+image.createPixelMap(colorBuffer, opts).then((pixelMap) => {
+  // Create a ColorPicker instance.
   effectKit.createColorPicker(pixelMap, (error, colorPicker) => {
     if (error) {
-      console.error('Failed to create color picker.');
+      console.error(`Failed to create color picker. Code: ${error.code}, message: ${error.message}`);
     } else {
       console.info('Succeeded in creating color picker.');
-      let color = colorPicker.getAverageColor();
-      console.info('get average color =' + color);
+      // Obtain the average color of the image.
+      let averageColor = colorPicker.getAverageColor();
+      console.info('get average color =' + averageColor);
     }
-  })
-})
+  });
+});
 
 ```
 
@@ -94,10 +99,12 @@ Obtains the color with the highest saturation from the image and writes the resu
 **Example**
 
 ```TypeScript
-import { image } from "@kit.ImageKit";
-import { effectKit } from "@kit.ArkGraphics2D";
+import { image } from '@kit.ImageKit';
+import { effectKit } from '@kit.ArkGraphics2D';
 
-const color = new ArrayBuffer(96);
+// Create a buffer for image effects.
+const colorBuffer = new ArrayBuffer(96);
+// Set image initialization options.
 let opts: image.InitializationOptions = {
   editable: true,
   pixelFormat: 3,
@@ -105,18 +112,21 @@ let opts: image.InitializationOptions = {
     height: 4,
     width: 6
   }
-}
-image.createPixelMap(color, opts).then((pixelMap) => {
+};
+// Create a PixelMap instance.
+image.createPixelMap(colorBuffer, opts).then((pixelMap) => {
+  // Create a ColorPicker instance.
   effectKit.createColorPicker(pixelMap, (error, colorPicker) => {
     if (error) {
-      console.error('Failed to create color picker.');
+      console.error(`Failed to create color picker. Code: ${error.code}, message: ${error.message}`);
     } else {
       console.info('Succeeded in creating color picker.');
-      let color = colorPicker.getHighestSaturationColor();
-      console.info('get highest saturation color =' + color);
+      // Obtain the color with the highest saturation in the image.
+      let saturationColor = colorPicker.getHighestSaturationColor();
+      console.info('get highest saturation color =' + saturationColor);
     }
-  })
-})
+  });
+});
 
 ```
 
@@ -147,10 +157,12 @@ Obtains the color with the largest proportion from the image and writes the resu
 **Example**
 
 ```TypeScript
-import { image } from "@kit.ImageKit";
-import { effectKit } from "@kit.ArkGraphics2D";
+import { image } from '@kit.ImageKit';
+import { effectKit } from '@kit.ArkGraphics2D';
 
-const color = new ArrayBuffer(96);
+// Create a buffer for the image effect.
+const colorBuffer = new ArrayBuffer(96);
+// Set the image initialization options.
 let opts : image.InitializationOptions = {
   editable: true,
   pixelFormat: 3,
@@ -158,18 +170,21 @@ let opts : image.InitializationOptions = {
     height: 4,
     width: 6
   }
-}
-image.createPixelMap(color, opts).then((pixelMap) => {
+};
+// Create a PixelMap instance.
+image.createPixelMap(colorBuffer, opts).then((pixelMap) => {
+  // Create a ColorPicker instance.
   effectKit.createColorPicker(pixelMap, (error, colorPicker) => {
     if (error) {
-      console.error('Failed to create color picker.');
+      console.error(`Failed to create color picker. Code: ${error.code}, message: ${error.message}`);
     } else {
       console.info('Succeeded in creating color picker.');
-      let color = colorPicker.getLargestProportionColor();
-      console.info('get largest proportion color =' + color);
+      // Obtain the most dominant color in the image.
+      let largestColor = colorPicker.getLargestProportionColor();
+      console.info('get largest proportion color =' + largestColor);
     }
-  })
-})
+  });
+});
 
 ```
 
@@ -200,10 +215,12 @@ Obtains the main color from the image and writes the result to a Color instance.
 **Example**
 
 ```TypeScript
-import { image } from "@kit.ImageKit";
-import { effectKit } from "@kit.ArkGraphics2D";
+import { image } from '@kit.ImageKit';
+import { effectKit } from '@kit.ArkGraphics2D';
 
-const color = new ArrayBuffer(96);
+// Create a buffer for image effects.
+const colorBuffer = new ArrayBuffer(96);
+// Set image initialization options.
 let opts: image.InitializationOptions = {
   editable: true,
   pixelFormat: 3,
@@ -211,20 +228,23 @@ let opts: image.InitializationOptions = {
     height: 4,
     width: 6
   }
-}
-image.createPixelMap(color, opts).then((pixelMap) => {
+};
+// Create a PixelMap instance.
+image.createPixelMap(colorBuffer, opts).then((pixelMap) => {
+  // Create a ColorPicker instance.
   effectKit.createColorPicker(pixelMap, (error, colorPicker) => {
     if (error) {
-      console.error('Failed to create color picker.');
-     } else {
-       console.info('Succeeded in creating color picker.');
-       colorPicker.getMainColor().then(color => {
+      console.error(`Failed to create color picker. Code: ${error.code}, message: ${error.message}`);
+    } else {
+      console.info('Succeeded in creating color picker.');
+      // Obtain the dominant color of the image.
+      colorPicker.getMainColor().then(mainColor => {
         console.info('Succeeded in getting main color.');
-         console.info(`color[ARGB]=${color.alpha},${color.red},${color.green},${color.blue}`);
-      })
+        console.info(`color[ARGB]=${mainColor.alpha},${mainColor.red},${mainColor.green},${mainColor.blue}`);
+      });
     }
-  })
-})
+  });
+});
 
 ```
 
@@ -255,10 +275,12 @@ Obtains the main color from the image and writes the result to a Color instance.
 **Example**
 
 ```TypeScript
-import { image } from "@kit.ImageKit";
-import { effectKit } from "@kit.ArkGraphics2D";
+import { image } from '@kit.ImageKit';
+import { effectKit } from '@kit.ArkGraphics2D';
 
-const color = new ArrayBuffer(96);
+// Create a buffer for image effects.
+const colorBuffer = new ArrayBuffer(96);
+// Set image initialization options.
 let opts : image.InitializationOptions = {
   editable: true,
   pixelFormat: 3,
@@ -266,18 +288,21 @@ let opts : image.InitializationOptions = {
     height: 4,
     width: 6
   }
-}
-image.createPixelMap(color, opts).then((pixelMap) => {
+};
+// Create a PixelMap instance.
+image.createPixelMap(colorBuffer, opts).then((pixelMap) => {
+  // Create a ColorPicker instance.
   effectKit.createColorPicker(pixelMap, (error, colorPicker) => {
     if (error) {
-      console.error('Failed to create color picker.');
+      console.error(`Failed to create color picker. Code: ${error.code}, message: ${error.message}`);
     } else {
       console.info('Succeeded in creating color picker.');
-      let color = colorPicker.getMainColorSync();
-      console.info('get main color =' + color);
+      // Obtain the main color of the image synchronously.
+      let mainColor = colorPicker.getMainColorSync();
+      console.info('get main color =' + mainColor);
     }
-  })
-})
+  });
+});
 
 ```
 
@@ -314,10 +339,12 @@ Obtains a given number of colors with the top proportions in the image. This API
 **Example**
 
 ```TypeScript
-import { image } from "@kit.ImageKit";
-import { effectKit } from "@kit.ArkGraphics2D";
+import { image } from '@kit.ImageKit';
+import { effectKit } from '@kit.ArkGraphics2D';
 
-const color = new ArrayBuffer(96);
+// Create a buffer for image effects.
+const colorBuffer = new ArrayBuffer(96);
+// Set image initialization options.
 let opts : image.InitializationOptions = {
   editable: true,
   pixelFormat: 3,
@@ -325,22 +352,25 @@ let opts : image.InitializationOptions = {
     height: 4,
     width: 6
   }
-}
-image.createPixelMap(color, opts).then((pixelMap) => {
+};
+// Create a PixelMap instance.
+image.createPixelMap(colorBuffer, opts).then((pixelMap) => {
+  // Create a ColorPicker instance.
   effectKit.createColorPicker(pixelMap, (error, colorPicker) => {
     if (error) {
-      console.error('Failed to create color picker.');
+      console.error(`Failed to create color picker. Code: ${error.code}, message: ${error.message}`);
     } else {
       console.info('Succeeded in creating color picker.');
+      // Obtain the top two dominant colors in the image.
       let colors = colorPicker.getTopProportionColors(2);
-      for(let index = 0; index < colors.length; index++) {
+      for (let index = 0; index < colors.length; index++) {
         if (colors[index]) {
           console.info('get top proportion colors: index ' + index + ', color ' + colors[index]);
         }
       }
     }
-  })
-})
+  });
+});
 
 ```
 
@@ -377,10 +407,12 @@ Determine whether the color is black or white or gray
 **Example**
 
 ```TypeScript
-import { image } from "@kit.ImageKit";
-import { effectKit } from "@kit.ArkGraphics2D";
+import { image } from '@kit.ImageKit';
+import { effectKit } from '@kit.ArkGraphics2D';
 
-const color = new ArrayBuffer(96);
+// Create a buffer for image effects.
+const colorBuffer = new ArrayBuffer(96);
+// Set image initialization options.
 let opts: image.InitializationOptions = {
   editable: true,
   pixelFormat: 3,
@@ -388,18 +420,21 @@ let opts: image.InitializationOptions = {
     height: 4,
     width: 6
   }
-}
-image.createPixelMap(color, opts).then((pixelMap) => {
+};
+// Create a PixelMap instance.
+image.createPixelMap(colorBuffer, opts).then((pixelMap) => {
+  // Create a ColorPicker instance.
   effectKit.createColorPicker(pixelMap, (error, colorPicker) => {
     if (error) {
-      console.error('Failed to create color picker.');
+      console.error(`Failed to create color picker. Code: ${error.code}, message: ${error.message}`);
     } else {
       console.info('Succeeded in creating color picker.');
-      let bJudge = colorPicker.isBlackOrWhiteOrGrayColor(0xFFFFFFFF);
-      console.info('is black or white or gray color[bool](white) =' + bJudge);
+      // Determine whether the color is black, white, or gray.
+      let isBlackOrWhiteOrGray = colorPicker.isBlackOrWhiteOrGrayColor(0xFFFFFFFF);
+      console.info('is black or white or gray color[bool](white) =' + isBlackOrWhiteOrGray);
     }
-  })
-})
+  });
+});
 
 ```
 

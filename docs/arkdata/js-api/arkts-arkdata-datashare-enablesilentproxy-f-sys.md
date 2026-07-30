@@ -6,7 +6,6 @@
 import { dataShare } from '@kit.ArkData';
 ```
 
-<a id="enablesilentproxy"></a>
 ## enableSilentProxy
 
 ```TypeScript
@@ -18,7 +17,7 @@ Enables silent access. This API uses a promise to return the result.
 Observe the following when using this API:
 
 - The data provider calls this API to enable silent access.  
-- Whether silent access is enabled is determined based on the return value of this API and the **isSilentProxyEnable** field in the [data_share_config.json](docroot://database/share-data-by-datashareextensionability-sys.md) file together.  
+- Whether silent access is enabled is determined based on the return value of this API and the **isSilentProxyEnable** field in the [data_share_config.json](../../../database/share-data-by-datashareextensionability-sys.md) file together.  
 - If silent access is enabled for a URI using this API, the setting takes effect when the related **datashareHelper** API is called. Otherwise, the setting of **isSilentProxyEnable** in the **data_share_config.json** file is used to determine whether to enable silent access.
 
 **Since:** 11

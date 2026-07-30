@@ -1,7 +1,6 @@
 # @ohos.uiAppearance
 
 This module provides basic capabilities for obtaining system appearance configurations, including color mode (dark/light) settings, font size scale factors, and font weight scale factors.
-
 > **NOTE**
 
 **Since:** 20

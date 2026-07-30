@@ -16,7 +16,6 @@ Implements output information used in a photo session. It inherits from [CameraO
 import { camera } from '@kit.CameraKit';
 ```
 
-<a id="capture"></a>
 ## capture
 
 ```TypeScript
@@ -46,7 +45,6 @@ Captures a photo with the default photo capture parameters. This API uses an asy
 | [7400104](../errorcode-camera.md#7400104-session-not-running) | Session not running. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="capture-1"></a>
 ## capture
 
 ```TypeScript
@@ -76,7 +74,6 @@ Captures a photo with the default photo capture parameters. This API uses a prom
 | [7400104](../errorcode-camera.md#7400104-session-not-running) | Session not running. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="capture-2"></a>
 ## capture
 
 ```TypeScript
@@ -108,7 +105,6 @@ Captures a photo with the specified photo capture parameters. This API uses an a
 | [7400104](../errorcode-camera.md#7400104-session-not-running) | Session not running. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="capture-3"></a>
 ## capture
 
 ```TypeScript
@@ -145,7 +141,6 @@ Captures a photo with the specified photo capture parameters. This API uses a pr
 | [7400104](../errorcode-camera.md#7400104-session-not-running) | Session not running. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="enableautoextendedgainmapdelivery"></a>
 ## enableAutoExtendedGainmapDelivery
 
 ```TypeScript
@@ -178,14 +173,13 @@ Enable auto extended gainmap delivery.
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config, only throw in session usage. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="enablemirror"></a>
 ## enableMirror
 
 ```TypeScript
 enableMirror(enabled: boolean): void
 ```
 
-Enables or disables mirroring photo capture.Before calling this API, check whether moving photo capture is supported by calling [isMovingPhotoSupported](arkts-camera-camera-photooutput-i.md#ismovingphotosupported-1) and whether mirroring is supported by calling [isMirrorSupported](arkts-camera-camera-photooutput-i.md#ismirrorsupported-1).
+Enables or disables mirroring photo capture.Before calling this API, check whether moving photo capture is supported by calling [isMovingPhotoSupported](arkts-camera-camera-photooutput-i.md#ismovingphotosupported) and whether mirroring is supported by calling [isMirrorSupported](arkts-camera-camera-photooutput-i.md#ismirrorsupported).
 
 **Since:** 13
 
@@ -209,7 +203,6 @@ Enables or disables mirroring photo capture.Before calling this API, check wheth
 | [7400103](../errorcode-camera.md#7400103-session-not-configured) | Session not config. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="enablemovingphoto"></a>
 ## enableMovingPhoto
 
 ```TypeScript
@@ -242,7 +235,6 @@ Enables or disables the feature of taking moving photos.
 | [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect. |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="getactiveprofile"></a>
 ## getActiveProfile
 
 ```TypeScript
@@ -271,7 +263,6 @@ Obtains the profile that takes effect currently.
 | --- | --- |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="getphotorotation"></a>
 ## getPhotoRotation
 
 ```TypeScript
@@ -312,7 +303,6 @@ Obtains the photo rotation angle.
 | [7400101](../errorcode-camera.md#7400101-invalid-parameter) | Parameter missing or parameter type incorrect.<br>**Applicable version:** 12 - 22 |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="getsupportedmovingphotovideocodectypes"></a>
 ## getSupportedMovingPhotoVideoCodecTypes
 
 ```TypeScript
@@ -341,7 +331,6 @@ Obtains the supported video codec types of moving photos.
 | --- | --- |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="isautoextendedgainmapdeliverysupported"></a>
 ## isAutoExtendedGainmapDeliverySupported
 
 ```TypeScript
@@ -366,7 +355,6 @@ Confirm if auto extended gainmap delivery supported.
 | --- | --- |
 | boolean | TRUE if the auto extended gainmap delivery is supported. |
 
-<a id="ismirrorsupported"></a>
 ## isMirrorSupported
 
 ```TypeScript
@@ -389,7 +377,6 @@ Checks whether mirror photography is supported.
 | --- | --- |
 | boolean | Check result for the support of mirror photography. **true** if supported, **false** otherwise. If the API call fails, undefined is returned. |
 
-<a id="ismovingphotosupported"></a>
 ## isMovingPhotoSupported
 
 ```TypeScript
@@ -418,7 +405,6 @@ Checks whether taking moving photos is supported.
 | --- | --- |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="isphotoqualityprioritizationsupported"></a>
 ## isPhotoQualityPrioritizationSupported
 
 ```TypeScript
@@ -453,7 +439,6 @@ Checks whether the specified photo quality prioritization strategy is supported.
 | --- | --- |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error,reconfiguring streams is needed to recover from failure. |
 
-<a id="off"></a>
 ## off('photoAvailable')
 
 ```TypeScript
@@ -477,7 +462,6 @@ Unsubscribes from the events of returning available photos.
 | type | 'photoAvailable' | Yes | Event type. The value is fixed at **'photoAvailable'**. The event can be listened for when a photoOutput instance is created. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Photo&gt; | No | Callback used to return the result. If this parameter is specified,the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
 
-<a id="off-1"></a>
 ## off('photoAssetAvailable')
 
 ```TypeScript
@@ -501,7 +485,6 @@ Unsubscribes from photo asset available events.
 | type | 'photoAssetAvailable' | Yes | Event type. The value is fixed at **'photoAssetAvailable'**. The event can be listened for when a photoOutput instance is created. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;photoAccessHelper.PhotoAsset&gt; | No | Callback used for unsubscription. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
 
-<a id="off-2"></a>
 ## off('captureStart')
 
 ```TypeScript
@@ -509,7 +492,6 @@ off(type: 'captureStart', callback?: AsyncCallback<number>): void
 ```
 
 Unsubscribes from capture start events.
-
 > **NOTE**  
 >  
 > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
@@ -531,7 +513,6 @@ Unsubscribes from capture start events.
 | type | 'captureStart' | Yes | Event type. The value is fixed at **'captureStart'**. The event can be listened for when a photoOutput instance is created. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | No | Callback used to return the result. If this parameter is specified,the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
 
-<a id="off-3"></a>
 ## off('captureStartWithInfo')
 
 ```TypeScript
@@ -555,7 +536,6 @@ Unsubscribes from capture start events.
 | type | 'captureStartWithInfo' | Yes | Event type. The value is fixed at **'captureStartWithInfo'**. The event can be listened for when a photoOutput instance is created. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;CaptureStartInfo&gt; | No | Callback used to return the result. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
 
-<a id="off-4"></a>
 ## off('frameShutter')
 
 ```TypeScript
@@ -579,7 +559,6 @@ Unsubscribes from frame shutter events.
 | type | 'frameShutter' | Yes | Event type. The value is fixed at **'frameShutter'**. The event can be listened for when a photoOutput instance is created. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FrameShutterInfo&gt; | No | Callback used to return the result. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
 
-<a id="off-5"></a>
 ## off('frameShutterEnd')
 
 ```TypeScript
@@ -603,7 +582,6 @@ Unsubscribes from frame shutter end events.
 | type | 'frameShutterEnd' | Yes | Event type. The value is fixed at **'frameShutterEnd'**. The event can be listened for when a photoOutput instance is created. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FrameShutterEndInfo&gt; | No | Callback used to return the result. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
 
-<a id="off-6"></a>
 ## off('captureEnd')
 
 ```TypeScript
@@ -627,7 +605,6 @@ Unsubscribes from capture end events.
 | type | 'captureEnd' | Yes | Event type. The value is fixed at **'captureEnd'**. The event can be listened for when a photoOutput instance is created. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;CaptureEndInfo&gt; | No | Callback used to return the result. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
 
-<a id="off-7"></a>
 ## off('captureReady')
 
 ```TypeScript
@@ -651,7 +628,6 @@ Unsubscribes from capture ready events.
 | type | 'captureReady' | Yes | Event type. The value is fixed at **'captureReady'**. The event can be listened for when a photoOutput instance is created. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | No | Callback used to return the result. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
 
-<a id="off-8"></a>
 ## off('estimatedCaptureDuration')
 
 ```TypeScript
@@ -675,7 +651,6 @@ Unsubscribes from estimated capture duration events.
 | type | 'estimatedCaptureDuration' | Yes | Event type. The value is fixed at **'estimatedCaptureDuration'**.The event can be listened for when a photoOutput instance is created. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | No | Callback used to return the result. If this parameter is specified,the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
 
-<a id="off-9"></a>
 ## off('error')
 
 ```TypeScript
@@ -699,7 +674,6 @@ Unsubscribes from PhotoOutput error events.
 | type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when a photoOutput instance is created. |
 | callback | [ErrorCallback](../../apis-arkui/arkts-components/arkts-arkui-errorcallback-t-sys.md) | No | Callback used to return the result. If this parameter is specified, the subscription to the specified event with the specified callback is canceled. (The callback object cannot be an anonymous function.) Otherwise, the subscriptions to the specified event with all the callbacks are canceled. |
 
-<a id="offcapturephotoavailable"></a>
 ## offCapturePhotoAvailable
 
 ```TypeScript
@@ -724,7 +698,6 @@ Unsubscribes photo available event callback, which supports delivery of uncompre
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CapturePhoto&gt; | No | Callback used to get the CapturePhoto. |
 
-<a id="on"></a>
 ## on('photoAvailable')
 
 ```TypeScript
@@ -732,7 +705,6 @@ on(type: 'photoAvailable', callback: AsyncCallback<Photo>): void
 ```
 
 Subscribes to the events of returning available photos. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
@@ -752,7 +724,6 @@ Subscribes to the events of returning available photos. This API uses an asynchr
 | type | 'photoAvailable' | Yes | Event type. The value is fixed at **'photoAvailable'**. The event can be listened for when a **photoOutput** instance is created. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;Photo&gt; | Yes | Callback used to listen for the events of returning available photos. |
 
-<a id="on-1"></a>
 ## on('photoAssetAvailable')
 
 ```TypeScript
@@ -760,7 +731,6 @@ on(type: 'photoAssetAvailable', callback: AsyncCallback<photoAccessHelper.PhotoA
 ```
 
 Subscribes to photo asset available events. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
@@ -780,7 +750,6 @@ Subscribes to photo asset available events. This API uses an asynchronous callba
 | type | 'photoAssetAvailable' | Yes | Event type. The value is fixed at **'photoAssetAvailable'**. The event can be listened for when a photoOutput instance is created. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;photoAccessHelper.PhotoAsset&gt; | Yes | Callback used to return the photo asset. |
 
-<a id="on-2"></a>
 ## on('captureStart')
 
 ```TypeScript
@@ -788,7 +757,6 @@ on(type: 'captureStart', callback: AsyncCallback<number>): void
 ```
 
 Subscribes to capture start events. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
@@ -810,7 +778,6 @@ Subscribes to capture start events. This API uses an asynchronous callback to re
 | type | 'captureStart' | Yes | Event type. The value is fixed at **'captureStart'**. The event can be listened for when a photoOutput instance is created. This event is triggered and returned when the bottom layer starts exposure each time a photo is taken. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the capture ID. |
 
-<a id="on-3"></a>
 ## on('captureStartWithInfo')
 
 ```TypeScript
@@ -818,7 +785,6 @@ on(type: 'captureStartWithInfo', callback: AsyncCallback<CaptureStartInfo>): voi
 ```
 
 Subscribes to capture start events. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
@@ -838,7 +804,6 @@ Subscribes to capture start events. This API uses an asynchronous callback to re
 | type | 'captureStartWithInfo' | Yes | Event type. The value is fixed at **'captureStartWithInfo'**. The event can be listened for when a photoOutput instance is created. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;CaptureStartInfo&gt; | Yes | Callback used to return the capture ID. |
 
-<a id="on-4"></a>
 ## on('frameShutter')
 
 ```TypeScript
@@ -862,7 +827,6 @@ Subscribes to frame shutter events. This API uses an asynchronous callback to re
 | type | 'frameShutter' | Yes | Event type. The value is fixed at **'frameShutter'**. The event can be listened for when a photoOutput instance is created. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FrameShutterInfo&gt; | Yes | Callback used to return the result. A new photo capture request can be delivered as long as this event is returned. |
 
-<a id="on-5"></a>
 ## on('frameShutterEnd')
 
 ```TypeScript
@@ -870,7 +834,6 @@ on(type: 'frameShutterEnd', callback: AsyncCallback<FrameShutterEndInfo>): void
 ```
 
 Subscribes to frame shutter end events. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
@@ -890,7 +853,6 @@ Subscribes to frame shutter end events. This API uses an asynchronous callback t
 | type | 'frameShutterEnd' | Yes | Event type. The value is fixed at **'frameShutterEnd'**. The event can be listened for when a photoOutput instance is created. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;FrameShutterEndInfo&gt; | Yes | Callback used to return the result. It is invoked when the frame shutter ends. |
 
-<a id="on-6"></a>
 ## on('captureEnd')
 
 ```TypeScript
@@ -898,7 +860,6 @@ on(type: 'captureEnd', callback: AsyncCallback<CaptureEndInfo>): void
 ```
 
 Subscribes to capture end events. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
@@ -918,7 +879,6 @@ Subscribes to capture end events. This API uses an asynchronous callback to retu
 | type | 'captureEnd' | Yes | Event type. The value is fixed at **'captureEnd'**. The event can be listened for when a photoOutput instance is created. This event is triggered and the corresponding information is returned when the photo capture is complete. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;CaptureEndInfo&gt; | Yes | Callback used to return the result. |
 
-<a id="on-7"></a>
 ## on('captureReady')
 
 ```TypeScript
@@ -926,7 +886,6 @@ on(type: 'captureReady', callback: AsyncCallback<void>): void
 ```
 
 Subscribes to capture ready events. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
@@ -946,7 +905,6 @@ Subscribes to capture ready events. This API uses an asynchronous callback to re
 | type | 'captureReady' | Yes | Event type. The value is fixed at **'captureReady'**. The event can be listened for when a photoOutput instance is created. The event is triggered and the corresponding information is returned when it is ready to take the next photo. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;void&gt; | Yes | Callback used to return the result. |
 
-<a id="on-8"></a>
 ## on('estimatedCaptureDuration')
 
 ```TypeScript
@@ -954,7 +912,6 @@ on(type: 'estimatedCaptureDuration', callback: AsyncCallback<number>): void
 ```
 
 Subscribes to estimated capture duration events. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
@@ -974,7 +931,6 @@ Subscribes to estimated capture duration events. This API uses an asynchronous c
 | type | 'estimatedCaptureDuration' | Yes | Event type. The value is fixed at **'estimatedCaptureDuration'**.The event can be listened for when a photoOutput instance is created. This event is triggered and the corresponding information is returned when the photo capture is complete. |
 | callback | [AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)&lt;number&gt; | Yes | Callback used to return the estimated duration when the sensor captures frames at the bottom layer in a single capture, measured in units of milliseconds. If **–1** is reported, there is no estimated duration. |
 
-<a id="on-9"></a>
 ## on('error')
 
 ```TypeScript
@@ -982,7 +938,6 @@ on(type: 'error', callback: ErrorCallback): void
 ```
 
 Subscribes to PhotoOutput error events. This API uses an asynchronous callback to return the result.
-
 > **NOTE**  
 >  
 > Currently, you cannot use **off()** to unregister the callback in the callback method of **on()**.
@@ -1002,7 +957,6 @@ Subscribes to PhotoOutput error events. This API uses an asynchronous callback t
 | type | 'error' | Yes | Event type. The value is fixed at **'error'**. The event can be listened for when a photoOutput instance is created. This event is triggered and the corresponding error message is returned when an error occurs during the calling of a photo-related API. |
 | callback | [ErrorCallback](../../apis-arkui/arkts-components/arkts-arkui-errorcallback-t-sys.md) | Yes | Callback used to return an error code defined in [CameraErrorCode](arkts-camera-camera-cameraerrorcode-e.md). |
 
-<a id="oncapturephotoavailable"></a>
 ## onCapturePhotoAvailable
 
 ```TypeScript
@@ -1027,7 +981,6 @@ Subscribes photo available event callback, which supports delivery of uncompress
 | --- | --- | --- | --- |
 | callback | [Callback](../../apis-arkui/arkts-components/arkts-arkui-callback-i.md)&lt;CapturePhoto&gt; | Yes | Callback used to get the CapturePhoto. |
 
-<a id="setmovingphotovideocodectype"></a>
 ## setMovingPhotoVideoCodecType
 
 ```TypeScript
@@ -1056,14 +1009,13 @@ Sets a video codec type for moving photos.
 | --- | --- |
 | [7400201](../errorcode-camera.md#7400201-camera-service-error) | Camera service fatal error. |
 
-<a id="setphotoqualityprioritization"></a>
 ## setPhotoQualityPrioritization
 
 ```TypeScript
 setPhotoQualityPrioritization(qualityPrioritization: PhotoQualityPrioritization): void
 ```
 
-Sets the photo quality prioritization strategy.Before setting the strategy, you can call [isPhotoQualityPrioritizationSupported](arkts-camera-camera-photooutput-i.md#isphotoqualityprioritizationsupported-1) to check whether the device supports the specified photo quality prioritization strategy.
+Sets the photo quality prioritization strategy.Before setting the strategy, you can call [isPhotoQualityPrioritizationSupported](arkts-camera-camera-photooutput-i.md#isphotoqualityprioritizationsupported) to check whether the device supports the specified photo quality prioritization strategy.
 
 **Since:** 21
 

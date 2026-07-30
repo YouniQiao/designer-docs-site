@@ -81,7 +81,7 @@ async function ExampleFunction() {
   };
   dlpFile = await dlpPermission.generateDLPFile(file, dlp, dlpProperty); // Generate a DLP file.
 
-  dlpFile?.closeDLPFile(); // Close the DLP object.
+  await dlpFile?.closeDLPFile(); // Close the DLP object.
   if (file) {
     fileIo.closeSync(file);
   }
@@ -162,7 +162,7 @@ let dlpProperty: dlpPermission.DLPProperty = {
   everyoneAccessList: []
 };
 dlpPermission.generateDLPFile(file, dlp, dlpProperty, (err, res) => { // Generate a DLP file.
-  if (err !== undefined) {
+  if (err) {
     console.error('generateDLPFile error,', err.code, err.message);
   } else {
     console.info('res', JSON.stringify(res));

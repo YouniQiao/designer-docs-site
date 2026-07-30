@@ -14,7 +14,6 @@ The interface of URL is used to parse, construct, normalize, and encode URLs.
 import { url } from '@kit.ArkTS';
 ```
 
-<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -40,7 +39,6 @@ URL constructor, which is used to instantiate a URL object.url: Absolute or rela
 | url | string | Yes | url url |
 | base | string \| URL | No | base base |
 
-<a id="constructor-1"></a>
 ## constructor
 
 ```TypeScript
@@ -57,7 +55,6 @@ A no-argument constructor used to create a URL. It returns a URL object after pa
 
 **System capability:** SystemCapability.Utils.Lang
 
-<a id="parseurl"></a>
 ## parseURL
 
 ```TypeScript
@@ -111,7 +108,6 @@ url.URL.parseURL('https://www.example.com', urlObject); // Output 'https://www.e
 
 ```
 
-<a id="tojson"></a>
 ## toJSON
 
 ```TypeScript
@@ -142,7 +138,6 @@ let result = urlObject.toJSON();
 
 ```
 
-<a id="tostring"></a>
 ## toString
 
 ```TypeScript
