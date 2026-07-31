@@ -2,7 +2,7 @@
 
 Implements an event filter.
 
-You can use [filterById()](arkts-calendar-calendarmanager-eventfilter-c.md#filterbyid-1),[filterByTime()](arkts-calendar-calendarmanager-eventfilter-c.md#filterbytime-1),[filterByTitle()](arkts-calendar-calendarmanager-eventfilter-c.md#filterbytitle-1) to obtain an event filter, and then pass the filter in getEvents() for filtering.
+You can use [filterById()](arkts-calendar-calendarmanager-eventfilter-c.md#filterbyid),[filterByTime()](arkts-calendar-calendarmanager-eventfilter-c.md#filterbytime),[filterByTitle()](arkts-calendar-calendarmanager-eventfilter-c.md#filterbytitle) to obtain an event filter, and then pass the filter in getEvents() for filtering.
 
 **Since:** 10
 
@@ -16,7 +16,6 @@ You can use [filterById()](arkts-calendar-calendarmanager-eventfilter-c.md#filte
 import { calendarManager } from '@kit.CalendarKit';
 ```
 
-<a id="filterbyid"></a>
 ## filterById
 
 ```TypeScript
@@ -98,7 +97,6 @@ calendarMgr?.getCalendar(async (err: BusinessError, data:calendarManager.Calenda
 
 ```
 
-<a id="filterbytime"></a>
 ## filterByTime
 
 ```TypeScript
@@ -176,7 +174,6 @@ calendarMgr?.getCalendar(async (err: BusinessError, data:calendarManager.Calenda
 
 ```
 
-<a id="filterbytitle"></a>
 ## filterByTitle
 
 ```TypeScript

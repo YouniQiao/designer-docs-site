@@ -14,7 +14,6 @@ Definition of the Offline Download Management Interface
 import { media } from '@kit.MediaKit';
 ```
 
-<a id="addavdownloadtask"></a>
 ## addAVDownloadTask
 
 ```TypeScript
@@ -43,7 +42,6 @@ Create a download task based on the media description.
 | --- | --- |
 | string | ID of the offline download task that is successfully added. |
 
-<a id="allowscellularaccess"></a>
 ## allowsCellularAccess
 
 ```TypeScript
@@ -66,7 +64,6 @@ Set the network environment for the download. By default, the download is perfor
 | --- | --- | --- | --- |
 | value | boolean | Yes | If is set to true, the download can be performed in any network environment,Otherwise, the download is performed only in the free Wi-Fi network environment. |
 
-<a id="getdownloadtasks"></a>
 ## getDownloadTasks
 
 ```TypeScript
@@ -89,7 +86,6 @@ Obtains all offline download tasks in the Task Manager. Ended download tasks are
 | --- | --- |
 | Array&lt;string&gt; | If a task exists in the task manager, the taskID array is returned. Otherwise null. |
 
-<a id="gettaskcachedirectory"></a>
 ## getTaskCacheDirectory
 
 ```TypeScript
@@ -124,7 +120,6 @@ Obtains the offline download cache directory of a specified task.
 | --- | --- |
 | [5400108](../errorcode-media.md#5400108-parameter-value-out-of-range) | If the specified ID is not in the manager, an error is returned. |
 
-<a id="gettaskprogress"></a>
 ## getTaskProgress
 
 ```TypeScript
@@ -159,7 +154,6 @@ Remove a download task from the offline download manager
 | --- | --- |
 | [5400108](../errorcode-media.md#5400108-parameter-value-out-of-range) | If the specified ID is not in the manager, an error is returned. |
 
-<a id="gettaskstatus"></a>
 ## getTaskStatus
 
 ```TypeScript
@@ -194,7 +188,6 @@ Obtains the status of a specified offline download task. For details, see #AVDow
 | --- | --- |
 | [5400108](../errorcode-media.md#5400108-parameter-value-out-of-range) | If the specified ID is not in the manager, an error is returned. |
 
-<a id="offprogresschange"></a>
 ## offProgressChange
 
 ```TypeScript
@@ -217,7 +210,6 @@ Deregisters a specified function's listening on task progress change events.
 | --- | --- | --- | --- |
 | callback | [OnAVDownloadProgressChangeHandle](arkts-media-media-onavdownloadprogresschangehandle-t.md) | No | Prototype of the function called by the event.The first parameter indicates the offline download task ID.The second parameter indicates the progress of an offline download task.The progress value ranges from 0.0 to 1.0,If the value is -1, the size of the resource is unknown.<br>Default value: If no parameter is set, all listening functions for the event are canceled. |
 
-<a id="offstatuschange"></a>
 ## offStatusChange
 
 ```TypeScript
@@ -240,7 +232,6 @@ Deregisters a specified function's listening on task status change events.
 | --- | --- | --- | --- |
 | callback | [OnAVDownloadTaskStateHandle](arkts-media-media-onavdownloadtaskstatehandle-t.md) | No | Prototype of the function invoked by the event.The first parameter indicates the ID of the offline download task.The second parameter indicates the latest status of the offline download task.<br>Default value: If no parameter is set, all listening functions for the event are canceled. |
 
-<a id="onprogresschange"></a>
 ## onProgressChange
 
 ```TypeScript
@@ -263,7 +254,6 @@ Registers a function to listen to the progress change value of an offline downlo
 | --- | --- | --- | --- |
 | callback | [OnAVDownloadProgressChangeHandle](arkts-media-media-onavdownloadprogresschangehandle-t.md) | Yes | Prototype of the function called by the event.The first parameter indicates the offline download task ID.The second parameter indicates the progress of an offline download task.The progress value ranges from 0.0 to 1.0,If the value is -1, the size of the resource is unknown. |
 
-<a id="onstatuschange"></a>
 ## onStatusChange
 
 ```TypeScript
@@ -286,7 +276,6 @@ Registering a Function for Listening on Status Changes of Offline Download Tasks
 | --- | --- | --- | --- |
 | callback | [OnAVDownloadTaskStateHandle](arkts-media-media-onavdownloadtaskstatehandle-t.md) | Yes | Prototype of the function invoked by the event.The first parameter indicates the ID of the task whose status changes.The second parameter indicates the new status of the task switchover. |
 
-<a id="pausedownloadtask"></a>
 ## pauseDownloadTask
 
 ```TypeScript
@@ -316,7 +305,6 @@ Suspending the download of a specified task
 | [5400108](../errorcode-media.md#5400108-parameter-value-out-of-range) | If the specified ID is not in the offline download task manager. |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. |
 
-<a id="release"></a>
 ## release
 
 ```TypeScript
@@ -333,7 +321,6 @@ Release resources used for AVDownloaderManager.
 
 **System capability:** SystemCapability.Multimedia.Media.Core
 
-<a id="removedownloadtask"></a>
 ## removeDownloadTask
 
 ```TypeScript
@@ -362,7 +349,6 @@ Remove a download task from the offline download manager
 | --- | --- |
 | [5400108](../errorcode-media.md#5400108-parameter-value-out-of-range) | If the specified ID is not in the offline download task manager. |
 
-<a id="resumedownloadtask"></a>
 ## resumeDownloadTask
 
 ```TypeScript
@@ -392,7 +378,6 @@ Resuming Offline download of a Specified Task
 | [5400108](../errorcode-media.md#5400108-parameter-value-out-of-range) | If the specified ID is not in the offline download task manager. |
 | [5400102](../errorcode-media.md#5400102-unsupported-operation) | Operation not allowed. |
 
-<a id="setrequesttimeout"></a>
 ## setRequestTimeout
 
 ```TypeScript

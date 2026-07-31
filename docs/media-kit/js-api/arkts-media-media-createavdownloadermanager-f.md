@@ -6,7 +6,6 @@
 import { media } from '@kit.MediaKit';
 ```
 
-<a id="createavdownloadermanager"></a>
 ## createAVDownloaderManager
 
 ```TypeScript

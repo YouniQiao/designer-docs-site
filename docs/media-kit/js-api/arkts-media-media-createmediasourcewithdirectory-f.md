@@ -6,7 +6,6 @@
 import { media } from '@kit.MediaKit';
 ```
 
-<a id="createmediasourcewithdirectory"></a>
 ## createMediaSourceWithDirectory
 
 ```TypeScript
