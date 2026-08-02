@@ -6,7 +6,7 @@ The ResourceManager callback.
 
 **Deprecated since:** 9
 
-**Substitutes:** [base:AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)
+**Substitutes:** [base:AsyncCallback](arkts-localization-resourcemanager-asynccallback-i.md)
 
 <!--Device-resourceManager-export interface AsyncCallback<T>--><!--Device-resourceManager-export interface AsyncCallback<T>-End-->
 
@@ -18,7 +18,6 @@ The ResourceManager callback.
 import { resourceManager } from '@kit.LocalizationKit';
 ```
 
-<a id="constructor"></a>
 ## constructor
 
 ```TypeScript
@@ -31,7 +30,7 @@ Defines an asynchronous callback that carries an error parameter and asynchronou
 
 **Deprecated since:** 9
 
-**Substitutes:** [base:AsyncCallback](../../apis-basic-service-kit/arkts-apis/arkts-basicservices-base-asynccallback-i.md)
+**Substitutes:** [base:AsyncCallback](arkts-localization-resourcemanager-asynccallback-i.md)
 
 <!--Device-AsyncCallback-(err: Error, data: T): void--><!--Device-AsyncCallback-(err: Error, data: T): void-End-->
 

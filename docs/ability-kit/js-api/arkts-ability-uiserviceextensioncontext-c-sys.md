@@ -3,7 +3,6 @@
 The UIServiceExtensionContext module provides the context environment for a [UIServiceExtensionAbility](arkts-ability-app-ability-uiserviceextensionability-uiserviceextensionability-c-sys.md). It inherits from [ExtensionContext](arkts-ability-extensioncontext-c.md).
 
 UIServiceExtensionContext provides access to a [UIServiceExtensionAbility](arkts-ability-app-ability-uiserviceextensionability-uiserviceextensionability-c-sys.md) and APIs for operating the ability, for example, starting, terminating, connecting, and disconnecting ability.
-
 > **NOTE**  
 >  
 > - The APIs of this module must be used on the main thread, but not on child threads such as Worker and TaskPool.
@@ -18,7 +17,6 @@ UIServiceExtensionContext provides access to a [UIServiceExtensionAbility](arkts
 
 **System API:** This is a system API.
 
-<a id="connectserviceextensionability"></a>
 ## connectServiceExtensionAbility
 
 ```TypeScript
@@ -26,11 +24,10 @@ connectServiceExtensionAbility(want: Want, options: ConnectOptions): number
 ```
 
 Connects to a [UIExtensionAbility](arkts-ability-app-ability-uiextensionability-uiextensionability-c.md) and returns the connection ID.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 14
 
@@ -74,14 +71,13 @@ Connects to a [UIExtensionAbility](arkts-ability-app-ability-uiextensionability-
 | [16000053](../errorcode-ability.md#16000053-ability-is-not-on-top-of-ui) | The ability is not on the top of the UI. |
 | [16000055](../errorcode-ability.md#16000055-installationfree-timeout) | Installation-free timed out. |
 
-<a id="disconnectserviceextensionability"></a>
 ## disconnectServiceExtensionAbility
 
 ```TypeScript
 disconnectServiceExtensionAbility(connectionId: number): Promise<void>
 ```
 
-Disconnects from a [UIExtensionAbility](arkts-ability-app-ability-uiextensionability-uiextensionability-c.md). This API is opposite to [connectServiceExtensionAbility](arkts-ability-uiserviceextensioncontext-c-sys.md#connectserviceextensionability-1). This API uses a promise to return the result.
+Disconnects from a [UIExtensionAbility](arkts-ability-app-ability-uiextensionability-uiextensionability-c.md). This API is opposite to [connectServiceExtensionAbility](arkts-ability-uiserviceextensioncontext-c-sys.md#connectserviceextensionability). This API uses a promise to return the result.
 
 **Since:** 14
 
@@ -97,7 +93,7 @@ Disconnects from a [UIExtensionAbility](arkts-ability-app-ability-uiextensionabi
 
 | Name | Type | Mandatory | Description |
 | --- | --- | --- | --- |
-| connectionId | number | Yes | Connection ID returned by [connectServiceExtensionAbility](arkts-ability-uiserviceextensioncontext-c-sys.md#connectserviceextensionability-1). |
+| connectionId | number | Yes | Connection ID returned by [connectServiceExtensionAbility](arkts-ability-uiserviceextensioncontext-c-sys.md#connectserviceextensionability). |
 
 **Return value:**
 
@@ -113,7 +109,6 @@ Disconnects from a [UIExtensionAbility](arkts-ability-app-ability-uiextensionabi
 | [16000011](../errorcode-ability.md#16000011-context-does-not-exist) | The context does not exist. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 
-<a id="startability"></a>
 ## startAbility
 
 ```TypeScript
@@ -121,11 +116,10 @@ startAbility(want: Want, options?: StartOptions): Promise<void>
 ```
 
 Starts an ability. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 14
 
@@ -173,7 +167,6 @@ Starts an ability. This API uses a promise to return the result.
 | [16000055](../errorcode-ability.md#16000055-installationfree-timeout) | Installation-free timed out. |
 | [16200001](../errorcode-ability.md#16200001-caller-released) | The caller has been released. |
 
-<a id="startabilitybytype"></a>
 ## startAbilityByType
 
 ```TypeScript
@@ -182,19 +175,16 @@ startAbilityByType(type: string, wantParam: Record<string, Object>,
 ```
 
 Starts a [UIAbility](arkts-app-ability-uiability.md) or [UIExtensionAbility](arkts-ability-app-ability-uiextensionability-uiextensionability-c.md) based on the type of the target ability. This API can be called only by applications running in the foreground. This API uses a promise to return the result.
-
 > **NOTE**  
 >  
 > For details about the startup rules for the components in the stage model, see  
-> [Component Startup Rules (Stage Model)](docroot://application-models/component-startup-rules.md).
+> [Component Startup Rules (Stage Model)](../../../application-models/component-startup-rules.md).
 
 **Since:** 14
 
 **Model restriction:** This API can be used only in the stage model.
 
-<!--Device-UIServiceExtensionContext-startAbilityByType(type: string, wantParam: Record<string, Object>,
-    abilityStartCallback: AbilityStartCallback): Promise<void>--><!--Device-UIServiceExtensionContext-startAbilityByType(type: string, wantParam: Record<string, Object>,
-    abilityStartCallback: AbilityStartCallback): Promise<void>-End-->
+<!--Device-UIServiceExtensionContext-startAbilityByType(type: string, wantParam: Record<string, Object>,    abilityStartCallback: AbilityStartCallback): Promise<void>--><!--Device-UIServiceExtensionContext-startAbilityByType(type: string, wantParam: Record<string, Object>,    abilityStartCallback: AbilityStartCallback): Promise<void>-End-->
 
 **System capability:** SystemCapability.Ability.AbilityRuntime.Core
 
@@ -221,7 +211,6 @@ Starts a [UIAbility](arkts-app-ability-uiability.md) or [UIExtensionAbility](ark
 | [401](../../apis-ads-kit/errorcode-ads.md#401-incorrect-ads-request-parameter) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified;. Incorrect parameter types; 3. Parameter verification failed. |
 | [16000050](../errorcode-ability.md#16000050-internal-error) | Internal error. |
 
-<a id="terminateself"></a>
 ## terminateSelf
 
 ```TypeScript

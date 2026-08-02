@@ -1,6 +1,6 @@
 # @ohos.resourceManager
 
-The **resourceManager** module provides the resource management functionality. It allows an application to obtain the best matched application resources or system resources based on the specified [configuration](arkts-localization-resourcemanager-configuration-c.md). For details about the matching rules, see [Matching Resources](docroot://quick-start/resource-categories-and-access.md#matching-resources).The configuration includes language, region, screen orientation, color mode, mobile country code (MCC), mobile network code (MNC), device capability, and density.
+The **resourceManager** module provides the resource management functionality. It allows an application to obtain the best matched application resources or system resources based on the specified [configuration](arkts-localization-resourcemanager-configuration-c.md). For details about the matching rules, see [Matching Resources](../../../quick-start/resource-categories-and-access.md#matching-resources).The configuration includes language, region, screen orientation, color mode, mobile country code (MCC), mobile network code (MNC), device capability, and density.
 
 **Since:** 6
 

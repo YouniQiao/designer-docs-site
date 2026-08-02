@@ -6,7 +6,6 @@
 import { resourceManager } from '@kit.LocalizationKit';
 ```
 
-<a id="getsystemresourcemanager"></a>
 ## getSystemResourceManager
 
 ```TypeScript
@@ -14,7 +13,6 @@ export function getSystemResourceManager(): ResourceManager
 ```
 
 Obtains a system **ResourceManager** object.
-
 > **NOTE**  
 >  
 > The **Configuration** field in the **ResourceManager** object obtained via this API uses the default value,  
@@ -25,7 +23,7 @@ Obtains a system **ResourceManager** object.
 
 **Deprecated since:** 20
 
-**Substitutes:** [getSysResourceManager](arkts-localization-resourcemanager-getsysresourcemanager-f.md#getsysresourcemanager-1)
+**Substitutes:** [getSysResourceManager](arkts-localization-resourcemanager-getsysresourcemanager-f.md#getsysresourcemanager)
 
 **Atomic service API:** This API can be used in atomic services since API version 11.
 

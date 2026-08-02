@@ -23,9 +23,9 @@ import { fontManager } from '@kit.LocalizationKit';
 
 | Name | Description |
 | --- | --- |
-| [dataMigration](arkts-localization-fontmanager-datamigration-f-sys.md#datamigration-1) | Starts a migration task during device upgrade. |
-| [installFont](arkts-localization-fontmanager-installfont-f-sys.md#installfont-1) | Installs a font in the specified path. This API uses a promise to return the result. |
-| [uninstallFont](arkts-localization-fontmanager-uninstallfont-f-sys.md#uninstallfont-1) | Uninstalls a font by name. This API uses a promise to return the result. |
+| [dataMigration](arkts-localization-fontmanager-datamigration-f-sys.md#datamigration) | Starts a migration task during device upgrade. |
+| [installFont](arkts-localization-fontmanager-installfont-f-sys.md#installfont) | Installs a font in the specified path. This API uses a promise to return the result. |
+| [uninstallFont](arkts-localization-fontmanager-uninstallfont-f-sys.md#uninstallfont) | Uninstalls a font by name. This API uses a promise to return the result. |
 <!--DelEnd-->
 
 <!--Del-->

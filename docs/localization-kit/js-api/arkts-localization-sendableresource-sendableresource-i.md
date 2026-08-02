@@ -72,7 +72,7 @@ params?: collections.Array <string | number>
 
 Other resource parameters, including the resource name, substitution value for the formatting API, and quantifier for the singular-plural formatting API.
 
-**Type:** collections.Array <string | number>
+**Type:** collections.Array &lt;string \| number&gt;
 
 **Since:** 12
 

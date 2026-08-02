@@ -1222,12 +1222,12 @@ import { resourceManager } from '@kit.LocalizationKit';
 export default class EntryAbility extends UIAbility {
     onCreate(want: Want, launchParam: AbilityConstant.LaunchParam): void {
         try {
-            this.context.resourceManager.getConfiguration((error: BusinessError, value: resourceManager.Configuration) => {
+            this.context.resourceManager.getConfiguration((error: BusinessError, config: resourceManager.Configuration) => {
                 if (error != null) {
                     console.error("getConfiguration callback error is " + error);
                 } else {
-                    let direction = value.direction;
-                    let locale = value.locale;
+                    let direction = config.direction;
+                    let locale = config.locale;
                 }
             });
         } catch (error) {
@@ -1270,9 +1270,9 @@ import { resourceManager } from '@kit.LocalizationKit';
 export default class EntryAbility extends UIAbility {
     onCreate(want: Want, launchParam: AbilityConstant.LaunchParam): void {
         try {
-            this.context.resourceManager.getConfiguration().then((value: resourceManager.Configuration) => {
-                let direction = value.direction;
-                let locale = value.locale;
+            this.context.resourceManager.getConfiguration().then((config: resourceManager.Configuration) => {
+                let direction = config.direction;
+                let locale = config.locale;
             }).catch((error: BusinessError) => {
                 console.error("getConfiguration promise error is " + error);
             });
@@ -8399,7 +8399,7 @@ export default class EntryAbility extends UIAbility {
             // Print the output result: sub isRawDir, result: true
             console.info(`sub isRawDir, result: ${isRawDir}`);
 
-            // If the test.txt file exists in the root directory, the value of isRawDir is false.
+            // If the test.txt file exists in the rawfile root directory, the value of isRawDir is false.
             // Replace "test.txt" with the actual resource.
             isRawDir = this.context.resourceManager.isRawDir("test.txt");
             // Print the output result: test.txt isRawDir, result: false

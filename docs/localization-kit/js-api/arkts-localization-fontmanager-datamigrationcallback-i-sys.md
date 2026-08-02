@@ -37,15 +37,15 @@ Callback function used to return the heartbeat callback.
 ```TypeScript
 import { fontManager } from '@kit.LocalizationKit';
 
-dataMigration() {
+async function dataMigration() {
   const callback: fontManager.DataMigrationCallback = {
     onHeartBeat: () => {
       console.info('onHeartBeat callback');
     },
-    onProgress(progress : fontManager.DataMigrationProgress) => {
+    onProgress: (progress : fontManager.DataMigrationProgress) => {
       console.info('onProgress callback');
     },
-    onResult(result : int) => {
+    onResult: (result : number) => {
       console.info('onResult callback');
     }
   }
@@ -55,7 +55,6 @@ dataMigration() {
   } catch (error) {
     console.error('dataMigration err.' + error.code);
   }
-  return;
 }
 
 ```
@@ -87,15 +86,15 @@ Callback used to return the data migration progress.
 ```TypeScript
 import { fontManager } from '@kit.LocalizationKit';
 
-dataMigration() {
+async function dataMigration() {
   const callback: fontManager.DataMigrationCallback = {
     onHeartBeat: () => {
       console.info('onHeartBeat callback');
     },
-    onProgress(progress : fontManager.DataMigrationProgress) => {
+    onProgress: (progress : fontManager.DataMigrationProgress) => {
       console.info('onProgress callback');
     },
-    onResult(result : int) => {
+    onResult: (result : number) => {
       console.info('onResult callback');
     }
   }
@@ -105,7 +104,6 @@ dataMigration() {
   } catch (error) {
     console.error('dataMigration err.' + error.code);
   }
-  return;
 }
 
 ```
@@ -137,15 +135,15 @@ Callback used to return the data migration result.
 ```TypeScript
 import { fontManager } from '@kit.LocalizationKit';
 
-dataMigration() {
+async function dataMigration() {
   const callback: fontManager.DataMigrationCallback = {
     onHeartBeat: () => {
       console.info('onHeartBeat callback');
     },
-    onProgress(progress : fontManager.DataMigrationProgress) => {
+    onProgress: (progress : fontManager.DataMigrationProgress) => {
       console.info('onProgress callback');
     },
-    onResult(result : int) => {
+    onResult: (result : number) => {
       console.info('onResult callback');
     }
   }
@@ -155,7 +153,6 @@ dataMigration() {
   } catch (error) {
     console.error('dataMigration err.' + error.code);
   }
-  return;
 }
 
 ```
