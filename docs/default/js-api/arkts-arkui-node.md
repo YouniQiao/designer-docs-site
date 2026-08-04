@@ -1,4 +1,0 @@
-# @ohos.arkui.node
-
-## Summary
-
