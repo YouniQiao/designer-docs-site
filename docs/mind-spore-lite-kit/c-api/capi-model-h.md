@@ -113,7 +113,7 @@ Build the model from model file buffer so that it can run on a device.
 | OH_AI_ModelHandle model | Model object handle. |
 | const void *model_data | Define the buffer read from a model file. |
 | size_t data_size | Define bytes number of model file buffer. |
-| [OH_AI_ModelType](capi-types-h.md#oh_ai_modeltype) model_type | Define The type of model file. |
+| OH_AI_ModelType model_type | Define The type of model file. |
 | const OH_AI_ContextHandle model_context | Define the context used to store options during execution. |
 
 **Returns**:
@@ -140,7 +140,7 @@ Load and build the model from model path so that it can run on a device.
 | -- | -- |
 | OH_AI_ModelHandle model | Model object handle. |
 | const char *model_path | Define the model file path. |
-| [OH_AI_ModelType](capi-types-h.md#oh_ai_modeltype) model_type | Define The type of model file. |
+| OH_AI_ModelType model_type | Define The type of model file. |
 | const OH_AI_ContextHandle model_context | Define the context used to store options during execution. |
 
 **Returns**:
@@ -424,7 +424,7 @@ Set optimization level of the train_cfg. Only valid for Lite Train.
 | Parameter | Description |
 | -- | -- |
 | OH_AI_TrainCfgHandle train_cfg | TrainCfg object handle. |
-| [OH_AI_OptimizationLevel](capi-types-h.md#oh_ai_optimizationlevel) level | The optimization level of train_cfg. |
+| OH_AI_OptimizationLevel level | The optimization level of train_cfg. |
 
 ### OH_AI_TrainModelBuild()
 
@@ -445,7 +445,7 @@ Build the train model from model buffer so that it can run on a device. Only val
 | OH_AI_ModelHandle model | Model object handle. |
 | const void *model_data | Define the buffer read from a model file. |
 | size_t data_size | Define bytes number of model file buffer. |
-| [OH_AI_ModelType](capi-types-h.md#oh_ai_modeltype) model_type | Define The type of model file. |
+| OH_AI_ModelType model_type | Define The type of model file. |
 | const OH_AI_ContextHandle model_context | Define the context used to store options during execution. |
 | const OH_AI_TrainCfgHandle train_cfg | Define the config used by training. |
 
@@ -473,7 +473,7 @@ Build the train model from model file buffer so that it can run on a device. Onl
 | -- | -- |
 | OH_AI_ModelHandle model | Model object handle. |
 | const char *model_path | Define the model path. |
-| [OH_AI_ModelType](capi-types-h.md#oh_ai_modeltype) model_type | Define The type of model file. |
+| OH_AI_ModelType model_type | Define The type of model file. |
 | const OH_AI_ContextHandle model_context | Define the context used to store options during execution. |
 | const OH_AI_TrainCfgHandle train_cfg | Define the config used by training. |
 
@@ -698,9 +698,9 @@ Export training model from file. Only valid for Lite Train.
 | Parameter | Description |
 | -- | -- |
 | OH_AI_ModelHandle model | The model data. |
-| [OH_AI_ModelType](capi-types-h.md#oh_ai_modeltype) model_type | The model file type. |
+| OH_AI_ModelType model_type | The model file type. |
 | const char *model_file | The exported model file. |
-| [OH_AI_QuantizationType](capi-types-h.md#oh_ai_quantizationtype) quantization_type | The quantification type. |
+| OH_AI_QuantizationType quantization_type | The quantification type. |
 | bool export_inference_only | Whether to export a reasoning only model. |
 | char **output_tensor_name | The set the name of the output tensor of the exported reasoning model, default asempty, and export the complete reasoning model. |
 | size_t num | The number of output_tensor_name. |
@@ -728,10 +728,10 @@ Export training model from buffer. Only valid for Lite Train.
 | Parameter | Description |
 | -- | -- |
 | OH_AI_ModelHandle model | The model data. |
-| [OH_AI_ModelType](capi-types-h.md#oh_ai_modeltype) model_type | The model file type. |
+| OH_AI_ModelType model_type | The model file type. |
 | void *model_data | The exported model buffer. |
 | size_t *data_size | The exported model buffer size. |
-| [OH_AI_QuantizationType](capi-types-h.md#oh_ai_quantizationtype) quantization_type | The quantification type. |
+| OH_AI_QuantizationType quantization_type | The quantification type. |
 | bool export_inference_only | Whether to export a reasoning only model. |
 | char **output_tensor_name | The set the name of the output tensor of the exported reasoning model, default asempty, and export the complete reasoning model. |
 | size_t num | The number of output_tensor_name. |
@@ -759,7 +759,7 @@ Export model's weights, which can be used in micro only. Only valid for Lite Tra
 | Parameter | Description |
 | -- | -- |
 | OH_AI_ModelHandle model | The model data. |
-| [OH_AI_ModelType](capi-types-h.md#oh_ai_modeltype) model_type | The model file type. |
+| OH_AI_ModelType model_type | The model file type. |
 | const char *weight_file | The path of exported weight file. |
 | bool is_inference | Whether to export weights from a reasoning model. Currently, only support this is `true`. |
 | bool enable_fp16 | Float-weight is whether to be saved in float16 format. |

@@ -184,7 +184,7 @@ Passes the events received by the watcher to the caller when **OH_HiAppEvent_Tak
 
 | Parameter | Description |
 | -- | -- |
-| (const char\* const \*events | The event json string array. |
+| (const char\* const \*events | The event JSON string array. |
 | uint32_t eventLen | Size of the event array. |
 
 ### OH_HiAppEvent_CreateParamList()

@@ -47,7 +47,7 @@ Obtains a full-quality image.
 | Parameter | Description |
 | -- | -- |
 | [OH_PhotoNative](capi-oh-camera-oh-photonative.md)* photo | Pointer to an **OH_PhotoNative** instance. |
-| [OH_ImageNative](../ImageKit/capi-image-nativemodule-oh-imagenative.md)** mainImage | Double pointer to the full-quality image, which is an **OH_ImageNative** instance. |
+| OH_ImageNative** mainImage | Double pointer to the full-quality image, which is an **OH_ImageNative** instance. |
 
 **Returns**:
 
@@ -72,7 +72,7 @@ Obtains an uncompressed image.
 | Parameter | Description |
 | -- | -- |
 | [OH_PhotoNative](capi-oh-camera-oh-photonative.md)* photo | Pointer to an **OH_PhotoNative** instance. |
-| OH_PictureNative** picture | Double pointer to the uncompressed image, which is an **OH_PictureNative** instance. |
+| [OH_PictureNative](../ImageKit/capi-image-nativemodule-oh-picturenative.md)** picture | Double pointer to the uncompressed image, which is an **OH_PictureNative** instance. |
 
 **Returns**:
 

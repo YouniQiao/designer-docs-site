@@ -501,7 +501,7 @@ Creates a **Camera_Input** instance.
 | -- | -- |
 | [Camera_Manager](capi-oh-camera-camera-manager.md)* cameraManager | Pointer to the **Camera_Manager** instance. |
 | [const Camera_Device](capi-oh-camera-camera-device.md)* camera | Pointer to the **Camera_Device** instance. |
-| Camera_Input** cameraInput | Double pointer to the **Camera_Input** instance created, if the function is successfully called. |
+| [Camera_Input](capi-oh-camera-camera-input.md)** cameraInput | Double pointer to the **Camera_Input** instance created, if the function is successfully called. |
 
 **Returns**:
 
@@ -530,7 +530,7 @@ Creates a **Camera_Input** instance with the specified camera position and type.
 | [Camera_Manager](capi-oh-camera-camera-manager.md)* cameraManager | Pointer to the **Camera_Manager** instance. |
 | [Camera_Position](capi-camera-h.md#camera_position) position | Camera position. |
 | [Camera_Type](capi-camera-h.md#camera_type) type | Camera type. |
-| Camera_Input** cameraInput | Double pointer to the **Camera_Input** instance created, if the function is successfully called. |
+| [Camera_Input](capi-oh-camera-camera-input.md)** cameraInput | Double pointer to the **Camera_Input** instance created, if the function is successfully called. |
 
 **Returns**:
 
@@ -715,7 +715,7 @@ Creates a **VideoOutput** instance.
 | [Camera_Manager](capi-oh-camera-camera-manager.md)* cameraManager | Pointer to the **Camera_Manager** instance. |
 | [const Camera_VideoProfile](capi-oh-camera-camera-videoprofile.md)* profile | Pointer to the profile for creating the **Camera_VideoOutput** instance. |
 | const char* surfaceId | Pointer to the surface ID used for creating the **Camera_VideoOutput** instance. |
-| [Camera_VideoOutput](capi-oh-camera-camera-videooutput.md)** videoOutput | Double pointer to the **Camera_VideoOutput** instance created, if the function is successfullycalled. |
+| Camera_VideoOutput** videoOutput | Double pointer to the **Camera_VideoOutput** instance created, if the function is successfullycalled. |
 
 **Returns**:
 
@@ -741,7 +741,7 @@ Creates a **VideoOutput** instance to be used in a preconfiguration stream.
 | -- | -- |
 | [Camera_Manager](capi-oh-camera-camera-manager.md)* cameraManager | Pointer to the **Camera_Manager** instance. |
 | const char* surfaceId | Pointer to the surface ID used for creating the **Camera_VideoOutput** instance. |
-| [Camera_VideoOutput](capi-oh-camera-camera-videooutput.md)** videoOutput | Double pointer to the **Camera_VideoOutput** instance created, if the function is successfullycalled. |
+| Camera_VideoOutput** videoOutput | Double pointer to the **Camera_VideoOutput** instance created, if the function is successfullycalled. |
 
 **Returns**:
 

@@ -75,7 +75,7 @@ Declaring the callback struct for playback state change
 | Parameter | Description |
 | -- | -- |
 | (OH_AVCastController\* avcastcontroller | the OH_AVCastController instance pointer. |
-| [OH_AVSession_AVPlaybackState](capi-ohavsession-oh-avsession-avplaybackstate.md)\* playbackState | the [OH_AVSession_AVPlaybackState](capi-ohavsession-oh-avsession-avplaybackstate.md)pointer variable which will be set the changed playback state. |
+| OH_AVSession_AVPlaybackState\* playbackState | the [OH_AVSession_AVPlaybackState](capi-ohavsession-oh-avsession-avplaybackstate.md)pointer variable which will be set the changed playback state. |
 | userdata | userdata which is passed by register. |
 
 ### OH_AVCastControllerCallback_MediaItemChange()
@@ -95,7 +95,7 @@ Declaring the callback struct for media item change
 | Parameter | Description |
 | -- | -- |
 | (OH_AVCastController\* avcastcontroller | the OH_AVCastController instance pointer. |
-| OH_AVSession_AVQueueItem\* avQueueItem | the [OH_AVSession_AVQueueItem](capi-ohavsession-oh-avsession-avqueueitem.md)pointer variable which will be set the changed media item info. |
+| [OH_AVSession_AVQueueItem](capi-ohavsession-oh-avsession-avqueueitem.md)\* avQueueItem | the [OH_AVSession_AVQueueItem](capi-ohavsession-oh-avsession-avqueueitem.md)pointer variable which will be set the changed media item info. |
 | userdata | userdata which is passed by register |
 
 ### OH_AVCastControllerCallback_PlayNext()
@@ -236,7 +236,7 @@ Get the playback status of the current player.Do not release the playbackState p
 | Parameter | Description |
 | -- | -- |
 | [OH_AVCastController](capi-ohavsession-oh-avcastcontroller.md)* avcastcontroller | The avcastcontroller instance pointer |
-| [OH_AVSession_AVPlaybackState](capi-ohavsession-oh-avsession-avplaybackstate.md)** playbackState | The returned playbackState |
+| OH_AVSession_AVPlaybackState** playbackState | The returned playbackState |
 
 **Returns**:
 
@@ -619,7 +619,7 @@ Request to send common command to Remote, only support to send play pause stop p
 | Parameter | Description |
 | -- | -- |
 | [OH_AVCastController](capi-ohavsession-oh-avcastcontroller.md)* avcastcontroller | The avcastcontroller instance pointer |
-| [AVSession_AVCastControlCommandType](capi-native-avsession-base-h.md#avsession_avcastcontrolcommandtype)* avCastControlcommand | control command [AVSession_AVCastControlCommandType](capi-native-avsession-base-h.md#avsession_avcastcontrolcommandtype). |
+| AVSession_AVCastControlCommandType* avCastControlcommand | control command [AVSession_AVCastControlCommandType](capi-native-avsession-base-h.md#avsession_avcastcontrolcommandtype). |
 
 **Returns**:
 
@@ -719,7 +719,7 @@ Request to send set speed command to Remote.
 | Parameter | Description |
 | -- | -- |
 | [OH_AVCastController](capi-ohavsession-oh-avcastcontroller.md)* avcastcontroller | The avcastcontroller instance pointer |
-| [AVSession_PlaybackSpeed](capi-native-avsession-base-h.md#avsession_playbackspeed) speed | control command [AVSession_PlaybackSpeed](capi-native-avsession-base-h.md#avsession_playbackspeed). |
+| AVSession_PlaybackSpeed speed | control command [AVSession_PlaybackSpeed](capi-native-avsession-base-h.md#avsession_playbackspeed). |
 
 **Returns**:
 
@@ -769,7 +769,7 @@ Request to prepare the current player item, this is needed for sink media inform
 | Parameter | Description |
 | -- | -- |
 | [OH_AVCastController](capi-ohavsession-oh-avcastcontroller.md)* avcastcontroller | The avcastcontroller instance pointer |
-| OH_AVSession_AVQueueItem* avqueueItem |  media item info [OH_AVSession_AVQueueItem](capi-ohavsession-oh-avsession-avqueueitem.md). |
+| [OH_AVSession_AVQueueItem](capi-ohavsession-oh-avsession-avqueueitem.md)* avqueueItem |  media item info [OH_AVSession_AVQueueItem](capi-ohavsession-oh-avsession-avqueueitem.md). |
 
 **Returns**:
 
@@ -794,7 +794,7 @@ Request to Play the current item, should contain media uri otherwise the playbac
 | Parameter | Description |
 | -- | -- |
 | [OH_AVCastController](capi-ohavsession-oh-avcastcontroller.md)* avcastcontroller | The avcastcontroller instance pointer |
-| OH_AVSession_AVQueueItem* avqueueItem |  media item info [OH_AVSession_AVQueueItem](capi-ohavsession-oh-avsession-avqueueitem.md). |
+| [OH_AVSession_AVQueueItem](capi-ohavsession-oh-avsession-avqueueitem.md)* avqueueItem |  media item info [OH_AVSession_AVQueueItem](capi-ohavsession-oh-avsession-avqueueitem.md). |
 
 **Returns**:
 

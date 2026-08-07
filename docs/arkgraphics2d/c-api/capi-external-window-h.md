@@ -74,6 +74,8 @@ Defines the functions for obtaining and using a native window.
 | [int32_t OH_NativeWindow_PreAllocBuffers(OHNativeWindow *window, uint32_t allocBufferCnt)](#oh_nativewindow_preallocbuffers) | PreAlloc <b>OHNativeWindowBuffer</b> of this <b>OHNativeWindow</b>This interface is a non-thread-safe type interface.<br> |
 | [int32_t OH_NativeWindow_LockBuffer(OHNativeWindow* window, Region region, OHNativeWindowBuffer** buffer)](#oh_nativewindow_lockbuffer) | Requests an <b>OHNativeWindowBuffer</b> through an <b>OHNativeWindow</b> instance for content production,<br> and lock the <b>OHNativeWindowBuffer</b>, the interface needs to be paired with<br> <b>OH_NativeWindow_UnlockAndFlushBuffer</b> for use, after lock, it must be unlocked in order to relock,<br> repeatedly lock or unlock will return an illegal operation error code, the interface supports rendering images<br> directly through memory read and write on the CPU.This interface is a non-thread-safe type interface.<br> |
 | [int32_t OH_NativeWindow_UnlockAndFlushBuffer(OHNativeWindow* window)](#oh_nativewindow_unlockandflushbuffer) | Flushes the <b>OHNativeWindowBuffer</b> filled with the content to the buffer queue through an <br> <b>OHNativeWindow</b> instance for content consumption, and unlock the <b>OHNativeWindowBuffer</b>.This interface is a non-thread-safe type interface.<br> |
+| [int32_t OH_NativeWindow_Set3DMetadataValue(OHNativeWindow *window, OH_NativeBuffer_3D_MetadataKey metadataKey, int32_t size, uint8_t *metadata)](#oh_nativewindow_set3dmetadatavalue) | Set the 3D metadata of the native window.<br> This interface is a non-thread-safe type interface.<br> |
+| [int32_t OH_NativeWindow_Get3DMetadataValue(OHNativeWindow *window, OH_NativeBuffer_3D_MetadataKey metadataKey, int32_t *size, uint8_t **metadata)](#oh_nativewindow_get3dmetadatavalue) | Get the 3D metadata of the native window.<br> This interface is a non-thread-safe type interface.<br> |
 
 ## Enum type description
 
@@ -1153,5 +1155,63 @@ Flushes the <b>OHNativeWindowBuffer</b> filled with the content to the buffer qu
 | Type | Description |
 | -- | -- |
 | int32_t | {@link NATIVE_ERROR_OK} 0 - Success.<br>     {@link NATIVE_ERROR_INVALID_ARGUMENTS} 40001000 - window is NULL.<br>     {@link NATIVE_ERROR_UNKNOWN} 50002000 - surface of window is NULL. |
+
+### OH_NativeWindow_Set3DMetadataValue()
+
+```c
+int32_t OH_NativeWindow_Set3DMetadataValue(OHNativeWindow *window, OH_NativeBuffer_3D_MetadataKey metadataKey, int32_t size, uint8_t *metadata)
+```
+
+**Description**
+
+Set the 3D metadata of the native window.<br> This interface is a non-thread-safe type interface.<br>
+
+**System capability**: SystemCapability.Graphic.Graphic2D.NativeWindow
+
+**Since**: 26.0.0
+
+**Parameters**:
+
+| Parameter | Description |
+| -- | -- |
+| [OHNativeWindow](capi-nativewindow-nativewindow.md) *window | Indicates the pointer to a <b>OHNativeWindow</b> instance. |
+| [OH_NativeBuffer_3D_MetadataKey](capi-buffer-common-h.md#oh_nativebuffer_3d_metadatakey) metadataKey | Indicates the 3D metadata type of native window, see <b>OH_NativeBuffer_3D_MetadataKey</b>. |
+| int32_t size | Indicates the size of a uint8_t vector. |
+| uint8_t *metadata | Indicates the pointer to a uint8_t vector. |
+
+**Returns**:
+
+| Type | Description |
+| -- | -- |
+| int32_t | {@link NATIVE_ERROR_OK} 0 - Success.<br>     {@link NATIVE_ERROR_INVALID_ARGUMENTS} 40001000 - window or metadata is NULL.<br>     {@link NATIVE_ERROR_BUFFER_STATE_INVALID} 41207000 - Incorrect metadata state.<br>     {@link NATIVE_ERROR_UNSUPPORTED} 50102000 - Unsupported metadata key. |
+
+### OH_NativeWindow_Get3DMetadataValue()
+
+```c
+int32_t OH_NativeWindow_Get3DMetadataValue(OHNativeWindow *window, OH_NativeBuffer_3D_MetadataKey metadataKey, int32_t *size, uint8_t **metadata)
+```
+
+**Description**
+
+Get the 3D metadata of the native window.<br> This interface is a non-thread-safe type interface.<br>
+
+**System capability**: SystemCapability.Graphic.Graphic2D.NativeWindow
+
+**Since**: 26.0.0
+
+**Parameters**:
+
+| Parameter | Description |
+| -- | -- |
+| [OHNativeWindow](capi-nativewindow-nativewindow.md) *window | Indicates the pointer to a <b>OHNativeWindow</b> instance. |
+| [OH_NativeBuffer_3D_MetadataKey](capi-buffer-common-h.md#oh_nativebuffer_3d_metadatakey) metadataKey | Indicates the 3D metadata type of native window, see <b>OH_NativeBuffer_3D_MetadataKey</b>. |
+| int32_t *size | Indicates the size of a uint8_t vector. |
+| uint8_t **metadata | Indicates the pointer to a uint8_t vector. |
+
+**Returns**:
+
+| Type | Description |
+| -- | -- |
+| int32_t | {@link NATIVE_ERROR_OK} 0 - Success.<br>     {@link NATIVE_ERROR_INVALID_ARGUMENTS} 40001000 - window, metadata, or size is NULL.<br>     {@link NATIVE_ERROR_BUFFER_STATE_INVALID} 41207000 - Incorrect metadata state.<br>     {@link NATIVE_ERROR_UNSUPPORTED} 50102000 - Unsupported metadata key. |
 
 

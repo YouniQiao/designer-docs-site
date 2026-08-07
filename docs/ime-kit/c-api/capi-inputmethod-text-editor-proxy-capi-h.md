@@ -92,7 +92,7 @@ Defines the function called when input method getting text config.You need to im
 | Parameter | Description |
 | -- | -- |
 | (InputMethod_TextEditorProxy \*textEditorProxy | Represents a pointer to an [InputMethod_TextEditorProxy](capi-inputmethod-inputmethod-texteditorproxy.md) instance. |
-| InputMethod_TextConfig \*config | Represents a pointer to an [InputMethod_TextConfig](capi-inputmethod-inputmethod-textconfig.md) instance. You can only access the memory whenthis callback is called. After this callback returns, the memory will be released and you should not access thismemory again. |
+| [InputMethod_TextConfig](capi-inputmethod-inputmethod-textconfig.md) \*config | Represents a pointer to an [InputMethod_TextConfig](capi-inputmethod-inputmethod-textconfig.md) instance. You can only access the memory whenthis callback is called. After this callback returns, the memory will be released and you should not access thismemory again. |
 
 ### OH_TextEditorProxy_InsertTextFunc()
 
@@ -331,7 +331,7 @@ Called when input method sending private command.You need to implement this func
 | Parameter | Description |
 | -- | -- |
 | (InputMethod_TextEditorProxy \*textEditorProxy | Represents a pointer to an [InputMethod_TextEditorProxy](capi-inputmethod-inputmethod-texteditorproxy.md) instance which will be set in. |
-| [InputMethod_PrivateCommand](capi-inputmethod-inputmethod-privatecommand.md) \*privateCommand[] | Private command from input method. You can only access the memory when this callback is called.After this callback returns, the memory will be released and you should not access this memory again. |
+| InputMethod_PrivateCommand \*privateCommand[] | Private command from input method. You can only access the memory when this callback is called.After this callback returns, the memory will be released and you should not access this memory again. |
 | size_t size | Size of private command. |
 
 **Returns**:

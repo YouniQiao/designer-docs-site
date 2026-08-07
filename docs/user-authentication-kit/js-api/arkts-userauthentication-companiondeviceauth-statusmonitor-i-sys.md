@@ -1,0 +1,255 @@
+# StatusMonitor (System API)
+
+Status monitor object. It is used to listen for or obtain information such as the template status, continuous authentication status, and available device status. This object can be obtained by calling  
+[getStatusMonitor]\_\_\_JSDOC\_LINK\_DESC\_USD\_0\_\_\_.
+
+**Since:** 23
+
+**ArkTS mode:** Both ArkTS-Dyn and ArkTS-Sta, since version 23.
+
+<!--Device-companionDeviceAuth-interface StatusMonitor--><!--Device-companionDeviceAuth-interface StatusMonitor-End-->
+
+**System capability:** SystemCapability.UserIAM.UserAuth.CompanionDeviceAuth
+
+**System API:** This is a system API.
+
+## getTemplateStatus
+
+```TypeScript
+getTemplateStatus(): Promise<TemplateStatus[]>
+```
+
+Obtains the status of the companion device template. This API is used to query the status of all registered companion device authentication templates of the current user, including the template validity, supported services, and associated device status. This API uses a promise to return the result.
+
+**Since:** 23
+
+**ArkTS mode:** Both ArkTS-Dyn and ArkTS-Sta, since version 23.
+
+**Required permissions:** ohos.permission.USE_USER_IDM
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-StatusMonitor-getTemplateStatus(): Promise<TemplateStatus[]>--><!--Device-StatusMonitor-getTemplateStatus(): Promise<TemplateStatus[]>-End-->
+
+**System capability:** SystemCapability.UserIAM.UserAuth.CompanionDeviceAuth
+
+**System API:** This is a system API.
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;TemplateStatus[]&gt; | Promise used to return the status list of all templates of the current user. The status of each template contains the template ID, validity, and device information. If the operation fails, an error code is returned. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [32600001](../errorcode-useriam.md#32600001-system-service-not-working-properly) | The system service is not working properly. Please try again later. |
+
+## offAvailableDeviceChange
+
+```TypeScript
+offAvailableDeviceChange(callback?: AvailableDeviceStatusCallback): void
+```
+
+Unsubscribes from the events for status changes of companion devices that can be added. This API uses an asynchronous callback to return the result.
+
+**Since:** 23
+
+**ArkTS mode:** Both ArkTS-Dyn and ArkTS-Sta, since version 23.
+
+**Required permissions:** ohos.permission.USE_USER_IDM
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-StatusMonitor-offAvailableDeviceChange(callback?: AvailableDeviceStatusCallback): void--><!--Device-StatusMonitor-offAvailableDeviceChange(callback?: AvailableDeviceStatusCallback): void-End-->
+
+**System capability:** SystemCapability.UserIAM.UserAuth.CompanionDeviceAuth
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | \_\_\_MD\_LINK\_USD\_0\_\_\_ | No | Callback to unregister. If this parameter is not specified, all callbacks corresponding to the event type are unsubscribed. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [32600001](../errorcode-useriam.md#32600001-system-service-not-working-properly) | The system service is not working properly. Please try again later. |
+
+## offContinuousAuthChange
+
+```TypeScript
+offContinuousAuthChange(callback?: ContinuousAuthStatusCallback): void
+```
+
+Unsubscribes from the continuous authentication status change event of the companion device. After the unsubscription, the application will no longer receive notifications of continuous authentication status changes.This API uses an asynchronous callback to return the result.
+
+**Since:** 23
+
+**ArkTS mode:** Both ArkTS-Dyn and ArkTS-Sta, since version 23.
+
+**Required permissions:** ohos.permission.USE_USER_IDM
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-StatusMonitor-offContinuousAuthChange(callback?: ContinuousAuthStatusCallback): void--><!--Device-StatusMonitor-offContinuousAuthChange(callback?: ContinuousAuthStatusCallback): void-End-->
+
+**System capability:** SystemCapability.UserIAM.UserAuth.CompanionDeviceAuth
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | \_\_\_MD\_LINK\_USD\_0\_\_\_ | No | Callback to unregister. If this parameter is passed, only the specified callback is unregistered. If this parameter is not passed, all callbacks registered with **onContinuousAuthChange** are unregistered. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [32600001](../errorcode-useriam.md#32600001-system-service-not-working-properly) | The system service is not working properly. Please try again later. |
+
+## offTemplateChange
+
+```TypeScript
+offTemplateChange(callback?: TemplateStatusCallback): void
+```
+
+Unsubscribes from template status change events. This API uses an asynchronous callback to return the result.
+
+**Since:** 23
+
+**ArkTS mode:** Both ArkTS-Dyn and ArkTS-Sta, since version 23.
+
+**Required permissions:** ohos.permission.USE_USER_IDM
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-StatusMonitor-offTemplateChange(callback?: TemplateStatusCallback): void--><!--Device-StatusMonitor-offTemplateChange(callback?: TemplateStatusCallback): void-End-->
+
+**System capability:** SystemCapability.UserIAM.UserAuth.CompanionDeviceAuth
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | \_\_\_MD\_LINK\_USD\_0\_\_\_ | No | Callback to unregister. If this parameter is not specified, all callbacks corresponding to the event type are unsubscribed. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [32600001](../errorcode-useriam.md#32600001-system-service-not-working-properly) | The system service is not working properly. Please try again later. |
+
+## onAvailableDeviceChange
+
+```TypeScript
+onAvailableDeviceChange(callback: AvailableDeviceStatusCallback): void
+```
+
+Subscribes to the events for status changes of companion devices that can be added. This API uses an asynchronous callback to return the result.
+
+**Since:** 23
+
+**ArkTS mode:** Both ArkTS-Dyn and ArkTS-Sta, since version 23.
+
+**Required permissions:** ohos.permission.USE_USER_IDM
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-StatusMonitor-onAvailableDeviceChange(callback: AvailableDeviceStatusCallback): void--><!--Device-StatusMonitor-onAvailableDeviceChange(callback: AvailableDeviceStatusCallback): void-End-->
+
+**System capability:** SystemCapability.UserIAM.UserAuth.CompanionDeviceAuth
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | \_\_\_MD\_LINK\_USD\_0\_\_\_ | Yes | Callback used to return the available device status. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [32600001](../errorcode-useriam.md#32600001-system-service-not-working-properly) | The system service is not working properly. Please try again later. |
+
+## onContinuousAuthChange
+
+```TypeScript
+onContinuousAuthChange(param: ContinuousAuthParam, callback: ContinuousAuthStatusCallback): void
+```
+
+Subscribes to the events for continuous authentication status of companion devices. This API uses an asynchronous callback to return the result.
+
+**Since:** 23
+
+**ArkTS mode:** Both ArkTS-Dyn and ArkTS-Sta, since version 23.
+
+**Required permissions:** ohos.permission.USE_USER_IDM
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-StatusMonitor-onContinuousAuthChange(param: ContinuousAuthParam, callback: ContinuousAuthStatusCallback): void--><!--Device-StatusMonitor-onContinuousAuthChange(param: ContinuousAuthParam, callback: ContinuousAuthStatusCallback): void-End-->
+
+**System capability:** SystemCapability.UserIAM.UserAuth.CompanionDeviceAuth
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| param | \_\_\_MD\_LINK\_USD\_0\_\_\_ | Yes | Device for which the events are subscribed to. |
+| callback | \_\_\_MD\_LINK\_USD\_0\_\_\_ | Yes | Called when the continuous authentication status of the device changes. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [32600001](../errorcode-useriam.md#32600001-system-service-not-working-properly) | The system service is not working properly. Please try again later. |
+| [32600002](../errorcode-useriam.md#32600002-template-not-found) | The template is not found. |
+
+## onTemplateChange
+
+```TypeScript
+onTemplateChange(callback: TemplateStatusCallback): void
+```
+
+Subscribes to template status change events. This API uses an asynchronous callback to return the result.
+
+**Since:** 23
+
+**ArkTS mode:** Both ArkTS-Dyn and ArkTS-Sta, since version 23.
+
+**Required permissions:** ohos.permission.USE_USER_IDM
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-StatusMonitor-onTemplateChange(callback: TemplateStatusCallback): void--><!--Device-StatusMonitor-onTemplateChange(callback: TemplateStatusCallback): void-End-->
+
+**System capability:** SystemCapability.UserIAM.UserAuth.CompanionDeviceAuth
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| callback | \_\_\_MD\_LINK\_USD\_0\_\_\_ | Yes | Callback used to receive the template status. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [32600001](../errorcode-useriam.md#32600001-system-service-not-working-properly) | The system service is not working properly. Please try again later. |
+

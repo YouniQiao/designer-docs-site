@@ -53,7 +53,7 @@ OH_AVRecorder *OH_AVRecorder_Create(void)
 
 | 类型 | 说明 |
 | -- | -- |
-| OH_AVRecorder * | 成功时返回指向OH_AVRecorder实例的指针，失败时返回nullptr。 |
+| [OH_AVRecorder *](capi-avrecorder-oh-avrecorder.md) | 成功时返回指向OH_AVRecorder实例的指针，失败时返回nullptr。 |
 
 ### OH_AVRecorder_Prepare()
 
@@ -71,8 +71,8 @@ OH_AVErrCode OH_AVRecorder_Prepare(OH_AVRecorder *recorder, OH_AVRecorder_Config
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVRecorder *recorder | 指向OH_AVRecorder实例的指针。 |
-| OH_AVRecorder_Config *config | 指向OH_AVRecorder_Config实例的指针。 |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | 指向OH_AVRecorder实例的指针。 |
+| [OH_AVRecorder_Config](capi-avrecorder-oh-avrecorder-config.md) *config | 指向OH_AVRecorder_Config实例的指针。 |
 
 **返回：**
 
@@ -96,8 +96,8 @@ OH_AVErrCode OH_AVRecorder_GetAVRecorderConfig(OH_AVRecorder *recorder, OH_AVRec
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVRecorder *recorder | 指向OH_AVRecorder实例的指针。 |
-| OH_AVRecorder_Config **config | 指向OH_AVRecorder_Config实例的指针。 |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | 指向OH_AVRecorder实例的指针。 |
+| [OH_AVRecorder_Config](capi-avrecorder-oh-avrecorder-config.md) **config | 指向OH_AVRecorder_Config实例的指针。 |
 
 **返回：**
 
@@ -121,8 +121,8 @@ OH_AVErrCode OH_AVRecorder_GetInputSurface(OH_AVRecorder *recorder, OHNativeWind
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVRecorder *recorder | 指向OH_AVRecorder实例的指针。 |
-| [OHNativeWindow](../ArkGraphics2D/capi-nativewindow-nativewindow.md) **window | 指向OHNativeWindow实例的指针。 |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | 指向OH_AVRecorder实例的指针。 |
+| OHNativeWindow **window | 指向OHNativeWindow实例的指针。 |
 
 **返回：**
 
@@ -146,7 +146,7 @@ OH_AVErrCode OH_AVRecorder_UpdateRotation(OH_AVRecorder *recorder, int32_t rotat
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVRecorder *recorder | 指向OH_AVRecorder实例的指针。 |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | 指向OH_AVRecorder实例的指针。 |
 | int32_t rotation | 视频旋转角度，必须是整数 [0, 90, 180, 270] 中的一个。 |
 
 **返回：**
@@ -171,7 +171,7 @@ OH_AVErrCode OH_AVRecorder_Start(OH_AVRecorder *recorder)
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVRecorder *recorder | 指向OH_AVRecorder实例的指针。 |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | 指向OH_AVRecorder实例的指针。 |
 
 **返回：**
 
@@ -195,7 +195,7 @@ OH_AVErrCode OH_AVRecorder_Pause(OH_AVRecorder *recorder)
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVRecorder *recorder | 指向OH_AVRecorder实例的指针。 |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | 指向OH_AVRecorder实例的指针。 |
 
 **返回：**
 
@@ -219,7 +219,7 @@ OH_AVErrCode OH_AVRecorder_Resume(OH_AVRecorder *recorder)
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVRecorder *recorder | 指向OH_AVRecorder实例的指针。 |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | 指向OH_AVRecorder实例的指针。 |
 
 **返回：**
 
@@ -243,7 +243,7 @@ OH_AVErrCode OH_AVRecorder_Stop(OH_AVRecorder *recorder)
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVRecorder *recorder | 指向OH_AVRecorder实例的指针。 |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | 指向OH_AVRecorder实例的指针。 |
 
 **返回：**
 
@@ -267,7 +267,7 @@ OH_AVErrCode OH_AVRecorder_Reset(OH_AVRecorder *recorder)
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVRecorder *recorder | 指向OH_AVRecorder实例的指针。 |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | 指向OH_AVRecorder实例的指针。 |
 
 **返回：**
 
@@ -291,7 +291,7 @@ OH_AVErrCode OH_AVRecorder_Release(OH_AVRecorder *recorder)
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVRecorder *recorder | 指向OH_AVRecorder实例的指针。 |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | 指向OH_AVRecorder实例的指针。 |
 
 **返回：**
 
@@ -315,8 +315,8 @@ OH_AVErrCode OH_AVRecorder_GetAvailableEncoder(OH_AVRecorder *recorder, OH_AVRec
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVRecorder *recorder | 指向OH_AVRecorder实例的指针。 |
-| OH_AVRecorder_EncoderInfo **info | 指向OH_AVRecorder_EncoderInfo实例的指针。 |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | 指向OH_AVRecorder实例的指针。 |
+| [OH_AVRecorder_EncoderInfo](capi-avrecorder-oh-avrecorder-encoderinfo.md) **info | 指向OH_AVRecorder_EncoderInfo实例的指针。 |
 | int32_t *length | 可用编码器的长度。 |
 
 **返回：**
@@ -341,8 +341,8 @@ OH_AVErrCode OH_AVRecorder_SetStateCallback(OH_AVRecorder *recorder, OH_AVRecord
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVRecorder *recorder | 指向OH_AVRecorder实例的指针。 |
-| OH_AVRecorder_OnStateChange callback | 状态回调函数。 |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | 指向OH_AVRecorder实例的指针。 |
+| [OH_AVRecorder_OnStateChange](capi-avrecorder-base-h.md#oh_avrecorder_onstatechange) callback | 状态回调函数。 |
 | void *userData | 指向用户特定数据的指针。 |
 
 **返回：**
@@ -367,8 +367,8 @@ OH_AVErrCode OH_AVRecorder_SetErrorCallback(OH_AVRecorder *recorder, OH_AVRecord
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVRecorder *recorder | 指向OH_AVRecorder实例的指针。 |
-| OH_AVRecorder_OnError callback | 错误回调函数。 |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | 指向OH_AVRecorder实例的指针。 |
+| [OH_AVRecorder_OnError](capi-avrecorder-base-h.md#oh_avrecorder_onerror) callback | 错误回调函数。 |
 | void *userData | 指向用户特定数据的指针。 |
 
 **返回：**
@@ -393,8 +393,8 @@ OH_AVErrCode OH_AVRecorder_SetUriCallback(OH_AVRecorder *recorder, OH_AVRecorder
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVRecorder *recorder | 指向OH_AVRecorder实例的指针。 |
-| OH_AVRecorder_OnUri callback | URI回调函数。 |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | 指向OH_AVRecorder实例的指针。 |
+| [OH_AVRecorder_OnUri](capi-avrecorder-base-h.md#oh_avrecorder_onuri) callback | URI回调函数。 |
 | void *userData | 指向用户特定数据的指针。 |
 
 **返回：**
@@ -419,7 +419,7 @@ OH_AVErrCode OH_AVRecorder_SetWillMuteWhenInterrupted(OH_AVRecorder *recorder, b
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVRecorder *recorder | 指向OH_AVRecorder实例的指针。 |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | 指向OH_AVRecorder实例的指针。 |
 | bool muteWhenInterrupted | 设置是否开启静音打断模式。设置成true表示当应用需要录制时保持静音而不是被打断，设置成false表示应用录制打断时停止录音而不是保持静音。 |
 
 **返回：**
@@ -444,7 +444,7 @@ OH_AVErrCode OH_AVRecorder_GetAudioCapturerMaxAmplitude(OH_AVRecorder *recorder,
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVRecorder *recorder | 指向OH_AVRecorder实例的指针。 |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | 指向OH_AVRecorder实例的指针。 |
 | int32_t* amplitude | 获取到的音频最大振幅。 |
 
 **返回：**
@@ -469,8 +469,8 @@ OH_AVErrCode OH_AVRecorder_SetMetadata(OH_AVRecorder *recorder, const OH_AVForma
 
 | 参数项 | 描述 |
 | -- | -- |
-| OH_AVRecorder *recorder | 指向OH_AVRecorder实例的指针。 |
-| [const OH_AVFormat](../AVCodecKit/capi-core-oh-avformat.md) *metadata | 设置的元数据信息。格式为字符串键值对，其中，键需要以"com.openharmony."开头，且值的长度不能超过256个字节。 |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | 指向OH_AVRecorder实例的指针。 |
+| const OH_AVFormat *metadata | 设置的元数据信息。格式为字符串键值对，其中，键需要以"com.openharmony."开头，且值的长度不能超过256个字节。 |
 
 **返回：**
 

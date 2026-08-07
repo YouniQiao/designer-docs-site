@@ -68,7 +68,7 @@ Function pointer. Restricts the value of the field to be equal to the specified 
 | -- | -- |
 | [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance. |
 |  const char *field | Indicates the column name in the database table. |
-|  OH_VObject *valueObject | Represents a pointer to an [OH_VObject](capi-rdb-oh-vobject.md) instance. |
+|  [OH_VObject](capi-rdb-oh-vobject.md) *valueObject | Represents a pointer to an [OH_VObject](capi-rdb-oh-vobject.md) instance. |
 
 **Returns**:
 
@@ -99,7 +99,7 @@ Function pointer.Restricts the value of the field to be not equal to the specifi
 | -- | -- |
 | [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance. |
 |  const char *field | Indicates the column name in the database table. |
-|  OH_VObject *valueObject | Represents a pointer to an [OH_VObject](capi-rdb-oh-vobject.md) instance. |
+|  [OH_VObject](capi-rdb-oh-vobject.md) *valueObject | Represents a pointer to an [OH_VObject](capi-rdb-oh-vobject.md) instance. |
 
 **Returns**:
 
@@ -306,7 +306,7 @@ Function pointer. Restricts the value of the field to be like the specified valu
 | -- | -- |
 | [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance. |
 |  const char *field | Indicates the column name in the database table. |
-|  OH_VObject *valueObject | Represents a pointer to an [OH_VObject](capi-rdb-oh-vobject.md) instance. |
+|  [OH_VObject](capi-rdb-oh-vobject.md) *valueObject | Represents a pointer to an [OH_VObject](capi-rdb-oh-vobject.md) instance. |
 
 **Returns**:
 
@@ -337,7 +337,7 @@ Function pointer. Restricts the value of the field to be between the specified v
 | -- | -- |
 | [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance. |
 |  const char *field | Indicates the column name in the database table. |
-|  OH_VObject *valueObject | Represents a pointer to an [OH_VObject](capi-rdb-oh-vobject.md) instance. |
+|  [OH_VObject](capi-rdb-oh-vobject.md) *valueObject | Represents a pointer to an [OH_VObject](capi-rdb-oh-vobject.md) instance. |
 
 **Returns**:
 
@@ -368,7 +368,7 @@ Function pointer.Restricts the value of the field to be not between the specifie
 | -- | -- |
 | [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance. |
 |  const char *field | Indicates the column name in the database table. |
-|  OH_VObject *valueObject | Represents a pointer to an [OH_VObject](capi-rdb-oh-vobject.md) instance. |
+|  [OH_VObject](capi-rdb-oh-vobject.md) *valueObject | Represents a pointer to an [OH_VObject](capi-rdb-oh-vobject.md) instance. |
 
 **Returns**:
 
@@ -399,7 +399,7 @@ Function pointer.Restricts the value of the field to be greater than the specifi
 | -- | -- |
 | [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance. |
 |  const char *field | Indicates the column name in the database table. |
-|  OH_VObject *valueObject | Represents a pointer to an [OH_VObject](capi-rdb-oh-vobject.md) instance. |
+|  [OH_VObject](capi-rdb-oh-vobject.md) *valueObject | Represents a pointer to an [OH_VObject](capi-rdb-oh-vobject.md) instance. |
 
 **Returns**:
 
@@ -430,7 +430,7 @@ Function pointer.Restricts the value of the field to be less than the specified 
 | -- | -- |
 | [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance. |
 |  const char *field | Indicates the column name in the database table. |
-|  OH_VObject *valueObject | Represents a pointer to an [OH_VObject](capi-rdb-oh-vobject.md) instance. |
+|  [OH_VObject](capi-rdb-oh-vobject.md) *valueObject | Represents a pointer to an [OH_VObject](capi-rdb-oh-vobject.md) instance. |
 
 **Returns**:
 
@@ -461,7 +461,7 @@ Function pointer.Restricts the value of the field to be greater than or equal to
 | -- | -- |
 | [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance. |
 |  const char *field | Indicates the column name in the database table. |
-|  OH_VObject *valueObject | Represents a pointer to an [OH_VObject](capi-rdb-oh-vobject.md) instance. |
+|  [OH_VObject](capi-rdb-oh-vobject.md) *valueObject | Represents a pointer to an [OH_VObject](capi-rdb-oh-vobject.md) instance. |
 
 **Returns**:
 
@@ -492,7 +492,7 @@ Function pointer.Restricts the value of the field to be less than or equal to th
 | -- | -- |
 | [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance. |
 |  const char *field | Indicates the column name in the database table. |
-|  OH_VObject *valueObject | Represents a pointer to an [OH_VObject](capi-rdb-oh-vobject.md) instance. |
+|  [OH_VObject](capi-rdb-oh-vobject.md) *valueObject | Represents a pointer to an [OH_VObject](capi-rdb-oh-vobject.md) instance. |
 
 **Returns**:
 
@@ -674,7 +674,7 @@ Function pointer.Configure the predicate to match the specified field and the va
 | -- | -- |
 | [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance. |
 |  const char *field | Indicates the column name in the database table. |
-|  OH_VObject *valueObject | Represents a pointer to an [OH_VObject](capi-rdb-oh-vobject.md) instance. |
+|  [OH_VObject](capi-rdb-oh-vobject.md) *valueObject | Represents a pointer to an [OH_VObject](capi-rdb-oh-vobject.md) instance. |
 
 **Returns**:
 
@@ -705,7 +705,7 @@ Function pointer.Configure the predicate to match the specified field and the va
 | -- | -- |
 | [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance. |
 |  const char *field | Indicates the column name in the database table. |
-|  OH_VObject *valueObject | Represents a pointer to an [OH_VObject](capi-rdb-oh-vobject.md) instance. |
+|  [OH_VObject](capi-rdb-oh-vobject.md) *valueObject | Represents a pointer to an [OH_VObject](capi-rdb-oh-vobject.md) instance. |
 
 **Returns**:
 

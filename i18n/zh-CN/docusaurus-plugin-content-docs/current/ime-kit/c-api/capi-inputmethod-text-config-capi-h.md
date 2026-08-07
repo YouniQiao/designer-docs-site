@@ -378,7 +378,7 @@ InputMethod_ErrorCode OH_TextConfig_GetCursorInfo(InputMethod_TextConfig *config
 | 参数项 | 描述 |
 | -- | -- |
 | [InputMethod_TextConfig](capi-inputmethod-inputmethod-textconfig.md) *config | 输入指针，指向即将被获取值的TextConfig实例的指针。不可为NULL。 |
-| [InputMethod_CursorInfo](capi-inputmethod-inputmethod-cursorinfo.md) **cursorInfo | 输出双指针，用于返回光标信息对象。函数内部分配内存创建[InputMethod_CursorInfo](capi-inputmethod-inputmethod-cursorinfo.md)实例，并通过此双指针返回。不可为NULL。返回的对象必须在使用完毕后调用[OH_CursorInfo_Destroy](capi-inputmethod-cursor-info-capi-h.md#oh_cursorinfo_destroy)释放，不可使用free直接释放，否则会造成内存泄漏。 |
+| InputMethod_CursorInfo **cursorInfo | 输出双指针，用于返回光标信息对象。函数内部分配内存创建[InputMethod_CursorInfo](capi-inputmethod-inputmethod-cursorinfo.md)实例，并通过此双指针返回。不可为NULL。返回的对象必须在使用完毕后调用[OH_CursorInfo_Destroy](capi-inputmethod-cursor-info-capi-h.md#oh_cursorinfo_destroy)释放，不可使用free直接释放，否则会造成内存泄漏。 |
 
 **返回：**
 
@@ -401,7 +401,7 @@ InputMethod_ErrorCode OH_TextConfig_GetTextAvoidInfo(InputMethod_TextConfig *con
 | 参数项 | 描述 |
 | -- | -- |
 | [InputMethod_TextConfig](capi-inputmethod-inputmethod-textconfig.md) *config | 输入指针，表示文本配置信息。不可为NULL。 |
-| InputMethod_TextAvoidInfo **avoidInfo | 输出双指针，用于返回输入框避让信息对象。函数内部分配内存创建[InputMethod_TextAvoidInfo](capi-inputmethod-inputmethod-textavoidinfo.md)实例，并通过此双指针返回。不可为NULL。返回的对象必须在使用完毕后调用[OH_TextAvoidInfo_Destroy](capi-inputmethod-text-avoid-info-capi-h.md#oh_textavoidinfo_destroy)释放，不可使用free直接释放，否则会造成内存泄漏。 |
+| [InputMethod_TextAvoidInfo](capi-inputmethod-inputmethod-textavoidinfo.md) **avoidInfo | 输出双指针，用于返回输入框避让信息对象。函数内部分配内存创建[InputMethod_TextAvoidInfo](capi-inputmethod-inputmethod-textavoidinfo.md)实例，并通过此双指针返回。不可为NULL。返回的对象必须在使用完毕后调用[OH_TextAvoidInfo_Destroy](capi-inputmethod-text-avoid-info-capi-h.md#oh_textavoidinfo_destroy)释放，不可使用free直接释放，否则会造成内存泄漏。 |
 
 **返回：**
 

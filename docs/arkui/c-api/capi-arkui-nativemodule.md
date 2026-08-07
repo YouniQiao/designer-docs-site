@@ -38,15 +38,15 @@ Provides UI capabilities of ArkUI on the native side, such as UI component creat
 | [image_span.h](capi-image-span-h.md) | Defines a set of ImageSpan enum and interface. |
 | [progress.h](capi-progress-h.md) | Defines a set of Progress enum and interface. |
 | [slider.h](capi-slider-h.md) | Provides Slider node type definitions for <b>NativeNode</b> APIs. |
-| [image_animator.h](capi-image-animator-h.md) | Defines the common types and APIs for the ImageAnimator component. |
+| [image_animator.h](capi-image-animator-h.md) | Defines **ImageAnimator** node types for **NativeNode** APIs. |
 | [layout.h](capi-layout-h.md) | Defines the layout-related types for the native module. |
 | [text_common.h](capi-text-common-h.md) | Defines a set of text common enum and interface. |
 | [text_input.h](capi-text-input-h.md) | Defines a set of TextInput enum and interface. |
 | [checkbox.h](capi-checkbox-h.md) | Provides Checkbox node type definitions for <b>NativeNode</b> APIs. |
 | [list.h](capi-list-h.md) | Provides shared list-related type and function definitions for <b>NativeNode</b> APIs. |
 | [text.h](capi-text-h.md) | Defines a set of Text enum and interface. |
-| [image.h](capi-image-h.md) | Defines the common types for the Image component. |
+| [image.h](capi-image-h.md) | Defines **Image** node types for **NativeNode** APIs. |
 | [embedded_component.h](capi-embedded-component-h.md) | Defines embedded component attribute and interface. |
-| [picker.h](capi-picker-h.md) | Defines the common types and APIs for picker components. |
+| [picker.h](capi-picker-h.md) | Defines **Picker** node types for **NativeNode** APIs. |
 | [button.h](capi-button-h.md) | Provides Button node type definitions for <b>NativeNode</b> APIs. |
 | [text_area.h](capi-text-area-h.md) | Defines a set of TextArea enum and interface. |

@@ -225,7 +225,7 @@ Creates an <b>ImageSource</b> object at the JavaScript native layer based on the
 | Parameter | Description |
 | -- | -- |
 | napi_env env | Indicates a pointer to the Java Native Interface (JNI) environment. |
-| RawFileDescriptor rawFile | Indicates the raw file's file descriptor. |
+| [RawFileDescriptor](../LocalizationKit/capi-rawfile-rawfiledescriptor.md) rawFile | Indicates the raw file's file descriptor. |
 | [struct OhosImageSourceOps](capi-image-ohosimagesourceops.md)* ops | Indicates a pointer to the options for creating the image source.For details, see [OhosImageSourceOps](capi-image-ohosimagesourceops.md). |
 | napi_value *res | Indicates a pointer to the <b>ImageSource</b> object created at the JavaScript native layer. |
 

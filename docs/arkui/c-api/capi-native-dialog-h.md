@@ -728,7 +728,7 @@ Sets the custom shadow of the dialog box background.
 | Parameter | Description |
 | -- | -- |
 | [ArkUI_CustomDialogOptions](capi-arkui-nativemodule-arkui-customdialogoptions.md)* options | Dialog box parameters. |
-| [const ArkUI_AttributeItem](capi-arkui-nativemodule-arkui-attributeitem.md)* customShadow | Custom shadow parameter. The format is the same as that ofthe <b>NODE_CUSTOM_SHADOW</b> property. |
+| const ArkUI_AttributeItem* customShadow | Custom shadow parameter. The format is the same as that ofthe <b>NODE_CUSTOM_SHADOW</b> property. |
 
 **Returns**:
 
@@ -1164,7 +1164,7 @@ Sets the background blur effect for a dialog box.
 | Parameter | Description |
 | -- | -- |
 | [ArkUI_CustomDialogOptions](capi-arkui-nativemodule-arkui-customdialogoptions.md)* options | Dialog box parameters. |
-| [const ArkUI_AttributeItem](capi-arkui-nativemodule-arkui-attributeitem.md)* backgroundBlurStyleOptions | Background blur effect options of the dialog box.Format of the [ArkUI_AttributeItem](capi-arkui-nativemodule-arkui-attributeitem.md) parameter: <br>        .value[0].i32: color mode. The value is an enum of [ArkUI_ColorMode](capi-native-type-h.md#arkui_colormode). <br>        .value[1]?.i32: adaptive color mode. The value is an enum of [ArkUI_AdaptiveColor](capi-native-type-h.md#arkui_adaptivecolor). <br>        .value[2]?.f32: blur degree. The value range is [0.0, 1.0]. <br>        .value[3]?.u32: brightness of black in the grayscale blur. The value range is [0, 127]. <br>        .value[4]?.u32: degree of darkening the white color in the grayscale blur. The value range is [0, 127]. <br>        .value[5]?.i32: blur activation policy. The value is an enum of [ArkUI_BlurStyleActivePolicy](capi-native-type-visual-h.md#arkui_blurstyleactivepolicy). <br>        .value[6]?.u32: background color, in 0xARGB format, of the components within the window after the window losesfocus (in which case, the blur effect on the components within the window is removed). |
+| const ArkUI_AttributeItem* backgroundBlurStyleOptions | Background blur effect options of the dialog box.Format of the [ArkUI_AttributeItem](capi-arkui-nativemodule-arkui-attributeitem.md) parameter: <br>        .value[0].i32: color mode. The value is an enum of [ArkUI_ColorMode](capi-native-type-h.md#arkui_colormode). <br>        .value[1]?.i32: adaptive color mode. The value is an enum of [ArkUI_AdaptiveColor](capi-native-type-h.md#arkui_adaptivecolor). <br>        .value[2]?.f32: blur degree. The value range is [0.0, 1.0]. <br>        .value[3]?.u32: brightness of black in the grayscale blur. The value range is [0, 127]. <br>        .value[4]?.u32: degree of darkening the white color in the grayscale blur. The value range is [0, 127]. <br>        .value[5]?.i32: blur activation policy. The value is an enum of [ArkUI_BlurStyleActivePolicy](capi-native-type-visual-h.md#arkui_blurstyleactivepolicy). <br>        .value[6]?.u32: background color, in 0xARGB format, of the components within the window after the window losesfocus (in which case, the blur effect on the components within the window is removed). |
 
 **Returns**:
 
@@ -1189,7 +1189,7 @@ Sets the background effect parameters for a dialog box.
 | Parameter | Description |
 | -- | -- |
 | [ArkUI_CustomDialogOptions](capi-arkui-nativemodule-arkui-customdialogoptions.md)* options | Dialog box parameters. |
-| [const ArkUI_AttributeItem](capi-arkui-nativemodule-arkui-attributeitem.md)* backgroundEffect | Background effect of the dialog box.Format of the [ArkUI_AttributeItem](capi-arkui-nativemodule-arkui-attributeitem.md) parameter: <br>        .value[0].f32: blur radius, in vp. <br>        .value[1]?.f32: saturation. <br>        .value[2]?.f32: brightness. <br>        .value[3]?.u32: color, in 0xARGB format. <br>        .value[4]?.i32: adaptive color mode. The value is an enum of [ArkUI_AdaptiveColor](capi-native-type-h.md#arkui_adaptivecolor). <br>        .value[5]?.u32: brightness of black in the grayscale blur. The value range is [0, 127]. <br>        .value[6]?.u32: degree of darkening the white color in the grayscale blur. The value range is [0, 127]. <br>        .value[7]?.i32: blur activation policy. The value is an enum of [ArkUI_BlurStyleActivePolicy](capi-native-type-visual-h.md#arkui_blurstyleactivepolicy). <br>        .value[8]?.u32: background color, in 0xARGB format, of the components within the window after the window losesfocus (in which case, the blur effect on the components within the window is removed). |
+| const ArkUI_AttributeItem* backgroundEffect | Background effect of the dialog box.Format of the [ArkUI_AttributeItem](capi-arkui-nativemodule-arkui-attributeitem.md) parameter: <br>        .value[0].f32: blur radius, in vp. <br>        .value[1]?.f32: saturation. <br>        .value[2]?.f32: brightness. <br>        .value[3]?.u32: color, in 0xARGB format. <br>        .value[4]?.i32: adaptive color mode. The value is an enum of [ArkUI_AdaptiveColor](capi-native-type-h.md#arkui_adaptivecolor). <br>        .value[5]?.u32: brightness of black in the grayscale blur. The value range is [0, 127]. <br>        .value[6]?.u32: degree of darkening the white color in the grayscale blur. The value range is [0, 127]. <br>        .value[7]?.i32: blur activation policy. The value is an enum of [ArkUI_BlurStyleActivePolicy](capi-native-type-visual-h.md#arkui_blurstyleactivepolicy). <br>        .value[8]?.u32: background color, in 0xARGB format, of the components within the window after the window losesfocus (in which case, the blur effect on the components within the window is removed). |
 
 **Returns**:
 
@@ -1214,7 +1214,7 @@ Sets the system material of the dialog box.
 | Parameter | Description |
 | -- | -- |
 | [ArkUI_CustomDialogOptions](capi-arkui-nativemodule-arkui-customdialogoptions.md)* options | Dialog box parameters. |
-| ArkUI_ImmersiveMaterialHandle material | Pointer to material object. The type is [ArkUI_ImmersiveMaterialHandle](capi-arkui-nativemodule-arkui-immersivematerial8h.md). |
+| [ArkUI_ImmersiveMaterialHandle](capi-arkui-nativemodule-arkui-immersivematerial8h.md) material | Pointer to material object. The type is [ArkUI_ImmersiveMaterialHandle](capi-arkui-nativemodule-arkui-immersivematerial8h.md). |
 
 **Returns**:
 
@@ -1239,7 +1239,7 @@ Sets the system material of the dialog box.
 | Parameter | Description |
 | -- | -- |
 | [ArkUI_NativeDialogHandle](capi-arkui-nativemodule-arkui-nativedialog8h.md) handle | Indicates the pointer to the custom dialog box controller. |
-| ArkUI_ImmersiveMaterialHandle material | Pointer to material object. The type is [ArkUI_ImmersiveMaterialHandle](capi-arkui-nativemodule-arkui-immersivematerial8h.md). |
+| [ArkUI_ImmersiveMaterialHandle](capi-arkui-nativemodule-arkui-immersivematerial8h.md) material | Pointer to material object. The type is [ArkUI_ImmersiveMaterialHandle](capi-arkui-nativemodule-arkui-immersivematerial8h.md). |
 
 **Returns**:
 

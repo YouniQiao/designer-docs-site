@@ -123,7 +123,7 @@ Obtains the parameters of the NavDestination component where the node is located
 | -- | -- |
 | [ArkUI_NodeHandle](capi-arkui-nativemodule-arkui-node8h.md) node | The node. |
 | ani_env* env | The ANI environment. |
-| [ani_value](../ArkTS/capi--ani-value.md)* param | The parameter of NavDestination. |
+| ani_value* param | The parameter of NavDestination. |
 
 **Returns**:
 

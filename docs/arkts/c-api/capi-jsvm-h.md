@@ -175,7 +175,7 @@ Provides the JSVM API define.Provides API to Provide independent, standard, and 
 | [JSVM_EXTERN JSVM_Status OH_JSVM_GetHeapStatistics(JSVM_VM vm, JSVM_HeapStatistics* result)](#oh_jsvm_getheapstatistics) | This function returns a set of statistics data of the heap of the VM. |
 | [JSVM_EXTERN JSVM_Status OH_JSVM_StartCpuProfiler(JSVM_VM vm, JSVM_CpuProfiler* result)](#oh_jsvm_startcpuprofiler) | This function creates and starts a CPU profiler. |
 | [JSVM_EXTERN JSVM_Status OH_JSVM_StopCpuProfiler(JSVM_VM vm, JSVM_CpuProfiler profiler, JSVM_OutputStream stream, void* streamData)](#oh_jsvm_stopcpuprofiler) | This function stops the CPU profiler and output to the stream. |
-| [JSVM_EXTERN JSVM_Status OH_JSVM_TakeHeapSnapshot(JSVM_VM vm, JSVM_OutputStream stream, void* streamData)](#oh_jsvm_takeheapsnapshot) | This funciton takes the current heap snapshot and output to the stream. |
+| [JSVM_EXTERN JSVM_Status OH_JSVM_TakeHeapSnapshot(JSVM_VM vm, JSVM_OutputStream stream, void* streamData)](#oh_jsvm_takeheapsnapshot) | This function takes the current heap snapshot and output to the stream. |
 | [JSVM_EXTERN JSVM_Status OH_JSVM_TakeRawHeapSnapshot(JSVM_VM vm, JSVM_OutputStream stream, void *streamData)](#oh_jsvm_takerawheapsnapshot) | This function takes the current heap snapshot and outputs it to thestream in raw heap format (binary format). The raw heap format is VM-specificand its layout is not guaranteed to be stable across different versions.This operation may pause the application temporarily, and frequent invocationmay generate large snapshot files and increase disk usage, so callers shouldmanage generated files appropriately if files are written to disk.The stream callback is invoked synchronously on the thread where the VM isrunning. The callback should avoid long blocking operations. If the callbackreturns false, the output stream is aborted, snapshot generation stops. |
 | [JSVM_EXTERN JSVM_Status OH_JSVM_SetHeapThresholdCallback(JSVM_VM vm, uint64_t threshold, JSVM_HandlerForHeapThreshold callback, void *data)](#oh_jsvm_setheapthresholdcallback) | Set a heap threshold callback for vm and the vm can only have one heapthreshold callback. The registered callback should be cleared byOH_JSVM_ClearHeapThresholdCallback when it is no longer needed.This API is not thread-safe and must be called on the thread where the vm isrunning. The threshold is checked around GC, and the callback is invoked whenthe observed heap usage is greater than or equal to threshold. The callbackwill be called synchronously on the same thread, and threshold checks areskipped while the callback is running. After the callback returns, if theheap usage is still greater than or equal to threshold, the callback will beinvoked again around the next GC. The callback does not need to be registeredagain after it returns. The registered callback is identified (threshold,callback, data). |
 | [JSVM_EXTERN JSVM_Status OH_JSVM_ClearHeapThresholdCallback(JSVM_VM vm, uint64_t threshold, JSVM_HandlerForHeapThreshold callback, void *data)](#oh_jsvm_clearheapthresholdcallback) | Clear the heap threshold callback previously registered for vm.This API is not thread-safe and must be called on the thread where the vmis running. The registered callback is identified (threshold, callback, data). |
@@ -1502,7 +1502,7 @@ This API allocate the memory of array buffer backing store.
 | -- | -- |
 | size_t byteLength | size of backing store memory. |
 | [JSVM_InitializedFlag](capi-jsvm-types-h.md#jsvm_initializedflag) initialized | initialization status of the backing store memory. |
-| void **data | pointer that recieve the backing store memory pointer. |
+| void **data | pointer that receive the backing store memory pointer. |
 
 **Returns**:
 
@@ -1555,7 +1555,7 @@ This API create an array buffer using the backing store data.
 | size_t backingStoreSize | size of backing store memory. |
 | size_t offset | start position of the array buffer in the backing store memory. |
 | size_t arrayBufferSize | size of the array buffer. |
-| [JSVM_Value](capi-jsvm-jsvm-propertyhandlerconfigurationstruct.md#jsvm_value) *result | pointer that recieve the array buffer. |
+| [JSVM_Value](capi-jsvm-jsvm-propertyhandlerconfigurationstruct.md#jsvm_value) *result | pointer that receive the array buffer. |
 
 **Returns**:
 
@@ -4182,7 +4182,7 @@ JSVM_EXTERN JSVM_Status OH_JSVM_TakeHeapSnapshot(JSVM_VM vm, JSVM_OutputStream s
 
 **Description**
 
-This funciton takes the current heap snapshot and output to the stream.
+This function takes the current heap snapshot and output to the stream.
 
 **Since**: 12
 

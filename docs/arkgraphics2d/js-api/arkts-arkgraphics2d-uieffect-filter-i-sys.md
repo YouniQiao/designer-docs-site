@@ -1,0 +1,952 @@
+# Filter
+
+The Filter for Component.
+
+**Since:** 12
+
+**ArkTS mode:** ArkTS-Dyn since version 12; ArkTS-Sta since version 23.
+
+<!--Device-uiEffect-interface Filter--><!--Device-uiEffect-interface Filter-End-->
+
+**System capability:** SystemCapability.Graphics.Drawing
+
+## bezierWarp
+
+```TypeScript
+bezierWarp(controlPoints: Array<common2D.Point>): Filter
+```
+
+Sets the deformation effect controlled by bezier curves of the component.
+
+**Since:** 20
+
+**ArkTS mode:** ArkTS-Dyn since version 20; ArkTS-Sta since version 23.
+
+<!--Device-Filter-bezierWarp(controlPoints: Array<common2D.Point>): Filter--><!--Device-Filter-bezierWarp(controlPoints: Array<common2D.Point>): Filter-End-->
+
+**System capability:** SystemCapability.Graphics.Drawing
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| controlPoints | Array&lt;common2D.Point&gt; | Yes | The bezier control points, 12 points needed. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| \_\_\_MD\_LINK\_USD\_0\_\_\_ |  Returns the Filter that the current effect have been added. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
+
+**Example**
+
+```TypeScript
+import { common2D, uiEffect } from '@kit.ArkGraphics2D'
+
+@Entry
+@Component
+struct BezierWarpExample {
+  @State valueBezier: Array<common2D.Point> = [
+    { x: 0, y: 0 }, { x: 1 / 3, y: 0 }, { x: 2 / 3, y: 0 }, // top edge
+    { x: 0.5, y: 0 }, { x: 0.5, y: 1 / 3 }, { x: 1, y: 2 / 3 }, // right edge
+    { x: 1, y: 1 }, { x: 2 / 3, y: 1 }, { x: 1 / 3, y: 1 }, // bottom edge
+    { x: 0, y: 1 }, { x: 0, y: 2 / 3 }, { x: 0, y: 1 / 3 }] // left edge
+
+  build() {
+    Column() {
+      Image($rawfile('test.jpg'))
+        .foregroundFilter(uiEffect.createFilter().bezierWarp(this.valueBezier))
+    }
+  }
+}
+```
+
+## blurBubblesRise
+
+```TypeScript
+blurBubblesRise(param: BlurBubblesRiseEffectParam): Filter
+```
+
+Applies blur bubbles rise effect to simulate rising bubbles with blur.This effect creates a dreamy, bubbly distortion similar to rising bubbles in liquid.
+
+**Since:** 26.0.0
+
+**ArkTS mode:** ArkTS-Dyn only, since version 26.0.0.
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-Filter-blurBubblesRise(param: BlurBubblesRiseEffectParam): Filter--><!--Device-Filter-blurBubblesRise(param: BlurBubblesRiseEffectParam): Filter-End-->
+
+**System capability:** SystemCapability.Graphics.Drawing
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| param | \_\_\_MD\_LINK\_USD\_0\_\_\_ | Yes | the blur bubbles rise effect parameters. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| \_\_\_MD\_LINK\_USD\_0\_\_\_ |  Returns the blur bubbles rise Filter. |
+
+## colorGradient
+
+ArkTS-Dyn:
+```TypeScript
+colorGradient(colors: Array<Color>, positions: Array<common2D.Point>, strengths: Array<number>,
+        alphaMask?: Mask): Filter
+```
+
+ArkTS-Sta:
+```TypeScript
+colorGradient(colors: Array<Color>, positions: Array<common2D.Point>, strengths: Array<double>,
+        alphaMask?: Mask): Filter
+```
+
+Sets the color gradient filter, may blend with alpha mask.
+
+**Since:** 20
+
+**ArkTS mode:** ArkTS-Dyn since version 20; ArkTS-Sta since version 23.
+
+<!--Device-Filter-colorGradient(colors: Array<Color>, positions: Array<common2D.Point>, strengths: Array<double>,        alphaMask?: Mask): Filter--><!--Device-Filter-colorGradient(colors: Array<Color>, positions: Array<common2D.Point>, strengths: Array<double>,        alphaMask?: Mask): Filter-End-->
+
+**System capability:** SystemCapability.Graphics.Drawing
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| colors | Array&lt;Color&gt; | Yes |  |
+| positions | Array&lt;common2D.Point&gt; | Yes |  |
+| strengths | ArkTS-Dyn: Array&lt;number&gt;  \_\_\_HTML\_TAG\_USD\_0\_\_\_ArkTS-Sta：Array&lt;double&gt; | Yes |  |
+| alphaMask | \_\_\_MD\_LINK\_USD\_0\_\_\_ | No |  |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| \_\_\_MD\_LINK\_USD\_0\_\_\_ |  Returns the Filter that the current effect have been added. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
+
+**Example**
+
+```TypeScript
+import { common2D, uiEffect } from "@kit.ArkGraphics2D"
+
+@Entry
+@Component
+struct ColorGradientExample {
+  @State colorsExample: Array<uiEffect.Color> = [
+    {red: 1.0, green: 0.8, blue: 0.5, alpha: 0.8},
+    {red: 1.0, green: 1.5, blue: 0.5, alpha: 1.0}
+  ]
+
+  @State positionsExample: Array<common2D.Point> = [
+    {x: 0.2, y: 0.2},
+    {x: 0.8, y: 0.6}]
+
+  @State strengthsExample: Array<number> = [0.3, 0.3]
+
+  build() {
+    Column() {
+      Row()
+        .width("100%")
+        .height("100%")
+        .backgroundFilter(uiEffect.createFilter().colorGradient(this.colorsExample, this.positionsExample, this.strengthsExample))
+    }
+  }
+}
+```
+
+## contentLight
+
+ArkTS-Dyn:
+```TypeScript
+contentLight(lightPosition: common2D.Point3d, lightColor: common2D.Color, lightIntensity: number,
+      displacementMap?: Mask): Filter
+```
+
+ArkTS-Sta:
+```TypeScript
+contentLight(lightPosition: common2D.Point3d, lightColor: common2D.Color, lightIntensity: double,
+      displacementMap?: Mask): Filter
+```
+
+Sets the content light filter.
+
+**Since:** 20
+
+**ArkTS mode:** ArkTS-Dyn since version 20; ArkTS-Sta since version 23.
+
+<!--Device-Filter-contentLight(lightPosition: common2D.Point3d, lightColor: common2D.Color, lightIntensity: double,      displacementMap?: Mask): Filter--><!--Device-Filter-contentLight(lightPosition: common2D.Point3d, lightColor: common2D.Color, lightIntensity: double,      displacementMap?: Mask): Filter-End-->
+
+**System capability:** SystemCapability.Graphics.Drawing
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| lightPosition | common2D.Point3d | Yes |  |
+| lightColor | common2D.Color | Yes |  |
+| lightIntensity | ArkTS-Dyn: number  \_\_\_HTML\_TAG\_USD\_0\_\_\_ArkTS-Sta：double | Yes |  |
+| displacementMap | \_\_\_MD\_LINK\_USD\_0\_\_\_ | No |  |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| \_\_\_MD\_LINK\_USD\_0\_\_\_ |  Returns the Filter that the current effect have been added. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
+
+**Example**
+
+```TypeScript
+import { common2D, uiEffect } from '@kit.ArkGraphics2D'
+
+@Entry
+@Component
+struct Index {
+  @State point2: common2D.Point3d = {
+    x: 0, y: 0, z: 2
+  }
+  @State color2: common2D.Color = {
+    red: 1,
+    green: 1,
+    blue: 1,
+    alpha: 1
+  }
+  @State lightIntensity2: number = 1
+
+  build() {
+    Column() {
+      Stack() {
+        Image($r('app.media.man'))
+          .width('646px')
+          .height('900px')
+          .borderRadius(10)
+          .foregroundFilter(uiEffect.createFilter().contentLight(this.point2, this.color2, this.lightIntensity2))
+      }
+      .width('100%')
+      .height('55%')
+    }
+    .height('100%')
+    .width('100%')
+    .justifyContent(FlexAlign.Center)
+    .backgroundColor('#555')
+  }
+}
+```
+
+## directionLight
+
+ArkTS-Dyn:
+```TypeScript
+directionLight(direction: common2D.Point3d, color: Color, intensity: number, mask?: Mask, factor?: number): Filter
+```
+
+ArkTS-Sta:
+```TypeScript
+directionLight(direction: common2D.Point3d, color: Color, intensity: double, mask?: Mask, factor?: double): Filter
+```
+
+Generates lighting effects from mask and directional light.
+
+**Since:** 20
+
+**ArkTS mode:** ArkTS-Dyn since version 20; ArkTS-Sta since version 23.
+
+<!--Device-Filter-directionLight(direction: common2D.Point3d, color: Color, intensity: double, mask?: Mask, factor?: double): Filter--><!--Device-Filter-directionLight(direction: common2D.Point3d, color: Color, intensity: double, mask?: Mask, factor?: double): Filter-End-->
+
+**System capability:** SystemCapability.Graphics.Drawing
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| direction | common2D.Point3d | Yes | Direction of light |
+| color | \_\_\_MD\_LINK\_USD\_0\_\_\_ | Yes | Color of light |
+| intensity | ArkTS-Dyn: number  \_\_\_HTML\_TAG\_USD\_0\_\_\_ArkTS-Sta：double | Yes | Intensity of light |
+| mask | \_\_\_MD\_LINK\_USD\_0\_\_\_ | No | Mask, as a displacement map that affects lighting effects |
+| factor | ArkTS-Dyn: number  \_\_\_HTML\_TAG\_USD\_0\_\_\_ArkTS-Sta：double | No | Mask scale factor, used to scale the mask channel values |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| \_\_\_MD\_LINK\_USD\_0\_\_\_ |  Returns the Filter that the current effect have been added. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
+
+**Example**
+
+```TypeScript
+import { uiEffect, common2D } from "@kit.ArkGraphics2D";
+
+@Entry
+@Component
+struct Index {
+  @State rippleMaskCenter: common2D.Point = {x:0.5, y:0.5}
+  @State rippleMaskRadius: number = 0.0
+  @State rippleMaskWidth: number = 0.0
+  @State color: Color = Color.Transparent
+
+  build() {
+    Column() {
+      RelativeContainer() {
+        Image($r("app.media.back")).width("100%").height("100%")
+        Stack()
+          .width("100%")
+          .height("100%")
+          .backgroundColor(this.color)
+          .backgroundFilter(uiEffect.createFilter()
+            .directionLight(
+              {x:0, y:0, z:-1}, {red:2.0, green:2.0, blue:2.0, alpha:1.0}, 0.5,
+              uiEffect.Mask.createRippleMask(this.rippleMaskCenter, this.rippleMaskRadius, this.rippleMaskWidth, 0.0)
+              ))
+          .onClick(() => {
+            this.getUIContext().animateTo({duration: 1000}, () => {
+              this.rippleMaskWidth = 1.0;
+            })
+          })
+      }
+    }.alignItems(HorizontalAlign.Center).borderWidth(2)
+  }
+}
+```
+
+## displacementDistort
+
+ArkTS-Dyn:
+```TypeScript
+displacementDistort(displacementMap: Mask, factor?: [number, number]): Filter
+```
+
+ArkTS-Sta:
+```TypeScript
+displacementDistort(displacementMap: Mask, factor?: [double, double]): Filter
+```
+
+Sets distort effect with displacement map.
+
+**Since:** 20
+
+**ArkTS mode:** ArkTS-Dyn since version 20; ArkTS-Sta since version 23.
+
+<!--Device-Filter-displacementDistort(displacementMap: Mask, factor?: [double, double]): Filter--><!--Device-Filter-displacementDistort(displacementMap: Mask, factor?: [double, double]): Filter-End-->
+
+**System capability:** SystemCapability.Graphics.Drawing
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| displacementMap | \_\_\_MD\_LINK\_USD\_0\_\_\_ | Yes |  |
+| factor | ArkTS-Dyn: [number, number]  \_\_\_HTML\_TAG\_USD\_0\_\_\_ArkTS-Sta：[double, double] | No |  |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| \_\_\_MD\_LINK\_USD\_0\_\_\_ |  Returns the Filter that the current effect have been added. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
+
+**Example**
+
+```TypeScript
+import { uiEffect } from "@kit.ArkGraphics2D"
+
+@Entry
+@Component
+struct DisplacementDistortExample {
+  @State maskExample: uiEffect.Mask = uiEffect.Mask.createRippleMask({x: 0.5, y: 0.5}, 0.2, 0.3, 0.0)
+  
+  build() {
+    Stack() {
+      Image($rawfile('test.png'))
+      Row()  
+        .width("100%")
+        .height("100%")
+        .backgroundFilter(uiEffect.createFilter().displacementDistort(this.maskExample, [5.0, 5.0]))
+    }
+  }
+}
+```
+
+## distort
+
+ArkTS-Dyn:
+```TypeScript
+distort(distortionK: number): Filter
+```
+
+ArkTS-Sta:
+```TypeScript
+distort(distortionK: double): Filter
+```
+
+Set distort effect of the component.
+
+**Since:** 13
+
+**ArkTS mode:** ArkTS-Dyn since version 13; ArkTS-Sta since version 23.
+
+<!--Device-Filter-distort(distortionK: double): Filter--><!--Device-Filter-distort(distortionK: double): Filter-End-->
+
+**System capability:** SystemCapability.Graphics.Drawing
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| distortionK | ArkTS-Dyn: number  \_\_\_HTML\_TAG\_USD\_0\_\_\_ArkTS-Sta：double | Yes | set the degree of distort effect, value range [-1, 1]. If the value is 0, the component keep same, if the value is less than 0, the component is barrel distortion, if the value is more than 0, the component is pincushion distortion. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| \_\_\_MD\_LINK\_USD\_0\_\_\_ |  Returns distort Filter. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
+
+**Example**
+
+```TypeScript
+filter.distort(-0.5)
+```
+
+## edgeLight
+
+ArkTS-Dyn:
+```TypeScript
+edgeLight(alpha: number, color?: Color, mask?: Mask, bloom?: boolean): Filter
+```
+
+ArkTS-Sta:
+```TypeScript
+edgeLight(alpha: double, color?: Color, mask?: Mask, bloom?: boolean): Filter
+```
+
+Detects and glows edges of contents.
+
+**Since:** 20
+
+**ArkTS mode:** ArkTS-Dyn since version 20; ArkTS-Sta since version 23.
+
+<!--Device-Filter-edgeLight(alpha: double, color?: Color, mask?: Mask, bloom?: boolean): Filter--><!--Device-Filter-edgeLight(alpha: double, color?: Color, mask?: Mask, bloom?: boolean): Filter-End-->
+
+**System capability:** SystemCapability.Graphics.Drawing
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| alpha | ArkTS-Dyn: number  \_\_\_HTML\_TAG\_USD\_0\_\_\_ArkTS-Sta：double | Yes |  |
+| color | \_\_\_MD\_LINK\_USD\_0\_\_\_ | No |  |
+| mask | \_\_\_MD\_LINK\_USD\_0\_\_\_ | No |  |
+| bloom | boolean | No |  |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| \_\_\_MD\_LINK\_USD\_0\_\_\_ |  Returns the Filter that the current effect have been added. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
+
+**Example**
+
+```TypeScript
+import { uiEffect } from "@kit.ArkGraphics2D"
+
+@Entry
+@Component
+struct EdgeLightExample {
+  @State colorExample: uiEffect.Color = {red: 0.0, green: 1.0, blue: 0.0, alpha: 1.0}
+  
+  @State maskExample: uiEffect.Mask = uiEffect.Mask.createRippleMask({x: 0.5, y: 0.5}, 0.2, 0.5, 0.5)
+  
+  build() {
+    Stack() {
+      Image($rawfile('test.png'))
+      Row()  
+        .width("100%")
+        .height("100%")
+        .backgroundFilter(uiEffect.createFilter().edgeLight(1.0, this.colorExample, this.maskExample, false))
+    }
+  }
+}
+```
+
+## flyInFlyOutEffect
+
+ArkTS-Dyn:
+```TypeScript
+flyInFlyOutEffect(degree: number, flyMode: FlyMode): Filter
+```
+
+ArkTS-Sta:
+```TypeScript
+flyInFlyOutEffect(degree: double, flyMode: FlyMode): Filter
+```
+
+Set the fly in or fly out effect of the component.
+
+**Since:** 12
+
+**ArkTS mode:** ArkTS-Dyn since version 12; ArkTS-Sta since version 23.
+
+<!--Device-Filter-flyInFlyOutEffect(degree: double, flyMode: FlyMode): Filter--><!--Device-Filter-flyInFlyOutEffect(degree: double, flyMode: FlyMode): Filter-End-->
+
+**System capability:** SystemCapability.Graphics.Drawing
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| degree | ArkTS-Dyn: number  \_\_\_HTML\_TAG\_USD\_0\_\_\_ArkTS-Sta：double | Yes | set the degree of fly in or fly out effect, value range [0, 1]. |
+| flyMode | \_\_\_MD\_LINK\_USD\_0\_\_\_ | Yes | set the location of stretching when fly in or out If the value is 0, the component keep same, else the value is 1, component are fully fly out or fly in. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| \_\_\_MD\_LINK\_USD\_0\_\_\_ |  Returns fly in fly out Filter. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
+
+**Example**
+
+```TypeScript
+filter.flyInFlyOutEffect(0.5, uiEffect.FlyMode.TOP)
+```
+
+## heatDistortion
+
+```TypeScript
+heatDistortion(param: HeatDistortionEffectParam): Filter
+```
+
+Applies heat distortion effect to simulate hot air distortion.This effect creates a wavy distortion similar to heat shimmer or hot air rising.
+
+**Since:** 26.0.0
+
+**ArkTS mode:** ArkTS-Dyn only, since version 26.0.0.
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-Filter-heatDistortion(param: HeatDistortionEffectParam): Filter--><!--Device-Filter-heatDistortion(param: HeatDistortionEffectParam): Filter-End-->
+
+**System capability:** SystemCapability.Graphics.Drawing
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| param | \_\_\_MD\_LINK\_USD\_0\_\_\_ | Yes | the heat distortion effect parameters. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| \_\_\_MD\_LINK\_USD\_0\_\_\_ |  Returns the heat distortion Filter. |
+
+## maskDispersion
+
+ArkTS-Dyn:
+```TypeScript
+maskDispersion(dispersionMap: Mask, alpha: number, rFactor?: [number, number], gFactor?: [number, number],
+      bFactor?: [number, number]): Filter
+```
+
+ArkTS-Sta:
+```TypeScript
+maskDispersion(dispersionMap: Mask, alpha: double, rFactor?: [double, double], gFactor?: [double, double],
+      bFactor?: [double, double]): Filter
+```
+
+Sets dispersion effect with mask map.
+
+**Since:** 20
+
+**ArkTS mode:** ArkTS-Dyn since version 20; ArkTS-Sta since version 23.
+
+<!--Device-Filter-maskDispersion(dispersionMap: Mask, alpha: double, rFactor?: [double, double], gFactor?: [double, double],      bFactor?: [double, double]): Filter--><!--Device-Filter-maskDispersion(dispersionMap: Mask, alpha: double, rFactor?: [double, double], gFactor?: [double, double],      bFactor?: [double, double]): Filter-End-->
+
+**System capability:** SystemCapability.Graphics.Drawing
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| dispersionMap | \_\_\_MD\_LINK\_USD\_0\_\_\_ | Yes |  |
+| alpha | ArkTS-Dyn: number  \_\_\_HTML\_TAG\_USD\_0\_\_\_ArkTS-Sta：double | Yes |  |
+| rFactor | ArkTS-Dyn: [number, number]  \_\_\_HTML\_TAG\_USD\_0\_\_\_ArkTS-Sta：[double, double] | No |  |
+| gFactor | ArkTS-Dyn: [number, number]  \_\_\_HTML\_TAG\_USD\_0\_\_\_ArkTS-Sta：[double, double] | No |  |
+| bFactor | ArkTS-Dyn: [number, number]  \_\_\_HTML\_TAG\_USD\_0\_\_\_ArkTS-Sta：[double, double] | No |  |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| \_\_\_MD\_LINK\_USD\_0\_\_\_ |  Returns the Filter that the current effect have been added. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
+
+## maskTransition
+
+ArkTS-Dyn:
+```TypeScript
+maskTransition(alphaMask: Mask, factor?: number, inverse?: boolean): Filter
+```
+
+ArkTS-Sta:
+```TypeScript
+maskTransition(alphaMask: Mask, factor?: double, inverse?: boolean): Filter
+```
+
+Applies Transition with alpha mask
+
+**Since:** 20
+
+**ArkTS mode:** ArkTS-Dyn since version 20; ArkTS-Sta since version 23.
+
+<!--Device-Filter-maskTransition(alphaMask: Mask, factor?: double, inverse?: boolean): Filter--><!--Device-Filter-maskTransition(alphaMask: Mask, factor?: double, inverse?: boolean): Filter-End-->
+
+**System capability:** SystemCapability.Graphics.Drawing
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| alphaMask | \_\_\_MD\_LINK\_USD\_0\_\_\_ | Yes | Animatable mask object |
+| factor | ArkTS-Dyn: number  \_\_\_HTML\_TAG\_USD\_0\_\_\_ArkTS-Sta：double | No | The coefficient of the mask, defaulting to 1.0f [0~1] |
+| inverse | boolean | No | Transition mode, default is fasle (true, false) |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| \_\_\_MD\_LINK\_USD\_0\_\_\_ |  Returns the Filter that the current effect have been added. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
+
+**Example**
+
+```TypeScript
+import { uiEffect, common2D } from "@kit.ArkGraphics2D";
+
+@Entry
+@Component
+struct Index {
+  context = this.getUIContext()
+  @State alpha: number = 0
+  @State enterNewPage:boolean = false
+  @State rippleMaskCenter: common2D.Point = {x:0.5, y:0.5}
+  @State rippleMaskRadius: number = 0.1
+  build() {
+    Stack() {
+      // Page before transition
+      Image($r("app.media.before")).width("100%").height("100%")
+        if (this.enterNewPage){
+          // Page after transition
+          Column().width("100%").height("100%").backgroundImage($r("app.media.after"))
+            .backgroundFilter(uiEffect.createFilter()
+              .maskTransition(
+                uiEffect.Mask.createRadialGradientMask(this.rippleMaskCenter, this.rippleMaskRadius,this.rippleMaskRadius, [[1, 0], [1, 1]]),
+                this.alpha))
+            .onAppear(() => {
+              this.context.animateTo({ duration: 1000 }, () => {
+                this.rippleMaskRadius = 1.3
+              })
+              this.context.animateTo({ duration: 800 }, () => {
+                this.alpha = 1
+              })
+            })
+        }
+    }.borderWidth(2)
+    .onClick(()=>{
+      this.enterNewPage=!this.enterNewPage;
+      if (this.enterNewPage) {
+        this.alpha=0;
+        this.rippleMaskRadius=0.1;
+      }
+    })
+  }
+}
+```
+
+## pixelStretch
+
+ArkTS-Dyn:
+```TypeScript
+pixelStretch(stretchSizes: Array<number>, tileMode: TileMode): Filter
+```
+
+ArkTS-Sta:
+```TypeScript
+pixelStretch(stretchSizes: Array<double>, tileMode: TileMode): Filter
+```
+
+Set the edge pixel stretch effect of the Component.
+
+**Since:** 12
+
+**ArkTS mode:** ArkTS-Dyn since version 12; ArkTS-Sta since version 23.
+
+<!--Device-Filter-pixelStretch(stretchSizes: Array<double>, tileMode: TileMode): Filter--><!--Device-Filter-pixelStretch(stretchSizes: Array<double>, tileMode: TileMode): Filter-End-->
+
+**System capability:** SystemCapability.Graphics.Drawing
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| stretchSizes | ArkTS-Dyn: Array&lt;number&gt;  \_\_\_HTML\_TAG\_USD\_0\_\_\_ArkTS-Sta：Array&lt;double&gt; | Yes |  |
+| tileMode | \_\_\_MD\_LINK\_USD\_0\_\_\_ | Yes |  |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| \_\_\_MD\_LINK\_USD\_0\_\_\_ |  |
+
+**Example**
+
+```TypeScript
+filter.pixelStretch([0.2, 0.2, 0.2, 0.2], uiEffect.TileMode.CLAMP)
+```
+
+## radiusGradientBlur
+
+ArkTS-Dyn:
+```TypeScript
+radiusGradientBlur(radius: number, gradientParam: LinearGradientBlurOptions): Filter
+```
+
+ArkTS-Sta:
+```TypeScript
+radiusGradientBlur(radius: double, gradientParam: LinearGradientBlurOptions): Filter
+```
+
+Adds the content radius gradient blurring effect for the current component.The input parameter is the blurring radius.
+
+**Since:** 19
+
+**ArkTS mode:** ArkTS-Dyn since version 19; ArkTS-Sta since version 23.
+
+<!--Device-Filter-radiusGradientBlur(radius: double, gradientParam: LinearGradientBlurOptions): Filter--><!--Device-Filter-radiusGradientBlur(radius: double, gradientParam: LinearGradientBlurOptions): Filter-End-->
+
+**System capability:** SystemCapability.Graphics.Drawing
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| radius | ArkTS-Dyn: number  \_\_\_HTML\_TAG\_USD\_0\_\_\_ArkTS-Sta：double | Yes | the blurring radius. The larger the blurring radius, the more blurring the content, and if the value is 0, the content blurring effect is not blurring. |
+| gradientParam | \_\_\_MD\_LINK\_USD\_0\_\_\_ | Yes | the radius gradient blur options. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| \_\_\_MD\_LINK\_USD\_0\_\_\_ |  Returns radius gradient blur Filter. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
+
+## variableRadiusBlur
+
+ArkTS-Dyn:
+```TypeScript
+variableRadiusBlur(radius: number, radiusMap: Mask): Filter
+```
+
+ArkTS-Sta:
+```TypeScript
+variableRadiusBlur(radius: double, radiusMap: Mask): Filter
+```
+
+Sets variable radius blur effect with radius map.
+
+**Since:** 20
+
+**ArkTS mode:** ArkTS-Dyn since version 20; ArkTS-Sta since version 23.
+
+<!--Device-Filter-variableRadiusBlur(radius: double, radiusMap: Mask): Filter--><!--Device-Filter-variableRadiusBlur(radius: double, radiusMap: Mask): Filter-End-->
+
+**System capability:** SystemCapability.Graphics.Drawing
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| radius | ArkTS-Dyn: number  \_\_\_HTML\_TAG\_USD\_0\_\_\_ArkTS-Sta：double | Yes | the blurring radius. The larger the blurring radius, the more blurring the content, and if the value is 0, the content blurring effect is not blurring. |
+| radiusMap | \_\_\_MD\_LINK\_USD\_0\_\_\_ | Yes | the alpha of the mask determines the degree of blurring. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| \_\_\_MD\_LINK\_USD\_0\_\_\_ |  Returns the Filter that the current effect have been added. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
+
+**Example**
+
+```TypeScript
+import { uiEffect } from "@kit.ArkGraphics2D";
+
+@Entry
+@Component
+struct VariableRadiusBlurExample {
+  @State maskExample: uiEffect.Mask = uiEffect.Mask.createRippleMask({x: 0.5, y: 0.5}, 0.2, 0.1)
+
+  build() {
+    Stack() {
+      Image($rawfile('test.png'))
+      Row()
+        .width("100%")
+        .height("100%")
+        .backgroundFilter(uiEffect.createFilter().variableRadiusBlur(64, this.maskExample))
+    }
+  }
+}
+```
+
+## waterRipple
+
+ArkTS-Dyn:
+```TypeScript
+waterRipple(progress: number, waveCount: number, x: number, y: number, rippleMode: WaterRippleMode): Filter
+```
+
+ArkTS-Sta:
+```TypeScript
+waterRipple(progress: double, waveCount: int, x: double, y: double, rippleMode: WaterRippleMode): Filter
+```
+
+Set waterRipple effect of the Component.
+
+**Since:** 12
+
+**ArkTS mode:** ArkTS-Dyn since version 12; ArkTS-Sta since version 23.
+
+<!--Device-Filter-waterRipple(progress: double, waveCount: int, x: double, y: double, rippleMode: WaterRippleMode): Filter--><!--Device-Filter-waterRipple(progress: double, waveCount: int, x: double, y: double, rippleMode: WaterRippleMode): Filter-End-->
+
+**System capability:** SystemCapability.Graphics.Drawing
+
+**System API:** This is a system API.
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| progress | ArkTS-Dyn: number  \_\_\_HTML\_TAG\_USD\_0\_\_\_ArkTS-Sta：double | Yes | Indicates the ripple progress. The value 1 indicates that ripples are displayed on all screens. |
+| waveCount | ArkTS-Dyn: number  \_\_\_HTML\_TAG\_USD\_0\_\_\_ArkTS-Sta：int | Yes | The number of waves when the water ripples. The maximum count of waves is 3, the minimum value is 1, default is 2. |
+| x | ArkTS-Dyn: number  \_\_\_HTML\_TAG\_USD\_0\_\_\_ArkTS-Sta：double | Yes | Represents the X-axis position of center point where the water ripple first appears on the screen. |
+| y | ArkTS-Dyn: number  \_\_\_HTML\_TAG\_USD\_0\_\_\_ArkTS-Sta：double | Yes | Represents the Y-axis position of center point where the water ripple first appears on the screen. |
+| rippleMode | \_\_\_MD\_LINK\_USD\_0\_\_\_ | Yes | Set the mode of water ripple, 0 for mobile to desktop(Receive), 1 for mobile to desktop(Send), 2 for mobile to mobile, 3 for cross platform. |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| \_\_\_MD\_LINK\_USD\_0\_\_\_ |  Returns water ripple Filter. |
+
+**Error codes:**
+
+| Error Code ID | Error Message |
+| --- | --- |
+| [202](../../errorcode-universal.md#202-permission-verification-failed-for-calling-a-system-api) | Permission verification failed. A non-system application calls a system API. |
+
+**Example**
+
+```TypeScript
+filter.waterRipple(0.5, 2, 0.5, 0.5, uiEffect.WaterRippleMode.SMALL2SMALL)
+```
+

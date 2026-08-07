@@ -32,6 +32,8 @@ Defines the common types for native buffer.
 | [OH_NativeBuffer_MetadataKey](#oh_nativebuffer_metadatakey) | OH_NativeBuffer_MetadataKey | Indicates the descriptive information of a native buffer,such as HDR metadata, ROI metadata, etc. |
 | [OH_NativeBuffer_Format](#oh_nativebuffer_format) | OH_NativeBuffer_Format | Indicates the format of a native buffer. |
 | [OH_NativeBuffer_TransformType](#oh_nativebuffer_transformtype) | OH_NativeBuffer_TransformType | Indicates the transform type of a native buffer. |
+| [OH_NativeBuffer_VideoDimensionType](#oh_nativebuffer_videodimensiontype) | OH_NativeBuffer_VideoDimensionType | Indicates video dimension type. |
+| [OH_NativeBuffer_3D_MetadataKey](#oh_nativebuffer_3d_metadatakey) | OH_NativeBuffer_3D_MetadataKey | Indicates the descriptive 3D information of a native buffer. |
 
 ## Enum type description
 
@@ -221,5 +223,43 @@ Indicates the transform type of a native buffer.
 | NATIVEBUFFER_FLIP_H_ROT270,           /**< Flip horizontally and rotate 270 degrees */ | NATIVEBUFFER_FLIP_V_ROT180,           /**< Flip vertically and rotate 180 degrees |
 | NATIVEBUFFER_FLIP_V_ROT270,           /**< Flip vertically and rotate 270 degrees */ | NATIVEBUFFER_FLIP_H_ROT270,           /**< Flip horizontally and rotate 270 degrees |
 | } OH_NativeBuffer_TransformType; | NATIVEBUFFER_FLIP_V_ROT270,           /**< Flip vertically and rotate 270 degrees |
+
+### OH_NativeBuffer_VideoDimensionType
+
+```c
+enum OH_NativeBuffer_VideoDimensionType
+```
+
+**Description**
+
+Indicates video dimension type.
+
+**System capability**: SystemCapability.Graphic.Graphic2D.NativeBuffer
+
+**Since**: 26.0.0
+
+| Enum item | Description |
+| -- | -- |
+| OH_VIDEO_DIM_TYPE_2D = 0 | 2-dimension video |
+| OH_VIDEO_DIM_TYPE_3D_SBS | 3-dimension video, format: side by side |
+| OH_VIDEO_DIM_TYPE_3D_TAB | 3-dimension video, format: top and bottom |
+
+### OH_NativeBuffer_3D_MetadataKey
+
+```c
+enum OH_NativeBuffer_3D_MetadataKey
+```
+
+**Description**
+
+Indicates the descriptive 3D information of a native buffer.
+
+**System capability**: SystemCapability.Graphic.Graphic2D.NativeBuffer
+
+**Since**: 26.0.0
+
+| Enum item | Description |
+| -- | -- |
+| OH_VIDEO_DIM_TYPE | value: the video dimension type of the native buffer |
 
 

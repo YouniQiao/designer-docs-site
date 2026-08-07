@@ -131,7 +131,7 @@ Obtains the corresponding OE Extension instance from the ExtensionAbility base c
 
 | Parameter | Description |
 | -- | -- |
-| [AbilityRuntime_ExtensionInstanceHandle](../AbilityKit/capi-abilityruntime-abilityruntime-extensioninstance8h.md) baseInstance | [AbilityRuntime_ExtensionInstance](../AbilityKit/capi-abilityruntime-abilityruntime-extensioninstance.md) instance. |
+| AbilityRuntime_ExtensionInstanceHandle baseInstance | [AbilityRuntime_ExtensionInstance](../AbilityKit/capi-abilityruntime-abilityruntime-extensioninstance.md) instance. |
 | [ContentEmbed_ExtensionInstanceHandle](capi-contentembed-contentembed-extensioninstance8h.md) *ceInstance | Output parameter. After the call is successful, this pointer points to the OE Extension instanceobject. |
 
 **Returns**:
@@ -721,7 +721,7 @@ Sets the snapshot image of the OE document associated with the client-side OE ob
 | Parameter | Description |
 | -- | -- |
 | [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) object | [ContentEmbed_ObjectHandle](capi-contentembed-contentembed-object8h.md) instance. |
-| OH_PixelmapNative *pixelMap | Pixel map object of the document snapshot. For details, see [OH_PixelmapNative](../ImageKit/capi-image-nativemodule-oh-pixelmapnative.md). |
+| [OH_PixelmapNative](../ImageKit/capi-image-nativemodule-oh-pixelmapnative.md) *pixelMap | Pixel map object of the document snapshot. For details, see [OH_PixelmapNative](../ImageKit/capi-image-nativemodule-oh-pixelmapnative.md). |
 
 **Returns**:
 

@@ -17,7 +17,7 @@ Provides animation callbacks of ArkUI on the native side.
 | [native_interface_focus.h](capi-native-interface-focus-h.md) | Declares APIs for focus management, mainly used for actively transferring focus, managing the default focustransfer behavior, and controlling the focus activation state. |
 | [native_type.h](capi-native-type-h.md) | Defines the common types for the native module. |
 | [error_code.h](capi-error-code-h.md) | Defines the error code for the native module. |
-| [styled_string.h](capi-styled-string-h.md) | 在Native侧定义{@link 组件类型}为ARKUI_NODE_TEXT的组件的文本样式和文本布局管理器。 |
+| [styled_string.h](capi-styled-string-h.md) | 在Native侧定义[ArkUI_NodeType](capi-native-node-h.md#arkui_nodetype)为ARKUI_NODE_TEXT的组件的文本样式和文本布局管理器。 |
 | [custom_span.h](capi-custom-span-h.md) | Defines a set of CustomSpan enum and interface. |
 | [node_water_flow.h](capi-node-water-flow-h.md) | Provides WaterFlow-related type and function definitions for<b>NativeNode</b> APIs. |
 | [swiper.h](capi-swiper-h.md) | 定义Swiper组件的枚举和接口。 |

@@ -2458,7 +2458,7 @@ Set text menu item title.
 
 | Parameter | Description |
 | -- | -- |
-| ArkUI_TextMenuItem* item | The text menu item. |
+| [ArkUI_TextMenuItem](capi-arkui-nativemodule-arkui-textmenuitem.md)* item | The text menu item. |
 | const char* content | The name of the text menu item, which defaults to an empty string. The string will copy to framework. |
 
 **Returns**:
@@ -2483,7 +2483,7 @@ Get text menu item title.
 
 | Parameter | Description |
 | -- | -- |
-| const ArkUI_TextMenuItem* item | The text menu item object. |
+| [const ArkUI_TextMenuItem](capi-arkui-nativemodule-arkui-textmenuitem.md)* item | The text menu item object. |
 | char* buffer | The buffer of the text menu content, memory space needs to be allocated by the developer. |
 | int32_t bufferSize | The name of the text menu item, which defaults to an empty string; |
 | int32_t* writeLength | Indicates the string length actually written to the bufferwhen returning [ARKUI_ERROR_CODE_NO_ERROR](capi-error-code-h.md#arkui_errorcode).Indicates the minimum buffer size that can accommodate the targetwhen [ARKUI_ERROR_CODE_BUFFER_SIZE_ERROR](capi-error-code-h.md#arkui_errorcode) is returned. |
@@ -2510,7 +2510,7 @@ Set text menu item icon.
 
 | Parameter | Description |
 | -- | -- |
-| ArkUI_TextMenuItem* item | The text menu item. |
+| [ArkUI_TextMenuItem](capi-arkui-nativemodule-arkui-textmenuitem.md)* item | The text menu item. |
 | const char* icon | The text menu item icon resource, which defaults to an empty string. The string will copy to framework. |
 
 **Returns**:
@@ -2535,7 +2535,7 @@ Get text menu item icon.
 
 | Parameter | Description |
 | -- | -- |
-| const ArkUI_TextMenuItem* item | The text menu item object |
+| [const ArkUI_TextMenuItem](capi-arkui-nativemodule-arkui-textmenuitem.md)* item | The text menu item object |
 | char* buffer | The buffer of the text menu content, memory space needs to be allocated by the developer. |
 | int32_t bufferSize | The icon of the text menu item, which defaults to an empty string; |
 | int32_t* writeLength | Indicates the string length actually written to the bufferwhen returning [ARKUI_ERROR_CODE_NO_ERROR](capi-error-code-h.md#arkui_errorcode).Indicates the minimum buffer size that can accommodate the targetwhen [ARKUI_ERROR_CODE_BUFFER_SIZE_ERROR](capi-error-code-h.md#arkui_errorcode) is returned. |
@@ -2562,7 +2562,7 @@ Set text menu item label info for keyboard shortcut.
 
 | Parameter | Description |
 | -- | -- |
-| ArkUI_TextMenuItem* item | The text menu item. |
+| [ArkUI_TextMenuItem](capi-arkui-nativemodule-arkui-textmenuitem.md)* item | The text menu item. |
 | const char* labelInfo | The text menu item shortcut displays, which defaults to an empty string.The string will copy to framework. |
 
 **Returns**:
@@ -2587,7 +2587,7 @@ Get text menu item label info for keyboard shortcut..
 
 | Parameter | Description |
 | -- | -- |
-| const ArkUI_TextMenuItem* item | The text menu item object |
+| [const ArkUI_TextMenuItem](capi-arkui-nativemodule-arkui-textmenuitem.md)* item | The text menu item object |
 | char* buffer | The buffer of the text menu content, memory space needs to be allocated by the developer. |
 | int32_t bufferSize | The shortcuts of the text menu item, which defaults to an empty string; |
 | int32_t* writeLength | Indicates the string length actually written to the bufferwhen returning [ARKUI_ERROR_CODE_NO_ERROR](capi-error-code-h.md#arkui_errorcode).Indicates the minimum buffer size that can accommodate the targetwhen [ARKUI_ERROR_CODE_BUFFER_SIZE_ERROR](capi-error-code-h.md#arkui_errorcode) is returned. |
@@ -2614,7 +2614,7 @@ Set text menu item id.
 
 | Parameter | Description |
 | -- | -- |
-| ArkUI_TextMenuItem* item | The text menu item. |
+| [ArkUI_TextMenuItem](capi-arkui-nativemodule-arkui-textmenuitem.md)* item | The text menu item. |
 | int32_t id | The text menu id. |
 
 **Returns**:
@@ -2639,7 +2639,7 @@ Get text menu item id.
 
 | Parameter | Description |
 | -- | -- |
-| const ArkUI_TextMenuItem* item | The text menu item object |
+| [const ArkUI_TextMenuItem](capi-arkui-nativemodule-arkui-textmenuitem.md)* item | The text menu item object |
 | int32_t* id | The text menu item id; |
 
 **Returns**:
@@ -2664,7 +2664,7 @@ Get the size of text menu items.
 
 | Parameter | Description |
 | -- | -- |
-| ArkUI_TextMenuItemArray* items | The text menu items. |
+| [ArkUI_TextMenuItemArray](capi-arkui-nativemodule-arkui-textmenuitemarray.md)* items | The text menu items. |
 | int32_t* size | The size of text menu items. |
 
 **Returns**:
@@ -2689,9 +2689,9 @@ Get text menu item at index.
 
 | Parameter | Description |
 | -- | -- |
-| ArkUI_TextMenuItemArray* items | The text menu items. |
+| [ArkUI_TextMenuItemArray](capi-arkui-nativemodule-arkui-textmenuitemarray.md)* items | The text menu items. |
 | int32_t index | The index of text menu items. |
-| ArkUI_TextMenuItem** item | The text menu item at index of array. |
+| [ArkUI_TextMenuItem](capi-arkui-nativemodule-arkui-textmenuitem.md)** item | The text menu item at index of array. |
 
 **Returns**:
 
@@ -2715,8 +2715,8 @@ Insert text menu item at index.
 
 | Parameter | Description |
 | -- | -- |
-| ArkUI_TextMenuItemArray* items | The text menu items. |
-| ArkUI_TextMenuItem* item | The text menu item at index of array. The item will copy by framework. |
+| [ArkUI_TextMenuItemArray](capi-arkui-nativemodule-arkui-textmenuitemarray.md)* items | The text menu items. |
+| [ArkUI_TextMenuItem](capi-arkui-nativemodule-arkui-textmenuitem.md)* item | The text menu item at index of array. The item will copy by framework. |
 | int32_t index | The index of text menu items. |
 
 **Returns**:
@@ -2741,7 +2741,7 @@ Erase text menu item at index.
 
 | Parameter | Description |
 | -- | -- |
-| ArkUI_TextMenuItemArray* items | The text menu items. |
+| [ArkUI_TextMenuItemArray](capi-arkui-nativemodule-arkui-textmenuitemarray.md)* items | The text menu items. |
 | int32_t index | The index of text menu items. |
 
 **Returns**:
@@ -2766,7 +2766,7 @@ Clear all the items.
 
 | Parameter | Description |
 | -- | -- |
-| ArkUI_TextMenuItemArray* items | The text menu items. |
+| [ArkUI_TextMenuItemArray](capi-arkui-nativemodule-arkui-textmenuitemarray.md)* items | The text menu items. |
 
 **Returns**:
 
@@ -2790,9 +2790,9 @@ Set the event to be called when text menu create.
 
 | Parameter | Description |
 | -- | -- |
-| ArkUI_TextEditMenuOptions* editMenuOptions | Pointer to the ArkUI_TextEditMenuOptions object. |
+| [ArkUI_TextEditMenuOptions](capi-arkui-nativemodule-arkui-texteditmenuoptions.md)* editMenuOptions | Pointer to the ArkUI_TextEditMenuOptions object. |
 | void* userData | The user data. |
-| ArkUI_TextCreateMenuCallback cb | The create callback function. |
+| [ArkUI_TextCreateMenuCallback](capi-text-common-h.md#arkui_textcreatemenucallback) cb | The create callback function. |
 
 **Returns**:
 
@@ -2816,9 +2816,9 @@ Set the event to be called when menu prepare.
 
 | Parameter | Description |
 | -- | -- |
-| ArkUI_TextEditMenuOptions* editMenuOptions | Pointer to the ArkUI_TextEditMenuOptions object. |
+| [ArkUI_TextEditMenuOptions](capi-arkui-nativemodule-arkui-texteditmenuoptions.md)* editMenuOptions | Pointer to the ArkUI_TextEditMenuOptions object. |
 | void* userData | The user data. |
-| ArkUI_TextPrepareMenuCallback cb | The prepare callback function. |
+| [ArkUI_TextPrepareMenuCallback](capi-text-common-h.md#arkui_textpreparemenucallback) cb | The prepare callback function. |
 
 **Returns**:
 
@@ -2842,9 +2842,9 @@ Set the event to be called when menu item click.
 
 | Parameter | Description |
 | -- | -- |
-| ArkUI_TextEditMenuOptions* editMenuOptions | Pointer to the ArkUI_TextEditMenuOptions object. |
+| [ArkUI_TextEditMenuOptions](capi-arkui-nativemodule-arkui-texteditmenuoptions.md)* editMenuOptions | Pointer to the ArkUI_TextEditMenuOptions object. |
 | void* userData | The user data. |
-| ArkUI_TextMenuItemClickCallback cb | The menu item click callback function. |
+| [ArkUI_TextMenuItemClickCallback](capi-text-common-h.md#arkui_textmenuitemclickcallback) cb | The menu item click callback function. |
 
 **Returns**:
 
@@ -2868,8 +2868,8 @@ Sets the recognition types of a configuration object for selected text recogniti
 
 | Parameter | Description |
 | -- | -- |
-| ArkUI_TextSelectionMenuOptions* selectionMenuOptions | Pointer to the ArkUI_TextSelectionMenuOptions object. |
-| ArkUI_TextSpanType textSpanType | The span type of [ArkUI_TextSpanType](capi-text-common-h.md#arkui_textspantype). |
+| [ArkUI_TextSelectionMenuOptions](capi-arkui-nativemodule-arkui-textselectionmenuoptions.md)* selectionMenuOptions | Pointer to the ArkUI_TextSelectionMenuOptions object. |
+| [ArkUI_TextSpanType](capi-text-common-h.md#arkui_textspantype) textSpanType | The span type of [ArkUI_TextSpanType](capi-text-common-h.md#arkui_textspantype). |
 
 **Returns**:
 
@@ -2893,8 +2893,8 @@ Gets the span type select menu options.
 
 | Parameter | Description |
 | -- | -- |
-| ArkUI_TextSelectionMenuOptions* selectionMenuOptions | Pointer to the ArkUI_TextSelectionMenuOptions object. |
-| ArkUI_TextSpanType* spanType | the text span type [ArkUI_TextSpanType](capi-text-common-h.md#arkui_textspantype). |
+| [ArkUI_TextSelectionMenuOptions](capi-arkui-nativemodule-arkui-textselectionmenuoptions.md)* selectionMenuOptions | Pointer to the ArkUI_TextSelectionMenuOptions object. |
+| [ArkUI_TextSpanType](capi-text-common-h.md#arkui_textspantype)* spanType | the text span type [ArkUI_TextSpanType](capi-text-common-h.md#arkui_textspantype). |
 
 **Returns**:
 
@@ -2918,7 +2918,7 @@ Set custom text menu node of text.
 
 | Parameter | Description |
 | -- | -- |
-| ArkUI_TextSelectionMenuOptions* selectionMenuOptions | Pointer to the ArkUI_TextSelectionMenuOptions object. |
+| [ArkUI_TextSelectionMenuOptions](capi-arkui-nativemodule-arkui-textselectionmenuoptions.md)* selectionMenuOptions | Pointer to the ArkUI_TextSelectionMenuOptions object. |
 | [ArkUI_NodeHandle](capi-arkui-nativemodule-arkui-node8h.md) node | The custom menu node. |
 
 **Returns**:
@@ -2943,7 +2943,7 @@ Get custom text menu node of text.
 
 | Parameter | Description |
 | -- | -- |
-| ArkUI_TextSelectionMenuOptions* selectionMenuOptions | Pointer to the ArkUI_TextSelectionMenuOptions object. |
+| [ArkUI_TextSelectionMenuOptions](capi-arkui-nativemodule-arkui-textselectionmenuoptions.md)* selectionMenuOptions | Pointer to the ArkUI_TextSelectionMenuOptions object. |
 | [ArkUI_NodeHandle](capi-arkui-nativemodule-arkui-node8h.md)* node | The custom menu node. |
 
 **Returns**:
@@ -2968,8 +2968,8 @@ Sets the recognition types of a configuration object for selected text recogniti
 
 | Parameter | Description |
 | -- | -- |
-| ArkUI_TextSelectionMenuOptions* selectionMenuOptions | Pointer to the ArkUI_TextSelectionMenuOptions object. |
-| ArkUI_TextResponseType responseType | The response type of [ArkUI_TextResponseType](capi-text-common-h.md#arkui_textresponsetype). |
+| [ArkUI_TextSelectionMenuOptions](capi-arkui-nativemodule-arkui-textselectionmenuoptions.md)* selectionMenuOptions | Pointer to the ArkUI_TextSelectionMenuOptions object. |
+| [ArkUI_TextResponseType](capi-text-common-h.md#arkui_textresponsetype) responseType | The response type of [ArkUI_TextResponseType](capi-text-common-h.md#arkui_textresponsetype). |
 
 **Returns**:
 
@@ -2993,8 +2993,8 @@ Gets the response type select menu options.
 
 | Parameter | Description |
 | -- | -- |
-| ArkUI_TextSelectionMenuOptions* selectionMenuOptions | Pointer to the ArkUI_TextSelectionMenuOptions object. |
-| ArkUI_TextResponseType* responseType | The text response type [ArkUI_TextResponseType](capi-text-common-h.md#arkui_textresponsetype). |
+| [ArkUI_TextSelectionMenuOptions](capi-arkui-nativemodule-arkui-textselectionmenuoptions.md)* selectionMenuOptions | Pointer to the ArkUI_TextSelectionMenuOptions object. |
+| [ArkUI_TextResponseType](capi-text-common-h.md#arkui_textresponsetype)* responseType | The text response type [ArkUI_TextResponseType](capi-text-common-h.md#arkui_textresponsetype). |
 
 **Returns**:
 
@@ -3018,7 +3018,7 @@ Set the event to be called when selection menu show.
 
 | Parameter | Description |
 | -- | -- |
-| ArkUI_TextSelectionMenuOptions\* selectionMenuOptions | Pointer to the ArkUI_TextSelectionMenuOptions object. |
+| [ArkUI_TextSelectionMenuOptions](capi-arkui-nativemodule-arkui-textselectionmenuoptions.md)\* selectionMenuOptions | Pointer to the ArkUI_TextSelectionMenuOptions object. |
 | void\* userData | The user data. |
 | void (\*callback)(int32_t start | The callback function of menu show.start The start offset of the selected content.end The end offset of the selected content.userData The user data. |
 
@@ -3044,7 +3044,7 @@ Set the event to be called when selection menu hide.
 
 | Parameter | Description |
 | -- | -- |
-| ArkUI_TextSelectionMenuOptions\* selectionMenuOptions | Pointer to the ArkUI_TextSelectionMenuOptions object. |
+| [ArkUI_TextSelectionMenuOptions](capi-arkui-nativemodule-arkui-textselectionmenuoptions.md)\* selectionMenuOptions | Pointer to the ArkUI_TextSelectionMenuOptions object. |
 | void\* userData | The user data. |
 | void (\*callback)(int32_t start | The callback function of menu hide.start The start offset of the selected content.end The end offset of the selected content.userData The user data. |
 
@@ -3228,8 +3228,8 @@ Sets the decoration type of the decorative line style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_DecorationStyleOptions* options | Pointer to the [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md) object. |
-| ArkUI_TextDecorationType type | Decoration type ([ArkUI_TextDecorationType](capi-text-common-h.md#arkui_textdecorationtype)). |
+| [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md)* options | Pointer to the [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md) object. |
+| [ArkUI_TextDecorationType](capi-text-common-h.md#arkui_textdecorationtype) type | Decoration type ([ArkUI_TextDecorationType](capi-text-common-h.md#arkui_textdecorationtype)). |
 
 **Returns**:
 
@@ -3253,8 +3253,8 @@ Obtains the decoration type of the decorative line style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_DecorationStyleOptions* options | Pointer to the [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md) object. |
-| ArkUI_TextDecorationType* type | Pointer to the decoration type ([ArkUI_TextDecorationType](capi-text-common-h.md#arkui_textdecorationtype)). |
+| [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md)* options | Pointer to the [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md) object. |
+| [ArkUI_TextDecorationType](capi-text-common-h.md#arkui_textdecorationtype)* type | Pointer to the decoration type ([ArkUI_TextDecorationType](capi-text-common-h.md#arkui_textdecorationtype)). |
 
 **Returns**:
 
@@ -3278,7 +3278,7 @@ Sets the color of the decorative line.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_DecorationStyleOptions* options | Pointer to the [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md) object. |
+| [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md)* options | Pointer to the [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md) object. |
 | uint32_t color | Color of the decorative line, in 0xARGB format. |
 
 **Returns**:
@@ -3303,7 +3303,7 @@ Obtains the color of the decorative line.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_DecorationStyleOptions* options | Pointer to the [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md) object. |
+| [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md)* options | Pointer to the [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md) object. |
 | uint32_t* color | Pointer to the color of the decorative line, in 0xARGB format. |
 
 **Returns**:
@@ -3328,8 +3328,8 @@ Sets the style of the decorative line.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_DecorationStyleOptions* options | Pointer to the [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md) object. |
-| ArkUI_TextDecorationStyle style | Style of the decorative line ([ArkUI_TextDecorationStyle](capi-text-common-h.md#arkui_textdecorationstyle)). |
+| [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md)* options | Pointer to the [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md) object. |
+| [ArkUI_TextDecorationStyle](capi-text-common-h.md#arkui_textdecorationstyle) style | Style of the decorative line ([ArkUI_TextDecorationStyle](capi-text-common-h.md#arkui_textdecorationstyle)). |
 
 **Returns**:
 
@@ -3353,8 +3353,8 @@ Obtains the style of the decorative line.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_DecorationStyleOptions* options | Pointer to the [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md) object. |
-| ArkUI_TextDecorationStyle* style | Pointer to the style of the decorative line ([ArkUI_TextDecorationStyle](capi-text-common-h.md#arkui_textdecorationstyle)). |
+| [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md)* options | Pointer to the [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md) object. |
+| [ArkUI_TextDecorationStyle](capi-text-common-h.md#arkui_textdecorationstyle)* style | Pointer to the style of the decorative line ([ArkUI_TextDecorationStyle](capi-text-common-h.md#arkui_textdecorationstyle)). |
 
 **Returns**:
 
@@ -3378,7 +3378,7 @@ Sets the scale factor of the decorative line thickness.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_DecorationStyleOptions* options | Pointer to the [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md) object. |
+| [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md)* options | Pointer to the [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md) object. |
 | float thicknessScale | Scale factor of the decorative line thickness. The value range is [0, +∞). |
 
 **Returns**:
@@ -3403,7 +3403,7 @@ Obtains the scale factor of the decorative line thickness.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_DecorationStyleOptions* options | Pointer to the [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md) object. |
+| [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md)* options | Pointer to the [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md) object. |
 | float* thicknessScale | Pointer to the scale factor of the decorative line thickness. |
 
 **Returns**:
@@ -3558,7 +3558,7 @@ Sets the decoration style of the recognized content.
 | Parameter | Description |
 | -- | -- |
 | OH_ArkUI_TextDataDetectorConfig* config | Pointer to the [OH_ArkUI_TextDataDetectorConfig](capi-arkui-nativemodule-oh-arkui-textdatadetectorconfig.md) object. |
-| OH_ArkUI_DecorationStyleOptions* decoration | Pointer to the decoration style of the recognized content. The value is an enumerated value of[OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md). |
+| [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md)* decoration | Pointer to the decoration style of the recognized content. The value is an enumerated value of[OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md). |
 
 **Returns**:
 
@@ -3583,7 +3583,7 @@ Obtains the decoration style of the recognized content.
 | Parameter | Description |
 | -- | -- |
 | OH_ArkUI_TextDataDetectorConfig* config | Pointer to the [OH_ArkUI_TextDataDetectorConfig](capi-arkui-nativemodule-oh-arkui-textdatadetectorconfig.md) object. |
-| OH_ArkUI_DecorationStyleOptions* decoration | Pointer to the decoration style of the recognized content. The value is an enumerated value of[OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md). |
+| [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md)* decoration | Pointer to the decoration style of the recognized content. The value is an enumerated value of[OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md). |
 
 **Returns**:
 
@@ -3658,7 +3658,7 @@ Set the StyledString of the text.
 | Parameter | Description |
 | -- | -- |
 | OH_ArkUI_TextController* controller | the controller of the text. |
-| ArkUI_StyledString_Descriptor* descriptor | Pointer to an <b>ArkUI_StyledString_Descriptor</b> object, which will be set to Text. |
+| [ArkUI_StyledString_Descriptor](capi-arkui-nativemodule-arkui-styledstring-descriptor.md)* descriptor | Pointer to an <b>ArkUI_StyledString_Descriptor</b> object, which will be set to Text. |
 
 **Returns**:
 
@@ -3682,7 +3682,7 @@ Sets the text for the placeholder text options used when there is no input.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorPlaceholderOptions* options | Pointer to the [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md) object. |
+| [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md)* options | Pointer to the [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md) object. |
 | const char* value | Pointer to the placeholder text. |
 
 **Returns**:
@@ -3707,7 +3707,7 @@ Obtains the text for the placeholder text options used when there is no input.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorPlaceholderOptions* options | Pointer to the [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md) object. |
+| [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md)* options | Pointer to the [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md) object. |
 | char* buffer | Pointer to the buffer for storing the placeholder text in the memory. You need to allocate the memory. |
 | int32_t bufferSize | Maximum number of characters that can be written to the buffer. |
 | int32_t* writeLength | Pointer to the number of characters that are actually written to the buffer. |
@@ -3734,7 +3734,7 @@ Sets the font size for the placeholder text options used when there is no input.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorPlaceholderOptions* options | Pointer to the [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md) object. |
+| [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md)* options | Pointer to the [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md) object. |
 | float fontSize | Font size, in fp. |
 
 **Returns**:
@@ -3759,7 +3759,7 @@ Obtains the font size for the placeholder text options used when there is no inp
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorPlaceholderOptions* options | Pointer to the [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md) object. |
+| [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md)* options | Pointer to the [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md) object. |
 | float* fontSize | Pointer to the font size, in fp. |
 
 **Returns**:
@@ -3784,7 +3784,7 @@ Sets the font weight for the placeholder text options used when there is no inpu
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorPlaceholderOptions* options | Pointer to the [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md) object. |
+| [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md)* options | Pointer to the [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md) object. |
 | uint32_t fontWeight | Font weight. The value is an integer multiple of 100 within the [100, 900] range, for example, 100** or **900**. |
 
 **Returns**:
@@ -3809,7 +3809,7 @@ Obtains the font weight for the placeholder text options used when there is no i
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorPlaceholderOptions* options | Pointer to the [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md) object. |
+| [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md)* options | Pointer to the [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md) object. |
 | uint32_t* fontWeight | Pointer to the font weight. The value is an integer multiple of 100 within the [100, 900] range,for example, **100** or **900**. |
 
 **Returns**:
@@ -3834,7 +3834,7 @@ Sets the font family for the placeholder text options used when there is no inpu
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorPlaceholderOptions* options | Pointer to the [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md) object. |
+| [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md)* options | Pointer to the [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md) object. |
 | const char* fontFamily | Pointer to the font family, containing the font names to be set. Different font names areseparated by commas (,). |
 
 **Returns**:
@@ -3859,7 +3859,7 @@ Obtains the font family for the placeholder text options used when there is no i
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorPlaceholderOptions* options | Pointer to the [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md) object. |
+| [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md)* options | Pointer to the [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md) object. |
 | char* buffer | Pointer to the buffer for storing the font family in the memory. You need to allocate the memory. |
 | int32_t bufferSize | Maximum number of characters that can be written to the buffer. |
 | int32_t* writeLength | Pointer to the number of characters that are actually written to the buffer. |
@@ -3886,7 +3886,7 @@ Sets the font style for the placeholder text options used when there is no input
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorPlaceholderOptions* options | Pointer to the [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md) object. |
+| [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md)* options | Pointer to the [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md) object. |
 | ArkUI_FontStyle fontStyle | Font style. The value is an enumerated value of [ArkUI_FontStyle](capi-text-h.md#arkui_fontstyle). |
 
 **Returns**:
@@ -3911,7 +3911,7 @@ Obtains the font style for the placeholder text options used when there is no in
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorPlaceholderOptions* options | Pointer to the [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md) object. |
+| [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md)* options | Pointer to the [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md) object. |
 | ArkUI_FontStyle* fontStyle | Pointer to the font style. The value is an enumerated value of [ArkUI_FontStyle](capi-text-h.md#arkui_fontstyle). |
 
 **Returns**:
@@ -3936,7 +3936,7 @@ Sets the font color for the placeholder text options used when there is no input
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorPlaceholderOptions* options | Pointer to the [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md) object. |
+| [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md)* options | Pointer to the [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md) object. |
 | uint32_t fontColor | Font color, in 0xARGB format. |
 
 **Returns**:
@@ -3961,7 +3961,7 @@ Obtains the font color for the placeholder text options used when there is no in
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorPlaceholderOptions* options | Pointer to the [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md) object. |
+| [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md)* options | Pointer to the [OH_ArkUI_TextEditorPlaceholderOptions](capi-arkui-nativemodule-oh-arkui-texteditorplaceholderoptions.md) object. |
 | uint32_t* fontColor | Pointer to the font color, in 0xARGB format. |
 
 **Returns**:
@@ -3986,7 +3986,7 @@ Sets the caret offset using the styled string controller.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorStyledStringController* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
+| [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md)* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
 | int32_t caretOffset | Caret offset. |
 
 **Returns**:
@@ -4011,7 +4011,7 @@ Obtains the caret offset using the styled string controller.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorStyledStringController* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
+| [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md)* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
 | int32_t* caretOffset | Pointer to the caret offset. |
 
 **Returns**:
@@ -4036,7 +4036,7 @@ Sets the selected area using the styled string controller.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorStyledStringController* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
+| [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md)* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
 | uint32_t start | Start position of the selected area. |
 | uint32_t end | End position of the selected area. |
 | [ArkUI_MenuPolicy](capi-native-type-h.md#arkui_menupolicy) menuPolicy | Policy for displaying the menu in the selected area. The value is an enumerated value of[ArkUI_MenuPolicy](capi-native-type-h.md#arkui_menupolicy). |
@@ -4063,7 +4063,7 @@ Obtains the editing status of the text editor using the styled string controller
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorStyledStringController* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
+| [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md)* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
 | bool* isEditing | Pointer to the **isEditing** parameter indicating whether the text editor is in the editing state. *true** means that the text editor is in the editing state, and **false** means the opposite. |
 
 **Returns**:
@@ -4088,7 +4088,7 @@ Exits the editing status of the text editor using the styled string controller.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorStyledStringController* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
+| [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md)* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
 
 **Returns**:
 
@@ -4112,7 +4112,7 @@ Obtains the preview text using the styled string controller.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorStyledStringController* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
+| [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md)* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
 | uint32_t* offset | Pointer to the preview text offset. |
 | char* buffer | Pointer to the buffer for storing the preview text in the memory. You need to allocate the memory. |
 | int32_t bufferSize | Maximum number of characters that can be written to the buffer. |
@@ -4140,7 +4140,7 @@ Obtains the caret-selected rectangle using the styled string controller.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorStyledStringController* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
+| [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md)* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
 | [ArkUI_Rect](capi-arkui-nativemodule-arkui-rect.md)* rect | Pointer to the caret-selected rectangle information. The value is an enumerated value of[ArkUI_Rect](capi-arkui-nativemodule-arkui-rect.md). |
 
 **Returns**:
@@ -4165,7 +4165,7 @@ Deletes characters using the styled string controller. If no content is selected
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorStyledStringController* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
+| [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md)* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
 
 **Returns**:
 
@@ -4189,8 +4189,8 @@ Sets the text alignment mode in the paragraph style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorParagraphStyle* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
-| ArkUI_TextAlignment align | Text alignment mode. The value is an enumerated value of [ArkUI_TextAlignment](capi-text-common-h.md#arkui_textalignment). |
+| [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md)* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
+| [ArkUI_TextAlignment](capi-text-common-h.md#arkui_textalignment) align | Text alignment mode. The value is an enumerated value of [ArkUI_TextAlignment](capi-text-common-h.md#arkui_textalignment). |
 
 **Returns**:
 
@@ -4214,8 +4214,8 @@ Obtains the text alignment mode in the paragraph style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorParagraphStyle* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
-| ArkUI_TextAlignment* align | Pointer to the text alignment mode. The value is an enumerated value of [ArkUI_TextAlignment](capi-text-common-h.md#arkui_textalignment). |
+| [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md)* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
+| [ArkUI_TextAlignment](capi-text-common-h.md#arkui_textalignment)* align | Pointer to the text alignment mode. The value is an enumerated value of [ArkUI_TextAlignment](capi-text-common-h.md#arkui_textalignment). |
 
 **Returns**:
 
@@ -4239,8 +4239,8 @@ Sets the PixelMap for paragraph indentation in the paragraph style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorParagraphStyle* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
-| [struct OH_PixelmapNative](capi-arkui-nativemodule-oh-pixelmapnative.md)* pixelmap | Pointer to the PixelMap for paragraph indentation. |
+| [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md)* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
+| struct OH_PixelmapNative* pixelmap | Pointer to the PixelMap for paragraph indentation. |
 
 **Returns**:
 
@@ -4264,8 +4264,8 @@ Obtains the PixelMap for paragraph indentation in the paragraph style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorParagraphStyle* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
-| [struct OH_PixelmapNative](capi-arkui-nativemodule-oh-pixelmapnative.md)** pixelmap | Double pointer to the PixelMap for paragraph indentation. |
+| [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md)* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
+| struct OH_PixelmapNative** pixelmap | Double pointer to the PixelMap for paragraph indentation. |
 
 **Returns**:
 
@@ -4289,7 +4289,7 @@ Sets the width for paragraph indentation in the paragraph style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorParagraphStyle* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
+| [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md)* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
 | uint32_t width | Width for paragraph indentation, in vp. |
 
 **Returns**:
@@ -4314,7 +4314,7 @@ Obtains the width for paragraph indentation in the paragraph style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorParagraphStyle* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
+| [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md)* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
 | uint32_t* width | Pointer to the width for paragraph indentation, in vp. |
 
 **Returns**:
@@ -4339,7 +4339,7 @@ Sets the height for paragraph indentation in the paragraph style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorParagraphStyle* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
+| [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md)* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
 | uint32_t height | Height for paragraph indentation, in vp. |
 
 **Returns**:
@@ -4364,7 +4364,7 @@ Obtains the height for paragraph indentation in the paragraph style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorParagraphStyle* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
+| [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md)* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
 | uint32_t* height | Pointer to the height for paragraph indentation, in vp. |
 
 **Returns**:
@@ -4389,8 +4389,8 @@ Sets the word breaking mode in the paragraph style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorParagraphStyle* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
-| ArkUI_WordBreak wordBreak | Word breaking mode. The value is an enumerated value of [ArkUI_WordBreak](capi-text-common-h.md#arkui_wordbreak). |
+| [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md)* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
+| [ArkUI_WordBreak](capi-text-common-h.md#arkui_wordbreak) wordBreak | Word breaking mode. The value is an enumerated value of [ArkUI_WordBreak](capi-text-common-h.md#arkui_wordbreak). |
 
 **Returns**:
 
@@ -4414,8 +4414,8 @@ Obtains the word breaking mode in the paragraph style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorParagraphStyle* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
-| ArkUI_WordBreak* wordBreak | Pointer to the word breaking mode. The value is an enumerated value of [ArkUI_WordBreak](capi-text-common-h.md#arkui_wordbreak). |
+| [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md)* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
+| [ArkUI_WordBreak](capi-text-common-h.md#arkui_wordbreak)* wordBreak | Pointer to the word breaking mode. The value is an enumerated value of [ArkUI_WordBreak](capi-text-common-h.md#arkui_wordbreak). |
 
 **Returns**:
 
@@ -4439,8 +4439,8 @@ Sets the line breaking strategy in the paragraph style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorParagraphStyle* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
-| OH_ArkUI_LineBreakStrategy lineBreakStrategy | Line breaking strategy. The value is an enumerated value of[OH_ArkUI_LineBreakStrategy](capi-text-common-h.md#oh_arkui_linebreakstrategy). |
+| [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md)* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
+| [OH_ArkUI_LineBreakStrategy](capi-text-common-h.md#oh_arkui_linebreakstrategy) lineBreakStrategy | Line breaking strategy. The value is an enumerated value of[OH_ArkUI_LineBreakStrategy](capi-text-common-h.md#oh_arkui_linebreakstrategy). |
 
 **Returns**:
 
@@ -4464,8 +4464,8 @@ Obtains the line breaking strategy in the paragraph style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorParagraphStyle* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
-| OH_ArkUI_LineBreakStrategy* lineBreakStrategy | Pointer to the line breaking strategy. The value is an enumerated value of[OH_ArkUI_LineBreakStrategy](capi-text-common-h.md#oh_arkui_linebreakstrategy). |
+| [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md)* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
+| [OH_ArkUI_LineBreakStrategy](capi-text-common-h.md#oh_arkui_linebreakstrategy)* lineBreakStrategy | Pointer to the line breaking strategy. The value is an enumerated value of[OH_ArkUI_LineBreakStrategy](capi-text-common-h.md#oh_arkui_linebreakstrategy). |
 
 **Returns**:
 
@@ -4489,7 +4489,7 @@ Sets the paragraph spacing in the paragraph style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorParagraphStyle* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
+| [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md)* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
 | uint32_t paragraphSpacing | Paragraph spacing, in vp. |
 
 **Returns**:
@@ -4514,7 +4514,7 @@ Obtains the paragraph spacing in the paragraph style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorParagraphStyle* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
+| [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md)* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
 | uint32_t* paragraphSpacing | Pointer to the paragraph spacing, in vp. |
 
 **Returns**:
@@ -4539,8 +4539,8 @@ Sets the text vertical alignment mode in the paragraph style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorParagraphStyle* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
-| ArkUI_TextVerticalAlignment verticalAlignment | Text vertical alignment mode. The value is an enumerated value of[ArkUI_TextVerticalAlignment](capi-text-common-h.md#arkui_textverticalalignment). |
+| [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md)* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
+| [ArkUI_TextVerticalAlignment](capi-text-common-h.md#arkui_textverticalalignment) verticalAlignment | Text vertical alignment mode. The value is an enumerated value of[ArkUI_TextVerticalAlignment](capi-text-common-h.md#arkui_textverticalalignment). |
 
 **Returns**:
 
@@ -4564,8 +4564,8 @@ Obtains the text vertical alignment mode in the paragraph style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorParagraphStyle* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
-| ArkUI_TextVerticalAlignment* verticalAlignment | Text vertical alignment mode. The value is an enumerated value of[ArkUI_TextVerticalAlignment](capi-text-common-h.md#arkui_textverticalalignment). |
+| [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md)* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
+| [ArkUI_TextVerticalAlignment](capi-text-common-h.md#arkui_textverticalalignment)* verticalAlignment | Text vertical alignment mode. The value is an enumerated value of[ArkUI_TextVerticalAlignment](capi-text-common-h.md#arkui_textverticalalignment). |
 
 **Returns**:
 
@@ -4589,8 +4589,8 @@ Sets the text direction in the paragraph style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorParagraphStyle* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
-| ArkUI_TextDirection textDirection | Text direction. The value is an enumerated value of [ArkUI_TextDirection](capi-text-common-h.md#arkui_textdirection). |
+| [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md)* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
+| [ArkUI_TextDirection](capi-text-common-h.md#arkui_textdirection) textDirection | Text direction. The value is an enumerated value of [ArkUI_TextDirection](capi-text-common-h.md#arkui_textdirection). |
 
 **Returns**:
 
@@ -4614,8 +4614,8 @@ Obtains the text direction in the paragraph style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorParagraphStyle* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
-| ArkUI_TextDirection* textDirection | Pointer to the text direction. The value is an enumerated value of [ArkUI_TextDirection](capi-text-common-h.md#arkui_textdirection). |
+| [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md)* style | Pointer to the [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md) object. |
+| [ArkUI_TextDirection](capi-text-common-h.md#arkui_textdirection)* textDirection | Pointer to the text direction. The value is an enumerated value of [ArkUI_TextDirection](capi-text-common-h.md#arkui_textdirection). |
 
 **Returns**:
 
@@ -4639,8 +4639,8 @@ Sets the typing paragraph style using the styled string controller.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorStyledStringController* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
-| OH_ArkUI_TextEditorParagraphStyle* style | Pointer to the typing paragraph style. |
+| [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md)* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
+| [OH_ArkUI_TextEditorParagraphStyle](capi-arkui-nativemodule-oh-arkui-texteditorparagraphstyle.md)* style | Pointer to the typing paragraph style. |
 
 **Returns**:
 
@@ -4664,7 +4664,7 @@ Sets the font color of the text style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorTextStyle* style | Pointer to the text style of the **TextEditor** component. |
+| [OH_ArkUI_TextEditorTextStyle](capi-arkui-nativemodule-oh-arkui-texteditortextstyle.md)* style | Pointer to the text style of the **TextEditor** component. |
 | uint32_t color | Font color, in 0xARGB format. |
 
 **Returns**:
@@ -4689,7 +4689,7 @@ Obtains the font color of the text style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorTextStyle* style | Pointer to the text style of the **TextEditor** component. |
+| [OH_ArkUI_TextEditorTextStyle](capi-arkui-nativemodule-oh-arkui-texteditortextstyle.md)* style | Pointer to the text style of the **TextEditor** component. |
 | uint32_t* color | Pointer to the font color, in 0xARGB format. |
 
 **Returns**:
@@ -4714,7 +4714,7 @@ Sets the font size of the text style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorTextStyle* style | Pointer to the text style of the **TextEditor** component. |
+| [OH_ArkUI_TextEditorTextStyle](capi-arkui-nativemodule-oh-arkui-texteditortextstyle.md)* style | Pointer to the text style of the **TextEditor** component. |
 | float size | Font size, in fp. |
 
 **Returns**:
@@ -4739,7 +4739,7 @@ Obtains the font size of the text style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorTextStyle* style | Pointer to the text style of the **TextEditor** component. |
+| [OH_ArkUI_TextEditorTextStyle](capi-arkui-nativemodule-oh-arkui-texteditortextstyle.md)* style | Pointer to the text style of the **TextEditor** component. |
 | float* size | Pointer to the font size, in fp. |
 
 **Returns**:
@@ -4764,7 +4764,7 @@ Sets the font style of the text style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorTextStyle* style | Pointer to the text style of the **TextEditor** component. |
+| [OH_ArkUI_TextEditorTextStyle](capi-arkui-nativemodule-oh-arkui-texteditortextstyle.md)* style | Pointer to the text style of the **TextEditor** component. |
 | ArkUI_FontStyle fontStyle | Font style. The value is an enumerated value of [ArkUI_FontStyle](capi-text-h.md#arkui_fontstyle). |
 
 **Returns**:
@@ -4789,7 +4789,7 @@ Obtains the font style of the text style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorTextStyle* style | Pointer to the text style of the **TextEditor** component. |
+| [OH_ArkUI_TextEditorTextStyle](capi-arkui-nativemodule-oh-arkui-texteditortextstyle.md)* style | Pointer to the text style of the **TextEditor** component. |
 | ArkUI_FontStyle* fontStyle | Pointer to the font style. The value is an enumerated value of [ArkUI_FontStyle](capi-text-h.md#arkui_fontstyle). |
 
 **Returns**:
@@ -4814,7 +4814,7 @@ Sets the font weight of the text style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorTextStyle* style | Pointer to the text style of the **TextEditor** component. |
+| [OH_ArkUI_TextEditorTextStyle](capi-arkui-nativemodule-oh-arkui-texteditortextstyle.md)* style | Pointer to the text style of the **TextEditor** component. |
 | uint32_t fontWeight | Font weight. The value is an integer multiple of 100 within the [100, 900] range, for example, 100** or **900**. |
 
 **Returns**:
@@ -4839,7 +4839,7 @@ Obtains the font weight of the text style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorTextStyle* style | Pointer to the text style of the **TextEditor** component. |
+| [OH_ArkUI_TextEditorTextStyle](capi-arkui-nativemodule-oh-arkui-texteditortextstyle.md)* style | Pointer to the text style of the **TextEditor** component. |
 | uint32_t* fontWeight | Pointer to the font weight. The value is an integer multiple of 100 within the [100, 900] range,for example, **100** or **900**. |
 
 **Returns**:
@@ -4864,7 +4864,7 @@ Sets the font family of the text style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorTextStyle* style | Pointer to the text style of the **TextEditor** component. |
+| [OH_ArkUI_TextEditorTextStyle](capi-arkui-nativemodule-oh-arkui-texteditortextstyle.md)* style | Pointer to the text style of the **TextEditor** component. |
 | const char* fontFamily | Pointer to the font family, containing the font names to be set. Different font names areseparated by commas (,). |
 
 **Returns**:
@@ -4889,7 +4889,7 @@ Obtains the font family of the text style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorTextStyle* style | Pointer to the text style of the **TextEditor** component. |
+| [OH_ArkUI_TextEditorTextStyle](capi-arkui-nativemodule-oh-arkui-texteditortextstyle.md)* style | Pointer to the text style of the **TextEditor** component. |
 | char* buffer | Pointer to the buffer for storing the font family in the memory. You need to allocate the memory. |
 | int32_t bufferSize | Maximum number of characters that can be written to the buffer. |
 | int32_t* writeLength | Pointer to the number of characters that are actually written to the buffer. |
@@ -4916,8 +4916,8 @@ Sets the text decoration options of the text style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorTextStyle* style | Pointer to the text style of the **TextEditor** component. |
-| OH_ArkUI_DecorationStyleOptions* options | Pointer to the [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md) object. |
+| [OH_ArkUI_TextEditorTextStyle](capi-arkui-nativemodule-oh-arkui-texteditortextstyle.md)* style | Pointer to the text style of the **TextEditor** component. |
+| [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md)* options | Pointer to the [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md) object. |
 
 **Returns**:
 
@@ -4941,8 +4941,8 @@ Obtains the text decoration options of the text style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorTextStyle* style | Pointer to the text style of the **TextEditor** component. |
-| OH_ArkUI_DecorationStyleOptions* options | Pointer to the [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md) object. |
+| [OH_ArkUI_TextEditorTextStyle](capi-arkui-nativemodule-oh-arkui-texteditortextstyle.md)* style | Pointer to the text style of the **TextEditor** component. |
+| [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md)* options | Pointer to the [OH_ArkUI_DecorationStyleOptions](capi-arkui-nativemodule-oh-arkui-decorationstyleoptions.md) object. |
 
 **Returns**:
 
@@ -4966,7 +4966,7 @@ Sets the text shadow options of the text style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorTextStyle* style | Pointer to the text style of the **TextEditor** component. |
+| [OH_ArkUI_TextEditorTextStyle](capi-arkui-nativemodule-oh-arkui-texteditortextstyle.md)* style | Pointer to the text style of the **TextEditor** component. |
 | const OH_ArkUI_ShadowOptions** options | Double pointer to the text shadow options. |
 | int32_t length | Length of the text shadow options. |
 
@@ -4992,7 +4992,7 @@ Obtains the text shadow options of the text style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorTextStyle* style | Pointer to the text style of the **TextEditor** component. |
+| [OH_ArkUI_TextEditorTextStyle](capi-arkui-nativemodule-oh-arkui-texteditortextstyle.md)* style | Pointer to the text style of the **TextEditor** component. |
 | OH_ArkUI_ShadowOptions** shadowOptions | Double pointer to the text shadow options. |
 | uint32_t shadowOptionsSize | Size of the shadow option buffer. |
 | uint32_t* writeLength | Pointer to the number of actual text shadow options in the text style. |
@@ -5019,7 +5019,7 @@ Sets the line height of the text style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorTextStyle* style | Pointer to the text style of the **TextEditor** component. |
+| [OH_ArkUI_TextEditorTextStyle](capi-arkui-nativemodule-oh-arkui-texteditortextstyle.md)* style | Pointer to the text style of the **TextEditor** component. |
 | int32_t lineHeight | Line height. |
 
 **Returns**:
@@ -5044,7 +5044,7 @@ Obtains the line height of the text style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorTextStyle* style | Pointer to the text style of the **TextEditor** component. |
+| [OH_ArkUI_TextEditorTextStyle](capi-arkui-nativemodule-oh-arkui-texteditortextstyle.md)* style | Pointer to the text style of the **TextEditor** component. |
 | int32_t* lineHeight | Pointer to the line height. |
 
 **Returns**:
@@ -5069,7 +5069,7 @@ Sets the letter spacing of the text style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorTextStyle* style | Pointer to the text style of the **TextEditor** component. |
+| [OH_ArkUI_TextEditorTextStyle](capi-arkui-nativemodule-oh-arkui-texteditortextstyle.md)* style | Pointer to the text style of the **TextEditor** component. |
 | int32_t letterSpacing | Letter spacing. |
 
 **Returns**:
@@ -5094,7 +5094,7 @@ Obtains the letter spacing of the text style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorTextStyle* style | Pointer to the text style of the **TextEditor** component. |
+| [OH_ArkUI_TextEditorTextStyle](capi-arkui-nativemodule-oh-arkui-texteditortextstyle.md)* style | Pointer to the text style of the **TextEditor** component. |
 | int32_t* letterSpacing | Pointer to the letter spacing. |
 
 **Returns**:
@@ -5119,7 +5119,7 @@ Sets the font feature of the text style, such as monospaced digits.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorTextStyle* style | Pointer to the text style of the **TextEditor** component. |
+| [OH_ArkUI_TextEditorTextStyle](capi-arkui-nativemodule-oh-arkui-texteditortextstyle.md)* style | Pointer to the text style of the **TextEditor** component. |
 | const char* fontFeature | Pointer to the font features, containing font features to be set. Multiple features are separatedby commas (,). |
 
 **Returns**:
@@ -5144,7 +5144,7 @@ Obtains the font feature of the text style, such as monospaced digits.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorTextStyle* style | Pointer to the text style of the **TextEditor** component. |
+| [OH_ArkUI_TextEditorTextStyle](capi-arkui-nativemodule-oh-arkui-texteditortextstyle.md)* style | Pointer to the text style of the **TextEditor** component. |
 | char* buffer | Pointer to the buffer for storing the font features in the memory. You need to allocate the memory. |
 | int32_t bufferSize | Maximum number of characters that can be written to the buffer. |
 | int32_t* writeLength | Pointer to the number of characters that are actually written to the buffer. |
@@ -5171,7 +5171,7 @@ Sets whether to evenly distribute the line spacing to the top and bottom of each
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorTextStyle* style | Pointer to the text style of the **TextEditor** component. |
+| [OH_ArkUI_TextEditorTextStyle](capi-arkui-nativemodule-oh-arkui-texteditortextstyle.md)* style | Pointer to the text style of the **TextEditor** component. |
 | bool halfLeading | Whether to enable half leading.<br>*true** means to enable, and **false** means the opposite. The default value is **false**. |
 
 **Returns**:
@@ -5196,7 +5196,7 @@ Obtains whether the line spacing is evenly distributed to the top and bottom of 
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorTextStyle* style | Pointer to the text style of the **TextEditor** component. |
+| [OH_ArkUI_TextEditorTextStyle](capi-arkui-nativemodule-oh-arkui-texteditortextstyle.md)* style | Pointer to the text style of the **TextEditor** component. |
 | bool* halfLeading | Pointer to the **halfLeading** parameter indicating whether to enable half leading.<br>*true** means to enable, and **false** means the opposite. The default value is **false**. |
 
 **Returns**:
@@ -5221,7 +5221,7 @@ Sets the text background color of the text style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorTextStyle* style | Pointer to the text style of the **TextEditor** component. |
+| [OH_ArkUI_TextEditorTextStyle](capi-arkui-nativemodule-oh-arkui-texteditortextstyle.md)* style | Pointer to the text style of the **TextEditor** component. |
 | uint32_t color | Text background color, in 0xARGB format. |
 
 **Returns**:
@@ -5246,7 +5246,7 @@ Obtains the text background color of the text style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorTextStyle* style | Pointer to the text style of the **TextEditor** component. |
+| [OH_ArkUI_TextEditorTextStyle](capi-arkui-nativemodule-oh-arkui-texteditortextstyle.md)* style | Pointer to the text style of the **TextEditor** component. |
 | uint32_t* color | Pointer to the text background color, in 0xARGB format. |
 
 **Returns**:
@@ -5271,7 +5271,7 @@ Sets the radius of the rounded corner of the text background of the text style.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorTextStyle* style | Pointer to the text style of the **TextEditor** component. |
+| [OH_ArkUI_TextEditorTextStyle](capi-arkui-nativemodule-oh-arkui-texteditortextstyle.md)* style | Pointer to the text style of the **TextEditor** component. |
 | float topLeft | Radius of the rounded corner in the upper left corner of the text background. The unit is vp. |
 | float topRight | Radius of the rounded corner in the upper right corner of the text background. The unit is vp. |
 | float bottomLeft | Radius of the rounded corner in the lower left corner of the text background. The unit is vp. |
@@ -5299,7 +5299,7 @@ Obtains the radius of the rounded corner of the text background of the text styl
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorTextStyle* style | Pointer to the text style of the **TextEditor** component. |
+| [OH_ArkUI_TextEditorTextStyle](capi-arkui-nativemodule-oh-arkui-texteditortextstyle.md)* style | Pointer to the text style of the **TextEditor** component. |
 | float* topLeft | Pointer to the radius of the rounded corner in the upper left corner of the text background. The unitis vp. |
 | float* topRight | Pointer to the radius of the rounded corner in the upper right corner of the text background. Theunit is vp. |
 | float* bottomLeft | Pointer to the radius of the rounded corner in the lower left corner of the text background. Theunit is vp. |
@@ -5327,8 +5327,8 @@ Sets the typing style using the styled string controller.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorStyledStringController* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
-| OH_ArkUI_TextEditorTextStyle* style | Pointer to the typing style. |
+| [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md)* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
+| [OH_ArkUI_TextEditorTextStyle](capi-arkui-nativemodule-oh-arkui-texteditortextstyle.md)* style | Pointer to the typing style. |
 
 **Returns**:
 
@@ -5352,8 +5352,8 @@ Obtains the typing style using the styled string controller.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorStyledStringController* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
-| OH_ArkUI_TextEditorTextStyle* style | Pointer to the typing style. |
+| [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md)* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
+| [OH_ArkUI_TextEditorTextStyle](capi-arkui-nativemodule-oh-arkui-texteditortextstyle.md)* style | Pointer to the typing style. |
 
 **Returns**:
 
@@ -5377,8 +5377,8 @@ Sets the span type of the text selection menu in the text editor.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorSelectionMenuOptions* options | Pointer to the [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md) object. |
-| OH_ArkUI_TextEditorSpanType textEditorSpanType | Span type. The value is an enumerated value of [OH_ArkUI_TextEditorSpanType](capi-rich-editor-h.md#oh_arkui_texteditorspantype). |
+| [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md)* options | Pointer to the [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md) object. |
+| [OH_ArkUI_TextEditorSpanType](capi-rich-editor-h.md#oh_arkui_texteditorspantype) textEditorSpanType | Span type. The value is an enumerated value of [OH_ArkUI_TextEditorSpanType](capi-rich-editor-h.md#oh_arkui_texteditorspantype). |
 
 **Returns**:
 
@@ -5402,8 +5402,8 @@ Obtains the span type of the text selection menu in the text editor.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorSelectionMenuOptions* options | Pointer to the [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md) object. |
-| OH_ArkUI_TextEditorSpanType* textEditorSpanType | Pointer to the span type. The value is an enumerated value of[OH_ArkUI_TextEditorSpanType](capi-rich-editor-h.md#oh_arkui_texteditorspantype). |
+| [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md)* options | Pointer to the [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md) object. |
+| [OH_ArkUI_TextEditorSpanType](capi-rich-editor-h.md#oh_arkui_texteditorspantype)* textEditorSpanType | Pointer to the span type. The value is an enumerated value of[OH_ArkUI_TextEditorSpanType](capi-rich-editor-h.md#oh_arkui_texteditorspantype). |
 
 **Returns**:
 
@@ -5427,7 +5427,7 @@ Sets the content node of the text selection menu in the text editor.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorSelectionMenuOptions* options | Pointer to the [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md) object. |
+| [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md)* options | Pointer to the [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md) object. |
 | [ArkUI_NodeHandle](capi-arkui-nativemodule-arkui-node8h.md) node | Content node. |
 
 **Returns**:
@@ -5452,7 +5452,7 @@ Obtains the content node of the text selection menu in the text editor.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorSelectionMenuOptions* options | Pointer to the [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md) object. |
+| [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md)* options | Pointer to the [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md) object. |
 | [ArkUI_NodeHandle](capi-arkui-nativemodule-arkui-node8h.md)* node | Pointer to the content node. |
 
 **Returns**:
@@ -5477,8 +5477,8 @@ Sets the response type of the text selection menu in the text editor.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorSelectionMenuOptions* options | Pointer to the [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md) object. |
-| OH_ArkUI_TextEditorResponseType responseType | Response type. The value is an enumerated value of [OH_ArkUI_TextEditorResponseType](capi-rich-editor-h.md#oh_arkui_texteditorresponsetype). |
+| [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md)* options | Pointer to the [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md) object. |
+| [OH_ArkUI_TextEditorResponseType](capi-rich-editor-h.md#oh_arkui_texteditorresponsetype) responseType | Response type. The value is an enumerated value of [OH_ArkUI_TextEditorResponseType](capi-rich-editor-h.md#oh_arkui_texteditorresponsetype). |
 
 **Returns**:
 
@@ -5502,8 +5502,8 @@ Obtains the response type of the text selection menu in the text editor.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorSelectionMenuOptions* options | Pointer to the [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md) object. |
-| OH_ArkUI_TextEditorResponseType* responseType | Pointer to the response type. The value is an enumerated value of[OH_ArkUI_TextEditorResponseType](capi-rich-editor-h.md#oh_arkui_texteditorresponsetype). |
+| [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md)* options | Pointer to the [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md) object. |
+| [OH_ArkUI_TextEditorResponseType](capi-rich-editor-h.md#oh_arkui_texteditorresponsetype)* responseType | Pointer to the response type. The value is an enumerated value of[OH_ArkUI_TextEditorResponseType](capi-rich-editor-h.md#oh_arkui_texteditorresponsetype). |
 
 **Returns**:
 
@@ -5527,8 +5527,8 @@ Sets the type of the text selection menu in the text editor.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorSelectionMenuOptions* options | Pointer to the [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md) object. |
-| OH_ArkUI_TextMenuType menuType | Menu type. The value is an enumerated value of [OH_ArkUI_TextMenuType](capi-rich-editor-h.md#oh_arkui_textmenutype). |
+| [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md)* options | Pointer to the [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md) object. |
+| [OH_ArkUI_TextMenuType](capi-rich-editor-h.md#oh_arkui_textmenutype) menuType | Menu type. The value is an enumerated value of [OH_ArkUI_TextMenuType](capi-rich-editor-h.md#oh_arkui_textmenutype). |
 
 **Returns**:
 
@@ -5552,8 +5552,8 @@ Obtains the type of the text selection menu in the text editor.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorSelectionMenuOptions* options | Pointer to the [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md) object. |
-| OH_ArkUI_TextMenuType* menuType | Pointer to the menu type. The value is an enumerated value of [OH_ArkUI_TextMenuType](capi-rich-editor-h.md#oh_arkui_textmenutype). |
+| [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md)* options | Pointer to the [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md) object. |
+| [OH_ArkUI_TextMenuType](capi-rich-editor-h.md#oh_arkui_textmenutype)* menuType | Pointer to the menu type. The value is an enumerated value of [OH_ArkUI_TextMenuType](capi-rich-editor-h.md#oh_arkui_textmenutype). |
 
 **Returns**:
 
@@ -5577,7 +5577,7 @@ Sets the callback triggered when the text selection menu is displayed.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorSelectionMenuOptions\* options | Pointer to the [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md) object. |
+| [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md)\* options | Pointer to the [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md) object. |
 | void\* userData | Pointer to the user data. |
 | void (\*callback)(int32_t start | The callback function of menu show.start The start offset of the selected content.end The end offset of the selected content.callbackUserData The user data. |
 
@@ -5603,7 +5603,7 @@ Sets the callback triggered when the text selection menu is hidden.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorSelectionMenuOptions\* options | Pointer to the [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md) object. |
+| [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md)\* options | Pointer to the [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md) object. |
 | void\* userData | Pointer to the user data. |
 | void (\*callback)(int32_t start | The callback function of menu hide.start The start offset of the selected content.end The end offset of the selected content.userData The user data. |
 
@@ -5629,7 +5629,7 @@ Sets the callback triggered when the text selection menu appears.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorSelectionMenuOptions\* options | Pointer to the [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md) object. |
+| [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md)\* options | Pointer to the [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md) object. |
 | void\* userData | Pointer to the user data. |
 | void (\*callback)(int32_t start | The callback function of menu appear.start The start offset of the selected content.end The end offset of the selected content.userData The user data. |
 
@@ -5655,7 +5655,7 @@ Sets the callback triggered when the text selection menu disappears.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorSelectionMenuOptions\* options | Pointer to the [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md) object. |
+| [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md)\* options | Pointer to the [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md) object. |
 | void\* userData | Pointer to the user data. |
 | void (\*callback)(void\* callbackUserData) | The callback function of menu disappear.userData The user data. |
 
@@ -5681,8 +5681,8 @@ Sets the haptic feedback mode of the text selection menu in the text editor.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorSelectionMenuOptions* options | Pointer to the [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md) object. |
-| OH_ArkUI_HapticFeedbackMode mode | Haptic feedback mode. The value is an enumerated value of [OH_ArkUI_HapticFeedbackMode](capi-rich-editor-h.md#oh_arkui_hapticfeedbackmode). |
+| [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md)* options | Pointer to the [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md) object. |
+| [OH_ArkUI_HapticFeedbackMode](capi-rich-editor-h.md#oh_arkui_hapticfeedbackmode) mode | Haptic feedback mode. The value is an enumerated value of [OH_ArkUI_HapticFeedbackMode](capi-rich-editor-h.md#oh_arkui_hapticfeedbackmode). |
 
 **Returns**:
 
@@ -5706,8 +5706,8 @@ Obtains the haptic feedback mode of the text selection menu in the text editor.
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorSelectionMenuOptions* options | Pointer to the [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md) object. |
-| OH_ArkUI_HapticFeedbackMode* mode | Pointer to the haptic feedback mode. The value is an enumerated value of[OH_ArkUI_HapticFeedbackMode](capi-rich-editor-h.md#oh_arkui_hapticfeedbackmode). |
+| [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md)* options | Pointer to the [OH_ArkUI_TextEditorSelectionMenuOptions](capi-arkui-nativemodule-oh-arkui-texteditorselectionmenuoptions.md) object. |
+| [OH_ArkUI_HapticFeedbackMode](capi-rich-editor-h.md#oh_arkui_hapticfeedbackmode)* mode | Pointer to the haptic feedback mode. The value is an enumerated value of[OH_ArkUI_HapticFeedbackMode](capi-rich-editor-h.md#oh_arkui_hapticfeedbackmode). |
 
 **Returns**:
 
@@ -5731,7 +5731,7 @@ Closes the text selection menu of the styled string controller in the text edito
 
 | Parameter | Description |
 | -- | -- |
-| OH_ArkUI_TextEditorStyledStringController* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
+| [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md)* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
 
 **Returns**:
 
@@ -5758,7 +5758,7 @@ Obtains the selected area using the styled string controller.
 
 | Parameter | Description |
 | -- | -- |
-| const OH_ArkUI_TextEditorStyledStringController* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
+| [const OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md)* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
 | uint32_t* start | Pointer to the start position of the selected area. |
 | uint32_t* end | Pointer to the end position of the selected area. |
 
@@ -5787,8 +5787,8 @@ Sets the styled string displayed using the styled string controller.
 
 | Parameter | Description |
 | -- | -- |
-| const OH_ArkUI_TextEditorStyledStringController* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
-| const ArkUI_StyledString_Descriptor* descriptor | Pointer to the [ArkUI_StyledString_Descriptor](capi-arkui-nativemodule-arkui-styledstring-descriptor.md) object. |
+| [const OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md)* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
+| [const ArkUI_StyledString_Descriptor](capi-arkui-nativemodule-arkui-styledstring-descriptor.md)* descriptor | Pointer to the [ArkUI_StyledString_Descriptor](capi-arkui-nativemodule-arkui-styledstring-descriptor.md) object. |
 
 **Returns**:
 
@@ -5815,8 +5815,8 @@ Obtains the styled string displayed using the styled string controller.
 
 | Parameter | Description |
 | -- | -- |
-| const OH_ArkUI_TextEditorStyledStringController* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
-| ArkUI_StyledString_Descriptor* descriptor | Pointer to the [ArkUI_StyledString_Descriptor](capi-arkui-nativemodule-arkui-styledstring-descriptor.md) object. |
+| [const OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md)* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
+| [ArkUI_StyledString_Descriptor](capi-arkui-nativemodule-arkui-styledstring-descriptor.md)* descriptor | Pointer to the [ArkUI_StyledString_Descriptor](capi-arkui-nativemodule-arkui-styledstring-descriptor.md) object. |
 
 **Returns**:
 
@@ -5843,8 +5843,8 @@ Sets the placeholder text in the styled string style using the styled string con
 
 | Parameter | Description |
 | -- | -- |
-| const OH_ArkUI_TextEditorStyledStringController* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
-| const ArkUI_StyledString_Descriptor* descriptor | Pointer to the [ArkUI_StyledString_Descriptor](capi-arkui-nativemodule-arkui-styledstring-descriptor.md) object. |
+| [const OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md)* controller | Pointer to the [OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md) object. |
+| [const ArkUI_StyledString_Descriptor](capi-arkui-nativemodule-arkui-styledstring-descriptor.md)* descriptor | Pointer to the [ArkUI_StyledString_Descriptor](capi-arkui-nativemodule-arkui-styledstring-descriptor.md) object. |
 
 **Returns**:
 
@@ -5868,7 +5868,7 @@ Scroll the text editor component to make the specified content visible.
 
 | Parameter | Description |
 | -- | -- |
-| const OH_ArkUI_TextEditorStyledStringController* controller | <b>TextEditor</b> styled string controller. |
+| [const OH_ArkUI_TextEditorStyledStringController](capi-arkui-nativemodule-oh-arkui-texteditorstyledstringcontroller.md)* controller | <b>TextEditor</b> styled string controller. |
 | int32_t start | The start offset of the content to be made visible. |
 | int32_t end | The end offset of the content to be made visible |
 

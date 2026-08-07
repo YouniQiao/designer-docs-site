@@ -20,6 +20,8 @@
     - [NetConnection](capi-netconnection.md)
 - Struct
     - [Http_Buffer](capi-netstack-http-buffer.md)
+    - [Http_HeaderValue](capi-netstack-http-headervalue.md)
+    - [Http_HeaderEntry](capi-netstack-http-headerentry.md)
     - [Http_ClientCert](capi-netstack-http-clientcert.md)
     - [Http_CustomProxy](capi-netstack-http-customproxy.md)
     - [Http_Proxy](capi-netstack-http-proxy.md)
@@ -29,7 +31,6 @@
     - [Http_Request](capi-netstack-http-request.md)
     - [Http_EventsHandler](capi-netstack-http-eventshandler.md)
     - [Http_Headers](capi-netstack-http-headers.md)
-    - [*next](capi-netstack-8hnext.md)
     - [WebSocket_CloseResult](capi-netstack-websocket-closeresult.md)
     - [WebSocket_CloseOption](capi-netstack-websocket-closeoption.md)
     - [WebSocket_ErrorResult](capi-netstack-websocket-errorresult.md)

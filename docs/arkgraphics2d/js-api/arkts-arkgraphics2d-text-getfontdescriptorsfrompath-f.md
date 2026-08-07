@@ -1,0 +1,76 @@
+# getFontDescriptorsFromPath
+
+## getFontDescriptorsFromPath
+
+```TypeScript
+function getFontDescriptorsFromPath(path: string | Resource): Promise<Array<FontDescriptor>>
+```
+
+Obtains an array of font descriptors by font file path. This API uses a promise to return the result.
+    **NOTE**  
+    
+    - An empty array is returned if the font file is not found, the font file path is invalid, the font file does not  
+    have the required permission, or the file is not in the font format.  
+    
+    - The **weight** field in [FontDescriptor]\_\_\_JSDOC\_LINK\_DESC\_USD\_0\_\_\_ does not exactly correspond to the weight  
+    value in the font file. Instead, the actual weight value in the font file is rounded off and mapped to the  
+    [FontWeight]\_\_\_JSDOC\_LINK\_DESC\_USD\_1\_\_\_ enum value. For example, the weight value 350 in the font file is mapped to 4  
+    00, and the corresponding enum value is W400.
+
+**Since:** 22
+
+**ArkTS mode:** ArkTS-Dyn since version 22; ArkTS-Sta since version 23.
+
+**Atomic service API:** This API can be used in atomic services since API version 22.
+
+<!--Device-text-function getFontDescriptorsFromPath(path: string | Resource): Promise<Array<FontDescriptor>>--><!--Device-text-function getFontDescriptorsFromPath(path: string | Resource): Promise<Array<FontDescriptor>>-End-->
+
+**System capability:** SystemCapability.Graphics.Drawing
+
+**Parameters:**
+
+| Name | Type | Mandatory | Description |
+| --- | --- | --- | --- |
+| path | string \| Resource | Yes | Path of the font file to be queried. The path must be in the format of " **file://** + Absolute path of the font file" or **\_\_\_ESCAPED\_DOLLAR\_\_\_rawfile** (a file path relative to the **resources/rawfile** directory in the project, which includes the font file name). |
+
+**Return value:**
+
+| Type | Description |
+| --- | --- |
+| Promise&lt;Array&lt;FontDescriptor&gt;&gt; | Promise used to return all font descriptors. If the font file cannot be found, the path is invalid, the font file does not have the required permission, or the file is not a font file , an empty array is returned. |
+
+**Example**
+
+```TypeScript
+import { text } from '@kit.ArkGraphics2D'
+
+@Entry
+@Component
+struct GetFontDescriptorsFromPathTest {
+  build() {
+    Column({ space: 10 }) {
+      Button("get fontDescriptors")
+        .onClick(async () => {
+          let promise = text.getFontDescriptorsFromPath("file:///system/fonts/NotoSansCJK-Regular.ttc")
+          promise.then((fontFullDescriptors) => {
+            for (let index = 0; index < fontFullDescriptors.length; index++) {
+              console.info("Path:" + fontFullDescriptors[index].path +
+                          "\npostScriptName:" + fontFullDescriptors[index].postScriptName +
+                          "\nfullName:" + fontFullDescriptors[index].fullName +
+                          "\nfamilyName:" + fontFullDescriptors[index].fontFamily +
+                          "\nfontSubName:" + fontFullDescriptors[index].fontSubfamily +
+                          "\nweight:" + fontFullDescriptors[index].weight +
+                          "\nwidth:" + fontFullDescriptors[index].width +
+                          "\nitalic:" + fontFullDescriptors[index].italic +
+                          "\nmonoSpace:" + fontFullDescriptors[index].monoSpace +
+                          "\nsymbolic:" + fontFullDescriptors[index].symbolic)
+            }
+          })
+        })
+    }.width("100%")
+    .height("100%")
+    .justifyContent(FlexAlign.Center)
+  }
+}
+```
+

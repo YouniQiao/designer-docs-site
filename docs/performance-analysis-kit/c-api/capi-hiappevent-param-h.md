@@ -21,9 +21,9 @@ Defines the param names of all predefined events.In addition to custom events as
 | PARAM_USER_ID "user_id" | Preset param name, user id param.<br>**Since**: 8 |
 | PARAM_DISTRIBUTED_SERVICE_NAME "ds_name" | Preset param name, distributed service name param.<br>**Since**: 8 |
 | PARAM_DISTRIBUTED_SERVICE_INSTANCE_ID "ds_instance_id" | Preset param name, distributed service instance id param.<br>**Since**: 8 |
-| MAIN_THREAD_JANK_PARAM_LOG_TYPE "log_type" | Used in MAIN_THREAD_JANK_V2, type of the log that need to be collected when main thread jank happend.<br>**Since**: 22 |
-| MAIN_THREAD_JANK_PARAM_SAMPLE_INTERVAL "sample_interval" | Used in MAIN_THREAD_JANK_V2, The timeout detection interval and sampling interval for the main thread.<br>**Since**: 22 |
-| MAIN_THREAD_JANK_PARAM_IGNORE_STARTUP_TIME "ignore_startup_time" | Used in MAIN_THREAD_JANK_V2, Ignore main thread timeout detection during startup.<br>**Since**: 22 |
+| MAIN_THREAD_JANK_PARAM_LOG_TYPE "log_type" | Used in MAIN_THREAD_JANK_V2, type of the log that need to be collected when main thread jank happened.<br>**Since**: 22 |
+| MAIN_THREAD_JANK_PARAM_SAMPLE_INTERVAL "sample_interval" | Used in MAIN_THREAD_JANK_V2, The timeout detection interval and sampling interval for the main thread.Unit: ms.<br>**Since**: 22 |
+| MAIN_THREAD_JANK_PARAM_IGNORE_STARTUP_TIME "ignore_startup_time" | Used in MAIN_THREAD_JANK_V2, Ignore main thread timeout detection during startup. Unit: s.<br>**Since**: 22 |
 | MAIN_THREAD_JANK_PARAM_SAMPLE_COUNT "sample_count" | Used in MAIN_THREAD_JANK_V2, Number of main thread timeout samples.<br>**Since**: 22 |
 | MAIN_THREAD_JANK_PARAM_REPORT_TIMES_PER_APP "report_times_per_app" | Used in MAIN_THREAD_JANK_V2, Number of main thread timeout sampling reports per application PID within asingle lifecycle.<br>**Since**: 22 |
 | MAIN_THREAD_JANK_PARAM_AUTO_STOP_SAMPLING "auto_stop_sampling" | Used in MAIN_THREAD_JANK_V2, Stop sampling main thread stack when main thread blockage is resolved.<br>**Since**: 22 |

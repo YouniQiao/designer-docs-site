@@ -1,0 +1,76 @@
+# @ohos.pasteboard
+
+This module provides the capabilities of managing the system pasteboard to support the copy and paste functions. You can use the APIs of this module to operate pasteboard content of the plain text, HTML, URI, Want, pixel map, and other types.
+
+**Since:** 6
+
+**ArkTS mode:** ArkTS-Dyn since version 6; ArkTS-Sta since version 23.
+
+<!--Device-unnamed-declare namespace pasteboard--><!--Device-unnamed-declare namespace pasteboard-End-->
+
+**System capability:** SystemCapability.MiscServices.Pasteboard
+
+## Summary
+
+### Functions
+
+| Name | Description |
+| --- | --- |
+| [createData](arkts-basicservices-pasteboard-createdata-f.md#createdata) | Creates a **PasteData** object of the specified type. |
+| [createData](arkts-basicservices-pasteboard-createdata-f.md#createdata-1) | Creates a **PasteData** object that contains multiple types of data. |
+| [createHtmlData](arkts-basicservices-pasteboard-createhtmldata-f.md#createhtmldata) | Creates a **PasteData** object of the HTML type. |
+| [createHtmlTextRecord](arkts-basicservices-pasteboard-createhtmltextrecord-f.md#createhtmltextrecord) | Creates a **PasteDataRecord** object of the HTML text type. |
+| [createPlainTextData](arkts-basicservices-pasteboard-createplaintextdata-f.md#createplaintextdata) | Creates a **PasteData** object of the plain text type. |
+| [createPlainTextRecord](arkts-basicservices-pasteboard-createplaintextrecord-f.md#createplaintextrecord) | Creates a **PasteDataRecord** object of the plain text type. |
+| [createRecord](arkts-basicservices-pasteboard-createrecord-f.md#createrecord) | Creates a **PasteDataRecord** object of the specified type. |
+| [createUriData](arkts-basicservices-pasteboard-createuridata-f.md#createuridata) | Creates a **PasteData** object of the URI type. |
+| [createUriRecord](arkts-basicservices-pasteboard-createurirecord-f.md#createurirecord) | Creates a **PasteDataRecord** object of the URI type. |
+| [createWantData](arkts-basicservices-pasteboard-createwantdata-f.md#createwantdata) | Creates a **PasteData** object of the Want type. |
+| [createWantRecord](arkts-basicservices-pasteboard-createwantrecord-f.md#createwantrecord) | Creates a **PasteDataRecord** object of the Want type. |
+| [getSystemPasteboard](arkts-basicservices-pasteboard-getsystempasteboard-f.md#getsystempasteboard) | Obtains **SystemPasteboard** object. |
+
+### Classes
+
+| Name | Description |
+| --- | --- |
+| [ProgressSignal](arkts-basicservices-pasteboard-progresssignal-c.md) | Defines a function for canceling the paste task. This parameter is valid only when  [ProgressIndicator]\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_JSDOC\_\_\_ESCAPED\_UNDERSCORE\_\_\_LINK\_\_\_ESCAPED\_UNDERSCORE\_\_\_DESC\_\_\_ESCAPED\_UNDERSCORE\_\_\_USD\_\_\_ESCAPED\_UNDERSCORE\_\_\_0\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_ is set to **NONE**. |
+
+### Interfaces
+
+| Name | Description |
+| --- | --- |
+| [GetDataParams](arkts-basicservices-pasteboard-getdataparams-i.md) | Defines parameters when an application obtains the Data from the pasteboard, including the destination path, file conflict options, and progress indicator types. |
+| [PasteData](arkts-basicservices-pasteboard-pastedata-i.md) | Implements a **PasteData** object. PasteData contains one or more data records (  [PasteDataRecord]\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_JSDOC\_\_\_ESCAPED\_UNDERSCORE\_\_\_LINK\_\_\_ESCAPED\_UNDERSCORE\_\_\_DESC\_\_\_ESCAPED\_UNDERSCORE\_\_\_USD\_\_\_ESCAPED\_UNDERSCORE\_\_\_0\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_) and property description objects (  [PasteDataProperty]\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_JSDOC\_\_\_ESCAPED\_UNDERSCORE\_\_\_LINK\_\_\_ESCAPED\_UNDERSCORE\_\_\_DESC\_\_\_ESCAPED\_UNDERSCORE\_\_\_USD\_\_\_ESCAPED\_UNDERSCORE\_\_\_1\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_).Before calling any API in **PasteData**, you must use **  [createData()]\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_JSDOC\_\_\_ESCAPED\_UNDERSCORE\_\_\_LINK\_\_\_ESCAPED\_UNDERSCORE\_\_\_DESC\_\_\_ESCAPED\_UNDERSCORE\_\_\_USD\_\_\_ESCAPED\_UNDERSCORE\_\_\_2\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_** or **  [getData()]\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_JSDOC\_\_\_ESCAPED\_UNDERSCORE\_\_\_LINK\_\_\_ESCAPED\_UNDERSCORE\_\_\_DESC\_\_\_ESCAPED\_UNDERSCORE\_\_\_USD\_\_\_ESCAPED\_UNDERSCORE\_\_\_3\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_** to create a  **PasteData** object. |
+| [PasteDataProperty](arkts-basicservices-pasteboard-pastedataproperty-i.md) | Defines the properties of PasteData in the pasteboard, including the timestamp, data types, pasteable range,and additional data. The defined properties can be applied to the pasteboard only with the  [setProperty]\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_JSDOC\_\_\_ESCAPED\_UNDERSCORE\_\_\_LINK\_\_\_ESCAPED\_UNDERSCORE\_\_\_DESC\_\_\_ESCAPED\_UNDERSCORE\_\_\_USD\_\_\_ESCAPED\_UNDERSCORE\_\_\_0\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_ method. |
+| [PasteDataRecord](arkts-basicservices-pasteboard-pastedatarecord-i.md) | Provides **PasteDataRecord** APIs. A **PasteDataRecord** is an abstract definition of the content in the pasteboard. The pasteboard content consists of one or more plain text, HTML, URI, or Want records. |
+| [ProgressInfo](arkts-basicservices-pasteboard-progressinfo-i.md) | Defines the progress information. This information is reported only when  [ProgressIndicator]\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_JSDOC\_\_\_ESCAPED\_UNDERSCORE\_\_\_LINK\_\_\_ESCAPED\_UNDERSCORE\_\_\_DESC\_\_\_ESCAPED\_UNDERSCORE\_\_\_USD\_\_\_ESCAPED\_UNDERSCORE\_\_\_0\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_ is set to **NONE**. |
+| [SystemPasteboard](arkts-basicservices-pasteboard-systempasteboard-i.md) | Provides **SystemPasteboard** APIs.Before calling any **SystemPasteboard** API, you must obtain a **SystemPasteboard** object using  [getSystemPasteboard]\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_JSDOC\_\_\_ESCAPED\_UNDERSCORE\_\_\_LINK\_\_\_ESCAPED\_UNDERSCORE\_\_\_DESC\_\_\_ESCAPED\_UNDERSCORE\_\_\_USD\_\_\_ESCAPED\_UNDERSCORE\_\_\_0\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_. |
+
+### Enums
+
+| Name | Description |
+| --- | --- |
+| [FileConflictOptions](arkts-basicservices-pasteboard-fileconflictoptions-e.md) | Enumerates options for file copy conflicts. |
+| [Pattern](arkts-basicservices-pasteboard-pattern-e.md) | Describes the patterns supported by the pasteboard. |
+| [ProgressIndicator](arkts-basicservices-pasteboard-progressindicator-e.md) | Enumerates options for the progress indicator. You can choose whether to use the default progress indicator. |
+| [ShareOption](arkts-basicservices-pasteboard-shareoption-e.md) | Enumerates the pasteable ranges of PasteData. |
+
+### Types
+
+| Name | Description |
+| --- | --- |
+| [ProgressListener](arkts-basicservices-pasteboard-progresslistener-t.md) | Defines a listener for progress data changes. If the default progress indicator is not used, you can set this API to obtain the paste progress. |
+| [UpdateCallback](arkts-basicservices-pasteboard-updatecallback-t.md) | Callback to be invoked when the pasteboard content changes. |
+| [ValueType](arkts-basicservices-pasteboard-valuetype-t.md) | Indicates type of value. |
+
+### Constants
+
+| Name | Description |
+| --- | --- |
+| [MAX_RECORD_NUM](arkts-basicservices-pasteboard-con.md#max_record_num) | Maximum number of records in a **PasteData** object. In versions earlier than API version 10, the value is 512,indicating that no more records can be added once the number of records reaches 512.  Since API version 10, no limit is placed on the number of records in a **PasteData** object. |
+| [MIMETYPE_PIXELMAP](arkts-basicservices-pasteboard-con.md#mimetype_pixelmap) | MIME type of the PixelMap content. |
+| [MIMETYPE_TEXT_HTML](arkts-basicservices-pasteboard-con.md#mimetype_text_html) | MIME type of the HTML content. |
+| [MIMETYPE_TEXT_PLAIN](arkts-basicservices-pasteboard-con.md#mimetype_text_plain) | MIME type of the plain text content. |
+| [MIMETYPE_TEXT_URI](arkts-basicservices-pasteboard-con.md#mimetype_text_uri) | MIME type of the URI content. |
+| [MIMETYPE_TEXT_WANT](arkts-basicservices-pasteboard-con.md#mimetype_text_want) | MIME type of the Want content. |
+

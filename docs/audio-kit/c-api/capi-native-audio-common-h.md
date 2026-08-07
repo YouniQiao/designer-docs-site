@@ -21,6 +21,7 @@ Declare the audio common base data structure.Defines the types of public return 
 | [OH_AudioCommon_Result](#oh_audiocommon_result) | OH_AudioCommon_Result | Define the result of the function execution. |
 | [OH_AudioScene](#oh_audioscene) | OH_AudioScene | Defines the audio scene. |
 | [OH_AudioRingerMode](#oh_audioringermode) | OH_AudioRingerMode | Defines the ringer mode. |
+| [OH_AudioNoiseReductionMode](#oh_audionoisereductionmode) | OH_AudioNoiseReductionMode | Enumerates the noise reduction modes. |
 
 ## Enum type description
 
@@ -83,5 +84,23 @@ Defines the ringer mode.
 | AUDIO_RINGER_MODE_SILENT = 0 |  |
 | AUDIO_RINGER_MODE_VIBRATE = 1 |  |
 | AUDIO_RINGER_MODE_NORMAL = 2 |  |
+
+### OH_AudioNoiseReductionMode
+
+```c
+enum OH_AudioNoiseReductionMode
+```
+
+**Description**
+
+Enumerates the noise reduction modes.
+
+**Since**: 26.0.0
+
+| Enum item | Description |
+| -- | -- |
+| AUDIO_NOISE_REDUCTION_MODE_FIDELITY = 0 | Fidelity mode, no noise reduction.<br>**Since**: 26.0.0 |
+| AUDIO_NOISE_REDUCTION_MODE_PURE_VOCALS = 1 | Pure vocals mode, strong noise reduction.<br>**Since**: 26.0.0 |
+| AUDIO_NOISE_REDUCTION_MODE_STANDARD = 2 | Standard mode, weak noise reduction.<br>**Since**: 26.0.0 |
 
 

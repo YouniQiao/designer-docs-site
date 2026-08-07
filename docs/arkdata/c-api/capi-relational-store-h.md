@@ -653,7 +653,7 @@ Sets the custom encryption parameters.
 | Parameter | Description |
 | -- | -- |
 | [OH_Rdb_ConfigV2](capi-rdb-oh-rdb-configv2.md) *config | Represents a pointer to a configuration of the database related to this relation database store. |
-| const OH_Rdb_CryptoParam *cryptoParam | Represents the custom encryption parameters. |
+| [const OH_Rdb_CryptoParam](capi-rdb-oh-rdb-cryptoparam.md) *cryptoParam | Represents the custom encryption parameters. |
 
 **Returns**:
 
@@ -2392,7 +2392,7 @@ Change the encrypted database key.
 | Parameter | Description |
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) instance. |
-| OH_Rdb_CryptoParam *param | Represents a pointer to an instance of OH_Rdb_CryptoParam. |
+| [OH_Rdb_CryptoParam](capi-rdb-oh-rdb-cryptoparam.md) *param | Represents a pointer to an instance of OH_Rdb_CryptoParam. |
 
 **Returns**:
 

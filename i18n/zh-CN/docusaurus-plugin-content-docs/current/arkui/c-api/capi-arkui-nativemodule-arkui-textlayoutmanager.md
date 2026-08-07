@@ -6,7 +6,7 @@ typedef struct ArkUI_TextLayoutManager ArkUI_TextLayoutManager
 
 ## 概述
 
-定义文本布局类
+定义文本布局管理器对象。
 
 **起始版本：** 22
 

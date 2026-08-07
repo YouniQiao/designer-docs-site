@@ -53,7 +53,7 @@ Creates an AVRecorder instance. After this function is successfully called, the 
 
 | Type | Description |
 | -- | -- |
-| OH_AVRecorder * | Pointer to the OH_AVRecorder instance created if the operation is successful; nullptr otherwise. |
+| [OH_AVRecorder *](capi-avrecorder-oh-avrecorder.md) | Pointer to the OH_AVRecorder instance created if the operation is successful; nullptr otherwise. |
 
 ### OH_AVRecorder_Prepare()
 
@@ -71,8 +71,8 @@ Sets AVRecorder parameters to prepare for recording. This function must be calle
 
 | Parameter | Description |
 | -- | -- |
-| OH_AVRecorder *recorder | Pointer to the OH_AVRecorder instance. |
-| OH_AVRecorder_Config *config | Pointer to the OH_AVRecorder_Config instance. |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | Pointer to the OH_AVRecorder instance. |
+| [OH_AVRecorder_Config](capi-avrecorder-oh-avrecorder-config.md) *config | Pointer to the OH_AVRecorder_Config instance. |
 
 **Returns**:
 
@@ -96,8 +96,8 @@ Obtains the AVRecorder configuration. This function must be called after the rec
 
 | Parameter | Description |
 | -- | -- |
-| OH_AVRecorder *recorder | Pointer to the OH_AVRecorder instance. |
-| OH_AVRecorder_Config **config | Pointer to the OH_AVRecorder_Config instance. |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | Pointer to the OH_AVRecorder instance. |
+| [OH_AVRecorder_Config](capi-avrecorder-oh-avrecorder-config.md) **config | Pointer to the OH_AVRecorder_Config instance. |
 
 **Returns**:
 
@@ -121,8 +121,8 @@ Obtains an input surface. This function must be called after [OH_AVRecorder_Prep
 
 | Parameter | Description |
 | -- | -- |
-| OH_AVRecorder *recorder | Pointer to the OH_AVRecorder instance. |
-| [OHNativeWindow](../ArkGraphics2D/capi-nativewindow-nativewindow.md) **window | Pointer to the OHNativeWindow instance. |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | Pointer to the OH_AVRecorder instance. |
+| OHNativeWindow **window | Pointer to the OHNativeWindow instance. |
 
 **Returns**:
 
@@ -146,7 +146,7 @@ Updates the video rotation angle. This function must be called after [OH_AVRecor
 
 | Parameter | Description |
 | -- | -- |
-| OH_AVRecorder *recorder | Pointer to the OH_AVRecorder instance. |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | Pointer to the OH_AVRecorder instance. |
 | int32_t rotation | Video rotation angle, in degrees. The value must be an integer in the range [0, 90, 180, 270]. |
 
 **Returns**:
@@ -171,7 +171,7 @@ Starts recording. This function must be called after [OH_AVRecorder_Prepare](cap
 
 | Parameter | Description |
 | -- | -- |
-| OH_AVRecorder *recorder | Pointer to the OH_AVRecorder instance. |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | Pointer to the OH_AVRecorder instance. |
 
 **Returns**:
 
@@ -195,7 +195,7 @@ Pauses recording. This function must be called after [OH_AVRecorder_Start](capi-
 
 | Parameter | Description |
 | -- | -- |
-| OH_AVRecorder *recorder | Pointer to the OH_AVRecorder instance. |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | Pointer to the OH_AVRecorder instance. |
 
 **Returns**:
 
@@ -219,7 +219,7 @@ Resumes recording. This function must be called after [OH_AVRecorder_Pause](capi
 
 | Parameter | Description |
 | -- | -- |
-| OH_AVRecorder *recorder | Pointer to the OH_AVRecorder instance. |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | Pointer to the OH_AVRecorder instance. |
 
 **Returns**:
 
@@ -243,7 +243,7 @@ Stops recording. This function must be called after [OH_AVRecorder_Start](capi-a
 
 | Parameter | Description |
 | -- | -- |
-| OH_AVRecorder *recorder | Pointer to the OH_AVRecorder instance. |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | Pointer to the OH_AVRecorder instance. |
 
 **Returns**:
 
@@ -267,7 +267,7 @@ Resets the recording state. This function must be called when the AVRecorder is 
 
 | Parameter | Description |
 | -- | -- |
-| OH_AVRecorder *recorder | Pointer to the OH_AVRecorder instance. |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | Pointer to the OH_AVRecorder instance. |
 
 **Returns**:
 
@@ -291,7 +291,7 @@ Releases recording resources. After this function is successfully called, the AV
 
 | Parameter | Description |
 | -- | -- |
-| OH_AVRecorder *recorder | Pointer to the OH_AVRecorder instance. |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | Pointer to the OH_AVRecorder instance. |
 
 **Returns**:
 
@@ -315,8 +315,8 @@ Obtains the available encoders and encoder information of the AVRecorder.**info*
 
 | Parameter | Description |
 | -- | -- |
-| OH_AVRecorder *recorder | Pointer to the OH_AVRecorder instance. |
-| OH_AVRecorder_EncoderInfo **info | Pointer to the OH_AVRecorder_EncoderInfo instance. |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | Pointer to the OH_AVRecorder instance. |
+| [OH_AVRecorder_EncoderInfo](capi-avrecorder-oh-avrecorder-encoderinfo.md) **info | Pointer to the OH_AVRecorder_EncoderInfo instance. |
 | int32_t *length | Pointer to the number of available encoders. |
 
 **Returns**:
@@ -341,8 +341,8 @@ Sets a state callback so that the application can respond to state change events
 
 | Parameter | Description |
 | -- | -- |
-| OH_AVRecorder *recorder | Pointer to the OH_AVRecorder instance. |
-| OH_AVRecorder_OnStateChange callback | Status callback function. |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | Pointer to the OH_AVRecorder instance. |
+| [OH_AVRecorder_OnStateChange](capi-avrecorder-base-h.md#oh_avrecorder_onstatechange) callback | Status callback function. |
 | void *userData | Pointer to user-defined data. |
 
 **Returns**:
@@ -367,8 +367,8 @@ Sets an error callback so that the application can respond to error events gener
 
 | Parameter | Description |
 | -- | -- |
-| OH_AVRecorder *recorder | Pointer to the OH_AVRecorder instance. |
-| OH_AVRecorder_OnError callback | Error callback function. |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | Pointer to the OH_AVRecorder instance. |
+| [OH_AVRecorder_OnError](capi-avrecorder-base-h.md#oh_avrecorder_onerror) callback | Error callback function. |
 | void *userData | Pointer to user-defined data. |
 
 **Returns**:
@@ -393,8 +393,8 @@ Sets a URI callback so that the application can respond to URI events generated 
 
 | Parameter | Description |
 | -- | -- |
-| OH_AVRecorder *recorder | Pointer to the OH_AVRecorder instance. |
-| OH_AVRecorder_OnUri callback | Callback used to return the result. |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | Pointer to the OH_AVRecorder instance. |
+| [OH_AVRecorder_OnUri](capi-avrecorder-base-h.md#oh_avrecorder_onuri) callback | Callback used to return the result. |
 | void *userData | Pointer to user-defined data. |
 
 **Returns**:
@@ -419,7 +419,7 @@ Sets whether to enable the mute interruption mode.
 
 | Parameter | Description |
 | -- | -- |
-| OH_AVRecorder *recorder | Pointer to the OH_AVRecorder instance. |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | Pointer to the OH_AVRecorder instance. |
 | bool muteWhenInterrupted | Sets whether to enable the mute interruption mode. The value **true** indicates that theapplication remains muted instead of being interrupted when recording is required. The value **false** indicatesthat the application stops recording instead of remain muted when the recording is interrupted. |
 
 **Returns**:
@@ -444,7 +444,7 @@ Obtains the maximum amplitude of the current audio capturer.The amplitude value 
 
 | Parameter | Description |
 | -- | -- |
-| OH_AVRecorder *recorder | Pointer to an OH_AVRecorder instance |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | Pointer to an OH_AVRecorder instance |
 | int32_t* amplitude | The max amplitude value of audio capturer |
 
 **Returns**:
@@ -469,8 +469,8 @@ Set metadata (key-value pairs) for the recording file of the recorder.This metad
 
 | Parameter | Description |
 | -- | -- |
-| OH_AVRecorder *recorder | Pointer to an OH_AVRecorder instance |
-| [const OH_AVFormat](../AVCodecKit/capi-core-oh-avformat.md) *metadata | The key-value pairs added to the the recording file.The key string should start with "com.openharmony.",the length of value can't be more than 256 bytes. |
+| [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | Pointer to an OH_AVRecorder instance |
+| const OH_AVFormat *metadata | The key-value pairs added to the the recording file.The key string should start with "com.openharmony.",the length of value can't be more than 256 bytes. |
 
 **Returns**:
 

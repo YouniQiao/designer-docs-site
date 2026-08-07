@@ -933,7 +933,7 @@ Creates the pointer to an OH_ImageSourceNative object by using the raw file desc
 
 | Parameter | Description |
 | -- | -- |
-| [RawFileDescriptor](../LocalizationKit/capi-rawfile-rawfiledescriptor.md) *rawFile | Pointer to the file descriptor of the raw file. |
+| RawFileDescriptor *rawFile | Pointer to the file descriptor of the raw file. |
 | [OH_ImageSourceNative](capi-image-nativemodule-oh-imagesourcenative.md) **res | Double pointer to the OH_ImageSourceNative object created at the C++ local layer. |
 
 **Returns**:
