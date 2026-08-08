@@ -133,7 +133,7 @@ Called when the stream changes in the LowPowerVideoSink. This callback is includ
 | Parameter | Description |
 | -- | -- |
 | (OH_LowPowerVideoSink\* sink | OH_LowPowerVideoSink instance |
-| OH_AVFormat\* format | Carrying changing parameters and corresponding values |
+| [OH_AVFormat](../AVCodecKit/capi-core-oh-avformat.md)\* format | Carrying changing parameters and corresponding values |
 | void\* userData | User specific data |
 
 ### OH_LowPowerVideoSink_OnFirstFrameDecoded()

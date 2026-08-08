@@ -1221,7 +1221,7 @@ Obtains the number of image frames.
 | Parameter | Description |
 | -- | -- |
 | [OH_ImageSourceNative](capi-image-nativemodule-oh-imagesourcenative.md) *source | Pointer to an OH_ImageSourceNative object. |
-| res | Indicates a pointer to the number of frames obtained. |
+| uint32_t *frameCount | Indicates a pointer to the number of frames obtained. |
 
 **Returns**:
 

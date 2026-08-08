@@ -151,7 +151,7 @@ let requestEnableNotificationCallback = (err: BusinessError | null): void => {
     console.info(`requestEnableNotification1 Promise success!`)
   }
 };
-let testAbilityContext: common.UIAbilityContext = AppStorage.get<common.UIAbilityContext>("UIAbilityContext") as common.UIAbilityContext
+let testAbilityContext: common.UIAbilityContext = AppStorage.get<common.UIAbilityContext>('UIAbilityContext') as common.UIAbilityContext
 notificationManager.requestEnableNotification(testAbilityContext, requestEnableNotificationCallback);
 ```
 
@@ -297,7 +297,7 @@ import common from '@ohos.app.ability.common';
 import { AppStorage } from '@ohos.arkui.stateManagement'
 import { BusinessError } from '@kit.BasicServicesKit';
 
-let testAbilityContext: common.UIAbilityContext = AppStorage.get<common.UIAbilityContext>("UIAbilityContext") as common.UIAbilityContext
+let testAbilityContext: common.UIAbilityContext = AppStorage.get<common.UIAbilityContext>('UIAbilityContext') as common.UIAbilityContext
     await notificationManager.requestEnableNotification(testAbilityContext).then(() => {
       console.info(`requestEnableNotification Promise success!`)
     }).catch((err: Error): void => {

@@ -1,0 +1,224 @@
+# NotificationSubscribeInfo (System API)
+
+The **NotificationSubscribeInfo** module provides APIs for defining the information about the publisher for notification subscription.
+    **NOTE**  
+    
+    The initial APIs of this module are supported since API version 7. Newly added APIs will be marked with a  
+    superscript to indicate their earliest API version.  
+    
+    The APIs provided by this module are system APIs.
+
+**Since:** 7
+
+**ArkTS mode:** ArkTS-Dyn since version 7; ArkTS-Sta since version 23.
+
+<!--Device-unnamed-export interface NotificationSubscribeInfo--><!--Device-unnamed-export interface NotificationSubscribeInfo-End-->
+
+**System capability:** SystemCapability.Notification.Notification
+
+**System API:** This is a system API.
+
+## bundleNames
+
+```TypeScript
+bundleNames?: Array<string>
+```
+
+Bundle names of the applications whose notifications to subscribe to. If this parameter is not specified, the subscription defaults to notifications from all applications.
+
+**Type:** Array&lt;string&gt;
+
+**Since:** 7
+
+**ArkTS mode:** ArkTS-Dyn since version 7; ArkTS-Sta since version 23.
+
+<!--Device-NotificationSubscribeInfo-bundleNames?: Array<string>--><!--Device-NotificationSubscribeInfo-bundleNames?: Array<string>-End-->
+
+**System capability:** SystemCapability.Notification.Notification
+
+**System API:** This is a system API.
+
+## deviceType
+
+```TypeScript
+deviceType?: string
+```
+
+Device type. If this parameter is not specified, the subscription defaults to notifications from the current device. The value is obtained based on [device information]\_\_\_JSDOC\_LINK\_DESC\_USD\_0\_\_\_.
+
+**Type:** string
+
+**Since:** 12
+
+**ArkTS mode:** ArkTS-Dyn since version 12; ArkTS-Sta since version 23.
+
+<!--Device-NotificationSubscribeInfo-deviceType?: string--><!--Device-NotificationSubscribeInfo-deviceType?: string-End-->
+
+**System capability:** SystemCapability.Notification.Notification
+
+**System API:** This is a system API.
+
+## enableClassification
+
+```TypeScript
+enableClassification?: boolean
+```
+
+Whether to enable notification classification.
+
+- **true**: yes.  
+- **false**: no. The default value is **false**.
+
+**Type:** boolean
+
+**Since:** 26.0.0
+
+**ArkTS mode:** Both ArkTS-Dyn and ArkTS-Sta, since version 26.0.0.
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-NotificationSubscribeInfo-enableClassification?: boolean--><!--Device-NotificationSubscribeInfo-enableClassification?: boolean-End-->
+
+**System capability:** SystemCapability.Notification.Notification
+
+**System API:** This is a system API.
+
+## filterLimit
+
+```TypeScript
+filterLimit?: long
+```
+
+Notification filtering range. The default value is **0**. The options are as follows:
+
+- **0**: All notifications are included in the subscription.  
+- **1**: Filter out notifications whose slot type is  
+[SOCIAL\_COMMUNICATION]\_\_\_JSDOC\_LINK\_DESC\_USD\_0\_\_\_ and  
+[userInput]\_\_\_JSDOC\_LINK\_DESC\_USD\_1\_\_\_ is empty.  
+- **2**: Filter out notifications whose slot type is  
+[SOCIAL\_COMMUNICATION]\_\_\_JSDOC\_LINK\_DESC\_USD\_2\_\_\_ and  
+[userInput]\_\_\_JSDOC\_LINK\_DESC\_USD\_3\_\_\_ is not empty.
+
+**Type:** long
+
+**Since:** 18
+
+**ArkTS mode:** ArkTS-Dyn since version 18; ArkTS-Sta since version 23.
+
+<!--Device-NotificationSubscribeInfo-filterLimit?: long--><!--Device-NotificationSubscribeInfo-filterLimit?: long-End-->
+
+**System capability:** SystemCapability.Notification.Notification
+
+**System API:** This is a system API.
+
+## needSilentReplayOnSubscribe
+
+```TypeScript
+needSilentReplayOnSubscribe?: boolean
+```
+
+Whether to enable silent replay upon subscription.
+
+- **true**: yes.  
+- **false**: no. The default value is **false**.
+
+After this feature is enabled, historical notifications are silently re-pushed upon the first subscription,without ringing or vibration reminders.
+
+**Type:** boolean
+
+**Since:** 26.0.0
+
+**ArkTS mode:** Both ArkTS-Dyn and ArkTS-Sta, since version 26.0.0.
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-NotificationSubscribeInfo-needSilentReplayOnSubscribe?: boolean--><!--Device-NotificationSubscribeInfo-needSilentReplayOnSubscribe?: boolean-End-->
+
+**System capability:** SystemCapability.Notification.Notification
+
+**System API:** This is a system API.
+
+## pictureOptions
+
+```TypeScript
+pictureOptions?: PictureOptions
+```
+
+Image options of the live notification.
+
+**Type:** PictureOptions
+
+**Since:** 26.0.0
+
+**ArkTS mode:** Both ArkTS-Dyn and ArkTS-Sta, since version 26.0.0.
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-NotificationSubscribeInfo-pictureOptions?: PictureOptions--><!--Device-NotificationSubscribeInfo-pictureOptions?: PictureOptions-End-->
+
+**System capability:** SystemCapability.Notification.Notification
+
+**System API:** This is a system API.
+
+## slotTypes
+
+```TypeScript
+slotTypes?: Array<notificationManager.SlotType>
+```
+
+Types of the notification slots. If this parameter is not specified, the subscription defaults to notifications of all slot types.
+
+**Type:** Array&lt;notificationManager.SlotType&gt;
+
+**Since:** 18
+
+**ArkTS mode:** ArkTS-Dyn since version 18; ArkTS-Sta since version 23.
+
+<!--Device-NotificationSubscribeInfo-slotTypes?: Array<notificationManager.SlotType>--><!--Device-NotificationSubscribeInfo-slotTypes?: Array<notificationManager.SlotType>-End-->
+
+**System capability:** SystemCapability.Notification.Notification
+
+**System API:** This is a system API.
+
+## userId
+
+```TypeScript
+userId?: int
+```
+
+User ID. If this parameter is not specified, the subscription defaults to notifications from the current user ID.
+
+**Type:** int
+
+**Since:** 7
+
+**ArkTS mode:** ArkTS-Dyn since version 7; ArkTS-Sta since version 23.
+
+<!--Device-NotificationSubscribeInfo-userId?: int--><!--Device-NotificationSubscribeInfo-userId?: int-End-->
+
+**System capability:** SystemCapability.Notification.Notification
+
+**System API:** This is a system API.
+
+## voiceContentOptions
+
+```TypeScript
+voiceContentOptions?: VoiceContentOptions
+```
+
+Configuration options for notification voice broadcast.
+
+**Type:** VoiceContentOptions
+
+**Since:** 26.0.0
+
+**ArkTS mode:** Both ArkTS-Dyn and ArkTS-Sta, since version 26.0.0.
+
+**Model restriction:** This API can be used only in the stage model.
+
+<!--Device-NotificationSubscribeInfo-voiceContentOptions?: VoiceContentOptions--><!--Device-NotificationSubscribeInfo-voiceContentOptions?: VoiceContentOptions-End-->
+
+**System capability:** SystemCapability.Notification.Notification
+
+**System API:** This is a system API.
+

@@ -93,7 +93,7 @@ typedef struct {](#pack) | - | Manages relational database configurations. |
 | [int OH_Rdb_UpdateWithConflictResolution(OH_Rdb_Store *store, OH_VBucket *row, OH_Predicates *predicates, Rdb_ConflictResolution resolution, int64_t *changes)](#oh_rdb_updatewithconflictresolution) | - | Updates data in the database based on specified conditions and support conflict resolution. |
 | [int OH_Rdb_Delete(OH_Rdb_Store *store, OH_Predicates *predicates)](#oh_rdb_delete) | - | Deletes data from the database based on specified conditions. |
 | [OH_Cursor *OH_Rdb_Query(OH_Rdb_Store *store, OH_Predicates *predicates, const char *const *columnNames, int length)](#oh_rdb_query) | - | Queries data in the database based on specified conditions. |
-| [OH_Cursor *OH_Rdb_QueryWithoutRowCount(OH_Rdb_Store *store, OH_Predicates *predicates, const char * const columns[], int length)](#oh_rdb_querywithoutrowcount) | - | Queries data in the database based on specified conditions without row count. |
+| [OH_Cursor *OH_Rdb_QueryWithoutRowCount(OH_Rdb_Store *store, OH_Predicates *predicates, const char *const columns[], int length)](#oh_rdb_querywithoutrowcount) | - | Queries data in the database based on specified conditions without row count. |
 | [OH_Cursor *OH_Rdb_QuerySqlWithoutRowCount(OH_Rdb_Store *store, const char *sql, const OH_Data_Values *args)](#oh_rdb_querysqlwithoutrowcount) | - | Queries data in the database based on an SQL statement without row count. |
 | [int OH_Rdb_Execute(OH_Rdb_Store *store, const char *sql)](#oh_rdb_execute) | - | Executes an SQL statement. |
 | [int OH_Rdb_ExecuteV2(OH_Rdb_Store *store, const char *sql, const OH_Data_Values *args, OH_Data_Value **result)](#oh_rdb_executev2) | - | Executes an SQL statement. |
@@ -653,7 +653,7 @@ Sets the custom encryption parameters.
 | Parameter | Description |
 | -- | -- |
 | [OH_Rdb_ConfigV2](capi-rdb-oh-rdb-configv2.md) *config | Represents a pointer to a configuration of the database related to this relation database store. |
-| [const OH_Rdb_CryptoParam](capi-rdb-oh-rdb-cryptoparam.md) *cryptoParam | Represents the custom encryption parameters. |
+| const OH_Rdb_CryptoParam *cryptoParam | Represents the custom encryption parameters. |
 
 **Returns**:
 
@@ -824,7 +824,7 @@ Creates an [OH_VBucket](capi-rdb-oh-vbucket.md) object.
 
 | Type | Description |
 | -- | -- |
-| OH_VBucket * | If the creation is successful, a pointer to the instance of the @link OH_VBucket} structure is returned,<br> otherwise NULL is returned. |
+| [OH_VBucket *](capi-rdb-oh-vbucket.md) | If the creation is successful, a pointer to the instance of the @link OH_VBucket} structure is returned,<br> otherwise NULL is returned. |
 
 **Reference**:
 
@@ -853,7 +853,7 @@ Creates an [OH_Predicates](capi-rdb-oh-predicates.md) instance.
 
 | Type | Description |
 | -- | -- |
-| OH_Predicates * | If the creation is successful, a pointer to the instance of the @link OH_Predicates} structure is returned.<br>         If the table name is nullptr, Nullptr is returned. |
+| [OH_Predicates *](capi-rdb-oh-predicates.md) | If the creation is successful, a pointer to the instance of the @link OH_Predicates} structure is returned.<br>         If the table name is nullptr, Nullptr is returned. |
 
 **Reference**:
 
@@ -1025,7 +1025,7 @@ Inserts a row of data into the target table.
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) instance. |
 | const char *table | Indicates the target table. |
-| OH_VBucket *valuesBucket | Indicates the row of data [OH_VBucket](capi-rdb-oh-vbucket.md) to be inserted into the table. |
+| [OH_VBucket](capi-rdb-oh-vbucket.md) *valuesBucket | Indicates the row of data [OH_VBucket](capi-rdb-oh-vbucket.md) to be inserted into the table. |
 
 **Returns**:
 
@@ -1056,8 +1056,8 @@ Inserts a row of data into the target table and support conflict resolution.
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an OH_Rdb_Store instance. |
 | const char *table | Represents the target table. |
-| OH_VBucket *row | Represents the row data to be inserted into the table. |
-| Rdb_ConflictResolution resolution | Represents the resolution when conflict occurs. |
+| [OH_VBucket](capi-rdb-oh-vbucket.md) *row | Represents the row data to be inserted into the table. |
+| [Rdb_ConflictResolution](capi-oh-rdb-types-h.md#rdb_conflictresolution) resolution | Represents the resolution when conflict occurs. |
 | int64_t *rowId | Represents the number of successful insertion. |
 
 **Returns**:
@@ -1084,8 +1084,8 @@ Inserts a batch of data into the target table.A maximum of 32766 parameters can 
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) instance. |
 | const char *table | Represents the target table. |
-| const OH_Data_VBuckets *rows | Represents the rows data to be inserted into the table. |
-| Rdb_ConflictResolution resolution | Represents the resolution when conflict occurs. |
+| [const OH_Data_VBuckets](capi-rdb-oh-data-vbuckets.md) *rows | Represents the rows data to be inserted into the table. |
+| [Rdb_ConflictResolution](capi-oh-rdb-types-h.md#rdb_conflictresolution) resolution | Represents the resolution when conflict occurs. |
 | int64_t *changes | Represents the number of successful insertions. |
 
 **Returns**:
@@ -1111,8 +1111,8 @@ Updates data in the database based on specified conditions.
 | Parameter | Description |
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) instance. |
-| OH_VBucket *valuesBucket | Indicates the row of data [OH_VBucket](capi-rdb-oh-vbucket.md) to be updated in the database |
-| OH_Predicates *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance.Indicates the specified update condition. |
+| [OH_VBucket](capi-rdb-oh-vbucket.md) *valuesBucket | Indicates the row of data [OH_VBucket](capi-rdb-oh-vbucket.md) to be updated in the database |
+| [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance.Indicates the specified update condition. |
 
 **Returns**:
 
@@ -1142,9 +1142,9 @@ Updates data in the database based on specified conditions and support conflict 
 | Parameter | Description |
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an OH_Rdb_Store instance. |
-| OH_VBucket *row | Represents the row data to be inserted into the table. |
-| OH_Predicates *predicates | Represents  a pointer to an link OH_Predicates instance. |
-| Rdb_ConflictResolution resolution | Represents the resolution when conflict occurs. |
+| [OH_VBucket](capi-rdb-oh-vbucket.md) *row | Represents the row data to be inserted into the table. |
+| [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents  a pointer to an link OH_Predicates instance. |
+| [Rdb_ConflictResolution](capi-oh-rdb-types-h.md#rdb_conflictresolution) resolution | Represents the resolution when conflict occurs. |
 | int64_t *changes | Represents the number of successful update. |
 
 **Returns**:
@@ -1170,7 +1170,7 @@ Deletes data from the database based on specified conditions.
 | Parameter | Description |
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) instance. |
-| OH_Predicates *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance.Indicates the specified delete condition. |
+| [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance.Indicates the specified delete condition. |
 
 **Returns**:
 
@@ -1200,7 +1200,7 @@ Queries data in the database based on specified conditions.
 | Parameter | Description |
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) instance. |
-| OH_Predicates *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance.Indicates the specified query condition. |
+| [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance.Indicates the specified query condition. |
 | const char *const *columnNames | Indicates the columns to query. If the value is empty array, the query applies to all columns. |
 | int length | Indicates the length of columnNames. |
 
@@ -1218,7 +1218,7 @@ OH_Rdb_Store, OH_Predicates, OH_Cursor
 ### OH_Rdb_QueryWithoutRowCount()
 
 ```c
-OH_Cursor *OH_Rdb_QueryWithoutRowCount(OH_Rdb_Store *store, OH_Predicates *predicates, const char * const columns[], int length)
+OH_Cursor *OH_Rdb_QueryWithoutRowCount(OH_Rdb_Store *store, OH_Predicates *predicates, const char *const columns[], int length)
 ```
 
 **Description**
@@ -1232,8 +1232,8 @@ Queries data in the database based on specified conditions without row count.
 | Parameter | Description |
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) instance. |
-| OH_Predicates *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance.Indicates the specified query condition. |
-| const char * const columns[] | Indicates the columns to query. If the value is empty array, the query applies to all columns. |
+| [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance.Indicates the specified query condition. |
+| const char *const columns[] | Indicates the columns to query. If the value is empty array, the query applies to all columns. |
 | int length | Indicates the length of columns. |
 
 **Returns**:
@@ -1265,7 +1265,7 @@ Queries data in the database based on an SQL statement without row count.
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) instance. |
 | const char *sql | Indicates the SQL statement to execute. |
-| const OH_Data_Values *args | Represents a pointer to an instance of OH_Data_Values and  it is the selection arguments. |
+| [const OH_Data_Values](capi-rdb-oh-data-values.md) *args | Represents a pointer to an instance of OH_Data_Values and  it is the selection arguments. |
 
 **Returns**:
 
@@ -1326,8 +1326,8 @@ Executes an SQL statement.
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) instance. |
 | const char *sql | Indicates the SQL statement to execute. |
-| const OH_Data_Values *args | Represents the values of the parameters in the SQL statement. |
-| [OH_Data_Value](capi-rdb-oh-data-value.md) **result | Represents a pointer to OH_Data_Value instance when the execution is successful.The memory must be released through the OH_Value_Destroy interface after the use is complete. |
+| [const OH_Data_Values](capi-rdb-oh-data-values.md) *args | Represents the values of the parameters in the SQL statement. |
+| OH_Data_Value **result | Represents a pointer to OH_Data_Value instance when the execution is successful.The memory must be released through the OH_Value_Destroy interface after the use is complete. |
 
 **Returns**:
 
@@ -1419,7 +1419,7 @@ Queries data in the database based on an SQL statement.
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) instance. |
 | const char *sql | Indicates the SQL statement to execute. |
-| const OH_Data_Values *args | Represents a pointer to an instance of OH_Data_Values and  it is the selection arguments. |
+| [const OH_Data_Values](capi-rdb-oh-data-values.md) *args | Represents a pointer to an instance of OH_Data_Values and  it is the selection arguments. |
 
 **Returns**:
 
@@ -2097,7 +2097,7 @@ Lock data from the database based on specified conditions.
 | Parameter | Description |
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) instance. |
-| OH_Predicates *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance.Indicates the specified lock condition. |
+| [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance.Indicates the specified lock condition. |
 
 **Returns**:
 
@@ -2127,7 +2127,7 @@ Unlock data from the database based on specified conditions.
 | Parameter | Description |
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) instance. |
-| OH_Predicates *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance.Indicates the specified unlock condition. |
+| [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance.Indicates the specified unlock condition. |
 
 **Returns**:
 
@@ -2157,7 +2157,7 @@ Queries locked data in the database based on specified conditions.
 | Parameter | Description |
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) instance. |
-| OH_Predicates *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance.Indicates the specified query condition. |
+| [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance.Indicates the specified query condition. |
 | const char *const *columnNames | Indicates the columns to query. If the value is empty array, the query applies to all columns. |
 | int length | Indicates the length of columnNames. |
 
@@ -2189,8 +2189,8 @@ Creates an OH_Rdb_Transaction instance object.
 | Parameter | Description |
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an instance of OH_Rdb_Store. |
-| const OH_RDB_TransOptions *options | Represents a pointer to an instance of OH_RDB_TransOptions. |
-| OH_Rdb_Transaction **trans | Represents a pointer to OH_Rdb_Transaction instance when the execution is successful.Otherwise, nullptr is returned. The memory must be released through the OH_RdbTrans_Destroyinterface after the use is complete. |
+| [const OH_RDB_TransOptions](capi-rdb-oh-rdb-transoptions.md) *options | Represents a pointer to an instance of OH_RDB_TransOptions. |
+| [OH_Rdb_Transaction](capi-rdb-oh-rdb-transaction.md) **trans | Represents a pointer to OH_Rdb_Transaction instance when the execution is successful.Otherwise, nullptr is returned. The memory must be released through the OH_RdbTrans_Destroyinterface after the use is complete. |
 
 **Returns**:
 
@@ -2286,7 +2286,7 @@ Support for collations in different languages.
 
 | Type | Description |
 | -- | -- |
-| int | Returns a specific error code.<br>     {@link RDB_OK} if the execution is successful.<br>     {@link RDB_ERR} - Indicates that the function execution exception.<br>     {@link RDB_E_INVALID_ARGS} - The error code for common invalid args.<br>     {@link RDB_E_ALREADY_CLOSED} database already closed.<br>     {@link RDB_E_SQLITE_BUSY} SQLite: The database file is locked.<br>     {@link RDB_E_SQLITE_NOMEM} SQLite: The database is out of memory.<br> Specific error codes can be referenced {@link OH_Rdb_ErrCode}. |
+| int | Returns a specific error code.<br>     <br>{@link RDB_OK} if the execution is successful.<br>     <br>{@link RDB_ERR} - Indicates that the function execution exception.<br>     <br>{@link RDB_E_INVALID_ARGS} - The error code for common invalid args.<br>     <br>{@link RDB_E_ALREADY_CLOSED} database already closed.<br>     <br>{@link RDB_E_SQLITE_BUSY} SQLite: The database file is locked.<br>     <br>{@link RDB_E_SQLITE_NOMEM} SQLite: The database is out of memory.<br>     <br>Specific error codes can be referenced {@link OH_Rdb_ErrCode}. |
 
 **Reference**:
 
@@ -2392,7 +2392,7 @@ Change the encrypted database key.
 | Parameter | Description |
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) instance. |
-| [OH_Rdb_CryptoParam](capi-rdb-oh-rdb-cryptoparam.md) *param | Represents a pointer to an instance of OH_Rdb_CryptoParam. |
+| OH_Rdb_CryptoParam *param | Represents a pointer to an instance of OH_Rdb_CryptoParam. |
 
 **Returns**:
 
@@ -2418,9 +2418,9 @@ Inserts a batch of data into the target table and output change info to context.
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) instance. |
 | const char *table | Represents the target table. |
-| const OH_Data_VBuckets *rows | Represents the rows data to be inserted into the table. |
-| Rdb_ConflictResolution resolution | Represents the resolution when conflict occurs. |
-| OH_RDB_ReturningContext *context | Represents a pointer to a pointer to an [OH_RDB_ReturningContext](capi-rdb-oh-rdb-returningcontext.md) instance. |
+| [const OH_Data_VBuckets](capi-rdb-oh-data-vbuckets.md) *rows | Represents the rows data to be inserted into the table. |
+| [Rdb_ConflictResolution](capi-oh-rdb-types-h.md#rdb_conflictresolution) resolution | Represents the resolution when conflict occurs. |
+| [OH_RDB_ReturningContext](capi-rdb-oh-rdb-returningcontext.md) *context | Represents a pointer to a pointer to an [OH_RDB_ReturningContext](capi-rdb-oh-rdb-returningcontext.md) instance. |
 
 **Returns**:
 
@@ -2450,10 +2450,10 @@ Updates data in the database based on specified conditions and output change inf
 | Parameter | Description |
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) instance. |
-| OH_VBucket *row | Represents the row data to be updated into the table. |
-| OH_Predicates *predicates | Represents  a pointer to an {link OH_Predicates} instance. |
-| Rdb_ConflictResolution resolution | Represents the resolution when conflict occurs. |
-| OH_RDB_ReturningContext *context | Represents a pointer to a pointer to an [OH_RDB_ReturningContext](capi-rdb-oh-rdb-returningcontext.md) instance. |
+| [OH_VBucket](capi-rdb-oh-vbucket.md) *row | Represents the row data to be updated into the table. |
+| [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents  a pointer to an {link OH_Predicates} instance. |
+| [Rdb_ConflictResolution](capi-oh-rdb-types-h.md#rdb_conflictresolution) resolution | Represents the resolution when conflict occurs. |
+| [OH_RDB_ReturningContext](capi-rdb-oh-rdb-returningcontext.md) *context | Represents a pointer to a pointer to an [OH_RDB_ReturningContext](capi-rdb-oh-rdb-returningcontext.md) instance. |
 
 **Returns**:
 
@@ -2483,8 +2483,8 @@ Deletes data from the database based on specified conditions and output change i
 | Parameter | Description |
 | -- | -- |
 | [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) *store | Represents a pointer to an [OH_Rdb_Store](capi-rdb-oh-rdb-store.md) instance. |
-| OH_Predicates *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance. |
-| OH_RDB_ReturningContext *context | Represents a pointer to an [OH_RDB_ReturningContext](capi-rdb-oh-rdb-returningcontext.md) instance. |
+| [OH_Predicates](capi-rdb-oh-predicates.md) *predicates | Represents a pointer to an [OH_Predicates](capi-rdb-oh-predicates.md) instance. |
+| [OH_RDB_ReturningContext](capi-rdb-oh-rdb-returningcontext.md) *context | Represents a pointer to an [OH_RDB_ReturningContext](capi-rdb-oh-rdb-returningcontext.md) instance. |
 
 **Returns**:
 

@@ -1,6 +1,6 @@
 # DisplaySync
 
-帧率和回调函数设置实例。用于帧率设置和回调函数的注册，以及启动和停止回调函数的调用。下列API示例中都需先使用displaySync.create()方法获取到DisplaySync实例，再通过此实例调用对应方法。
+期望帧率和回调函数设置实例。用于设置期望帧率范围、注册帧回调函数，以及启动和停止帧回调。下列API示例中都需先使用displaySync.create()方法获取到DisplaySync实例，再通过此实例调用对应方法。
 
 **起始版本：** 11
 
@@ -16,7 +16,7 @@
 off(type: 'frame', callback?: Callback<IntervalInfo>): void
 ```
 
-取消订阅每一帧的变化。
+取消订阅每一帧的变化。与on('frame')方法配对使用。取消成功后，将不再触发回调函数。
 
 **起始版本：** 11
 
@@ -30,8 +30,8 @@ off(type: 'frame', callback?: Callback<IntervalInfo>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'frame' | 是 | 设置注册回调的类型（只能是'frame'类型）。 |
-| callback | \_\_\_MD\_LINK\_USD\_0\_\_\_&lt;IntervalInfo&gt; | 否 | 订阅函数，参数不填时，默认取消全部订阅函数。 |
+| type | 'frame' | 是 | 设置回调的类型（只能是'frame'类型）。 |
+| callback | \_\_\_MD\_LINK\_USD\_0\_\_\_&lt;IntervalInfo&gt; | 否 | 传入调用on('frame')时注册的回调函数，用于取消订阅该回调函数。必须在已通过on('frame')注册回调后使用。 |
 
 **示例：**
 
@@ -87,7 +87,7 @@ backDisplaySync?.offFrame(callback)
 on(type: 'frame', callback: Callback<IntervalInfo>): void
 ```
 
-订阅每一帧的变化。
+订阅每一帧的变化。注册回调函数后，还需调用start方法启动DisplaySync，系统才会在每一帧触发该回调。和off('frame')方法配对使用，用于取消注册回调函数。字段需为非负整数，取值范围为[0, 设备最大帧率]，且满足min <= expected <= max。超出有效范围时参数校验失败。
 
 **起始版本：** 11
 
@@ -101,8 +101,8 @@ on(type: 'frame', callback: Callback<IntervalInfo>): void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| type | 'frame' | 是 | 设置注册回调的类型（只能是'frame'类型）。 |
-| callback | \_\_\_MD\_LINK\_USD\_0\_\_\_&lt;IntervalInfo&gt; | 是 | 订阅函数。 |
+| type | 'frame' | 是 | 设置回调的类型（只能是'frame'类型）。 |
+| callback | \_\_\_MD\_LINK\_USD\_0\_\_\_&lt;IntervalInfo&gt; | 是 | 订阅帧变化的回调函数。IntervalInfo包含timestamp（当前帧到达时间）和targetTimestamp（下一帧预期到达时间）两个属性，单位均为纳秒。 |
 
 **示例：**
 
@@ -154,7 +154,7 @@ backDisplaySync?.onFrame(callback)
 setExpectedFrameRateRange(rateRange: ExpectedFrameRateRange) : void
 ```
 
-设置期望的帧率范围。
+设置期望的帧率范围。设置的期望帧率范围将作为系统调度的参考，系统会尽量在此范围内调整绘制帧率。未调用该方法或传入ExpectedFrameRateRange(0, 0, 0)时将跟随应用当前运行的帧率。建议在调用start前设置，以便立即生效；调用start之后设置也可生效但可能存在延迟。
 
 **起始版本：** 11
 
@@ -168,13 +168,13 @@ setExpectedFrameRateRange(rateRange: ExpectedFrameRateRange) : void
 
 | 参数名 | 类型 | 必填 | 说明 |
 | --- | --- | --- | --- |
-| rateRange | \_\_\_MD\_LINK\_USD\_0\_\_\_ | 是 | 设置DisplaySync期望的帧率。 |
+| rateRange | \_\_\_MD\_LINK\_USD\_0\_\_\_ | 是 | 设置DisplaySync期望的帧率范围，包含expected、min和max三个字段，单位为帧/秒（fps）， 字段需为非负整数，取值范围为[0, 设备最大帧率]，且满足min <= expected <= max。超出有效范围时会抛出401错误码。 |
 
 **错误码：**
 
 | 错误码ID | 错误信息 |
 | --- | --- |
-| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: \_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_HTML\_\_\_ESCAPED\_UNDERSCORE\_\_\_TAG\_\_\_ESCAPED\_UNDERSCORE\_\_\_DESC\_\_\_ESCAPED\_UNDERSCORE\_\_\_USD\_\_\_ESCAPED\_UNDERSCORE\_\_\_0\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_ 1. Mandatory parameters are left unspecified. \_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_HTML\_\_\_ESCAPED\_UNDERSCORE\_\_\_TAG\_\_\_ESCAPED\_UNDERSCORE\_\_\_DESC\_\_\_ESCAPED\_UNDERSCORE\_\_\_USD\_\_\_ESCAPED\_UNDERSCORE\_\_\_1\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_ 2. Incorrect parameters types. \_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_HTML\_\_\_ESCAPED\_UNDERSCORE\_\_\_TAG\_\_\_ESCAPED\_UNDERSCORE\_\_\_DESC\_\_\_ESCAPED\_UNDERSCORE\_\_\_USD\_\_\_ESCAPED\_UNDERSCORE\_\_\_2\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_\_\_\_ESCAPED\_UNDERSCORE\_\_\_ 3. Parameter verification failed. or check if ExpectedFrameRateRange is valid. |
+| [401](../../apis-contacts-kit/errorcode-contacts.md#401-系统内部错误) | Parameter error. Possible causes: 1. Mandatory parameters are left unspecified. 2. Incorrect parameters types. 3. Parameter verification failed. or check if ExpectedFrameRateRange is valid. |
 
 **示例：**
 
@@ -195,7 +195,7 @@ backDisplaySync?.setExpectedFrameRateRange(range)
 start(): void
 ```
 
-开始每帧回调。
+使通过setExpectedFrameRateRange设置的期望帧率范围生效；如果通过on('frame')注册了回调函数，则开始请求VSync信号，触发已注册的回调，每帧执行一次。和stop方法配对使用。
 
 **起始版本：** 11
 
@@ -258,7 +258,7 @@ struct Index {
 stop(): void
 ```
 
-停止每帧回调。
+关闭期望帧率范围并且停止每帧回调。需在调用start后使用，停止后DisplaySync的配置（如期望帧率范围、回调函数）仍然保留，可随时通过start重新启动。stop方法会解除DisplaySync与UI上下文和窗口的关联，通常无需特定的UI上下文。
 
 **起始版本：** 11
 

@@ -1,4 +1,5 @@
 - 头文件
+    - [trace.h](capi-trace-h.md)
     - [hidebug_type.h](capi-hidebug-type-h.md)
     - [hidebug.h](capi-hidebug-h.md)
     - [hiappevent.h](capi-hiappevent-h.md)
@@ -6,9 +7,11 @@
     - [hiappevent_event.h](capi-hiappevent-event-h.md)
     - [hiappevent_param.h](capi-hiappevent-param-h.md)
 - 模块
+    - [HiTrace](capi-hitrace.md)
     - [HiDebug](capi-hidebug.md)
     - [HiAppEvent](capi-hiappevent.md)
 - 结构体
+    - [HiTraceId](capi-hitrace-hitraceid.md)
     - [HiDebug_ThreadCpuUsage](capi-hidebug-hidebug-threadcpuusage.md)
     - [HiDebug_SystemMemInfo](capi-hidebug-hidebug-systemmeminfo.md)
     - [HiDebug_NativeMemInfo](capi-hidebug-hidebug-nativememinfo.md)

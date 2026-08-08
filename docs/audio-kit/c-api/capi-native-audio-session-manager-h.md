@@ -206,7 +206,7 @@ This function pointer will point to the callback function thatis used to return 
 | Parameter | Description |
 | -- | -- |
 | (OH_AudioDevice_ChangeType type | the [OH_AudioDevice_ChangeType](capi-native-audio-device-base-h.md#oh_audiodevice_changetype) is connect or disconnect. |
-| [OH_AudioDeviceDescriptorArray](capi-ohaudio-oh-audiodevicedescriptorarray.md) \*audioDeviceDescriptorArray | the [OH_AudioDeviceDescriptorArray](capi-ohaudio-oh-audiodevicedescriptorarray.md)pointer variable which will be set the audio device descriptors value.Do not release the audioDeviceDescriptorArray pointer separatelyinstead call [OH_AudioSessionManager_ReleaseDevices](capi-native-audio-session-manager-h.md#oh_audiosessionmanager_releasedevices) to release the DeviceDescriptor arraywhen it is no use anymore. |
+| OH_AudioDeviceDescriptorArray \*audioDeviceDescriptorArray | the [OH_AudioDeviceDescriptorArray](capi-ohaudio-oh-audiodevicedescriptorarray.md)pointer variable which will be set the audio device descriptors value.Do not release the audioDeviceDescriptorArray pointer separatelyinstead call [OH_AudioSessionManager_ReleaseDevices](capi-native-audio-session-manager-h.md#oh_audiosessionmanager_releasedevices) to release the DeviceDescriptor arraywhen it is no use anymore. |
 
 ### OH_AudioSession_CurrentInputDeviceChangedCallback()
 
@@ -306,7 +306,7 @@ Activate the audio session for the current pid application.If [OH_AudioSessionMa
 | Parameter | Description |
 | -- | -- |
 | [OH_AudioSessionManager](capi-ohaudio-oh-audiosessionmanager.md) *audioSessionManager | the [OH_AudioSessionManager](capi-ohaudio-oh-audiosessionmanager.md)returned by the [OH_AudioManager_GetAudioSessionManager](capi-native-audio-session-manager-h.md#oh_audiomanager_getaudiosessionmanager) |
-| const OH_AudioSession_Strategy *strategy | pointer of [OH_AudioSession_Strategy](capi-ohaudio-oh-audiosession-strategy.md)which is used for setting audio session strategy |
+| [const OH_AudioSession_Strategy](capi-ohaudio-oh-audiosession-strategy.md) *strategy | pointer of [OH_AudioSession_Strategy](capi-ohaudio-oh-audiosession-strategy.md)which is used for setting audio session strategy |
 
 **Returns**:
 
@@ -504,7 +504,7 @@ Sets the default output device.This function applys on audiorenderers whose Stre
 | Parameter | Description |
 | -- | -- |
 | [OH_AudioSessionManager](capi-ohaudio-oh-audiosessionmanager.md) *audioSessionManager | the [OH_AudioSessionManager](capi-ohaudio-oh-audiosessionmanager.md)returned by the [OH_AudioManager_GetAudioSessionManager](capi-native-audio-session-manager-h.md#oh_audiomanager_getaudiosessionmanager) |
-| [OH_AudioDevice_Type](capi-native-audio-device-base-h.md#oh_audiodevice_type) deviceType | The target device. The available deviceTypes are:EARPIECE: Built-in earpieceSPEAKER: Built-in speakerDEFAULT: System default output device |
+| OH_AudioDevice_Type deviceType | The target device. The available deviceTypes are:EARPIECE: Built-in earpieceSPEAKER: Built-in speakerDEFAULT: System default output device |
 
 **Returns**:
 
@@ -529,7 +529,7 @@ Gets the default output device.
 | Parameter | Description |
 | -- | -- |
 | [OH_AudioSessionManager](capi-ohaudio-oh-audiosessionmanager.md) *audioSessionManager | the [OH_AudioSessionManager](capi-ohaudio-oh-audiosessionmanager.md)returned by the [OH_AudioManager_GetAudioSessionManager](capi-native-audio-session-manager-h.md#oh_audiomanager_getaudiosessionmanager) |
-| [OH_AudioDevice_Type](capi-native-audio-device-base-h.md#oh_audiodevice_type) *deviceType | The target device.The available deviceTypes are:EARPIECE: Built-in earpieceSPEAKER: Built-in speakerDEFAULT: System default output device |
+| OH_AudioDevice_Type *deviceType | The target device.The available deviceTypes are:EARPIECE: Built-in earpieceSPEAKER: Built-in speakerDEFAULT: System default output device |
 
 **Returns**:
 
@@ -554,7 +554,7 @@ Release the audio device descriptor array object.
 | Parameter | Description |
 | -- | -- |
 | [OH_AudioSessionManager](capi-ohaudio-oh-audiosessionmanager.md) *audioSessionManager | the [OH_AudioSessionManager](capi-ohaudio-oh-audiosessionmanager.md)returned by the [OH_AudioManager_GetAudioSessionManager](capi-native-audio-session-manager-h.md#oh_audiomanager_getaudiosessionmanager) |
-| [OH_AudioDeviceDescriptorArray](capi-ohaudio-oh-audiodevicedescriptorarray.md) *audioDeviceDescriptorArray | Audio device descriptors should be released. |
+| OH_AudioDeviceDescriptorArray *audioDeviceDescriptorArray | Audio device descriptors should be released. |
 
 **Returns**:
 
@@ -629,8 +629,8 @@ Get available devices by device usage.
 | Parameter | Description |
 | -- | -- |
 | [OH_AudioSessionManager](capi-ohaudio-oh-audiosessionmanager.md) *audioSessionManager | the [OH_AudioSessionManager](capi-ohaudio-oh-audiosessionmanager.md) handle returnedby [OH_AudioManager_GetAudioSessionManager](capi-native-audio-session-manager-h.md#oh_audiomanager_getaudiosessionmanager). |
-| [OH_AudioDevice_Usage](capi-native-audio-device-base-h.md#oh_audiodevice_usage) deviceUsage | the [OH_AudioDevice_Usage](capi-native-audio-device-base-h.md#oh_audiodevice_usage) which is used asthe filter parameter for get the available devices. |
-| [OH_AudioDeviceDescriptorArray](capi-ohaudio-oh-audiodevicedescriptorarray.md) **audioDeviceDescriptorArray | the [OH_AudioDeviceDescriptorArray](capi-ohaudio-oh-audiodevicedescriptorarray.md)pointer variable which will be set the audio device descriptors valueDo not release the audioDeviceDescriptorArray pointer separatelyinstead call [OH_AudioSessionManager_ReleaseDevices](capi-native-audio-session-manager-h.md#oh_audiosessionmanager_releasedevices) to release the DeviceDescriptor arraywhen it is no use anymore. |
+| OH_AudioDevice_Usage deviceUsage | the [OH_AudioDevice_Usage](capi-native-audio-device-base-h.md#oh_audiodevice_usage) which is used asthe filter parameter for get the available devices. |
+| OH_AudioDeviceDescriptorArray **audioDeviceDescriptorArray | the [OH_AudioDeviceDescriptorArray](capi-ohaudio-oh-audiodevicedescriptorarray.md)pointer variable which will be set the audio device descriptors valueDo not release the audioDeviceDescriptorArray pointer separatelyinstead call [OH_AudioSessionManager_ReleaseDevices](capi-native-audio-session-manager-h.md#oh_audiosessionmanager_releasedevices) to release the DeviceDescriptor arraywhen it is no use anymore. |
 
 **Returns**:
 
@@ -655,7 +655,7 @@ Register available device change event callback.
 | Parameter | Description |
 | -- | -- |
 | [OH_AudioSessionManager](capi-ohaudio-oh-audiosessionmanager.md) *audioSessionManager | the [OH_AudioSessionManager](capi-ohaudio-oh-audiosessionmanager.md)returned by the [OH_AudioManager_GetAudioSessionManager](capi-native-audio-session-manager-h.md#oh_audiomanager_getaudiosessionmanager) |
-| [OH_AudioDevice_Usage](capi-native-audio-device-base-h.md#oh_audiodevice_usage) deviceUsage | the [OH_AudioDevice_Usage](capi-native-audio-device-base-h.md#oh_audiodevice_usage) which is used asthe filter parameter for register the available devices change event. |
+| OH_AudioDevice_Usage deviceUsage | the [OH_AudioDevice_Usage](capi-native-audio-device-base-h.md#oh_audiodevice_usage) which is used asthe filter parameter for register the available devices change event. |
 | [OH_AudioSession_AvailableDeviceChangedCallback](capi-native-audio-session-manager-h.md#oh_audiosession_availabledevicechangedcallback) callback | the [OH_AudioSession_AvailableDeviceChangedCallback](capi-native-audio-session-manager-h.md#oh_audiosession_availabledevicechangedcallback) which is usedto receive available device change event. |
 
 **Returns**:
@@ -706,7 +706,7 @@ Sets the media input device.This function is not valid for call recording, whose
 | Parameter | Description |
 | -- | -- |
 | [OH_AudioSessionManager](capi-ohaudio-oh-audiosessionmanager.md) *audioSessionManager | the [OH_AudioSessionManager](capi-ohaudio-oh-audiosessionmanager.md) handle returnedby [OH_AudioManager_GetAudioSessionManager](capi-native-audio-session-manager-h.md#oh_audiomanager_getaudiosessionmanager). |
-| [OH_AudioDeviceDescriptor](capi-ohaudio-oh-audiodevicedescriptor.md) *deviceDescriptor | The target device. The available device must be in the array returnedby [OH_AudioSessionManager_GetAvailableDevices](capi-native-audio-session-manager-h.md#oh_audiosessionmanager_getavailabledevices).When the nullptr is passed, system will clear the last selection. |
+| OH_AudioDeviceDescriptor *deviceDescriptor | The target device. The available device must be in the array returnedby [OH_AudioSessionManager_GetAvailableDevices](capi-native-audio-session-manager-h.md#oh_audiosessionmanager_getavailabledevices).When the nullptr is passed, system will clear the last selection. |
 
 **Returns**:
 
@@ -731,7 +731,7 @@ Gets the selected media input device.
 | Parameter | Description |
 | -- | -- |
 | [OH_AudioSessionManager](capi-ohaudio-oh-audiosessionmanager.md) *audioSessionManager | the [OH_AudioSessionManager](capi-ohaudio-oh-audiosessionmanager.md)returned by the [OH_AudioManager_GetAudioSessionManager](capi-native-audio-session-manager-h.md#oh_audiomanager_getaudiosessionmanager). |
-| [OH_AudioDeviceDescriptor](capi-ohaudio-oh-audiodevicedescriptor.md) **audioDeviceDescriptor | The target device set by[OH_AudioSessionManager_SelectMediaInputDevice](capi-native-audio-session-manager-h.md#oh_audiosessionmanager_selectmediainputdevice) ordevice with AUDIO_DEVICE_TYPE_INVALID if not set yet.Do not release the audioDeviceDescriptor pointer separately,instead call [OH_AudioSessionManager_ReleaseDevice](capi-native-audio-session-manager-h.md#oh_audiosessionmanager_releasedevice) to release itwhen it is no use anymore. |
+| OH_AudioDeviceDescriptor **audioDeviceDescriptor | The target device set by[OH_AudioSessionManager_SelectMediaInputDevice](capi-native-audio-session-manager-h.md#oh_audiosessionmanager_selectmediainputdevice) ordevice with AUDIO_DEVICE_TYPE_INVALID if not set yet.Do not release the audioDeviceDescriptor pointer separately,instead call [OH_AudioSessionManager_ReleaseDevice](capi-native-audio-session-manager-h.md#oh_audiosessionmanager_releasedevice) to release itwhen it is no use anymore. |
 
 **Returns**:
 
@@ -856,7 +856,7 @@ Release the audio device descriptor object.
 | Parameter | Description |
 | -- | -- |
 | [OH_AudioSessionManager](capi-ohaudio-oh-audiosessionmanager.md) *audioSessionManager | the [OH_AudioSessionManager](capi-ohaudio-oh-audiosessionmanager.md)returned by the [OH_AudioManager_GetAudioSessionManager](capi-native-audio-session-manager-h.md#oh_audiomanager_getaudiosessionmanager) |
-| [OH_AudioDeviceDescriptor](capi-ohaudio-oh-audiodevicedescriptor.md) *audioDeviceDescriptor | Audio device descriptor to release. |
+| OH_AudioDeviceDescriptor *audioDeviceDescriptor | Audio device descriptor to release. |
 
 **Returns**:
 

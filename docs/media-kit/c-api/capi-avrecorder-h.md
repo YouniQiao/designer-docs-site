@@ -470,7 +470,7 @@ Set metadata (key-value pairs) for the recording file of the recorder.This metad
 | Parameter | Description |
 | -- | -- |
 | [OH_AVRecorder](capi-avrecorder-oh-avrecorder.md) *recorder | Pointer to an OH_AVRecorder instance |
-| const OH_AVFormat *metadata | The key-value pairs added to the the recording file.The key string should start with "com.openharmony.",the length of value can't be more than 256 bytes. |
+| [const OH_AVFormat](../AVCodecKit/capi-core-oh-avformat.md) *metadata | The key-value pairs added to the the recording file.The key string should start with "com.openharmony.",the length of value can't be more than 256 bytes. |
 
 **Returns**:
 
